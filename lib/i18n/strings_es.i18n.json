@@ -512,7 +512,7 @@
 	"foundNewVersion": "Descubra la nueva versión:",
 	"upgradeLink": "Enlace de actualización:",
 	"deviceDescription": "Descripción del equipamiento.",
-	"notification30SecondsBeforeMiningStops": "Εκτελέστε υπενθύμιση ειδοποίησης 30 δευτερόλεπτα πριν σταματήσει η εξόρυξη!",
+	"notification30SecondsBeforeMiningStops": "Ejecutar recordatorio de notificación 30 segundos antes de que se detenga la extracción!",
 	"goMining": "Ir a minar",
 	"deltaMiningReminder": "Recordatorio de minería Delta",
 	"clickToMine_miningIsAboutToStop": "¡Haga clic aquí para minar, la minería se detendrá pronto!",
