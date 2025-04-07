@@ -471,7 +471,7 @@
   "referrerIdDoesNotExist": "Идентификатор реферера не существует!",
   "didIsIncorrectOrInvalid": "DID неверен или недействителен!",
   "accessTokenIsIncorrectOrInvalid": "Токен доступа неверен или недействителен!",
-  "minimumWithdrawalAmountIs9USD": "Минимум 9USD для одного вывода средств",
+  "minimumWithdrawalAmountIs1USD": "Минимум 1USD для одного вывода средств",
   "miningTimeIsNotYet": "Время для добычи еще не пришло.",
   "alreadyExists_pleaseDoNotRepeatedly": "Уже существует, пожалуйста, не добавляйте его снова!",
   "registrationNumberCannotBeUsedAsAccessNumber": "Невозможно использовать регистрационный номер в качестве номера доступа для аутентификации",
@@ -553,5 +553,14 @@
   "returnToSecurityCodeMode": "Вернуться в режим кода безопасности",
   "enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted": "Пожалуйста, введите их связанный номер мобильного телефона. Код страны можно опустить.",
   "mobileNumberForNameIsIncorrect": "Неверный номер мобильного телефона ${name}",
-  "matchingVerificationStrategyIs": "Стратегия проверки соответствия:"
+  "matchingVerificationStrategyIs": "Стратегия проверки соответствия:",
+  "balanceGreater3ICP_noNeedPourFuel": "Баланс больше 3 ICP, пока нет необходимости заливать топливо.",
+  "escrowAccount": "Счет условного депонирования",
+  "fuelRelay": "Топливное реле",
+  "pourFuel": "Залить топливо",
+  "fuelState": "Состояние топлива",
+  "pouringFuelTips": "Заливка топлива не приносит вам никаких преимуществ или недостатков, ее цель — обогатить опыт использования системы Delta.",
+  "sponsorDevelopersByWatchingAds": "Спонсируйте разработчиков, просматривая рекламу",
+  "status": "Статус",
+  "date": "Дата"
 }

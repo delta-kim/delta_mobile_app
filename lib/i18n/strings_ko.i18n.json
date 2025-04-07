@@ -471,7 +471,7 @@
 	"referrerIdDoesNotExist": "리퍼러 ID가 존재하지 않습니다!",
 	"didIsIncorrectOrInvalid": "DID가 잘못되었거나 유효하지 않습니다!",
 	"accessTokenIsIncorrectOrInvalid": "액세스 토큰이 잘못되었거나 유효하지 않습니다!",
-	"minimumWithdrawalAmountIs9USD": "1회 출금 시 최소 9USD",
+	"minimumWithdrawalAmountIs1USD": "1회 출금 시 최소 1USD",
 	"miningTimeIsNotYet": "아직 채굴할 때가 아닙니다.",
 	"alreadyExists_pleaseDoNotRepeatedly": "이미 존재하므로 다시 추가하지 마세요!",
 	"registrationNumberCannotBeUsedAsAccessNumber": "등록 번호를 인증 액세스 번호로 사용할 수 없습니다.",
@@ -553,5 +553,14 @@
 	"returnToSecurityCodeMode": "보안 코드 모드로 돌아가기",
 	"enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted": "연관된 모바일 번호를 입력하세요. 국가 코드는 생략할 수 있습니다.",
 	"mobileNumberForNameIsIncorrect": "${name}의 휴대폰 번호가 올바르지 않습니다",
-	"matchingVerificationStrategyIs": "매칭 검증 전략은 다음과 같습니다."
+	"matchingVerificationStrategyIs": "매칭 검증 전략은 다음과 같습니다.",
+	"balanceGreater3ICP_noNeedPourFuel": "3 ICP보다 큰 잔액, 당장은 연료를 부을 필요가 없습니다.",
+	"escrowAccount": "에스크로 계정",
+	"fuelRelay": "연료 릴레이",
+	"pourFuel": "연료를 붓다",
+	"fuelState": "연료 상태",
+	"pouringFuelTips": "연료를 주입하는 것은 어떠한 이점이나 단점을 가져다주지 않습니다. 그 목적은 델타 시스템 경험을 풍부하게 하는 것입니다.",
+	"sponsorDevelopersByWatchingAds": "광고를 시청하여 개발자 후원",
+	"status": "상태",
+	"date": "날짜"
 }

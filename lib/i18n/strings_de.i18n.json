@@ -471,7 +471,7 @@
   "referrerIdDoesNotExist": "Referrer ID existiert nicht!",
   "didIsIncorrectOrInvalid": "Die DID ist falsch oder ungültig!",
   "accessTokenIsIncorrectOrInvalid": "Der accessToken ist falsch oder ungültig!",
-  "minimumWithdrawalAmountIs9USD": "Mindestens 9USD für eine einzelne Abhebung",
+  "minimumWithdrawalAmountIs1USD": "Mindestens 1USD für eine einzelne Abhebung",
   "miningTimeIsNotYet": "Es ist noch nicht an der Zeit, Bergbau zu betreiben.",
   "alreadyExists_pleaseDoNotRepeatedly": "Bereits vorhanden, bitte nicht erneut hinzufügen!",
   "registrationNumberCannotBeUsedAsAccessNumber": "Registrierungsnummer kann nicht als Zugangsnummer für die Authentifizierung verwendet werden",
@@ -553,5 +553,14 @@
   "returnToSecurityCodeMode": "Zurück zum Sicherheitscode-Modus",
   "enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted": "Bitte geben Sie die zugehörige Handynummer ein. Die Landesvorwahl kann weggelassen werden.",
   "mobileNumberForNameIsIncorrect": "Die Handynummer von ${name} ist falsch",
-  "matchingVerificationStrategyIs": "Die passende Verifizierungsstrategie ist:"
+  "matchingVerificationStrategyIs": "Die passende Verifizierungsstrategie ist:",
+  "balanceGreater3ICP_noNeedPourFuel": "Der Saldo ist größer als 3 ICP, es muss derzeit kein Kraftstoff nachgefüllt werden.",
+  "escrowAccount": "Treuhandkonto",
+  "fuelRelay": "Kraftstoffrelais",
+  "pourFuel": "Kraftstoff einfüllen",
+  "fuelState": "Kraftstoffzustand",
+  "pouringFuelTips": "Das Einfüllen von Kraftstoff bringt Ihnen weder Vorteile noch Nachteile, sein Zweck besteht darin, das Delta-Systemerlebnis zu bereichern.",
+  "sponsorDevelopersByWatchingAds": "Sponsern Sie Entwickler, indem Sie sich Werbung ansehen",
+  "status": "Status",
+  "date": "Datum"
 }

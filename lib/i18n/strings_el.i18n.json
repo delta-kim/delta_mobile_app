@@ -471,7 +471,7 @@
   "referrerIdDoesNotExist": "Το αναγνωριστικό παραπομπής δεν υπάρχει!",
   "didIsIncorrectOrInvalid": "Το DID είναι λανθασμένο ή άκυρο!",
   "accessTokenIsIncorrectOrInvalid": "Το accessToken είναι λανθασμένο ή άκυρο!",
-  "minimumWithdrawalAmountIs9USD": "Ελάχιστο 9USD για μία μόνο ανάληψη",
+  "minimumWithdrawalAmountIs1USD": "Ελάχιστο 1USD για μία μόνο ανάληψη",
   "miningTimeIsNotYet": "Δεν ήρθε ακόμα η ώρα να ορυχτείς.",
   "alreadyExists_pleaseDoNotRepeatedly": "Υπάρχει ήδη, παρακαλώ μην το προσθέσετε ξανά!",
   "registrationNumberCannotBeUsedAsAccessNumber": "Δεν είναι δυνατή η χρήση του αριθμού εγγραφής ως αριθμού πρόσβασης για έλεγχο ταυτότητας",
@@ -553,5 +553,14 @@
   "returnToSecurityCodeMode": "Επιστροφή στη λειτουργία κωδικού ασφαλείας",
   "enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted": "Παρακαλώ εισάγετε τον αντίστοιχο αριθμό κινητού τηλεφώνου. Ο κωδικός χώρας μπορεί να παραλειφθεί.",
   "mobileNumberForNameIsIncorrect": "Ο αριθμός κινητού του ${name} δεν είναι σωστός",
-  "matchingVerificationStrategyIs": "Η αντίστοιχη στρατηγική επαλήθευσης είναι:"
+  "matchingVerificationStrategyIs": "Η αντίστοιχη στρατηγική επαλήθευσης είναι:",
+  "balanceGreater3ICP_noNeedPourFuel": "Το υπόλοιπο είναι μεγαλύτερο από 3 ICP, δεν χρειάζεται να χύσετε καύσιμο προς το παρόν.",
+  "escrowAccount": "Escrow Account",
+  "fuelRelay": "Fuel Relay",
+  "pourFuel": "Pour fuel",
+  "fuelState": "Κατάσταση καυσίμου",
+  "pouringFuelTips": "Η έκχυση καυσίμου δεν σας φέρνει πλεονεκτήματα ή μειονεκτήματα, σκοπός της είναι να εμπλουτίσει την εμπειρία του συστήματος Delta.",
+  "sponsorDevelopersByWatchingAds": "Χορηγός προγραμματιστών παρακολουθώντας διαφημίσεις",
+  "status": "status",
+  "date": "ημερομηνία"
 }

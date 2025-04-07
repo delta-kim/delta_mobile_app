@@ -471,7 +471,7 @@
 	"referrerIdDoesNotExist": "El ID de referencia no existe.",
 	"didIsIncorrectOrInvalid": "El DID es incorrecto o inválido.",
 	"accessTokenIsIncorrectOrInvalid": "El accessToken es incorrecto o inválido.",
-	"minimumWithdrawalAmountIs9USD": "Mínimo 9USD para una sola retirada",
+	"minimumWithdrawalAmountIs1USD": "Mínimo 1USD para una sola retirada",
 	"miningTimeIsNotYet": "Aún no es hora de minar.",
 	"alreadyExists_pleaseDoNotRepeatedly": "Ya existe, ¡por favor no lo añada de nuevo!",
 	"registrationNumberCannotBeUsedAsAccessNumber": "No se puede utilizar el número de registro como número de acceso de autenticación",
@@ -512,7 +512,7 @@
 	"foundNewVersion": "Descubra la nueva versión:",
 	"upgradeLink": "Enlace de actualización:",
 	"deviceDescription": "Descripción del equipamiento.",
-	"notification30SecondsBeforeMiningStops": "Εκτελέστε υπενθύμιση ειδοποίησης 30 δευτερόλεπτα πριν σταματήσει η εξόρυξη!",
+	"notification30SecondsBeforeMiningStops": "¡Ejecute el recordatorio de notificación 30 segundos antes de que se detenga la minería!",
 	"goMining": "Ir a minar",
 	"deltaMiningReminder": "Recordatorio de minería Delta",
 	"clickToMine_miningIsAboutToStop": "¡Haga clic aquí para minar, la minería se detendrá pronto!",
@@ -553,5 +553,14 @@
 	"returnToSecurityCodeMode": "Regresar al modo de código de seguridad",
 	"enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted": "Por favor, introduzca el número de móvil asociado. El código de país puede omitirse.",
 	"mobileNumberForNameIsIncorrect": "El número de móvil de ${name} es incorrecto",
-	"matchingVerificationStrategyIs": "La estrategia de verificación de coincidencia es:"
+	"matchingVerificationStrategyIs": "La estrategia de verificación de coincidencia es:",
+	"balanceGreater3ICP_noNeedPourFuel": "El saldo es mayor a 3 ICP, no es necesario agregar combustible por ahora.",
+	"escrowAccount": "Cuenta de depósito en garantía",
+	"fuelRelay": "Relé de combustible",
+	"pourFuel": "Vierte combustible",
+	"fuelState": "Estado del combustible",
+	"pouringFuelTips": "Verter combustible no aporta ninguna ventaja ni desventaja, su propósito es enriquecer la experiencia del sistema Delta",
+	"sponsorDevelopersByWatchingAds": "Patrocina a desarrolladores viendo anuncios",
+	"status": "Estado",
+	"date": "Fecha"
 }

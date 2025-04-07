@@ -471,7 +471,7 @@
 	"referrerIdDoesNotExist": "L'ID del referente non esiste!",
 	"didIsIncorrectOrInvalid": "La DID non è corretta o non è valida!",
 	"accessTokenIsIncorrectOrInvalid": "L'accessToken non è corretto o non è valido!",
-	"minimumWithdrawalAmountIs9USD": "Minimo 9USD per un singolo prelievo",
+	"minimumWithdrawalAmountIs1USD": "Minimo 1USD per un singolo prelievo",
 	"miningTimeIsNotYet": "Non è ancora il momento di estrarre.",
 	"alreadyExists_pleaseDoNotRepeatedly": "Esiste già, non aggiungerlo di nuovo!",
 	"registrationNumberCannotBeUsedAsAccessNumber": "Non è possibile utilizzare il numero di registrazione come numero di accesso per l'autenticazione.",
@@ -553,5 +553,14 @@
 	"returnToSecurityCodeMode": "Ritorna alla modalità codice di sicurezza",
 	"enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted": "Inserisci il numero di cellulare associato. Il prefisso internazionale può essere omesso.",
 	"mobileNumberForNameIsIncorrect": "Il numero di cellulare di ${name} è errato",
-	"matchingVerificationStrategyIs": "La strategia di verifica corrispondente è:"
+	"matchingVerificationStrategyIs": "La strategia di verifica corrispondente è:",
+	"balanceGreater3ICP_noNeedPourFuel": "Il saldo è maggiore di 3 ICP, per ora non c'è bisogno di versare carburante.",
+	"escrowAccount": "Conto di deposito a garanzia",
+	"fuelRelay": "Relè carburante",
+	"pourFuel": "Versare carburante",
+	"fuelState": "Stato carburante",
+	"pouringFuelTips": "Il versamento del carburante non comporta alcun vantaggio o svantaggio, il suo scopo è arricchire l'esperienza del sistema Delta.",
+	"sponsorDevelopersByWatchingAds": "Sponsorizza gli sviluppatori guardando gli annunci",
+	"status": "Stato",
+	"date": "Data"
 }

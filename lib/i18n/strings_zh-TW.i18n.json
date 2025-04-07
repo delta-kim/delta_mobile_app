@@ -471,7 +471,7 @@
 	"referrerIdDoesNotExist": "推薦人 ID 不存在！",
 	"didIsIncorrectOrInvalid": "DID 不正確或無效！",
 	"accessTokenIsIncorrectOrInvalid": "accessToken 不正確或無效！",
-	"minimumWithdrawalAmountIs9USD": "一次提現金額最少9USD",
+	"minimumWithdrawalAmountIs1USD": "一次提現金額最少1USD",
 	"miningTimeIsNotYet": "挖礦時間尚未到",
 	"alreadyExists_pleaseDoNotRepeatedly": "已存在，請不要重複新增！",
 	"registrationNumberCannotBeUsedAsAccessNumber": "不能使用註冊號碼作為驗證接入號",
@@ -553,5 +553,14 @@
 	"returnToSecurityCodeMode": "返回安全碼模式",
 	"enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted": "請輸入它們的關聯手機號碼，可省略國家代碼。",
 	"mobileNumberForNameIsIncorrect": "${name}的行動號碼不正確",
-	"matchingVerificationStrategyIs": "符合的驗證策略為："
+	"matchingVerificationStrategyIs": "符合的驗證策略為：",
+	"balanceGreater3ICP_noNeedPourFuel": "餘額大於3 ICP暫時不需倒入燃料。",
+	"escrowAccount": "託管帳戶",
+	"fuelRelay": "燃料中繼",
+	"pourFuel": "導入燃料",
+	"fuelState": "燃料狀態",
+	"pouringFuelTips": "倒入燃料不會為您帶來任何的好處或壞處，其目的為了豐富Delta系統體驗。",
+	"sponsorDevelopersByWatchingAds": "透過觀看廣告贊助開發者",
+	"status": "狀態",
+	"date": "日期"
 }

@@ -471,7 +471,7 @@
 	"referrerIdDoesNotExist": "A ID do referenciador não existe!",
 	"didIsIncorrectOrInvalid": "A DID está incorrecta ou é inválida!",
 	"accessTokenIsIncorrectOrInvalid": "O accessToken é incorreto ou inválido!",
-	"minimumWithdrawalAmountIs9USD": "Mínimo de 9USD para uma única retirada",
+	"minimumWithdrawalAmountIs1USD": "Mínimo de 1USD para uma única retirada",
 	"miningTimeIsNotYet": "Ainda não é altura de minerar.",
 	"alreadyExists_pleaseDoNotRepeatedly": "Já existe, por favor não o adicione novamente!",
 	"registrationNumberCannotBeUsedAsAccessNumber": "Não é possível utilizar o número de registo como número de acesso de autenticação",
@@ -553,5 +553,14 @@
 	"returnToSecurityCodeMode": "Retornar ao modo de código de segurança",
 	"enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted": "Por favor, insira o número de celular associado. O código do país pode ser omitido.",
 	"mobileNumberForNameIsIncorrect": "O número de celular de ${name} está incorreto",
-	"matchingVerificationStrategyIs": "A estratégia de verificação de correspondência é:"
+	"matchingVerificationStrategyIs": "A estratégia de verificação de correspondência é:",
+	"balanceGreater3ICP_noNeedPourFuel": "O saldo é maior que 3 ICP, não há necessidade de despejar combustível por enquanto.",
+	"escrowAccount": "Conta de custódia",
+	"fuelRelay": "Relé de combustível",
+	"pourFuel": "Despeje combustível",
+	"fuelState": "Estado do combustível",
+	"pouringFuelTips": "Despejar combustível não traz nenhuma vantagem ou desvantagem, seu objetivo é enriquecer a experiência do sistema Delta.",
+	"sponsorDevelopersByWatchingAds": "Patrocine desenvolvedores assistindo a anúncios",
+	"status": "Estado",
+	"date": "Data"
 }
