@@ -471,7 +471,7 @@
   "referrerIdDoesNotExist": "ไม่มีรหัสผู้อ้างอิง!",
   "didIsIncorrectOrInvalid": "DID ไม่ถูกต้องหรือไม่ถูกต้อง!",
   "accessTokenIsIncorrectOrInvalid": "accessToken ไม่ถูกต้องหรือไม่ถูกต้อง!",
-  "minimumWithdrawalAmountIs9USD": "จำนวนถอนขั้นต่ำในครั้งเดียวคือ 9USD",
+  "minimumWithdrawalAmountIs1USD": "จำนวนถอนขั้นต่ำในครั้งเดียวคือ 1USD",
   "miningTimeIsNotYet": "เวลาขุดยังไม่มา",
   "alreadyExists_pleaseDoNotRepeatedly": "มีอยู่แล้ว กรุณาอย่าเพิ่มอีก!",
   "registrationNumberCannotBeUsedAsAccessNumber": "หมายเลขลงทะเบียนไม่สามารถใช้เป็นหมายเลขการเข้าถึงการยืนยันได้",
@@ -553,5 +553,14 @@
   "returnToSecurityCodeMode": "กลับสู่โหมดรหัสความปลอดภัย",
   "enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted": "กรุณาป้อนหมายเลขโทรศัพท์มือถือที่เกี่ยวข้องของพวกเขา สามารถละเว้นรหัสประเทศได้",
   "mobileNumberForNameIsIncorrect": "หมายเลขมือถือของ ${name} ไม่ถูกต้อง",
-  "matchingVerificationStrategyIs": "กลยุทธ์การตรวจสอบการจับคู่คือ:"
+  "matchingVerificationStrategyIs": "กลยุทธ์การตรวจสอบการจับคู่คือ:",
+  "balanceGreater3ICP_noNeedPourFuel": "สมดุลมากกว่า 3 ICP ไม่จำเป็นต้องเติมเชื้อเพลิงในตอนนี้",
+  "escrowAccount": "บัญชีเอสโครว์",
+  "fuelRelay": "รีเลย์เชื้อเพลิง",
+  "pourFuel": "เทเชื้อเพลิง",
+  "fuelState": "สถานะเชื้อเพลิง",
+  "pouringFuelTips": "การเติมเชื้อเพลิงไม่ได้ทำให้คุณได้รับข้อดีหรือข้อเสียใดๆ แต่มีจุดประสงค์เพื่อเสริมประสบการณ์ระบบเดลต้า",
+  "sponsorDevelopersByWatchingAds": "สนับสนุนนักพัฒนาโดยการดูโฆษณา",
+  "status": "สถานะ",
+  "date": "วันที่"
 }

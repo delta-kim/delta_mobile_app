@@ -471,7 +471,7 @@
 	"referrerIdDoesNotExist": "リファラーIDが存在しません！",
 	"didIsIncorrectOrInvalid": "DIDが正しくないか無効である！",
 	"accessTokenIsIncorrectOrInvalid": "accessToken が不正または無効です！",
-	"minimumWithdrawalAmountIs9USD": "1回の引き出しで最低9USD",
+	"minimumWithdrawalAmountIs1USD": "1回の引き出しで最低1USD",
 	"miningTimeIsNotYet": "まだ採掘する時期じゃない。",
 	"alreadyExists_pleaseDoNotRepeatedly": "すでに存在するので、再度追加しないでください！",
 	"registrationNumberCannotBeUsedAsAccessNumber": "登録番号を認証アクセス番号として使用できない",
@@ -553,5 +553,14 @@
 	"returnToSecurityCodeMode": "セキュリティ コード モードに戻る",
 	"enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted": "関連付けられている携帯電話番号を入力してください。国番号は省略できます。",
 	"mobileNumberForNameIsIncorrect": "${name} の携帯電話番号が正しくありません",
-	"matchingVerificationStrategyIs": "一致する検証戦略は次のとおりです:"
+	"matchingVerificationStrategyIs": "一致する検証戦略は次のとおりです:",
+	"balanceGreater3ICP_noNeedPourFuel": "残高が 3 ICP より大きいため、今のところ燃料を注ぐ必要はありません。",
+	"escrowAccount": "エスクローアカウント",
+	"fuelRelay": "燃料リレー",
+	"pourFuel": "燃料を注ぐ",
+	"fuelState": "燃料状態",
+	"pouringFuelTips": "燃料を注ぐことでメリットやデメリットが生じることはありません。その目的は、Delta システムのエクスペリエンスを充実させることです。",
+	"sponsorDevelopersByWatchingAds": "広告を見て開発者をスポンサーする",
+	"status": "ステータス",
+	"date": "日付"
 }

@@ -471,7 +471,7 @@
   "referrerIdDoesNotExist": "Identyfikator strony odsyłającej nie istnieje!",
   "didIsIncorrectOrInvalid": "DID jest nieprawidłowy lub nieważny!",
   "accessTokenIsIncorrectOrInvalid": "Token dostępu jest nieprawidłowy lub nieważny!",
-  "minimumWithdrawalAmountIs9USD": "Minimum 9USD za pojedynczą wypłatę",
+  "minimumWithdrawalAmountIs1USD": "Minimum 1USD za pojedynczą wypłatę",
   "miningTimeIsNotYet": "Jeszcze nie czas na kopanie.",
   "alreadyExists_pleaseDoNotRepeatedly": "Już istnieje, nie dodawaj go ponownie!",
   "registrationNumberCannotBeUsedAsAccessNumber": "Nie można użyć numeru rejestracyjnego jako numeru dostępu do uwierzytelniania",
@@ -553,5 +553,14 @@
   "returnToSecurityCodeMode": "Powrót do trybu kodu bezpieczeństwa",
   "enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted": "Wprowadź powiązany numer telefonu komórkowego. Kod kraju można pominąć.",
   "mobileNumberForNameIsIncorrect": "Numer telefonu komórkowego ${name} jest niepoprawny",
-  "matchingVerificationStrategyIs": "Strategia weryfikacji dopasowania to:"
+  "matchingVerificationStrategyIs": "Strategia weryfikacji dopasowania to:",
+  "balanceGreater3ICP_noNeedPourFuel": "Saldo jest większe niż 3 ICP, na razie nie ma potrzeby dolewania paliwa.",
+  "escrowAccount": "Rachunek powierniczy",
+  "fuelRelay": "Przekaźnik paliwa",
+  "pourFuel": "Wlej paliwo",
+  "fuelState": "Stan paliwa",
+  "pouringFuelTips": "Wlewanie paliwa nie przynosi żadnych korzyści ani wad, jego celem jest wzbogacenie doświadczenia z systemem Delta",
+  "sponsorDevelopersByWatchingAds": "Sponsoruj programistów, oglądając reklamy",
+  "status": "Status",
+  "date": "Data"
 }

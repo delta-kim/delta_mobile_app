@@ -469,7 +469,7 @@
     "referrerIdDoesNotExist": "ID на препоръчителя не съществува!",
     "didIsIncorrectOrInvalid": "DID е неправилен или невалиден！",
     "accessTokenIsIncorrectOrInvalid": "Токънът за достъп е неправилен или невалиден！",
-    "minimumWithdrawalAmountIs9USD": "Минималната сума за теглене е 9USD",
+    "minimumWithdrawalAmountIs1USD": "Минималната сума за теглене е 1USD",
     "miningTimeIsNotYet": "Времето за добиване още не е настъпило",
     "alreadyExists_pleaseDoNotRepeatedly": "Вече съществува, моля, не добавяйте отново!",
     "registrationNumberCannotBeUsedAsAccessNumber": "Този номер не може да бъде използван като номер за валидатор",
@@ -552,5 +552,14 @@
     "returnToSecurityCodeMode": "Връщане към режим на код за сигурност",
     "enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted": "Моля, въведете свързания им мобилен номер. Кодът на държавата може да бъде пропуснат.",
     "mobileNumberForNameIsIncorrect": "Мобилният номер на ${name} е неправилен",
-    "matchingVerificationStrategyIs": "Стратегията за проверка на съответствието е:"
+    "matchingVerificationStrategyIs": "Стратегията за проверка на съответствието е:",
+    "balanceGreater3ICP_noNeedPourFuel": "Салдо по-голямо от 3 ICP, няма нужда да се налива гориво за момента.",
+    "escrowAccount": "Escrow акаунт",
+    "fuelRelay": "Реле за гориво",
+    "pourFuel": "Наливане на гориво",
+    "fuelState": "състояние на гориво",
+    "pouringFuelTips": "Наливането на гориво не ви носи никакви предимства или недостатъци, целта му е да обогати изживяването на системата Delta.",
+    "sponsorDevelopersByWatchingAds": "Спонсорирайте разработчиците, като гледате реклами",
+    "status": "Състояние",
+    "date": "Дата"
 }

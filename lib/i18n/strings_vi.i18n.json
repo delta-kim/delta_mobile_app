@@ -471,7 +471,7 @@
   "referrerIdDoesNotExist": "ID người giới thiệu không tồn tại!",
   "didIsIncorrectOrInvalid": "DID không chính xác hoặc không hợp lệ!",
   "accessTokenIsIncorrectOrInvalid": "accessToken không chính xác hoặc không hợp lệ!",
-  "minimumWithdrawalAmountIs9USD": "Số tiền rút tối thiểu một lần là 9USD",
+  "minimumWithdrawalAmountIs1USD": "Số tiền rút tối thiểu một lần là 1USD",
   "miningTimeIsNotYet": "Thời điểm khai thác vẫn chưa đến",
   "alreadyExists_pleaseDoNotRepeatedly": "Đã tồn tại rồi, vui lòng không thêm lại!",
   "registrationNumberCannotBeUsedAsAccessNumber": "Số đăng ký không thể được sử dụng làm số truy cập xác minh",
@@ -553,5 +553,14 @@
   "returnToSecurityCodeMode": "Quay lại chế độ mã bảo mật",
   "enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted": "Vui lòng nhập số điện thoại di động liên kết của họ. Mã quốc gia có thể được bỏ qua.",
   "mobileNumberForNameIsIncorrect": "Số điện thoại di động của ${name} không đúng",
-  "matchingVerificationStrategyIs": "Chiến lược xác minh phù hợp là:"
+  "matchingVerificationStrategyIs": "Chiến lược xác minh phù hợp là:",
+  "balanceGreater3ICP_noNeedPourFuel": "Số dư lớn hơn 3 ICP, hiện tại không cần phải đổ nhiên liệu.",
+  "escrowAccount": "Tài khoản ký quỹ",
+  "fuelRelay": "Rơ le nhiên liệu",
+  "pourFuel": "Đổ nhiên liệu",
+  "fuelState": "Trạng thái nhiên liệu",
+  "pouringFuelTips": "Việc đổ nhiên liệu không mang lại cho bạn bất kỳ lợi thế hay bất lợi nào, mục đích của nó là làm phong phú thêm trải nghiệm hệ thống Delta.",
+  "sponsorDevelopersByWatchingAds": "Tài trợ cho các nhà phát triển bằng cách xem quảng cáo",
+  "status": "Trạng thái",
+  "date": "Ngày"
 }

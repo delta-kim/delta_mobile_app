@@ -473,7 +473,7 @@
   "referrerIdDoesNotExist": "রেফারার আইডি নেই!",
   "didIsIncorrectOrInvalid": "ডিআইডি ভুল নাকি অবৈধ!",
   "accessTokenIsIncorrectOrInvalid": "অ্যাক্সেস টোকেন ভুল বা অবৈধ!",
-  "minimumWithdrawalAmountIs9USD": "এক সময়ের জন্য সর্বনিম্ন উত্তোলনের পরিমাণ হল 9USD৷",
+  "minimumWithdrawalAmountIs1USD": "এক সময়ের জন্য সর্বনিম্ন উত্তোলনের পরিমাণ হল 1USD৷",
   "miningTimeIsNotYet": "খনির সময় এখনও আসেনি",
   "alreadyExists_pleaseDoNotRepeatedly": "ইতিমধ্যেই বিদ্যমান, দয়া করে আবার যোগ করবেন না!",
   "registrationNumberCannotBeUsedAsAccessNumber": "নিবন্ধন নম্বর যাচাইকরণ অ্যাক্সেস নম্বর হিসাবে ব্যবহার করা যাবে না",
@@ -555,5 +555,14 @@
   "returnToSecurityCodeMode": "নিরাপত্তা কোড মোডে ফিরে যান",
   "enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted": "অনুগ্রহ করে তাদের সংশ্লিষ্ট মোবাইল ফোন নম্বর লিখুন। দেশের কোড বাদ দেওয়া যেতে পারে।",
   "mobileNumberForNameIsIncorrect": "${name} এর মোবাইল নম্বরটি ভুল",
-  "matchingVerificationStrategyIs": "ম্যাচিং যাচাইকরণ কৌশল হল:"
+  "matchingVerificationStrategyIs": "ম্যাচিং যাচাইকরণ কৌশল হল:",
+  "balanceGreater3ICP_noNeedPourFuel": "ব্যালেন্স 3 ICP-এর বেশি, অস্থায়ীভাবে জ্বালানি ঢালার দরকার নেই।",
+  "escrowAccount": "এসক্রো অ্যাকাউন্ট",
+  "fuelRelay": "ফুয়েল রিলে",
+  "pourFuel": "জ্বালানি ঢালা",
+  "fuelState": "জ্বালানির অবস্থা",
+  "pouringFuelTips": "জ্বালানি ঢালা আপনার কোন সুবিধা বা অসুবিধা বয়ে আনবে না এবং এর উদ্দেশ্য হল ডেল্টা সিস্টেমের অভিজ্ঞতাকে সমৃদ্ধ করা।",
+  "sponsorDevelopersByWatchingAds": "বিজ্ঞাপন দেখে ডেভেলপারদের স্পনসর করুন",
+  "status": "স্থিতি",
+  "date": "তারিখ"
 }

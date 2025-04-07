@@ -469,7 +469,7 @@
      "referrerIdDoesNotExist": "referrerId does not exist!",
      "didIsIncorrectOrInvalid": "The DID is incorrect or invalid！",
      "accessTokenIsIncorrectOrInvalid": "The accessToken is incorrect or invalid！",
-     "minimumWithdrawalAmountIs9USD": "The minimum withdrawal amount is 9USD",
+     "minimumWithdrawalAmountIs1USD": "The minimum withdrawal amount is 1USD",
      "miningTimeIsNotYet": "Mining time is not yet",
      "alreadyExists_pleaseDoNotRepeatedly": "Already exists, please do not add repeatedly!",
      "registrationNumberCannotBeUsedAsAccessNumber": "Registration number cannot be used as verification access number",
@@ -552,5 +552,14 @@
      "returnToSecurityCodeMode": "Return to security code mode",
      "enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted": "Please enter their associated mobile phone number, country code can be omitted.",
      "mobileNumberForNameIsIncorrect": "The mobile number for ${name} is incorrect",
-     "matchingVerificationStrategyIs": "The matching verification strategy is:"
+     "matchingVerificationStrategyIs": "The matching verification strategy is:",
+     "balanceGreater3ICP_noNeedPourFuel": "If the balance is greater than 3 ICP, there is no need to pour fuel temporarily.",
+     "escrowAccount": "Escrow Account",
+     "fuelRelay": "Fuel Relay",
+     "pourFuel": "Pour Fuel",
+     "fuelState": "fuel State",
+     "pouringFuelTips": "Pouring fuel will not bring you any advantages or disadvantages, its purpose is to enrich the Delta system experience.",
+     "sponsorDevelopersByWatchingAds": "Sponsor developers by watching ads",
+     "status": "Status",
+     "date": "Date"
 }

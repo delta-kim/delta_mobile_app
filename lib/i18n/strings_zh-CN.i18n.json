@@ -470,7 +470,7 @@
 	"referrerIdDoesNotExist": "推荐人 ID 不存在！",
 	"didIsIncorrectOrInvalid": "DID 不正确或无效！",
 	"accessTokenIsIncorrectOrInvalid": "accessToken 不正确或无效！",
-	"minimumWithdrawalAmountIs9USD": "一次提现金额最少9USD",
+	"minimumWithdrawalAmountIs1USD": "一次提现金额最少1USD",
 	"miningTimeIsNotYet": "挖矿时间尚未到",
 	"alreadyExists_pleaseDoNotRepeatedly": "已存在，请不要重复添加！",
 	"registrationNumberCannotBeUsedAsAccessNumber": "不能使用注册号码作为验证接入号",
@@ -553,5 +553,14 @@
 	"returnToSecurityCodeMode": "返回安全码模式",
 	"enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted": "请输入它们的关联手机号码，可省略国家代码。",
 	"mobileNumberForNameIsIncorrect": "${name}的移动号码不正确",
-	"matchingVerificationStrategyIs": "匹配到的验证策略为："
+	"matchingVerificationStrategyIs": "匹配到的验证策略为：",
+	"balanceGreater3ICP_noNeedPourFuel": "余额大于3 ICP暂时无需倒入燃料。",
+	"escrowAccount": "托管账户",
+	"fuelRelay": "燃料中继",
+	"pourFuel": "倒入燃料",
+	"fuelState": "燃料状态",
+	"pouringFuelTips": "倒入燃料不会给您带来任何的好处或坏处，其目的为了丰富Delta系统体验。",
+	"sponsorDevelopersByWatchingAds": "通过观看广告赞助开发者",
+	"status": "状态",
+	"date": "日期"
 }

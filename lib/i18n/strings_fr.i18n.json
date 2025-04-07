@@ -471,7 +471,7 @@
 	"referrerIdDoesNotExist": "L'ID du référent n'existe pas !",
 	"didIsIncorrectOrInvalid": "La DID est incorrecte ou invalide !",
 	"accessTokenIsIncorrectOrInvalid": "Le code d'accès est incorrect ou invalide !",
-	"minimumWithdrawalAmountIs9USD": "Minimum 9USD pour un retrait unique",
+	"minimumWithdrawalAmountIs1USD": "Minimum 1USD pour un retrait unique",
 	"miningTimeIsNotYet": "Il n'est pas encore temps de miner.",
 	"alreadyExists_pleaseDoNotRepeatedly": "Existe déjà, ne l'ajoutez pas à nouveau !",
 	"registrationNumberCannotBeUsedAsAccessNumber": "Impossible d'utiliser le numéro d'enregistrement comme numéro d'accès à l'authentification",
@@ -553,5 +553,14 @@
 	"returnToSecurityCodeMode": "Retour au mode code de sécurité",
 	"enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted": "Veuillez saisir le numéro de téléphone mobile associé. L'indicatif du pays peut être omis.",
 	"mobileNumberForNameIsIncorrect": "Le numéro de téléphone portable de ${name} est incorrect",
-	"matchingVerificationStrategyIs": "La stratégie de vérification correspondante est: "
+	"matchingVerificationStrategyIs": "La stratégie de vérification correspondante est: ",
+	"balanceGreater3ICP_noNeedPourFuel": "Le solde est supérieur à 3 ICP, pas besoin de verser de carburant pour le moment.",
+	"escrowAccount": "Compte séquestre",
+	"fuelRelay": "Relais de carburant",
+	"pourFuel": "Verser du carburant",
+	"fuelState": "État du carburant",
+	"pouringFuelTips": "Verser du carburant ne vous apporte aucun avantage ni inconvénient, son but est d'enrichir l'expérience du système Delta.",
+	"sponsorDevelopersByWatchingAds": "Sponsorisez des développeurs en regardant des publicités",
+	"status": "Statut",
+	"date": "Date"
 }
