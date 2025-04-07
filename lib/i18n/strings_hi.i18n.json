@@ -552,5 +552,14 @@
      "returnToSecurityCodeMode": "सुरक्षा कोड मोड पर लौटें",
      "enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted": "कृपया उनका संबंधित मोबाइल नंबर दर्ज करें, देश कोड छोड़ सकते हैं।",
      "mobileNumberForNameIsIncorrect": "${name} का मोबाइल नंबर ग़लत है",
-     "matchingVerificationStrategyIs": "सत्यापन के लिए चुनी गई रणनीति:"
+     "matchingVerificationStrategyIs": "सत्यापन के लिए चुनी गई रणनीति:",
+     "balanceGreater3ICP_noNeedPourFuel": "शेष 3 ICP से अधिक है, फिलहाल ईंधन डालने की आवश्यकता नहीं है।",
+     "escrowAccount": "एस्क्रो खाता",
+     "fuelRelay": "ईंधन रिले",
+     "pourFuel": "ईंधन डालें",
+     "fuelState": "ईंधन की स्थिति",
+     "pouringFuelTips": "ईंधन डालने से आपको कोई लाभ या हानि नहीं होती है, इसका उद्देश्य डेल्टा सिस्टम अनुभव को समृद्ध करना है।",
+     "sponsorDevelopersByWatchingAds": "विज्ञापन देखकर डेवलपर्स को प्रायोजित करें",
+     "status": "स्थिति",
+     "date": "तारीख"
 }
