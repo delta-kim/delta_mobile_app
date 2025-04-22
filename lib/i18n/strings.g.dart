@@ -3,10 +3,10 @@
 /// Original: lib/i18n
 /// To regenerate, run: `dart run slang`
 ///
-/// Locales: 20
-/// Strings: 11199 (559 per locale)
+/// Locales: 21
+/// Strings: 12241 (582 per locale)
 ///
-/// Built on 2025-04-07 at 02:31 UTC
+/// Built on 2025-04-21 at 02:36 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -33,6 +33,7 @@ enum AppLocale with BaseAppLocale<AppLocale, Translations> {
 	el(languageCode: 'el', build: _StringsEl.build),
 	es(languageCode: 'es', build: _StringsEs.build),
 	fr(languageCode: 'fr', build: _StringsFr.build),
+	hi(languageCode: 'hi', build: _StringsHi.build),
 	it(languageCode: 'it', build: _StringsIt.build),
 	ja(languageCode: 'ja', build: _StringsJa.build),
 	ko(languageCode: 'ko', build: _StringsKo.build),
@@ -467,13 +468,13 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	String get tempDepositAddressTip3 => '3.Please do not attempt to deposit funds that do not match any of the parameters in the above tips, otherwise the amount will be lost.';
 	String get tempDepositAddressTip4 => '4.If you need to deposit other types of assets, please switch to the corresponding currency page and parameter options to apply for a new address.';
 	TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-		const TextSpan(text: 'The address will expire after '),
+		const TextSpan(text: 'This address will expire in '),
 		diff,
-		const TextSpan(text: ', and the validity period can be '),
-		tap('manually extended'),
-		const TextSpan(text: ' within 12 hours before the expiration.'),
+		const TextSpan(text: '. You can '),
+		tap('manually extend'),
+		const TextSpan(text: ' the validity period within 6 hours before expiration.'),
 	]);
-	String get canOnlyRenewWithin12hoursInAdvance => 'Can only renew within 12 hours in advance';
+	String get canOnlyRenewWithin6hoursInAdvance => 'Can only be renewed within 6 hours in advance';
 	String get theReceivingAddressValidForLongtime => 'The receiving address is valid for a long time.';
 	String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'The receiving address is valid for a long time and will be automatically credited in real time.';
 	String get confirmDeposited => 'confirm Deposited';
@@ -831,6 +832,29 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	String get sponsorDevelopersByWatchingAds => 'Sponsor developers by watching ads';
 	String get status => 'Status';
 	String get date => 'Date';
+	String get assetApplicationIsInProgressTip => 'Asset application in progress, please try again in 3 seconds.';
+	String get delete => 'Delete';
+	String get deleteVerifierTip => 'When deleting the verifier authority, all related score data will be deleted at the same time, but the rewards already obtained will not be affected.';
+	String get deleteVerifierStatusTip => 'Please set it to paused state before deleting';
+	String pleaseEnterXtoConfirm({required Object text}) => 'Please enter "${text}" to confirm';
+	String get localSecurity => 'Local Security';
+	String get deviceLock => 'Device Lock';
+	String get patternLock => 'Pattern Lock';
+	String get none => 'None';
+	String get exist => 'Exists';
+	String get prompt => 'Prompt:';
+	String get localSecurityTip1 => '1. Local security authentication is used to confirm identity during some sensitive operations. Its purpose is to prevent the device from being controlled by others and to ensure the security of the account.';
+	String get localSecurityTip2 => '2. Pattern lock is a supplementary solution when the device lock is not supported or incompatible. Generally, there is no need to set a pattern lock when the device lock is available.';
+	String get localSecurityTip3 => '3. When your pattern lock is forgotten, it can only be cleared by clearing the application data or reinstalling the application.';
+	String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'Device authentication is about to be called. If an error or exception occurs, please enter the "${localSecurity}" option on the "${menu}" page for testing and further settings.';
+	String get pleaseDrawUnlockPattern => 'Please draw your unlock pattern';
+	String get addPatternLock => 'Add pattern lock';
+	String get cannotBeLessThan8Dots => 'Cannot be less than 8 dots';
+	String get pleaseRepeatThePattern => 'Please repeat the pattern';
+	String get notMatchFirstValidPattern => 'Does not match the first valid pattern';
+	String get deletePatternLock => 'Delete pattern lock';
+	String get notMatchExistingPattern => 'Does not match the existing pattern';
+	String get localAuthentication => 'local Auth.';
 }
 
 // Path: <root>
@@ -1158,13 +1182,13 @@ class _StringsBg implements Translations {
 	@override String get tempDepositAddressTip3 => '3. Моля, не опитвайте да депозирате средства, които не съвпадат точно с всички параметри от горните съвети, в противен случай сумата ще бъде загубена.';
 	@override String get tempDepositAddressTip4 => '4. Ако трябва да депозирате други видове активи, моля, превключете към съответната страница с валута и опции за параметри, за да заявите нов адрес.';
 	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-		const TextSpan(text: 'Адресът ще изтече след '),
+		const TextSpan(text: 'Този адрес ще изтече след '),
 		diff,
-		const TextSpan(text: ', и периодът на валидност може да бъде '),
-		tap('ръчно удължен'),
-		const TextSpan(text: ' в рамките на 12 часа преди изтичането.'),
+		const TextSpan(text: '. Можете да '),
+		tap('manually extend'),
+		const TextSpan(text: ' периода на валидност в рамките на 6 часа преди изтичането.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'Може да бъде удължен само в рамките на 12 часа предварително';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'Може да се поднови само в рамките на 6 часа предварително';
 	@override String get theReceivingAddressValidForLongtime => 'Адресът за получаване е валиден за дълго време.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'Адресът за получаване е валиден за дълго време и ще бъде автоматично кредитиран в реално време.';
 	@override String get confirmDeposited => 'Потвърдете депозита';
@@ -1522,6 +1546,29 @@ class _StringsBg implements Translations {
 	@override String get sponsorDevelopersByWatchingAds => 'Спонсорирайте разработчиците, като гледате реклами';
 	@override String get status => 'Състояние';
 	@override String get date => 'Дата';
+	@override String get assetApplicationIsInProgressTip => 'Прилагането на актив се изпълнява, моля, опитайте отново след 3 секунди.';
+	@override String get delete => 'Изтриване';
+	@override String get deleteVerifierTip => 'Когато изтривате разрешенията на верификатор, всички свързани данни за резултатите ще бъдат изтрити едновременно, но вече получените награди няма да бъдат засегнати.';
+	@override String get deleteVerifierStatusTip => 'Моля, задайте го на пауза, преди да изтриете';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'Моля, въведете "${text}", за да потвърдите';
+	@override String get localSecurity => 'Локална сигурност';
+	@override String get deviceLock => 'Заключване на устройството';
+	@override String get patternLock => 'Заключване на шаблон';
+	@override String get none => 'няма';
+	@override String get exist => 'съществува';
+	@override String get prompt => 'Подкана:';
+	@override String get localSecurityTip1 => '1. Локалното удостоверяване на сигурността се използва за потвърждаване на самоличността по време на някои чувствителни операции. Целта му е да предотврати контролирането на устройството от други и да гарантира сигурността на акаунта.';
+	@override String get localSecurityTip2 => '2. Заключването на шаблон е допълнително решение, когато заключването на устройството не се поддържа или е несъвместимо. По принцип няма нужда да задавате заключване на модел, когато заключването на устройството е налично.';
+	@override String get localSecurityTip3 => '3. Когато вашето заключване на шаблон е забравено, можете само да изчистите данните на приложението или да го инсталирате отново, за да го изчистите.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'Удостоверяването на устройството е на път да бъде извикано. Ако възникне грешка или изключение, моля, отидете на опцията "${localSecurity}" на страницата "${menu}" за тестване и допълнителни настройки.';
+	@override String get pleaseDrawUnlockPattern => 'Моля, начертайте шаблона за отключване';
+	@override String get addPatternLock => 'Добавяне на заключване на шаблон';
+	@override String get cannotBeLessThan8Dots => 'Не може да бъде по-малко от 8 точки';
+	@override String get pleaseRepeatThePattern => 'Моля, повторете модела отново';
+	@override String get notMatchFirstValidPattern => 'Не съответства на първия валиден модел на чертеж';
+	@override String get deletePatternLock => 'Изтриване на заключване на шаблон';
+	@override String get notMatchExistingPattern => 'Не съответства на съществуващ модел';
+	@override String get localAuthentication => 'Локално удостоверяване';
 }
 
 // Path: <root>
@@ -1852,14 +1899,14 @@ class _StringsBn implements Translations {
 	@override String get tempDepositAddressTip3 => '3. অনুগ্রহ করে এমন তহবিল জমা করার চেষ্টা করবেন না যা উপরের টিপসগুলির সাথে কোনও প্যারামিটারের সাথে মেলে না, অন্যথায় পরিমাণটি হারিয়ে যাবে৷';
 	@override String get tempDepositAddressTip4 => '4. আপনি যদি অন্য ধরনের সম্পদ জমা করতে চান, তাহলে অনুগ্রহ করে একটি নতুন ঠিকানার জন্য আবেদন করার জন্য সংশ্লিষ্ট মুদ্রা পৃষ্ঠা এবং প্যারামিটার বিকল্পগুলিতে স্যুইচ করুন।';
 	@override String get applyExtensionOfValidity => 'মেয়াদ বাড়ানোর জন্য আবেদন করুন';
-	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap }) => TextSpan(children: [
-		const TextSpan(text: 'ঠিকানাটির মেয়াদ '),
+	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
+		const TextSpan(text: 'এই ঠিকানাটির মেয়াদ '),
 		diff,
-		const TextSpan(text: ' পরে শেষ হয়ে যাবে, এবং মেয়াদ শেষ হওয়ার 12 ঘন্টার মধ্যে আপনি '),
-		tap ('ম্যানুয়ালি প্রসারিত'),
-		const TextSpan(text: ' করতে পারেন৷'),
+		const TextSpan(text: '-এ শেষ হবে। মেয়াদ শেষ হওয়ার 6 ঘণ্টার মধ্যে আপনি '),
+		tap('manually extend'),
+		const TextSpan(text: ' করতে পারেন।'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'শুধুমাত্র 12 ঘন্টা আগে পুনর্নবীকরণ করা যাবে';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'শুধুমাত্র 6 ঘন্টা আগে থেকেই নবায়ন করা যাবে';
 	@override String get theReceivingAddressValidForLongtime => 'এই পেমেন্ট ঠিকানা দীর্ঘ সময়ের জন্য বৈধ.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'এই পেমেন্ট ঠিকানাটি দীর্ঘ সময়ের জন্য বৈধ এবং রিয়েল টাইমে স্বয়ংক্রিয়ভাবে জমা হবে।';
 	@override String get confirmDeposited => 'জমা নিশ্চিত করুন';
@@ -2216,6 +2263,29 @@ class _StringsBn implements Translations {
 	@override String get sponsorDevelopersByWatchingAds => 'বিজ্ঞাপন দেখে ডেভেলপারদের স্পনসর করুন';
 	@override String get status => 'স্থিতি';
 	@override String get date => 'তারিখ';
+	@override String get assetApplicationIsInProgressTip => 'সম্পদ আবেদন প্রক্রিয়াধীন, অনুগ্রহ করে ৩ সেকেন্ডের মধ্যে আবার চেষ্টা করুন।';
+	@override String get delete => 'মুছুন';
+	@override String get deleteVerifierTip => 'একটি যাচাইকারীর অনুমতি মুছে ফেলার সময়, সমস্ত সম্পর্কিত স্কোর ডেটা একই সময়ে মুছে ফেলা হবে, তবে ইতিমধ্যে প্রাপ্ত পুরস্কারগুলি প্রভাবিত হবে না।';
+	@override String get deleteVerifierStatusTip => 'মুছে ফেলার আগে দয়া করে এটিকে বিরতি দেওয়া অবস্থায় সেট করুন';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'নিশ্চিত করতে দয়া করে "${text}" লিখুন';
+	@override String get localSecurity => 'স্থানীয় নিরাপত্তা';
+	@override String get deviceLock => 'ডিভাইস লক';
+	@override String get patternLock => 'প্যাটার্ন লক';
+	@override String get none => 'কিছুই না';
+	@override String get exist => 'বিদ্যমান';
+	@override String get prompt => 'প্রম্পট:';
+	@override String get localSecurityTip1 => '1. কিছু সংবেদনশীল ক্রিয়াকলাপের সময় পরিচয় নিশ্চিত করতে স্থানীয় নিরাপত্তা প্রমাণীকরণ ব্যবহার করা হয়। এর উদ্দেশ্য হল ডিভাইসটিকে অন্যদের দ্বারা নিয়ন্ত্রিত হওয়া থেকে বিরত রাখা এবং অ্যাকাউন্টের নিরাপত্তা নিশ্চিত করা।';
+	@override String get localSecurityTip2 => '2. প্যাটার্ন লক হল একটি সম্পূরক সমাধান যখন ডিভাইস লক সমর্থিত বা বেমানান। সাধারণত, ডিভাইস লক উপলব্ধ থাকলে প্যাটার্ন লক সেট করার কোন প্রয়োজন নেই।';
+	@override String get localSecurityTip3 => '3. যখন আপনার প্যাটার্ন লকটি ভুলে যায়, তখন আপনি শুধুমাত্র অ্যাপের ডেটা সাফ করতে পারেন বা এটি সাফ করতে অ্যাপটি পুনরায় ইনস্টল করতে পারেন।';
+	@override String deviceAuthFirstTip({required Object menu, required Object localSecurity}) => 'ডিভাইস প্রমাণীকরণ কল করা হতে চলেছে। যদি কোনো ত্রুটি বা ব্যতিক্রম ঘটে, অনুগ্রহ করে পরীক্ষা এবং আরও সেটিংসের জন্য "${menu}" পৃষ্ঠার "${localSecurity}" বিকল্পে যান।';
+	@override String get pleaseDrawUnlockPattern => 'অনুগ্রহ করে আনলক প্যাটার্ন আঁকুন';
+	@override String get addPatternLock => 'প্যাটার্ন লক যোগ করুন';
+	@override String get cannotBeLessThan8Dots => '8টি বিন্দুর কম হতে পারে না';
+	@override String get pleaseRepeatThePattern => 'দয়া করে আবার প্যাটার্নটি পুনরাবৃত্তি করুন';
+	@override String get notMatchFirstValidPattern => 'প্রথম বৈধ অঙ্কন প্যাটার্নের সাথে মেলে না';
+	@override String get deletePatternLock => 'প্যাটার্ন লক মুছুন';
+	@override String get notMatchExistingPattern => 'একটি বিদ্যমান প্যাটার্নের সাথে মেলে না';
+	@override String get localAuthentication => 'স্থানীয় প্রমাণীকরণ';
 }
 
 // Path: <root>
@@ -2543,13 +2613,13 @@ class _StringsCkb implements Translations {
 	@override String get tempDepositAddressTip3 => '3.تکایە هەوڵ مەدە ئەو پارانە دابنێیت کە لەگەڵ هیچ کام لە پارامێتەرەکانی ناو ئامۆژگارییەکانی سەرەوەدا ناگونجێت، ئەگەرنا بڕە پارەکە لەدەست دەچێت.';
 	@override String get tempDepositAddressTip4 => '4.ئەگەر پێویستت بە دانانی جۆرەکانی تری سەروەت و سامانە، تکایە بگۆڕە بۆ لاپەڕەی دراوی گونجاو و هەڵبژاردەکانی پارامێتەر بۆ ئەوەی داوای ناونیشانێکی نوێ بکەیت.';
 	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-		const TextSpan(text: 'ناونیشانەکە دوای '),
+		const TextSpan(text: 'ئەم ناونیشانە لە '),
 		diff,
-		const TextSpan(text: ' بەسەر دەچێت، و ماوەی ڕەوایی دەتوانرێت '),
-		tap('بە دەست درێژکراوەتەوە'),
-		const TextSpan(text: ' لە ماوەی 12 کاتژمێر پێش بەسەرچوونەکە.'),
+		const TextSpan(text: ' بەسەر دەچێت. دەتوانیت ماوەی ڕەوایی '),
+		tap('بە دەست درێژ بکەیتەوە'),
+		const TextSpan(text: ' لە ماوەی 6 کاتژمێر پێش بەسەرچوون.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'تەنها دەتوانرێت لە ماوەی 12 کاتژمێر پێشوەختە نوێ بکرێتەوە';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'تەنها دەتوانرێت لە ماوەی ٦ کاتژمێر پێشوەختە نوێ بکرێتەوە';
 	@override String get theReceivingAddressValidForLongtime => 'ناونیشانی وەرگرتن بۆ ماوەیەکی زۆر کاریگەرە.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'ناونیشانی وەرگرتن بۆ ماوەیەکی زۆر کاریگەرە و لە کاتی ڕاستەقینەدا بە شێوەیەکی ئۆتۆماتیکی کرێدت دەکرێت.';
 	@override String get confirmDeposited => 'پاراستنی Deposited';
@@ -2908,6 +2978,29 @@ class _StringsCkb implements Translations {
 	@override String get sponsorDevelopersByWatchingAds => 'سپۆنسەری گەشەپێدەران بە سەیرکردنی ڕێکلامەکان';
 	@override String get status => 'دۆخ';
 	@override String get date => 'بەروار';
+	@override String get assetApplicationIsInProgressTip => 'بەرنامەی سەرمایە لە پێشکەوتندایە، تکایە لە ٣ چرکەدا هەوڵبدەرەوە.';
+	@override String get delete => 'سڕینەوە';
+	@override String get deleteVerifierTip => 'لەکاتی سڕینەوەی مۆڵەتەکانی پشتڕاستکەرەوە، هەموو داتاکانی نمرەی پەیوەندیدار لە یەک کاتدا دەسڕدرێنەوە، بەڵام ئەو پاداشتانەی پێشتر بەدەست هاتوون کاریگەرییان لەسەر نابێت.';
+	@override String get deleteVerifierStatusTip => 'تکایە پێش سڕینەوە بۆ دۆخی وەستان ڕێکبخە';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'تکایە "${text}" داخڵ بکە، بۆ پشتڕاستکردنەوە';
+	@override String get localSecurity => 'ئاسایشی ناوخۆیی';
+	@override String get deviceLock => 'قفڵی ئامێر';
+	@override String get patternLock => 'قفڵی نەخش';
+	@override String get none => 'هیچ';
+	@override String get exist => 'بوونی هەیە';
+	@override String get prompt => 'داواکاری:';
+	@override String get localSecurityTip1 => '1. ڕەسەنایەتی ئاسایشی ناوخۆیی بەکاردێت بۆ پشتڕاستکردنەوەی ناسنامە لە کاتی هەندێک کارە هەستیارەکاندا. مەبەست لێی ڕێگریکردنە لە کۆنترۆڵکردنی ئامێرەکە لەلایەن کەسانی ترەوە و دڵنیابوونە لە ئاسایشی ئەکاونتەکە.';
+	@override String get localSecurityTip2 => '2. قوفڵی نەخش چارەسەرێکی تەواوکەرە کاتێک قوفڵی ئامێرەکە پشتگیری نەکراوە یان ناگونجێت. بەگشتی، پێویست ناکات قوفڵی نەخش دابنرێت کاتێک قوفڵی ئامێرەکە بەردەستە.';
+	@override String get localSecurityTip3 => '3. کاتێک قفڵی نەخشەکەت لەبیرکرا، تەنها دەتوانیت داتاکانی ئەپەکە پاک بکەیتەوە یان ئەپەکە دووبارە دابمەزرێنیتەوە بۆ پاککردنەوەی.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'خەریکە ڕەسەنایەتی ئامێر بانگ دەکرێت. ئەگەر هەڵەیەک یان ئیستسناء ڕوویدا، تکایە بچۆ بۆ هەڵبژاردەی "${localSecurity}" لە لاپەڕەی "${menu}" بۆ تاقیکردنەوە و ڕێکخستنەکانی زیاتر.';
+	@override String get pleaseDrawUnlockPattern => 'تکایە نەخشی کردنەوەی قفڵەکە بکێشە';
+	@override String get addPatternLock => 'زیادکردنی قفڵی نەخش';
+	@override String get cannotBeLessThan8Dots => 'ناتوانرێت لە ٨ خاڵ کەمتر بێت';
+	@override String get pleaseRepeatThePattern => 'تکایە جارێکی تر نەخشەکە دووبارە بکەرەوە';
+	@override String get notMatchFirstValidPattern => 'لەگەڵ یەکەم نەخشی وێنەکێشانی دروستدا ناگونجێت';
+	@override String get deletePatternLock => 'قفڵی نەخش بسڕەوە';
+	@override String get notMatchExistingPattern => 'لەگەڵ نەخشێکی هەبوودا ناگونجێت';
+	@override String get localAuthentication => 'ڕەسەنایەتی ناوخۆیی';
 }
 
 // Path: <root>
@@ -3237,13 +3330,13 @@ class _StringsDe implements Translations {
 	@override String get tempDepositAddressTip4 => '(4) Wenn Sie andere Arten von Vermögenswerten einzahlen möchten, wechseln Sie bitte auf die entsprechende Währungsseite und die Parameteroptionen, um eine neue Adresse zu beantragen.';
 	@override String get applyExtensionOfValidity => 'Antrag auf Verlängerung der Gültigkeitsdauer';
 	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-		const TextSpan(text: 'Diese Adresse läuft nach '),
+		const TextSpan(text: 'Diese Adresse läuft in '),
 		diff,
-		const TextSpan(text: ' ab und ist '),
+		const TextSpan(text: ' ab. Sie können die Gültigkeitsdauer innerhalb von 6 Stunden vor Ablauf '),
 		tap('manuell verlängern'),
-		const TextSpan(text: ' für 12 Stunden vor Ablauf gültig.'),
+		const TextSpan(text: '.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'Kann nur 12 Stunden im Voraus verlängert werden';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'Kann nur innerhalb von 6 Stunden im Voraus verlängert werden';
 	@override String get theReceivingAddressValidForLongtime => 'Diese Adresse ist für eine lange Zeit gültig.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'Diese Sammeladresse ist lange Zeit gültig und wird automatisch in Echtzeit gutgeschrieben.';
 	@override String get confirmDeposited => 'Bestätigung der Hinterlegung';
@@ -3600,6 +3693,29 @@ class _StringsDe implements Translations {
 	@override String get sponsorDevelopersByWatchingAds => 'Sponsern Sie Entwickler, indem Sie sich Werbung ansehen';
 	@override String get status => 'Status';
 	@override String get date => 'Datum';
+	@override String get assetApplicationIsInProgressTip => 'Asset-Anwendung läuft, bitte versuchen Sie es in 3 Sekunden erneut.';
+	@override String get delete => 'Löschen';
+	@override String get deleteVerifierTip => 'Wenn die Berechtigungen eines Prüfers gelöscht werden, werden gleichzeitig alle zugehörigen Punktedaten gelöscht. Die bereits erhaltenen Belohnungen bleiben jedoch davon unberührt.';
+	@override String get deleteVerifierStatusTip => 'Bitte setzen Sie es vor dem Löschen in den pausierten Zustand.';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'Bitte geben Sie zur Bestätigung "${text}" ein.';
+	@override String get localSecurity => 'Lokale Sicherheit';
+	@override String get deviceLock => 'Gerätesperre';
+	@override String get patternLock => 'Mustersperre';
+	@override String get none => 'keine';
+	@override String get exist => 'existiert';
+	@override String get prompt => 'Eingabeaufforderung:';
+	@override String get localSecurityTip1 => '1. Die lokale Sicherheitsauthentifizierung wird zur Bestätigung der Identität bei einigen sensiblen Vorgängen verwendet. Ihr Zweck besteht darin, die Kontrolle des Geräts durch Dritte zu verhindern und die Sicherheit des Kontos zu gewährleisten.';
+	@override String get localSecurityTip2 => '2. Die Mustersperre ist eine ergänzende Lösung, wenn die Gerätesperre nicht unterstützt wird oder inkompatibel ist. Im Allgemeinen ist es nicht notwendig, eine Mustersperre einzurichten, wenn die Gerätesperre verfügbar ist.';
+	@override String get localSecurityTip3 => '3. Wenn Sie Ihr Sperrmuster vergessen haben, können Sie nur die App-Daten löschen oder die App neu installieren, um sie zu löschen.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'Die Geräteauthentifizierung wird aufgerufen. Wenn ein Fehler oder eine Ausnahme auftritt, gehen Sie zum Testen und für weitere Einstellungen zur Option "${localSecurity}" auf der Seite "${menu}".';
+	@override String get pleaseDrawUnlockPattern => 'Bitte zeichnen Sie das Entsperrmuster';
+	@override String get addPatternLock => 'Mustersperre hinzufügen';
+	@override String get cannotBeLessThan8Dots => 'Kann nicht weniger als 8 Punkte sein';
+	@override String get pleaseRepeatThePattern => 'Bitte wiederholen Sie das Muster erneut';
+	@override String get notMatchFirstValidPattern => 'Entspricht nicht dem ersten gültigen Zeichenmuster';
+	@override String get deletePatternLock => 'Mustersperre löschen';
+	@override String get notMatchExistingPattern => 'Entspricht keinem vorhandenen Muster';
+	@override String get localAuthentication => 'Lokale Authentifizierung';
 }
 
 // Path: <root>
@@ -3929,13 +4045,13 @@ class _StringsEl implements Translations {
 	@override String get tempDepositAddressTip4 => '4. Εάν πρέπει να καταθέσετε άλλα είδη περιουσιακών στοιχείων, μεταβείτε στη σελίδα με το αντίστοιχο νόμισμα και τις επιλογές παραμέτρων για να υποβάλετε αίτηση για νέα διεύθυνση.';
 	@override String get applyExtensionOfValidity => 'Αίτηση για παράταση της περιόδου ισχύος';
 	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-		const TextSpan(text: 'Αυτή η διεύθυνση θα λήξει μετά από '),
+		const TextSpan(text: 'Αυτή η διεύθυνση θα λήξει σε '),
 		diff,
-		const TextSpan(text: ' και θα είναι '),
-		tap('manually extend'),
-		const TextSpan(text: ' έγκυρη για 12 ώρες πριν τη λήξη.'),
+		const TextSpan(text: '. Μπορείτε να '),
+		tap('μη αυτόματη επέκταση'),
+		const TextSpan(text: ' την περίοδο ισχύος εντός 6 ωρών πριν από τη λήξη.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'Μπορεί να ανανεωθεί μόνο 12 ώρες νωρίτερα';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'Μπορεί να ανανεωθεί μόνο εντός 6 ωρών νωρίτερα';
 	@override String get theReceivingAddressValidForLongtime => 'Αυτή η διεύθυνση ισχύει για μεγάλο χρονικό διάστημα.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'Αυτή η διεύθυνση συλλογής ισχύει για μεγάλο χρονικό διάστημα και πιστώνεται αυτόματα σε πραγματικό χρόνο.';
 	@override String get confirmDeposited => 'Επιβεβαίωση της κατάθεσης';
@@ -4292,6 +4408,29 @@ class _StringsEl implements Translations {
 	@override String get sponsorDevelopersByWatchingAds => 'Χορηγός προγραμματιστών παρακολουθώντας διαφημίσεις';
 	@override String get status => 'status';
 	@override String get date => 'ημερομηνία';
+	@override String get assetApplicationIsInProgressTip => 'Αίτηση στοιχείου σε εξέλιξη, δοκιμάστε ξανά σε 3 δευτερόλεπτα.';
+	@override String get delete => 'Delete';
+	@override String get deleteVerifierTip => 'Κατά τη διαγραφή των αδειών ενός επαληθευτή, όλα τα σχετικά δεδομένα βαθμολογίας θα διαγραφούν ταυτόχρονα, αλλά οι ανταμοιβές που έχουν ήδη ληφθεί δεν θα επηρεαστούν.';
+	@override String get deleteVerifierStatusTip => 'Ρυθμίστε το σε κατάσταση παύσης πριν από τη διαγραφή';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'Παρακαλώ εισάγετε "${text}", για επιβεβαίωση';
+	@override String get localSecurity => 'Τοπική ασφάλεια';
+	@override String get deviceLock => 'Κλείδωμα συσκευής';
+	@override String get patternLock => 'Κλείδωμα μοτίβου';
+	@override String get none => 'κανένας';
+	@override String get exist => 'υπάρχει';
+	@override String get prompt => 'Prompt:';
+	@override String get localSecurityTip1 => '1. Ο τοπικός έλεγχος ταυτότητας ασφαλείας χρησιμοποιείται για την επιβεβαίωση της ταυτότητας κατά τη διάρκεια ορισμένων ευαίσθητων λειτουργιών. Σκοπός του είναι να αποτρέψει τον έλεγχο της συσκευής από άλλους και να διασφαλίσει την ασφάλεια του λογαριασμού.';
+	@override String get localSecurityTip2 => '2. Το κλείδωμα μοτίβου είναι μια συμπληρωματική λύση όταν το κλείδωμα της συσκευής δεν υποστηρίζεται ή δεν είναι συμβατό. Γενικά, δεν χρειάζεται να ορίσετε ένα κλείδωμα μοτίβου όταν το κλείδωμα της συσκευής είναι διαθέσιμο.';
+	@override String get localSecurityTip3 => '3. Όταν το κλείδωμα μοτίβου σας ξεχαστεί, μπορείτε μόνο να διαγράψετε τα δεδομένα της εφαρμογής ή να εγκαταστήσετε ξανά την εφαρμογή για να το διαγράψετε.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'Ο έλεγχος ταυτότητας συσκευής πρόκειται να κληθεί. Εάν παρουσιαστεί σφάλμα ή εξαίρεση, μεταβείτε στην επιλογή "${localSecurity}" στη σελίδα "${menu}" για δοκιμή και περαιτέρω ρυθμίσεις.';
+	@override String get pleaseDrawUnlockPattern => 'Σχεδιάστε το μοτίβο ξεκλειδώματος';
+	@override String get addPatternLock => 'Προσθήκη κλειδώματος μοτίβου';
+	@override String get cannotBeLessThan8Dots => 'Δεν μπορεί να είναι μικρότερη από 8 τελείες';
+	@override String get pleaseRepeatThePattern => 'Παρακαλώ επαναλάβετε το μοτίβο ξανά';
+	@override String get notMatchFirstValidPattern => 'Δεν ταιριάζει με το πρώτο έγκυρο μοτίβο σχεδίασης';
+	@override String get deletePatternLock => 'Διαγραφή κλειδώματος μοτίβου';
+	@override String get notMatchExistingPattern => 'Δεν ταιριάζει με ένα υπάρχον μοτίβο';
+	@override String get localAuthentication => 'Τοπικός έλεγχος ταυτότητας';
 }
 
 // Path: <root>
@@ -4621,13 +4760,13 @@ class _StringsEs implements Translations {
 	@override String get tempDepositAddressTip4 => '4. Si necesita depositar otros tipos de activos, cambie a la página de la divisa correspondiente y parametrice las opciones para solicitar una nueva dirección.';
 	@override String get applyExtensionOfValidity => 'Solicitud de prórroga';
 	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-		const TextSpan(text: 'Esta dirección expirará después de '),
+		const TextSpan(text: 'Esta dirección caducará en '),
 		diff,
-		const TextSpan(text: ' y será '),
+		const TextSpan(text: '. También puede usar '),
 		tap('manually extend'),
-		const TextSpan(text: ' válida durante 12 horas antes de expirar.'),
+		const TextSpan(text: ' el período de validez dentro de las 6 horas previas al vencimiento.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'Sólo puede renovarse con 12 horas de antelación';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'Solo se puede renovar con 6 horas de antelación';
 	@override String get theReceivingAddressValidForLongtime => 'Esta dirección es válida durante mucho tiempo.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'Esta dirección de cobro es válida durante mucho tiempo y se abona automáticamente en tiempo real.';
 	@override String get confirmDeposited => 'Confirmación del depósito';
@@ -4928,7 +5067,7 @@ class _StringsEs implements Translations {
 	@override String get foundNewVersion => 'Descubra la nueva versión:';
 	@override String get upgradeLink => 'Enlace de actualización:';
 	@override String get deviceDescription => 'Descripción del equipamiento.';
-	@override String get notification30SecondsBeforeMiningStops => '¡Ejecute el recordatorio de notificación 30 segundos antes de que se detenga la minería!';
+	@override String get notification30SecondsBeforeMiningStops => 'Ejecutar recordatorio de notificación 30 segundos antes de que se detenga la extracción!';
 	@override String get goMining => 'Ir a minar';
 	@override String get deltaMiningReminder => 'Recordatorio de minería Delta';
 	@override String get clickToMine_miningIsAboutToStop => '¡Haga clic aquí para minar, la minería se detendrá pronto!';
@@ -4985,6 +5124,29 @@ class _StringsEs implements Translations {
 	@override String get sponsorDevelopersByWatchingAds => 'Patrocina a desarrolladores viendo anuncios';
 	@override String get status => 'Estado';
 	@override String get date => 'Fecha';
+	@override String get assetApplicationIsInProgressTip => 'Solicitud de activo en proceso, inténtelo de nuevo en 3 segundos.';
+	@override String get delete => 'Eliminar';
+	@override String get deleteVerifierTip => 'Al eliminar los permisos de un verificador, se eliminarán simultáneamente todos los datos de puntuación relacionados, pero las recompensas ya obtenidas no se verán afectadas.';
+	@override String get deleteVerifierStatusTip => 'Por favor, ponlo en pausa antes de eliminarlo';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'Por favor, introduzca "${text}", para confirmar';
+	@override String get localSecurity => 'Seguridad local';
+	@override String get deviceLock => 'Bloqueo del dispositivo';
+	@override String get patternLock => 'Bloqueo de patrón';
+	@override String get none => 'ninguno';
+	@override String get exist => 'existe';
+	@override String get prompt => 'Mensaje:';
+	@override String get localSecurityTip1 => '1. La autenticación de seguridad local se utiliza para confirmar la identidad durante ciertas operaciones sensibles. Su propósito es evitar que otros controlen el dispositivo y garantizar la seguridad de la cuenta.';
+	@override String get localSecurityTip2 => '2. El bloqueo de patrón es una solución complementaria cuando el bloqueo del dispositivo no es compatible. Generalmente, no es necesario configurar un bloqueo de patrón cuando el bloqueo del dispositivo está disponible.';
+	@override String get localSecurityTip3 => '3. Si olvidas tu patrón de bloqueo, solo puedes borrar los datos de la aplicación o reinstalarla para borrarlo.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'Se está a punto de ejecutar la autenticación del dispositivo. Si se produce un error o una excepción, acceda a la opción "${localSecurity}" en la página "${menu}" para realizar pruebas y realizar más configuraciones.';
+	@override String get pleaseDrawUnlockPattern => 'Por favor, dibuja el patrón de desbloqueo';
+	@override String get addPatternLock => 'Añadir patrón de bloqueo';
+	@override String get cannotBeLessThan8Dots => 'No puede ser menor a 8 puntos';
+	@override String get pleaseRepeatThePattern => 'Por favor, repita el patrón de nuevo';
+	@override String get notMatchFirstValidPattern => 'No coincide con el primer patrón de dibujo válido';
+	@override String get deletePatternLock => 'Eliminar bloqueo de patrón';
+	@override String get notMatchExistingPattern => 'No coincide con ningún patrón existente';
+	@override String get localAuthentication => 'Autenticación local';
 }
 
 // Path: <root>
@@ -5314,13 +5476,13 @@ class _StringsFr implements Translations {
 	@override String get tempDepositAddressTip4 => '4) Si vous devez déposer d\'autres types d\'actifs, veuillez passer à la page de la devise correspondante et aux options de paramètres pour demander une nouvelle adresse.';
 	@override String get applyExtensionOfValidity => 'Demande de prolongation de la période de validité';
 	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-		const TextSpan(text: 'Cette adresse expirera après '),
+		const TextSpan(text: 'Cette adresse expirera dans '),
 		diff,
-		const TextSpan(text: ' et sera '),
+		const TextSpan(text: '. Vous pouvez '),
 		tap('manually extend'),
-		const TextSpan(text: ' valide pendant 12 heures avant l\'expiration.'),
+		const TextSpan(text: ' prolonger la période de validité dans les 6 heures avant l\'expiration.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'Le renouvellement ne peut se faire que 12 heures à l\'avance';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'Ne peut être renouvelé que dans les 6 heures à l\'avance';
 	@override String get theReceivingAddressValidForLongtime => 'Cette adresse est valable pour une longue période.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'Cette adresse de collecte est valable pour une longue durée et est automatiquement créditée en temps réel.';
 	@override String get confirmDeposited => 'Confirmation des dépôts';
@@ -5678,6 +5840,741 @@ class _StringsFr implements Translations {
 	@override String get sponsorDevelopersByWatchingAds => 'Sponsorisez des développeurs en regardant des publicités';
 	@override String get status => 'Statut';
 	@override String get date => 'Date';
+	@override String get assetApplicationIsInProgressTip => 'Demande d\'asset en cours, veuillez réessayer dans 3 secondes.';
+	@override String get delete => 'Supprimer';
+	@override String get deleteVerifierTip => 'Lors de la suppression des autorisations d\'un vérificateur, toutes les données de score associées seront supprimées en même temps, mais les récompenses déjà obtenues ne seront pas affectées.';
+	@override String get deleteVerifierStatusTip => 'Veuillez le mettre en pause avant de le supprimer';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'Veuillez saisir "${text}" pour confirmer';
+	@override String get localSecurity => 'Sécurité locale';
+	@override String get deviceLock => 'Verrouillage de l\'appareil';
+	@override String get patternLock => 'Verrouillage par motif';
+	@override String get none => 'aucun';
+	@override String get exist => 'existe';
+	@override String get prompt => 'Invite :';
+	@override String get localSecurityTip1 => '1. L\'authentification de sécurité locale permet de confirmer l\'identité lors de certaines opérations sensibles. Elle vise à empêcher le contrôle de l\'appareil par d\'autres et à garantir la sécurité du compte. ';
+	@override String get localSecurityTip2 => '2. Le verrouillage par schéma est une solution complémentaire lorsque le verrouillage de l\'appareil n\'est pas pris en charge ou incompatible. En général, il n\'est pas nécessaire de définir un verrouillage par schéma lorsque le verrouillage de l\'appareil est disponible.';
+	@override String get localSecurityTip3 => '3. Lorsque votre schéma de verrouillage est oublié, vous pouvez uniquement effacer les données de l\'application ou réinstaller l\'application pour l\'effacer.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'L\'authentification de l\'appareil est sur le point d\'être appelée. En cas d\'erreur ou d\'exception, accédez à l\'option « ${localSecurity} » de la page « ${menu} » pour effectuer des tests et des réglages supplémentaires.';
+	@override String get pleaseDrawUnlockPattern => 'Veuillez dessiner le schéma de déverrouillage';
+	@override String get addPatternLock => 'Ajouter un verrouillage par motif';
+	@override String get cannotBeLessThan8Dots => 'Ne peut pas être inférieur à 8 points';
+	@override String get pleaseRepeatThePattern => 'Veuillez répéter le modèle à nouveau';
+	@override String get notMatchFirstValidPattern => 'Ne correspond pas au premier modèle de dessin valide';
+	@override String get deletePatternLock => 'Supprimer le verrouillage par motif';
+	@override String get notMatchExistingPattern => 'Ne correspond pas à un modèle existant';
+	@override String get localAuthentication => 'Authentification locale';
+}
+
+// Path: <root>
+class _StringsHi implements Translations {
+	/// You can call this constructor and build your own translation instance of this locale.
+	/// Constructing via the enum [AppLocale.build] is preferred.
+	_StringsHi.build({Map<String, Node>? overrides, PluralResolver? cardinalResolver, PluralResolver? ordinalResolver})
+		: assert(overrides == null, 'Set "translation_overrides: true" in order to enable this feature.'),
+		  $meta = TranslationMetadata(
+		    locale: AppLocale.hi,
+		    overrides: overrides ?? {},
+		    cardinalResolver: cardinalResolver,
+		    ordinalResolver: ordinalResolver,
+		  ) {
+		$meta.setFlatMapFunction(_flatMapFunction);
+	}
+
+	/// Metadata for the translations of <hi>.
+	@override final TranslationMetadata<AppLocale, Translations> $meta;
+
+	/// Access flat map
+	@override dynamic operator[](String key) => $meta.getTranslation(key);
+
+	@override late final _StringsHi _root = this; // ignore: unused_field
+
+	// Translations
+	@override String get home => 'होम';
+	@override String get switchLanguage => 'भाषा बदलें';
+	@override String get languageSwitch => 'भाषा बदलें';
+	@override String get slogan => 'डेल्टा में एक विकेन्द्रीकृत आर्थिक क्षेत्र बनाएं';
+	@override String get countryRegionCode => 'देश कोड';
+	@override String get countryRegionSelection => 'देश चुनें';
+	@override String get nextStep => 'अगला चरण';
+	@override String get yourPhoneNumber => 'आपका फ़ोन नंबर';
+	@override String get pleaseSelectCountryAndRegion => 'कृपया अपना देश चुनें';
+	@override String get pleaseEnterPhoneNumber => 'कृपया एक मान्य फ़ोन नंबर दर्ज करें!';
+	@override String get referrerDid => 'रेफ़रर DID';
+	@override String get pleaseEnterTheReferrersDid => 'कृपया मान्य रेफ़रर DID दर्ज करें!';
+	@override String get thisDidIsInvalid => 'यह DID अमान्य है';
+	@override String get nicknameFormatTips => 'उपनाम खाली नहीं हो सकता और इसकी लंबाई 16 अक्षरों से अधिक नहीं हो सकती';
+	@override String get additionalIinformation => 'अतिरिक्त जानकारी';
+	@override String get invitationSubject => 'डेल्टा सर्वसम्मति निर्माण में भाग लेने के लिए आपको आमंत्रित किया जाता है';
+	@override String invitationLetter({required Object did}) => 'नमस्ते, मैं डेल्टा सर्वसम्मति निर्माण में भाग ले रहा हूँ! डेल्टा एक ओपन-सोर्स नया डिजिटल मनी प्लेटफ़ॉर्म है, जो इंटरनेट कंप्यूटर (ICP) पर चलता है। यह पासवर्ड, निजी कुंजी, या निमोनिक्स के बिना विभिन्न डिजिटल मुद्राओं को प्रबंधित और उपयोग कर सकता है। कृपया इस लिंक पर क्लिक करें: https://delta.kim/auto/download डेल्टा एप्लिकेशन इंस्टॉल करने के लिए। अब हम आपको सर्वसम्मति बनाने और सिक्के मिंट करने के लिए आमंत्रित करते हैं।\n रेफ़रर DID: ${did}';
+	@override String get dSMSverification => 'डिसेंट्रलाइज्ड SMS/dSMS सत्यापन';
+	@override String get getAccessNumbers => 'एक्सेस नंबर प्राप्त करें';
+	@override String get getAccessNumberPromptMessage => 'नीचे दिए गए \'प्राप्त करें\' बटन पर क्लिक करें ताकि कतार में क्रमशः dSMS सत्यापन एक्सेस नंबरों के समूह का चयन किया जा सके।';
+	@override String get optionalAccessNumbers => 'वैकल्पिक एक्सेस नंबर';
+	@override String get accessNumber => 'एक्सेस नंबर';
+	@override String get TELCO => 'टेल्को/देश सूची';
+	@override String get score => 'स्कोर';
+	@override TextSpan checkAccessNumberTip({required num n, required InlineSpan Function(num) nBuilder, required InlineSpanBuilder span}) => RichPluralResolvers.bridge(
+		n: n,
+		resolver: _root.$meta.cardinalResolver ?? PluralResolvers.cardinal('hi'),
+		one: () => TextSpan(children: [
+			nBuilder(n),
+			const TextSpan(text: ' एक्सेस नंबर जांचें और अगले चरण पर जाने के लिए "'),
+			span('text'),
+			const TextSpan(text: '" बटन पर क्लिक करें।'),
+		]),
+		other: () => TextSpan(children: [
+			nBuilder(n),
+			const TextSpan(text: ' एक्सेस नंबरों की जांच करें और अगले चरण पर जाने के लिए "'),
+			span('text'),
+			const TextSpan(text: '" बटन पर क्लिक करें।'),
+		]),
+	);
+	@override String get whatIsDeltaDesc => 'डेल्टा एक ओपन-सोर्स विकेन्द्रीकृत वैश्विक डिजिटल मुद्रा प्रयोगात्मक परियोजना और मुद्रा अनुप्रयोग पारिस्थितिकी तंत्र है।';
+	@override String get deltaGoalsDesc => 'हमारा लक्ष्य है कि लोग डेल्टा का उपयोग करके एक सार्वभौमिक, निष्पक्ष, सुरक्षित, तेज़ और पर्यावरण-अनुकूल नई डिजिटल मुद्रा का सामूहिक रूप से निर्माण करें। साथ ही, इन डिजिटल मुद्राओं और पिछली क्रिप्टोकरेंसी के लिए विभिन्न प्रभावी अनुप्रयोग परिदृश्य प्रदान करें।';
+	@override String get details => 'विवरण';
+	@override String get get => 'प्राप्त करें';
+	@override String get select => 'चुनें';
+	@override String get send => 'संदेश भेजें';
+	@override String get complete => 'पूरा करें';
+	@override String get selectedAccessNumberPrompt => 'चयन किए जाने पर, पूरा एक्सेस नंबर प्रदर्शित होता है और एक प्रमाणीकरण स्ट्रिंग उत्पन्न होती है।';
+	@override String get location => 'लोकेशन';
+	@override String get verificationString => 'सत्यापन स्ट्रिंग';
+	@override TextSpan sendVerificationStringDesc({required InlineSpan num, required InlineSpan accessNumber, required InlineSpan label}) => TextSpan(children: [
+		const TextSpan(text: 'कृपया अपने फोन नंबर '),
+		num,
+		const TextSpan(text: ' का उपयोग करें, सत्यापन पूरा करने के लिए '),
+		accessNumber,
+		const TextSpan(text: ' पर '),
+		label,
+		const TextSpan(text: ' भेजें।'),
+	]);
+	@override String get ihaveSentTheSMS => 'मैंने एसएमएस भेज दिया है';
+	@override TextSpan validWithin6minutes({required InlineSpan time}) => TextSpan(children: [
+		const TextSpan(text: 'सत्यापन स्ट्रिंग 6 मिनट के लिए मान्य है, शेष समय: '),
+		time,
+		const TextSpan(text: ' '),
+	]);
+	@override String tooFast_waitXsecondsContinuing({required Object x}) => 'अति शीघ्र! जारी रखने से पहले ${x} सेकंड प्रतीक्षा करें।';
+	@override String get waitingForVerificationSMS => 'सत्यापन स्ट्रिंग की प्रतीक्षा हो रही है...';
+	@override String get partSuccsForVerificationSMS => 'एसएमएस सत्यापन आपके चुने गए एक्सेस टर्मिनल द्वारा पूरा हो गया है!';
+	@override String get creatingAccessToken => 'आपका एक्सेस टोकन बनाया जा रहा है।';
+	@override String get intoDelta => 'डेल्टा में प्रवेश करें!';
+	@override String get deltaAccountIsLoggedIn => 'आपका डेल्टा अकाउंट लॉग इन हो गया है।';
+	@override String get iHavLoggedOut => 'मैं लॉग आउट हो गया हूँ।';
+	@override String get startTwoFactorVerification => 'टू-फैक्टर सत्यापन शुरू करें।';
+	@override String get securityCircleVerification => 'सुरक्षा सर्कल सत्यापन';
+	@override String get generateSecurityCode => 'सुरक्षा कोड उत्पन्न करें';
+	@override String get generateSecurityCodeHintText => 'उत्पन्न सुरक्षा कोड आपके सुरक्षा सर्कल के किसी यादृच्छिक रूप से चुने गए सदस्य को भेजा जाएगा।';
+	@override String get notSetSecurityCircleEnterPlaceholderTip => 'आपने अभी तक सुरक्षा सर्कल सेट नहीं किया है, आपका अकाउंट बहुत असुरक्षित है। कृपया कोई भी 6-अंकीय प्लेसहोल्डर दर्ज करें और अगले चरण पर जाएं।';
+	@override String get securityCodeHasBeenGenerated_ContactFriendsTip => 'सुरक्षा कोड उत्पन्न हो गया है। कृपया निम्नलिखित रिश्तेदारों और मित्रों से संपर्क करें और उनसे सुरक्षा कोड निकालने के लिए कहें ताकि आप सत्यापन पूरा कर सकें। यह 30 मिनट तक मान्य है!';
+	@override String get itGetSecurityCodeTip => 'सुझाव: यह सदस्य डेल्टा ऐप -> मेनू -> \'सुरक्षा प्रदान करें\' पृष्ठ में आपके अकाउंट उपनाम को खोजेगा और सुरक्षा कोड प्राप्त करने के लिए डबल-क्लिक करेगा।';
+	@override String get securityCircleMemberList => 'सुरक्षा सर्कल सदस्य सूची:';
+	@override String get selectA_friendToProvideSecurityCodeTip => 'कृपया सदस्य सूची से किसी रिश्तेदार या मित्र का चयन करें, जो सुरक्षा कोड उत्पन्न कर आपको प्रदान करे, ताकि आपकी वास्तविक पहचान सत्यापित की जा सके। इसका उद्देश्य यह सुनिश्चित करना है कि मोबाइल नंबर खो जाने या चोरी हो जाने पर आपका अकाउंट किसी अन्य के नियंत्रण में न जाए।';
+	@override String formatIsXdigits({required Object num}) => '${num} अंकों का फ़ॉर्मेट है';
+	@override String get signInSuccessfully => 'साइन इन सफल हुआ!';
+	@override String get twoFAandLogin => 'टू-फैक्टर सत्यापन और लॉगिन';
+	@override String get verificationSuccessful => 'सत्यापन सफल हुआ!';
+	@override String get validationFailed => 'सत्यापन विफल हुआ!';
+	@override String get securityCircle => 'सुरक्षा सर्कल';
+	@override String get securityCode => 'सुरक्षा कोड';
+	@override String get provideSecurity => 'सुरक्षा प्रदान करें';
+	@override String get addManully => 'मैन्युअली जोड़ें';
+	@override String get addFromContacts => 'संपर्कों से जोड़ें';
+	@override String get addSecurityCircle => 'सुरक्षा सर्कल जोड़ें';
+	@override String get inputType => 'इनपुट प्रकार';
+	@override String get mobileNumber => 'मोबाइल नंबर';
+	@override String get did => 'DID (डिजिटल पहचान कोड)';
+	@override String get pleaseEnterValidDID => 'कृपया एक वैध DID दर्ज करें';
+	@override String get pleaseEnterValidWalletAddress => 'कृपया एक वैध वॉलेट एड्रेस दर्ज करें';
+	@override String get appellation => 'उपाधि';
+	@override String get appellationHint => 'आप इसे क्या नाम देना चाहेंगे? जैसे "भाई"';
+	@override String get addSecurityCircleTips => 'कृपया सुरक्षा सर्कल में अविश्वसनीय लोगों को न जोड़ें।';
+	@override String get referralTeam => 'रेफरल टीम';
+	@override String get profile => 'प्रोफ़ाइल';
+	@override String get menu => 'मेनू';
+	@override String get directly => 'प्रत्‍यक्ष रूप से';
+	@override String get indirectly => 'अप्रत्‍यक्ष रूप से';
+	@override String get inviteContacts => 'संपर्कों को आमंत्रित करें';
+	@override TextSpan refereesAtFirstLevelDesc({required InlineSpan nickname, required InlineSpan num1, required InlineSpan num2}) => TextSpan(children: [
+		const TextSpan(text: 'आपके रेफ़रर '),
+		nickname,
+		const TextSpan(text: ' हैं। आपने प्रत्‍यक्ष रूप से '),
+		num1,
+		const TextSpan(text: ' लोगों की सिफारिश की है, जिनमें से '),
+		num2,
+		const TextSpan(text: ' लोग वर्तमान में ऑनलाइन हैं।'),
+	]);
+	@override TextSpan refereesAtSecondLevelDesc({required InlineSpan num1, required InlineSpan num2}) => TextSpan(children: [
+		const TextSpan(text: 'आपने अप्रत्यक्ष रूप से '),
+		num1,
+		const TextSpan(text: ' लोगों की सिफारिश की है, जिनमें से '),
+		num2,
+		const TextSpan(text: ' लोग वर्तमान में ऑनलाइन हैं।'),
+	]);
+	@override TextSpan invitationToBoostMiningDesc({required InlineSpan rate1, required InlineSpan btn}) => TextSpan(children: [
+		const TextSpan(text: 'दोस्तों को डेल्टा से जुड़ने के लिए आमंत्रित करें और सामाजिक सहमति को बेहतर बनाएं। प्रत्येक प्रत्‍यक्ष रूप से अनुशंसित व्यक्ति की माइनिंग दर आधार दर के '),
+		rate1,
+		const TextSpan(text: ' से बढ़ जाती है। '),
+		btn,
+	]);
+	@override TextSpan invitationToBoostMiningDesc2({required InlineSpan rate2}) => TextSpan(children: [
+		const TextSpan(text: 'दोस्तों को डेल्टा से जुड़ने के लिए आमंत्रित करें और सामाजिक सहमति को बेहतर बनाएं। प्रत्येक अप्रत्यक्ष रूप से अनुशंसित व्यक्ति की माइनिंग दर आधार दर के '),
+		rate2,
+		const TextSpan(text: ' से बढ़ जाती है।'),
+	]);
+	@override String areYouSureToRemove_x({required Object name}) => 'क्या आप "${name}" को हटाना सुनिश्चित करते हैं?';
+	@override String get safetyCircleRoleQ => 'सुरक्षा सर्कल का कार्य क्या है?';
+	@override String get safetyCircleRoleA => 'यह संवेदनशील परिस्थितियों में द्वितीयक प्रमाणीकरण प्रदान करता है ताकि आपके खाते की सुरक्षा बनी रहे।';
+	@override String get howSecurityCirclesWorkQ => 'सुरक्षा सर्कल कैसे काम करता है?';
+	@override String get howSecurityCirclesWorkA => 'जब सुरक्षा सर्कल सत्यापन के लिए आवश्यक होता है, तो डेल्टा स्मार्ट कॉन्ट्रैक्ट प्रोग्राम यादृच्छिक रूप से सुरक्षा सर्कल मित्र सूची से एक सदस्य का चयन करेगा, जो आपको सुरक्षा कोड प्रदान करने में मदद करेगा ताकि आपकी पहचान की सुरक्षा पुष्टि हो सके। जब आप सदस्य से सुरक्षा कोड मांगते हैं, तो यह पुष्टि कर सकता है कि आप वास्तव में वही हैं। साथ ही, प्रोग्राम यह संकेत देगा: "यदि यह आप नहीं हैं, तो सुरक्षा कोड प्रदान करने से इनकार करें", ताकि आपके खाते की सुरक्षा बनी रहे। इसलिए, आपको हमेशा यह सुनिश्चित करना चाहिए कि आपके सुरक्षा सर्कल के सदस्य वे लोग हों जिन पर आप भरोसा कर सकते हैं।';
+	@override String get securityCircleBeUsedQ => 'आप इसे कब उपयोग करेंगे?';
+	@override String get securityCircleBeUsedA1 => '1. जब आपका डेल्टा ऐप नियंत्रण से बाहर हो जाए, आमतौर पर यह तब होता है जब आपका मोबाइल फोन खो जाता है या चोरी हो जाता है।';
+	@override String get securityCircleBeUsedA2 => '2. कुछ संवेदनशील प्रक्रियाओं के मामले में, डेल्टा स्मार्ट कॉन्ट्रैक्ट प्रोग्राम को यह पुष्टि करने की आवश्यकता होती है कि आप स्वयं अपना खाता एक्सेस कर रहे हैं, कोई और नहीं।';
+	@override String get provideSafetyTip1 => 'जब आपका मित्र आपसे सुरक्षा कोड मांगे, तो कृपया सुनिश्चित करें कि वह वास्तव में खुद अकाउंट एक्सेस कर रहा है, कोई और नहीं है।';
+	@override String get provideSafetyTip2 => 'आप उपरोक्त मित्रों के लिए सुरक्षा प्रदान कर रहे हैं। उन्होंने आपको सुरक्षा सर्कल में सबसे विश्वसनीय व्यक्ति के रूप में सेट किया है, और जब उनके खाते संवेदनशील प्रक्रियाओं का सामना करते हैं, तो आपको उनके लिए सुरक्षा पुष्टि प्रदान करनी होगी।';
+	@override String get provideSafetyTip3 => 'जब आवश्यक हो, सुरक्षा कोड निकालने के लिए दूसरे व्यक्ति के प्रोफ़ाइल फोटो पर डबल-क्लिक करें।';
+	@override String get doesNotSecurityCodeNeedsRetrieved => 'दूसरे व्यक्ति के पास वर्तमान में कोई सुरक्षा कोड नहीं है जिसे प्राप्त करने की आवश्यकता हो!';
+	@override String get existSecurityCodeTip => 'कृपया सुनिश्चित करें कि जो रिश्तेदार या मित्र आपसे सुरक्षा कोड मांग रहा है, वह वास्तव में वही है। रिश्तेदार या मित्र की सुरक्षा सुनिश्चित करने के लिए, यदि वह स्वयं नहीं है, तो सुरक्षा कोड प्रदान करने से इनकार कर दें।';
+	@override String get avatarSettings => 'प्रोफ़ाइल फोटो सेटिंग्स';
+	@override String get NFTAvatarPropertyRightsText => 'अस्वीकरण: संबंधित NFT को प्रोफ़ाइल फोटो के रूप में उपयोग करना केवल व्यक्तिगत पसंद है और इसका NFT के बौद्धिक संपदा अधिकारों के स्वामित्व से कोई संबंध नहीं है।';
+	@override String get projectWebsite => 'प्रोजेक्ट वेबसाइट: ';
+	@override String get whitepaper => 'व्हाइटपेपर:';
+	@override String get indexID => 'सूचकांक आईडी';
+	@override String indexesRangeFromXtoY({required Object start, required Object end}) => 'सूचकांक ${start} से ${end} तक हैं।';
+	@override String get inputToLoadNFTAvatarTip => 'अपने पसंदीदा NFT का सूचकांक आईडी दर्ज करें, और प्रोग्राम इसे स्वतः आपके प्रोफ़ाइल फोटो के रूप में लोड कर देगा।';
+	@override String get miningRate => 'माइनिंग दर';
+	@override String get miningDetails => 'माइनिंग विवरण';
+	@override TextSpan totalMiningRateEachDay({required InlineSpan rate}) => TextSpan(children: [
+		const TextSpan(text: 'कुल माइनिंग दर: '),
+		rate,
+		const TextSpan(text: ' δ/दिन'),
+	]);
+	@override String get EndOfMiningSession => 'माइनिंग सत्र समाप्त हो चुका है।: ';
+	@override String get tapToMineDeltaCoin => 'डेल्टा कॉइन माइन करने के लिए टैप करें। ↑';
+	@override String get clickToStartMining => 'माइनिंग शुरू करने के लिए टैप करें!';
+	@override String get miningHasStoppedPromptDesc => 'माइनिंग रुक गई है, हर 24 घंटे का एक माइनिंग चक्र होता है। नई माइनिंग शुरू करने के लिए बिजली आइकन पर क्लिक करें। डेल्टा की माइनिंग एक वितरण तंत्र है, जो आपके डिवाइस की अतिरिक्त कंप्यूटिंग शक्ति और नेटवर्क ट्रैफिक का उपयोग नहीं करता।';
+	@override String get aboutBaseRate => 'बेस रेट के बारे में जानना चाहते हैं?';
+	@override String get baseRateDescription => 'व्हाइटपेपर में दिए गए समझौते के अनुसार, डेल्टा माइनिंग की बेसिक रेट घटाने की प्रक्रिया दो चरणों में विभाजित होगी| \nचरण 1: जब प्रतिभागियों (पंजीकरण) की संख्या 3000 या उससे कम होगी, तो दर 32δ/दिन होगी। इसे शुरुआती बिंदु मानते हुए, प्रत्येक बार जब प्रतिभागियों की संख्या 10 गुना बढ़ेगी, तो बेस रेट आधा कर दिया जाएगा। \nचरण 2: जब प्रतिभागियों की संख्या 30 मिलियन या उससे अधिक हो जाएगी, तो प्रत्येक बार जब संख्या 3 गुना बढ़ेगी, बेस रेट आधा हो जाएगा। यह तब तक जारी रहेगा जब तक कि पूरी आपूर्ति नहीं निकल जाती।';
+	@override String get baseRate => 'बेस रेट';
+	@override String get directReferralRewards => 'प्रत्यक्ष रेफरल पुरस्कार';
+	@override String get directReferralRewardDesc => 'प्रत्येक व्यक्ति जिसे आपने प्रत्यक्ष रूप से आमंत्रित किया है, जब वह माइनिंग स्थिति में होगा, तो आपकी माइनिंग दर बेस रेट के 1/3 से बढ़ जाएगी। \n\n इसके अलावा, आपके रेफ़रर की माइनिंग स्थिति भी आपके प्रत्यक्ष रेफरल पुरस्कार में शामिल की जाएगी।';
+	@override String get indirectReferralRewards => 'अप्रत्यक्ष रेफरल पुरस्कार';
+	@override String get indirectReferralRewardDesc => 'जब कोई अप्रत्यक्ष रेफ़रल माइनिंग स्थिति में होगा, तो आपकी माइनिंग दर बेस रेट के 1/10 से अतिरिक्त रूप से बढ़ जाएगी। \n\n आपकी प्रत्यक्ष रेफ़रल टीम और वे जिन लोगों को आमंत्रित करते हैं, वे आपके लिए अप्रत्यक्ष रेफ़रल माने जाएंगे।';
+	@override String get mine => 'माइन';
+	@override String get thisMiningInformation => 'यह माइनिंग जानकारी';
+	@override TextSpan participatedInMiningXtimes({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'कुल बार जब आपने माइनिंग में भाग लिया: '),
+		x,
+		const TextSpan(text: ' बार'),
+	]);
+	@override TextSpan totalIncomeThisTimeXDeltaCoins({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'इस बार की आय: '),
+		x,
+		const TextSpan(text: ' डेल्टा कॉइंस'),
+	]);
+	@override TextSpan basicIncomeXcoins({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'मूल आय: '),
+		x,
+		const TextSpan(text: ' डेल्टा कॉइंस'),
+	]);
+	@override TextSpan directTeamContributionXcoins({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'प्रत्यक्ष टीम योगदान: '),
+		x,
+		const TextSpan(text: ' डेल्टा कॉइंस'),
+	]);
+	@override TextSpan indirectTeamContributionXcoins({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'अप्रत्यक्ष टीम योगदान: '),
+		x,
+		const TextSpan(text: ' डेल्टा कॉइंस'),
+	]);
+	@override TextSpan timeIntervalFromLastMiningX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'पिछली माइनिंग दर से समय अंतराल: '),
+		x,
+	]);
+	@override TextSpan effectiveMiningTimeXhours({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'प्रभावी माइनिंग समय: '),
+		x,
+	]);
+	@override String xhours({required Object x}) => '${x} घंटे';
+	@override String get keep3_5peopleInTheSafetyCircleTip => 'संपत्ति की सुरक्षा के लिए, आपको किसी भी समय अपने सुरक्षा सर्कल में 3-5 विश्वसनीय लोगों को रखना चाहिए।';
+	@override String get index => 'सूचकांक';
+	@override String get amount => 'राशि';
+	@override String get balance => 'बैलेंस';
+	@override String get timeStamp => 'टाइमस्टैम्प';
+	@override String get summary => 'सारांश';
+	@override String get miningHasStopped => 'माइनिंग रुक गई है।';
+	@override String get miningHasStoppedDesc => 'आपकी माइनिंग फिलहाल रुकी हुई है, और आप तुरंत आय अर्जित करना शुरू कर सकते हैं।';
+	@override String get startMining => 'माइनिंग शुरू करें';
+	@override String get changeMobileNumber => 'मोबाइल नंबर बदलें';
+	@override String get currentMobileNumber => 'वर्तमान मोबाइल नंबर';
+	@override String get newMobileNumber => 'नया मोबाइल नंबर';
+	@override String get securityCodeFormatIs6digits => 'सुरक्षा कोड का प्रारूप 6 अंकों का होना चाहिए!';
+	@override String get startVrification => 'सत्यापन शुरू करें';
+	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'यह मोबाइल नंबर पहले से मौजूद है और एक संबद्ध DID: ${dId} से जुड़ा हुआ है।}';
+	@override String get noDataYet => 'अभी तक कोई डेटा नहीं है';
+	@override String get previousMobileNumber => 'पिछला मोबाइल नंबर';
+	@override String get changeLog => 'परिवर्तन लॉग';
+	@override String get referralLinkToShare => 'साझा करने के लिए रेफ़रल लिंक';
+	@override String get referrer => 'रेफ़रर';
+	@override String get isoCountryCode => 'ISO देश कोड';
+	@override String get avatarLogo => 'प्रोफ़ाइल फ़ोटो प्रतीक चिन्ह';
+	@override String get creationTime => 'क्रिएशन टाइम';
+	@override String get lastUpdate => 'पिछला अपडेट';
+	@override String get numberOfSecurityCircleMembers => 'सुरक्षा सर्कल के सदस्यों की संख्या';
+	@override String get theLatestMining => 'हाल की माइनिंग';
+	@override String get effectiveMiningDays => 'प्रभावी माइनिंग दिन';
+	@override String get modifyNickname => 'उपनाम संशोधित करें';
+	@override String get didNotChange => 'बदलाव नहीं हुआ!';
+	@override String get kycVerification => 'KYC सत्यापन';
+	@override String get faceID => 'फेस आईडी';
+	@override String get touchID => 'टच आईडी';
+	@override String get biometricsAuthorizationTest => 'बायोमेट्रिक अधिकरण परीक्षण';
+	@override String get currentState => 'वर्तमान स्थिति';
+	@override String get biometricsAuthenticationLocalizedReason => 'अपनी डिवाइस का अनलॉक उपयोग करके अपनी पहचान सत्यापित करें।';
+	@override String get graph => 'ग्राफ़';
+	@override String get referralRelationshipGraph => 'रेफ़रल संबंध ग्राफ़';
+	@override String get nativeContacts => 'नेटिव संपर्क';
+	@override String get registrationAndMiningTrends => 'पंजीकरण और माइनिंग प्रवृत्तियाँ';
+	@override String get inMining => 'माइनिंग में';
+	@override String get registrationVolume => 'पंजीकरण संख्या';
+	@override String get unmined => 'माइनिंग के लिए उपलब्ध हिस्सा';
+	@override String get mined => 'हिस्सा जो माइन किया जा चुका है';
+	@override String get communityMining => 'समुदाय माइनिंग';
+	@override String get consensusPromotionFund => 'सहमति संवर्धन कोष';
+	@override String get ecologicalAwardFund => 'परिस्थितिकीय पुरस्कार कोष';
+	@override String get icpFuelCrowdfunding => 'ICP ईंधन क्राउडफंडिंग';
+	@override String get coreDeveloperRewards => 'कोर डेवलपर पुरस्कार';
+	@override String get totalAllocation => 'कुल आवंटन';
+	@override String get miningRatio => 'माइनिंग अनुपात';
+	@override Map<String, String> get billion => {
+		'300': '300 बिलियन',
+		'180': '180 बिलियन',
+		'30': '30 बिलियन',
+		'60': '60 बिलियन',
+	};
+	@override String get watchAdsToSupportDevelopers => 'डेवलपर्स का समर्थन करने के लिए विज्ञापन देखें';
+	@override String get loadingAdcomponents => 'विज्ञापन घटकों को लोड किया जा रहा है...';
+	@override String get timeIsNotUp => 'समय समाप्त नहीं हुआ है!';
+	@override String get loadingFailed_maybeTheNetworkIsBlocked => 'लोडिंग विफल, शायद नेटवर्क ब्लॉक हो गया है!';
+	@override String get pendingUSCTrecords => 'लंबित USCT रिकॉर्ड्स';
+	@override String get pendingUSCTrecordsDesc => 'लंबित USCT रिकॉर्ड्स को विज्ञापन प्लेटफॉर्म के साथ 15-30 दिनों के भीतर तुलना और पुष्टि की जाएगी। वैध रिकॉर्ड्स को USCT रिकॉर्ड लिस्ट में ट्रांसफर किया जाएगा, और संबंधित USCT राशि खाते के बैलेंस में जोड़ी जाएगी।';
+	@override String get validity => 'वैधता';
+	@override String get advertiser => 'विज्ञापनदाता';
+	@override String get earned => 'कमाई गई राशि';
+	@override String get withdraw => 'विद्रॉ';
+	@override String get validUSCTrecords => 'मान्य USCT रिकॉर्ड';
+	@override String get USCTmining => 'USCT माइनिंग';
+	@override String get aboutUSCTmining => 'USCT माइनिंग के बारे में?';
+	@override String get aboutUSCTminingItme1 => '1. USDT एक वैश्विक रूप से लोकप्रिय अमेरिकी डॉलर स्टेबलकॉइन है, जिसे दुनिया के प्रमुख क्रिप्टोकरेंसी एक्सचेंजों पर विभिन्न देशों की सरकारी मुद्राओं में आसानी से बदला जा सकता है।';
+	@override String get aboutUSCTminingItme2 => '2. USCT माइनिंग आय का एक अस्थायी माप मूल्य है, इसका पूर्ण नाम USD क्रेडिट है, और अंत में इसे विज्ञापन प्लेटफ़ॉर्म के वास्तविक निपटान कोटा और वितरण नियमों के अनुसार और संबंधित अनुपात में USDT में बदला जा सकता है।';
+	@override String get aboutUSCTminingItme3 => '3. USCT माइनिंग डेल्टा समुदाय में एक ट्रैफ़िक विज्ञापन मुद्रीकरण कार्य है। डेल्टा समुदाय के विशाल उपयोगकर्ता आधार का लाभ उठाते हुए यह विज्ञापनदाताओं, डेल्टा डेवलपर्स और खनिकों के लिए कई लाभ प्रदान करता है। इसका डिज़ाइन उद्देश्य डेल्टा पारिस्थितिकी तंत्र के शुरुआती चरण में कुछ प्रभावी आय प्रदान करना है, जब तक कि यह पूरी तरह से स्थापित और फल-फूल नहीं गया है; साथ ही यह डेवलपर्स के लिए एक निश्चित मात्रा में वित्तीय समर्थन भी प्रदान करता है, ताकि डेवलपर्स लंबे समय तक विकास सेवाएं प्रदान कर सकें और अंततः श्वेतपत्र की सभी योजनाओं को साकार कर सकें; इसके अलावा यह उत्पाद विज्ञापनदाताओं के लिए एक प्रभावी प्रचार चैनल भी प्रदान करता है।';
+	@override String get aboutUSCTminingItme4 => '4. वितरण नियम इस प्रकार डिज़ाइन किए गए हैं कि कुल आय का 40% डेवलपर तकनीकी सेवा आयोगों के रूप में उपयोग किया जाएगा, और शेष 60% को समुदाय की अनुपस्थिति पुरस्कारों के रूप में उपयोग किया जाएगा। अनुपस्थिति पुरस्कार भाग DTC के समान एक मल्टी-लेवल वितरण मॉडल अपनाता है, और ये अनुपस्थिति पुरस्कार 6:3:1 के अनुपात में 3 हिस्सों में विभाजित किए जाते हैं। एक USCT माइनिंग के लिए प्रत्येक बार 60% अनुपस्थिति पुरस्कार उन लोगों को आवंटित किया जाता है जो वर्तमान में विज्ञापन देख रहे होते हैं, 30% उच्चतर अनुशंसा करने वाले को और 10% दूसरे स्तर के अनुशंसा करने वाले को दिया जाता है। इसी तरह, आप भी USCT माइनिंग के माध्यम से उन दोस्तों से समान अनुशंसा पुरस्कार प्राप्त कर सकते हैं जिन्हें आपने अनुशंसा किया है। इस प्रकार के मल्टी-लेवल वितरण का लाभ यह है कि कोई भी व्यक्ति एक ऑफ़लाइन टीम विकसित करके एक बड़ी मात्रा में USDT लाभ प्राप्त कर सकता है।';
+	@override String get aboutUSCTminingItme5 => '5. बिलिंग चक्र 7 दिन का है, यानी, विज्ञापन प्लेटफ़ॉर्म के साथ हर 7 दिन में वैधता की जांच की जाती है, और पुष्टि किए गए प्रभावी आय और वास्तविक राशि को बैलेंस में रिकॉर्ड किया जाता है। प्रत्येक निकासी के लिए न्यूनतम राशि 10USDT है।';
+	@override String linesXtoY({required Object x, required Object y}) => 'लाइनें ${x} से ${y}';
+	@override String get wallet => 'वॉलेट';
+	@override String get multiChainWallet => 'मल्टी-चेन वॉलेट';
+	@override String get deposit => 'डिपॉजिट';
+	@override String get transfer => 'ट्रांसफर';
+	@override String xcoinInWallet({required Object coinCode}) => '${coinCode} वॉलेट में';
+	@override String get transactions => 'लेन-देन विवरण';
+	@override String get network => 'नेटवर्क';
+	@override String get walletAddress => 'वॉलेट एड्रेस';
+	@override String get currentAddress => 'करंट एड्रेस';
+	@override String get depositAddress => 'डिपॉजिट एड्रेस';
+	@override String get receivingMoneyAddress => 'पैसे प्राप्त करने का एड्रेस';
+	@override String get applyTempDepositAddress => 'अस्थायी जमा एड्रेस के लिए आवेदन करें';
+	@override String get tempDepositAddressTip => '1.यह एक साझा जमा एड्रेस है। कृपया पट्टा समाप्त होने या अनबाउंड होने के बाद राशि जमा न करें। ऐसा होने पर राशि खो जाएगी।.';
+	@override String get tempDepositAddressTip2 => '2.जमा करने से पहले, कृपया यह सुनिश्चित करें कि [चेन नाम] और [मुद्रा नाम] बिल्कुल मेल खाते हैं; यदि यह एक अनुबंध टोकन है, तो आपको यह भी सुनिश्चित करना होगा कि [अनुबंध मानक] और [अनुबंध एड्रेस] बिल्कुल मेल खाते हैं।';
+	@override String get tempDepositAddressTip3 => '3.कृपया ऐसे फंड जमा करने की कोशिश न करें जो ऊपर दिए गए किसी भी पैरामीटर से मेल नहीं खाते, अन्यथा राशि खो जाएगी।';
+	@override String get tempDepositAddressTip4 => '4.यदि आपको अन्य प्रकार की संपत्तियां जमा करने की आवश्यकता हो, तो कृपया संबंधित मुद्रा पृष्ठ और पैरामीटर विकल्प पर स्विच करें और नया एड्रेस आवेदन करें।';
+	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
+		const TextSpan(text: 'यह पता '),
+		diff,
+		const TextSpan(text: ' में समाप्त हो जाएगा। आप समाप्ति से 6 घंटे पहले वैधता अवधि को '),
+		tap('मैन्युअल रूप से बढ़ा सकते हैं'),
+		const TextSpan(text: '।'),
+	]);
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'केवल 6 घंटे पहले ही नवीनीकरण किया जा सकता है';
+	@override String get theReceivingAddressValidForLongtime => 'प्राप्ति एड्रेस लंबी अवधि के लिए वैध है।';
+	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'प्राप्ति एड्रेस लंबी अवधि के लिए वैध है और रीयल टाइम में स्वचालित रूप से क्रेडिट हो जाएगा।';
+	@override String get confirmDeposited => 'जमा की पुष्टि करें';
+	@override String get unbindThisDepositAddress => 'इस जमा एड्रेस को अनबाइंड करें';
+	@override String get confirmDepositedTip => 'यदि धनराशि ट्रांसफर की गई है, तो कृपया 10 मिनट के बाद ऊपर दिए गए बटन पर क्लिक करें ताकि वॉलेट में खाता ट्रिगर हो सके।';
+	@override String get unbindDepositAddressTip => 'स्मार्ट कॉन्ट्रैक्ट्स के संचालन पर भार कम करने के लिए, यदि वैधता अवधि के भीतर कोई और धनराशि जमा नहीं की जाएगी, तो कृपया जमा एड्रेस अनबाइंड कर दें।';
+	@override String get transferToAddress => 'एड्रेस पर ट्रांसफर करें';
+	@override String get longPressToPaste => 'पेस्ट करने के लिए लंबे समय तक दबाएं';
+	@override String get all => 'सभी';
+	@override String balanceX({required Object x}) => 'बैलेंस ${x}';
+	@override String get transferOut => 'निकासी करें';
+	@override String depositXcoins({required Object x}) => 'डिपॉजिट ${x}';
+	@override String get sender => 'सेंडर';
+	@override String get recipient => 'प्राप्तकर्ता';
+	@override String get memo => 'मेमो';
+	@override String get kind => 'प्रकार';
+	@override String get transferAmountExceedsAvailableBalance => 'ट्रांसफर राशि उपलब्ध बैलेंस से अधिक है!';
+	@override String get pleaseEnterValidAmount => 'कृपया एक मान्य राशि दर्ज करें';
+	@override String get networkFee => 'नेटवर्क शुल्क';
+	@override String get fee => 'शुल्क';
+	@override String validLengthXcharacters({required Object x}) => 'वैध लंबाई ${x} अक्षर है';
+	@override String get historys => 'लेन-देन इतिहास';
+	@override String get dtcCreditdetail => 'डेल्टा क्रेडिट विवरण';
+	@override String get usdCreditdetail => 'USD क्रेडिट विवरण';
+	@override String get dappSquare => 'dApp स्क्वायर';
+	@override String get amountRaised => 'उठाई गई राशि';
+	@override String get disbursedAmount => 'वितरित राशि';
+	@override String get participationTimes => 'भागीदारी की संख्या';
+	@override String get completionRate => 'पूरा होने की दर';
+	@override String get exchangeRate => 'विनिमय दर';
+	@override String get icpCrowdfunding => 'ICP क्राउडफंडिंग';
+	@override String get crowdfunding => 'क्राउडफंडिंग';
+	@override String get trendsCurve => 'प्रवृत्ति वक्र';
+	@override String get fullScreenView => 'पूर्ण स्क्रीन दृश्य';
+	@override String get walletBalance => 'वॉलेट बैलेंस: ';
+	@override String get manageWallet => 'वॉलेट प्रबंधन';
+	@override String get fundraiseAmount => 'फंडरेज़ राशि';
+	@override String get exchangeRewardAmount => 'एक्सचेंज इनाम राशि';
+	@override String get fundraise => 'फंडरेज़';
+	@override String rangeIntegersX({required Object x}) => 'रेंज: पूर्णांक ${x}';
+	@override String successfullParticipatingFundraisingXtip({required Object amount}) => 'फंडरेज़िंग में सफलतापूर्वक भाग लिया और ${amount}DTCT का इनाम प्राप्त हुआ';
+	@override String get amountSummary => 'राशि सारांश';
+	@override String get changePreferred => 'पसंदीदा बदलें';
+	@override String get changePreferredAddress => 'पसंदीदा एड्रेस बदलें';
+	@override String get preferredAddressTip => 'पंजीकृत मोबाइल नंबर या DID का उपयोग करके धन प्राप्त करने पर, धनराशि स्वचालित रूप से पसंदीदा एड्रेस पर स्थानांतरित कर दी जाएगी।';
+	@override String get newAddress => 'नया एड्रेस';
+	@override String get newAddressTip => 'दुरुपयोग को रोकने के लिए, जब एक से अधिक वॉलेट एड्रेस होता है, तो प्रत्येक नए पते के निर्माण पर लेनदेन शुल्क लगेगा।';
+	@override String get createNew => 'नया वॉलेट बनाएं';
+	@override String get chainNetworkName => 'चेन नेटवर्क नाम';
+	@override String get from => 'फ्रॉम';
+	@override String get to => 'टू';
+	@override String get noAvailableDepositAmountDetected => 'कोई उपलब्ध जमा राशि नहीं मिली!';
+	@override String get crossChainReceiveMoneyMonitoring => 'क्रॉस-चेन प्राप्त धनराशि निगरानी में है…';
+	@override TextSpan receivedV({required InlineSpan v}) => TextSpan(children: [
+		const TextSpan(text: 'प्राप्त किया('),
+		v,
+		const TextSpan(text: ')'),
+	]);
+	@override TextSpan confirming({required InlineSpan v}) => TextSpan(children: [
+		const TextSpan(text: 'पुष्टि की जा रही है ('),
+		v,
+		const TextSpan(text: ')'),
+	]);
+	@override String get thingsToNote_forNewbies => 'नोट्स (नए उपयोगकर्ताओं अवश्य पढ़ें)';
+	@override String get whyUseSharedAddresses => 'साझा एड्रेसों का उपयोग क्यों करें?';
+	@override String get useSharedrAdvantage => 'क्रॉस-चेन डिपॉज़िट के मामले में, साझा एड्रेसों के ये लाभ हैं:';
+	@override String get useSharedrAdvantage1 => '1. ट्रांसफर शुल्क की बर्बादी को कम करें और उपयोगकर्ता की लागत घटाएं। क्योंकि यदि एक विशेष एड्रेस का उपयोग किया जाता है, तो फंड बहुत अधिक बिखर जाएंगे। निकासी के समय अन्य उपयोगकर्ताओं के लिए ट्रांसफर को सुगम बनाने के लिए, जब उपयोगकर्ता डिपॉज़िट करता है, तो फंड के द्वितीयक ट्रांसफर को प्रबंधन के लिए एक या कम संख्या में एड्रेसों में एकत्रित करने की आवश्यकता होती है।';
+	@override String get useSharedrAdvantage2 => '2. शेयरिंग समाधान में, प्रोग्राम को केवल एक अपेक्षाकृत छोटे एड्रेस पूल को बनाए रखने की आवश्यकता होती है, जो जल्दी से आउटगोइंग फंड से मेल खा सकता है और हल्का कलेक्शन मॉनिटरिंग कर सकता है, जिससे कंप्यूटिंग संसाधनों का खर्च कम हो सकता है। इसके विपरीत, एक्सक्लूसिव एड्रेस के मामले में स्थिति बिल्कुल विपरीत होती है।';
+	@override String get tokenType => 'टोकन प्रकार';
+	@override String get contract => 'कॉंट्रैक्ट';
+	@override String get contractStandard => 'कॉंट्रैक्ट स्टैंडर्ड';
+	@override String get contractAddress => 'कॉंट्रैक्ट एड्रेस';
+	@override String get native => 'नेटिव';
+	@override String get confirmUnbindingPleaseEnterYes => 'अनबाइंडिंग की पुष्टि करने के लिए, कृपया "हाँ" दर्ज करें';
+	@override String get listAllWorkingTempReceivingAddresses => 'सभी कार्यरत क्रॉस-चेन प्राप्ति पतों की सूची दें';
+	@override String get setNote => 'नोट सेट करें';
+	@override String lengthCannotExceedXbytes({required Object x}) => 'लंबाई ${x} बाइट्स से अधिक नहीं हो सकती';
+	@override String get transferFee => 'ट्रांसफर शुल्क';
+	@override String get crossChainFee => 'क्रॉस-चेन शुल्क';
+	@override String get crossChainTransferOutError => 'क्रॉस-चेन ट्रांसफर आउट त्रुटि';
+	@override String get chainName => 'चेन नाम';
+	@override String get message => 'संदेश';
+	@override String get dontShowAgain => 'फिर से न दिखाएं';
+	@override String get queuing => 'कतार में है';
+	@override String get optional => 'वैकल्पिक';
+	@override String get publiclyVisible => 'सार्वजनिक रूप से दृश्यमान';
+	@override String get rates => 'दर';
+	@override String get minimum => 'न्यूनतम';
+	@override String get maximum => 'अधिकतम';
+	@override String get minimumBlockConfirmations => 'न्यूनतम ब्लॉक पुष्टि';
+	@override String get dsmsVerifyTerminal => 'DSMS सत्यापनकर्ता टर्मिनल';
+	@override String get overall => 'कुल मिलाकर';
+	@override String get my => 'मेरा / मेरी';
+	@override String get getVerifierPermissions => 'सत्यापनकर्ता अनुमतियाँ प्राप्त करें';
+	@override String get checkValidatorQualifications => 'मान्यकर्ता अनुमतियों की योग्यताएँ जाँचें';
+	@override String get qualification => 'योग्यता';
+	@override String get upperLimit => 'ऊपरी सीमा';
+	@override String get maximumNumberOfTerminalsAllowedToAccess => 'अधिकतम टर्मिनलों की संख्या जिसकी पहुँच अनुमति है';
+	@override String get numberOfExistingAccessTerminals => 'मौजूदा एक्सेस टर्मिनलों की संख्या';
+	@override String get applyingForDSMSVerifierPermissionsTips => 'वेरिफायर अनुमतियों के लिए आवेदन करने से पहले, आपको एक खाली एंड्रॉइड फोन और एक समर्पित एक्सेस नंबर तैयार करना होगा, और DSMS एक्सेस टर्मिनल एप्लिकेशन को डाउनलोड और इंस्टॉल करना होगा।';
+	@override String get downloadLink => 'डाउनलोड लिंक';
+	@override String get alreadyReadyFollowingTheAboveTips => 'मैंने पहले से ही ऊपर दिए गए सुझावों का पालन कर लिया है!';
+	@override String get globalUniversal => 'ग्लोबल यूनिवर्सल';
+	@override TextSpan insufficientLocalVerifierTips({required InlineSpan gu}) => TextSpan(children: [
+		const TextSpan(text: 'वर्तमान में DSMS सत्यापन एक्सेस सेवा में भाग लेने के लिए पर्याप्त स्थानीय सत्यापनकर्ता नहीं हैं। कृपया "'),
+		gu,
+		const TextSpan(text: '" एक्सेस सेवा का चयन करें।'),
+	]);
+	@override String get asDedicatedNumberForAccess => 'एक्सेस के लिए समर्पित नंबर के रूप में';
+	@override String pleaseCheckTip({required Object tip}) => 'कृपया "${tip}" जांचें';
+	@override String get inputLengthTooShort => 'इनपुट की लंबाई बहुत छोटी है';
+	@override String get shortName => 'शॉर्ट-नाम';
+	@override String pleaseEnterXname({required Object name}) => 'कृपया ${name} दर्ज करें';
+	@override String get applicationIsBeingSubmitted_pleaseWait => 'आवेदन सबमिट किया जा रहा है, कृपया प्रतीक्षा करें....';
+	@override String get applyForDSMSVerifierPermission => 'DSMS सत्यापनकर्ता अनुमति के लिए आवेदन करें।';
+	@override String get confirmInformation => 'सूचना की पुष्टि करें।';
+	@override String get lastHeartbeat => 'आखिरी धड़कन';
+	@override String get expirationTime => 'समाप्ति समय';
+	@override String get country => 'देश';
+	@override String get accessTerminals => 'ऐक्सेस टर्मिनल्स';
+	@override String get totalNumberOfDSMSaccessNumberTerminals => 'कुल संख्या DSMS एक्सेस नंबर टर्मिनल्स';
+	@override String get textContent => 'पाठ सामग्री';
+	@override String get scanQRcodeToLogin => 'लॉगिन करने के लिए क्यूआर कोड स्कैन करें';
+	@override String get confirmLogin => 'लॉगिन की पुष्टि करें';
+	@override String get authorizeSubApplicationToLogin => 'इस उप-एप्लिकेशन को लॉगिन करने की अनुमति दें';
+	@override String get authorizationSuccessful => 'प्राधिकरण सफल!';
+	@override String get launchSMSprogram => 'एसएमएस कार्यक्रम लॉन्च करें';
+	@override String get notApplied => 'लागू नहीं किया गया';
+	@override String get validityPeriod => 'वैधता अवधि';
+	@override String get renewal => 'नवीनीकरण';
+	@override String get scanCodeToAuthorizeTerminalLogin => 'टर्मिनल लॉगिन को अधिकृत करने के लिए कोड स्कैन करें';
+	@override String get rewards => 'इनाम';
+	@override String get roles => 'भूमिकाएँ';
+	@override String get developerCenter => 'डेवलपर केंद्र';
+	@override String get appName => 'ऐप का नाम';
+	@override String get pleaseSelect => 'कृपया चयन करें';
+	@override String get category => 'श्रेणी';
+	@override String get keywords => 'किवर्ड्स';
+	@override String get pleaseEnterAkeyword => 'कृपया एक किवर्ड दर्ज करें';
+	@override String get createApplication => 'एप्लिकेशन बनाएं';
+	@override String get appType => 'एप्लिकेशन प्रकार';
+	@override String get numberOfCategoriesMustBetween1and3 => 'श्रेणियों की संख्या 1 से 3 के बीच होनी चाहिए।';
+	@override String get appLogoSpecifications => 'छवि प्रारूप: png, आकार: 100KB के भीतर, रिज़ॉल्यूशन (पिक्सल): 256 * 256';
+	@override String get localAlbum => 'लोकल एल्बम';
+	@override String get networkPath => 'नेटवर्क पथ';
+	@override String get imageURLkAddress => 'इमेज URL एड्रेस';
+	@override String get urlAddressFormatIsIncorrect => 'URL एड्रेस फ़ॉर्मेट गलत है';
+	@override String get imageFormatOnlySupportsPng => 'इमेज़ फ़ॉर्मेट केवल "png" को ही समर्थन करता है।.';
+	@override String lengthMustBeBetweenA_BCharacters({required Object a, required Object b}) => 'लंबाई ${a}-${b} अक्षरों के बीच होनी चाहिए।';
+	@override String get introduction => 'परिचय';
+	@override String imageSizeCannotBeLargerThanA_currentlyB({required Object a, required Object b}) => 'चित्र का आकार ${a} से बड़ा नहीं हो सकता, वर्तमान में ${b} है।';
+	@override String imageResolutionMustBeP1pixels_currentlyP2({required Object p1, required Object p2}) => 'चित्र का रिज़ॉल्यूशन ${p1} (पिक्सल) होना चाहिए, वर्तमान में ${p2} है।';
+	@override String get becomeDeveloper => 'डेवलपर बनें';
+	@override String get developerInformation => 'डेवलपर जानकारी';
+	@override String get teamName => 'टीम का नाम';
+	@override String get website => 'वेबसाइट';
+	@override String get other => 'अन्य';
+	@override String get githubVerification => 'GitHub सत्यापन';
+	@override String get exampleUrl => 'उदाहरण URL';
+	@override String githubVerificationTip({required Object did}) => 'कृपया अपने GitHub खाते का उपयोग करके रिपोजिटरी में एक \'delta.did\' फ़ाइल बनाएँ जिसमें \'${did}\' सामग्री हो; फिर, इस फ़ाइल का githubusercontent URL इस इनपुट बॉक्स में प्रमाणीकरण के लिए पेस्ट करें।';
+	@override String get createApp => 'ऐप बनाएँ';
+	@override String get appManagement => 'ऐप प्रबंधन';
+	@override String get statusLogs => 'स्थिति लॉग';
+	@override String get bad => 'बुरा';
+	@override String get normal => 'सामान्य';
+	@override String get good => 'अच्छा';
+	@override String get onceCreatedItCannotBeChanged => 'एक बार बन जाने के बाद, इसे बदला नहीं जा सकता!';
+	@override String get manageApplicationEntity => 'एप्लिकेशन इकाई का प्रबंधन करें';
+	@override String get currentVersion => 'वर्तमान संस्करण';
+	@override String get submitVersion => 'संस्करण सबमिट करें';
+	@override String get packageOnlySupportZipCompressedFile => 'पैकेज केवल zip फ़ॉर्मेट संकुचित फ़ाइल का समर्थन करता है';
+	@override String theXfileWasNotFoundInTheZipPackage({required Object name}) => '\'${name}\' फ़ाइल ज़िप पैकेज में नहीं मिली';
+	@override String get fileList => 'फ़ाइल सूची: ';
+	@override String get programPackage => 'प्रोग्राम पैकेज: ';
+	@override String get automaticallyExtractFromVersionFile => '\'.version\' फ़ाइल से स्वचालित रूप से निकालें';
+	@override String get dappVersionFormatTip => 'संस्करण संख्या का फ़ॉर्मेट दशमलव होना चाहिए और सटीकता को 2 अंकों तक बनाए रखना चाहिए, और अधिकतम 99.99 से अधिक नहीं हो सकता।';
+	@override String versionNumberMustBeGreaterThanCurrentVersionX({required Object v}) => 'संस्करण संख्या वर्तमान संस्करण \'${v}\' से अधिक होनी चाहिए।';
+	@override String get versionNotes => 'संस्करण नोट्स: ';
+	@override String get dappInfo => 'DApp जानकारी';
+	@override String get updateRelease => 'नया अपडेट';
+	@override String get loadAndRun => 'लोड करें और चलाएं';
+	@override String get notYetSubmittedProgramPackage => 'अभी तक एक प्रोग्राम पैकेज सबमिट नहीं किया गया है!';
+	@override String get authorizeMinidAppLogin => 'mini-dApp लॉगिन को अनुमोदित करें';
+	@override String get confirmAuthorizationPleaseEnterYes => 'अनुमोदन की पुष्टि करें, कृपया "हां" दर्ज करें';
+	@override String get authorizeNow => 'अब अनुमोदित करें';
+	@override String get operation => 'संचालन: ';
+	@override String get statusChange => 'स्थिति परिवर्तन';
+	@override String get changeTo => 'में परिवर्तन करें: ';
+	@override String get notes => 'नोट्स: ';
+	@override String get changesNotEffective => 'परिवर्तित नहीं हुए!';
+	@override String get released => 'रिलीज़ किया गया';
+	@override String get inPublicBeta => 'पब्लिक बीटा में';
+	@override String get developers => 'डेवलपर्स: ';
+	@override String get reviewList => 'समीक्षा सूची: ';
+	@override String get postReview => 'समीक्षा पोस्ट करें';
+	@override String get scoreNow => 'अभी अंक दें';
+	@override String get description => 'विवरण: ';
+	@override String get noData => '(^-^) \n कोई डेटा उपलब्ध नहीं है';
+	@override String versionHasBeenUpdatedFromAtoB({required Object a, required Object b}) => 'संस्करण को ${a} से ${b} में अपडेट किया गया है।';
+	@override String get loadNewVersion => 'नया संस्करण लोड करें';
+	@override String get name => 'नाम: ';
+	@override String get canisterId => 'कैनिस्टर आईडी: ';
+	@override String get updateTime => 'अपडेट समय';
+	@override String get contractCanistersState => 'कॉन्ट्रैक्ट कैनिस्टर्स की स्थिति';
+	@override String get userDistribution => 'उपयोगकर्ता वितरण';
+	@override String get settings => 'सेटिंग्स';
+	@override String get security => 'सुरक्षा';
+	@override String get invite => 'आमंत्रित करें';
+	@override String get more => 'अधिक…';
+	@override String get receiveAddress => 'प्राप्त करने का एड्रेस: ';
+	@override String get hangingAmount => 'हैंगिंग अमाउंट';
+	@override String get hangingAmountTips => 'हैंगिंग अमाउंट आपके अधीनस्थ टीम के खनन द्वारा उत्पन्न इनामों का अस्थायी रिकॉर्ड है। एक बार जब आप खनन करते हैं, तो ये राशियाँ पेंडिंग अमाउंट में इकट्ठा हो जाएँगी।';
+	@override String get pendingAmount => 'पेंडिंग अमाउंट';
+	@override String get pendingAmountTips => 'पेंडिंग अमाउंट उस राशि को संदर्भित करती है जिसे अभी तक पुष्टि नहीं की गई है और विज्ञापनदाता के साथ तुलना की गई है। जो राशि पुष्टि हो जाती है, वह वैध USCT रिकॉर्ड में स्थानांतरित कर दी जाएगी। यदि कोई अवैध भाग है, तो उसे हटा दिया जाएगा।';
+	@override String get received => 'प्राप्त';
+	@override String get processing => 'प्रसंस्करण';
+	@override String get replied => 'उत्तर दिया';
+	@override String get rejected => 'अस्वीकृत';
+	@override String get unknown => 'अज्ञात';
+	@override String get insufficientBalance => 'अपर्याप्त बैलेंस!';
+	@override String InsufficientXbalanceToPayCrossChainNetworkFee({required Object x}) => '${x} बैलेंस क्रॉस-चेन नेटवर्क शुल्क का भुगतान करने के लिए अपर्याप्त है';
+	@override String get aTransactionThatHasNotBeenCompleted_CannotBeTransferredAtMoment => 'एक लेन-देन है जो पूरा नहीं हुआ है और इस समय उसे स्थानांतरित नहीं किया जा सकता।';
+	@override String get thisfunctionNotSupportExternalCalls => 'यह फ़ंक्शन बाहरी कॉल का समर्थन नहीं करता है।';
+	@override String get noMatchingAddressThatCanBeUsedToPayCrossChainFees_switchOtherChainToTry => 'कोई मेल खाने वाला पता नहीं है जिसे क्रॉस-चेन शुल्क का भुगतान करने के लिए उपयोग किया जा सके, कृपया अन्य चेन नेटवर्क्स में स्विच करके प्रयास करें।';
+	@override String currentMaximumMatchedSingleTransferAmountIsX({required Object x}) => 'वर्तमान में अधिकतम मेल खाता एकल स्थानांतरण राशि ${x} है।';
+	@override String get memoMustNotBeMoreThan64bytes => 'स्मृति 64 बाइट्स से अधिक नहीं होनी चाहिए।';
+	@override String insufficientBalance_theAmountIsX({required Object x}) => 'अपर्याप्त बैलेंस, राशि है: ${x}';
+	@override String get boundRreceivingAddressesExceed3Tip => 'बंधन में प्राप्ति पतों की संख्या 3 से अधिक नहीं हो सकती है। \nयदि आपको नया प्राप्ति पता जोड़ने की आवश्यकता है, \nतो कृपया पहले किसी अन्य प्राप्ति पते को अनबाइंड करें।';
+	@override String parametersA_exception({required Object x}) => 'पैरामीटर: ${x}, अपवाद';
+	@override String get transferAmountMustBeLargerThan0 => 'ट्रांसफर राशि 0 से अधिक होनी चाहिए';
+	@override String get authorizationHasExpired => 'अधिकारिता समाप्त हो चुकी है';
+	@override String get theAppHasNotBeenAuthorizedByOwner => 'ऐप को मालिक द्वारा अनुमति नहीं दी गई है।';
+	@override String get authenticationTokenIsInvalid => 'प्रमाणीकरण टोकन अमान्य है।';
+	@override String get verifyInfoIsInvalidOrExpired => 'सत्यापन जानकारी अमान्य है या समाप्त हो गई है।';
+	@override String get verifyThatNumberOfAccessTerminalsHasExceededLimitOf1in10000 => 'सत्यापित करें कि एक्सेस टर्मिनलों की संख्या 10,000 में से एक की सीमा से अधिक नहीं हुई है।';
+	@override String get timeToParticipateInMiningMustBeMoreThan3Days => 'माइनिंग में भाग लेने का समय 3 दिनों से अधिक होना चाहिए।';
+	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'सुरक्षा सर्कल के सदस्य की संख्या 3 लोगों से कम नहीं हो सकती है।';
+	@override String get avatarIsNotSet => 'प्रोफ़ाइल फ़ोटो सेट नहीं किया गया है।';
+	@override String get numberOfDirectReferralsCannotBeLessThan3 => 'प्रत्यक्ष संदर्भों की संख्या 3 लोगों से कम नहीं हो सकती है।';
+	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => 'समय सीमा अपर्याप्त है, मोबाइल नंबर केवल एक बार प्रति वर्ष बदला जा सकता है।';
+	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'यह मोबाइल फोन नंबर पहले से मौजूद है और इसे पुनः उपयोग नहीं किया जा सकता।';
+	@override String get securityCodeIsIncorrect => 'सुरक्षा कोड गलत है।';
+	@override String get securityCodeMayHaveExpired => 'शायद सुरक्षा कोड की समय सीमा समाप्त हो गई है।';
+	@override String get sessionIdIsInvalidOrExpired => 'सत्र ID अमान्य है या समाप्त हो गया है।';
+	@override String get sessionHasBeenAuthorized => 'सत्र को प्रमाणित कर दिया गया है!';
+	@override String canOnlyBeRenewedWithinXdaysBeforeExpiration({required Object x}) => 'केवल समाप्ति से ${x} दिन पहले नवीनीकरण किया जा सकता है।';
+	@override String get notYetGrantedDeveloperPermissions => 'अभी तक डेवलपर अनुमतियाँ प्रदान नहीं की गई हैं।';
+	@override String fieldXcannotBeEmpty({required Object x}) => 'फ़ील्ड ईमेल ${x} खाली नहीं हो सकता।';
+	@override String get emailFormatError => 'ईमेल फ़ॉर्मेट में गलती है।';
+	@override String theXformatIsIncorrect({required Object x}) => '\'${x}\' फ़ॉर्मेट गलत है।';
+	@override String lengthOfFieldXmustBeBetweenYandXcharacters({required Object x, required Object y, required Object z}) => 'फ़ील्ड \'${x}\' की लंबाई ${y} और ${z} वर्णों के बीच होनी चाहिए।';
+	@override String theXselectionMustBeBetweenYandX({required Object x, required Object y, required Object z}) => '\'${x}\' चयन ${y} और ${z} के बीच होना चाहिए।';
+	@override String get unchanged_sameAsOldContent => 'अपरिवर्तित, पुराने विषय के समान!';
+	@override String XYalreadyexists({required Object x, required Object y}) => '${x}: \'${y}\' पहले से मौजूद है!';
+	@override String get mobileNumberHasNotJoinedDelta => 'यह मोबाइल नंबर अभी तक डेल्टा में शामिल नहीं हुआ है!';
+	@override String get referrerIdCannotBeEmpty => 'रेफरर DID खाली नहीं हो सकता! ';
+	@override String get referrerIdDoesNotExist => 'रेफरर DId मौजूद नहीं है!';
+	@override String get didIsIncorrectOrInvalid => 'DID गलत है या अमान्य है！';
+	@override String get accessTokenIsIncorrectOrInvalid => 'अक्सेस टोकन गलत है या अमान्य है।！';
+	@override String get minimumWithdrawalAmountIs1USD => 'न्यूनतम निकासी राशि 1USD है।';
+	@override String get miningTimeIsNotYet => 'माइनिंग  समय अभी तक शुरू नहीं हुआ है।';
+	@override String get alreadyExists_pleaseDoNotRepeatedly => 'पहले से मौजूद है, कृपया पुनः न जोड़ें!';
+	@override String get registrationNumberCannotBeUsedAsAccessNumber => 'रजिस्ट्रेशन नंबर को प्रमाणन एक्सेस नंबर के रूप में उपयोग नहीं किया जा सकता।';
+	@override String get canotAddYourSelf => 'आप खुद को जोड़ नहीं सकते।';
+	@override String get logOut => 'लॉग आउट';
+	@override String get confirmLogout => 'लॉग आउट की पुष्टि करें';
+	@override String get logOutTipsText => 'सादर याद दिलाना: श्वेत पत्र में संबंधित समझौते के अनुसार, प्रत्येक लॉगिन सत्यापन के लिए आपके द्वारा एक निश्चित मात्रा में डेल्टा कॉइंस का उपभोग किया जाएगा, ताकि सत्यापनकर्ता को प्रोत्साहन दिया जा सके। कृपया लॉग इन और लॉग आउट करने की कोशिश न करें, अगर यह आवश्यक न हो। तुरंत लॉग आउट करने के लिए निम्नलिखित बटन पर क्लिक करें।';
+	@override String get ConfirmLogoutPleaseEnterYes => 'लॉग आउट की पुष्टि करने के लिए कृपया "हाँ" दर्ज करें।';
+	@override String get tip => 'सुझाव';
+	@override String get cancel => 'रद्द करें';
+	@override String get close => 'बंद करें';
+	@override String get selected => 'चयनित';
+	@override String get edit => 'संपादित करें';
+	@override String get submit => 'सबमिट करें';
+	@override String get goBack => 'वापिस जाएँ';
+	@override String get copiedToClipboard => 'क्लिपबोर्ड में कॉपी किया गया!';
+	@override String get nickname => 'उपनाम';
+	@override String get confirm => 'पुष्टि करें';
+	@override String get cannotBeEmpty => 'खाली नहीं हो सकता';
+	@override String get deleteSuccessful => 'हटाना सफल!';
+	@override String get successfullyModified => 'सफलतापूर्वक संशोधित किया गया!';
+	@override String get executionSuccessful => 'सफलतापूर्वक निष्पादित किया गया!';
+	@override String get parameterException => 'पैरामीटर अपवाद!';
+	@override String get preview => 'प्रिव्यू';
+	@override String get followSystem => 'सिस्टम अनुसरण करें';
+	@override String get change => 'बदलें';
+	@override String get replace => 'प्रतिस्थापित करें';
+	@override String get view => 'देखें';
+	@override String get manage => 'प्रबंधन करें';
+	@override String get modify => 'संशोधित करें';
+	@override String get replacedSuccessfully => 'सफलतापूर्वक बदला गया!';
+	@override String get authentication => 'प्रमाणीकरण';
+	@override String get reacquire => 'पुनः प्राप्त करें';
+	@override String get tryAgain => 'फिर से प्रयास करें';
+	@override String get querying => 'क्वेरी जारी है…';
+	@override String get writingToOnChain_pleaseWait => 'ऑन-चेन पर लिख रहे हैं, कृपया प्रतीक्षा करें…';
+	@override String get versionCheck => 'संस्करण जाँच करें';
+	@override String get alreadyLatestVersion => 'आपके पास पहले से ही नवीनतम संस्करण है!';
+	@override String get foundNewVersion => 'एक नया संस्करण उपलब्ध है:';
+	@override String get upgradeLink => 'अपग्रेड लिंक: ';
+	@override String get deviceDescription => 'डिवाइस विवरण: ';
+	@override String get notification30SecondsBeforeMiningStops => 'माइनिंग बंद होने से 30 सेकंड पहले अधिसूचना रिमाइंडर निष्पादित करें!';
+	@override String get goMining => 'माइनिंग आरंभ करें';
+	@override String get deltaMiningReminder => 'डेल्टा माइनिंग रिमाइंडर';
+	@override String get clickToMine_miningIsAboutToStop => 'माइन करने के लिए यहां क्लिक करें, माइनिंग बंद होने वाली है!';
+	@override String get incorrect_input => 'गलत इनपुट!';
+	@override String get are_you_sure_delete => 'क्या आप वाकई हटाना चाहते हैं?';
+	@override String get delete_account => 'खाता हटाएँ';
+	@override String get how_to_operate_it => 'इसे संचालित कैसे करें?';
+	@override String get deletion_warning_tip => 'यदि आप अपना खाता हटाते हैं, तो आप अपने सभी डेल्टा कॉइन्स खो देंगे और अन्य सदस्यों से होने वाली सभी कमाई भी समाप्त हो जाएगी।';
+	@override String get launchWhatsAppProgram => 'WhatsApp प्रोग्राम लॉन्च करें';
+	@override String get sms => 'एसएमएस';
+	@override String get whatsApp_verification_tips => 'इस आइकन वाले एक्सेस नंबर इंगित करते हैं कि वे व्हाट्सएप संदेश सत्यापन का भी समर्थन करते हैं। अंतरराष्ट्रीय संदेश भेजते समय, सफलता दर बढ़ाने और लागत कम करने के लिए व्हाट्सएप का उपयोग करने की सिफारिश की जाती है।';
+	@override String get ihaveSentVerificationString => 'मैंने सत्यापन स्ट्रिंग भेज दी है!';
+	@override String get totalOfPeople => 'कुल लोगों की संख्या: ';
+	@override String get numberOfPeopleMining => 'माइनिंग करने वाले लोगों की संख्या';
+	@override String get useBrowserScanQRcodeToSMSprogram => 'आप किसी अन्य डिवाइस पर ब्राउज़र का उपयोग करके QR कोड स्कैन कर सकते हैं और इसे SMS प्रोग्राम में भेज सकते हैं।';
+	@override String get toggle => 'टॉगल';
+	@override String get DSMSverifier => 'DSMS सत्यापनकर्ता';
+	@override String get activate => 'सक्रिय करें';
+	@override String get activated => 'सक्रिय किया गया!';
+	@override String get generateActivationCommand => 'सक्रियकरण कमांड उत्पन्न करें';
+	@override String get activationCommand => 'सक्रियकरण कमांड';
+	@override String get activationSentedTip => 'सक्रियकरण SMS भेजने के बाद, कृपया एक्सेस टर्मिनल डिवाइस पर सक्रियकरण स्थिति जांचें।';
+	@override String get biometricsNotEnabledTip => 'आपके डिवाइस पर बायोमेट्रिक्स (फेस या फिंगरप्रिंट) सक्षम नहीं है, कृपया जारी रखने के लिए इसे सक्षम करें।';
+	@override String get error => 'त्रुटि';
+	@override String get exceptionOccurredWhenCallingBiometric => 'बायोमेट्रिक पहचान (फेस या फिंगरप्रिंट) फ़ंक्शन कॉल करते समय एक अपवाद उत्पन्न हुआ!';
+	@override TextSpan accessNumberSelectionTip({required InlineSpan checkedNum, required InlineSpan shouldNum}) => TextSpan(children: [
+		checkedNum,
+		const TextSpan(text: ' एक्सेस नंबर जांचे गए हैं, '),
+		shouldNum,
+		const TextSpan(text: ' का चयन किया जाना चाहिए।'),
+	]);
+	@override String sentaboveXaccessNumbers({required Object text, required Object n}) => 'क्या ${text} उपरोक्त ${n} एक्सेस नंबरों पर भेजा गया है?';
+	@override String get interface => 'इंटरफ़ेस:';
+	@override String get waitingTimeoutOrSenderNumberMismatch => 'प्रतीक्षा समय समाप्त या प्रेषक संख्या मेल नहीं खाती';
+	@override String mobileNumberOfsecurityCircleYouFilledDoesntMatch({required Object x}) => 'आपके द्वारा भरे गए सुरक्षा सर्कल सदस्य का मोबाइल नंबर मेल नहीं खाता: ${x}';
+	@override String leastXmobileNumbersMustCompleted({required Object n}) => 'कम से कम ${n} मोबाइल नंबर पूरे करने आवश्यक हैं।';
+	@override String get loginWithin10MinutesOfLoggingOutAvoidTwoFactorVerification => 'लॉगआउट करने के बाद 10 मिनट के भीतर लॉग इन करें ताकि टू-फैक्टर सत्यापन से बचा जा सके।';
+	@override String get noAccessNumberInYourRegionYet => 'आपके क्षेत्र में अभी तक कोई एक्सेस नंबर उपलब्ध नहीं है।';
+	@override String get notEnoughAccessNumbersInYourRegion => 'आपके क्षेत्र में पर्याप्त एक्सेस नंबर नहीं हैं।';
+	@override String get tipsForDeployDSMSterminal => 'सिस्टम ने स्वचालित रूप से आपके लिए अन्य देशों से कुछ एक्सेस नंबर लोड कर दिए हैं। बेहतर और कम लागत वाली सत्यापन सेवाएँ प्रदान करने के लिए, यह अनुशंसा की जाती है कि आप या अपने रेफ़रर से संपर्क करें ताकि स्थानीय रूप से DSMS टर्मिनल तैनात किए जा सकें और सत्यापन शुल्क अर्जित किया जा सके।';
+	@override String get noOneCanProvideMeTheSecurityCode => 'कोई भी मुझे इस समय सुरक्षा कोड देने में सक्षम नहीं है!';
+	@override String get useSupplementalMode => 'सप्लीमेंटल मोड का उपयोग करें';
+	@override String get returnToSecurityCodeMode => 'सुरक्षा कोड मोड पर लौटें';
+	@override String get enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted => 'कृपया उनका संबंधित मोबाइल नंबर दर्ज करें, देश कोड छोड़ सकते हैं।';
+	@override String mobileNumberForNameIsIncorrect({required Object name}) => '${name} का मोबाइल नंबर ग़लत है';
+	@override String get matchingVerificationStrategyIs => 'सत्यापन के लिए चुनी गई रणनीति:';
+	@override String get balanceGreater3ICP_noNeedPourFuel => 'शेष 3 ICP से अधिक है, फिलहाल ईंधन डालने की आवश्यकता नहीं है।';
+	@override String get escrowAccount => 'एस्क्रो खाता';
+	@override String get fuelRelay => 'ईंधन रिले';
+	@override String get pourFuel => 'ईंधन डालें';
+	@override String get fuelState => 'ईंधन की स्थिति';
+	@override String get pouringFuelTips => 'ईंधन डालने से आपको कोई लाभ या हानि नहीं होती है, इसका उद्देश्य डेल्टा सिस्टम अनुभव को समृद्ध करना है।';
+	@override String get sponsorDevelopersByWatchingAds => 'विज्ञापन देखकर डेवलपर्स को प्रायोजित करें';
+	@override String get status => 'स्थिति';
+	@override String get date => 'तारीख';
+	@override String get assetApplicationIsInProgressTip => 'एसेट आवेदन प्रगति पर है, कृपया 3 सेकंड में पुनः प्रयास करें।';
+	@override String get delete => 'हटाएँ';
+	@override String get deleteVerifierTip => 'जब किसी सत्यापनकर्ता की अनुमतियाँ हटाई जाती हैं, तो सभी संबंधित स्कोर डेटा एक ही समय में हटा दिए जाएँगे, लेकिन पहले से प्राप्त पुरस्कार प्रभावित नहीं होंगे।';
+	@override String get deleteVerifierStatusTip => 'कृपया इसे हटाने से पहले रुकी हुई स्थिति पर सेट करें';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'कृपया पुष्टि करने के लिए "${text}" दर्ज करें';
+	@override String get localSecurity => 'स्थानीय सुरक्षा';
+	@override String get deviceLock => 'डिवाइस लॉक';
+	@override String get patternLock => 'पैटर्न लॉक';
+	@override String get none => 'कोई नहीं';
+	@override String get exist => 'अस्तित्व में है';
+	@override String get prompt => 'प्रॉम्प्ट:';
+	@override String get localSecurityTip1 => '1. स्थानीय सुरक्षा प्रमाणीकरण का उपयोग कुछ संवेदनशील कार्यों के दौरान पहचान की पुष्टि करने के लिए किया जाता है। इसका उद्देश्य डिवाइस को दूसरों द्वारा नियंत्रित होने से रोकना और खाते की सुरक्षा सुनिश्चित करना है।';
+	@override String get localSecurityTip2 => '2. पैटर्न लॉक एक पूरक समाधान है जब डिवाइस लॉक समर्थित नहीं है या असंगत है। आम तौर पर, डिवाइस लॉक उपलब्ध होने पर पैटर्न लॉक सेट करने की कोई आवश्यकता नहीं होती है।';
+	@override String get localSecurityTip3 => '3. जब आपका पैटर्न लॉक भूल जाता है, तो आप केवल ऐप डेटा साफ़ कर सकते हैं या इसे साफ़ करने के लिए ऐप को फिर से इंस्टॉल कर सकते हैं।';
+	@override String deviceAuthFirstTip({required Object menu, required Object localSecurity}) => 'डिवाइस प्रमाणीकरण को कॉल किया जाने वाला है। यदि कोई त्रुटि या अपवाद होता है, तो कृपया परीक्षण और आगे की सेटिंग के लिए "${menu}" पृष्ठ पर "${localSecurity}" विकल्प पर जाएँ।';
+	@override String get pleaseDrawUnlockPattern => 'कृपया अनलॉक पैटर्न बनाएं';
+	@override String get addPatternLock => 'पैटर्न लॉक जोड़ें';
+	@override String get cannotBeLessThan8Dots => '8 बिंदुओं से कम नहीं हो सकता';
+	@override String get pleaseRepeatThePattern => 'कृपया पैटर्न को पुनः दोहराएं';
+	@override String get notMatchFirstValidPattern => 'पहले वैध ड्राइंग पैटर्न से मेल नहीं खाता';
+	@override String get deletePatternLock => 'पैटर्न लॉक हटाएं';
+	@override String get notMatchExistingPattern => 'मौजूदा पैटर्न से मेल नहीं खाता';
+	@override String get localAuthentication => 'स्थानीय प्रमाणीकरण';
 }
 
 // Path: <root>
@@ -6007,13 +6904,13 @@ class _StringsIt implements Translations {
 	@override String get tempDepositAddressTip4 => '4. Se avete bisogno di depositare altri tipi di beni, passate alla pagina della valuta corrispondente e alle opzioni dei parametri per richiedere un nuovo indirizzo.';
 	@override String get applyExtensionOfValidity => 'Richiesta di proroga del periodo di validità';
 	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-		const TextSpan(text: 'Questo indirizzo scadrà dopo '),
+		const TextSpan(text: 'Questo indirizzo scadrà tra '),
 		diff,
-		const TextSpan(text: ' e sarà '),
-		tap('estendi manualmente'),
-		const TextSpan(text: ' valido per 12 ore prima della scadenza.'),
+		const TextSpan(text: '. Puoi '),
+		tap('manually extend'),
+		const TextSpan(text: ' il periodo di validità entro 6 ore dalla scadenza.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'Può essere rinnovato solo con 12 ore di anticipo';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'È possibile rinnovare solo entro 6 ore di anticipo';
 	@override String get theReceivingAddressValidForLongtime => 'Questo indirizzo è valido per molto tempo.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'Questo indirizzo di raccolta è valido a lungo e viene accreditato automaticamente in tempo reale.';
 	@override String get confirmDeposited => 'Conferma dei depositi';
@@ -6370,6 +7267,29 @@ class _StringsIt implements Translations {
 	@override String get sponsorDevelopersByWatchingAds => 'Sponsorizza gli sviluppatori guardando gli annunci';
 	@override String get status => 'Stato';
 	@override String get date => 'Data';
+	@override String get assetApplicationIsInProgressTip => 'Richiesta di risorse in corso, riprovare tra 3 secondi.';
+	@override String get delete => 'Elimina';
+	@override String get deleteVerifierTip => 'Quando si eliminano i permessi di un verificatore, tutti i dati relativi ai punteggi verranno eliminati contemporaneamente, ma le ricompense già ottenute non saranno interessate.';
+	@override String get deleteVerifierStatusTip => 'Impostalo in pausa prima di eliminarlo';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'Inserisci "${text}" per confermare';
+	@override String get localSecurity => 'Sicurezza locale';
+	@override String get deviceLock => 'Blocco dispositivo';
+	@override String get patternLock => 'Blocco modello';
+	@override String get none => 'nessuno';
+	@override String get exist => 'esiste';
+	@override String get prompt => 'Richiesta:';
+	@override String get localSecurityTip1 => '1. L\'autenticazione di sicurezza locale viene utilizzata per confermare l\'identità durante alcune operazioni sensibili. Il suo scopo è impedire che il dispositivo sia controllato da altri e garantire la sicurezza dell\'account.';
+	@override String get localSecurityTip2 => '2. Il blocco pattern è una soluzione supplementare quando il blocco dispositivo non è supportato o è incompatibile. In genere, non è necessario impostare un blocco pattern quando il blocco dispositivo è disponibile.';
+	@override String get localSecurityTip3 => '3. Se dimentichi il blocco pattern, puoi solo cancellare i dati dell\'app o reinstallare l\'app per eliminarlo.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'L\'autenticazione del dispositivo sta per essere chiamata. Se si verifica un errore o un\'eccezione, accedere all\'opzione "${localSecurity}" nella pagina "${menu}" per testare e configurare ulteriori impostazioni.';
+	@override String get pleaseDrawUnlockPattern => 'Per favore, disegna la sequenza di sblocco';
+	@override String get addPatternLock => 'Aggiungi blocco pattern';
+	@override String get cannotBeLessThan8Dots => 'Non può essere inferiore a 8 punti';
+	@override String get pleaseRepeatThePattern => 'Per favore, ripeti di nuovo lo schema';
+	@override String get notMatchFirstValidPattern => 'Non corrisponde al primo modello di disegno valido';
+	@override String get deletePatternLock => 'Elimina il blocco pattern';
+	@override String get notMatchExistingPattern => 'Non corrisponde a un modello esistente';
+	@override String get localAuthentication => 'Aut. locale';
 }
 
 // Path: <root>
@@ -6697,13 +7617,13 @@ class _StringsJa implements Translations {
 	@override String get tempDepositAddressTip4 => '4.他の種類の資産を入金する必要がある場合は、対応する通貨ページとパラメータオプションに切り替えて、新しい住所を申請してください。';
 	@override String get applyExtensionOfValidity => '有効期間延長申請';
 	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-		const TextSpan(text: 'このアドレスの有効期限は'),
+		const TextSpan(text: 'このアドレスは'),
 		diff,
-		const TextSpan(text: 'の後であり、'),
-		tap('manual extend'),
-		const TextSpan(text: 'は有効期限の12時間前まで有効である。'),
+		const TextSpan(text: '後に有効期限が切れます。有効期限の6時間前までに有効期間を'),
+		tap('manually extend'),
+		const TextSpan(text: 'することができます。'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => '更新は12時間前まで';
+	@override String get canOnlyRenewWithin6hoursInAdvance => '6時間以内のみ更新可能';
 	@override String get theReceivingAddressValidForLongtime => 'この住所は長期間有効である。';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'このコレクション・アドレスは長期間有効で、リアルタイムで自動的に入金される。';
 	@override String get confirmDeposited => '入金の確認';
@@ -7060,6 +7980,29 @@ class _StringsJa implements Translations {
 	@override String get sponsorDevelopersByWatchingAds => '広告を見て開発者をスポンサーする';
 	@override String get status => 'ステータス';
 	@override String get date => '日付';
+	@override String get assetApplicationIsInProgressTip => 'アセット申請が進行中です。3秒後にもう一度お試しください。';
+	@override String get delete => '削除';
+	@override String get deleteVerifierTip => '検証者の権限を削除すると、関連するスコアデータもすべて同時に削除されますが、すでに獲得した報酬には影響しません。';
+	@override String get deleteVerifierStatusTip => '削除する前に一時停止状態に設定してください';
+	@override String pleaseEnterXtoConfirm({required Object text}) => '確認のため、「${text}」を入力してください';
+	@override String get localSecurity => 'ローカルセキュリティ';
+	@override String get deviceLock => 'デバイスロック';
+	@override String get patternLock => 'パターンロック';
+	@override String get none => 'なし';
+	@override String get exist => '存在する';
+	@override String get prompt => 'プロンプト:';
+	@override String get localSecurityTip1 => '1. ローカルセキュリティ認証は、機密性の高い操作を行う際に本人確認を行うために使用されます。その目的は、デバイスが他人に制御されるのを防ぎ、アカウントのセキュリティを確保することです。';
+	@override String get localSecurityTip2 => '2. パターンロックは、デバイスロックがサポートされていない、または互換性がない場合の補助的な解決策です。通常、デバイスロックが利用可能な場合は、パターンロックを設定する必要はありません。';
+	@override String get localSecurityTip3 => '3. パターンロックを忘れた場合は、アプリのデータを消去するか、アプリを再インストールして消去するしかありません。';
+	@override String deviceAuthFirstTip({required Object menu, required Object localSecurity}) => 'デバイス認証が呼び出されようとしています。エラーまたは例外が発生した場合は、"${menu}"ページの"${localSecurity}"オプションに移動してテストと詳細な設定を行ってください。';
+	@override String get pleaseDrawUnlockPattern => 'ロック解除パターンを描いてください';
+	@override String get addPatternLock => 'パターンロックを追加';
+	@override String get cannotBeLessThan8Dots => '8ドット未満にはできません';
+	@override String get pleaseRepeatThePattern => 'パターンをもう一度繰り返してください';
+	@override String get notMatchFirstValidPattern => '最初の有効な描画パターンと一致しません';
+	@override String get deletePatternLock => 'パターンロックの削除';
+	@override String get notMatchExistingPattern => '既存のパターンと一致しません';
+	@override String get localAuthentication => 'ローカル認証';
 }
 
 // Path: <root>
@@ -7391,11 +8334,11 @@ class _StringsKo implements Translations {
 	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
 		const TextSpan(text: '이 주소는 '),
 		diff,
-		const TextSpan(text: ' 이후에 만료되며 만료 전 12시간 동안 '),
+		const TextSpan(text: ' 이후에 만료되며 만료 전 6시간 동안 '),
 		tap('수동으로 연장'),
 		const TextSpan(text: ' 유효합니다.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => '12시간 전에만 갱신 가능';
+	@override String get canOnlyRenewWithin6hoursInAdvance => '6시간 전에만 갱신 가능';
 	@override String get theReceivingAddressValidForLongtime => '이 주소는 오랫동안 유효합니다.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => '이 수집 주소는 오랫동안 유효하며 실시간으로 자동으로 적립됩니다.';
 	@override String get confirmDeposited => '입금 확인';
@@ -7752,6 +8695,29 @@ class _StringsKo implements Translations {
 	@override String get sponsorDevelopersByWatchingAds => '광고를 시청하여 개발자 후원';
 	@override String get status => '상태';
 	@override String get date => '날짜';
+	@override String get assetApplicationIsInProgressTip => '자산 신청이 진행 중입니다. 3초 후에 다시 시도해 주세요.';
+	@override String get delete => '삭제';
+	@override String get deleteVerifierTip => '검증자 권한을 삭제하면 관련 점수 데이터가 모두 동시에 삭제되지만, 이미 획득한 보상에는 영향을 미치지 않습니다.';
+	@override String get deleteVerifierStatusTip => '삭제하기 전에 일시 중지 상태로 설정하세요';
+	@override String pleaseEnterXtoConfirm({required Object text}) => '확인하시려면 "${text}"를 입력하세요.';
+	@override String get localSecurity => '로컬 보안';
+	@override String get deviceLock => '장치 잠금';
+	@override String get patternLock => '패턴 잠금';
+	@override String get none => '없음';
+	@override String get exist => '존재한다';
+	@override String get prompt => '프롬프트:';
+	@override String get localSecurityTip1 => '1. 로컬 보안 인증은 일부 민감한 작업 중에 신원을 확인하는 데 사용됩니다. 로컬 보안 인증의 목적은 다른 사람이 기기를 조작하는 것을 방지하고 계정의 보안을 유지하는 것입니다.';
+	@override String get localSecurityTip2 => '2. 패턴 잠금은 기기 잠금이 지원되지 않거나 호환되지 않을 때 사용할 수 있는 보완적인 솔루션입니다. 일반적으로 기기 잠금을 사용할 수 있는 경우에는 패턴 잠금을 설정할 필요가 없습니다.';
+	@override String get localSecurityTip3 => '3. 패턴 잠금을 잊어버린 경우, 앱 데이터를 삭제하거나 앱을 재설치해야만 삭제할 수 있습니다.';
+	@override String deviceAuthFirstTip({required Object menu, required Object localSecurity}) => '기기 인증이 곧 호출됩니다. 오류나 예외가 발생하면 "${menu}" 페이지의 "${localSecurity}" 옵션으로 이동하여 테스트 및 추가 설정을 진행하세요.';
+	@override String get pleaseDrawUnlockPattern => '잠금 해제 패턴을 그려주세요';
+	@override String get addPatternLock => '패턴 잠금 추가';
+	@override String get cannotBeLessThan8Dots => '8개보다 작을 수 없습니다';
+	@override String get pleaseRepeatThePattern => '패턴을 다시 반복해 주세요';
+	@override String get notMatchFirstValidPattern => '첫 번째 유효한 드로잉 패턴과 일치하지 않습니다';
+	@override String get deletePatternLock => '패턴 잠금 삭제';
+	@override String get notMatchExistingPattern => '기존 패턴과 일치하지 않습니다.';
+	@override String get localAuthentication => '로컬 인증';
 }
 
 // Path: <root>
@@ -8085,9 +9051,9 @@ class _StringsNl implements Translations {
 		diff,
 		const TextSpan(text: ' en is '),
 		tap('handmatig verlengen'),
-		const TextSpan(text: ' nog 12 uur geldig voordat het verloopt.'),
+		const TextSpan(text: ' nog 6 uur geldig voordat het verloopt.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'Kan alleen 12 uur van tevoren worden verlengd';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'Kan alleen 6 uur van tevoren worden verlengd';
 	@override String get theReceivingAddressValidForLongtime => 'Dit adres is lang geldig.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'Dit ophaaladres is lang geldig en wordt automatisch in realtime gecrediteerd.';
 	@override String get confirmDeposited => 'Bevestiging van stortingen';
@@ -8444,6 +9410,29 @@ class _StringsNl implements Translations {
 	@override String get sponsorDevelopersByWatchingAds => 'Sponsor ontwikkelaars door advertenties te bekijken';
 	@override String get status => 'Status';
 	@override String get date => 'Datum';
+	@override String get assetApplicationIsInProgressTip => 'Assettoepassing is bezig, probeer het over 3 seconden opnieuw.';
+	@override String get delete => 'Verwijderen';
+	@override String get deleteVerifierTip => 'Wanneer u de machtigingen van een verificator verwijdert, worden alle bijbehorende scoregegevens tegelijkertijd verwijderd, maar de reeds verkregen beloningen worden niet beïnvloed.';
+	@override String get deleteVerifierStatusTip => 'Stel het in op de pauzestand voordat u het verwijdert.';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'Voer "${text}" in om te bevestigen';
+	@override String get localSecurity => 'Lokale beveiliging';
+	@override String get deviceLock => 'Apparaatvergrendeling';
+	@override String get patternLock => 'Patroonvergrendeling';
+	@override String get none => 'geen';
+	@override String get exist => 'bestaat';
+	@override String get prompt => 'Prompt:';
+	@override String get localSecurityTip1 => '1. Lokale beveiligingsauthenticatie wordt gebruikt om de identiteit te bevestigen tijdens bepaalde gevoelige handelingen. Het doel hiervan is om te voorkomen dat het apparaat door anderen wordt beheerd en om de beveiliging van het account te waarborgen.';
+	@override String get localSecurityTip2 => '2. Patroonvergrendeling is een aanvullende oplossing wanneer de apparaatvergrendeling niet wordt ondersteund of niet compatibel is. Over het algemeen is het niet nodig om een ​​patroonvergrendeling in te stellen wanneer de apparaatvergrendeling beschikbaar is.';
+	@override String get localSecurityTip3 => '3. Wanneer u uw patroonvergrendeling bent vergeten, kunt u alleen de app-gegevens wissen of de app opnieuw installeren om deze te wissen.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'Apparaatauthenticatie wordt binnenkort aangeroepen. Als er een fout of uitzondering optreedt, ga dan naar de optie "${localSecurity}" op de pagina "${menu}" voor testen en verdere instellingen.';
+	@override String get pleaseDrawUnlockPattern => 'Teken het ontgrendelingspatroon';
+	@override String get addPatternLock => 'Patroonvergrendeling toevoegen';
+	@override String get cannotBeLessThan8Dots => 'Mag niet kleiner zijn dan 8 punten';
+	@override String get pleaseRepeatThePattern => 'Herhaal het patroon nogmaals';
+	@override String get notMatchFirstValidPattern => 'Komt niet overeen met het eerste geldige tekenpatroon';
+	@override String get deletePatternLock => 'Patroonvergrendeling verwijderen';
+	@override String get notMatchExistingPattern => 'Komt niet overeen met een bestaand patroon';
+	@override String get localAuthentication => 'lokale auth.';
 }
 
 // Path: <root>
@@ -8777,9 +9766,9 @@ class _StringsPl implements Translations {
 		diff,
 		const TextSpan(text: ' i będzie '),
 		tap('manually extend'),
-		const TextSpan(text: ' ważny przez 12 godzin przed wygaśnięciem.'),
+		const TextSpan(text: ' ważny przez 6 godzin przed wygaśnięciem.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'Można odnowić tylko z 12-godzinnym wyprzedzeniem';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'Można odnowić tylko z 6-godzinnym wyprzedzeniem';
 	@override String get theReceivingAddressValidForLongtime => 'Ten adres jest ważny przez długi czas.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'Ten adres zbiórki jest ważny przez długi czas i jest automatycznie zasilany w czasie rzeczywistym.';
 	@override String get confirmDeposited => 'Potwierdzenie depozytów';
@@ -9137,6 +10126,29 @@ class _StringsPl implements Translations {
 	@override String get sponsorDevelopersByWatchingAds => 'Sponsoruj programistów, oglądając reklamy';
 	@override String get status => 'Status';
 	@override String get date => 'Data';
+	@override String get assetApplicationIsInProgressTip => 'Aplikacja zasobu w toku, spróbuj ponownie za 3 sekundy.';
+	@override String get delete => 'Usuń';
+	@override String get deleteVerifierTip => 'Podczas usuwania uprawnień weryfikatora wszystkie powiązane dane dotyczące wyników zostaną usunięte w tym samym czasie, ale nagrody już uzyskane nie zostaną naruszone.';
+	@override String get deleteVerifierStatusTip => 'Przed usunięciem ustaw stan wstrzymania';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'Wprowadź "${text}", aby potwierdzić';
+	@override String get localSecurity => 'Bezpieczeństwo lokalne';
+	@override String get deviceLock => 'Blokada urządzenia';
+	@override String get patternLock => 'Blokada wzoru';
+	@override String get none => 'żaden';
+	@override String get exist => 'istnieje';
+	@override String get prompt => 'Monit:';
+	@override String get localSecurityTip1 => '1. Lokalne uwierzytelnianie zabezpieczeń jest używane do potwierdzania tożsamości podczas niektórych wrażliwych operacji. Jego celem jest zapobieganie kontrolowaniu urządzenia przez innych i zapewnienie bezpieczeństwa konta.';
+	@override String get localSecurityTip2 => '2. Blokada wzoru jest rozwiązaniem uzupełniającym, gdy blokada urządzenia nie jest obsługiwana lub jest niezgodna. Zasadniczo nie ma potrzeby ustawiania blokady wzoru, gdy blokada urządzenia jest dostępna.';
+	@override String get localSecurityTip3 => '3. Gdy zapomnisz o blokadzie wzoru, możesz tylko wyczyścić dane aplikacji lub ponownie zainstalować aplikację, aby ją wyczyścić.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'Uwierzytelnianie urządzenia zostanie wywołane. Jeśli wystąpi błąd lub wyjątek, przejdź do opcji "${localSecurity}" na stronie "${menu}" w celu przetestowania i dalszych ustawień.';
+	@override String get pleaseDrawUnlockPattern => 'Proszę narysować wzór odblokowania';
+	@override String get addPatternLock => 'Dodaj blokadę wzoru';
+	@override String get cannotBeLessThan8Dots => 'Nie może być mniej niż 8 kropek';
+	@override String get pleaseRepeatThePattern => 'Proszę powtórzyć wzór jeszcze raz';
+	@override String get notMatchFirstValidPattern => 'Nie pasuje do pierwszego prawidłowego wzorca rysowania';
+	@override String get deletePatternLock => 'Usuń blokadę wzoru';
+	@override String get notMatchExistingPattern => 'Nie pasuje do istniejącego wzorca';
+	@override String get localAuthentication => 'local Auth';
 }
 
 // Path: <root>
@@ -9470,9 +10482,9 @@ class _StringsPt implements Translations {
 		diff,
 		const TextSpan(text: ' e será '),
 		tap('manually extend'),
-		const TextSpan(text: ' válido durante 12 horas antes de expirar.'),
+		const TextSpan(text: ' válido durante 6 horas antes de expirar.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'Só pode ser renovado com 12 horas de antecedência';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'Só pode ser renovado com 6 horas de antecedência';
 	@override String get theReceivingAddressValidForLongtime => 'Este endereço é válido por um longo período de tempo.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'Este endereço de recolha é válido por um longo período e é automaticamente creditado em tempo real.';
 	@override String get confirmDeposited => 'Confirmação dos depósitos';
@@ -9829,6 +10841,29 @@ class _StringsPt implements Translations {
 	@override String get sponsorDevelopersByWatchingAds => 'Patrocine desenvolvedores assistindo a anúncios';
 	@override String get status => 'Estado';
 	@override String get date => 'Data';
+	@override String get assetApplicationIsInProgressTip => 'Aplicação de ativo em andamento, tente novamente em 3 segundos.';
+	@override String get delete => 'Excluir';
+	@override String get deleteVerifierTip => 'Ao excluir as permissões de um verificador, todos os dados de pontuação relacionados serão excluídos ao mesmo tempo, mas as recompensas já obtidas não serão afetadas.';
+	@override String get deleteVerifierStatusTip => 'Por favor, defina-o como pausado antes de excluir';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'Por favor, digite "${text}", para confirmar';
+	@override String get localSecurity => 'Segurança local';
+	@override String get deviceLock => 'Bloqueio do dispositivo';
+	@override String get patternLock => 'Bloqueio de padrão';
+	@override String get none => 'nenhum';
+	@override String get exist => 'existe';
+	@override String get prompt => 'Prompt:';
+	@override String get localSecurityTip1 => '1. A autenticação de segurança local é usada para confirmar a identidade durante algumas operações confidenciais. Sua finalidade é impedir que o dispositivo seja controlado por terceiros e garantir a segurança da conta.';
+	@override String get localSecurityTip2 => '2. O bloqueio de padrão é uma solução complementar quando o bloqueio do dispositivo não é suportado ou é incompatível. Geralmente, não há necessidade de definir um bloqueio de padrão quando o bloqueio do dispositivo está disponível.';
+	@override String get localSecurityTip3 => '3. Quando você esquece seu padrão de bloqueio, você só pode limpar os dados do aplicativo ou reinstalar o aplicativo para limpá-lo.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'A autenticação do dispositivo está prestes a ser chamada. Se ocorrer um erro ou exceção, acesse a opção "${localSecurity}" na página "${menu}" para testes e configurações adicionais.';
+	@override String get pleaseDrawUnlockPattern => 'Por favor, desenhe o padrão de desbloqueio';
+	@override String get addPatternLock => 'Adicionar bloqueio de padrão';
+	@override String get cannotBeLessThan8Dots => 'Não pode ter menos de 8 pontos';
+	@override String get pleaseRepeatThePattern => 'Por favor, repita o padrão novamente';
+	@override String get notMatchFirstValidPattern => 'Não corresponde ao primeiro padrão de desenho válido';
+	@override String get deletePatternLock => 'Excluir bloqueio de padrão';
+	@override String get notMatchExistingPattern => 'Não corresponde a um padrão existente';
+	@override String get localAuthentication => 'autenticação local';
 }
 
 // Path: <root>
@@ -10162,9 +11197,9 @@ class _StringsRu implements Translations {
 		diff,
 		const TextSpan(text: ' и будет '),
 		tap('manually extend'),
-		const TextSpan(text: ' действителен в течение 12 часов до истечения срока действия.'),
+		const TextSpan(text: ' действителен в течение 6 часов до истечения срока действия.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'Продление возможно только за 12 часов';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'Продление возможно только за 6 часов';
 	@override String get theReceivingAddressValidForLongtime => 'Этот адрес действителен в течение длительного времени.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'Этот адрес сбора действителен в течение длительного времени и автоматически зачисляется в режиме реального времени.';
 	@override String get confirmDeposited => 'Подтверждение вкладов';
@@ -10522,6 +11557,29 @@ class _StringsRu implements Translations {
 	@override String get sponsorDevelopersByWatchingAds => 'Спонсируйте разработчиков, просматривая рекламу';
 	@override String get status => 'Статус';
 	@override String get date => 'Дата';
+	@override String get assetApplicationIsInProgressTip => 'Выполняется заявка на актив, повторите попытку через 3 секунды.';
+	@override String get delete => 'Удалить';
+	@override String get deleteVerifierTip => 'При удалении разрешений верификатора все связанные с ним данные о результатах будут одновременно удалены, но уже полученные награды не будут затронуты.';
+	@override String get deleteVerifierStatusTip => 'Перед удалением установите состояние паузы';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'Пожалуйста, введите "${text}" для подтверждения';
+	@override String get localSecurity => 'Локальная безопасность';
+	@override String get deviceLock => 'Блокировка устройства';
+	@override String get patternLock => 'Шаблон блокировки';
+	@override String get none => 'нет';
+	@override String get exist => 'существует';
+	@override String get prompt => 'Подсказка:';
+	@override String get localSecurityTip1 => '1. Локальная аутентификация безопасности используется для подтверждения личности во время некоторых конфиденциальных операций. Ее цель — предотвратить управление устройством другими лицами и обеспечить безопасность учетной записи.';
+	@override String get localSecurityTip2 => '2. Блокировка по шаблону является дополнительным решением, когда блокировка устройства не поддерживается или несовместима. Обычно нет необходимости устанавливать блокировку по шаблону, когда доступна блокировка устройства.';
+	@override String get localSecurityTip3 => '3. Если вы забыли графический ключ, вы можете только очистить данные приложения или переустановить приложение, чтобы очистить их.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'Сейчас будет вызвана аутентификация устройства. Если возникнет ошибка или исключение, перейдите к параметру "${localSecurity}" на странице "${menu}" для тестирования и дополнительных настроек.';
+	@override String get pleaseDrawUnlockPattern => 'Пожалуйста, нарисуйте шаблон разблокировки';
+	@override String get addPatternLock => 'Добавить шаблон блокировки';
+	@override String get cannotBeLessThan8Dots => 'Не может быть меньше 8 точек';
+	@override String get pleaseRepeatThePattern => 'Повторите узор еще раз';
+	@override String get notMatchFirstValidPattern => 'Не соответствует первому допустимому шаблону чертежа';
+	@override String get deletePatternLock => 'Удалить графический ключ';
+	@override String get notMatchExistingPattern => 'Не соответствует существующему шаблону';
+	@override String get localAuthentication => 'локальная аутентификация';
 }
 
 // Path: <root>
@@ -10854,9 +11912,9 @@ class _StringsTh implements Translations {
 		diff,
 		const TextSpan(text: ' และคุณสามารถ '),
 		tap ('ขยายด้วยตนเอง'),
-		const TextSpan(text: ' ระยะเวลาที่ใช้ได้ภายใน 12 ชั่วโมงก่อนหมดอายุ'),
+		const TextSpan(text: ' ระยะเวลาที่ใช้ได้ภายใน 6 ชั่วโมงก่อนหมดอายุ'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'สามารถต่ออายุได้ล่วงหน้า 12 ชั่วโมงเท่านั้น';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'สามารถต่ออายุได้ล่วงหน้า 6 ชั่วโมงเท่านั้น';
 	@override String get theReceivingAddressValidForLongtime => 'ที่อยู่การชำระเงินนี้ใช้ได้เป็นเวลานาน';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'ที่อยู่การชำระเงินนี้ใช้ได้เป็นเวลานานและจะเข้าบัญชีโดยอัตโนมัติแบบเรียลไทม์';
 	@override String get confirmDeposited => 'ยืนยันการฝากเงิน';
@@ -11213,6 +12271,29 @@ class _StringsTh implements Translations {
 	@override String get sponsorDevelopersByWatchingAds => 'สนับสนุนนักพัฒนาโดยการดูโฆษณา';
 	@override String get status => 'สถานะ';
 	@override String get date => 'วันที่';
+	@override String get assetApplicationIsInProgressTip => 'แอปพลิเคชันสินทรัพย์กำลังดำเนินการอยู่ โปรดลองอีกครั้งใน 3 วินาที';
+	@override String get delete => 'ลบ';
+	@override String get deleteVerifierTip => 'เมื่อทำการลบสิทธิ์ของผู้ตรวจสอบ ข้อมูลคะแนนที่เกี่ยวข้องทั้งหมดจะถูกลบออกพร้อมกัน แต่รางวัลที่ได้รับไปแล้วจะไม่ได้รับผลกระทบ';
+	@override String get deleteVerifierStatusTip => 'กรุณาตั้งค่าเป็นสถานะหยุดชั่วคราวก่อนทำการลบ';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'กรุณาป้อน "${text}" เพื่อยืนยัน';
+	@override String get localSecurity => 'ความปลอดภัยในพื้นที่';
+	@override String get deviceLock => 'ล็อคอุปกรณ์';
+	@override String get patternLock => 'ล็อครูปแบบ';
+	@override String get none => 'ไม่มี';
+	@override String get exist => 'มีอยู่';
+	@override String get prompt => 'แจ้งเตือน:';
+	@override String get localSecurityTip1 => '1. การตรวจสอบความปลอดภัยในพื้นที่ใช้เพื่อยืนยันตัวตนระหว่างการดำเนินการที่ละเอียดอ่อนบางอย่าง วัตถุประสงค์คือเพื่อป้องกันไม่ให้ผู้อื่นควบคุมอุปกรณ์และเพื่อให้แน่ใจว่าบัญชีมีความปลอดภัย';
+	@override String get localSecurityTip2 => '2. การล็อกรูปแบบเป็นโซลูชันเสริมเมื่อการล็อกอุปกรณ์ไม่ได้รับการรองรับหรือเข้ากันไม่ได้ โดยทั่วไปแล้ว ไม่จำเป็นต้องตั้งค่าการล็อกรูปแบบเมื่อการล็อกอุปกรณ์พร้อมใช้งาน';
+	@override String get localSecurityTip3 => '3. เมื่อลืมล็อครูปแบบของคุณ คุณสามารถล้างข้อมูลแอปหรือติดตั้งแอปใหม่เพื่อล้างข้อมูลได้เท่านั้น';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'การตรวจสอบสิทธิ์อุปกรณ์กำลังจะถูกเรียกใช้ หากเกิดข้อผิดพลาดหรือข้อยกเว้น โปรดไปที่ตัวเลือก "${localSecurity}" ในหน้า "${menu}" เพื่อทำการทดสอบและตั้งค่าเพิ่มเติม';
+	@override String get pleaseDrawUnlockPattern => 'กรุณาวาดรูปแบบการปลดล็อค';
+	@override String get addPatternLock => 'เพิ่มการล็อครูปแบบ';
+	@override String get cannotBeLessThan8Dots => 'ไม่สามารถน้อยกว่า 8 จุดได้';
+	@override String get pleaseRepeatThePattern => 'กรุณาทำซ้ำรูปแบบอีกครั้ง';
+	@override String get notMatchFirstValidPattern => 'ไม่ตรงกับรูปแบบการวาดภาพที่ถูกต้องครั้งแรก';
+	@override String get deletePatternLock => 'ลบล็อครูปแบบ';
+	@override String get notMatchExistingPattern => 'ไม่ตรงกับรูปแบบที่มีอยู่';
+	@override String get localAuthentication => 'การรับรองความถูกต้องภายในเครื่อง';
 }
 
 // Path: <root>
@@ -11546,9 +12627,9 @@ class _StringsUk implements Translations {
 		diff,
 		const TextSpan(text: ' і буде '),
 		tap('вручну продовжити'),
-		const TextSpan(text: ' дійсною протягом 12 годин до закінчення терміну дії.'),
+		const TextSpan(text: ' дійсною протягом 6 годин до закінчення терміну дії.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'Можна поновити лише за 12 годин до початку';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'Можна поновити лише за 6 годин до початку';
 	@override String get theReceivingAddressValidForLongtime => 'Ця адреса дійсна протягом тривалого часу.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'Ця адреса для збору коштів є дійсною протягом тривалого часу і автоматично зараховується в режимі реального часу.';
 	@override String get confirmDeposited => 'Підтвердження депозитів';
@@ -11905,6 +12986,29 @@ class _StringsUk implements Translations {
 	@override String get sponsorDevelopersByWatchingAds => 'Спонсоруйте розробників, переглядаючи рекламу';
 	@override String get status => 'статус';
 	@override String get date => 'дата';
+	@override String get assetApplicationIsInProgressTip => 'Виконується заявка на актив, повторіть спробу через 3 секунди.';
+	@override String get delete => 'Видалити';
+	@override String get deleteVerifierTip => 'Під час видалення дозволів верифікатора всі пов’язані дані очок буде видалено одночасно, але це не вплине на вже отримані винагороди.';
+	@override String get deleteVerifierStatusTip => 'Перед видаленням переведіть його в стан паузи';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'Введіть "${text}", щоб підтвердити';
+	@override String get localSecurity => 'Локальна безпека';
+	@override String get deviceLock => 'Блокування пристрою';
+	@override String get patternLock => 'Блокування шаблону';
+	@override String get none => 'жоден';
+	@override String get exist => 'існує';
+	@override String get prompt => 'Підказка:';
+	@override String get localSecurityTip1 => '1. Локальна автентифікація безпеки використовується для підтвердження особи під час деяких конфіденційних операцій. Її призначення полягає в тому, щоб запобігти контролю над пристроєм іншими особами та забезпечити безпеку облікового запису.';
+	@override String get localSecurityTip2 => '2. Блокування шаблоном є додатковим рішенням, якщо блокування пристрою не підтримується або несумісне. Як правило, немає необхідності встановлювати блокування шаблоном, якщо блокування пристрою доступне.';
+	@override String get localSecurityTip3 => '3. Якщо ваш шаблон блокування забутий, ви можете лише очистити дані програми або перевстановити програму, щоб очистити їх.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'Незабаром буде викликана автентифікація пристрою. Якщо станеться помилка чи виняткова ситуація, будь ласка, перейдіть до параметра "${localSecurity}" на сторінці "${menu}" для перевірки та додаткових налаштувань.';
+	@override String get pleaseDrawUnlockPattern => 'Будь ласка, намалюйте шаблон розблокування';
+	@override String get addPatternLock => 'Додати шаблон блокування';
+	@override String get cannotBeLessThan8Dots => 'Не може бути менше 8 точок';
+	@override String get pleaseRepeatThePattern => 'Будь ласка, повторіть шаблон ще раз';
+	@override String get notMatchFirstValidPattern => 'Не збігається з першим дійсним шаблоном малюнка';
+	@override String get deletePatternLock => 'Видалити шаблон блокування';
+	@override String get notMatchExistingPattern => 'Не відповідає існуючому шаблону';
+	@override String get localAuthentication => 'локальна авторизація';
 }
 
 // Path: <root>
@@ -12238,9 +13342,9 @@ class _StringsVi implements Translations {
 		diff,
 		const TextSpan(text: ' và bạn có thể '),
 		tap ('gia hạn thủ công'),
-		const TextSpan(text: ' thời hạn hiệu lực trong vòng 12 giờ trước khi hết hạn.'),
+		const TextSpan(text: ' thời hạn hiệu lực trong vòng 6 giờ trước khi hết hạn.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'Chỉ có thể gia hạn trước 12 giờ';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'Chỉ có thể gia hạn trước 6 giờ';
 	@override String get theReceivingAddressValidForLongtime => 'Địa chỉ thanh toán này có giá trị trong một thời gian dài.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'Địa chỉ thanh toán này có hiệu lực trong thời gian dài và sẽ được ghi có tự động theo thời gian thực.';
 	@override String get confirmDeposited => 'Xác nhận đã gửi tiền';
@@ -12597,6 +13701,29 @@ class _StringsVi implements Translations {
 	@override String get sponsorDevelopersByWatchingAds => 'Tài trợ cho các nhà phát triển bằng cách xem quảng cáo';
 	@override String get status => 'Trạng thái';
 	@override String get date => 'Ngày';
+	@override String get assetApplicationIsInProgressTip => 'Đang tiến hành ứng dụng tài sản, vui lòng thử lại sau 3 giây.';
+	@override String get delete => 'Xóa';
+	@override String get deleteVerifierTip => 'Khi xóa quyền của người xác minh, tất cả dữ liệu điểm liên quan sẽ bị xóa cùng lúc, nhưng phần thưởng đã nhận được sẽ không bị ảnh hưởng.';
+	@override String get deleteVerifierStatusTip => 'Vui lòng đặt nó ở trạng thái tạm dừng trước khi xóa';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'Vui lòng nhập "${text}", để xác nhận';
+	@override String get localSecurity => 'Bảo mật cục bộ';
+	@override String get deviceLock => 'Khóa thiết bị';
+	@override String get patternLock => 'Khóa mẫu';
+	@override String get none => 'không có';
+	@override String get exist => 'tồn tại';
+	@override String get prompt => 'Nhắc nhở:';
+	@override String get localSecurityTip1 => '1. Xác thực bảo mật cục bộ được sử dụng để xác nhận danh tính trong một số hoạt động nhạy cảm. Mục đích của nó là ngăn chặn thiết bị bị người khác kiểm soát và đảm bảo tính bảo mật của tài khoản.';
+	@override String get localSecurityTip2 => '2. Khóa mẫu là giải pháp bổ sung khi khóa thiết bị không được hỗ trợ hoặc không tương thích. Nhìn chung, không cần thiết lập khóa mẫu khi khóa thiết bị khả dụng.';
+	@override String get localSecurityTip3 => '3. Khi quên khóa mẫu, bạn chỉ có thể xóa dữ liệu ứng dụng hoặc cài đặt lại ứng dụng để xóa.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'Xác thực thiết bị sắp được gọi. Nếu xảy ra lỗi hoặc ngoại lệ, vui lòng chuyển đến tùy chọn "${localSecurity}" trên trang "${menu}" để kiểm tra và thiết lập thêm.';
+	@override String get pleaseDrawUnlockPattern => 'Vui lòng vẽ hình mở khóa';
+	@override String get addPatternLock => 'Thêm khóa mẫu';
+	@override String get cannotBeLessThan8Dots => 'Không thể ít hơn 8 chấm';
+	@override String get pleaseRepeatThePattern => 'Vui lòng lặp lại mẫu một lần nữa';
+	@override String get notMatchFirstValidPattern => 'Không khớp với mẫu vẽ hợp lệ đầu tiên';
+	@override String get deletePatternLock => 'Xóa khóa mẫu';
+	@override String get notMatchExistingPattern => 'Không khớp với mẫu hiện có';
+	@override String get localAuthentication => 'Xác thực cục bộ';
 }
 
 // Path: <root>
@@ -12928,11 +14055,11 @@ class _StringsZhCn implements Translations {
 	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
 		const TextSpan(text: '该地址将在'),
 		diff,
-		const TextSpan(text: '后过期，过期前12小时内可'),
+		const TextSpan(text: '后过期，过期前6小时内可'),
 		tap('手动延长'),
 		const TextSpan(text: '有效期。'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => '只能提前12小时内续订';
+	@override String get canOnlyRenewWithin6hoursInAdvance => '只能提前6小时内续订';
 	@override String get theReceivingAddressValidForLongtime => '该收款地址长期有效.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => '该收款地址长期有效，并实时自动入账。';
 	@override String get confirmDeposited => '确认已存入';
@@ -13290,6 +14417,29 @@ class _StringsZhCn implements Translations {
 	@override String get sponsorDevelopersByWatchingAds => '通过观看广告赞助开发者';
 	@override String get status => '状态';
 	@override String get date => '日期';
+	@override String get assetApplicationIsInProgressTip => '资产申请中，请3秒后再试。';
+	@override String get delete => '删除';
+	@override String get deleteVerifierTip => '删除验证者权限时，所有相关的得分数据都将同时删除，但是已经获得的奖励不会受到影响。';
+	@override String get deleteVerifierStatusTip => '删除前请先设置为暂停状态';
+	@override String pleaseEnterXtoConfirm({required Object text}) => '确认请输入“${text}”';
+	@override String get localSecurity => '本地安全';
+	@override String get deviceLock => '设备锁';
+	@override String get patternLock => '图案锁';
+	@override String get none => '没有';
+	@override String get exist => '存在';
+	@override String get prompt => '提示:';
+	@override String get localSecurityTip1 => '1. 本地安全认证用于在一些敏感操作时的身份确认，其目的是防止设备被他人控制时，并能保证账户的安全性。';
+	@override String get localSecurityTip2 => '2. 图案锁是在调用设备锁不支持或不兼容的情况下的一种补充方案， 一般在设备锁可用的情况下无需设置图案锁。';
+	@override String get localSecurityTip3 => '3. 当您的图案锁被遗忘的情况下，只能清除应用数据或重装应用才能被清除。';
+	@override String deviceAuthFirstTip({required Object menu, required Object localSecurity}) => '即将调用设备认证，如果发生报错或异常，请进入"${menu}"页面的"${localSecurity}"选项进行测试和进一步设置。';
+	@override String get pleaseDrawUnlockPattern => '请绘制解锁图案';
+	@override String get addPatternLock => '添加图案锁';
+	@override String get cannotBeLessThan8Dots => '不能低于8个点阵';
+	@override String get pleaseRepeatThePattern => '请再次重复绘制图案';
+	@override String get notMatchFirstValidPattern => '与首次有效的绘制图案不匹配';
+	@override String get deletePatternLock => '删除图案锁';
+	@override String get notMatchExistingPattern => '与存在的图案不匹配';
+	@override String get localAuthentication => '本地验证';
 }
 
 // Path: <root>
@@ -13621,11 +14771,11 @@ class _StringsZhTw implements Translations {
 	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
 		const TextSpan(text: '該地址將在'),
 		diff,
-		const TextSpan(text: '後過期，過期前12小時內可'),
+		const TextSpan(text: '後過期，過期前6小時內可'),
 		tap('手動延長'),
 		const TextSpan(text: '有效期。'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => '只能提前12小時內續訂';
+	@override String get canOnlyRenewWithin6hoursInAdvance => '只能提前6小時內續訂';
 	@override String get theReceivingAddressValidForLongtime => '該收款地址長期有效.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => '該收款地址長期有效，並實時自動入賬。';
 	@override String get confirmDeposited => '確認已存入';
@@ -13983,6 +15133,29 @@ class _StringsZhTw implements Translations {
 	@override String get sponsorDevelopersByWatchingAds => '透過觀看廣告贊助開發者';
 	@override String get status => '狀態';
 	@override String get date => '日期';
+	@override String get assetApplicationIsInProgressTip => '資產申請中，請3秒後再試。';
+	@override String get delete => '刪除';
+	@override String get deleteVerifierTip => '刪除驗證者權限時，所有相關的得分資料都會同時刪除，但是已經獲得的獎勵不會受到影響。';
+	@override String get deleteVerifierStatusTip => '刪除前請先設定為暫停狀態';
+	@override String pleaseEnterXtoConfirm({required Object text}) => '確認請輸入“${text}”';
+	@override String get localSecurity => '本地安全';
+	@override String get deviceLock => '裝置鎖';
+	@override String get patternLock => '圖案鎖';
+	@override String get none => '沒有';
+	@override String get exist => '存在';
+	@override String get prompt => '提示:';
+	@override String get localSecurityTip1 => '1. 本地安全認證用於在一些敏感操作時的身份確認，其目的是防止設備被他人控制時，並能保證帳戶的安全性。';
+	@override String get localSecurityTip2 => '2. 圖案鎖是在呼叫裝置鎖不支援或不相容的情況下的一種補充方案， 一般在裝置鎖可用的情況下無需設定圖案鎖。';
+	@override String get localSecurityTip3 => '3. 當您的圖案鎖定被遺忘的情況下，只能清除應用資料或重裝應用程式才能被清除。';
+	@override String deviceAuthFirstTip({required Object menu, required Object localSecurity}) => '即將呼叫設備認證，如果發生報錯或異常，請進入"${menu}"頁面的"${localSecurity}"選項進行測試和進一步設定。';
+	@override String get pleaseDrawUnlockPattern => '請繪製解鎖圖案';
+	@override String get addPatternLock => '新增圖案鎖定';
+	@override String get cannotBeLessThan8Dots => '不能低於8個點陣';
+	@override String get pleaseRepeatThePattern => '請再重複繪製圖案';
+	@override String get notMatchFirstValidPattern => '與第一個有效的繪製圖案不符';
+	@override String get deletePatternLock => '刪除圖案鎖';
+	@override String get notMatchExistingPattern => '與存在的圖案不符';
+	@override String get localAuthentication => '本地驗證';
 }
 
 /// Flat map(s) containing all translations.
@@ -14290,13 +15463,13 @@ extension on Translations {
 			case 'tempDepositAddressTip3': return '3.Please do not attempt to deposit funds that do not match any of the parameters in the above tips, otherwise the amount will be lost.';
 			case 'tempDepositAddressTip4': return '4.If you need to deposit other types of assets, please switch to the corresponding currency page and parameter options to apply for a new address.';
 			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-				const TextSpan(text: 'The address will expire after '),
+				const TextSpan(text: 'This address will expire in '),
 				diff,
-				const TextSpan(text: ', and the validity period can be '),
-				tap('manually extended'),
-				const TextSpan(text: ' within 12 hours before the expiration.'),
+				const TextSpan(text: '. You can '),
+				tap('manually extend'),
+				const TextSpan(text: ' the validity period within 6 hours before expiration.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Can only renew within 12 hours in advance';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'Can only be renewed within 6 hours in advance';
 			case 'theReceivingAddressValidForLongtime': return 'The receiving address is valid for a long time.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'The receiving address is valid for a long time and will be automatically credited in real time.';
 			case 'confirmDeposited': return 'confirm Deposited';
@@ -14654,6 +15827,29 @@ extension on Translations {
 			case 'sponsorDevelopersByWatchingAds': return 'Sponsor developers by watching ads';
 			case 'status': return 'Status';
 			case 'date': return 'Date';
+			case 'assetApplicationIsInProgressTip': return 'Asset application in progress, please try again in 3 seconds.';
+			case 'delete': return 'Delete';
+			case 'deleteVerifierTip': return 'When deleting the verifier authority, all related score data will be deleted at the same time, but the rewards already obtained will not be affected.';
+			case 'deleteVerifierStatusTip': return 'Please set it to paused state before deleting';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Please enter "${text}" to confirm';
+			case 'localSecurity': return 'Local Security';
+			case 'deviceLock': return 'Device Lock';
+			case 'patternLock': return 'Pattern Lock';
+			case 'none': return 'None';
+			case 'exist': return 'Exists';
+			case 'prompt': return 'Prompt:';
+			case 'localSecurityTip1': return '1. Local security authentication is used to confirm identity during some sensitive operations. Its purpose is to prevent the device from being controlled by others and to ensure the security of the account.';
+			case 'localSecurityTip2': return '2. Pattern lock is a supplementary solution when the device lock is not supported or incompatible. Generally, there is no need to set a pattern lock when the device lock is available.';
+			case 'localSecurityTip3': return '3. When your pattern lock is forgotten, it can only be cleared by clearing the application data or reinstalling the application.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'Device authentication is about to be called. If an error or exception occurs, please enter the "${localSecurity}" option on the "${menu}" page for testing and further settings.';
+			case 'pleaseDrawUnlockPattern': return 'Please draw your unlock pattern';
+			case 'addPatternLock': return 'Add pattern lock';
+			case 'cannotBeLessThan8Dots': return 'Cannot be less than 8 dots';
+			case 'pleaseRepeatThePattern': return 'Please repeat the pattern';
+			case 'notMatchFirstValidPattern': return 'Does not match the first valid pattern';
+			case 'deletePatternLock': return 'Delete pattern lock';
+			case 'notMatchExistingPattern': return 'Does not match the existing pattern';
+			case 'localAuthentication': return 'local Auth.';
 			default: return null;
 		}
 	}
@@ -14961,13 +16157,13 @@ extension on _StringsBg {
 			case 'tempDepositAddressTip3': return '3. Моля, не опитвайте да депозирате средства, които не съвпадат точно с всички параметри от горните съвети, в противен случай сумата ще бъде загубена.';
 			case 'tempDepositAddressTip4': return '4. Ако трябва да депозирате други видове активи, моля, превключете към съответната страница с валута и опции за параметри, за да заявите нов адрес.';
 			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-				const TextSpan(text: 'Адресът ще изтече след '),
+				const TextSpan(text: 'Този адрес ще изтече след '),
 				diff,
-				const TextSpan(text: ', и периодът на валидност може да бъде '),
-				tap('ръчно удължен'),
-				const TextSpan(text: ' в рамките на 12 часа преди изтичането.'),
+				const TextSpan(text: '. Можете да '),
+				tap('manually extend'),
+				const TextSpan(text: ' периода на валидност в рамките на 6 часа преди изтичането.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Може да бъде удължен само в рамките на 12 часа предварително';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'Може да се поднови само в рамките на 6 часа предварително';
 			case 'theReceivingAddressValidForLongtime': return 'Адресът за получаване е валиден за дълго време.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'Адресът за получаване е валиден за дълго време и ще бъде автоматично кредитиран в реално време.';
 			case 'confirmDeposited': return 'Потвърдете депозита';
@@ -15325,6 +16521,29 @@ extension on _StringsBg {
 			case 'sponsorDevelopersByWatchingAds': return 'Спонсорирайте разработчиците, като гледате реклами';
 			case 'status': return 'Състояние';
 			case 'date': return 'Дата';
+			case 'assetApplicationIsInProgressTip': return 'Прилагането на актив се изпълнява, моля, опитайте отново след 3 секунди.';
+			case 'delete': return 'Изтриване';
+			case 'deleteVerifierTip': return 'Когато изтривате разрешенията на верификатор, всички свързани данни за резултатите ще бъдат изтрити едновременно, но вече получените награди няма да бъдат засегнати.';
+			case 'deleteVerifierStatusTip': return 'Моля, задайте го на пауза, преди да изтриете';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Моля, въведете "${text}", за да потвърдите';
+			case 'localSecurity': return 'Локална сигурност';
+			case 'deviceLock': return 'Заключване на устройството';
+			case 'patternLock': return 'Заключване на шаблон';
+			case 'none': return 'няма';
+			case 'exist': return 'съществува';
+			case 'prompt': return 'Подкана:';
+			case 'localSecurityTip1': return '1. Локалното удостоверяване на сигурността се използва за потвърждаване на самоличността по време на някои чувствителни операции. Целта му е да предотврати контролирането на устройството от други и да гарантира сигурността на акаунта.';
+			case 'localSecurityTip2': return '2. Заключването на шаблон е допълнително решение, когато заключването на устройството не се поддържа или е несъвместимо. По принцип няма нужда да задавате заключване на модел, когато заключването на устройството е налично.';
+			case 'localSecurityTip3': return '3. Когато вашето заключване на шаблон е забравено, можете само да изчистите данните на приложението или да го инсталирате отново, за да го изчистите.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'Удостоверяването на устройството е на път да бъде извикано. Ако възникне грешка или изключение, моля, отидете на опцията "${localSecurity}" на страницата "${menu}" за тестване и допълнителни настройки.';
+			case 'pleaseDrawUnlockPattern': return 'Моля, начертайте шаблона за отключване';
+			case 'addPatternLock': return 'Добавяне на заключване на шаблон';
+			case 'cannotBeLessThan8Dots': return 'Не може да бъде по-малко от 8 точки';
+			case 'pleaseRepeatThePattern': return 'Моля, повторете модела отново';
+			case 'notMatchFirstValidPattern': return 'Не съответства на първия валиден модел на чертеж';
+			case 'deletePatternLock': return 'Изтриване на заключване на шаблон';
+			case 'notMatchExistingPattern': return 'Не съответства на съществуващ модел';
+			case 'localAuthentication': return 'Локално удостоверяване';
 			default: return null;
 		}
 	}
@@ -15635,14 +16854,14 @@ extension on _StringsBn {
 			case 'tempDepositAddressTip3': return '3. অনুগ্রহ করে এমন তহবিল জমা করার চেষ্টা করবেন না যা উপরের টিপসগুলির সাথে কোনও প্যারামিটারের সাথে মেলে না, অন্যথায় পরিমাণটি হারিয়ে যাবে৷';
 			case 'tempDepositAddressTip4': return '4. আপনি যদি অন্য ধরনের সম্পদ জমা করতে চান, তাহলে অনুগ্রহ করে একটি নতুন ঠিকানার জন্য আবেদন করার জন্য সংশ্লিষ্ট মুদ্রা পৃষ্ঠা এবং প্যারামিটার বিকল্পগুলিতে স্যুইচ করুন।';
 			case 'applyExtensionOfValidity': return 'মেয়াদ বাড়ানোর জন্য আবেদন করুন';
-			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap }) => TextSpan(children: [
-				const TextSpan(text: 'ঠিকানাটির মেয়াদ '),
+			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
+				const TextSpan(text: 'এই ঠিকানাটির মেয়াদ '),
 				diff,
-				const TextSpan(text: ' পরে শেষ হয়ে যাবে, এবং মেয়াদ শেষ হওয়ার 12 ঘন্টার মধ্যে আপনি '),
-				tap ('ম্যানুয়ালি প্রসারিত'),
-				const TextSpan(text: ' করতে পারেন৷'),
+				const TextSpan(text: '-এ শেষ হবে। মেয়াদ শেষ হওয়ার 6 ঘণ্টার মধ্যে আপনি '),
+				tap('manually extend'),
+				const TextSpan(text: ' করতে পারেন।'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'শুধুমাত্র 12 ঘন্টা আগে পুনর্নবীকরণ করা যাবে';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'শুধুমাত্র 6 ঘন্টা আগে থেকেই নবায়ন করা যাবে';
 			case 'theReceivingAddressValidForLongtime': return 'এই পেমেন্ট ঠিকানা দীর্ঘ সময়ের জন্য বৈধ.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'এই পেমেন্ট ঠিকানাটি দীর্ঘ সময়ের জন্য বৈধ এবং রিয়েল টাইমে স্বয়ংক্রিয়ভাবে জমা হবে।';
 			case 'confirmDeposited': return 'জমা নিশ্চিত করুন';
@@ -15999,6 +17218,29 @@ extension on _StringsBn {
 			case 'sponsorDevelopersByWatchingAds': return 'বিজ্ঞাপন দেখে ডেভেলপারদের স্পনসর করুন';
 			case 'status': return 'স্থিতি';
 			case 'date': return 'তারিখ';
+			case 'assetApplicationIsInProgressTip': return 'সম্পদ আবেদন প্রক্রিয়াধীন, অনুগ্রহ করে ৩ সেকেন্ডের মধ্যে আবার চেষ্টা করুন।';
+			case 'delete': return 'মুছুন';
+			case 'deleteVerifierTip': return 'একটি যাচাইকারীর অনুমতি মুছে ফেলার সময়, সমস্ত সম্পর্কিত স্কোর ডেটা একই সময়ে মুছে ফেলা হবে, তবে ইতিমধ্যে প্রাপ্ত পুরস্কারগুলি প্রভাবিত হবে না।';
+			case 'deleteVerifierStatusTip': return 'মুছে ফেলার আগে দয়া করে এটিকে বিরতি দেওয়া অবস্থায় সেট করুন';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'নিশ্চিত করতে দয়া করে "${text}" লিখুন';
+			case 'localSecurity': return 'স্থানীয় নিরাপত্তা';
+			case 'deviceLock': return 'ডিভাইস লক';
+			case 'patternLock': return 'প্যাটার্ন লক';
+			case 'none': return 'কিছুই না';
+			case 'exist': return 'বিদ্যমান';
+			case 'prompt': return 'প্রম্পট:';
+			case 'localSecurityTip1': return '1. কিছু সংবেদনশীল ক্রিয়াকলাপের সময় পরিচয় নিশ্চিত করতে স্থানীয় নিরাপত্তা প্রমাণীকরণ ব্যবহার করা হয়। এর উদ্দেশ্য হল ডিভাইসটিকে অন্যদের দ্বারা নিয়ন্ত্রিত হওয়া থেকে বিরত রাখা এবং অ্যাকাউন্টের নিরাপত্তা নিশ্চিত করা।';
+			case 'localSecurityTip2': return '2. প্যাটার্ন লক হল একটি সম্পূরক সমাধান যখন ডিভাইস লক সমর্থিত বা বেমানান। সাধারণত, ডিভাইস লক উপলব্ধ থাকলে প্যাটার্ন লক সেট করার কোন প্রয়োজন নেই।';
+			case 'localSecurityTip3': return '3. যখন আপনার প্যাটার্ন লকটি ভুলে যায়, তখন আপনি শুধুমাত্র অ্যাপের ডেটা সাফ করতে পারেন বা এটি সাফ করতে অ্যাপটি পুনরায় ইনস্টল করতে পারেন।';
+			case 'deviceAuthFirstTip': return ({required Object menu, required Object localSecurity}) => 'ডিভাইস প্রমাণীকরণ কল করা হতে চলেছে। যদি কোনো ত্রুটি বা ব্যতিক্রম ঘটে, অনুগ্রহ করে পরীক্ষা এবং আরও সেটিংসের জন্য "${menu}" পৃষ্ঠার "${localSecurity}" বিকল্পে যান।';
+			case 'pleaseDrawUnlockPattern': return 'অনুগ্রহ করে আনলক প্যাটার্ন আঁকুন';
+			case 'addPatternLock': return 'প্যাটার্ন লক যোগ করুন';
+			case 'cannotBeLessThan8Dots': return '8টি বিন্দুর কম হতে পারে না';
+			case 'pleaseRepeatThePattern': return 'দয়া করে আবার প্যাটার্নটি পুনরাবৃত্তি করুন';
+			case 'notMatchFirstValidPattern': return 'প্রথম বৈধ অঙ্কন প্যাটার্নের সাথে মেলে না';
+			case 'deletePatternLock': return 'প্যাটার্ন লক মুছুন';
+			case 'notMatchExistingPattern': return 'একটি বিদ্যমান প্যাটার্নের সাথে মেলে না';
+			case 'localAuthentication': return 'স্থানীয় প্রমাণীকরণ';
 			default: return null;
 		}
 	}
@@ -16306,13 +17548,13 @@ extension on _StringsCkb {
 			case 'tempDepositAddressTip3': return '3.تکایە هەوڵ مەدە ئەو پارانە دابنێیت کە لەگەڵ هیچ کام لە پارامێتەرەکانی ناو ئامۆژگارییەکانی سەرەوەدا ناگونجێت، ئەگەرنا بڕە پارەکە لەدەست دەچێت.';
 			case 'tempDepositAddressTip4': return '4.ئەگەر پێویستت بە دانانی جۆرەکانی تری سەروەت و سامانە، تکایە بگۆڕە بۆ لاپەڕەی دراوی گونجاو و هەڵبژاردەکانی پارامێتەر بۆ ئەوەی داوای ناونیشانێکی نوێ بکەیت.';
 			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-				const TextSpan(text: 'ناونیشانەکە دوای '),
+				const TextSpan(text: 'ئەم ناونیشانە لە '),
 				diff,
-				const TextSpan(text: ' بەسەر دەچێت، و ماوەی ڕەوایی دەتوانرێت '),
-				tap('بە دەست درێژکراوەتەوە'),
-				const TextSpan(text: ' لە ماوەی 12 کاتژمێر پێش بەسەرچوونەکە.'),
+				const TextSpan(text: ' بەسەر دەچێت. دەتوانیت ماوەی ڕەوایی '),
+				tap('بە دەست درێژ بکەیتەوە'),
+				const TextSpan(text: ' لە ماوەی 6 کاتژمێر پێش بەسەرچوون.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'تەنها دەتوانرێت لە ماوەی 12 کاتژمێر پێشوەختە نوێ بکرێتەوە';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'تەنها دەتوانرێت لە ماوەی ٦ کاتژمێر پێشوەختە نوێ بکرێتەوە';
 			case 'theReceivingAddressValidForLongtime': return 'ناونیشانی وەرگرتن بۆ ماوەیەکی زۆر کاریگەرە.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'ناونیشانی وەرگرتن بۆ ماوەیەکی زۆر کاریگەرە و لە کاتی ڕاستەقینەدا بە شێوەیەکی ئۆتۆماتیکی کرێدت دەکرێت.';
 			case 'confirmDeposited': return 'پاراستنی Deposited';
@@ -16671,6 +17913,29 @@ extension on _StringsCkb {
 			case 'sponsorDevelopersByWatchingAds': return 'سپۆنسەری گەشەپێدەران بە سەیرکردنی ڕێکلامەکان';
 			case 'status': return 'دۆخ';
 			case 'date': return 'بەروار';
+			case 'assetApplicationIsInProgressTip': return 'بەرنامەی سەرمایە لە پێشکەوتندایە، تکایە لە ٣ چرکەدا هەوڵبدەرەوە.';
+			case 'delete': return 'سڕینەوە';
+			case 'deleteVerifierTip': return 'لەکاتی سڕینەوەی مۆڵەتەکانی پشتڕاستکەرەوە، هەموو داتاکانی نمرەی پەیوەندیدار لە یەک کاتدا دەسڕدرێنەوە، بەڵام ئەو پاداشتانەی پێشتر بەدەست هاتوون کاریگەرییان لەسەر نابێت.';
+			case 'deleteVerifierStatusTip': return 'تکایە پێش سڕینەوە بۆ دۆخی وەستان ڕێکبخە';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'تکایە "${text}" داخڵ بکە، بۆ پشتڕاستکردنەوە';
+			case 'localSecurity': return 'ئاسایشی ناوخۆیی';
+			case 'deviceLock': return 'قفڵی ئامێر';
+			case 'patternLock': return 'قفڵی نەخش';
+			case 'none': return 'هیچ';
+			case 'exist': return 'بوونی هەیە';
+			case 'prompt': return 'داواکاری:';
+			case 'localSecurityTip1': return '1. ڕەسەنایەتی ئاسایشی ناوخۆیی بەکاردێت بۆ پشتڕاستکردنەوەی ناسنامە لە کاتی هەندێک کارە هەستیارەکاندا. مەبەست لێی ڕێگریکردنە لە کۆنترۆڵکردنی ئامێرەکە لەلایەن کەسانی ترەوە و دڵنیابوونە لە ئاسایشی ئەکاونتەکە.';
+			case 'localSecurityTip2': return '2. قوفڵی نەخش چارەسەرێکی تەواوکەرە کاتێک قوفڵی ئامێرەکە پشتگیری نەکراوە یان ناگونجێت. بەگشتی، پێویست ناکات قوفڵی نەخش دابنرێت کاتێک قوفڵی ئامێرەکە بەردەستە.';
+			case 'localSecurityTip3': return '3. کاتێک قفڵی نەخشەکەت لەبیرکرا، تەنها دەتوانیت داتاکانی ئەپەکە پاک بکەیتەوە یان ئەپەکە دووبارە دابمەزرێنیتەوە بۆ پاککردنەوەی.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'خەریکە ڕەسەنایەتی ئامێر بانگ دەکرێت. ئەگەر هەڵەیەک یان ئیستسناء ڕوویدا، تکایە بچۆ بۆ هەڵبژاردەی "${localSecurity}" لە لاپەڕەی "${menu}" بۆ تاقیکردنەوە و ڕێکخستنەکانی زیاتر.';
+			case 'pleaseDrawUnlockPattern': return 'تکایە نەخشی کردنەوەی قفڵەکە بکێشە';
+			case 'addPatternLock': return 'زیادکردنی قفڵی نەخش';
+			case 'cannotBeLessThan8Dots': return 'ناتوانرێت لە ٨ خاڵ کەمتر بێت';
+			case 'pleaseRepeatThePattern': return 'تکایە جارێکی تر نەخشەکە دووبارە بکەرەوە';
+			case 'notMatchFirstValidPattern': return 'لەگەڵ یەکەم نەخشی وێنەکێشانی دروستدا ناگونجێت';
+			case 'deletePatternLock': return 'قفڵی نەخش بسڕەوە';
+			case 'notMatchExistingPattern': return 'لەگەڵ نەخشێکی هەبوودا ناگونجێت';
+			case 'localAuthentication': return 'ڕەسەنایەتی ناوخۆیی';
 			default: return null;
 		}
 	}
@@ -16980,13 +18245,13 @@ extension on _StringsDe {
 			case 'tempDepositAddressTip4': return '(4) Wenn Sie andere Arten von Vermögenswerten einzahlen möchten, wechseln Sie bitte auf die entsprechende Währungsseite und die Parameteroptionen, um eine neue Adresse zu beantragen.';
 			case 'applyExtensionOfValidity': return 'Antrag auf Verlängerung der Gültigkeitsdauer';
 			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-				const TextSpan(text: 'Diese Adresse läuft nach '),
+				const TextSpan(text: 'Diese Adresse läuft in '),
 				diff,
-				const TextSpan(text: ' ab und ist '),
+				const TextSpan(text: ' ab. Sie können die Gültigkeitsdauer innerhalb von 6 Stunden vor Ablauf '),
 				tap('manuell verlängern'),
-				const TextSpan(text: ' für 12 Stunden vor Ablauf gültig.'),
+				const TextSpan(text: '.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Kann nur 12 Stunden im Voraus verlängert werden';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'Kann nur innerhalb von 6 Stunden im Voraus verlängert werden';
 			case 'theReceivingAddressValidForLongtime': return 'Diese Adresse ist für eine lange Zeit gültig.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'Diese Sammeladresse ist lange Zeit gültig und wird automatisch in Echtzeit gutgeschrieben.';
 			case 'confirmDeposited': return 'Bestätigung der Hinterlegung';
@@ -17343,6 +18608,29 @@ extension on _StringsDe {
 			case 'sponsorDevelopersByWatchingAds': return 'Sponsern Sie Entwickler, indem Sie sich Werbung ansehen';
 			case 'status': return 'Status';
 			case 'date': return 'Datum';
+			case 'assetApplicationIsInProgressTip': return 'Asset-Anwendung läuft, bitte versuchen Sie es in 3 Sekunden erneut.';
+			case 'delete': return 'Löschen';
+			case 'deleteVerifierTip': return 'Wenn die Berechtigungen eines Prüfers gelöscht werden, werden gleichzeitig alle zugehörigen Punktedaten gelöscht. Die bereits erhaltenen Belohnungen bleiben jedoch davon unberührt.';
+			case 'deleteVerifierStatusTip': return 'Bitte setzen Sie es vor dem Löschen in den pausierten Zustand.';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Bitte geben Sie zur Bestätigung "${text}" ein.';
+			case 'localSecurity': return 'Lokale Sicherheit';
+			case 'deviceLock': return 'Gerätesperre';
+			case 'patternLock': return 'Mustersperre';
+			case 'none': return 'keine';
+			case 'exist': return 'existiert';
+			case 'prompt': return 'Eingabeaufforderung:';
+			case 'localSecurityTip1': return '1. Die lokale Sicherheitsauthentifizierung wird zur Bestätigung der Identität bei einigen sensiblen Vorgängen verwendet. Ihr Zweck besteht darin, die Kontrolle des Geräts durch Dritte zu verhindern und die Sicherheit des Kontos zu gewährleisten.';
+			case 'localSecurityTip2': return '2. Die Mustersperre ist eine ergänzende Lösung, wenn die Gerätesperre nicht unterstützt wird oder inkompatibel ist. Im Allgemeinen ist es nicht notwendig, eine Mustersperre einzurichten, wenn die Gerätesperre verfügbar ist.';
+			case 'localSecurityTip3': return '3. Wenn Sie Ihr Sperrmuster vergessen haben, können Sie nur die App-Daten löschen oder die App neu installieren, um sie zu löschen.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'Die Geräteauthentifizierung wird aufgerufen. Wenn ein Fehler oder eine Ausnahme auftritt, gehen Sie zum Testen und für weitere Einstellungen zur Option "${localSecurity}" auf der Seite "${menu}".';
+			case 'pleaseDrawUnlockPattern': return 'Bitte zeichnen Sie das Entsperrmuster';
+			case 'addPatternLock': return 'Mustersperre hinzufügen';
+			case 'cannotBeLessThan8Dots': return 'Kann nicht weniger als 8 Punkte sein';
+			case 'pleaseRepeatThePattern': return 'Bitte wiederholen Sie das Muster erneut';
+			case 'notMatchFirstValidPattern': return 'Entspricht nicht dem ersten gültigen Zeichenmuster';
+			case 'deletePatternLock': return 'Mustersperre löschen';
+			case 'notMatchExistingPattern': return 'Entspricht keinem vorhandenen Muster';
+			case 'localAuthentication': return 'Lokale Authentifizierung';
 			default: return null;
 		}
 	}
@@ -17652,13 +18940,13 @@ extension on _StringsEl {
 			case 'tempDepositAddressTip4': return '4. Εάν πρέπει να καταθέσετε άλλα είδη περιουσιακών στοιχείων, μεταβείτε στη σελίδα με το αντίστοιχο νόμισμα και τις επιλογές παραμέτρων για να υποβάλετε αίτηση για νέα διεύθυνση.';
 			case 'applyExtensionOfValidity': return 'Αίτηση για παράταση της περιόδου ισχύος';
 			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-				const TextSpan(text: 'Αυτή η διεύθυνση θα λήξει μετά από '),
+				const TextSpan(text: 'Αυτή η διεύθυνση θα λήξει σε '),
 				diff,
-				const TextSpan(text: ' και θα είναι '),
-				tap('manually extend'),
-				const TextSpan(text: ' έγκυρη για 12 ώρες πριν τη λήξη.'),
+				const TextSpan(text: '. Μπορείτε να '),
+				tap('μη αυτόματη επέκταση'),
+				const TextSpan(text: ' την περίοδο ισχύος εντός 6 ωρών πριν από τη λήξη.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Μπορεί να ανανεωθεί μόνο 12 ώρες νωρίτερα';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'Μπορεί να ανανεωθεί μόνο εντός 6 ωρών νωρίτερα';
 			case 'theReceivingAddressValidForLongtime': return 'Αυτή η διεύθυνση ισχύει για μεγάλο χρονικό διάστημα.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'Αυτή η διεύθυνση συλλογής ισχύει για μεγάλο χρονικό διάστημα και πιστώνεται αυτόματα σε πραγματικό χρόνο.';
 			case 'confirmDeposited': return 'Επιβεβαίωση της κατάθεσης';
@@ -18015,6 +19303,29 @@ extension on _StringsEl {
 			case 'sponsorDevelopersByWatchingAds': return 'Χορηγός προγραμματιστών παρακολουθώντας διαφημίσεις';
 			case 'status': return 'status';
 			case 'date': return 'ημερομηνία';
+			case 'assetApplicationIsInProgressTip': return 'Αίτηση στοιχείου σε εξέλιξη, δοκιμάστε ξανά σε 3 δευτερόλεπτα.';
+			case 'delete': return 'Delete';
+			case 'deleteVerifierTip': return 'Κατά τη διαγραφή των αδειών ενός επαληθευτή, όλα τα σχετικά δεδομένα βαθμολογίας θα διαγραφούν ταυτόχρονα, αλλά οι ανταμοιβές που έχουν ήδη ληφθεί δεν θα επηρεαστούν.';
+			case 'deleteVerifierStatusTip': return 'Ρυθμίστε το σε κατάσταση παύσης πριν από τη διαγραφή';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Παρακαλώ εισάγετε "${text}", για επιβεβαίωση';
+			case 'localSecurity': return 'Τοπική ασφάλεια';
+			case 'deviceLock': return 'Κλείδωμα συσκευής';
+			case 'patternLock': return 'Κλείδωμα μοτίβου';
+			case 'none': return 'κανένας';
+			case 'exist': return 'υπάρχει';
+			case 'prompt': return 'Prompt:';
+			case 'localSecurityTip1': return '1. Ο τοπικός έλεγχος ταυτότητας ασφαλείας χρησιμοποιείται για την επιβεβαίωση της ταυτότητας κατά τη διάρκεια ορισμένων ευαίσθητων λειτουργιών. Σκοπός του είναι να αποτρέψει τον έλεγχο της συσκευής από άλλους και να διασφαλίσει την ασφάλεια του λογαριασμού.';
+			case 'localSecurityTip2': return '2. Το κλείδωμα μοτίβου είναι μια συμπληρωματική λύση όταν το κλείδωμα της συσκευής δεν υποστηρίζεται ή δεν είναι συμβατό. Γενικά, δεν χρειάζεται να ορίσετε ένα κλείδωμα μοτίβου όταν το κλείδωμα της συσκευής είναι διαθέσιμο.';
+			case 'localSecurityTip3': return '3. Όταν το κλείδωμα μοτίβου σας ξεχαστεί, μπορείτε μόνο να διαγράψετε τα δεδομένα της εφαρμογής ή να εγκαταστήσετε ξανά την εφαρμογή για να το διαγράψετε.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'Ο έλεγχος ταυτότητας συσκευής πρόκειται να κληθεί. Εάν παρουσιαστεί σφάλμα ή εξαίρεση, μεταβείτε στην επιλογή "${localSecurity}" στη σελίδα "${menu}" για δοκιμή και περαιτέρω ρυθμίσεις.';
+			case 'pleaseDrawUnlockPattern': return 'Σχεδιάστε το μοτίβο ξεκλειδώματος';
+			case 'addPatternLock': return 'Προσθήκη κλειδώματος μοτίβου';
+			case 'cannotBeLessThan8Dots': return 'Δεν μπορεί να είναι μικρότερη από 8 τελείες';
+			case 'pleaseRepeatThePattern': return 'Παρακαλώ επαναλάβετε το μοτίβο ξανά';
+			case 'notMatchFirstValidPattern': return 'Δεν ταιριάζει με το πρώτο έγκυρο μοτίβο σχεδίασης';
+			case 'deletePatternLock': return 'Διαγραφή κλειδώματος μοτίβου';
+			case 'notMatchExistingPattern': return 'Δεν ταιριάζει με ένα υπάρχον μοτίβο';
+			case 'localAuthentication': return 'Τοπικός έλεγχος ταυτότητας';
 			default: return null;
 		}
 	}
@@ -18324,13 +19635,13 @@ extension on _StringsEs {
 			case 'tempDepositAddressTip4': return '4. Si necesita depositar otros tipos de activos, cambie a la página de la divisa correspondiente y parametrice las opciones para solicitar una nueva dirección.';
 			case 'applyExtensionOfValidity': return 'Solicitud de prórroga';
 			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-				const TextSpan(text: 'Esta dirección expirará después de '),
+				const TextSpan(text: 'Esta dirección caducará en '),
 				diff,
-				const TextSpan(text: ' y será '),
+				const TextSpan(text: '. También puede usar '),
 				tap('manually extend'),
-				const TextSpan(text: ' válida durante 12 horas antes de expirar.'),
+				const TextSpan(text: ' el período de validez dentro de las 6 horas previas al vencimiento.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Sólo puede renovarse con 12 horas de antelación';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'Solo se puede renovar con 6 horas de antelación';
 			case 'theReceivingAddressValidForLongtime': return 'Esta dirección es válida durante mucho tiempo.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'Esta dirección de cobro es válida durante mucho tiempo y se abona automáticamente en tiempo real.';
 			case 'confirmDeposited': return 'Confirmación del depósito';
@@ -18631,7 +19942,7 @@ extension on _StringsEs {
 			case 'foundNewVersion': return 'Descubra la nueva versión:';
 			case 'upgradeLink': return 'Enlace de actualización:';
 			case 'deviceDescription': return 'Descripción del equipamiento.';
-			case 'notification30SecondsBeforeMiningStops': return '¡Ejecute el recordatorio de notificación 30 segundos antes de que se detenga la minería!';
+			case 'notification30SecondsBeforeMiningStops': return 'Ejecutar recordatorio de notificación 30 segundos antes de que se detenga la extracción!';
 			case 'goMining': return 'Ir a minar';
 			case 'deltaMiningReminder': return 'Recordatorio de minería Delta';
 			case 'clickToMine_miningIsAboutToStop': return '¡Haga clic aquí para minar, la minería se detendrá pronto!';
@@ -18688,6 +19999,29 @@ extension on _StringsEs {
 			case 'sponsorDevelopersByWatchingAds': return 'Patrocina a desarrolladores viendo anuncios';
 			case 'status': return 'Estado';
 			case 'date': return 'Fecha';
+			case 'assetApplicationIsInProgressTip': return 'Solicitud de activo en proceso, inténtelo de nuevo en 3 segundos.';
+			case 'delete': return 'Eliminar';
+			case 'deleteVerifierTip': return 'Al eliminar los permisos de un verificador, se eliminarán simultáneamente todos los datos de puntuación relacionados, pero las recompensas ya obtenidas no se verán afectadas.';
+			case 'deleteVerifierStatusTip': return 'Por favor, ponlo en pausa antes de eliminarlo';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Por favor, introduzca "${text}", para confirmar';
+			case 'localSecurity': return 'Seguridad local';
+			case 'deviceLock': return 'Bloqueo del dispositivo';
+			case 'patternLock': return 'Bloqueo de patrón';
+			case 'none': return 'ninguno';
+			case 'exist': return 'existe';
+			case 'prompt': return 'Mensaje:';
+			case 'localSecurityTip1': return '1. La autenticación de seguridad local se utiliza para confirmar la identidad durante ciertas operaciones sensibles. Su propósito es evitar que otros controlen el dispositivo y garantizar la seguridad de la cuenta.';
+			case 'localSecurityTip2': return '2. El bloqueo de patrón es una solución complementaria cuando el bloqueo del dispositivo no es compatible. Generalmente, no es necesario configurar un bloqueo de patrón cuando el bloqueo del dispositivo está disponible.';
+			case 'localSecurityTip3': return '3. Si olvidas tu patrón de bloqueo, solo puedes borrar los datos de la aplicación o reinstalarla para borrarlo.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'Se está a punto de ejecutar la autenticación del dispositivo. Si se produce un error o una excepción, acceda a la opción "${localSecurity}" en la página "${menu}" para realizar pruebas y realizar más configuraciones.';
+			case 'pleaseDrawUnlockPattern': return 'Por favor, dibuja el patrón de desbloqueo';
+			case 'addPatternLock': return 'Añadir patrón de bloqueo';
+			case 'cannotBeLessThan8Dots': return 'No puede ser menor a 8 puntos';
+			case 'pleaseRepeatThePattern': return 'Por favor, repita el patrón de nuevo';
+			case 'notMatchFirstValidPattern': return 'No coincide con el primer patrón de dibujo válido';
+			case 'deletePatternLock': return 'Eliminar bloqueo de patrón';
+			case 'notMatchExistingPattern': return 'No coincide con ningún patrón existente';
+			case 'localAuthentication': return 'Autenticación local';
 			default: return null;
 		}
 	}
@@ -18997,13 +20331,13 @@ extension on _StringsFr {
 			case 'tempDepositAddressTip4': return '4) Si vous devez déposer d\'autres types d\'actifs, veuillez passer à la page de la devise correspondante et aux options de paramètres pour demander une nouvelle adresse.';
 			case 'applyExtensionOfValidity': return 'Demande de prolongation de la période de validité';
 			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-				const TextSpan(text: 'Cette adresse expirera après '),
+				const TextSpan(text: 'Cette adresse expirera dans '),
 				diff,
-				const TextSpan(text: ' et sera '),
+				const TextSpan(text: '. Vous pouvez '),
 				tap('manually extend'),
-				const TextSpan(text: ' valide pendant 12 heures avant l\'expiration.'),
+				const TextSpan(text: ' prolonger la période de validité dans les 6 heures avant l\'expiration.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Le renouvellement ne peut se faire que 12 heures à l\'avance';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'Ne peut être renouvelé que dans les 6 heures à l\'avance';
 			case 'theReceivingAddressValidForLongtime': return 'Cette adresse est valable pour une longue période.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'Cette adresse de collecte est valable pour une longue durée et est automatiquement créditée en temps réel.';
 			case 'confirmDeposited': return 'Confirmation des dépôts';
@@ -19361,6 +20695,721 @@ extension on _StringsFr {
 			case 'sponsorDevelopersByWatchingAds': return 'Sponsorisez des développeurs en regardant des publicités';
 			case 'status': return 'Statut';
 			case 'date': return 'Date';
+			case 'assetApplicationIsInProgressTip': return 'Demande d\'asset en cours, veuillez réessayer dans 3 secondes.';
+			case 'delete': return 'Supprimer';
+			case 'deleteVerifierTip': return 'Lors de la suppression des autorisations d\'un vérificateur, toutes les données de score associées seront supprimées en même temps, mais les récompenses déjà obtenues ne seront pas affectées.';
+			case 'deleteVerifierStatusTip': return 'Veuillez le mettre en pause avant de le supprimer';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Veuillez saisir "${text}" pour confirmer';
+			case 'localSecurity': return 'Sécurité locale';
+			case 'deviceLock': return 'Verrouillage de l\'appareil';
+			case 'patternLock': return 'Verrouillage par motif';
+			case 'none': return 'aucun';
+			case 'exist': return 'existe';
+			case 'prompt': return 'Invite :';
+			case 'localSecurityTip1': return '1. L\'authentification de sécurité locale permet de confirmer l\'identité lors de certaines opérations sensibles. Elle vise à empêcher le contrôle de l\'appareil par d\'autres et à garantir la sécurité du compte. ';
+			case 'localSecurityTip2': return '2. Le verrouillage par schéma est une solution complémentaire lorsque le verrouillage de l\'appareil n\'est pas pris en charge ou incompatible. En général, il n\'est pas nécessaire de définir un verrouillage par schéma lorsque le verrouillage de l\'appareil est disponible.';
+			case 'localSecurityTip3': return '3. Lorsque votre schéma de verrouillage est oublié, vous pouvez uniquement effacer les données de l\'application ou réinstaller l\'application pour l\'effacer.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'L\'authentification de l\'appareil est sur le point d\'être appelée. En cas d\'erreur ou d\'exception, accédez à l\'option « ${localSecurity} » de la page « ${menu} » pour effectuer des tests et des réglages supplémentaires.';
+			case 'pleaseDrawUnlockPattern': return 'Veuillez dessiner le schéma de déverrouillage';
+			case 'addPatternLock': return 'Ajouter un verrouillage par motif';
+			case 'cannotBeLessThan8Dots': return 'Ne peut pas être inférieur à 8 points';
+			case 'pleaseRepeatThePattern': return 'Veuillez répéter le modèle à nouveau';
+			case 'notMatchFirstValidPattern': return 'Ne correspond pas au premier modèle de dessin valide';
+			case 'deletePatternLock': return 'Supprimer le verrouillage par motif';
+			case 'notMatchExistingPattern': return 'Ne correspond pas à un modèle existant';
+			case 'localAuthentication': return 'Authentification locale';
+			default: return null;
+		}
+	}
+}
+
+extension on _StringsHi {
+	dynamic _flatMapFunction(String path) {
+		switch (path) {
+			case 'home': return 'होम';
+			case 'switchLanguage': return 'भाषा बदलें';
+			case 'languageSwitch': return 'भाषा बदलें';
+			case 'slogan': return 'डेल्टा में एक विकेन्द्रीकृत आर्थिक क्षेत्र बनाएं';
+			case 'countryRegionCode': return 'देश कोड';
+			case 'countryRegionSelection': return 'देश चुनें';
+			case 'nextStep': return 'अगला चरण';
+			case 'yourPhoneNumber': return 'आपका फ़ोन नंबर';
+			case 'pleaseSelectCountryAndRegion': return 'कृपया अपना देश चुनें';
+			case 'pleaseEnterPhoneNumber': return 'कृपया एक मान्य फ़ोन नंबर दर्ज करें!';
+			case 'referrerDid': return 'रेफ़रर DID';
+			case 'pleaseEnterTheReferrersDid': return 'कृपया मान्य रेफ़रर DID दर्ज करें!';
+			case 'thisDidIsInvalid': return 'यह DID अमान्य है';
+			case 'nicknameFormatTips': return 'उपनाम खाली नहीं हो सकता और इसकी लंबाई 16 अक्षरों से अधिक नहीं हो सकती';
+			case 'additionalIinformation': return 'अतिरिक्त जानकारी';
+			case 'invitationSubject': return 'डेल्टा सर्वसम्मति निर्माण में भाग लेने के लिए आपको आमंत्रित किया जाता है';
+			case 'invitationLetter': return ({required Object did}) => 'नमस्ते, मैं डेल्टा सर्वसम्मति निर्माण में भाग ले रहा हूँ! डेल्टा एक ओपन-सोर्स नया डिजिटल मनी प्लेटफ़ॉर्म है, जो इंटरनेट कंप्यूटर (ICP) पर चलता है। यह पासवर्ड, निजी कुंजी, या निमोनिक्स के बिना विभिन्न डिजिटल मुद्राओं को प्रबंधित और उपयोग कर सकता है। कृपया इस लिंक पर क्लिक करें: https://delta.kim/auto/download डेल्टा एप्लिकेशन इंस्टॉल करने के लिए। अब हम आपको सर्वसम्मति बनाने और सिक्के मिंट करने के लिए आमंत्रित करते हैं।\n रेफ़रर DID: ${did}';
+			case 'dSMSverification': return 'डिसेंट्रलाइज्ड SMS/dSMS सत्यापन';
+			case 'getAccessNumbers': return 'एक्सेस नंबर प्राप्त करें';
+			case 'getAccessNumberPromptMessage': return 'नीचे दिए गए \'प्राप्त करें\' बटन पर क्लिक करें ताकि कतार में क्रमशः dSMS सत्यापन एक्सेस नंबरों के समूह का चयन किया जा सके।';
+			case 'optionalAccessNumbers': return 'वैकल्पिक एक्सेस नंबर';
+			case 'accessNumber': return 'एक्सेस नंबर';
+			case 'TELCO': return 'टेल्को/देश सूची';
+			case 'score': return 'स्कोर';
+			case 'checkAccessNumberTip': return ({required num n, required InlineSpan Function(num) nBuilder, required InlineSpanBuilder span}) => RichPluralResolvers.bridge(
+				n: n,
+				resolver: _root.$meta.cardinalResolver ?? PluralResolvers.cardinal('hi'),
+				one: () => TextSpan(children: [
+					nBuilder(n),
+					const TextSpan(text: ' एक्सेस नंबर जांचें और अगले चरण पर जाने के लिए "'),
+					span('text'),
+					const TextSpan(text: '" बटन पर क्लिक करें।'),
+				]),
+				other: () => TextSpan(children: [
+					nBuilder(n),
+					const TextSpan(text: ' एक्सेस नंबरों की जांच करें और अगले चरण पर जाने के लिए "'),
+					span('text'),
+					const TextSpan(text: '" बटन पर क्लिक करें।'),
+				]),
+			);
+			case 'whatIsDeltaDesc': return 'डेल्टा एक ओपन-सोर्स विकेन्द्रीकृत वैश्विक डिजिटल मुद्रा प्रयोगात्मक परियोजना और मुद्रा अनुप्रयोग पारिस्थितिकी तंत्र है।';
+			case 'deltaGoalsDesc': return 'हमारा लक्ष्य है कि लोग डेल्टा का उपयोग करके एक सार्वभौमिक, निष्पक्ष, सुरक्षित, तेज़ और पर्यावरण-अनुकूल नई डिजिटल मुद्रा का सामूहिक रूप से निर्माण करें। साथ ही, इन डिजिटल मुद्राओं और पिछली क्रिप्टोकरेंसी के लिए विभिन्न प्रभावी अनुप्रयोग परिदृश्य प्रदान करें।';
+			case 'details': return 'विवरण';
+			case 'get': return 'प्राप्त करें';
+			case 'select': return 'चुनें';
+			case 'send': return 'संदेश भेजें';
+			case 'complete': return 'पूरा करें';
+			case 'selectedAccessNumberPrompt': return 'चयन किए जाने पर, पूरा एक्सेस नंबर प्रदर्शित होता है और एक प्रमाणीकरण स्ट्रिंग उत्पन्न होती है।';
+			case 'location': return 'लोकेशन';
+			case 'verificationString': return 'सत्यापन स्ट्रिंग';
+			case 'sendVerificationStringDesc': return ({required InlineSpan num, required InlineSpan accessNumber, required InlineSpan label}) => TextSpan(children: [
+				const TextSpan(text: 'कृपया अपने फोन नंबर '),
+				num,
+				const TextSpan(text: ' का उपयोग करें, सत्यापन पूरा करने के लिए '),
+				accessNumber,
+				const TextSpan(text: ' पर '),
+				label,
+				const TextSpan(text: ' भेजें।'),
+			]);
+			case 'ihaveSentTheSMS': return 'मैंने एसएमएस भेज दिया है';
+			case 'validWithin6minutes': return ({required InlineSpan time}) => TextSpan(children: [
+				const TextSpan(text: 'सत्यापन स्ट्रिंग 6 मिनट के लिए मान्य है, शेष समय: '),
+				time,
+				const TextSpan(text: ' '),
+			]);
+			case 'tooFast_waitXsecondsContinuing': return ({required Object x}) => 'अति शीघ्र! जारी रखने से पहले ${x} सेकंड प्रतीक्षा करें।';
+			case 'waitingForVerificationSMS': return 'सत्यापन स्ट्रिंग की प्रतीक्षा हो रही है...';
+			case 'partSuccsForVerificationSMS': return 'एसएमएस सत्यापन आपके चुने गए एक्सेस टर्मिनल द्वारा पूरा हो गया है!';
+			case 'creatingAccessToken': return 'आपका एक्सेस टोकन बनाया जा रहा है।';
+			case 'intoDelta': return 'डेल्टा में प्रवेश करें!';
+			case 'deltaAccountIsLoggedIn': return 'आपका डेल्टा अकाउंट लॉग इन हो गया है।';
+			case 'iHavLoggedOut': return 'मैं लॉग आउट हो गया हूँ।';
+			case 'startTwoFactorVerification': return 'टू-फैक्टर सत्यापन शुरू करें।';
+			case 'securityCircleVerification': return 'सुरक्षा सर्कल सत्यापन';
+			case 'generateSecurityCode': return 'सुरक्षा कोड उत्पन्न करें';
+			case 'generateSecurityCodeHintText': return 'उत्पन्न सुरक्षा कोड आपके सुरक्षा सर्कल के किसी यादृच्छिक रूप से चुने गए सदस्य को भेजा जाएगा।';
+			case 'notSetSecurityCircleEnterPlaceholderTip': return 'आपने अभी तक सुरक्षा सर्कल सेट नहीं किया है, आपका अकाउंट बहुत असुरक्षित है। कृपया कोई भी 6-अंकीय प्लेसहोल्डर दर्ज करें और अगले चरण पर जाएं।';
+			case 'securityCodeHasBeenGenerated_ContactFriendsTip': return 'सुरक्षा कोड उत्पन्न हो गया है। कृपया निम्नलिखित रिश्तेदारों और मित्रों से संपर्क करें और उनसे सुरक्षा कोड निकालने के लिए कहें ताकि आप सत्यापन पूरा कर सकें। यह 30 मिनट तक मान्य है!';
+			case 'itGetSecurityCodeTip': return 'सुझाव: यह सदस्य डेल्टा ऐप -> मेनू -> \'सुरक्षा प्रदान करें\' पृष्ठ में आपके अकाउंट उपनाम को खोजेगा और सुरक्षा कोड प्राप्त करने के लिए डबल-क्लिक करेगा।';
+			case 'securityCircleMemberList': return 'सुरक्षा सर्कल सदस्य सूची:';
+			case 'selectA_friendToProvideSecurityCodeTip': return 'कृपया सदस्य सूची से किसी रिश्तेदार या मित्र का चयन करें, जो सुरक्षा कोड उत्पन्न कर आपको प्रदान करे, ताकि आपकी वास्तविक पहचान सत्यापित की जा सके। इसका उद्देश्य यह सुनिश्चित करना है कि मोबाइल नंबर खो जाने या चोरी हो जाने पर आपका अकाउंट किसी अन्य के नियंत्रण में न जाए।';
+			case 'formatIsXdigits': return ({required Object num}) => '${num} अंकों का फ़ॉर्मेट है';
+			case 'signInSuccessfully': return 'साइन इन सफल हुआ!';
+			case 'twoFAandLogin': return 'टू-फैक्टर सत्यापन और लॉगिन';
+			case 'verificationSuccessful': return 'सत्यापन सफल हुआ!';
+			case 'validationFailed': return 'सत्यापन विफल हुआ!';
+			case 'securityCircle': return 'सुरक्षा सर्कल';
+			case 'securityCode': return 'सुरक्षा कोड';
+			case 'provideSecurity': return 'सुरक्षा प्रदान करें';
+			case 'addManully': return 'मैन्युअली जोड़ें';
+			case 'addFromContacts': return 'संपर्कों से जोड़ें';
+			case 'addSecurityCircle': return 'सुरक्षा सर्कल जोड़ें';
+			case 'inputType': return 'इनपुट प्रकार';
+			case 'mobileNumber': return 'मोबाइल नंबर';
+			case 'did': return 'DID (डिजिटल पहचान कोड)';
+			case 'pleaseEnterValidDID': return 'कृपया एक वैध DID दर्ज करें';
+			case 'pleaseEnterValidWalletAddress': return 'कृपया एक वैध वॉलेट एड्रेस दर्ज करें';
+			case 'appellation': return 'उपाधि';
+			case 'appellationHint': return 'आप इसे क्या नाम देना चाहेंगे? जैसे "भाई"';
+			case 'addSecurityCircleTips': return 'कृपया सुरक्षा सर्कल में अविश्वसनीय लोगों को न जोड़ें।';
+			case 'referralTeam': return 'रेफरल टीम';
+			case 'profile': return 'प्रोफ़ाइल';
+			case 'menu': return 'मेनू';
+			case 'directly': return 'प्रत्‍यक्ष रूप से';
+			case 'indirectly': return 'अप्रत्‍यक्ष रूप से';
+			case 'inviteContacts': return 'संपर्कों को आमंत्रित करें';
+			case 'refereesAtFirstLevelDesc': return ({required InlineSpan nickname, required InlineSpan num1, required InlineSpan num2}) => TextSpan(children: [
+				const TextSpan(text: 'आपके रेफ़रर '),
+				nickname,
+				const TextSpan(text: ' हैं। आपने प्रत्‍यक्ष रूप से '),
+				num1,
+				const TextSpan(text: ' लोगों की सिफारिश की है, जिनमें से '),
+				num2,
+				const TextSpan(text: ' लोग वर्तमान में ऑनलाइन हैं।'),
+			]);
+			case 'refereesAtSecondLevelDesc': return ({required InlineSpan num1, required InlineSpan num2}) => TextSpan(children: [
+				const TextSpan(text: 'आपने अप्रत्यक्ष रूप से '),
+				num1,
+				const TextSpan(text: ' लोगों की सिफारिश की है, जिनमें से '),
+				num2,
+				const TextSpan(text: ' लोग वर्तमान में ऑनलाइन हैं।'),
+			]);
+			case 'invitationToBoostMiningDesc': return ({required InlineSpan rate1, required InlineSpan btn}) => TextSpan(children: [
+				const TextSpan(text: 'दोस्तों को डेल्टा से जुड़ने के लिए आमंत्रित करें और सामाजिक सहमति को बेहतर बनाएं। प्रत्येक प्रत्‍यक्ष रूप से अनुशंसित व्यक्ति की माइनिंग दर आधार दर के '),
+				rate1,
+				const TextSpan(text: ' से बढ़ जाती है। '),
+				btn,
+			]);
+			case 'invitationToBoostMiningDesc2': return ({required InlineSpan rate2}) => TextSpan(children: [
+				const TextSpan(text: 'दोस्तों को डेल्टा से जुड़ने के लिए आमंत्रित करें और सामाजिक सहमति को बेहतर बनाएं। प्रत्येक अप्रत्यक्ष रूप से अनुशंसित व्यक्ति की माइनिंग दर आधार दर के '),
+				rate2,
+				const TextSpan(text: ' से बढ़ जाती है।'),
+			]);
+			case 'areYouSureToRemove_x': return ({required Object name}) => 'क्या आप "${name}" को हटाना सुनिश्चित करते हैं?';
+			case 'safetyCircleRoleQ': return 'सुरक्षा सर्कल का कार्य क्या है?';
+			case 'safetyCircleRoleA': return 'यह संवेदनशील परिस्थितियों में द्वितीयक प्रमाणीकरण प्रदान करता है ताकि आपके खाते की सुरक्षा बनी रहे।';
+			case 'howSecurityCirclesWorkQ': return 'सुरक्षा सर्कल कैसे काम करता है?';
+			case 'howSecurityCirclesWorkA': return 'जब सुरक्षा सर्कल सत्यापन के लिए आवश्यक होता है, तो डेल्टा स्मार्ट कॉन्ट्रैक्ट प्रोग्राम यादृच्छिक रूप से सुरक्षा सर्कल मित्र सूची से एक सदस्य का चयन करेगा, जो आपको सुरक्षा कोड प्रदान करने में मदद करेगा ताकि आपकी पहचान की सुरक्षा पुष्टि हो सके। जब आप सदस्य से सुरक्षा कोड मांगते हैं, तो यह पुष्टि कर सकता है कि आप वास्तव में वही हैं। साथ ही, प्रोग्राम यह संकेत देगा: "यदि यह आप नहीं हैं, तो सुरक्षा कोड प्रदान करने से इनकार करें", ताकि आपके खाते की सुरक्षा बनी रहे। इसलिए, आपको हमेशा यह सुनिश्चित करना चाहिए कि आपके सुरक्षा सर्कल के सदस्य वे लोग हों जिन पर आप भरोसा कर सकते हैं।';
+			case 'securityCircleBeUsedQ': return 'आप इसे कब उपयोग करेंगे?';
+			case 'securityCircleBeUsedA1': return '1. जब आपका डेल्टा ऐप नियंत्रण से बाहर हो जाए, आमतौर पर यह तब होता है जब आपका मोबाइल फोन खो जाता है या चोरी हो जाता है।';
+			case 'securityCircleBeUsedA2': return '2. कुछ संवेदनशील प्रक्रियाओं के मामले में, डेल्टा स्मार्ट कॉन्ट्रैक्ट प्रोग्राम को यह पुष्टि करने की आवश्यकता होती है कि आप स्वयं अपना खाता एक्सेस कर रहे हैं, कोई और नहीं।';
+			case 'provideSafetyTip1': return 'जब आपका मित्र आपसे सुरक्षा कोड मांगे, तो कृपया सुनिश्चित करें कि वह वास्तव में खुद अकाउंट एक्सेस कर रहा है, कोई और नहीं है।';
+			case 'provideSafetyTip2': return 'आप उपरोक्त मित्रों के लिए सुरक्षा प्रदान कर रहे हैं। उन्होंने आपको सुरक्षा सर्कल में सबसे विश्वसनीय व्यक्ति के रूप में सेट किया है, और जब उनके खाते संवेदनशील प्रक्रियाओं का सामना करते हैं, तो आपको उनके लिए सुरक्षा पुष्टि प्रदान करनी होगी।';
+			case 'provideSafetyTip3': return 'जब आवश्यक हो, सुरक्षा कोड निकालने के लिए दूसरे व्यक्ति के प्रोफ़ाइल फोटो पर डबल-क्लिक करें।';
+			case 'doesNotSecurityCodeNeedsRetrieved': return 'दूसरे व्यक्ति के पास वर्तमान में कोई सुरक्षा कोड नहीं है जिसे प्राप्त करने की आवश्यकता हो!';
+			case 'existSecurityCodeTip': return 'कृपया सुनिश्चित करें कि जो रिश्तेदार या मित्र आपसे सुरक्षा कोड मांग रहा है, वह वास्तव में वही है। रिश्तेदार या मित्र की सुरक्षा सुनिश्चित करने के लिए, यदि वह स्वयं नहीं है, तो सुरक्षा कोड प्रदान करने से इनकार कर दें।';
+			case 'avatarSettings': return 'प्रोफ़ाइल फोटो सेटिंग्स';
+			case 'NFTAvatarPropertyRightsText': return 'अस्वीकरण: संबंधित NFT को प्रोफ़ाइल फोटो के रूप में उपयोग करना केवल व्यक्तिगत पसंद है और इसका NFT के बौद्धिक संपदा अधिकारों के स्वामित्व से कोई संबंध नहीं है।';
+			case 'projectWebsite': return 'प्रोजेक्ट वेबसाइट: ';
+			case 'whitepaper': return 'व्हाइटपेपर:';
+			case 'indexID': return 'सूचकांक आईडी';
+			case 'indexesRangeFromXtoY': return ({required Object start, required Object end}) => 'सूचकांक ${start} से ${end} तक हैं।';
+			case 'inputToLoadNFTAvatarTip': return 'अपने पसंदीदा NFT का सूचकांक आईडी दर्ज करें, और प्रोग्राम इसे स्वतः आपके प्रोफ़ाइल फोटो के रूप में लोड कर देगा।';
+			case 'miningRate': return 'माइनिंग दर';
+			case 'miningDetails': return 'माइनिंग विवरण';
+			case 'totalMiningRateEachDay': return ({required InlineSpan rate}) => TextSpan(children: [
+				const TextSpan(text: 'कुल माइनिंग दर: '),
+				rate,
+				const TextSpan(text: ' δ/दिन'),
+			]);
+			case 'EndOfMiningSession': return 'माइनिंग सत्र समाप्त हो चुका है।: ';
+			case 'tapToMineDeltaCoin': return 'डेल्टा कॉइन माइन करने के लिए टैप करें। ↑';
+			case 'clickToStartMining': return 'माइनिंग शुरू करने के लिए टैप करें!';
+			case 'miningHasStoppedPromptDesc': return 'माइनिंग रुक गई है, हर 24 घंटे का एक माइनिंग चक्र होता है। नई माइनिंग शुरू करने के लिए बिजली आइकन पर क्लिक करें। डेल्टा की माइनिंग एक वितरण तंत्र है, जो आपके डिवाइस की अतिरिक्त कंप्यूटिंग शक्ति और नेटवर्क ट्रैफिक का उपयोग नहीं करता।';
+			case 'aboutBaseRate': return 'बेस रेट के बारे में जानना चाहते हैं?';
+			case 'baseRateDescription': return 'व्हाइटपेपर में दिए गए समझौते के अनुसार, डेल्टा माइनिंग की बेसिक रेट घटाने की प्रक्रिया दो चरणों में विभाजित होगी| \nचरण 1: जब प्रतिभागियों (पंजीकरण) की संख्या 3000 या उससे कम होगी, तो दर 32δ/दिन होगी। इसे शुरुआती बिंदु मानते हुए, प्रत्येक बार जब प्रतिभागियों की संख्या 10 गुना बढ़ेगी, तो बेस रेट आधा कर दिया जाएगा। \nचरण 2: जब प्रतिभागियों की संख्या 30 मिलियन या उससे अधिक हो जाएगी, तो प्रत्येक बार जब संख्या 3 गुना बढ़ेगी, बेस रेट आधा हो जाएगा। यह तब तक जारी रहेगा जब तक कि पूरी आपूर्ति नहीं निकल जाती।';
+			case 'baseRate': return 'बेस रेट';
+			case 'directReferralRewards': return 'प्रत्यक्ष रेफरल पुरस्कार';
+			case 'directReferralRewardDesc': return 'प्रत्येक व्यक्ति जिसे आपने प्रत्यक्ष रूप से आमंत्रित किया है, जब वह माइनिंग स्थिति में होगा, तो आपकी माइनिंग दर बेस रेट के 1/3 से बढ़ जाएगी। \n\n इसके अलावा, आपके रेफ़रर की माइनिंग स्थिति भी आपके प्रत्यक्ष रेफरल पुरस्कार में शामिल की जाएगी।';
+			case 'indirectReferralRewards': return 'अप्रत्यक्ष रेफरल पुरस्कार';
+			case 'indirectReferralRewardDesc': return 'जब कोई अप्रत्यक्ष रेफ़रल माइनिंग स्थिति में होगा, तो आपकी माइनिंग दर बेस रेट के 1/10 से अतिरिक्त रूप से बढ़ जाएगी। \n\n आपकी प्रत्यक्ष रेफ़रल टीम और वे जिन लोगों को आमंत्रित करते हैं, वे आपके लिए अप्रत्यक्ष रेफ़रल माने जाएंगे।';
+			case 'mine': return 'माइन';
+			case 'thisMiningInformation': return 'यह माइनिंग जानकारी';
+			case 'participatedInMiningXtimes': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'कुल बार जब आपने माइनिंग में भाग लिया: '),
+				x,
+				const TextSpan(text: ' बार'),
+			]);
+			case 'totalIncomeThisTimeXDeltaCoins': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'इस बार की आय: '),
+				x,
+				const TextSpan(text: ' डेल्टा कॉइंस'),
+			]);
+			case 'basicIncomeXcoins': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'मूल आय: '),
+				x,
+				const TextSpan(text: ' डेल्टा कॉइंस'),
+			]);
+			case 'directTeamContributionXcoins': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'प्रत्यक्ष टीम योगदान: '),
+				x,
+				const TextSpan(text: ' डेल्टा कॉइंस'),
+			]);
+			case 'indirectTeamContributionXcoins': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'अप्रत्यक्ष टीम योगदान: '),
+				x,
+				const TextSpan(text: ' डेल्टा कॉइंस'),
+			]);
+			case 'timeIntervalFromLastMiningX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'पिछली माइनिंग दर से समय अंतराल: '),
+				x,
+			]);
+			case 'effectiveMiningTimeXhours': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'प्रभावी माइनिंग समय: '),
+				x,
+			]);
+			case 'xhours': return ({required Object x}) => '${x} घंटे';
+			case 'keep3_5peopleInTheSafetyCircleTip': return 'संपत्ति की सुरक्षा के लिए, आपको किसी भी समय अपने सुरक्षा सर्कल में 3-5 विश्वसनीय लोगों को रखना चाहिए।';
+			case 'index': return 'सूचकांक';
+			case 'amount': return 'राशि';
+			case 'balance': return 'बैलेंस';
+			case 'timeStamp': return 'टाइमस्टैम्प';
+			case 'summary': return 'सारांश';
+			case 'miningHasStopped': return 'माइनिंग रुक गई है।';
+			case 'miningHasStoppedDesc': return 'आपकी माइनिंग फिलहाल रुकी हुई है, और आप तुरंत आय अर्जित करना शुरू कर सकते हैं।';
+			case 'startMining': return 'माइनिंग शुरू करें';
+			case 'changeMobileNumber': return 'मोबाइल नंबर बदलें';
+			case 'currentMobileNumber': return 'वर्तमान मोबाइल नंबर';
+			case 'newMobileNumber': return 'नया मोबाइल नंबर';
+			case 'securityCodeFormatIs6digits': return 'सुरक्षा कोड का प्रारूप 6 अंकों का होना चाहिए!';
+			case 'startVrification': return 'सत्यापन शुरू करें';
+			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'यह मोबाइल नंबर पहले से मौजूद है और एक संबद्ध DID: ${dId} से जुड़ा हुआ है।}';
+			case 'noDataYet': return 'अभी तक कोई डेटा नहीं है';
+			case 'previousMobileNumber': return 'पिछला मोबाइल नंबर';
+			case 'changeLog': return 'परिवर्तन लॉग';
+			case 'referralLinkToShare': return 'साझा करने के लिए रेफ़रल लिंक';
+			case 'referrer': return 'रेफ़रर';
+			case 'isoCountryCode': return 'ISO देश कोड';
+			case 'avatarLogo': return 'प्रोफ़ाइल फ़ोटो प्रतीक चिन्ह';
+			case 'creationTime': return 'क्रिएशन टाइम';
+			case 'lastUpdate': return 'पिछला अपडेट';
+			case 'numberOfSecurityCircleMembers': return 'सुरक्षा सर्कल के सदस्यों की संख्या';
+			case 'theLatestMining': return 'हाल की माइनिंग';
+			case 'effectiveMiningDays': return 'प्रभावी माइनिंग दिन';
+			case 'modifyNickname': return 'उपनाम संशोधित करें';
+			case 'didNotChange': return 'बदलाव नहीं हुआ!';
+			case 'kycVerification': return 'KYC सत्यापन';
+			case 'faceID': return 'फेस आईडी';
+			case 'touchID': return 'टच आईडी';
+			case 'biometricsAuthorizationTest': return 'बायोमेट्रिक अधिकरण परीक्षण';
+			case 'currentState': return 'वर्तमान स्थिति';
+			case 'biometricsAuthenticationLocalizedReason': return 'अपनी डिवाइस का अनलॉक उपयोग करके अपनी पहचान सत्यापित करें।';
+			case 'graph': return 'ग्राफ़';
+			case 'referralRelationshipGraph': return 'रेफ़रल संबंध ग्राफ़';
+			case 'nativeContacts': return 'नेटिव संपर्क';
+			case 'registrationAndMiningTrends': return 'पंजीकरण और माइनिंग प्रवृत्तियाँ';
+			case 'inMining': return 'माइनिंग में';
+			case 'registrationVolume': return 'पंजीकरण संख्या';
+			case 'unmined': return 'माइनिंग के लिए उपलब्ध हिस्सा';
+			case 'mined': return 'हिस्सा जो माइन किया जा चुका है';
+			case 'communityMining': return 'समुदाय माइनिंग';
+			case 'consensusPromotionFund': return 'सहमति संवर्धन कोष';
+			case 'ecologicalAwardFund': return 'परिस्थितिकीय पुरस्कार कोष';
+			case 'icpFuelCrowdfunding': return 'ICP ईंधन क्राउडफंडिंग';
+			case 'coreDeveloperRewards': return 'कोर डेवलपर पुरस्कार';
+			case 'totalAllocation': return 'कुल आवंटन';
+			case 'miningRatio': return 'माइनिंग अनुपात';
+			case 'billion.300': return '300 बिलियन';
+			case 'billion.180': return '180 बिलियन';
+			case 'billion.30': return '30 बिलियन';
+			case 'billion.60': return '60 बिलियन';
+			case 'watchAdsToSupportDevelopers': return 'डेवलपर्स का समर्थन करने के लिए विज्ञापन देखें';
+			case 'loadingAdcomponents': return 'विज्ञापन घटकों को लोड किया जा रहा है...';
+			case 'timeIsNotUp': return 'समय समाप्त नहीं हुआ है!';
+			case 'loadingFailed_maybeTheNetworkIsBlocked': return 'लोडिंग विफल, शायद नेटवर्क ब्लॉक हो गया है!';
+			case 'pendingUSCTrecords': return 'लंबित USCT रिकॉर्ड्स';
+			case 'pendingUSCTrecordsDesc': return 'लंबित USCT रिकॉर्ड्स को विज्ञापन प्लेटफॉर्म के साथ 15-30 दिनों के भीतर तुलना और पुष्टि की जाएगी। वैध रिकॉर्ड्स को USCT रिकॉर्ड लिस्ट में ट्रांसफर किया जाएगा, और संबंधित USCT राशि खाते के बैलेंस में जोड़ी जाएगी।';
+			case 'validity': return 'वैधता';
+			case 'advertiser': return 'विज्ञापनदाता';
+			case 'earned': return 'कमाई गई राशि';
+			case 'withdraw': return 'विद्रॉ';
+			case 'validUSCTrecords': return 'मान्य USCT रिकॉर्ड';
+			case 'USCTmining': return 'USCT माइनिंग';
+			case 'aboutUSCTmining': return 'USCT माइनिंग के बारे में?';
+			case 'aboutUSCTminingItme1': return '1. USDT एक वैश्विक रूप से लोकप्रिय अमेरिकी डॉलर स्टेबलकॉइन है, जिसे दुनिया के प्रमुख क्रिप्टोकरेंसी एक्सचेंजों पर विभिन्न देशों की सरकारी मुद्राओं में आसानी से बदला जा सकता है।';
+			case 'aboutUSCTminingItme2': return '2. USCT माइनिंग आय का एक अस्थायी माप मूल्य है, इसका पूर्ण नाम USD क्रेडिट है, और अंत में इसे विज्ञापन प्लेटफ़ॉर्म के वास्तविक निपटान कोटा और वितरण नियमों के अनुसार और संबंधित अनुपात में USDT में बदला जा सकता है।';
+			case 'aboutUSCTminingItme3': return '3. USCT माइनिंग डेल्टा समुदाय में एक ट्रैफ़िक विज्ञापन मुद्रीकरण कार्य है। डेल्टा समुदाय के विशाल उपयोगकर्ता आधार का लाभ उठाते हुए यह विज्ञापनदाताओं, डेल्टा डेवलपर्स और खनिकों के लिए कई लाभ प्रदान करता है। इसका डिज़ाइन उद्देश्य डेल्टा पारिस्थितिकी तंत्र के शुरुआती चरण में कुछ प्रभावी आय प्रदान करना है, जब तक कि यह पूरी तरह से स्थापित और फल-फूल नहीं गया है; साथ ही यह डेवलपर्स के लिए एक निश्चित मात्रा में वित्तीय समर्थन भी प्रदान करता है, ताकि डेवलपर्स लंबे समय तक विकास सेवाएं प्रदान कर सकें और अंततः श्वेतपत्र की सभी योजनाओं को साकार कर सकें; इसके अलावा यह उत्पाद विज्ञापनदाताओं के लिए एक प्रभावी प्रचार चैनल भी प्रदान करता है।';
+			case 'aboutUSCTminingItme4': return '4. वितरण नियम इस प्रकार डिज़ाइन किए गए हैं कि कुल आय का 40% डेवलपर तकनीकी सेवा आयोगों के रूप में उपयोग किया जाएगा, और शेष 60% को समुदाय की अनुपस्थिति पुरस्कारों के रूप में उपयोग किया जाएगा। अनुपस्थिति पुरस्कार भाग DTC के समान एक मल्टी-लेवल वितरण मॉडल अपनाता है, और ये अनुपस्थिति पुरस्कार 6:3:1 के अनुपात में 3 हिस्सों में विभाजित किए जाते हैं। एक USCT माइनिंग के लिए प्रत्येक बार 60% अनुपस्थिति पुरस्कार उन लोगों को आवंटित किया जाता है जो वर्तमान में विज्ञापन देख रहे होते हैं, 30% उच्चतर अनुशंसा करने वाले को और 10% दूसरे स्तर के अनुशंसा करने वाले को दिया जाता है। इसी तरह, आप भी USCT माइनिंग के माध्यम से उन दोस्तों से समान अनुशंसा पुरस्कार प्राप्त कर सकते हैं जिन्हें आपने अनुशंसा किया है। इस प्रकार के मल्टी-लेवल वितरण का लाभ यह है कि कोई भी व्यक्ति एक ऑफ़लाइन टीम विकसित करके एक बड़ी मात्रा में USDT लाभ प्राप्त कर सकता है।';
+			case 'aboutUSCTminingItme5': return '5. बिलिंग चक्र 7 दिन का है, यानी, विज्ञापन प्लेटफ़ॉर्म के साथ हर 7 दिन में वैधता की जांच की जाती है, और पुष्टि किए गए प्रभावी आय और वास्तविक राशि को बैलेंस में रिकॉर्ड किया जाता है। प्रत्येक निकासी के लिए न्यूनतम राशि 10USDT है।';
+			case 'linesXtoY': return ({required Object x, required Object y}) => 'लाइनें ${x} से ${y}';
+			case 'wallet': return 'वॉलेट';
+			case 'multiChainWallet': return 'मल्टी-चेन वॉलेट';
+			case 'deposit': return 'डिपॉजिट';
+			case 'transfer': return 'ट्रांसफर';
+			case 'xcoinInWallet': return ({required Object coinCode}) => '${coinCode} वॉलेट में';
+			case 'transactions': return 'लेन-देन विवरण';
+			case 'network': return 'नेटवर्क';
+			case 'walletAddress': return 'वॉलेट एड्रेस';
+			case 'currentAddress': return 'करंट एड्रेस';
+			case 'depositAddress': return 'डिपॉजिट एड्रेस';
+			case 'receivingMoneyAddress': return 'पैसे प्राप्त करने का एड्रेस';
+			case 'applyTempDepositAddress': return 'अस्थायी जमा एड्रेस के लिए आवेदन करें';
+			case 'tempDepositAddressTip': return '1.यह एक साझा जमा एड्रेस है। कृपया पट्टा समाप्त होने या अनबाउंड होने के बाद राशि जमा न करें। ऐसा होने पर राशि खो जाएगी।.';
+			case 'tempDepositAddressTip2': return '2.जमा करने से पहले, कृपया यह सुनिश्चित करें कि [चेन नाम] और [मुद्रा नाम] बिल्कुल मेल खाते हैं; यदि यह एक अनुबंध टोकन है, तो आपको यह भी सुनिश्चित करना होगा कि [अनुबंध मानक] और [अनुबंध एड्रेस] बिल्कुल मेल खाते हैं।';
+			case 'tempDepositAddressTip3': return '3.कृपया ऐसे फंड जमा करने की कोशिश न करें जो ऊपर दिए गए किसी भी पैरामीटर से मेल नहीं खाते, अन्यथा राशि खो जाएगी।';
+			case 'tempDepositAddressTip4': return '4.यदि आपको अन्य प्रकार की संपत्तियां जमा करने की आवश्यकता हो, तो कृपया संबंधित मुद्रा पृष्ठ और पैरामीटर विकल्प पर स्विच करें और नया एड्रेस आवेदन करें।';
+			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
+				const TextSpan(text: 'यह पता '),
+				diff,
+				const TextSpan(text: ' में समाप्त हो जाएगा। आप समाप्ति से 6 घंटे पहले वैधता अवधि को '),
+				tap('मैन्युअल रूप से बढ़ा सकते हैं'),
+				const TextSpan(text: '।'),
+			]);
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'केवल 6 घंटे पहले ही नवीनीकरण किया जा सकता है';
+			case 'theReceivingAddressValidForLongtime': return 'प्राप्ति एड्रेस लंबी अवधि के लिए वैध है।';
+			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'प्राप्ति एड्रेस लंबी अवधि के लिए वैध है और रीयल टाइम में स्वचालित रूप से क्रेडिट हो जाएगा।';
+			case 'confirmDeposited': return 'जमा की पुष्टि करें';
+			case 'unbindThisDepositAddress': return 'इस जमा एड्रेस को अनबाइंड करें';
+			case 'confirmDepositedTip': return 'यदि धनराशि ट्रांसफर की गई है, तो कृपया 10 मिनट के बाद ऊपर दिए गए बटन पर क्लिक करें ताकि वॉलेट में खाता ट्रिगर हो सके।';
+			case 'unbindDepositAddressTip': return 'स्मार्ट कॉन्ट्रैक्ट्स के संचालन पर भार कम करने के लिए, यदि वैधता अवधि के भीतर कोई और धनराशि जमा नहीं की जाएगी, तो कृपया जमा एड्रेस अनबाइंड कर दें।';
+			case 'transferToAddress': return 'एड्रेस पर ट्रांसफर करें';
+			case 'longPressToPaste': return 'पेस्ट करने के लिए लंबे समय तक दबाएं';
+			case 'all': return 'सभी';
+			case 'balanceX': return ({required Object x}) => 'बैलेंस ${x}';
+			case 'transferOut': return 'निकासी करें';
+			case 'depositXcoins': return ({required Object x}) => 'डिपॉजिट ${x}';
+			case 'sender': return 'सेंडर';
+			case 'recipient': return 'प्राप्तकर्ता';
+			case 'memo': return 'मेमो';
+			case 'kind': return 'प्रकार';
+			case 'transferAmountExceedsAvailableBalance': return 'ट्रांसफर राशि उपलब्ध बैलेंस से अधिक है!';
+			case 'pleaseEnterValidAmount': return 'कृपया एक मान्य राशि दर्ज करें';
+			case 'networkFee': return 'नेटवर्क शुल्क';
+			case 'fee': return 'शुल्क';
+			case 'validLengthXcharacters': return ({required Object x}) => 'वैध लंबाई ${x} अक्षर है';
+			case 'historys': return 'लेन-देन इतिहास';
+			case 'dtcCreditdetail': return 'डेल्टा क्रेडिट विवरण';
+			case 'usdCreditdetail': return 'USD क्रेडिट विवरण';
+			case 'dappSquare': return 'dApp स्क्वायर';
+			case 'amountRaised': return 'उठाई गई राशि';
+			case 'disbursedAmount': return 'वितरित राशि';
+			case 'participationTimes': return 'भागीदारी की संख्या';
+			case 'completionRate': return 'पूरा होने की दर';
+			case 'exchangeRate': return 'विनिमय दर';
+			case 'icpCrowdfunding': return 'ICP क्राउडफंडिंग';
+			case 'crowdfunding': return 'क्राउडफंडिंग';
+			case 'trendsCurve': return 'प्रवृत्ति वक्र';
+			case 'fullScreenView': return 'पूर्ण स्क्रीन दृश्य';
+			case 'walletBalance': return 'वॉलेट बैलेंस: ';
+			case 'manageWallet': return 'वॉलेट प्रबंधन';
+			case 'fundraiseAmount': return 'फंडरेज़ राशि';
+			case 'exchangeRewardAmount': return 'एक्सचेंज इनाम राशि';
+			case 'fundraise': return 'फंडरेज़';
+			case 'rangeIntegersX': return ({required Object x}) => 'रेंज: पूर्णांक ${x}';
+			case 'successfullParticipatingFundraisingXtip': return ({required Object amount}) => 'फंडरेज़िंग में सफलतापूर्वक भाग लिया और ${amount}DTCT का इनाम प्राप्त हुआ';
+			case 'amountSummary': return 'राशि सारांश';
+			case 'changePreferred': return 'पसंदीदा बदलें';
+			case 'changePreferredAddress': return 'पसंदीदा एड्रेस बदलें';
+			case 'preferredAddressTip': return 'पंजीकृत मोबाइल नंबर या DID का उपयोग करके धन प्राप्त करने पर, धनराशि स्वचालित रूप से पसंदीदा एड्रेस पर स्थानांतरित कर दी जाएगी।';
+			case 'newAddress': return 'नया एड्रेस';
+			case 'newAddressTip': return 'दुरुपयोग को रोकने के लिए, जब एक से अधिक वॉलेट एड्रेस होता है, तो प्रत्येक नए पते के निर्माण पर लेनदेन शुल्क लगेगा।';
+			case 'createNew': return 'नया वॉलेट बनाएं';
+			case 'chainNetworkName': return 'चेन नेटवर्क नाम';
+			case 'from': return 'फ्रॉम';
+			case 'to': return 'टू';
+			case 'noAvailableDepositAmountDetected': return 'कोई उपलब्ध जमा राशि नहीं मिली!';
+			case 'crossChainReceiveMoneyMonitoring': return 'क्रॉस-चेन प्राप्त धनराशि निगरानी में है…';
+			case 'receivedV': return ({required InlineSpan v}) => TextSpan(children: [
+				const TextSpan(text: 'प्राप्त किया('),
+				v,
+				const TextSpan(text: ')'),
+			]);
+			case 'confirming': return ({required InlineSpan v}) => TextSpan(children: [
+				const TextSpan(text: 'पुष्टि की जा रही है ('),
+				v,
+				const TextSpan(text: ')'),
+			]);
+			case 'thingsToNote_forNewbies': return 'नोट्स (नए उपयोगकर्ताओं अवश्य पढ़ें)';
+			case 'whyUseSharedAddresses': return 'साझा एड्रेसों का उपयोग क्यों करें?';
+			case 'useSharedrAdvantage': return 'क्रॉस-चेन डिपॉज़िट के मामले में, साझा एड्रेसों के ये लाभ हैं:';
+			case 'useSharedrAdvantage1': return '1. ट्रांसफर शुल्क की बर्बादी को कम करें और उपयोगकर्ता की लागत घटाएं। क्योंकि यदि एक विशेष एड्रेस का उपयोग किया जाता है, तो फंड बहुत अधिक बिखर जाएंगे। निकासी के समय अन्य उपयोगकर्ताओं के लिए ट्रांसफर को सुगम बनाने के लिए, जब उपयोगकर्ता डिपॉज़िट करता है, तो फंड के द्वितीयक ट्रांसफर को प्रबंधन के लिए एक या कम संख्या में एड्रेसों में एकत्रित करने की आवश्यकता होती है।';
+			case 'useSharedrAdvantage2': return '2. शेयरिंग समाधान में, प्रोग्राम को केवल एक अपेक्षाकृत छोटे एड्रेस पूल को बनाए रखने की आवश्यकता होती है, जो जल्दी से आउटगोइंग फंड से मेल खा सकता है और हल्का कलेक्शन मॉनिटरिंग कर सकता है, जिससे कंप्यूटिंग संसाधनों का खर्च कम हो सकता है। इसके विपरीत, एक्सक्लूसिव एड्रेस के मामले में स्थिति बिल्कुल विपरीत होती है।';
+			case 'tokenType': return 'टोकन प्रकार';
+			case 'contract': return 'कॉंट्रैक्ट';
+			case 'contractStandard': return 'कॉंट्रैक्ट स्टैंडर्ड';
+			case 'contractAddress': return 'कॉंट्रैक्ट एड्रेस';
+			case 'native': return 'नेटिव';
+			case 'confirmUnbindingPleaseEnterYes': return 'अनबाइंडिंग की पुष्टि करने के लिए, कृपया "हाँ" दर्ज करें';
+			case 'listAllWorkingTempReceivingAddresses': return 'सभी कार्यरत क्रॉस-चेन प्राप्ति पतों की सूची दें';
+			case 'setNote': return 'नोट सेट करें';
+			case 'lengthCannotExceedXbytes': return ({required Object x}) => 'लंबाई ${x} बाइट्स से अधिक नहीं हो सकती';
+			case 'transferFee': return 'ट्रांसफर शुल्क';
+			case 'crossChainFee': return 'क्रॉस-चेन शुल्क';
+			case 'crossChainTransferOutError': return 'क्रॉस-चेन ट्रांसफर आउट त्रुटि';
+			case 'chainName': return 'चेन नाम';
+			case 'message': return 'संदेश';
+			case 'dontShowAgain': return 'फिर से न दिखाएं';
+			case 'queuing': return 'कतार में है';
+			case 'optional': return 'वैकल्पिक';
+			case 'publiclyVisible': return 'सार्वजनिक रूप से दृश्यमान';
+			case 'rates': return 'दर';
+			case 'minimum': return 'न्यूनतम';
+			case 'maximum': return 'अधिकतम';
+			case 'minimumBlockConfirmations': return 'न्यूनतम ब्लॉक पुष्टि';
+			case 'dsmsVerifyTerminal': return 'DSMS सत्यापनकर्ता टर्मिनल';
+			case 'overall': return 'कुल मिलाकर';
+			case 'my': return 'मेरा / मेरी';
+			case 'getVerifierPermissions': return 'सत्यापनकर्ता अनुमतियाँ प्राप्त करें';
+			case 'checkValidatorQualifications': return 'मान्यकर्ता अनुमतियों की योग्यताएँ जाँचें';
+			case 'qualification': return 'योग्यता';
+			case 'upperLimit': return 'ऊपरी सीमा';
+			case 'maximumNumberOfTerminalsAllowedToAccess': return 'अधिकतम टर्मिनलों की संख्या जिसकी पहुँच अनुमति है';
+			case 'numberOfExistingAccessTerminals': return 'मौजूदा एक्सेस टर्मिनलों की संख्या';
+			case 'applyingForDSMSVerifierPermissionsTips': return 'वेरिफायर अनुमतियों के लिए आवेदन करने से पहले, आपको एक खाली एंड्रॉइड फोन और एक समर्पित एक्सेस नंबर तैयार करना होगा, और DSMS एक्सेस टर्मिनल एप्लिकेशन को डाउनलोड और इंस्टॉल करना होगा।';
+			case 'downloadLink': return 'डाउनलोड लिंक';
+			case 'alreadyReadyFollowingTheAboveTips': return 'मैंने पहले से ही ऊपर दिए गए सुझावों का पालन कर लिया है!';
+			case 'globalUniversal': return 'ग्लोबल यूनिवर्सल';
+			case 'insufficientLocalVerifierTips': return ({required InlineSpan gu}) => TextSpan(children: [
+				const TextSpan(text: 'वर्तमान में DSMS सत्यापन एक्सेस सेवा में भाग लेने के लिए पर्याप्त स्थानीय सत्यापनकर्ता नहीं हैं। कृपया "'),
+				gu,
+				const TextSpan(text: '" एक्सेस सेवा का चयन करें।'),
+			]);
+			case 'asDedicatedNumberForAccess': return 'एक्सेस के लिए समर्पित नंबर के रूप में';
+			case 'pleaseCheckTip': return ({required Object tip}) => 'कृपया "${tip}" जांचें';
+			case 'inputLengthTooShort': return 'इनपुट की लंबाई बहुत छोटी है';
+			case 'shortName': return 'शॉर्ट-नाम';
+			case 'pleaseEnterXname': return ({required Object name}) => 'कृपया ${name} दर्ज करें';
+			case 'applicationIsBeingSubmitted_pleaseWait': return 'आवेदन सबमिट किया जा रहा है, कृपया प्रतीक्षा करें....';
+			case 'applyForDSMSVerifierPermission': return 'DSMS सत्यापनकर्ता अनुमति के लिए आवेदन करें।';
+			case 'confirmInformation': return 'सूचना की पुष्टि करें।';
+			case 'lastHeartbeat': return 'आखिरी धड़कन';
+			case 'expirationTime': return 'समाप्ति समय';
+			case 'country': return 'देश';
+			case 'accessTerminals': return 'ऐक्सेस टर्मिनल्स';
+			case 'totalNumberOfDSMSaccessNumberTerminals': return 'कुल संख्या DSMS एक्सेस नंबर टर्मिनल्स';
+			case 'textContent': return 'पाठ सामग्री';
+			case 'scanQRcodeToLogin': return 'लॉगिन करने के लिए क्यूआर कोड स्कैन करें';
+			case 'confirmLogin': return 'लॉगिन की पुष्टि करें';
+			case 'authorizeSubApplicationToLogin': return 'इस उप-एप्लिकेशन को लॉगिन करने की अनुमति दें';
+			case 'authorizationSuccessful': return 'प्राधिकरण सफल!';
+			case 'launchSMSprogram': return 'एसएमएस कार्यक्रम लॉन्च करें';
+			case 'notApplied': return 'लागू नहीं किया गया';
+			case 'validityPeriod': return 'वैधता अवधि';
+			case 'renewal': return 'नवीनीकरण';
+			case 'scanCodeToAuthorizeTerminalLogin': return 'टर्मिनल लॉगिन को अधिकृत करने के लिए कोड स्कैन करें';
+			case 'rewards': return 'इनाम';
+			case 'roles': return 'भूमिकाएँ';
+			case 'developerCenter': return 'डेवलपर केंद्र';
+			case 'appName': return 'ऐप का नाम';
+			case 'pleaseSelect': return 'कृपया चयन करें';
+			case 'category': return 'श्रेणी';
+			case 'keywords': return 'किवर्ड्स';
+			case 'pleaseEnterAkeyword': return 'कृपया एक किवर्ड दर्ज करें';
+			case 'createApplication': return 'एप्लिकेशन बनाएं';
+			case 'appType': return 'एप्लिकेशन प्रकार';
+			case 'numberOfCategoriesMustBetween1and3': return 'श्रेणियों की संख्या 1 से 3 के बीच होनी चाहिए।';
+			case 'appLogoSpecifications': return 'छवि प्रारूप: png, आकार: 100KB के भीतर, रिज़ॉल्यूशन (पिक्सल): 256 * 256';
+			case 'localAlbum': return 'लोकल एल्बम';
+			case 'networkPath': return 'नेटवर्क पथ';
+			case 'imageURLkAddress': return 'इमेज URL एड्रेस';
+			case 'urlAddressFormatIsIncorrect': return 'URL एड्रेस फ़ॉर्मेट गलत है';
+			case 'imageFormatOnlySupportsPng': return 'इमेज़ फ़ॉर्मेट केवल "png" को ही समर्थन करता है।.';
+			case 'lengthMustBeBetweenA_BCharacters': return ({required Object a, required Object b}) => 'लंबाई ${a}-${b} अक्षरों के बीच होनी चाहिए।';
+			case 'introduction': return 'परिचय';
+			case 'imageSizeCannotBeLargerThanA_currentlyB': return ({required Object a, required Object b}) => 'चित्र का आकार ${a} से बड़ा नहीं हो सकता, वर्तमान में ${b} है।';
+			case 'imageResolutionMustBeP1pixels_currentlyP2': return ({required Object p1, required Object p2}) => 'चित्र का रिज़ॉल्यूशन ${p1} (पिक्सल) होना चाहिए, वर्तमान में ${p2} है।';
+			case 'becomeDeveloper': return 'डेवलपर बनें';
+			case 'developerInformation': return 'डेवलपर जानकारी';
+			case 'teamName': return 'टीम का नाम';
+			case 'website': return 'वेबसाइट';
+			case 'other': return 'अन्य';
+			case 'githubVerification': return 'GitHub सत्यापन';
+			case 'exampleUrl': return 'उदाहरण URL';
+			case 'githubVerificationTip': return ({required Object did}) => 'कृपया अपने GitHub खाते का उपयोग करके रिपोजिटरी में एक \'delta.did\' फ़ाइल बनाएँ जिसमें \'${did}\' सामग्री हो; फिर, इस फ़ाइल का githubusercontent URL इस इनपुट बॉक्स में प्रमाणीकरण के लिए पेस्ट करें।';
+			case 'createApp': return 'ऐप बनाएँ';
+			case 'appManagement': return 'ऐप प्रबंधन';
+			case 'statusLogs': return 'स्थिति लॉग';
+			case 'bad': return 'बुरा';
+			case 'normal': return 'सामान्य';
+			case 'good': return 'अच्छा';
+			case 'onceCreatedItCannotBeChanged': return 'एक बार बन जाने के बाद, इसे बदला नहीं जा सकता!';
+			case 'manageApplicationEntity': return 'एप्लिकेशन इकाई का प्रबंधन करें';
+			case 'currentVersion': return 'वर्तमान संस्करण';
+			case 'submitVersion': return 'संस्करण सबमिट करें';
+			case 'packageOnlySupportZipCompressedFile': return 'पैकेज केवल zip फ़ॉर्मेट संकुचित फ़ाइल का समर्थन करता है';
+			case 'theXfileWasNotFoundInTheZipPackage': return ({required Object name}) => '\'${name}\' फ़ाइल ज़िप पैकेज में नहीं मिली';
+			case 'fileList': return 'फ़ाइल सूची: ';
+			case 'programPackage': return 'प्रोग्राम पैकेज: ';
+			case 'automaticallyExtractFromVersionFile': return '\'.version\' फ़ाइल से स्वचालित रूप से निकालें';
+			case 'dappVersionFormatTip': return 'संस्करण संख्या का फ़ॉर्मेट दशमलव होना चाहिए और सटीकता को 2 अंकों तक बनाए रखना चाहिए, और अधिकतम 99.99 से अधिक नहीं हो सकता।';
+			case 'versionNumberMustBeGreaterThanCurrentVersionX': return ({required Object v}) => 'संस्करण संख्या वर्तमान संस्करण \'${v}\' से अधिक होनी चाहिए।';
+			case 'versionNotes': return 'संस्करण नोट्स: ';
+			case 'dappInfo': return 'DApp जानकारी';
+			case 'updateRelease': return 'नया अपडेट';
+			case 'loadAndRun': return 'लोड करें और चलाएं';
+			case 'notYetSubmittedProgramPackage': return 'अभी तक एक प्रोग्राम पैकेज सबमिट नहीं किया गया है!';
+			case 'authorizeMinidAppLogin': return 'mini-dApp लॉगिन को अनुमोदित करें';
+			case 'confirmAuthorizationPleaseEnterYes': return 'अनुमोदन की पुष्टि करें, कृपया "हां" दर्ज करें';
+			case 'authorizeNow': return 'अब अनुमोदित करें';
+			case 'operation': return 'संचालन: ';
+			case 'statusChange': return 'स्थिति परिवर्तन';
+			case 'changeTo': return 'में परिवर्तन करें: ';
+			case 'notes': return 'नोट्स: ';
+			case 'changesNotEffective': return 'परिवर्तित नहीं हुए!';
+			case 'released': return 'रिलीज़ किया गया';
+			case 'inPublicBeta': return 'पब्लिक बीटा में';
+			case 'developers': return 'डेवलपर्स: ';
+			case 'reviewList': return 'समीक्षा सूची: ';
+			case 'postReview': return 'समीक्षा पोस्ट करें';
+			case 'scoreNow': return 'अभी अंक दें';
+			case 'description': return 'विवरण: ';
+			case 'noData': return '(^-^) \n कोई डेटा उपलब्ध नहीं है';
+			case 'versionHasBeenUpdatedFromAtoB': return ({required Object a, required Object b}) => 'संस्करण को ${a} से ${b} में अपडेट किया गया है।';
+			case 'loadNewVersion': return 'नया संस्करण लोड करें';
+			case 'name': return 'नाम: ';
+			case 'canisterId': return 'कैनिस्टर आईडी: ';
+			case 'updateTime': return 'अपडेट समय';
+			case 'contractCanistersState': return 'कॉन्ट्रैक्ट कैनिस्टर्स की स्थिति';
+			case 'userDistribution': return 'उपयोगकर्ता वितरण';
+			case 'settings': return 'सेटिंग्स';
+			case 'security': return 'सुरक्षा';
+			case 'invite': return 'आमंत्रित करें';
+			case 'more': return 'अधिक…';
+			case 'receiveAddress': return 'प्राप्त करने का एड्रेस: ';
+			case 'hangingAmount': return 'हैंगिंग अमाउंट';
+			case 'hangingAmountTips': return 'हैंगिंग अमाउंट आपके अधीनस्थ टीम के खनन द्वारा उत्पन्न इनामों का अस्थायी रिकॉर्ड है। एक बार जब आप खनन करते हैं, तो ये राशियाँ पेंडिंग अमाउंट में इकट्ठा हो जाएँगी।';
+			case 'pendingAmount': return 'पेंडिंग अमाउंट';
+			case 'pendingAmountTips': return 'पेंडिंग अमाउंट उस राशि को संदर्भित करती है जिसे अभी तक पुष्टि नहीं की गई है और विज्ञापनदाता के साथ तुलना की गई है। जो राशि पुष्टि हो जाती है, वह वैध USCT रिकॉर्ड में स्थानांतरित कर दी जाएगी। यदि कोई अवैध भाग है, तो उसे हटा दिया जाएगा।';
+			case 'received': return 'प्राप्त';
+			case 'processing': return 'प्रसंस्करण';
+			case 'replied': return 'उत्तर दिया';
+			case 'rejected': return 'अस्वीकृत';
+			case 'unknown': return 'अज्ञात';
+			case 'insufficientBalance': return 'अपर्याप्त बैलेंस!';
+			case 'InsufficientXbalanceToPayCrossChainNetworkFee': return ({required Object x}) => '${x} बैलेंस क्रॉस-चेन नेटवर्क शुल्क का भुगतान करने के लिए अपर्याप्त है';
+			case 'aTransactionThatHasNotBeenCompleted_CannotBeTransferredAtMoment': return 'एक लेन-देन है जो पूरा नहीं हुआ है और इस समय उसे स्थानांतरित नहीं किया जा सकता।';
+			case 'thisfunctionNotSupportExternalCalls': return 'यह फ़ंक्शन बाहरी कॉल का समर्थन नहीं करता है।';
+			case 'noMatchingAddressThatCanBeUsedToPayCrossChainFees_switchOtherChainToTry': return 'कोई मेल खाने वाला पता नहीं है जिसे क्रॉस-चेन शुल्क का भुगतान करने के लिए उपयोग किया जा सके, कृपया अन्य चेन नेटवर्क्स में स्विच करके प्रयास करें।';
+			case 'currentMaximumMatchedSingleTransferAmountIsX': return ({required Object x}) => 'वर्तमान में अधिकतम मेल खाता एकल स्थानांतरण राशि ${x} है।';
+			case 'memoMustNotBeMoreThan64bytes': return 'स्मृति 64 बाइट्स से अधिक नहीं होनी चाहिए।';
+			case 'insufficientBalance_theAmountIsX': return ({required Object x}) => 'अपर्याप्त बैलेंस, राशि है: ${x}';
+			case 'boundRreceivingAddressesExceed3Tip': return 'बंधन में प्राप्ति पतों की संख्या 3 से अधिक नहीं हो सकती है। \nयदि आपको नया प्राप्ति पता जोड़ने की आवश्यकता है, \nतो कृपया पहले किसी अन्य प्राप्ति पते को अनबाइंड करें।';
+			case 'parametersA_exception': return ({required Object x}) => 'पैरामीटर: ${x}, अपवाद';
+			case 'transferAmountMustBeLargerThan0': return 'ट्रांसफर राशि 0 से अधिक होनी चाहिए';
+			case 'authorizationHasExpired': return 'अधिकारिता समाप्त हो चुकी है';
+			case 'theAppHasNotBeenAuthorizedByOwner': return 'ऐप को मालिक द्वारा अनुमति नहीं दी गई है।';
+			case 'authenticationTokenIsInvalid': return 'प्रमाणीकरण टोकन अमान्य है।';
+			case 'verifyInfoIsInvalidOrExpired': return 'सत्यापन जानकारी अमान्य है या समाप्त हो गई है।';
+			case 'verifyThatNumberOfAccessTerminalsHasExceededLimitOf1in10000': return 'सत्यापित करें कि एक्सेस टर्मिनलों की संख्या 10,000 में से एक की सीमा से अधिक नहीं हुई है।';
+			case 'timeToParticipateInMiningMustBeMoreThan3Days': return 'माइनिंग में भाग लेने का समय 3 दिनों से अधिक होना चाहिए।';
+			case 'numberOfSafetyCircleCannotBeLessThan3': return 'सुरक्षा सर्कल के सदस्य की संख्या 3 लोगों से कम नहीं हो सकती है।';
+			case 'avatarIsNotSet': return 'प्रोफ़ाइल फ़ोटो सेट नहीं किया गया है।';
+			case 'numberOfDirectReferralsCannotBeLessThan3': return 'प्रत्यक्ष संदर्भों की संख्या 3 लोगों से कम नहीं हो सकती है।';
+			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return 'समय सीमा अपर्याप्त है, मोबाइल नंबर केवल एक बार प्रति वर्ष बदला जा सकता है।';
+			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'यह मोबाइल फोन नंबर पहले से मौजूद है और इसे पुनः उपयोग नहीं किया जा सकता।';
+			case 'securityCodeIsIncorrect': return 'सुरक्षा कोड गलत है।';
+			case 'securityCodeMayHaveExpired': return 'शायद सुरक्षा कोड की समय सीमा समाप्त हो गई है।';
+			case 'sessionIdIsInvalidOrExpired': return 'सत्र ID अमान्य है या समाप्त हो गया है।';
+			case 'sessionHasBeenAuthorized': return 'सत्र को प्रमाणित कर दिया गया है!';
+			case 'canOnlyBeRenewedWithinXdaysBeforeExpiration': return ({required Object x}) => 'केवल समाप्ति से ${x} दिन पहले नवीनीकरण किया जा सकता है।';
+			case 'notYetGrantedDeveloperPermissions': return 'अभी तक डेवलपर अनुमतियाँ प्रदान नहीं की गई हैं।';
+			case 'fieldXcannotBeEmpty': return ({required Object x}) => 'फ़ील्ड ईमेल ${x} खाली नहीं हो सकता।';
+			case 'emailFormatError': return 'ईमेल फ़ॉर्मेट में गलती है।';
+			case 'theXformatIsIncorrect': return ({required Object x}) => '\'${x}\' फ़ॉर्मेट गलत है।';
+			case 'lengthOfFieldXmustBeBetweenYandXcharacters': return ({required Object x, required Object y, required Object z}) => 'फ़ील्ड \'${x}\' की लंबाई ${y} और ${z} वर्णों के बीच होनी चाहिए।';
+			case 'theXselectionMustBeBetweenYandX': return ({required Object x, required Object y, required Object z}) => '\'${x}\' चयन ${y} और ${z} के बीच होना चाहिए।';
+			case 'unchanged_sameAsOldContent': return 'अपरिवर्तित, पुराने विषय के समान!';
+			case 'XYalreadyexists': return ({required Object x, required Object y}) => '${x}: \'${y}\' पहले से मौजूद है!';
+			case 'mobileNumberHasNotJoinedDelta': return 'यह मोबाइल नंबर अभी तक डेल्टा में शामिल नहीं हुआ है!';
+			case 'referrerIdCannotBeEmpty': return 'रेफरर DID खाली नहीं हो सकता! ';
+			case 'referrerIdDoesNotExist': return 'रेफरर DId मौजूद नहीं है!';
+			case 'didIsIncorrectOrInvalid': return 'DID गलत है या अमान्य है！';
+			case 'accessTokenIsIncorrectOrInvalid': return 'अक्सेस टोकन गलत है या अमान्य है।！';
+			case 'minimumWithdrawalAmountIs1USD': return 'न्यूनतम निकासी राशि 1USD है।';
+			case 'miningTimeIsNotYet': return 'माइनिंग  समय अभी तक शुरू नहीं हुआ है।';
+			case 'alreadyExists_pleaseDoNotRepeatedly': return 'पहले से मौजूद है, कृपया पुनः न जोड़ें!';
+			case 'registrationNumberCannotBeUsedAsAccessNumber': return 'रजिस्ट्रेशन नंबर को प्रमाणन एक्सेस नंबर के रूप में उपयोग नहीं किया जा सकता।';
+			case 'canotAddYourSelf': return 'आप खुद को जोड़ नहीं सकते।';
+			case 'logOut': return 'लॉग आउट';
+			case 'confirmLogout': return 'लॉग आउट की पुष्टि करें';
+			case 'logOutTipsText': return 'सादर याद दिलाना: श्वेत पत्र में संबंधित समझौते के अनुसार, प्रत्येक लॉगिन सत्यापन के लिए आपके द्वारा एक निश्चित मात्रा में डेल्टा कॉइंस का उपभोग किया जाएगा, ताकि सत्यापनकर्ता को प्रोत्साहन दिया जा सके। कृपया लॉग इन और लॉग आउट करने की कोशिश न करें, अगर यह आवश्यक न हो। तुरंत लॉग आउट करने के लिए निम्नलिखित बटन पर क्लिक करें।';
+			case 'ConfirmLogoutPleaseEnterYes': return 'लॉग आउट की पुष्टि करने के लिए कृपया "हाँ" दर्ज करें।';
+			case 'tip': return 'सुझाव';
+			case 'cancel': return 'रद्द करें';
+			case 'close': return 'बंद करें';
+			case 'selected': return 'चयनित';
+			case 'edit': return 'संपादित करें';
+			case 'submit': return 'सबमिट करें';
+			case 'goBack': return 'वापिस जाएँ';
+			case 'copiedToClipboard': return 'क्लिपबोर्ड में कॉपी किया गया!';
+			case 'nickname': return 'उपनाम';
+			case 'confirm': return 'पुष्टि करें';
+			case 'cannotBeEmpty': return 'खाली नहीं हो सकता';
+			case 'deleteSuccessful': return 'हटाना सफल!';
+			case 'successfullyModified': return 'सफलतापूर्वक संशोधित किया गया!';
+			case 'executionSuccessful': return 'सफलतापूर्वक निष्पादित किया गया!';
+			case 'parameterException': return 'पैरामीटर अपवाद!';
+			case 'preview': return 'प्रिव्यू';
+			case 'followSystem': return 'सिस्टम अनुसरण करें';
+			case 'change': return 'बदलें';
+			case 'replace': return 'प्रतिस्थापित करें';
+			case 'view': return 'देखें';
+			case 'manage': return 'प्रबंधन करें';
+			case 'modify': return 'संशोधित करें';
+			case 'replacedSuccessfully': return 'सफलतापूर्वक बदला गया!';
+			case 'authentication': return 'प्रमाणीकरण';
+			case 'reacquire': return 'पुनः प्राप्त करें';
+			case 'tryAgain': return 'फिर से प्रयास करें';
+			case 'querying': return 'क्वेरी जारी है…';
+			case 'writingToOnChain_pleaseWait': return 'ऑन-चेन पर लिख रहे हैं, कृपया प्रतीक्षा करें…';
+			case 'versionCheck': return 'संस्करण जाँच करें';
+			case 'alreadyLatestVersion': return 'आपके पास पहले से ही नवीनतम संस्करण है!';
+			case 'foundNewVersion': return 'एक नया संस्करण उपलब्ध है:';
+			case 'upgradeLink': return 'अपग्रेड लिंक: ';
+			case 'deviceDescription': return 'डिवाइस विवरण: ';
+			case 'notification30SecondsBeforeMiningStops': return 'माइनिंग बंद होने से 30 सेकंड पहले अधिसूचना रिमाइंडर निष्पादित करें!';
+			case 'goMining': return 'माइनिंग आरंभ करें';
+			case 'deltaMiningReminder': return 'डेल्टा माइनिंग रिमाइंडर';
+			case 'clickToMine_miningIsAboutToStop': return 'माइन करने के लिए यहां क्लिक करें, माइनिंग बंद होने वाली है!';
+			case 'incorrect_input': return 'गलत इनपुट!';
+			case 'are_you_sure_delete': return 'क्या आप वाकई हटाना चाहते हैं?';
+			case 'delete_account': return 'खाता हटाएँ';
+			case 'how_to_operate_it': return 'इसे संचालित कैसे करें?';
+			case 'deletion_warning_tip': return 'यदि आप अपना खाता हटाते हैं, तो आप अपने सभी डेल्टा कॉइन्स खो देंगे और अन्य सदस्यों से होने वाली सभी कमाई भी समाप्त हो जाएगी।';
+			case 'launchWhatsAppProgram': return 'WhatsApp प्रोग्राम लॉन्च करें';
+			case 'sms': return 'एसएमएस';
+			case 'whatsApp_verification_tips': return 'इस आइकन वाले एक्सेस नंबर इंगित करते हैं कि वे व्हाट्सएप संदेश सत्यापन का भी समर्थन करते हैं। अंतरराष्ट्रीय संदेश भेजते समय, सफलता दर बढ़ाने और लागत कम करने के लिए व्हाट्सएप का उपयोग करने की सिफारिश की जाती है।';
+			case 'ihaveSentVerificationString': return 'मैंने सत्यापन स्ट्रिंग भेज दी है!';
+			case 'totalOfPeople': return 'कुल लोगों की संख्या: ';
+			case 'numberOfPeopleMining': return 'माइनिंग करने वाले लोगों की संख्या';
+			case 'useBrowserScanQRcodeToSMSprogram': return 'आप किसी अन्य डिवाइस पर ब्राउज़र का उपयोग करके QR कोड स्कैन कर सकते हैं और इसे SMS प्रोग्राम में भेज सकते हैं।';
+			case 'toggle': return 'टॉगल';
+			case 'DSMSverifier': return 'DSMS सत्यापनकर्ता';
+			case 'activate': return 'सक्रिय करें';
+			case 'activated': return 'सक्रिय किया गया!';
+			case 'generateActivationCommand': return 'सक्रियकरण कमांड उत्पन्न करें';
+			case 'activationCommand': return 'सक्रियकरण कमांड';
+			case 'activationSentedTip': return 'सक्रियकरण SMS भेजने के बाद, कृपया एक्सेस टर्मिनल डिवाइस पर सक्रियकरण स्थिति जांचें।';
+			case 'biometricsNotEnabledTip': return 'आपके डिवाइस पर बायोमेट्रिक्स (फेस या फिंगरप्रिंट) सक्षम नहीं है, कृपया जारी रखने के लिए इसे सक्षम करें।';
+			case 'error': return 'त्रुटि';
+			case 'exceptionOccurredWhenCallingBiometric': return 'बायोमेट्रिक पहचान (फेस या फिंगरप्रिंट) फ़ंक्शन कॉल करते समय एक अपवाद उत्पन्न हुआ!';
+			case 'accessNumberSelectionTip': return ({required InlineSpan checkedNum, required InlineSpan shouldNum}) => TextSpan(children: [
+				checkedNum,
+				const TextSpan(text: ' एक्सेस नंबर जांचे गए हैं, '),
+				shouldNum,
+				const TextSpan(text: ' का चयन किया जाना चाहिए।'),
+			]);
+			case 'sentaboveXaccessNumbers': return ({required Object text, required Object n}) => 'क्या ${text} उपरोक्त ${n} एक्सेस नंबरों पर भेजा गया है?';
+			case 'interface': return 'इंटरफ़ेस:';
+			case 'waitingTimeoutOrSenderNumberMismatch': return 'प्रतीक्षा समय समाप्त या प्रेषक संख्या मेल नहीं खाती';
+			case 'mobileNumberOfsecurityCircleYouFilledDoesntMatch': return ({required Object x}) => 'आपके द्वारा भरे गए सुरक्षा सर्कल सदस्य का मोबाइल नंबर मेल नहीं खाता: ${x}';
+			case 'leastXmobileNumbersMustCompleted': return ({required Object n}) => 'कम से कम ${n} मोबाइल नंबर पूरे करने आवश्यक हैं।';
+			case 'loginWithin10MinutesOfLoggingOutAvoidTwoFactorVerification': return 'लॉगआउट करने के बाद 10 मिनट के भीतर लॉग इन करें ताकि टू-फैक्टर सत्यापन से बचा जा सके।';
+			case 'noAccessNumberInYourRegionYet': return 'आपके क्षेत्र में अभी तक कोई एक्सेस नंबर उपलब्ध नहीं है।';
+			case 'notEnoughAccessNumbersInYourRegion': return 'आपके क्षेत्र में पर्याप्त एक्सेस नंबर नहीं हैं।';
+			case 'tipsForDeployDSMSterminal': return 'सिस्टम ने स्वचालित रूप से आपके लिए अन्य देशों से कुछ एक्सेस नंबर लोड कर दिए हैं। बेहतर और कम लागत वाली सत्यापन सेवाएँ प्रदान करने के लिए, यह अनुशंसा की जाती है कि आप या अपने रेफ़रर से संपर्क करें ताकि स्थानीय रूप से DSMS टर्मिनल तैनात किए जा सकें और सत्यापन शुल्क अर्जित किया जा सके।';
+			case 'noOneCanProvideMeTheSecurityCode': return 'कोई भी मुझे इस समय सुरक्षा कोड देने में सक्षम नहीं है!';
+			case 'useSupplementalMode': return 'सप्लीमेंटल मोड का उपयोग करें';
+			case 'returnToSecurityCodeMode': return 'सुरक्षा कोड मोड पर लौटें';
+			case 'enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted': return 'कृपया उनका संबंधित मोबाइल नंबर दर्ज करें, देश कोड छोड़ सकते हैं।';
+			case 'mobileNumberForNameIsIncorrect': return ({required Object name}) => '${name} का मोबाइल नंबर ग़लत है';
+			case 'matchingVerificationStrategyIs': return 'सत्यापन के लिए चुनी गई रणनीति:';
+			case 'balanceGreater3ICP_noNeedPourFuel': return 'शेष 3 ICP से अधिक है, फिलहाल ईंधन डालने की आवश्यकता नहीं है।';
+			case 'escrowAccount': return 'एस्क्रो खाता';
+			case 'fuelRelay': return 'ईंधन रिले';
+			case 'pourFuel': return 'ईंधन डालें';
+			case 'fuelState': return 'ईंधन की स्थिति';
+			case 'pouringFuelTips': return 'ईंधन डालने से आपको कोई लाभ या हानि नहीं होती है, इसका उद्देश्य डेल्टा सिस्टम अनुभव को समृद्ध करना है।';
+			case 'sponsorDevelopersByWatchingAds': return 'विज्ञापन देखकर डेवलपर्स को प्रायोजित करें';
+			case 'status': return 'स्थिति';
+			case 'date': return 'तारीख';
+			case 'assetApplicationIsInProgressTip': return 'एसेट आवेदन प्रगति पर है, कृपया 3 सेकंड में पुनः प्रयास करें।';
+			case 'delete': return 'हटाएँ';
+			case 'deleteVerifierTip': return 'जब किसी सत्यापनकर्ता की अनुमतियाँ हटाई जाती हैं, तो सभी संबंधित स्कोर डेटा एक ही समय में हटा दिए जाएँगे, लेकिन पहले से प्राप्त पुरस्कार प्रभावित नहीं होंगे।';
+			case 'deleteVerifierStatusTip': return 'कृपया इसे हटाने से पहले रुकी हुई स्थिति पर सेट करें';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'कृपया पुष्टि करने के लिए "${text}" दर्ज करें';
+			case 'localSecurity': return 'स्थानीय सुरक्षा';
+			case 'deviceLock': return 'डिवाइस लॉक';
+			case 'patternLock': return 'पैटर्न लॉक';
+			case 'none': return 'कोई नहीं';
+			case 'exist': return 'अस्तित्व में है';
+			case 'prompt': return 'प्रॉम्प्ट:';
+			case 'localSecurityTip1': return '1. स्थानीय सुरक्षा प्रमाणीकरण का उपयोग कुछ संवेदनशील कार्यों के दौरान पहचान की पुष्टि करने के लिए किया जाता है। इसका उद्देश्य डिवाइस को दूसरों द्वारा नियंत्रित होने से रोकना और खाते की सुरक्षा सुनिश्चित करना है।';
+			case 'localSecurityTip2': return '2. पैटर्न लॉक एक पूरक समाधान है जब डिवाइस लॉक समर्थित नहीं है या असंगत है। आम तौर पर, डिवाइस लॉक उपलब्ध होने पर पैटर्न लॉक सेट करने की कोई आवश्यकता नहीं होती है।';
+			case 'localSecurityTip3': return '3. जब आपका पैटर्न लॉक भूल जाता है, तो आप केवल ऐप डेटा साफ़ कर सकते हैं या इसे साफ़ करने के लिए ऐप को फिर से इंस्टॉल कर सकते हैं।';
+			case 'deviceAuthFirstTip': return ({required Object menu, required Object localSecurity}) => 'डिवाइस प्रमाणीकरण को कॉल किया जाने वाला है। यदि कोई त्रुटि या अपवाद होता है, तो कृपया परीक्षण और आगे की सेटिंग के लिए "${menu}" पृष्ठ पर "${localSecurity}" विकल्प पर जाएँ।';
+			case 'pleaseDrawUnlockPattern': return 'कृपया अनलॉक पैटर्न बनाएं';
+			case 'addPatternLock': return 'पैटर्न लॉक जोड़ें';
+			case 'cannotBeLessThan8Dots': return '8 बिंदुओं से कम नहीं हो सकता';
+			case 'pleaseRepeatThePattern': return 'कृपया पैटर्न को पुनः दोहराएं';
+			case 'notMatchFirstValidPattern': return 'पहले वैध ड्राइंग पैटर्न से मेल नहीं खाता';
+			case 'deletePatternLock': return 'पैटर्न लॉक हटाएं';
+			case 'notMatchExistingPattern': return 'मौजूदा पैटर्न से मेल नहीं खाता';
+			case 'localAuthentication': return 'स्थानीय प्रमाणीकरण';
 			default: return null;
 		}
 	}
@@ -19670,13 +21719,13 @@ extension on _StringsIt {
 			case 'tempDepositAddressTip4': return '4. Se avete bisogno di depositare altri tipi di beni, passate alla pagina della valuta corrispondente e alle opzioni dei parametri per richiedere un nuovo indirizzo.';
 			case 'applyExtensionOfValidity': return 'Richiesta di proroga del periodo di validità';
 			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-				const TextSpan(text: 'Questo indirizzo scadrà dopo '),
+				const TextSpan(text: 'Questo indirizzo scadrà tra '),
 				diff,
-				const TextSpan(text: ' e sarà '),
-				tap('estendi manualmente'),
-				const TextSpan(text: ' valido per 12 ore prima della scadenza.'),
+				const TextSpan(text: '. Puoi '),
+				tap('manually extend'),
+				const TextSpan(text: ' il periodo di validità entro 6 ore dalla scadenza.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Può essere rinnovato solo con 12 ore di anticipo';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'È possibile rinnovare solo entro 6 ore di anticipo';
 			case 'theReceivingAddressValidForLongtime': return 'Questo indirizzo è valido per molto tempo.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'Questo indirizzo di raccolta è valido a lungo e viene accreditato automaticamente in tempo reale.';
 			case 'confirmDeposited': return 'Conferma dei depositi';
@@ -20033,6 +22082,29 @@ extension on _StringsIt {
 			case 'sponsorDevelopersByWatchingAds': return 'Sponsorizza gli sviluppatori guardando gli annunci';
 			case 'status': return 'Stato';
 			case 'date': return 'Data';
+			case 'assetApplicationIsInProgressTip': return 'Richiesta di risorse in corso, riprovare tra 3 secondi.';
+			case 'delete': return 'Elimina';
+			case 'deleteVerifierTip': return 'Quando si eliminano i permessi di un verificatore, tutti i dati relativi ai punteggi verranno eliminati contemporaneamente, ma le ricompense già ottenute non saranno interessate.';
+			case 'deleteVerifierStatusTip': return 'Impostalo in pausa prima di eliminarlo';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Inserisci "${text}" per confermare';
+			case 'localSecurity': return 'Sicurezza locale';
+			case 'deviceLock': return 'Blocco dispositivo';
+			case 'patternLock': return 'Blocco modello';
+			case 'none': return 'nessuno';
+			case 'exist': return 'esiste';
+			case 'prompt': return 'Richiesta:';
+			case 'localSecurityTip1': return '1. L\'autenticazione di sicurezza locale viene utilizzata per confermare l\'identità durante alcune operazioni sensibili. Il suo scopo è impedire che il dispositivo sia controllato da altri e garantire la sicurezza dell\'account.';
+			case 'localSecurityTip2': return '2. Il blocco pattern è una soluzione supplementare quando il blocco dispositivo non è supportato o è incompatibile. In genere, non è necessario impostare un blocco pattern quando il blocco dispositivo è disponibile.';
+			case 'localSecurityTip3': return '3. Se dimentichi il blocco pattern, puoi solo cancellare i dati dell\'app o reinstallare l\'app per eliminarlo.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'L\'autenticazione del dispositivo sta per essere chiamata. Se si verifica un errore o un\'eccezione, accedere all\'opzione "${localSecurity}" nella pagina "${menu}" per testare e configurare ulteriori impostazioni.';
+			case 'pleaseDrawUnlockPattern': return 'Per favore, disegna la sequenza di sblocco';
+			case 'addPatternLock': return 'Aggiungi blocco pattern';
+			case 'cannotBeLessThan8Dots': return 'Non può essere inferiore a 8 punti';
+			case 'pleaseRepeatThePattern': return 'Per favore, ripeti di nuovo lo schema';
+			case 'notMatchFirstValidPattern': return 'Non corrisponde al primo modello di disegno valido';
+			case 'deletePatternLock': return 'Elimina il blocco pattern';
+			case 'notMatchExistingPattern': return 'Non corrisponde a un modello esistente';
+			case 'localAuthentication': return 'Aut. locale';
 			default: return null;
 		}
 	}
@@ -20340,13 +22412,13 @@ extension on _StringsJa {
 			case 'tempDepositAddressTip4': return '4.他の種類の資産を入金する必要がある場合は、対応する通貨ページとパラメータオプションに切り替えて、新しい住所を申請してください。';
 			case 'applyExtensionOfValidity': return '有効期間延長申請';
 			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-				const TextSpan(text: 'このアドレスの有効期限は'),
+				const TextSpan(text: 'このアドレスは'),
 				diff,
-				const TextSpan(text: 'の後であり、'),
-				tap('manual extend'),
-				const TextSpan(text: 'は有効期限の12時間前まで有効である。'),
+				const TextSpan(text: '後に有効期限が切れます。有効期限の6時間前までに有効期間を'),
+				tap('manually extend'),
+				const TextSpan(text: 'することができます。'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return '更新は12時間前まで';
+			case 'canOnlyRenewWithin6hoursInAdvance': return '6時間以内のみ更新可能';
 			case 'theReceivingAddressValidForLongtime': return 'この住所は長期間有効である。';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'このコレクション・アドレスは長期間有効で、リアルタイムで自動的に入金される。';
 			case 'confirmDeposited': return '入金の確認';
@@ -20703,6 +22775,29 @@ extension on _StringsJa {
 			case 'sponsorDevelopersByWatchingAds': return '広告を見て開発者をスポンサーする';
 			case 'status': return 'ステータス';
 			case 'date': return '日付';
+			case 'assetApplicationIsInProgressTip': return 'アセット申請が進行中です。3秒後にもう一度お試しください。';
+			case 'delete': return '削除';
+			case 'deleteVerifierTip': return '検証者の権限を削除すると、関連するスコアデータもすべて同時に削除されますが、すでに獲得した報酬には影響しません。';
+			case 'deleteVerifierStatusTip': return '削除する前に一時停止状態に設定してください';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => '確認のため、「${text}」を入力してください';
+			case 'localSecurity': return 'ローカルセキュリティ';
+			case 'deviceLock': return 'デバイスロック';
+			case 'patternLock': return 'パターンロック';
+			case 'none': return 'なし';
+			case 'exist': return '存在する';
+			case 'prompt': return 'プロンプト:';
+			case 'localSecurityTip1': return '1. ローカルセキュリティ認証は、機密性の高い操作を行う際に本人確認を行うために使用されます。その目的は、デバイスが他人に制御されるのを防ぎ、アカウントのセキュリティを確保することです。';
+			case 'localSecurityTip2': return '2. パターンロックは、デバイスロックがサポートされていない、または互換性がない場合の補助的な解決策です。通常、デバイスロックが利用可能な場合は、パターンロックを設定する必要はありません。';
+			case 'localSecurityTip3': return '3. パターンロックを忘れた場合は、アプリのデータを消去するか、アプリを再インストールして消去するしかありません。';
+			case 'deviceAuthFirstTip': return ({required Object menu, required Object localSecurity}) => 'デバイス認証が呼び出されようとしています。エラーまたは例外が発生した場合は、"${menu}"ページの"${localSecurity}"オプションに移動してテストと詳細な設定を行ってください。';
+			case 'pleaseDrawUnlockPattern': return 'ロック解除パターンを描いてください';
+			case 'addPatternLock': return 'パターンロックを追加';
+			case 'cannotBeLessThan8Dots': return '8ドット未満にはできません';
+			case 'pleaseRepeatThePattern': return 'パターンをもう一度繰り返してください';
+			case 'notMatchFirstValidPattern': return '最初の有効な描画パターンと一致しません';
+			case 'deletePatternLock': return 'パターンロックの削除';
+			case 'notMatchExistingPattern': return '既存のパターンと一致しません';
+			case 'localAuthentication': return 'ローカル認証';
 			default: return null;
 		}
 	}
@@ -21014,11 +23109,11 @@ extension on _StringsKo {
 			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
 				const TextSpan(text: '이 주소는 '),
 				diff,
-				const TextSpan(text: ' 이후에 만료되며 만료 전 12시간 동안 '),
+				const TextSpan(text: ' 이후에 만료되며 만료 전 6시간 동안 '),
 				tap('수동으로 연장'),
 				const TextSpan(text: ' 유효합니다.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return '12시간 전에만 갱신 가능';
+			case 'canOnlyRenewWithin6hoursInAdvance': return '6시간 전에만 갱신 가능';
 			case 'theReceivingAddressValidForLongtime': return '이 주소는 오랫동안 유효합니다.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return '이 수집 주소는 오랫동안 유효하며 실시간으로 자동으로 적립됩니다.';
 			case 'confirmDeposited': return '입금 확인';
@@ -21375,6 +23470,29 @@ extension on _StringsKo {
 			case 'sponsorDevelopersByWatchingAds': return '광고를 시청하여 개발자 후원';
 			case 'status': return '상태';
 			case 'date': return '날짜';
+			case 'assetApplicationIsInProgressTip': return '자산 신청이 진행 중입니다. 3초 후에 다시 시도해 주세요.';
+			case 'delete': return '삭제';
+			case 'deleteVerifierTip': return '검증자 권한을 삭제하면 관련 점수 데이터가 모두 동시에 삭제되지만, 이미 획득한 보상에는 영향을 미치지 않습니다.';
+			case 'deleteVerifierStatusTip': return '삭제하기 전에 일시 중지 상태로 설정하세요';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => '확인하시려면 "${text}"를 입력하세요.';
+			case 'localSecurity': return '로컬 보안';
+			case 'deviceLock': return '장치 잠금';
+			case 'patternLock': return '패턴 잠금';
+			case 'none': return '없음';
+			case 'exist': return '존재한다';
+			case 'prompt': return '프롬프트:';
+			case 'localSecurityTip1': return '1. 로컬 보안 인증은 일부 민감한 작업 중에 신원을 확인하는 데 사용됩니다. 로컬 보안 인증의 목적은 다른 사람이 기기를 조작하는 것을 방지하고 계정의 보안을 유지하는 것입니다.';
+			case 'localSecurityTip2': return '2. 패턴 잠금은 기기 잠금이 지원되지 않거나 호환되지 않을 때 사용할 수 있는 보완적인 솔루션입니다. 일반적으로 기기 잠금을 사용할 수 있는 경우에는 패턴 잠금을 설정할 필요가 없습니다.';
+			case 'localSecurityTip3': return '3. 패턴 잠금을 잊어버린 경우, 앱 데이터를 삭제하거나 앱을 재설치해야만 삭제할 수 있습니다.';
+			case 'deviceAuthFirstTip': return ({required Object menu, required Object localSecurity}) => '기기 인증이 곧 호출됩니다. 오류나 예외가 발생하면 "${menu}" 페이지의 "${localSecurity}" 옵션으로 이동하여 테스트 및 추가 설정을 진행하세요.';
+			case 'pleaseDrawUnlockPattern': return '잠금 해제 패턴을 그려주세요';
+			case 'addPatternLock': return '패턴 잠금 추가';
+			case 'cannotBeLessThan8Dots': return '8개보다 작을 수 없습니다';
+			case 'pleaseRepeatThePattern': return '패턴을 다시 반복해 주세요';
+			case 'notMatchFirstValidPattern': return '첫 번째 유효한 드로잉 패턴과 일치하지 않습니다';
+			case 'deletePatternLock': return '패턴 잠금 삭제';
+			case 'notMatchExistingPattern': return '기존 패턴과 일치하지 않습니다.';
+			case 'localAuthentication': return '로컬 인증';
 			default: return null;
 		}
 	}
@@ -21688,9 +23806,9 @@ extension on _StringsNl {
 				diff,
 				const TextSpan(text: ' en is '),
 				tap('handmatig verlengen'),
-				const TextSpan(text: ' nog 12 uur geldig voordat het verloopt.'),
+				const TextSpan(text: ' nog 6 uur geldig voordat het verloopt.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Kan alleen 12 uur van tevoren worden verlengd';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'Kan alleen 6 uur van tevoren worden verlengd';
 			case 'theReceivingAddressValidForLongtime': return 'Dit adres is lang geldig.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'Dit ophaaladres is lang geldig en wordt automatisch in realtime gecrediteerd.';
 			case 'confirmDeposited': return 'Bevestiging van stortingen';
@@ -22047,6 +24165,29 @@ extension on _StringsNl {
 			case 'sponsorDevelopersByWatchingAds': return 'Sponsor ontwikkelaars door advertenties te bekijken';
 			case 'status': return 'Status';
 			case 'date': return 'Datum';
+			case 'assetApplicationIsInProgressTip': return 'Assettoepassing is bezig, probeer het over 3 seconden opnieuw.';
+			case 'delete': return 'Verwijderen';
+			case 'deleteVerifierTip': return 'Wanneer u de machtigingen van een verificator verwijdert, worden alle bijbehorende scoregegevens tegelijkertijd verwijderd, maar de reeds verkregen beloningen worden niet beïnvloed.';
+			case 'deleteVerifierStatusTip': return 'Stel het in op de pauzestand voordat u het verwijdert.';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Voer "${text}" in om te bevestigen';
+			case 'localSecurity': return 'Lokale beveiliging';
+			case 'deviceLock': return 'Apparaatvergrendeling';
+			case 'patternLock': return 'Patroonvergrendeling';
+			case 'none': return 'geen';
+			case 'exist': return 'bestaat';
+			case 'prompt': return 'Prompt:';
+			case 'localSecurityTip1': return '1. Lokale beveiligingsauthenticatie wordt gebruikt om de identiteit te bevestigen tijdens bepaalde gevoelige handelingen. Het doel hiervan is om te voorkomen dat het apparaat door anderen wordt beheerd en om de beveiliging van het account te waarborgen.';
+			case 'localSecurityTip2': return '2. Patroonvergrendeling is een aanvullende oplossing wanneer de apparaatvergrendeling niet wordt ondersteund of niet compatibel is. Over het algemeen is het niet nodig om een ​​patroonvergrendeling in te stellen wanneer de apparaatvergrendeling beschikbaar is.';
+			case 'localSecurityTip3': return '3. Wanneer u uw patroonvergrendeling bent vergeten, kunt u alleen de app-gegevens wissen of de app opnieuw installeren om deze te wissen.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'Apparaatauthenticatie wordt binnenkort aangeroepen. Als er een fout of uitzondering optreedt, ga dan naar de optie "${localSecurity}" op de pagina "${menu}" voor testen en verdere instellingen.';
+			case 'pleaseDrawUnlockPattern': return 'Teken het ontgrendelingspatroon';
+			case 'addPatternLock': return 'Patroonvergrendeling toevoegen';
+			case 'cannotBeLessThan8Dots': return 'Mag niet kleiner zijn dan 8 punten';
+			case 'pleaseRepeatThePattern': return 'Herhaal het patroon nogmaals';
+			case 'notMatchFirstValidPattern': return 'Komt niet overeen met het eerste geldige tekenpatroon';
+			case 'deletePatternLock': return 'Patroonvergrendeling verwijderen';
+			case 'notMatchExistingPattern': return 'Komt niet overeen met een bestaand patroon';
+			case 'localAuthentication': return 'lokale auth.';
 			default: return null;
 		}
 	}
@@ -22360,9 +24501,9 @@ extension on _StringsPl {
 				diff,
 				const TextSpan(text: ' i będzie '),
 				tap('manually extend'),
-				const TextSpan(text: ' ważny przez 12 godzin przed wygaśnięciem.'),
+				const TextSpan(text: ' ważny przez 6 godzin przed wygaśnięciem.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Można odnowić tylko z 12-godzinnym wyprzedzeniem';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'Można odnowić tylko z 6-godzinnym wyprzedzeniem';
 			case 'theReceivingAddressValidForLongtime': return 'Ten adres jest ważny przez długi czas.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'Ten adres zbiórki jest ważny przez długi czas i jest automatycznie zasilany w czasie rzeczywistym.';
 			case 'confirmDeposited': return 'Potwierdzenie depozytów';
@@ -22720,6 +24861,29 @@ extension on _StringsPl {
 			case 'sponsorDevelopersByWatchingAds': return 'Sponsoruj programistów, oglądając reklamy';
 			case 'status': return 'Status';
 			case 'date': return 'Data';
+			case 'assetApplicationIsInProgressTip': return 'Aplikacja zasobu w toku, spróbuj ponownie za 3 sekundy.';
+			case 'delete': return 'Usuń';
+			case 'deleteVerifierTip': return 'Podczas usuwania uprawnień weryfikatora wszystkie powiązane dane dotyczące wyników zostaną usunięte w tym samym czasie, ale nagrody już uzyskane nie zostaną naruszone.';
+			case 'deleteVerifierStatusTip': return 'Przed usunięciem ustaw stan wstrzymania';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Wprowadź "${text}", aby potwierdzić';
+			case 'localSecurity': return 'Bezpieczeństwo lokalne';
+			case 'deviceLock': return 'Blokada urządzenia';
+			case 'patternLock': return 'Blokada wzoru';
+			case 'none': return 'żaden';
+			case 'exist': return 'istnieje';
+			case 'prompt': return 'Monit:';
+			case 'localSecurityTip1': return '1. Lokalne uwierzytelnianie zabezpieczeń jest używane do potwierdzania tożsamości podczas niektórych wrażliwych operacji. Jego celem jest zapobieganie kontrolowaniu urządzenia przez innych i zapewnienie bezpieczeństwa konta.';
+			case 'localSecurityTip2': return '2. Blokada wzoru jest rozwiązaniem uzupełniającym, gdy blokada urządzenia nie jest obsługiwana lub jest niezgodna. Zasadniczo nie ma potrzeby ustawiania blokady wzoru, gdy blokada urządzenia jest dostępna.';
+			case 'localSecurityTip3': return '3. Gdy zapomnisz o blokadzie wzoru, możesz tylko wyczyścić dane aplikacji lub ponownie zainstalować aplikację, aby ją wyczyścić.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'Uwierzytelnianie urządzenia zostanie wywołane. Jeśli wystąpi błąd lub wyjątek, przejdź do opcji "${localSecurity}" na stronie "${menu}" w celu przetestowania i dalszych ustawień.';
+			case 'pleaseDrawUnlockPattern': return 'Proszę narysować wzór odblokowania';
+			case 'addPatternLock': return 'Dodaj blokadę wzoru';
+			case 'cannotBeLessThan8Dots': return 'Nie może być mniej niż 8 kropek';
+			case 'pleaseRepeatThePattern': return 'Proszę powtórzyć wzór jeszcze raz';
+			case 'notMatchFirstValidPattern': return 'Nie pasuje do pierwszego prawidłowego wzorca rysowania';
+			case 'deletePatternLock': return 'Usuń blokadę wzoru';
+			case 'notMatchExistingPattern': return 'Nie pasuje do istniejącego wzorca';
+			case 'localAuthentication': return 'local Auth';
 			default: return null;
 		}
 	}
@@ -23033,9 +25197,9 @@ extension on _StringsPt {
 				diff,
 				const TextSpan(text: ' e será '),
 				tap('manually extend'),
-				const TextSpan(text: ' válido durante 12 horas antes de expirar.'),
+				const TextSpan(text: ' válido durante 6 horas antes de expirar.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Só pode ser renovado com 12 horas de antecedência';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'Só pode ser renovado com 6 horas de antecedência';
 			case 'theReceivingAddressValidForLongtime': return 'Este endereço é válido por um longo período de tempo.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'Este endereço de recolha é válido por um longo período e é automaticamente creditado em tempo real.';
 			case 'confirmDeposited': return 'Confirmação dos depósitos';
@@ -23392,6 +25556,29 @@ extension on _StringsPt {
 			case 'sponsorDevelopersByWatchingAds': return 'Patrocine desenvolvedores assistindo a anúncios';
 			case 'status': return 'Estado';
 			case 'date': return 'Data';
+			case 'assetApplicationIsInProgressTip': return 'Aplicação de ativo em andamento, tente novamente em 3 segundos.';
+			case 'delete': return 'Excluir';
+			case 'deleteVerifierTip': return 'Ao excluir as permissões de um verificador, todos os dados de pontuação relacionados serão excluídos ao mesmo tempo, mas as recompensas já obtidas não serão afetadas.';
+			case 'deleteVerifierStatusTip': return 'Por favor, defina-o como pausado antes de excluir';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Por favor, digite "${text}", para confirmar';
+			case 'localSecurity': return 'Segurança local';
+			case 'deviceLock': return 'Bloqueio do dispositivo';
+			case 'patternLock': return 'Bloqueio de padrão';
+			case 'none': return 'nenhum';
+			case 'exist': return 'existe';
+			case 'prompt': return 'Prompt:';
+			case 'localSecurityTip1': return '1. A autenticação de segurança local é usada para confirmar a identidade durante algumas operações confidenciais. Sua finalidade é impedir que o dispositivo seja controlado por terceiros e garantir a segurança da conta.';
+			case 'localSecurityTip2': return '2. O bloqueio de padrão é uma solução complementar quando o bloqueio do dispositivo não é suportado ou é incompatível. Geralmente, não há necessidade de definir um bloqueio de padrão quando o bloqueio do dispositivo está disponível.';
+			case 'localSecurityTip3': return '3. Quando você esquece seu padrão de bloqueio, você só pode limpar os dados do aplicativo ou reinstalar o aplicativo para limpá-lo.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'A autenticação do dispositivo está prestes a ser chamada. Se ocorrer um erro ou exceção, acesse a opção "${localSecurity}" na página "${menu}" para testes e configurações adicionais.';
+			case 'pleaseDrawUnlockPattern': return 'Por favor, desenhe o padrão de desbloqueio';
+			case 'addPatternLock': return 'Adicionar bloqueio de padrão';
+			case 'cannotBeLessThan8Dots': return 'Não pode ter menos de 8 pontos';
+			case 'pleaseRepeatThePattern': return 'Por favor, repita o padrão novamente';
+			case 'notMatchFirstValidPattern': return 'Não corresponde ao primeiro padrão de desenho válido';
+			case 'deletePatternLock': return 'Excluir bloqueio de padrão';
+			case 'notMatchExistingPattern': return 'Não corresponde a um padrão existente';
+			case 'localAuthentication': return 'autenticação local';
 			default: return null;
 		}
 	}
@@ -23705,9 +25892,9 @@ extension on _StringsRu {
 				diff,
 				const TextSpan(text: ' и будет '),
 				tap('manually extend'),
-				const TextSpan(text: ' действителен в течение 12 часов до истечения срока действия.'),
+				const TextSpan(text: ' действителен в течение 6 часов до истечения срока действия.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Продление возможно только за 12 часов';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'Продление возможно только за 6 часов';
 			case 'theReceivingAddressValidForLongtime': return 'Этот адрес действителен в течение длительного времени.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'Этот адрес сбора действителен в течение длительного времени и автоматически зачисляется в режиме реального времени.';
 			case 'confirmDeposited': return 'Подтверждение вкладов';
@@ -24065,6 +26252,29 @@ extension on _StringsRu {
 			case 'sponsorDevelopersByWatchingAds': return 'Спонсируйте разработчиков, просматривая рекламу';
 			case 'status': return 'Статус';
 			case 'date': return 'Дата';
+			case 'assetApplicationIsInProgressTip': return 'Выполняется заявка на актив, повторите попытку через 3 секунды.';
+			case 'delete': return 'Удалить';
+			case 'deleteVerifierTip': return 'При удалении разрешений верификатора все связанные с ним данные о результатах будут одновременно удалены, но уже полученные награды не будут затронуты.';
+			case 'deleteVerifierStatusTip': return 'Перед удалением установите состояние паузы';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Пожалуйста, введите "${text}" для подтверждения';
+			case 'localSecurity': return 'Локальная безопасность';
+			case 'deviceLock': return 'Блокировка устройства';
+			case 'patternLock': return 'Шаблон блокировки';
+			case 'none': return 'нет';
+			case 'exist': return 'существует';
+			case 'prompt': return 'Подсказка:';
+			case 'localSecurityTip1': return '1. Локальная аутентификация безопасности используется для подтверждения личности во время некоторых конфиденциальных операций. Ее цель — предотвратить управление устройством другими лицами и обеспечить безопасность учетной записи.';
+			case 'localSecurityTip2': return '2. Блокировка по шаблону является дополнительным решением, когда блокировка устройства не поддерживается или несовместима. Обычно нет необходимости устанавливать блокировку по шаблону, когда доступна блокировка устройства.';
+			case 'localSecurityTip3': return '3. Если вы забыли графический ключ, вы можете только очистить данные приложения или переустановить приложение, чтобы очистить их.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'Сейчас будет вызвана аутентификация устройства. Если возникнет ошибка или исключение, перейдите к параметру "${localSecurity}" на странице "${menu}" для тестирования и дополнительных настроек.';
+			case 'pleaseDrawUnlockPattern': return 'Пожалуйста, нарисуйте шаблон разблокировки';
+			case 'addPatternLock': return 'Добавить шаблон блокировки';
+			case 'cannotBeLessThan8Dots': return 'Не может быть меньше 8 точек';
+			case 'pleaseRepeatThePattern': return 'Повторите узор еще раз';
+			case 'notMatchFirstValidPattern': return 'Не соответствует первому допустимому шаблону чертежа';
+			case 'deletePatternLock': return 'Удалить графический ключ';
+			case 'notMatchExistingPattern': return 'Не соответствует существующему шаблону';
+			case 'localAuthentication': return 'локальная аутентификация';
 			default: return null;
 		}
 	}
@@ -24377,9 +26587,9 @@ extension on _StringsTh {
 				diff,
 				const TextSpan(text: ' และคุณสามารถ '),
 				tap ('ขยายด้วยตนเอง'),
-				const TextSpan(text: ' ระยะเวลาที่ใช้ได้ภายใน 12 ชั่วโมงก่อนหมดอายุ'),
+				const TextSpan(text: ' ระยะเวลาที่ใช้ได้ภายใน 6 ชั่วโมงก่อนหมดอายุ'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'สามารถต่ออายุได้ล่วงหน้า 12 ชั่วโมงเท่านั้น';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'สามารถต่ออายุได้ล่วงหน้า 6 ชั่วโมงเท่านั้น';
 			case 'theReceivingAddressValidForLongtime': return 'ที่อยู่การชำระเงินนี้ใช้ได้เป็นเวลานาน';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'ที่อยู่การชำระเงินนี้ใช้ได้เป็นเวลานานและจะเข้าบัญชีโดยอัตโนมัติแบบเรียลไทม์';
 			case 'confirmDeposited': return 'ยืนยันการฝากเงิน';
@@ -24736,6 +26946,29 @@ extension on _StringsTh {
 			case 'sponsorDevelopersByWatchingAds': return 'สนับสนุนนักพัฒนาโดยการดูโฆษณา';
 			case 'status': return 'สถานะ';
 			case 'date': return 'วันที่';
+			case 'assetApplicationIsInProgressTip': return 'แอปพลิเคชันสินทรัพย์กำลังดำเนินการอยู่ โปรดลองอีกครั้งใน 3 วินาที';
+			case 'delete': return 'ลบ';
+			case 'deleteVerifierTip': return 'เมื่อทำการลบสิทธิ์ของผู้ตรวจสอบ ข้อมูลคะแนนที่เกี่ยวข้องทั้งหมดจะถูกลบออกพร้อมกัน แต่รางวัลที่ได้รับไปแล้วจะไม่ได้รับผลกระทบ';
+			case 'deleteVerifierStatusTip': return 'กรุณาตั้งค่าเป็นสถานะหยุดชั่วคราวก่อนทำการลบ';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'กรุณาป้อน "${text}" เพื่อยืนยัน';
+			case 'localSecurity': return 'ความปลอดภัยในพื้นที่';
+			case 'deviceLock': return 'ล็อคอุปกรณ์';
+			case 'patternLock': return 'ล็อครูปแบบ';
+			case 'none': return 'ไม่มี';
+			case 'exist': return 'มีอยู่';
+			case 'prompt': return 'แจ้งเตือน:';
+			case 'localSecurityTip1': return '1. การตรวจสอบความปลอดภัยในพื้นที่ใช้เพื่อยืนยันตัวตนระหว่างการดำเนินการที่ละเอียดอ่อนบางอย่าง วัตถุประสงค์คือเพื่อป้องกันไม่ให้ผู้อื่นควบคุมอุปกรณ์และเพื่อให้แน่ใจว่าบัญชีมีความปลอดภัย';
+			case 'localSecurityTip2': return '2. การล็อกรูปแบบเป็นโซลูชันเสริมเมื่อการล็อกอุปกรณ์ไม่ได้รับการรองรับหรือเข้ากันไม่ได้ โดยทั่วไปแล้ว ไม่จำเป็นต้องตั้งค่าการล็อกรูปแบบเมื่อการล็อกอุปกรณ์พร้อมใช้งาน';
+			case 'localSecurityTip3': return '3. เมื่อลืมล็อครูปแบบของคุณ คุณสามารถล้างข้อมูลแอปหรือติดตั้งแอปใหม่เพื่อล้างข้อมูลได้เท่านั้น';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'การตรวจสอบสิทธิ์อุปกรณ์กำลังจะถูกเรียกใช้ หากเกิดข้อผิดพลาดหรือข้อยกเว้น โปรดไปที่ตัวเลือก "${localSecurity}" ในหน้า "${menu}" เพื่อทำการทดสอบและตั้งค่าเพิ่มเติม';
+			case 'pleaseDrawUnlockPattern': return 'กรุณาวาดรูปแบบการปลดล็อค';
+			case 'addPatternLock': return 'เพิ่มการล็อครูปแบบ';
+			case 'cannotBeLessThan8Dots': return 'ไม่สามารถน้อยกว่า 8 จุดได้';
+			case 'pleaseRepeatThePattern': return 'กรุณาทำซ้ำรูปแบบอีกครั้ง';
+			case 'notMatchFirstValidPattern': return 'ไม่ตรงกับรูปแบบการวาดภาพที่ถูกต้องครั้งแรก';
+			case 'deletePatternLock': return 'ลบล็อครูปแบบ';
+			case 'notMatchExistingPattern': return 'ไม่ตรงกับรูปแบบที่มีอยู่';
+			case 'localAuthentication': return 'การรับรองความถูกต้องภายในเครื่อง';
 			default: return null;
 		}
 	}
@@ -25049,9 +27282,9 @@ extension on _StringsUk {
 				diff,
 				const TextSpan(text: ' і буде '),
 				tap('вручну продовжити'),
-				const TextSpan(text: ' дійсною протягом 12 годин до закінчення терміну дії.'),
+				const TextSpan(text: ' дійсною протягом 6 годин до закінчення терміну дії.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Можна поновити лише за 12 годин до початку';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'Можна поновити лише за 6 годин до початку';
 			case 'theReceivingAddressValidForLongtime': return 'Ця адреса дійсна протягом тривалого часу.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'Ця адреса для збору коштів є дійсною протягом тривалого часу і автоматично зараховується в режимі реального часу.';
 			case 'confirmDeposited': return 'Підтвердження депозитів';
@@ -25408,6 +27641,29 @@ extension on _StringsUk {
 			case 'sponsorDevelopersByWatchingAds': return 'Спонсоруйте розробників, переглядаючи рекламу';
 			case 'status': return 'статус';
 			case 'date': return 'дата';
+			case 'assetApplicationIsInProgressTip': return 'Виконується заявка на актив, повторіть спробу через 3 секунди.';
+			case 'delete': return 'Видалити';
+			case 'deleteVerifierTip': return 'Під час видалення дозволів верифікатора всі пов’язані дані очок буде видалено одночасно, але це не вплине на вже отримані винагороди.';
+			case 'deleteVerifierStatusTip': return 'Перед видаленням переведіть його в стан паузи';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Введіть "${text}", щоб підтвердити';
+			case 'localSecurity': return 'Локальна безпека';
+			case 'deviceLock': return 'Блокування пристрою';
+			case 'patternLock': return 'Блокування шаблону';
+			case 'none': return 'жоден';
+			case 'exist': return 'існує';
+			case 'prompt': return 'Підказка:';
+			case 'localSecurityTip1': return '1. Локальна автентифікація безпеки використовується для підтвердження особи під час деяких конфіденційних операцій. Її призначення полягає в тому, щоб запобігти контролю над пристроєм іншими особами та забезпечити безпеку облікового запису.';
+			case 'localSecurityTip2': return '2. Блокування шаблоном є додатковим рішенням, якщо блокування пристрою не підтримується або несумісне. Як правило, немає необхідності встановлювати блокування шаблоном, якщо блокування пристрою доступне.';
+			case 'localSecurityTip3': return '3. Якщо ваш шаблон блокування забутий, ви можете лише очистити дані програми або перевстановити програму, щоб очистити їх.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'Незабаром буде викликана автентифікація пристрою. Якщо станеться помилка чи виняткова ситуація, будь ласка, перейдіть до параметра "${localSecurity}" на сторінці "${menu}" для перевірки та додаткових налаштувань.';
+			case 'pleaseDrawUnlockPattern': return 'Будь ласка, намалюйте шаблон розблокування';
+			case 'addPatternLock': return 'Додати шаблон блокування';
+			case 'cannotBeLessThan8Dots': return 'Не може бути менше 8 точок';
+			case 'pleaseRepeatThePattern': return 'Будь ласка, повторіть шаблон ще раз';
+			case 'notMatchFirstValidPattern': return 'Не збігається з першим дійсним шаблоном малюнка';
+			case 'deletePatternLock': return 'Видалити шаблон блокування';
+			case 'notMatchExistingPattern': return 'Не відповідає існуючому шаблону';
+			case 'localAuthentication': return 'локальна авторизація';
 			default: return null;
 		}
 	}
@@ -25721,9 +27977,9 @@ extension on _StringsVi {
 				diff,
 				const TextSpan(text: ' và bạn có thể '),
 				tap ('gia hạn thủ công'),
-				const TextSpan(text: ' thời hạn hiệu lực trong vòng 12 giờ trước khi hết hạn.'),
+				const TextSpan(text: ' thời hạn hiệu lực trong vòng 6 giờ trước khi hết hạn.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Chỉ có thể gia hạn trước 12 giờ';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'Chỉ có thể gia hạn trước 6 giờ';
 			case 'theReceivingAddressValidForLongtime': return 'Địa chỉ thanh toán này có giá trị trong một thời gian dài.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'Địa chỉ thanh toán này có hiệu lực trong thời gian dài và sẽ được ghi có tự động theo thời gian thực.';
 			case 'confirmDeposited': return 'Xác nhận đã gửi tiền';
@@ -26080,6 +28336,29 @@ extension on _StringsVi {
 			case 'sponsorDevelopersByWatchingAds': return 'Tài trợ cho các nhà phát triển bằng cách xem quảng cáo';
 			case 'status': return 'Trạng thái';
 			case 'date': return 'Ngày';
+			case 'assetApplicationIsInProgressTip': return 'Đang tiến hành ứng dụng tài sản, vui lòng thử lại sau 3 giây.';
+			case 'delete': return 'Xóa';
+			case 'deleteVerifierTip': return 'Khi xóa quyền của người xác minh, tất cả dữ liệu điểm liên quan sẽ bị xóa cùng lúc, nhưng phần thưởng đã nhận được sẽ không bị ảnh hưởng.';
+			case 'deleteVerifierStatusTip': return 'Vui lòng đặt nó ở trạng thái tạm dừng trước khi xóa';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Vui lòng nhập "${text}", để xác nhận';
+			case 'localSecurity': return 'Bảo mật cục bộ';
+			case 'deviceLock': return 'Khóa thiết bị';
+			case 'patternLock': return 'Khóa mẫu';
+			case 'none': return 'không có';
+			case 'exist': return 'tồn tại';
+			case 'prompt': return 'Nhắc nhở:';
+			case 'localSecurityTip1': return '1. Xác thực bảo mật cục bộ được sử dụng để xác nhận danh tính trong một số hoạt động nhạy cảm. Mục đích của nó là ngăn chặn thiết bị bị người khác kiểm soát và đảm bảo tính bảo mật của tài khoản.';
+			case 'localSecurityTip2': return '2. Khóa mẫu là giải pháp bổ sung khi khóa thiết bị không được hỗ trợ hoặc không tương thích. Nhìn chung, không cần thiết lập khóa mẫu khi khóa thiết bị khả dụng.';
+			case 'localSecurityTip3': return '3. Khi quên khóa mẫu, bạn chỉ có thể xóa dữ liệu ứng dụng hoặc cài đặt lại ứng dụng để xóa.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'Xác thực thiết bị sắp được gọi. Nếu xảy ra lỗi hoặc ngoại lệ, vui lòng chuyển đến tùy chọn "${localSecurity}" trên trang "${menu}" để kiểm tra và thiết lập thêm.';
+			case 'pleaseDrawUnlockPattern': return 'Vui lòng vẽ hình mở khóa';
+			case 'addPatternLock': return 'Thêm khóa mẫu';
+			case 'cannotBeLessThan8Dots': return 'Không thể ít hơn 8 chấm';
+			case 'pleaseRepeatThePattern': return 'Vui lòng lặp lại mẫu một lần nữa';
+			case 'notMatchFirstValidPattern': return 'Không khớp với mẫu vẽ hợp lệ đầu tiên';
+			case 'deletePatternLock': return 'Xóa khóa mẫu';
+			case 'notMatchExistingPattern': return 'Không khớp với mẫu hiện có';
+			case 'localAuthentication': return 'Xác thực cục bộ';
 			default: return null;
 		}
 	}
@@ -26391,11 +28670,11 @@ extension on _StringsZhCn {
 			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
 				const TextSpan(text: '该地址将在'),
 				diff,
-				const TextSpan(text: '后过期，过期前12小时内可'),
+				const TextSpan(text: '后过期，过期前6小时内可'),
 				tap('手动延长'),
 				const TextSpan(text: '有效期。'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return '只能提前12小时内续订';
+			case 'canOnlyRenewWithin6hoursInAdvance': return '只能提前6小时内续订';
 			case 'theReceivingAddressValidForLongtime': return '该收款地址长期有效.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return '该收款地址长期有效，并实时自动入账。';
 			case 'confirmDeposited': return '确认已存入';
@@ -26753,6 +29032,29 @@ extension on _StringsZhCn {
 			case 'sponsorDevelopersByWatchingAds': return '通过观看广告赞助开发者';
 			case 'status': return '状态';
 			case 'date': return '日期';
+			case 'assetApplicationIsInProgressTip': return '资产申请中，请3秒后再试。';
+			case 'delete': return '删除';
+			case 'deleteVerifierTip': return '删除验证者权限时，所有相关的得分数据都将同时删除，但是已经获得的奖励不会受到影响。';
+			case 'deleteVerifierStatusTip': return '删除前请先设置为暂停状态';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => '确认请输入“${text}”';
+			case 'localSecurity': return '本地安全';
+			case 'deviceLock': return '设备锁';
+			case 'patternLock': return '图案锁';
+			case 'none': return '没有';
+			case 'exist': return '存在';
+			case 'prompt': return '提示:';
+			case 'localSecurityTip1': return '1. 本地安全认证用于在一些敏感操作时的身份确认，其目的是防止设备被他人控制时，并能保证账户的安全性。';
+			case 'localSecurityTip2': return '2. 图案锁是在调用设备锁不支持或不兼容的情况下的一种补充方案， 一般在设备锁可用的情况下无需设置图案锁。';
+			case 'localSecurityTip3': return '3. 当您的图案锁被遗忘的情况下，只能清除应用数据或重装应用才能被清除。';
+			case 'deviceAuthFirstTip': return ({required Object menu, required Object localSecurity}) => '即将调用设备认证，如果发生报错或异常，请进入"${menu}"页面的"${localSecurity}"选项进行测试和进一步设置。';
+			case 'pleaseDrawUnlockPattern': return '请绘制解锁图案';
+			case 'addPatternLock': return '添加图案锁';
+			case 'cannotBeLessThan8Dots': return '不能低于8个点阵';
+			case 'pleaseRepeatThePattern': return '请再次重复绘制图案';
+			case 'notMatchFirstValidPattern': return '与首次有效的绘制图案不匹配';
+			case 'deletePatternLock': return '删除图案锁';
+			case 'notMatchExistingPattern': return '与存在的图案不匹配';
+			case 'localAuthentication': return '本地验证';
 			default: return null;
 		}
 	}
@@ -27064,11 +29366,11 @@ extension on _StringsZhTw {
 			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
 				const TextSpan(text: '該地址將在'),
 				diff,
-				const TextSpan(text: '後過期，過期前12小時內可'),
+				const TextSpan(text: '後過期，過期前6小時內可'),
 				tap('手動延長'),
 				const TextSpan(text: '有效期。'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return '只能提前12小時內續訂';
+			case 'canOnlyRenewWithin6hoursInAdvance': return '只能提前6小時內續訂';
 			case 'theReceivingAddressValidForLongtime': return '該收款地址長期有效.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return '該收款地址長期有效，並實時自動入賬。';
 			case 'confirmDeposited': return '確認已存入';
@@ -27426,6 +29728,29 @@ extension on _StringsZhTw {
 			case 'sponsorDevelopersByWatchingAds': return '透過觀看廣告贊助開發者';
 			case 'status': return '狀態';
 			case 'date': return '日期';
+			case 'assetApplicationIsInProgressTip': return '資產申請中，請3秒後再試。';
+			case 'delete': return '刪除';
+			case 'deleteVerifierTip': return '刪除驗證者權限時，所有相關的得分資料都會同時刪除，但是已經獲得的獎勵不會受到影響。';
+			case 'deleteVerifierStatusTip': return '刪除前請先設定為暫停狀態';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => '確認請輸入“${text}”';
+			case 'localSecurity': return '本地安全';
+			case 'deviceLock': return '裝置鎖';
+			case 'patternLock': return '圖案鎖';
+			case 'none': return '沒有';
+			case 'exist': return '存在';
+			case 'prompt': return '提示:';
+			case 'localSecurityTip1': return '1. 本地安全認證用於在一些敏感操作時的身份確認，其目的是防止設備被他人控制時，並能保證帳戶的安全性。';
+			case 'localSecurityTip2': return '2. 圖案鎖是在呼叫裝置鎖不支援或不相容的情況下的一種補充方案， 一般在裝置鎖可用的情況下無需設定圖案鎖。';
+			case 'localSecurityTip3': return '3. 當您的圖案鎖定被遺忘的情況下，只能清除應用資料或重裝應用程式才能被清除。';
+			case 'deviceAuthFirstTip': return ({required Object menu, required Object localSecurity}) => '即將呼叫設備認證，如果發生報錯或異常，請進入"${menu}"頁面的"${localSecurity}"選項進行測試和進一步設定。';
+			case 'pleaseDrawUnlockPattern': return '請繪製解鎖圖案';
+			case 'addPatternLock': return '新增圖案鎖定';
+			case 'cannotBeLessThan8Dots': return '不能低於8個點陣';
+			case 'pleaseRepeatThePattern': return '請再重複繪製圖案';
+			case 'notMatchFirstValidPattern': return '與第一個有效的繪製圖案不符';
+			case 'deletePatternLock': return '刪除圖案鎖';
+			case 'notMatchExistingPattern': return '與存在的圖案不符';
+			case 'localAuthentication': return '本地驗證';
 			default: return null;
 		}
 	}
