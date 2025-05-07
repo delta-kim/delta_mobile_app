@@ -4,7 +4,6 @@ buildscript {
 plugins {
     id "com.android.application"
     id "kotlin-android"
-    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id "dev.flutter.flutter-gradle-plugin"
 }
 
@@ -33,6 +32,8 @@ if (keystorePropertiesFile.exists()) {
 
 android {
     namespace = "kim.delta.mobile"
+    //namespace = "kim.delta.mobile.android"
+
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -44,13 +45,13 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-       applicationId = "kim.delta.mobile.android"
-       //applicationId = "kim.delta.mobile"
+       //applicationId = "kim.delta.mobile.android"
+       applicationId = "kim.delta.mobile"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
         minSdkVersion = 23 
         minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
+        targetSdk = 33 //flutter.targetSdkVersion
         versionCode = flutterVersionCode.toInteger()
         versionName = flutterVersionName
     }

@@ -3,10 +3,10 @@
 /// Original: lib/i18n
 /// To regenerate, run: `dart run slang`
 ///
-/// Locales: 19
-/// Strings: 10469 (551 per locale)
+/// Locales: 21
+/// Strings: 12241 (582 per locale)
 ///
-/// Built on 2025-03-21 at 07:20 UTC
+/// Built on 2025-04-21 at 02:36 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -28,10 +28,12 @@ enum AppLocale with BaseAppLocale<AppLocale, Translations> {
 	en(languageCode: 'en', build: Translations.build),
 	bg(languageCode: 'bg', build: _StringsBg.build),
 	bn(languageCode: 'bn', build: _StringsBn.build),
+	ckb(languageCode: 'ckb', build: _StringsCkb.build),
 	de(languageCode: 'de', build: _StringsDe.build),
 	el(languageCode: 'el', build: _StringsEl.build),
 	es(languageCode: 'es', build: _StringsEs.build),
 	fr(languageCode: 'fr', build: _StringsFr.build),
+	hi(languageCode: 'hi', build: _StringsHi.build),
 	it(languageCode: 'it', build: _StringsIt.build),
 	ja(languageCode: 'ja', build: _StringsJa.build),
 	ko(languageCode: 'ko', build: _StringsKo.build),
@@ -466,13 +468,13 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	String get tempDepositAddressTip3 => '3.Please do not attempt to deposit funds that do not match any of the parameters in the above tips, otherwise the amount will be lost.';
 	String get tempDepositAddressTip4 => '4.If you need to deposit other types of assets, please switch to the corresponding currency page and parameter options to apply for a new address.';
 	TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-		const TextSpan(text: 'The address will expire after '),
+		const TextSpan(text: 'This address will expire in '),
 		diff,
-		const TextSpan(text: ', and the validity period can be '),
-		tap('manually extended'),
-		const TextSpan(text: ' within 12 hours before the expiration.'),
+		const TextSpan(text: '. You can '),
+		tap('manually extend'),
+		const TextSpan(text: ' the validity period within 6 hours before expiration.'),
 	]);
-	String get canOnlyRenewWithin12hoursInAdvance => 'Can only renew within 12 hours in advance';
+	String get canOnlyRenewWithin6hoursInAdvance => 'Can only be renewed within 6 hours in advance';
 	String get theReceivingAddressValidForLongtime => 'The receiving address is valid for a long time.';
 	String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'The receiving address is valid for a long time and will be automatically credited in real time.';
 	String get confirmDeposited => 'confirm Deposited';
@@ -732,7 +734,7 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	String get referrerIdDoesNotExist => 'referrerId does not exist!';
 	String get didIsIncorrectOrInvalid => 'The DID is incorrect or invalid！';
 	String get accessTokenIsIncorrectOrInvalid => 'The accessToken is incorrect or invalid！';
-	String get minimumWithdrawalAmountIs9USD => 'The minimum withdrawal amount is 9USD';
+	String get minimumWithdrawalAmountIs1USD => 'The minimum withdrawal amount is 1USD';
 	String get miningTimeIsNotYet => 'Mining time is not yet';
 	String get alreadyExists_pleaseDoNotRepeatedly => 'Already exists, please do not add repeatedly!';
 	String get registrationNumberCannotBeUsedAsAccessNumber => 'Registration number cannot be used as verification access number';
@@ -821,6 +823,38 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	String get enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted => 'Please enter their associated mobile phone number, country code can be omitted.';
 	String mobileNumberForNameIsIncorrect({required Object name}) => 'The mobile number for ${name} is incorrect';
 	String get matchingVerificationStrategyIs => 'The matching verification strategy is:';
+	String get balanceGreater3ICP_noNeedPourFuel => 'If the balance is greater than 3 ICP, there is no need to pour fuel temporarily.';
+	String get escrowAccount => 'Escrow Account';
+	String get fuelRelay => 'Fuel Relay';
+	String get pourFuel => 'Pour Fuel';
+	String get fuelState => 'fuel State';
+	String get pouringFuelTips => 'Pouring fuel will not bring you any advantages or disadvantages, its purpose is to enrich the Delta system experience.';
+	String get sponsorDevelopersByWatchingAds => 'Sponsor developers by watching ads';
+	String get status => 'Status';
+	String get date => 'Date';
+	String get assetApplicationIsInProgressTip => 'Asset application in progress, please try again in 3 seconds.';
+	String get delete => 'Delete';
+	String get deleteVerifierTip => 'When deleting the verifier authority, all related score data will be deleted at the same time, but the rewards already obtained will not be affected.';
+	String get deleteVerifierStatusTip => 'Please set it to paused state before deleting';
+	String pleaseEnterXtoConfirm({required Object text}) => 'Please enter "${text}" to confirm';
+	String get localSecurity => 'Local Security';
+	String get deviceLock => 'Device Lock';
+	String get patternLock => 'Pattern Lock';
+	String get none => 'None';
+	String get exist => 'Exists';
+	String get prompt => 'Prompt:';
+	String get localSecurityTip1 => '1. Local security authentication is used to confirm identity during some sensitive operations. Its purpose is to prevent the device from being controlled by others and to ensure the security of the account.';
+	String get localSecurityTip2 => '2. Pattern lock is a supplementary solution when the device lock is not supported or incompatible. Generally, there is no need to set a pattern lock when the device lock is available.';
+	String get localSecurityTip3 => '3. When your pattern lock is forgotten, it can only be cleared by clearing the application data or reinstalling the application.';
+	String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'Device authentication is about to be called. If an error or exception occurs, please enter the "${localSecurity}" option on the "${menu}" page for testing and further settings.';
+	String get pleaseDrawUnlockPattern => 'Please draw your unlock pattern';
+	String get addPatternLock => 'Add pattern lock';
+	String get cannotBeLessThan8Dots => 'Cannot be less than 8 dots';
+	String get pleaseRepeatThePattern => 'Please repeat the pattern';
+	String get notMatchFirstValidPattern => 'Does not match the first valid pattern';
+	String get deletePatternLock => 'Delete pattern lock';
+	String get notMatchExistingPattern => 'Does not match the existing pattern';
+	String get localAuthentication => 'local Auth.';
 }
 
 // Path: <root>
@@ -919,7 +953,7 @@ class _StringsBg implements Translations {
 	@override String get partSuccsForVerificationSMS => 'SMS проверката е премината от един от терминалите за достъп.';
 	@override String get creatingAccessToken => 'Създаване на токен за достъп...';
 	@override String get intoDelta => 'В Delta';
-	@override String get deltaAccountIsLoggedIn => 'Вашият Delta акаунт е влязъл';
+	@override String get deltaAccountIsLoggedIn => 'Вашият Delta акаунт е вписан';
 	@override String get iHavLoggedOut => 'Да, вече излязох';
 	@override String get startTwoFactorVerification => 'стартиране на двуфакторна проверка';
 	@override String get securityCircleVerification => 'Проверка чрез кръга за сигурност';
@@ -953,7 +987,7 @@ class _StringsBg implements Translations {
 	@override String get profile => 'Профил';
 	@override String get menu => 'Меню';
 	@override String get directly => 'директно';
-	@override String get indirectly => 'недиректно';
+	@override String get indirectly => 'индиректно';
 	@override String get inviteContacts => 'покани контакти';
 	@override TextSpan refereesAtFirstLevelDesc({required InlineSpan nickname, required InlineSpan num1, required InlineSpan num2}) => TextSpan(children: [
 		const TextSpan(text: 'Вашият референт е '),
@@ -992,7 +1026,7 @@ class _StringsBg implements Translations {
 	@override String get securityCircleBeUsedA2 => '2. В случай на някои чувствителни операции, програмата за интелигентен договор на Delta трябва да потвърди, че сте вие.';
 	@override String get provideSafetyTip1 => 'Когато вашият приятел ви поиска код за сигурност, моля, да се уверите, че това наистина е той.';
 	@override String get provideSafetyTip2 => 'Вие предоставяте защита за приятелите по-горе. Те са ви задали като най-надеждния човек в кръга за сигурност, и вие трябва да предоставяте потвърждение за сигурност за тях, когато техните акаунти срещнат чувствителни операции.';
-	@override String get provideSafetyTip3 => 'Когато е необходимо,извличане на код за сигурност кликвате два пъти върху аватара на другата страна, за да извлечете кода.';
+	@override String get provideSafetyTip3 => 'Когато е необходимо ,извличане на код за сигурност кликвате два пъти върху аватара на другата страна, за да извлечете кода.';
 	@override String get doesNotSecurityCodeNeedsRetrieved => 'Другата страна в момента няма код за сигурност, който трябва да бъде извлечен!';
 	@override String get existSecurityCodeTip => 'Моля, бъдете сигурни, че роднините или приятелите, които ви искат код за сигурност, са те самите. За да защитите сигурността на роднините или приятелите, трябва да откажете да го предоставите, ако не сте сигурни, че са реално те.';
 	@override String get avatarSettings => 'Настройки на аватара';
@@ -1009,12 +1043,12 @@ class _StringsBg implements Translations {
 		rate,
 		const TextSpan(text: ' δ/ден'),
 	]);
-	@override String get EndOfMiningSession => 'Край на сесията за добив: ';
+	@override String get EndOfMiningSession => 'Край на сесията за добив след: ';
 	@override String get tapToMineDeltaCoin => 'Кликнете, за да започнете добиване Delta токъни↑';
 	@override String get clickToStartMining => 'Кликнете, за да започнете добива!';
 	@override String get miningHasStoppedPromptDesc => 'Добивът е спрян. Цикъла за добив е 24ч, кликнете върху светкавицата , за да започнете нов 24часов цикъл. Добивът на Delta е механизъм за разпределение, който не консумира допълнителна изчислителна мощност и мрежов трафик на вашето устройство.';
 	@override String get aboutBaseRate => 'За базовата скорост?';
-	@override String get baseRateDescription => 'Според споразумението в бялата книга, основното правило за намаляване на скоростта на добив на Delta ще бъде разделено на два етапа. \nФаза 1: Когато броят на участниците (регистрации) е 3000 или по-малко, скоростта е 32δ/ден. Използвайки това като начална точка, всеки път, когато броят на хората се увеличи с фактор 10, базовата скорост се намалява наполовина. \nФаза 2: Когато броят на участниците достигне 30 милиона и повече, базовата скорост се намалява наполовина всеки път, когато броят на хората се увеличи 3 пъти. До изчерпване на токъните предвидени за добиване.';
+	@override String get baseRateDescription => 'Според споразумението в бялата книга, основното правило за намаляване на скоростта на добив на Delta ще бъде разделено на два етапа. \n Фаза 1: Когато броят на участниците (регистрации) е 3000 или по-малко, скоростта е 32δ/ден. Използвайки това като начална точка, всеки път, когато броят на хората се увеличи с фактор 10, базовата скорост се намалява наполовина. \n Фаза 2: Когато броят на участниците достигне 30 милиона и повече, базовата скорост се намалява наполовина всеки път, когато броят на хората се увеличи 3 пъти. До изчерпване на токъните предвидени за добиване.';
 	@override String get baseRate => 'Базова скорост';
 	@override String get directReferralRewards => 'Награди за директни препоръки';
 	@override String get directReferralRewardDesc => 'Всеки директно препоръчан човек, който е в състояние на добив,увеличава вашата скорост на добиване с 1/3 от базовата скорост. \n\n Освен това, състоянието на добив на вашия референт също ще бъде изчислено в наградата ви за директна препоръка.';
@@ -1060,7 +1094,7 @@ class _StringsBg implements Translations {
 	@override String get index => 'Индекс';
 	@override String get amount => 'Количество';
 	@override String get balance => 'Баланс';
-	@override String get timeStamp => 'времеви печат';
+	@override String get timeStamp => 'дата и час';
 	@override String get summary => 'Резюме';
 	@override String get miningHasStopped => 'Добивът е спрян.';
 	@override String get miningHasStoppedDesc => 'Вашият добив в момента е спрян, можете да започнете добив на токъни сега.';
@@ -1074,14 +1108,14 @@ class _StringsBg implements Translations {
 	@override String get noDataYet => 'Все още няма данни';
 	@override String get previousMobileNumber => 'предишен мобилен номер';
 	@override String get changeLog => 'дневник на промените';
-	@override String get referralLinkToShare => 'Рефералена връзка за споделяне';
+	@override String get referralLinkToShare => 'Реферална връзка за споделяне';
 	@override String get referrer => 'Референт';
 	@override String get isoCountryCode => 'ISO код на държавата';
 	@override String get avatarLogo => 'Лого на аватара';
 	@override String get creationTime => 'Време на създаване';
 	@override String get lastUpdate => 'последна актуализация';
-	@override String get numberOfSecurityCircleMembers => 'Брой членове на кръга за сигурност';
-	@override String get theLatestMining => 'Последният добив';
+	@override String get numberOfSecurityCircleMembers => 'Брой членове в кръга за сигурност';
+	@override String get theLatestMining => 'Последен добив';
 	@override String get effectiveMiningDays => 'Ефективни дни на добив';
 	@override String get modifyNickname => 'промяна на прякора';
 	@override String get didNotChange => 'не се промени!';
@@ -1092,12 +1126,12 @@ class _StringsBg implements Translations {
 	@override String get currentState => 'Текущо състояние';
 	@override String get biometricsAuthenticationLocalizedReason => 'Използвайте заключването на устройството си, за да потвърдите идентичността си.';
 	@override String get graph => 'Графика';
-	@override String get referralRelationshipGraph => 'Графика на референтните взаимоотношения';
+	@override String get referralRelationshipGraph => 'Графика на референтните връзки';
 	@override String get nativeContacts => 'Собствени контакти';
 	@override String get registrationAndMiningTrends => 'Тенденции на регистрации и добив';
 	@override String get inMining => 'в добив';
 	@override String get registrationVolume => 'Обем на регистрациите';
-	@override String get unmined => 'недобит';
+	@override String get unmined => 'не-добит';
 	@override String get mined => 'Добит';
 	@override String get communityMining => 'добив на общността';
 	@override String get consensusPromotionFund => 'Фонд за промоция на консенсус';
@@ -1127,12 +1161,12 @@ class _StringsBg implements Translations {
 	@override String get aboutUSCTmining => 'За USCT добива?';
 	@override String get aboutUSCTminingItme1 => '1. USDT е популярна световно стабилна монета в щатски долари, която може лесно да бъде преобразувана в суверенни валути на различни държави на световните основни криптовалутни борси.';
 	@override String get aboutUSCTminingItme2 => '2. USCT е временна измервателна стойност на доходите от USCT добив, пълното име е USD кредит и накрая може да бъде преобразувана в USDT според действителната разплащателна квота и правилата за разпределение на рекламната платформа и в съответната пропорция.';
-	@override String get aboutUSCTminingItme3 => '3. USCT добивът е функция за монетизация на реклама в общността на Delta. Използвайте огромната потребителска база на общността на Delta, за да предоставите множество ползи за рекламодателите, разработчиците на Delta и добивачите. Неговата цел е да предостави определено количество ефективен доход за отсъствията в ранния етап на екологията на Delta, когато тя все още не е формирана и процъфтява; в същото време, също предоставя определено финансово подпомагане за разработчиците, за да гарантира, че разработчиците могат да продължат да предоставят услуги за разработка за дълго време и накрая да реализират цялото планиране на белия документ; също предоставя ефективен канал за промоция за рекламодателите на продукти.';
+	@override String get aboutUSCTminingItme3 => '3. USCT добивът е функция за монетизация на реклама в общността на Delta. Използвайте огромната потребителска база на общността на Delta, за да предоставите множество ползи за рекламодателите, разработчиците на Delta и потребителите. Неговата цел е да предостави определено количество ефективен доход за отсъствията в ранния етап на екологията на Delta, когато тя все още не е формирана и процъфтява; в същото време, също предоставя определено финансово подпомагане за разработчиците, за да гарантира, че разработчиците могат да продължат да предоставят услуги за разработка за дълго време и накрая да реализират цялото планиране на белия документ; също предоставя ефективен канал за промоция за рекламодателите на продукти.';
 	@override String get aboutUSCTminingItme4 => '4. Правилата за разпределение са проектирани така, че 40% от общите доходи ще бъдат използвани като комисионни за технически услуги на разработчиците, а останалите 60% ще бъдат използвани като награди за отсъствията в общността. Частта за награди за отсъствията използва модел за многостепенно разпределение, подобен на DTC, и тези награди за отсъствията са разделени на 3 дела според съотношението 6:3:1, като 60% от наградата за отсъствията за един USCT добив всеки път са разпределени на отсъстващия, който в момента гледа рекламата, 30% са разпределени на горния препоръчител и 10% са разпределени на второстепенния препоръчител. По същия начин, вие също можете да получите същите награди за препоръчител от приятелите, които препоръчате чрез USCT добив. Предимството на такова многостепенно разпределение е, че всеки може да получи относително голямо количество USDT ползи, като развие офлайн екип.';
 	@override String get aboutUSCTminingItme5 => '5. Периодът на фактуриране е 7 дни, тоест валидността се проверява с рекламната платформа на всеки 7 дни и потвърдените ефективни доходи и действителното количество ще бъдат записани в баланса. Минималното количество за всяко теглене е 10USDT.';
 	@override String linesXtoY({required Object x, required Object y}) => 'Редове ${x} до ${y}';
 	@override String get wallet => 'Портфейл';
-	@override String get multiChainWallet => 'мулти-блокчейн портфейл';
+	@override String get multiChainWallet => 'мулти-чейн портфейл';
 	@override String get deposit => 'Депозит';
 	@override String get transfer => 'Прехвърляне';
 	@override String xcoinInWallet({required Object coinCode}) => '${coinCode} в адреса на портфейла';
@@ -1148,13 +1182,13 @@ class _StringsBg implements Translations {
 	@override String get tempDepositAddressTip3 => '3. Моля, не опитвайте да депозирате средства, които не съвпадат точно с всички параметри от горните съвети, в противен случай сумата ще бъде загубена.';
 	@override String get tempDepositAddressTip4 => '4. Ако трябва да депозирате други видове активи, моля, превключете към съответната страница с валута и опции за параметри, за да заявите нов адрес.';
 	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-		const TextSpan(text: 'Адресът ще изтече след '),
+		const TextSpan(text: 'Този адрес ще изтече след '),
 		diff,
-		const TextSpan(text: ', и периодът на валидност може да бъде '),
-		tap('ръчно удължен'),
-		const TextSpan(text: ' в рамките на 12 часа преди изтичането.'),
+		const TextSpan(text: '. Можете да '),
+		tap('manually extend'),
+		const TextSpan(text: ' периода на валидност в рамките на 6 часа преди изтичането.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'Може да бъде удължен само в рамките на 12 часа предварително';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'Може да се поднови само в рамките на 6 часа предварително';
 	@override String get theReceivingAddressValidForLongtime => 'Адресът за получаване е валиден за дълго време.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'Адресът за получаване е валиден за дълго време и ще бъде автоматично кредитиран в реално време.';
 	@override String get confirmDeposited => 'Потвърдете депозита';
@@ -1177,26 +1211,26 @@ class _StringsBg implements Translations {
 	@override String get fee => 'такса';
 	@override String validLengthXcharacters({required Object x}) => 'Валидната дължина е ${x} символа';
 	@override String get historys => 'История';
-	@override String get dtcCreditdetail => 'Детайли на Delta кредита';
-	@override String get usdCreditdetail => 'Детайли на USD кредита';
+	@override String get dtcCreditdetail => 'История на Delta прихода';
+	@override String get usdCreditdetail => 'История на USD прихода';
 	@override String get dappSquare => 'dApp площадка';
 	@override String get amountRaised => 'Събрана сума';
-	@override String get disbursedAmount => 'Разпределена сума';
+	@override String get disbursedAmount => 'Разпр. сума';
 	@override String get participationTimes => 'Брой участия';
-	@override String get completionRate => 'Процент на завършване';
+	@override String get completionRate => '% на завършване';
 	@override String get exchangeRate => 'Обменен курс';
-	@override String get icpCrowdfunding => 'ICP краудфандинг';
+	@override String get icpCrowdfunding => 'ICP краудфъндинг';
 	@override String get crowdfunding => 'Краудфъндинг';
 	@override String get trendsCurve => 'Крива на тенденциите';
 	@override String get fullScreenView => 'преглед на цял екран';
 	@override String get walletBalance => 'Баланс на портфейла: ';
 	@override String get manageWallet => 'Управление на портфейл';
 	@override String get fundraiseAmount => 'Събрана сума';
-	@override String get exchangeRewardAmount => 'Сума на обменната награда';
-	@override String get fundraise => 'Събиране на средства';
+	@override String get exchangeRewardAmount => 'Общо за получаване';
+	@override String get fundraise => 'набиране средства';
 	@override String rangeIntegersX({required Object x}) => 'Диапазон: цели числа ${x}';
 	@override String successfullParticipatingFundraisingXtip({required Object amount}) => 'Успешно участие в събирането на средства и получаване на награда от ${amount}DTCT';
-	@override String get amountSummary => 'Обобщение на сумата';
+	@override String get amountSummary => 'Наличност на сумитеа';
 	@override String get changePreferred => 'Промяна на предпочитанията';
 	@override String get changePreferredAddress => 'Промяна на предпочитания адрес';
 	@override String get preferredAddressTip => 'При получаване на пари с помощта на регистриран мобилен номер или DID, средствата ще бъдат автоматично прехвърлени към предпочитания адрес.';
@@ -1233,7 +1267,7 @@ class _StringsBg implements Translations {
 	@override String get setNote => 'Задайте бележка';
 	@override String lengthCannotExceedXbytes({required Object x}) => 'Дължината не може да надвишава ${x} байта';
 	@override String get transferFee => 'Такса за превод';
-	@override String get crossChainFee => 'Такса за превод между веригите';
+	@override String get crossChainFee => 'Кросчейн такса';
 	@override String get crossChainTransferOutError => 'Грешка при прехвърляне между веригите';
 	@override String get chainName => 'Име на веригата';
 	@override String get message => 'Съобщение';
@@ -1247,7 +1281,7 @@ class _StringsBg implements Translations {
 	@override String get minimumBlockConfirmations => 'Минимално потвърждение на блок';
 	@override String get dsmsVerifyTerminal => 'DSMS терминал за проверка';
 	@override String get overall => 'Общо';
-	@override String get my => 'Моето';
+	@override String get my => 'Собствен';
 	@override String get getVerifierPermissions => 'Получаване на разрешение за валидатор';
 	@override String get checkValidatorQualifications => 'Проверка на квалификацията за валидатор';
 	@override String get qualification => 'Квалификация';
@@ -1359,7 +1393,7 @@ class _StringsBg implements Translations {
 	@override String get canisterId => 'CanisterId: ';
 	@override String get updateTime => 'Обновено на';
 	@override String get contractCanistersState => 'Състояние на договорните контейнери';
-	@override String get userDistribution => 'Разпределение на потребителите';
+	@override String get userDistribution => 'Регистрирани потребители';
 	@override String get settings => 'Настройки';
 	@override String get security => 'Сигурност';
 	@override String get invite => 'Покани';
@@ -1382,12 +1416,12 @@ class _StringsBg implements Translations {
 	@override String currentMaximumMatchedSingleTransferAmountIsX({required Object x}) => 'Текущата максимална съвпадаща единична сума за прехвърляне е ${x}';
 	@override String get memoMustNotBeMoreThan64bytes => 'Бележката не трябва да бъде повече от 64 байта';
 	@override String insufficientBalance_theAmountIsX({required Object x}) => 'Недостатъчен баланс, сумата е: ${x}';
-	@override String get boundRreceivingAddressesExceed3Tip => 'Броят на свързаните адреси за получаване не може да надвишава 3. \nАко трябва да свържете нов адрес за получаване, \nмоля, първо разкачете друг адрес за получаване.';
+	@override String get boundRreceivingAddressesExceed3Tip => 'Броят на свързаните адреси за получаване не може да надвишава 3. \n Ако трябва да свържете нов адрес за получаване, \n моля, първо разкачете друг адрес за получаване.';
 	@override String parametersA_exception({required Object x}) => 'Параметри: ${x}, изключение';
 	@override String get transferAmountMustBeLargerThan0 => 'Сумата за прехвърляне трябва да бъде по-голяма от 0';
 	@override String get authorizationHasExpired => 'Ауторизацията е изтекла';
 	@override String get theAppHasNotBeenAuthorizedByOwner => 'Приложението не е ауторизирано от собственика';
-	@override String get authenticationTokenIsInvalid => 'Токенът за удостоверяване е невалиден';
+	@override String get authenticationTokenIsInvalid => 'Токънът за удостоверяване е невалиден';
 	@override String get verifyInfoIsInvalidOrExpired => 'Информацията за проверка е невалидна или е изтекла';
 	@override String get verifyThatNumberOfAccessTerminalsHasExceededLimitOf1in10000 => 'Проверете дали броят на терминалите за достъп е надвишил лимита от един на 10 000';
 	@override String get timeToParticipateInMiningMustBeMoreThan3Days => 'За да се участвате трябва да сте добивали повече от 3 дни';
@@ -1413,8 +1447,8 @@ class _StringsBg implements Translations {
 	@override String get referrerIdCannotBeEmpty => 'ID на препоръчителя не може да бъде празен! ';
 	@override String get referrerIdDoesNotExist => 'ID на препоръчителя не съществува!';
 	@override String get didIsIncorrectOrInvalid => 'DID е неправилен или невалиден！';
-	@override String get accessTokenIsIncorrectOrInvalid => 'Токенът за достъп е неправилен или невалиден！';
-	@override String get minimumWithdrawalAmountIs9USD => 'Минималната сума за теглене е 9USD';
+	@override String get accessTokenIsIncorrectOrInvalid => 'Токънът за достъп е неправилен или невалиден！';
+	@override String get minimumWithdrawalAmountIs1USD => 'Минималната сума за теглене е 1USD';
 	@override String get miningTimeIsNotYet => 'Времето за добиване още не е настъпило';
 	@override String get alreadyExists_pleaseDoNotRepeatedly => 'Вече съществува, моля, не добавяйте отново!';
 	@override String get registrationNumberCannotBeUsedAsAccessNumber => 'Този номер не може да бъде използван като номер за валидатор';
@@ -1488,13 +1522,13 @@ class _StringsBg implements Translations {
 		shouldNum,
 		const TextSpan(text: ' трябва да бъдат избрани.'),
 	]);
-	@override String sentaboveXaccessNumbers({required Object text, required Object n}) => 'Беше ли изпратен ${text} към ${n} номера за достъп по-горе?';
+	@override String sentaboveXaccessNumbers({required Object text, required Object n}) => 'Беше ли изпратено съобщени със съдържание: ${text} към номера за достъп: ${n} ?';
 	@override String get interface => 'Интерфейс:';
 	@override String get waitingTimeoutOrSenderNumberMismatch => 'Време за изчакване или несъответствие на номера на изпращача';
-	@override String mobileNumberOfsecurityCircleYouFilledDoesntMatch({required Object x}) => 'Мобилният номер на члена на кръга за сигурност, който сте попълнили, не съвпада: ${x}';
+	@override String mobileNumberOfsecurityCircleYouFilledDoesntMatch({required Object x}) => 'Мобилният номер, който въведохте на члена от кръга за сигурност, не съвпада: ${x}';
 	@override String get loginWithin10MinutesOfLoggingOutAvoidTwoFactorVerification => 'Влезте в рамките на 10 минути след излизане, за да избегнете двуфакторна проверка.';
 	@override String leastXmobileNumbersMustCompleted({required Object n}) => 'Поне ${n} мобилни телефонни номера трябва да бъдат попълнени';
-	@override String get noAccessNumberInYourRegionYet => 'Все още няма номер за достъп във вашия регион';
+	@override String get noAccessNumberInYourRegionYet => 'Все още няма номер за достъп във Вашия регион';
 	@override String get notEnoughAccessNumbersInYourRegion => 'Няма достатъчно номера за достъп във вашия регион';
 	@override String get tipsForDeployDSMSterminal => 'Системата автоматично е заредила някои номера за достъп от други държави за вас. За да предоставите по-добри и евтини услуги за проверка, се препоръчва вие или вашето препоръчано лице да разположите DSMS терминала локално, за да печелите такси за проверка.';
 	@override String get noOneCanProvideMeTheSecurityCode => 'Никой не може да ми предостави кода за сигурност?';
@@ -1503,6 +1537,38 @@ class _StringsBg implements Translations {
 	@override String get enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted => 'Моля, въведете свързания им мобилен номер. Кодът на държавата може да бъде пропуснат.';
 	@override String mobileNumberForNameIsIncorrect({required Object name}) => 'Мобилният номер на ${name} е неправилен';
 	@override String get matchingVerificationStrategyIs => 'Стратегията за проверка на съответствието е:';
+	@override String get balanceGreater3ICP_noNeedPourFuel => 'Салдо по-голямо от 3 ICP, няма нужда да се налива гориво за момента.';
+	@override String get escrowAccount => 'Escrow акаунт';
+	@override String get fuelRelay => 'Реле за гориво';
+	@override String get pourFuel => 'Наливане на гориво';
+	@override String get fuelState => 'състояние на гориво';
+	@override String get pouringFuelTips => 'Наливането на гориво не ви носи никакви предимства или недостатъци, целта му е да обогати изживяването на системата Delta.';
+	@override String get sponsorDevelopersByWatchingAds => 'Спонсорирайте разработчиците, като гледате реклами';
+	@override String get status => 'Състояние';
+	@override String get date => 'Дата';
+	@override String get assetApplicationIsInProgressTip => 'Прилагането на актив се изпълнява, моля, опитайте отново след 3 секунди.';
+	@override String get delete => 'Изтриване';
+	@override String get deleteVerifierTip => 'Когато изтривате разрешенията на верификатор, всички свързани данни за резултатите ще бъдат изтрити едновременно, но вече получените награди няма да бъдат засегнати.';
+	@override String get deleteVerifierStatusTip => 'Моля, задайте го на пауза, преди да изтриете';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'Моля, въведете "${text}", за да потвърдите';
+	@override String get localSecurity => 'Локална сигурност';
+	@override String get deviceLock => 'Заключване на устройството';
+	@override String get patternLock => 'Заключване на шаблон';
+	@override String get none => 'няма';
+	@override String get exist => 'съществува';
+	@override String get prompt => 'Подкана:';
+	@override String get localSecurityTip1 => '1. Локалното удостоверяване на сигурността се използва за потвърждаване на самоличността по време на някои чувствителни операции. Целта му е да предотврати контролирането на устройството от други и да гарантира сигурността на акаунта.';
+	@override String get localSecurityTip2 => '2. Заключването на шаблон е допълнително решение, когато заключването на устройството не се поддържа или е несъвместимо. По принцип няма нужда да задавате заключване на модел, когато заключването на устройството е налично.';
+	@override String get localSecurityTip3 => '3. Когато вашето заключване на шаблон е забравено, можете само да изчистите данните на приложението или да го инсталирате отново, за да го изчистите.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'Удостоверяването на устройството е на път да бъде извикано. Ако възникне грешка или изключение, моля, отидете на опцията "${localSecurity}" на страницата "${menu}" за тестване и допълнителни настройки.';
+	@override String get pleaseDrawUnlockPattern => 'Моля, начертайте шаблона за отключване';
+	@override String get addPatternLock => 'Добавяне на заключване на шаблон';
+	@override String get cannotBeLessThan8Dots => 'Не може да бъде по-малко от 8 точки';
+	@override String get pleaseRepeatThePattern => 'Моля, повторете модела отново';
+	@override String get notMatchFirstValidPattern => 'Не съответства на първия валиден модел на чертеж';
+	@override String get deletePatternLock => 'Изтриване на заключване на шаблон';
+	@override String get notMatchExistingPattern => 'Не съответства на съществуващ модел';
+	@override String get localAuthentication => 'Локално удостоверяване';
 }
 
 // Path: <root>
@@ -1833,14 +1899,14 @@ class _StringsBn implements Translations {
 	@override String get tempDepositAddressTip3 => '3. অনুগ্রহ করে এমন তহবিল জমা করার চেষ্টা করবেন না যা উপরের টিপসগুলির সাথে কোনও প্যারামিটারের সাথে মেলে না, অন্যথায় পরিমাণটি হারিয়ে যাবে৷';
 	@override String get tempDepositAddressTip4 => '4. আপনি যদি অন্য ধরনের সম্পদ জমা করতে চান, তাহলে অনুগ্রহ করে একটি নতুন ঠিকানার জন্য আবেদন করার জন্য সংশ্লিষ্ট মুদ্রা পৃষ্ঠা এবং প্যারামিটার বিকল্পগুলিতে স্যুইচ করুন।';
 	@override String get applyExtensionOfValidity => 'মেয়াদ বাড়ানোর জন্য আবেদন করুন';
-	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap }) => TextSpan(children: [
-		const TextSpan(text: 'ঠিকানাটির মেয়াদ '),
+	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
+		const TextSpan(text: 'এই ঠিকানাটির মেয়াদ '),
 		diff,
-		const TextSpan(text: ' পরে শেষ হয়ে যাবে, এবং মেয়াদ শেষ হওয়ার 12 ঘন্টার মধ্যে আপনি '),
-		tap ('ম্যানুয়ালি প্রসারিত'),
-		const TextSpan(text: ' করতে পারেন৷'),
+		const TextSpan(text: '-এ শেষ হবে। মেয়াদ শেষ হওয়ার 6 ঘণ্টার মধ্যে আপনি '),
+		tap('manually extend'),
+		const TextSpan(text: ' করতে পারেন।'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'শুধুমাত্র 12 ঘন্টা আগে পুনর্নবীকরণ করা যাবে';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'শুধুমাত্র 6 ঘন্টা আগে থেকেই নবায়ন করা যাবে';
 	@override String get theReceivingAddressValidForLongtime => 'এই পেমেন্ট ঠিকানা দীর্ঘ সময়ের জন্য বৈধ.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'এই পেমেন্ট ঠিকানাটি দীর্ঘ সময়ের জন্য বৈধ এবং রিয়েল টাইমে স্বয়ংক্রিয়ভাবে জমা হবে।';
 	@override String get confirmDeposited => 'জমা নিশ্চিত করুন';
@@ -2100,7 +2166,7 @@ class _StringsBn implements Translations {
 	@override String get referrerIdDoesNotExist => 'রেফারার আইডি নেই!';
 	@override String get didIsIncorrectOrInvalid => 'ডিআইডি ভুল নাকি অবৈধ!';
 	@override String get accessTokenIsIncorrectOrInvalid => 'অ্যাক্সেস টোকেন ভুল বা অবৈধ!';
-	@override String get minimumWithdrawalAmountIs9USD => 'এক সময়ের জন্য সর্বনিম্ন উত্তোলনের পরিমাণ হল 9USD৷';
+	@override String get minimumWithdrawalAmountIs1USD => 'এক সময়ের জন্য সর্বনিম্ন উত্তোলনের পরিমাণ হল 1USD৷';
 	@override String get miningTimeIsNotYet => 'খনির সময় এখনও আসেনি';
 	@override String get alreadyExists_pleaseDoNotRepeatedly => 'ইতিমধ্যেই বিদ্যমান, দয়া করে আবার যোগ করবেন না!';
 	@override String get registrationNumberCannotBeUsedAsAccessNumber => 'নিবন্ধন নম্বর যাচাইকরণ অ্যাক্সেস নম্বর হিসাবে ব্যবহার করা যাবে না';
@@ -2188,6 +2254,753 @@ class _StringsBn implements Translations {
 	@override String get enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted => 'অনুগ্রহ করে তাদের সংশ্লিষ্ট মোবাইল ফোন নম্বর লিখুন। দেশের কোড বাদ দেওয়া যেতে পারে।';
 	@override String mobileNumberForNameIsIncorrect({required Object name}) => '${name} এর মোবাইল নম্বরটি ভুল';
 	@override String get matchingVerificationStrategyIs => 'ম্যাচিং যাচাইকরণ কৌশল হল:';
+	@override String get balanceGreater3ICP_noNeedPourFuel => 'ব্যালেন্স 3 ICP-এর বেশি, অস্থায়ীভাবে জ্বালানি ঢালার দরকার নেই।';
+	@override String get escrowAccount => 'এসক্রো অ্যাকাউন্ট';
+	@override String get fuelRelay => 'ফুয়েল রিলে';
+	@override String get pourFuel => 'জ্বালানি ঢালা';
+	@override String get fuelState => 'জ্বালানির অবস্থা';
+	@override String get pouringFuelTips => 'জ্বালানি ঢালা আপনার কোন সুবিধা বা অসুবিধা বয়ে আনবে না এবং এর উদ্দেশ্য হল ডেল্টা সিস্টেমের অভিজ্ঞতাকে সমৃদ্ধ করা।';
+	@override String get sponsorDevelopersByWatchingAds => 'বিজ্ঞাপন দেখে ডেভেলপারদের স্পনসর করুন';
+	@override String get status => 'স্থিতি';
+	@override String get date => 'তারিখ';
+	@override String get assetApplicationIsInProgressTip => 'সম্পদ আবেদন প্রক্রিয়াধীন, অনুগ্রহ করে ৩ সেকেন্ডের মধ্যে আবার চেষ্টা করুন।';
+	@override String get delete => 'মুছুন';
+	@override String get deleteVerifierTip => 'একটি যাচাইকারীর অনুমতি মুছে ফেলার সময়, সমস্ত সম্পর্কিত স্কোর ডেটা একই সময়ে মুছে ফেলা হবে, তবে ইতিমধ্যে প্রাপ্ত পুরস্কারগুলি প্রভাবিত হবে না।';
+	@override String get deleteVerifierStatusTip => 'মুছে ফেলার আগে দয়া করে এটিকে বিরতি দেওয়া অবস্থায় সেট করুন';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'নিশ্চিত করতে দয়া করে "${text}" লিখুন';
+	@override String get localSecurity => 'স্থানীয় নিরাপত্তা';
+	@override String get deviceLock => 'ডিভাইস লক';
+	@override String get patternLock => 'প্যাটার্ন লক';
+	@override String get none => 'কিছুই না';
+	@override String get exist => 'বিদ্যমান';
+	@override String get prompt => 'প্রম্পট:';
+	@override String get localSecurityTip1 => '1. কিছু সংবেদনশীল ক্রিয়াকলাপের সময় পরিচয় নিশ্চিত করতে স্থানীয় নিরাপত্তা প্রমাণীকরণ ব্যবহার করা হয়। এর উদ্দেশ্য হল ডিভাইসটিকে অন্যদের দ্বারা নিয়ন্ত্রিত হওয়া থেকে বিরত রাখা এবং অ্যাকাউন্টের নিরাপত্তা নিশ্চিত করা।';
+	@override String get localSecurityTip2 => '2. প্যাটার্ন লক হল একটি সম্পূরক সমাধান যখন ডিভাইস লক সমর্থিত বা বেমানান। সাধারণত, ডিভাইস লক উপলব্ধ থাকলে প্যাটার্ন লক সেট করার কোন প্রয়োজন নেই।';
+	@override String get localSecurityTip3 => '3. যখন আপনার প্যাটার্ন লকটি ভুলে যায়, তখন আপনি শুধুমাত্র অ্যাপের ডেটা সাফ করতে পারেন বা এটি সাফ করতে অ্যাপটি পুনরায় ইনস্টল করতে পারেন।';
+	@override String deviceAuthFirstTip({required Object menu, required Object localSecurity}) => 'ডিভাইস প্রমাণীকরণ কল করা হতে চলেছে। যদি কোনো ত্রুটি বা ব্যতিক্রম ঘটে, অনুগ্রহ করে পরীক্ষা এবং আরও সেটিংসের জন্য "${menu}" পৃষ্ঠার "${localSecurity}" বিকল্পে যান।';
+	@override String get pleaseDrawUnlockPattern => 'অনুগ্রহ করে আনলক প্যাটার্ন আঁকুন';
+	@override String get addPatternLock => 'প্যাটার্ন লক যোগ করুন';
+	@override String get cannotBeLessThan8Dots => '8টি বিন্দুর কম হতে পারে না';
+	@override String get pleaseRepeatThePattern => 'দয়া করে আবার প্যাটার্নটি পুনরাবৃত্তি করুন';
+	@override String get notMatchFirstValidPattern => 'প্রথম বৈধ অঙ্কন প্যাটার্নের সাথে মেলে না';
+	@override String get deletePatternLock => 'প্যাটার্ন লক মুছুন';
+	@override String get notMatchExistingPattern => 'একটি বিদ্যমান প্যাটার্নের সাথে মেলে না';
+	@override String get localAuthentication => 'স্থানীয় প্রমাণীকরণ';
+}
+
+// Path: <root>
+class _StringsCkb implements Translations {
+	/// You can call this constructor and build your own translation instance of this locale.
+	/// Constructing via the enum [AppLocale.build] is preferred.
+	_StringsCkb.build({Map<String, Node>? overrides, PluralResolver? cardinalResolver, PluralResolver? ordinalResolver})
+		: assert(overrides == null, 'Set "translation_overrides: true" in order to enable this feature.'),
+		  $meta = TranslationMetadata(
+		    locale: AppLocale.ckb,
+		    overrides: overrides ?? {},
+		    cardinalResolver: cardinalResolver,
+		    ordinalResolver: ordinalResolver,
+		  ) {
+		$meta.setFlatMapFunction(_flatMapFunction);
+	}
+
+	/// Metadata for the translations of <ckb>.
+	@override final TranslationMetadata<AppLocale, Translations> $meta;
+
+	/// Access flat map
+	@override dynamic operator[](String key) => $meta.getTranslation(key);
+
+	@override late final _StringsCkb _root = this; // ignore: unused_field
+
+	// Translations
+	@override String get home => 'سەرەتا';
+	@override String get switchLanguage => 'گۆرینی زمان';
+	@override String get languageSwitch => 'گۆڕینی زمان';
+	@override String get slogan => 'ناوچەیەکی ئابووری لامەرکەزی لە دێڵتا دروست بکە';
+	@override String get countryRegionCode => 'کۆدی وڵات / ناوچە';
+	@override String get countryRegionSelection => 'هەڵبژاردنی وڵات / هەرێم';
+	@override String get nextStep => 'هەنگاووی دواتر';
+	@override String get yourPhoneNumber => 'ژمارە مۆبایڵت بنوسە';
+	@override String get pleaseSelectCountryAndRegion => 'تکایە وڵاتەکەت هەڵبژێرە';
+	@override String get pleaseEnterPhoneNumber => 'تکایە ژمارەیەکی تەلەفۆنی دروست دابنێ!';
+	@override String get referrerDid => 'کۆدی بانگێشت نامە';
+	@override String get pleaseEnterTheReferrersDid => 'تکایە ناسێنەری لامەرکەزی ڕەوانەکەرێکی دروست دابنێ';
+	@override String get thisDidIsInvalid => 'ئەم بانگێشت نامەی داتناوە درووست نیە';
+	@override String get nicknameFormatTips => 'نازناو ناتوانرێت بەتاڵ بێت و درێژییەکەی لە ١٦ پیت زیاتر نەبێت';
+	@override String get additionalIinformation => 'زانیاری زیاتر';
+	@override String get invitationSubject => 'بانگهێشتتان دەکەم بۆ بەشداریکردن لە بنیاتنانی کۆدەنگی دێڵتا';
+	@override String invitationLetter({required Object did}) => 'سڵاو، من بەشداری لە بنیاتنانی کۆدەنگیی دێڵتا دەکەم!\n دێڵتا پلاتفۆرمی سەرچاوە کراوەی پارەی دیجیتاڵی نوێیە کە لەسەر ئینتەرنێتکۆمپیوتەر کاردەکات. دەتوانێت دراوی دیجیتاڵی جۆراوجۆر بەڕێوەببات و بەکاریبهێنێت بەبێ وشەی نهێنی، کلیلی تایبەت، یان یادەوەری. تکایە کلیک لەم بەستەرە بکە https://delta.kim/auto/download بۆ دامەزراندنی بەرنامەکە. ئێستا بانگهێشتتان دەکەین بۆ ئەوەی لەگەڵمان بن لە دروستکردنی کۆدەنگی و دروێنەکردنی سکە.\n بانگێشت نامە : ${did}';
+	@override String get dSMSverification => 'پشتڕاستکردنەوەی کورتەنامە';
+	@override String get getAccessNumbers => 'هەندێک ژمارەی دەستگەیشتن بەدەست بهێنە';
+	@override String get getAccessNumberPromptMessage => 'کلیک لە دوگمەی "Get" لە خوارەوە بکە بۆ هەڵبژاردنی کۆمەڵێک ژمارەی دەستڕاگەیشتن بە پشتڕاستکردنەوەی کورتەنامە لە ڕیزەکەدا بە نۆرە';
+	@override String get optionalAccessNumbers => 'ژمارەی دەستگەیشتن بە ئیختیاری';
+	@override String get accessNumber => 'ژمارەی دەستگەیشتن';
+	@override String get TELCO => 'کۆمپانیای تێلکۆ';
+	@override String get score => 'سەرچاوە';
+	@override TextSpan checkAccessNumberTip({required num n, required InlineSpan Function(num) nBuilder, required InlineSpanBuilder span}) => RichPluralResolvers.bridge(
+		n: n,
+		resolver: _root.$meta.cardinalResolver ?? PluralResolvers.cardinal('ckb'),
+		one: () => TextSpan(children: [
+			const TextSpan(text: 'تکایە ژمارەی دەستگەیشتن '),
+			nBuilder(n),
+			const TextSpan(text: ' بپشکنە و کرتە لە دوگمەی "'),
+			span('text'),
+			const TextSpan(text: '" بکە بۆ ئەوەی بچیتە هەنگاوی داهاتوو.'),
+		]),
+		other: () => TextSpan(children: [
+			const TextSpan(text: 'تکایە ژمارەکانی دەستگەیشتن '),
+			nBuilder(n),
+			const TextSpan(text: ' بپشکنە و کرتە لە دوگمەی "'),
+			span('text'),
+			const TextSpan(text: '" بکە بۆ ئەوەی بچیتە هەنگاوی داهاتوو.'),
+		]),
+	);
+	@override String get whatIsDeltaDesc => 'دێڵتا پڕۆژەیەکی تاقیکاری جیهانی دراوی دیجیتاڵی لامەرکەزی سەرچاوە کراوە و ئیکۆسیستەمێکی بەکارهێنانی دراوە.';
+	@override String get deltaGoalsDesc => 'ئامانج لێی ئەوەیە خەڵک بتوانن کۆمپانیای دێڵتا بەکاربهێنن بۆ ئەوەی بە هاوبەشی دراوێکی دیجیتاڵی نوێی گشتگیر و دادپەروەرانە و پارێزراو و خێرا و سەوز بنیات بنێن. وە دابینکردنی سیناریۆی جۆراوجۆری کاریگەر بۆ ئەم دراوە دیجیتاڵیانە و دراوە کریپتۆکانی پێشوو.';
+	@override String get details => 'زانیاری زیاتر';
+	@override String get get => 'وەرگرتن';
+	@override String get select => 'دیاریکردن';
+	@override String get send => 'ناردن';
+	@override String get complete => 'سەرکەوتوبو';
+	@override String get selectedAccessNumberPrompt => 'کاتێک هەڵدەبژێردرێت، ژمارەی دەستگەیشتن بە تەواوی پیشان دەدرێت و ڕیزێکی ڕەسەنایەتی دروست دەکرێت.';
+	@override String get location => 'شوێن';
+	@override String get verificationString => 'ڕستەی پشتڕاستکردنەوە';
+	@override TextSpan sendVerificationStringDesc({required InlineSpan num, required InlineSpan label, required InlineSpan accessNumber}) => TextSpan(children: [
+		const TextSpan(text: 'تکایە ژمارەی تەلەفۆنەکەت '),
+		num,
+		const TextSpan(text: ' بەکاربهێنە، '),
+		label,
+		const TextSpan(text: ' بنێرە بۆ '),
+		accessNumber,
+		const TextSpan(text: ' بۆ تەواوکردنی پشتڕاستکردنەوەکە.'),
+	]);
+	@override String get ihaveSentTheSMS => 'کورتەنامەکەم ناردووە';
+	@override TextSpan validWithin6minutes({required InlineSpan time}) => TextSpan(children: [
+		const TextSpan(text: 'ڕیزەکەی پشتڕاستکردنەوە بۆ ماوەی ٦ خولەک کارا دەبێت، کاتی ماوە: '),
+		time,
+		const TextSpan(text: ' .'),
+	]);
+	@override String tooFast_waitXsecondsContinuing({required Object x}) => 'زۆر خێرا، چاوەڕێی ${x} چرکە بکە پێش ئەوەی بەردەوام بیت!';
+	@override String get waitingForVerificationSMS => 'چاوەڕوانی کورتەنامەی پشتڕاستکردنەوە...';
+	@override String get partSuccsForVerificationSMS => 'پشتڕاستکردنەوەی کورتەنامە لە یەکێک لە تێرمیناڵەکانی دەستگەیشتن تێپەڕیوە.';
+	@override String get creatingAccessToken => 'دروستکردنی نیشانەی دەستڕاگەیشتن...';
+	@override String get intoDelta => 'بۆ ناو دێڵتا';
+	@override String get deltaAccountIsLoggedIn => 'ئەکاونتی Delta ی تۆ چووەتە ژوورەوە';
+	@override String get iHavLoggedOut => 'من چوومەتە دەرەوە';
+	@override String get startTwoFactorVerification => 'دەستپێکردنی پشتڕاستکردنەوەی دوو فاکتەری';
+	@override String get securityCircleVerification => 'دڵنیاکردنەوەی بازنەی ئاسایش';
+	@override String get generateSecurityCode => 'دروستکردنی کۆدی ئاسایش';
+	@override String get generateSecurityCodeHintText => 'کۆدی ئاسایشی دروستکراو دەنێردرێت بۆ ئەندامێکی هەڵبژێردراوی هەڕەمەکی بازنەی ئاسایشەکەت.';
+	@override String get notSetSecurityCircleEnterPlaceholderTip => 'هێشتا بازنەی ئاسایشت دانەناوە، ئەکاونتەکەت زۆر ناپارێزراوە، تکایە هەر شوێنگرەوەیەکی ٦ ژمارەیی داخڵ بکە، و بچۆ بۆ هەنگاوی داهاتوو.';
+	@override String get securityCodeHasBeenGenerated_ContactFriendsTip => 'کۆدی ئاسایش دروست کراوە، تکایە پەیوەندی بەم خزم و هاوڕێیانەوە بکەن، و داوایان لێ بکەن کۆدی ئاسایش دەربهێنن بۆ ئەوەی تۆ لە پشتڕاستکردنەوەکەدا تێپەڕیت. لە ماوەی ٣٠ خولەکدا کارا دەبێت!';
+	@override String get itGetSecurityCodeTip => 'ئامۆژگاری: نازناوی ئەکاونتەکەت لە پەڕەی Delta App -> Menu -> Provide Security دەدۆزێتەوە و دووجار کلیک دەکات بۆ بەدەستهێنانی کۆدی ئاسایش.';
+	@override String get securityCircleMemberList => 'لیستی ئەندامانی بازنەی ئاسایش:';
+	@override String get selectA_friendToProvideSecurityCodeTip => 'تکایە خزمێک یان هاوڕێیەک لە لیستی ئەندامان هەڵبژێرە بۆ ئەوەی دروستی بکات و کۆدێکی ئاسایشت بۆ دابین بکات بۆ پشتڕاستکردنەوەی ناسنامەی ڕاستەقینەی خۆت. مەبەست لێی ڕێگریکردنە لەوەی کە ئەکاونتەکە لەلایەن کەسانی دیکەوە کۆنترۆڵ نەکرێت کاتێک ژمارەی مۆبایلەکە ون دەبێت یان دزراوە.';
+	@override String formatIsXdigits({required Object num}) => 'فۆرماتەکە بریتییە لە ${num} ژمارە';
+	@override String get signInSuccessfully => 'بە سەرکەوتوویی بچۆرە ژوورەوە!';
+	@override String get twoFAandLogin => 'ڕەسەنایەتی دوو فاکتەری و چوونەژوورەوە';
+	@override String get verificationSuccessful => ' پشتڕاستکردنەوە سەرکەوتوو بوو !';
+	@override String get validationFailed => 'چەسپاندن شکستی هێنا !';
+	@override String get securityCircle => 'بازنەی ئاسایش';
+	@override String get securityCode => 'کۆدی ئاسایش';
+	@override String get provideSecurity => 'دابینکردنی ئاسایش';
+	@override String get addManully => 'بە دەست زیادکردن';
+	@override String get addFromContacts => 'زیادکردن لە پەیوەندییەکان';
+	@override String get addSecurityCircle => 'یادکردنی بازنەی ئاسایش';
+	@override String get inputType => 'جۆری هاتنەژوورەوە';
+	@override String get mobileNumber => 'ژمارەی مۆبایل';
+	@override String get did => 'کۆد';
+	@override String get pleaseEnterValidDID => 'تکایە ناسێنەرێکی لامەرکەزی دروست دابنێ';
+	@override String get pleaseEnterValidWalletAddress => 'تکایە ناونیشانی جزدانێکی دروست دابنێ';
+	@override String get appellation => 'ناونیشان';
+	@override String get appellationHint => 'ئەوەی ناوی دەبەیت، وەک "baby"';
+	@override String get addSecurityCircleTips => 'تکایە کەسانی باوەڕپێنەکراو زیاد مەکەن بۆ بازنەکانی ئاسایش.';
+	@override String get referralTeam => 'تیمی ڕەوانەکردن';
+	@override String get profile => 'پڕۆفایلی';
+	@override String get menu => 'مێنۆ';
+	@override String get directly => 'ڕاستەوخۆ';
+	@override String get indirectly => 'ناڕاستەوخۆ';
+	@override String get inviteContacts => 'بانگهێشتی پەیوەندییەکان';
+	@override TextSpan refereesAtFirstLevelDesc({required InlineSpan nickname, required InlineSpan num1, required InlineSpan num2}) => TextSpan(children: [
+		const TextSpan(text: 'ناونیشاندەرەکەت '),
+		nickname,
+		const TextSpan(text: ' یە، تۆ ڕاستەوخۆ پێشنیاری '),
+		num1,
+		const TextSpan(text: ' کەست کردووە و '),
+		num2,
+		const TextSpan(text: 'یان لە ئێستادا سەرهێڵن.'),
+	]);
+	@override TextSpan refereesAtSecondLevelDesc({required InlineSpan num1, required InlineSpan num2}) => TextSpan(children: [
+		const TextSpan(text: 'تۆ بە شێوەیەکی ناڕاستەوخۆ پێشنیاری '),
+		num1,
+		const TextSpan(text: ' کەست کردووە، لەنێویاندا '),
+		num2,
+		const TextSpan(text: ' کەس کە لە ئێستادا سەرهێڵن.'),
+	]);
+	@override TextSpan invitationToBoostMiningDesc({required InlineSpan rate1, required InlineSpan btn}) => TextSpan(children: [
+		const TextSpan(text: 'هاوڕێکان بانگهێشت بکە بۆ ئەوەی بەشداری لە Delta بکەن و پێکەوە کۆدەنگی کۆمەڵایەتی باشتر بکەن. ڕێژەی کانگاکردنی هەر کەسێک کە ڕاستەوخۆ پێشنیار کراوە بە ڕێژەی '),
+		rate1,
+		const TextSpan(text: ' لە ڕێژەی بنەڕەتی زیاد دەکات. '),
+		btn,
+	]);
+	@override TextSpan invitationToBoostMiningDesc2({required InlineSpan rate2}) => TextSpan(children: [
+		const TextSpan(text: 'هاوڕێیان بانگهێشت بکە بۆ ئەوەی بەشداری لە کۆمپانیای دێڵتا بکەن و پێکەوە کۆدەنگی کۆمەڵایەتی باشتر بکەن. ڕێژەی کانگاکردنی هەر کەسێک کە بە شێوەیەکی ناڕاستەوخۆ پێشنیار کراوە بە ڕێژەی '),
+		rate2,
+		const TextSpan(text: ' لە ڕێژەی بنەڕەتی زیاد دەکات.'),
+	]);
+	@override String areYouSureToRemove_x({required Object name}) => 'ئایا دڵنیای لە لابردنی "${name}"؟';
+	@override String get safetyCircleRoleQ => 'ئەرکی بازنەی سەلامەتی چییە؟';
+	@override String get safetyCircleRoleA => 'ڕەسەنایەتی لاوەکی لە دۆخە هەستیارەکاندا دابین دەکات بۆ پاراستنی ئاسایشی ئەکاونتەکەت.';
+	@override String get howSecurityCirclesWorkQ => 'بازنەی ئاسایش چۆن کاردەکات؟';
+	@override String get howSecurityCirclesWorkA => 'کاتێک بازنەی ئاسایش پێویستە بۆ پشتڕاستکردنەوە، بەرنامەی گرێبەستی زیرەکی دێڵتا بە شێوەیەکی هەڕەمەکی ئەندامێک لە لیستی هاوڕێکانی بازنەی ئاسایش هەڵدەبژێرێت بۆ ئەوەی یارمەتیت بدات کۆدێکی ئاسایش دابین بکات بۆ تەواوکردنی پشتڕاستکردنەوەی ئاسایشی ناسنامە بۆ تۆ. کاتێک داوای کۆدی ئاسایش لە ئەندامەکە دەکەیت، دەتوانێت پشتڕاستی بکاتەوە کە تۆ بەڕاستی تۆیت. لە هەمان کاتدا، بەرنامەکە داوای لێدەکات: "ئەگەر تۆ نەبیت، ڕەتیدەکاتەوە کۆدی ئاسایش دابین بکات", بۆ ئەوەی ئاسایشی ئەکاونتەکەت بپارێزیت. بۆیە پێویستە هەمیشە دڵنیا بیت لەوەی کە ئەندامانی بازنەی ئاسایشت کەسانێکن کە دەتوانیت متمانەیان پێ بکەیت.';
+	@override String get securityCircleBeUsedQ => 'کەی بەکاری دەهێنیت؟';
+	@override String get securityCircleBeUsedA1 => '1. کاتێک Delta APP ـەکەت لە کۆنتڕۆڵ دەرچووە، دۆخی گشتی ئەوەیە کە مۆبایلەکە ون بووە یان دزراوە.';
+	@override String get securityCircleBeUsedA2 => '2. لە حاڵەتی هەندێک کارپێکردنی هەستیاردا، بەرنامەی گرێبەستی زیرەکی دێڵتا پێویستی بە پشتڕاستکردنەوەی هەیە کە تۆ خۆتیت.';
+	@override String get provideSafetyTip1 => 'کاتێک هاوڕێکەت داوای کۆدی ئاسایشی خۆیت لێدەکات، تکایە دڵنیابە پشتڕاستی دەکەیتەوە کە ئەوە.';
+	@override String get provideSafetyTip2 => 'تۆ پاراستنی ئاسایش بۆ ئەو هاوڕێیەی سەرەوە دابین دەکەیت. ئەوان تۆیان وەک متمانەپێکراوترین کەس لە بازنەی ئاسایشدا داناوە، و پێویستە پشتڕاستکردنەوەی ئاسایشیان بۆ دابین بکەیت کاتێک ئەکاونتەکانیان ڕووبەڕووی کارێکی هەستیار دەبنەوە.';
+	@override String get provideSafetyTip3 => 'کاتێک پێویست بوو، دووجار کلیک لەسەر ئاڤاتاری لایەنی بەرامبەر بکە بۆ دەرهێنانی کۆدی ئاسایش.';
+	@override String get doesNotSecurityCodeNeedsRetrieved => 'لایەنی بەرامبەر لە ئێستادا کۆدێکی ئاسایشی نییە کە پێویستی بە وەرگرتنەوە هەبێت !';
+	@override String get existSecurityCodeTip => 'تکایە دڵنیابە لەوەی کە ئەو خزم یان هاوڕێیەی کە داوای کۆدی ئاسایشت لێدەکات خۆیەتی. بۆ پاراستنی سەلامەتی خزم یان هاوڕێکە، پێویستە ڕەتی بکەیتەوە دابینی بکەیت ئەگەر خزم یان هاوڕێکە خۆی نەبێت.';
+	@override String get avatarSettings => 'ڕێکخستنەکانی ئاڤاتاری';
+	@override String get NFTAvatarPropertyRightsText => 'ڕەتکردنەوەی بەرپرسیاریەتی: بەکارهێنانی NFT پەیوەندیدارەکان وەک ئاڤاتاری تەنها هەڵبژاردنێکی کەسییە، و هیچ پەیوەندییەکی بە خاوەندارێتی مافی خاوەندارێتی فیکری NFTەوە نییە.';
+	@override String get projectWebsite => 'ماڵپەڕی پڕۆژە: ';
+	@override String get whitepaper => 'کاغەزی سپی:';
+	@override String get indexID => 'ناسنامەی ئیندێکس';
+	@override String indexesRangeFromXtoY({required Object start, required Object end}) => 'ئیندێکسەکان لە ${start} تا ${end}';
+	@override String get inputToLoadNFTAvatarTip => 'ناسنامەی ئیندێکسی NFT دڵخوازەکەت دابنێ، و بەرنامەکە بە شێوەیەکی ئۆتۆماتیکی وەک ئاڤاتاری تۆ باری دەکات.';
+	@override String get miningRate => 'رێژەی کانگاکردن';
+	@override String get miningDetails => 'وردەکارییەکانی کانگا';
+	@override TextSpan totalMiningRateEachDay({required InlineSpan rate}) => TextSpan(children: [
+		const TextSpan(text: 'کۆی گشتی ڕێژەی کانگاکردن: '),
+		rate,
+		const TextSpan(text: ' δ/ڕۆژ'),
+	]);
+	@override String get EndOfMiningSession => 'کۆتایی دانیشتنی کانگا: ';
+	@override String get tapToMineDeltaCoin => 'تاپ بۆ کانگاکردنی دراوی دێڵتا ↑';
+	@override String get clickToStartMining => 'بۆ دەستپێکردنی کانگاکردن پەنجە بنێ!';
+	@override String get miningHasStoppedPromptDesc => 'کانگاکردن وەستاوە، هەر ٢٤ کاتژمێر جارێک خولێکی کانگاکردنە، کلیک لەسەر ئایکۆنی ڕەشەبا بکە بۆ دەستپێکردنی خولێکی نوێی کانگاکردن. کانگاکردنی دێڵتا میکانیزمێکی دابەشکردنە کە هێزی کۆمپیوتەری زیادە و هاتوچۆی تۆڕی ئامێرەکەت بەکارناهێنێت.';
+	@override String get aboutBaseRate => 'دەربارەی ڕێژەی بنەڕەتی؟';
+	@override String get baseRateDescription => 'بەپێی ڕێککەوتنەکە لە وەرەقە سپییەکەدا، یاسای بنەڕەتی کەمکردنەوەی ڕێژە لە کانگاکانی دێڵتا دابەش دەکرێت بۆ دوو قۆناغ. \nقۆناغی یەکەم: کاتێک ژمارەی بەشداربووان (تۆمارکردن) ٣٠٠٠ یان کەمتر بێت، ڕێژەکە ٣٢δ/ڕۆژە. بە بەکارهێنانی ئەمە وەک خاڵی دەستپێک، هەر جارێک ژمارەی خەڵک بە فاکتەری ١٠ زیاد دەکات، ڕێژەی بنەڕەتییە. \nقۆناغی دووەم: کاتێک ژمارەی بەشداربووان دەگاتە ٣٠ ملیۆن و سەرووتر، هەر جارێک ژمارەی خەڵک ٣ هێندە زیاد دەکات، ڕێژەی بنەڕەتی بۆ نیوە کەم دەکرێتەوە تا کۆتایی هەڵکەندنی بەرهەمهێنان.';
+	@override String get baseRate => 'ڕێژەی بنەڕەتی';
+	@override String get directReferralRewards => 'پاداشتی ڕەوانەکردنی ڕاستەوخۆ';
+	@override String get directReferralRewardDesc => 'بۆ هەر کەسێک کە ڕاستەوخۆ پێشنیار دەکرێت، کاتێک کەسەکە لە دۆخی کانگاکردندایە، ڕێژەی کانگاکردنەکەت بە ڕێژەی 1/3ی ڕێژەی بنەڕەتی زیاد دەکرێت. \n\n سەرەڕای ئەوەش، دۆخی کانگاکردنی ڕەوانەکەرەکەت هەروەها لە پاداشتی ڕەوانەکردنی ڕاستەوخۆتدا حیسابی بۆ دەکرێت.';
+	@override String get indirectReferralRewards => 'پاداشتی ڕەوانەکردنی ناڕاستەوخۆ';
+	@override String get indirectReferralRewardDesc => 'کاتێک پێشنیارکەرێکی ناڕاستەوخۆ لە دۆخی کانگادا بێت، ڕێژەی کانگاکردنەکەت بە زیادە بە ڕێژەی 1/10ی ڕێژەی بنەڕەتی زیاد دەکرێت. \n\nتیمی ڕەوانەکردنی ڕاستەوخۆت، و هەر کەسێک کە ڕەوانەی دەکەن نوێنەرایەتی ڕەوانەکردنێکی ناڕاستەوخۆ دەکەن بۆ تۆ.';
+	@override String get mine => 'من';
+	@override String get thisMiningInformation => 'ئەم زانیارییە کانزایە';
+	@override TextSpan participatedInMiningXtimes({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'بەشداری لە کانگاکردندا کراوە: '),
+		x,
+		const TextSpan(text: ' جار'),
+	]);
+	@override TextSpan totalIncomeThisTimeXDeltaCoins({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'کۆی داهاتی ئەمجارە: '),
+		x,
+		const TextSpan(text: ' دراوی دێڵتا'),
+	]);
+	@override TextSpan basicIncomeXcoins({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'داهاتی بنەڕەتی: '),
+		x,
+		const TextSpan(text: ' دراو'),
+	]);
+	@override TextSpan directTeamContributionXcoins({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'بەشداری ڕاستەوخۆی تیم: '),
+		x,
+		const TextSpan(text: ' دراو'),
+	]);
+	@override TextSpan indirectTeamContributionXcoins({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'بەشداریکردنی ناڕاستەوخۆی تیم: '),
+		x,
+		const TextSpan(text: ' دراو'),
+	]);
+	@override TextSpan timeIntervalFromLastMiningX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'ماوەی کات لە دوایین کانگا: '),
+		x,
+	]);
+	@override TextSpan effectiveMiningTimeXhours({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'کاتی کاریگەرانەی کانگاکردن: '),
+		x,
+	]);
+	@override String xhours({required Object x}) => '${x} کاتژمێر';
+	@override String get keep3_5peopleInTheSafetyCircleTip => 'بۆ ئاسایشی سەروەت و سامان، ئەندامانی بازنەی ئاسایش پێویستە لە هەر کاتێکدا ٣-٥ کەسی متمانەپێکراو بهێڵنەوە.';
+	@override String get index => 'Index';
+	@override String get amount => 'بڕی';
+	@override String get balance => 'هاوسەنگی';
+	@override String get timeStamp => 'مۆری کات';
+	@override String get summary => 'پوختە';
+	@override String get miningHasStopped => 'کانگاکردن وەستاوە.';
+	@override String get miningHasStoppedDesc => 'لە ئێستادا کانگاکەت وەستاوە، و دەتوانیت دەستبەجێ دەست بە بەدەستهێنانی داهات بکەیت.';
+	@override String get startMining => 'دەستپێکردنی کانگا';
+	@override String get changeMobileNumber => 'ژمارەی مۆبایل بگۆڕە';
+	@override String get currentMobileNumber => 'ژمارەی مۆبایلی ئێستا';
+	@override String get newMobileNumber => 'ژمارەی مۆبایلی نوێ';
+	@override String get securityCodeFormatIs6digits => 'فۆرماتەکەی کۆدی ئاسایش ٦ ژمارەیە!';
+	@override String get startVrification => 'دەستپێکردنی پشتڕاستکردنەوە';
+	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'ئەم ژمارەی مۆبایلە پێشتر بوونی هەیە، پەیوەندیدار DID: ${dId}';
+	@override String get noDataYet => 'هێشتا هیچ داتایەک نییە';
+	@override String get previousMobileNumber => 'ژمارەی مۆبایلی پێشوو.';
+	@override String get changeLog => 'لۆگ گۆڕینی';
+	@override String get referralLinkToShare => 'بەستەری ڕەوانەکردن بۆ هاوبەشکردن';
+	@override String get referrer => 'ئاماژەدەر';
+	@override String get isoCountryCode => 'کۆدی وڵاتی ISO';
+	@override String get avatarLogo => 'لۆگۆی ئاڤاتار';
+	@override String get creationTime => 'کاتی دروستکردن';
+	@override String get lastUpdate => 'دوا نوێکردنەوە';
+	@override String get numberOfSecurityCircleMembers => 'ژمارەی ئەندامانی بازنەی ئاسایش';
+	@override String get theLatestMining => 'نوێترین کانگا';
+	@override String get effectiveMiningDays => 'ڕۆژانی کاریگەرانەی کانگا';
+	@override String get modifyNickname => 'دەستکاریکردنی نازناو';
+	@override String get didNotChange => 'نەگۆڕاوە!';
+	@override String get kycVerification => 'پاراستنی KYC';
+	@override String get faceID => 'ناسنامەی ڕووخسار';
+	@override String get touchID => 'ناسنامەی تاچ';
+	@override String get biometricsAuthorizationTest => 'تاقیکردنەوەی ڕێگەپێدانی بایۆمەتری';
+	@override String get currentState => 'دۆخی ئێستا';
+	@override String get biometricsAuthenticationLocalizedReason => 'بۆ پشتڕاستکردنەوەی ناسنامەکەت قفڵی ئامێرەکەت بەکاربهێنە.';
+	@override String get graph => 'گرافیک';
+	@override String get referralRelationshipGraph => 'گرافی پەیوەندی ڕەوانەکردن';
+	@override String get nativeContacts => 'پەیوەندییە ڕەسەنەکان';
+	@override String get registrationAndMiningTrends => 'ڕەوتی تۆمارکردن و کانگاکردن';
+	@override String get inMining => 'لە کانگادا';
+	@override String get registrationVolume => 'قەبارەی تۆمارکردن';
+	@override String get unmined => 'بێ مین';
+	@override String get mined => 'مین';
+	@override String get communityMining => 'کانزاکانی کۆمەڵگا';
+	@override String get consensusPromotionFund => 'سندوقی بەرزکردنەوەی کۆدەنگی';
+	@override String get ecologicalAwardFund => 'سندوقی خەڵاتی ئیکۆلۆژی';
+	@override String get icpFuelCrowdfunding => 'Crowdfunding سووتەمەنی ICP';
+	@override String get coreDeveloperRewards => 'پاداشتی گەشەپێدەری سەرەکی';
+	@override String get totalAllocation => 'کۆی گشتی تەرخانکردن';
+	@override String get miningRatio => 'رێژەی کانگا';
+	@override Map<String, String> get billion => {
+		'300': '300 ملیار',
+		'180': '180 ملیار',
+		'30': '30 ملیار',
+		'60': '60 ملیار',
+	};
+	@override String get watchAdsToSupportDevelopers => 'سەیری ڕێکلامەکان بکە بۆ پشتگیریکردنی گەشەپێدەران';
+	@override String get loadingAdcomponents => 'بارکردنی پێکهاتەکانی ڕێکلام...';
+	@override String get timeIsNotUp => 'کات تەواو نەبووە!';
+	@override String get loadingFailed_maybeTheNetworkIsBlocked => 'بارکردن شکستی هێنا، لەوانەیە تۆڕەکە بلۆک کرابێت!';
+	@override String get pendingUSCTrecords => 'تۆمارە چاوەڕوانکراوەکانی USCT';
+	@override String get pendingUSCTrecordsDesc => 'تۆمارە چاوەڕوانکراوەکانی USCT لە ماوەی 15-30 ڕۆژدا بەراورد دەکرێن و پشتڕاست دەکرێنەوە لەگەڵ پلاتفۆرمی ڕێکلام، تۆمارە ڕەواکان دەگوازرێنەوە بۆ لیستی تۆمارەکانی USCT، و بڕی USCTی هاوتا زیاد دەکرێت بۆ باڵانسی ئەکاونتەکە.';
+	@override String get validity => 'ڕەوایی';
+	@override String get advertiser => 'ڕێکلامکەر';
+	@override String get earned => 'بەدەست هاتووە';
+	@override String get withdraw => 'کشانەوە';
+	@override String get validUSCTrecords => 'تۆمارە دروستەکانی USCT';
+	@override String get USCTmining => 'کانزاکانی USCT';
+	@override String get aboutUSCTmining => 'دەربارەی کانگاکردنی USCT؟';
+	@override String get aboutUSCTminingItme1 => '1. USDT stablecoin ی دۆلاری ئەمریکییە کە لە ئاستی جیهانیدا بەناوبانگە، کە دەتوانرێت بە ئاسانی بگۆڕدرێت بۆ دراوی سەروەری وڵاتانی جیاواز لە ئاڵوگۆڕە سەرەکییەکانی دراوی کریپتۆی جیهاندا.';
+	@override String get aboutUSCTminingItme2 => '2. USCT بەهایەکی کاتییە بۆ پێوانەکردنی داهاتی کانزاکانی USCT، ناوی تەواوی قەرزی دۆلارە، و لە کۆتاییدا دەتوانرێت بگۆڕدرێت بۆ USDT بەپێی کۆتایی ڕاستەقینەی یەکلاکردنەوە و یاساکانی دابەشکردنی پلاتفۆرمی ڕێکلام و بە ڕێژەیەکی هاوتا.';
+	@override String get aboutUSCTminingItme3 => '3. کانگاکردنی USCT ئەرکێکی پارەدارکردنی ڕیکلامی هاتوچۆیە لە کۆمەڵگەی دێڵتا. سوود لە بنکەی بەکارهێنەری گەورەی کۆمەڵگەی دێڵتا وەربگرە بۆ دابینکردنی چەندین سوود بۆ ڕێکلامکەران، گەشەپێدەرانی دێڵتا و کانگەرەکان. ئامانجی دیزاینەکەی دابینکردنی بڕێکی دیاریکراو لە داهاتی کاریگەرە بۆ ئامادەنەبوون لە قۆناغی سەرەتایی ئیکۆلۆژیای دێڵتا هێشتا پێکهاتووە و گەشەی نەکردووە؛ لە هەمان کاتدا، هەروەها بڕێکی دیاریکراو لە پشتگیری دارایی بۆ گەشەپێدەران دابین دەکات بۆ دڵنیابوون لەوەی کە گەشەپێدەران دەتوانن بەردەوام بن لە پێشکەشکردنی خزمەتگوزارییەکانی گەشەپێدان بۆ ماوەیەکی زۆر، و لە کۆتاییدا دەتوانن هەموو پلاندانانی کاغەزی سپی بەدیبهێنن هەروەها کەناڵێکی کاریگەر بۆ بانگەشەکردن بۆ ڕێکلامکەرانی بەرهەمەکە دابین بکەن.';
+	@override String get aboutUSCTminingItme4 => '4. یاساکانی دابەشکردن بە شێوەیەک داڕێژراون کە 40%ی کۆی داهاتەکە وەک کۆمیسیۆنی خزمەتگوزاری تەکنیکی گەشەپێدەر بەکاردەهێنرێت، و 60%ی دیکەش وەک پاداشتی ئامادەنەبوونی کۆمەڵگا بەکاردەهێنرێت. بەشی پاداشتی ئامادەنەبوون مۆدێلێکی دابەشکردنی فرە ئاست هاوشێوەی DTC دەگرێتەبەر، و ئەم پاداشتانەی ئامادەنەبوون بەپێی ڕێژەی... 6:3:1، و 60%ی پاداشتی ئامادەنەبوون بۆ یەک کانگاکردنی USCT هەر جارێک بۆ ئەو ئامادەنەبوونە تەرخانکراوە کە لە ئێستادا سەیری ڕیکلامەکە دەکات , 30% بۆ پێشنیارکەری ئاستی دووەم تەرخانکراوە، و 10% بۆ پێشنیارکەری ئاستی دووەم تەرخانکراوە بە هەمان شێوە، دەتوانیت هەمان پاداشتی پێشنیارکراوی ئەو هاوڕێیانە بەدەستبهێنیت کە پێشنیاری دەکەیت لە ڕێگەی کانگاکردنی USCT دابەشکردن ئەوەیە کە هەر کەسێک دەتوانێت بڕێکی تاڕادەیەک زۆر لە سوودەکانی USDT بەدەستبهێنێت بە پەرەپێدانی تیمێکی ئۆفلاین.';
+	@override String get aboutUSCTminingItme5 => '5. خولی فەسڵکردن 7 ڕۆژە، واتە هەر 7 ڕۆژ جارێک ڕەوایی لەگەڵ پلاتفۆرمی ڕێکلامدا دەپشکنرێت، و داهاتی کاریگەری پشتڕاستکراوە و بڕی ڕاستەقینە لە باڵانسەکەدا تۆمار دەکرێت. کەمترین بڕی پارە بۆ هەر کشانەوەیەک 10USDTە.';
+	@override String linesXtoY({required Object x, required Object y}) => 'Lines ${x} to ${y}';
+	@override String get wallet => 'جزدان';
+	@override String get multiChainWallet => 'جزدانی فرە زنجیرەیی';
+	@override String get deposit => 'پارە دانان';
+	@override String get transfer => 'گواستنەوە';
+	@override String xcoinInWallet({required Object coinCode}) => '${coinCode} لە ناونیشانی جزدان';
+	@override String get transactions => 'مامەڵەکان';
+	@override String get network => 'Network';
+	@override String get walletAddress => 'ناویشنانی جزدان دانێ';
+	@override String get currentAddress => 'current Address';
+	@override String get depositAddress => 'ناونیشانی ناردن';
+	@override String get receivingMoneyAddress => 'پارە گەیشتە ئەم ناونیشانە';
+	@override String get applyTempDepositAddress => 'داواکاری پێشکەش بکە بۆ ناونیشانی دانانی کاتی';
+	@override String get tempDepositAddressTip => '1.ئەمە ناونیشانی پارەدانێکی هاوبەشە. تکایە دوای تەواوبوونی بەکرێدانەکە یان پابەند نەبوون، بڕە پارەکە مەخەنە ناوەوە. بڕە پارەکە لەدەست دەچێت ئەگەر ئەمە ڕووبدات.';
+	@override String get tempDepositAddressTip2 => '2.پێش ئەوەی پارە دابنێیت، تکایە دڵنیابە لەوەی کە [ناوی زنجیرەکە] و [ناوی دراو] بە تەواوی یەکدەگرنەوە؛ ئەگەر نیشانەیەکی گرێبەستە، پێویستە پشتڕاستی بکەیتەوە کە [ستانداردی گرێبەست] و [ناونیشانی گرێبەست] بە تەواوی یەکدەگرنەوە.';
+	@override String get tempDepositAddressTip3 => '3.تکایە هەوڵ مەدە ئەو پارانە دابنێیت کە لەگەڵ هیچ کام لە پارامێتەرەکانی ناو ئامۆژگارییەکانی سەرەوەدا ناگونجێت، ئەگەرنا بڕە پارەکە لەدەست دەچێت.';
+	@override String get tempDepositAddressTip4 => '4.ئەگەر پێویستت بە دانانی جۆرەکانی تری سەروەت و سامانە، تکایە بگۆڕە بۆ لاپەڕەی دراوی گونجاو و هەڵبژاردەکانی پارامێتەر بۆ ئەوەی داوای ناونیشانێکی نوێ بکەیت.';
+	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
+		const TextSpan(text: 'ئەم ناونیشانە لە '),
+		diff,
+		const TextSpan(text: ' بەسەر دەچێت. دەتوانیت ماوەی ڕەوایی '),
+		tap('بە دەست درێژ بکەیتەوە'),
+		const TextSpan(text: ' لە ماوەی 6 کاتژمێر پێش بەسەرچوون.'),
+	]);
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'تەنها دەتوانرێت لە ماوەی ٦ کاتژمێر پێشوەختە نوێ بکرێتەوە';
+	@override String get theReceivingAddressValidForLongtime => 'ناونیشانی وەرگرتن بۆ ماوەیەکی زۆر کاریگەرە.';
+	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'ناونیشانی وەرگرتن بۆ ماوەیەکی زۆر کاریگەرە و لە کاتی ڕاستەقینەدا بە شێوەیەکی ئۆتۆماتیکی کرێدت دەکرێت.';
+	@override String get confirmDeposited => 'پاراستنی Deposited';
+	@override String get unbindThisDepositAddress => 'ئەم ناونیشانەی پارەدانەکە هەڵبگرە';
+	@override String get confirmDepositedTip => 'ئەگەر پارەکان گواستراونەتەوە، تکایە دوای ١٠ خولەک کلیک لەسەر دوگمەی سەرەوە بکە بۆ دەستپێکردنی ژمێریاری بۆ جزدانەکە.';
+	@override String get unbindDepositAddressTip => 'بۆ کەمکردنەوەی سەرپێچی کارپێکردنی گرێبەستە زیرەکەکان، ئەگەر لە ماوەی کارکردندا هیچ پارەیەکی زیاتر دانەنرێت، تکایە ناونیشانی دانانەکە بکەرەوە.';
+	@override String get transferToAddress => 'گواستنەوە بۆ ناونیشان';
+	@override String get longPressToPaste => 'پەستانێکی درێژ بۆ لێدان';
+	@override String get all => 'هەموو';
+	@override String balanceX({required Object x}) => 'هاوسەنگی ${x}';
+	@override String get transferOut => 'گواستنەوە بۆ دەرەوە';
+	@override String depositXcoins({required Object x}) => 'پاراستنی ${x}';
+	@override String get sender => 'نێرەر';
+	@override String get recipient => 'وەرگر';
+	@override String get memo => 'یاداشت';
+	@override String get kind => 'میهرەبان';
+	@override String get transferAmountExceedsAvailableBalance => 'بڕی گواستنەوە لە باڵانسی بەردەست زیاترە';
+	@override String get pleaseEnterValidAmount => 'تکایە بڕە پارەیەکی دروست دابنێ';
+	@override String get networkFee => 'کرێی تۆڕ';
+	@override String get fee => 'کرێ';
+	@override String validLengthXcharacters({required Object x}) => 'درێژی دروست ${x} پیتە';
+	@override String get historys => 'مێژووەکان';
+	@override String get dtcCreditdetail => 'وردەکارییەکانی قەرزی دێڵتا';
+	@override String get usdCreditdetail => 'وردەکاری قەرزی USD';
+	@override String get dappSquare => 'چوارگۆشەی dApp';
+	@override String get amountRaised => 'بڕی کۆکراوە';
+	@override String get disbursedAmount => 'بڕی خەرجکراو';
+	@override String get participationTimes => 'کاتەکانی بەشداریکردن';
+	@override String get completionRate => 'رێژەی تەواوبوون';
+	@override String get exchangeRate => 'ڕێژەی ئاڵوگۆڕ';
+	@override String get icpCrowdfunding => 'کۆمپانیای ئای سی پی';
+	@override String get crowdfunding => 'کراودفاندینگ';
+	@override String get trendsCurve => 'کێوی ڕەوتەکان';
+	@override String get fullScreenView => 'دیمەنی تەواوی شاشە';
+	@override String get walletBalance => 'باڵانسی جزدان: ';
+	@override String get manageWallet => 'بەڕێوەبردنی جزدان';
+	@override String get fundraiseAmount => 'بڕی کۆکردنەوەی پارە';
+	@override String get exchangeRewardAmount => ' بڕی پاداشتی ئاڵوگۆڕ';
+	@override String get fundraise => 'کۆکردنەوەی پارە';
+	@override String rangeIntegersX({required Object x}) => 'مەودا: ژمارە تەواوەکان ${x}';
+	@override String successfullParticipatingFundraisingXtip({required Object amount}) => 'بە سەرکەوتوویی بەشداری لە کۆکردنەوەی پارەدا کرد و پاداشتی ${amount}DTCT وەرگرت';
+	@override String get amountSummary => 'پوختەی بڕی';
+	@override String get changePreferred => 'گۆڕانکاری پەسەندکراو';
+	@override String get changePreferredAddress => 'ناونیشانی پەسەندکراو بگۆڕە';
+	@override String get preferredAddressTip => 'لەکاتی وەرگرتنی پارە بە بەکارهێنانی ژمارەی مۆبایلی تۆمارکراو یان DID، پارەکان بە شێوەیەکی ئۆتۆماتیکی دەگوازرێنەوە بۆ ناونیشانی پەسەندکراو.';
+	@override String get newAddress => 'ناونیشانی نوێ';
+	@override String get newAddressTip => 'بۆ ڕێگریکردن لە خراپ بەکارهێنان، کاتێک زیاتر لە یەک ناونیشانی جزدان هەیە، کرێی مامەڵەکردن بۆ هەر ناونیشانێکی نوێ کە دروست دەکرێت، خەرج دەکرێت.';
+	@override String get createNew => 'دروستکردنی نوێ';
+	@override String get chainNetworkName => 'تۆڕی زنجیرەیی';
+	@override String get from => 'لە';
+	@override String get to => 'بۆ';
+	@override String get noAvailableDepositAmountDetected => 'هیچ بڕە پارەیەکی پێشەکی بەردەست دەستنیشان نەکراوە !';
+	@override String get crossChainReceiveMoneyMonitoring => 'پارەی وەرگرتنی زنجیرەی بڕاو لە چاودێریکردندایە ...';
+	@override TextSpan receivedV({required InlineSpan v}) => TextSpan(children: [
+		const TextSpan(text: 'وەرگیراو('),
+		v,
+		const TextSpan(text: ')'),
+	]);
+	@override TextSpan confirming({required InlineSpan v}) => TextSpan(children: [
+		const TextSpan(text: 'دڵنیاکردنەوە('),
+		v,
+		const TextSpan(text: ')'),
+	]);
+	@override String get thingsToNote_forNewbies => 'تێبینییەکان (پێویستە بۆ تازەپێگەیشتووان بخوێنرێتەوە)';
+	@override String get whyUseSharedAddresses => 'بۆچی ناونیشانی هاوبەش بەکاربهێنرێت؟';
+	@override String get useSharedrAdvantage => 'کاتێک باس لە وەبەرهێنانی زنجیرەکان دەکرێت، سوودەکانی بەکارهێنانی ناونیشانی هاوبەش بریتین لە:';
+	@override String get useSharedrAdvantage1 => '1. کەمکردنەوەی بەفیڕۆدانی کرێی گواستنەوە و کەمکردنەوەی تێچووی بەکارهێنەر. چونکە ئەگەر ناونیشانێکی تایبەت بەکاربهێنرێت، ئەوا پارەکان زۆر بڵاودەبنەوە. بۆ ئەوەی بەکارهێنەرانی دیکە ئاسانکاری بۆ گواستنەوەی دەرەوە بکەن لە کاتی کشانەوەدا، کاتێک بەکارهێنەر پارەیەکی پێشەکی دەکات، گواستنەوەی لاوەکی پارەکان پێویستی بە کۆکردنەوە هەیە بۆ یەکێک یان ژمارەیەکی کەم لە ناونیشانەکان بۆ بەڕێوەبردن.';
+	@override String get useSharedrAdvantage2 => '2. In the sharing solution, the program only needs to maintain a relatively small address pool, which can quickly match outgoing funds and perform lightweight collection monitoring, which can reduce computing resource overhead. In contrast, with exclusive addresses, the situation is exactly the opposite.';
+	@override String get tokenType => 'جۆری نیشانە';
+	@override String get contract => 'گرێبەست';
+	@override String get contractStandard => 'ستانداردی گرێبەست';
+	@override String get contractAddress => 'ناونیشانی گرێبەست';
+	@override String get native => 'ڕەسەن';
+	@override String get confirmUnbindingPleaseEnterYes => 'بۆ پشتڕاستکردنەوەی بەستنەوە، تکایە "بەڵێ"';
+	@override String get listAllWorkingTempReceivingAddresses => 'لیستکردنی هەموو ناونیشانە وەرگرەکانی زنجیرە بڕاوەکانی کارکردن';
+	@override String get setNote => 'تێبینی دابنێ';
+	@override String lengthCannotExceedXbytes({required Object x}) => 'درێژی ناتوانێت لە ${x} بایت زیاتر بێت';
+	@override String get transferFee => 'کرێی گواستنەوە';
+	@override String get crossChainFee => 'کرێی cross-chain';
+	@override String get crossChainTransferOutError => 'هەڵەی گواستنەوەی زنجیرەکان بۆ دەرەوە';
+	@override String get chainName => 'ناوی زنجیرە';
+	@override String get message => 'پەیام';
+	@override String get dontShowAgain => 'جارێکی تر نیشان مەدەرەوە';
+	@override String get queuing => 'ڕیزکردن';
+	@override String get optional => 'ئیختیاری';
+	@override String get publiclyVisible => 'بە ئاشکرا دیارە';
+	@override String get rates => 'ڕێژەکان';
+	@override String get minimum => 'کەمترین';
+	@override String get maximum => 'زۆرترین';
+	@override String get minimumBlockConfirmations => 'کەمترین پشتڕاستکردنەوەکانی بلۆک';
+	@override String get dsmsVerifyTerminal => 'تێرمیناڵی پشتڕاستکەرەوەی DSMS';
+	@override String get overall => 'بە گشتی';
+	@override String get my => 'من';
+	@override String get getVerifierPermissions => 'مۆڵەتی پشتڕاستکەرەوە وەربگرە';
+	@override String get checkValidatorQualifications => 'پشکنینی بڕوانامەی مۆڵەتی چەسپێنەر';
+	@override String get qualification => 'بڕوانامە';
+	@override String get upperLimit => 'سنووری سەرەوە';
+	@override String get maximumNumberOfTerminalsAllowedToAccess => 'زۆرترین ژمارەی تێرمیناڵەکان ڕێگەپێدراوە بۆ دەستگەیشتن';
+	@override String get numberOfExistingAccessTerminals => 'ژمارەی تێرمیناڵەکانی دەستگەیشتن کە هەن';
+	@override String get applyingForDSMSVerifierPermissionsTips => 'پێش ئەوەی داوای مۆڵەتی پشتڕاستکەرەوە بکەیت، پێویستە مۆبایلێکی ئەندرۆیدی بێکار و ژمارەیەکی تایبەت بە دەستگەیشتن ئامادە بکەیت، و بەرنامەی تێرمیناڵی دەستگەیشتن بە DSMS دابەزێنیت و دایبمەزرێنیت.';
+	@override String get downloadLink => 'بەستەری دابەزاندن';
+	@override String get alreadyReadyFollowingTheAboveTips => 'لە ئێستاوە ئامادەی پەیڕەوکردنی ئەو ئامۆژگارییانەی سەرەوەم';
+	@override String get globalUniversal => 'گەردوونی جیهانی';
+	@override TextSpan insufficientLocalVerifierTips({required InlineSpan gu}) => TextSpan(children: [
+		const TextSpan(text: 'لە ئێستادا پشتڕاستکەرەوەی ناوخۆیی بەس نییە بۆ بەشداریکردن لە خزمەتگوزاری دەستڕاگەیشتن بە پشتڕاستکردنەوەی DSMS. تکایە خزمەتگوزاری دەستڕاگەیشتن "'),
+		gu,
+		const TextSpan(text: '" هەڵبژێرە.'),
+	]);
+	@override String get asDedicatedNumberForAccess => 'وەک ژمارەیەکی تایبەت بۆ دەستگەیشتن';
+	@override String pleaseCheckTip({required Object tip}) => 'تکایە "${tip}" بپشکنە';
+	@override String get inputLengthTooShort => 'درێژی زانیاری زۆر کورت';
+	@override String get shortName => 'short-name';
+	@override String pleaseEnterXname({required Object name}) => 'تکایە ${name} بنووسە';
+	@override String get applicationIsBeingSubmitted_pleaseWait => 'داواکاری پێشکەش دەکرێت، تکایە چاوەڕوان بن...';
+	@override String get applyForDSMSVerifierPermission => 'داواکاری بۆ مۆڵەتی پشتڕاستکەرەوەی DSMS بکە';
+	@override String get confirmInformation => 'زانیاری پشتڕاست بکەرەوە';
+	@override String get lastHeartbeat => 'دوا لێدانی دڵ';
+	@override String get expirationTime => 'کاتی بەسەرچوون';
+	@override String get country => 'وڵات';
+	@override String get accessTerminals => 'تێرمیناڵەکانی دەستڕاگەیشتن';
+	@override String get totalNumberOfDSMSaccessNumberTerminals => 'کۆی ژمارەی تێرمیناڵەکانی ژمارەی دەستگەیشتن بە DSMS';
+	@override String get textContent => 'ناوەڕۆکی دەق';
+	@override String get scanQRcodeToLogin => 'سکانکردنی QRcode بۆ چوونەژوورەوە';
+	@override String get confirmLogin => 'دووپاتکردنەوەی چوونەژوورەوە';
+	@override String get authorizeSubApplicationToLogin => 'ڕێگە بەم بەرنامە لاوەکییە بدە بۆ چوونەژوورەوە';
+	@override String get authorizationSuccessful => 'ڕێگەپێدان سەرکەوتوو بوو!';
+	@override String get launchSMSprogram => 'دەستپێکردنی بەرنامەی کورتەنامە';
+	@override String get notApplied => 'کارپێنەکراوە';
+	@override String get validityPeriod => 'ماوەی کاریگەری';
+	@override String get renewal => 'نوێبوونەوە';
+	@override String get scanCodeToAuthorizeTerminalLogin => 'کۆد سکان بکە بۆ ڕێگەدان بە چوونەژوورەوەی تێرمیناڵ';
+	@override String get rewards => 'پاداشت';
+	@override String get roles => 'ڕۆڵەکان';
+	@override String get developerCenter => 'ناوەندی گەشەپێدەر';
+	@override String get appName => 'ناوی ئەپ';
+	@override String get pleaseSelect => 'تکایە هەڵبژێرە';
+	@override String get category => 'پۆل';
+	@override String get keywords => 'وشەی سەرەکی';
+	@override String get pleaseEnterAkeyword => 'تکایە وشەیەکی سەرەکی دابنێ';
+	@override String get createApplication => 'دروستکردنی بەرنامە';
+	@override String get appType => 'جۆری ئەپ';
+	@override String get numberOfCategoriesMustBetween1and3 => 'ژمارەی پۆلەکان دەبێت لە نێوان 1 و 3 بێت';
+	@override String get appLogoSpecifications => 'فۆرماتە وێنە: png، قەبارە: لە ماوەی 100KB، ڕوونی (پێکسڵ): 256 * 256';
+	@override String get localAlbum => 'ئەلبوومی ناوخۆیی';
+	@override String get networkPath => 'ڕێڕەوی تۆڕ';
+	@override String get imageURLkAddress => 'ناونیشانی URLی وێنە';
+	@override String get urlAddressFormatIsIncorrect => 'فۆرماتەکەی ناونیشانی URL هەڵەیە';
+	@override String get imageFormatOnlySupportsPng => 'فۆرماتەکەی وێنە تەنها پشتگیری "png" دەکات.';
+	@override String lengthMustBeBetweenA_BCharacters({required Object a, required Object b}) => 'درێژییەکە دەبێت لە نێوان ${a}-${b} کاراکتەرەکاندا بێت';
+	@override String get introduction => 'پێشەکی';
+	@override String imageSizeCannotBeLargerThanA_currentlyB({required Object a, required Object b}) => 'قەبارەی وێنەکە ناتوانێت لە ${a} گەورەتر بێت، لە ئێستادا ${b}';
+	@override String imageResolutionMustBeP1pixels_currentlyP2({required Object p1, required Object p2}) => 'ڕوونکردنەوەی وێنەکە دەبێت: ${p1} (پێکسڵەکان), لە ئێستادا ${p2}';
+	@override String get becomeDeveloper => 'ببە بە گەشەپێدەر';
+	@override String get developerInformation => 'زانیاری گەشەپێدەر';
+	@override String get teamName => 'ناوی تیم';
+	@override String get website => 'ماڵپەڕ';
+	@override String get other => 'ئەوەی تر';
+	@override String get githubVerification => 'چەندکردنەوەی گیتوب';
+	@override String get exampleUrl => 'نموونەی Url';
+	@override String githubVerificationTip({required Object did}) => 'تکایە ئەژمێری GitHub ی خۆت بەکاربهێنە بۆ دروستکردنی پەڕگەیەکی \'delta.did\' لە کۆگاکەدا بە ناوەڕۆکی \'${did}\'؛ پاشان، url githubusercontent ی پەڕگەکە بخەرە ناو ئەم بۆکسەی چوونەژوورەوە بۆ ڕەسەنایەتی.';
+	@override String get createApp => 'دروستکردنی ئەپ';
+	@override String get appManagement => 'بەڕێوەبردنی ئەپ';
+	@override String get statusLogs => 'لۆگەکانی دۆخ';
+	@override String get bad => 'خراپ';
+	@override String get normal => 'ئاسایی';
+	@override String get good => 'باشە';
+	@override String get onceCreatedItCannotBeChanged => 'کاتێک دروستکرا، ناتوانرێت بگۆڕدرێت!';
+	@override String get manageApplicationEntity => 'بەڕێوەبردنی یەکەیەکی بەرنامە';
+	@override String get currentVersion => 'وەشانەکەی ئێستا';
+	@override String get submitVersion => 'وەشان پێشکەش بکە';
+	@override String get packageOnlySupportZipCompressedFile => 'پاکێجەکە تەنها پشتگیری لە پەڕگەی پاڵەپەستۆکراوی زیپ دەکات';
+	@override String theXfileWasNotFoundInTheZipPackage({required Object name}) => 'پەڕگەی \'${name}\' لە پاکێجی زیپدا نەدۆزرایەوە';
+	@override String get fileList => 'لیستی فایلەکان: ';
+	@override String get programPackage => 'پاکێجی بەرنامە: ';
+	@override String get automaticallyExtractFromVersionFile => 'بە شێوەیەکی ئۆتۆماتیکی لە پەڕگەی \'.version\' دەربهێنە';
+	@override String get dappVersionFormatTip => 'فۆرماتەکەی ژمارەی وەشانی دەبێت دەهەمی بێت و وردبینییەکەی دەبێت بە ٢ ژمارە بپارێزرێت، و زۆرترینی ناتوانێت لە ٩٩.٩٩ زیاتر بێت';
+	@override String versionNumberMustBeGreaterThanCurrentVersionX({required Object v}) => 'ژمارەی وەشانی دەبێت گەورەتر بێت لە وەشانی ئێستا \'${v}\'';
+	@override String get versionNotes => 'تێبینی وەشانی: ';
+	@override String get dappInfo => 'زانیاری داپ';
+	@override String get updateRelease => 'نوێکردنەوەی بڵاوکردنەوە';
+	@override String get loadAndRun => 'بارکردن و جێبەجێکردن';
+	@override String get notYetSubmittedProgramPackage => 'هێشتا پاکێجێکی بەرنامە پێشکەش نەکراوە!';
+	@override String get authorizeMinidAppLogin => 'ڕێگەدان بە چوونەژوورەوەی مینی-dApp';
+	@override String get confirmAuthorizationPleaseEnterYes => 'ڕێگەپێدان پشتڕاست بکەرەوە، تکایە "بەڵێ" داخڵ بکە';
+	@override String get authorizeNow => 'ئێستا ڕێگەپێدان';
+	@override String get operation => 'ئۆپەراسیۆن: ';
+	@override String get statusChange => 'گۆڕینی دۆخ';
+	@override String get changeTo => 'گۆڕانکاری بۆ: ';
+	@override String get notes => 'تێبینی: ';
+	@override String get changesNotEffective => 'گۆڕانکارییەکان کاریگەر نین!';
+	@override String get released => 'ئازاد';
+	@override String get inPublicBeta => 'لە تاقیکاری گشتیدا';
+	@override String get developers => 'گەشەپێدەران: ';
+	@override String get reviewList => 'لیستی پێداچوونەوە: ';
+	@override String get postReview => 'پۆست پێداچوونەوە';
+	@override String get scoreNow => 'ئێستا گۆڵ تۆمار بکە';
+	@override String get description => 'وەسف: ';
+	@override String get noData => '(^-^) \n بێ داتا';
+	@override String versionHasBeenUpdatedFromAtoB({required Object a, required Object b}) => 'وەشانەکە لە ${a}ەوە بۆ ${b} نوێکراوەتەوە';
+	@override String get loadNewVersion => 'بارکردنی وەشانی نوێ';
+	@override String get name => 'ناو: ';
+	@override String get canisterId => 'CanisterId: ';
+	@override String get updateTime => 'کاتی نوێکردنەوە';
+	@override String get contractCanistersState => 'دەوڵەتی کانستەرەکانی گرێبەست';
+	@override String get userDistribution => 'دابەشکردنی بەکارهێنەر';
+	@override String get settings => 'ڕێکخستنەکان';
+	@override String get security => 'ئاسایشی';
+	@override String get invite => 'بانگهێشت';
+	@override String get more => 'زیاتر...';
+	@override String get receiveAddress => 'ناونیشانی وەرگرتن: ';
+	@override String get hangingAmount => 'هەڵواسینی';
+	@override String get hangingAmountTips => 'بڕی هەڵواسینی تۆمارێکی کاتی ئەو پاداشتانەیە کە لەلایەن کانگاکردنی تیمی ژێردەستەکەتەوە دروست دەبن. کاتێک کانگایەک ئەنجام دەدەیت، ئەم بڕە پارانە کۆدەکرێنەوە بۆ بڕی هەڵپەسێردراو.';
+	@override String get pendingAmount => 'هەڵپەسێردراو';
+	@override String get pendingAmountTips => 'بڕی چاوەڕوانکراو ئاماژەیە بۆ ئەو بڕە پارەیەی کە پشتڕاست نەکراوەتەوە و بەراورد نەکراوە لەگەڵ ڕێکلامکەر. ئەو بڕە پارەیەی کە پشتڕاستکراوەتەوە دەگوازرێتەوە بۆ تۆماری ڕەوای USCT. ئەگەر هەر بەشێکی نادروست هەبێت، ئەوا دەخرێتە دەرەوە.';
+	@override String get received => 'وەرگیراوە';
+	@override String get processing => 'پڕۆسێسکردن';
+	@override String get replied => 'وەڵامی دایەوە';
+	@override String get rejected => 'ڕەتکرایەوە';
+	@override String get unknown => 'نەناسراو';
+	@override String get insufficientBalance => 'هاوسەنگی بەس نییە!';
+	@override String InsufficientXbalanceToPayCrossChainNetworkFee({required Object x}) => 'باڵانسی ${x} بەس نییە بۆ پێدانی کرێی تۆڕی نێوان زنجیرەکان';
+	@override String get aTransactionThatHasNotBeenCompleted_CannotBeTransferredAtMoment => 'مامەڵێک هەیە کە تەواو نەبووە و لە ئێستادا ناتوانرێت بگوازرێتەوە.';
+	@override String get thisfunctionNotSupportExternalCalls => 'ئەم کارە پشتگیری لە پەیوەندی دەرەکی ناکات';
+	@override String get noMatchingAddressThatCanBeUsedToPayCrossChainFees_switchOtherChainToTry => 'هیچ ناونیشانێکی هاوتا نییە کە بتوانرێت بەکاربهێنرێت بۆ پێدانی کرێی زنجیرە بڕاوەکان، تکایە بگۆڕە بۆ تۆڕەکانی زنجیرەی تر بۆ هەوڵدان.';
+	@override String currentMaximumMatchedSingleTransferAmountIsX({required Object x}) => 'زۆرترین بڕی تاکە گواستنەوەی هاوتاکراوی ئێستا ${x}';
+	@override String get memoMustNotBeMoreThan64bytes => 'یاداشتنامەکە نابێت لە ٦٤ بایت زیاتر بێت';
+	@override String insufficientBalance_theAmountIsX({required Object x}) => 'باسەنگی بەس نییە، بڕە پارەکە بریتییە لە: ${x}';
+	@override String get boundRreceivingAddressesExceed3Tip => 'ژمارەی ناونیشانە وەرگرەکانی بەستراو ناتوانێت لە 3 زیاتر بێت. \nئەگەر پێویستت بە بەستنەوەی ناونیشانی وەرگرتنی نوێ بوو، \nتکایە سەرەتا ناونیشانی وەرگرێکی تر بکەرەوە.';
+	@override String parametersA_exception({required Object x}) => ' پارامێتەرەکان: ${x}, ئیستسنای';
+	@override String get transferAmountMustBeLargerThan0 => 'بڕی گواستنەوە دەبێت لە 0 گەورەتر بێت';
+	@override String get authorizationHasExpired => 'ڕێگەپێدان بەسەرچووە';
+	@override String get theAppHasNotBeenAuthorizedByOwner => 'ئەپەکە لەلایەن خاوەنەکەیەوە ڕێگەپێنەدراوە';
+	@override String get authenticationTokenIsInvalid => 'نیشانەی ڕەسەنایەتی نادروستە';
+	@override String get verifyInfoIsInvalidOrExpired => 'دڵنیابوون لەوەی زانیاری نادروستە یان بەسەرچووە';
+	@override String get verifyThatNumberOfAccessTerminalsHasExceededLimitOf1in10000 => 'دڵنیابە کە ژمارەی تێرمیناڵەکانی دەستڕاگەیشتن سنووری یەکێک لە 10,000 تێپەڕاندووە';
+	@override String get timeToParticipateInMiningMustBeMoreThan3Days => 'کاتی بەشداریکردن لە کانگادا دەبێت زیاتر لە ٣ ڕۆژ بێت';
+	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'ژمارەی ئەندامانی بازنەی سەلامەتی ناتوانێت لە ٣ کەس کەمتر بێت';
+	@override String get avatarIsNotSet => 'ئاڤاتاری دانەنراوە';
+	@override String get numberOfDirectReferralsCannotBeLessThan3 => 'ژمارەی ڕەوانەکردنی ڕاستەوخۆ ناتوانێت لە ٣ کەس کەمتر بێت';
+	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => 'سنوری کاتیی بەس نییە، ژمارەی مۆبایل تەنها ساڵانە جارێک دەتوانرێت بگۆڕدرێت.';
+	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'ئەم ژمارە مۆبایلە پێشتر بوونی هەیە و ناتوانرێت دووبارە بکرێتەوە';
+	@override String get securityCodeIsIncorrect => 'کۆدی ئاسایش هەڵەیە';
+	@override String get securityCodeMayHaveExpired => 'ڕەنگە کۆدی ئاسایش بەسەرچووبێت';
+	@override String get sessionIdIsInvalidOrExpired => 'ناسنامەی دانیشتنەکە نادروستە یان بەسەرچووە';
+	@override String get sessionHasBeenAuthorized => 'دانیشتنەکە ڕێگەپێدراوە!';
+	@override String canOnlyBeRenewedWithinXdaysBeforeExpiration({required Object x}) => 'تەنها دەتوانرێت لە ماوەی ${x} ڕۆژ پێش بەسەرچوون نوێ بکرێتەوە';
+	@override String get notYetGrantedDeveloperPermissions => 'هێشتا مۆڵەتی گەشەپێدەر نەدراوە';
+	@override String fieldXcannotBeEmpty({required Object x}) => 'ئیمەیڵی مەیدانی ${x} بەتاڵ بێت';
+	@override String get emailFormatError => 'هەڵەی فۆرمات ئیمەیڵ';
+	@override String theXformatIsIncorrect({required Object x}) => 'فۆرماتەکەی \'${x}\' هەڵەیە';
+	@override String lengthOfFieldXmustBeBetweenYandXcharacters({required Object x, required Object y, required Object z}) => 'درێژی مەیدانی \'${x}\' دەبێت لە نێوان ${y} و ${z} پیتەکاندا بێت.';
+	@override String theXselectionMustBeBetweenYandX({required Object x, required Object y, required Object z}) => 'هەڵبژاردنی \'${x}\' دەبێت لە نێوان ${y} و ${z} بێت';
+	@override String get unchanged_sameAsOldContent => 'نەگۆڕاوە، هەمان ناوەڕۆکی کۆن!';
+	@override String XYalreadyexists({required Object x, required Object y}) => '${x}: \'${y}\' پێشتر بوونی هەیە!';
+	@override String get mobileNumberHasNotJoinedDelta => 'ئەم ژمارە مۆبایلە هێشتا پەیوەندی بە Delta نەکردووە!';
+	@override String get referrerIdCannotBeEmpty => 'ناتوانرێت ئاماژەپێکراو بەتاڵ بێت! ';
+	@override String get referrerIdDoesNotExist => 'referrerId بوونی نییە!';
+	@override String get didIsIncorrectOrInvalid => 'DID هەڵەیە یان نادروستە!';
+	@override String get accessTokenIsIncorrectOrInvalid => 'accessToken هەڵەیە یان نادروستە!';
+	@override String get minimumWithdrawalAmountIs1USD => 'کەمترین بڕی کشانەوە 1USD';
+	@override String get miningTimeIsNotYet => 'کاتی کانگاکردن هێشتا نییە';
+	@override String get alreadyExists_pleaseDoNotRepeatedly => 'پێشتر بوونی هەیە، تکایە دووبارە زیاد مەکە!';
+	@override String get registrationNumberCannotBeUsedAsAccessNumber => 'ژمارەی تۆمارکردن ناتوانرێت وەک ژمارەی دەستڕاگەیشتن بە پشتڕاستکردنەوە بەکاربهێنرێت';
+	@override String get canotAddYourSelf => 'ناتوانیت خۆت زیاد بکەیت';
+	@override String get logOut => 'دەرچوون';
+	@override String get confirmLogout => 'دڵنیای لە دەرچوون';
+	@override String get logOutTipsText => 'بیرخستنەوەی دۆستانە: بەپێی ڕێکەوتنی پەیوەندیدار لە کاغەزی سپیدا، هەر پشتڕاستکردنەوەی چوونەژوورەوەی ئەکاونتەکە بڕێکی دیاریکراو لە دراوی DTC لەلایەن تۆوە بەکاردەهێنێت بۆ ئەوەی وەک هاندانێک پارەی پشتڕاستکەرەوە بدەیت. تکایە ئەگەر پێویست نەبوو هەوڵ مەدە بچیتە ژوورەوە و بچیتە دەرەوە. بۆ ئەوەی دەستبەجێ دەربچیت کلیک لەم دوگمەیەی خوارەوە بکە.';
+	@override String get ConfirmLogoutPleaseEnterYes => 'دڵنیای لەوەی کە ئەتەوێ لە ئەکاونتەکەت بچیتە دەرەوە؟ "بەڵێ"';
+	@override String get tip => 'سەرنج';
+	@override String get cancel => 'بگەرێوە';
+	@override String get close => 'داخستن';
+	@override String get selected => 'دیاریکردن';
+	@override String get edit => 'گۆرانکاری';
+	@override String get submit => 'ناردرا';
+	@override String get goBack => 'بگەڕێوە دواوە';
+	@override String get copiedToClipboard => 'هەڵگیرا .';
+	@override String get nickname => 'نازناوو';
+	@override String get confirm => 'دڵنیابوون';
+	@override String get cannotBeEmpty => 'ناتوانێت بەتاڵ بێت';
+	@override String get deleteSuccessful => 'بەسەرکەوتوی سڕاوە!';
+	@override String get successfullyModified => 'بە سەرکەوتوویی دەستکاری کراوە!';
+	@override String get executionSuccessful => 'جێبەجێکردن سەرکەوتوو بوو!';
+	@override String get parameterException => 'ئیستسنای پارامێتەر!';
+	@override String get preview => 'بینین';
+	@override String get followSystem => 'بەدواداچوون بۆ سیستەم';
+	@override String get change => 'دەسکاریکردن';
+	@override String get replace => 'شوێن گرتنەوە';
+	@override String get view => 'بینین';
+	@override String get manage => 'بەڕێوەبردن';
+	@override String get modify => 'دەستکاری بکە';
+	@override String get replacedSuccessfully => 'بە سەرکەوتوویی گۆڕدرا!';
+	@override String get authentication => 'ڕەسەنایەتی';
+	@override String get reacquire => 'بەدەستهێنانەوەی دووبارە';
+	@override String get tryAgain => 'دووبارە هەوڵبدەوە';
+	@override String get querying => 'پرسیارکردن ...';
+	@override String get writingToOnChain_pleaseWait => 'نووسین بۆ سەر زنجیرەکە، تکایە چاوەڕوان بە ...';
+	@override String get versionCheck => 'پشکنینی وەشانی';
+	@override String get alreadyLatestVersion => 'پێشتر نوێترین وەشانی!';
+	@override String get foundNewVersion => 'وەشانێکی نوێ دۆزرایەوە:';
+	@override String get upgradeLink => 'بەستەری بەرزکردنەوە: ';
+	@override String get deviceDescription => 'وەسفکردنی ئامێر: ';
+	@override String get notification30SecondsBeforeMiningStops => '30 چرکە پێش وەستانی کانگاکردن بیرخستنەوەی ئاگادارکردنەوە جێبەجێ بکە!';
+	@override String get goMining => 'بڕۆ بۆ کانگا';
+	@override String get deltaMiningReminder => 'بیرخستنەوەی کانگاکانی دێڵتا';
+	@override String get clickToMine_miningIsAboutToStop => 'کلیک لێرە بکە بۆ مین، خەریکە کانگاکردن بوەستێت!';
+	@override String get incorrect_input => 'هاتنە ژوورەوەی هەڵە !';
+	@override String get are_you_sure_delete => 'دڵنیای دەتەوێت بسڕیتەوە?';
+	@override String get delete_account => 'سڕینەوەی ئەکاونت';
+	@override String get how_to_operate_it => 'چۆن کارپێکردنی؟';
+	@override String get deletion_warning_tip => 'ئەگەر ئەکاونتەکەت بسڕیتەوە، هەموو دێڵتا کۆینەکانت لەدەست دەدەیت و هەموو داهاتەکانی ئەندامانی تریش لەدەست دەچێت.';
+	@override String get launchWhatsAppProgram => 'دەستپێکردنی بەرنامەی واتسئەپ';
+	@override String get sms => 'SMS';
+	@override String get whatsApp_verification_tips => 'ژمارەی دەستگەیشتن بەم ئایکۆنە ئاماژەیە بۆ ئەوەی کە پشتگیری پشتڕاستکردنەوەی نامەی واتسئەپیش دەکەن. لە کاتی ناردنی نامەی نێودەوڵەتیدا پێشنیار دەکرێت واتسئەپ بەکاربهێنیت بۆ زیادکردنی ڕێژەی سەرکەوتن و کەمکردنەوەی تێچوونەکان.';
+	@override String get ihaveSentVerificationString => 'من ڕستەی پشتڕاستکردنەوەم ناردووە';
+	@override String get totalOfPeople => 'کۆی گشتی خەڵک: ';
+	@override String get numberOfPeopleMining => 'ژمارەی ئەو کەسانەی کە کانگا دەکەن';
+	@override String get useBrowserScanQRcodeToSMSprogram => 'دەتوانیت وێبگەڕێک لەسەر ئامێرێکی تر بەکاربهێنیت بۆ سکانکردنی کۆدی QR و گواستنەوەی بۆ بەرنامەی SMS';
+	@override String get toggle => 'گۆڕین';
+	@override String get DSMSverifier => 'دڵنیاکەرەوەی DSMS';
+	@override String get activate => 'چالاککردن';
+	@override String get activated => 'چالاککراوه';
+	@override String get generateActivationCommand => 'فرمانی چالاککردن دروست بکە';
+	@override String get activationCommand => 'فەرمانی چالاککردن';
+	@override String get activationSentedTip => 'دوای ناردنی کورتەنامەی چالاککردنەوە، تکایە دۆخی چالاککردن لەسەر ئامێری تێرمیناڵی دەستگەیشتن بپشکنە.';
+	@override String get biometricsNotEnabledTip => 'ئامێرەکەت بایۆمەتری (ڕووخسار یان پەنجەمۆر)ی چالاک نەکردووە، تکایە چالاکی بکە بۆ بەردەوامبوون.';
+	@override String get error => 'هەڵەیە';
+	@override String get exceptionOccurredWhenCallingBiometric => 'ئیستسنایەک ڕوویدا لەکاتی بانگکردنی فەنکشنی ناسینەوەی بایۆمەتری (ڕووخسار یان پەنجەمۆر)!';
+	@override TextSpan accessNumberSelectionTip({required InlineSpan checkedNum, required InlineSpan shouldNum}) => TextSpan(children: [
+		const TextSpan(text: 'ژمارەکانی دەستڕاگەیشتن '),
+		checkedNum,
+		const TextSpan(text: ' پشکنینیان بۆ کراوە، پێویستە '),
+		shouldNum,
+		const TextSpan(text: ' هەڵبژێردرێت.'),
+	]);
+	@override String sentaboveXaccessNumbers({required Object text, required Object n}) => 'ئایا ${text} نێردراوە بۆ ژمارەکانی دەستگەیشتن ${n} لە سەرەوە؟';
+	@override String get interface => 'ڕووکار:';
+	@override String get waitingTimeoutOrSenderNumberMismatch => 'کات بەسەرچوونی چاوەڕوانی یان ناتەبایی ژمارەی نێرەر';
+	@override String mobileNumberOfsecurityCircleYouFilledDoesntMatch({required Object x}) => 'ژمارەی مۆبایلی ئەو ئەندامەی بازنەی ئاسایش کە پڕت کردۆتەوە ناگونجێت:${x}';
+	@override String leastXmobileNumbersMustCompleted({required Object n}) => 'بەلایەنی کەمەوە ${n} ژمارەی مۆبایل دەبێت پڕبکرێتەوە';
+	@override String get loginWithin10MinutesOfLoggingOutAvoidTwoFactorVerification => 'لە ماوەی ١٠ خولەکدا دوای چوونە دەرەوە بچۆرە ژوورەوە بۆ ئەوەی پشتڕاستکردنەوەی دوو فاکتەری نەبێت.';
+	@override String get noAccessNumberInYourRegionYet => 'هێشتا ژمارەیەکی دەستگەیشتن لە ناوچەکەتدا نییە';
+	@override String get notEnoughAccessNumbersInYourRegion => 'لە هەرێمەکەتدا ژمارەی دەستگەیشتن بەس نییە';
+	@override String get tipsForDeployDSMSterminal => 'سیستەمەکە بە شێوەیەکی ئۆتۆماتیکی هەندێک ژمارەی دەستگەیشتن لە وڵاتانی دیکەوە بۆ تۆ بارکردووە. بۆ ئەوەی خزمەتگوزاری پشتڕاستکردنەوەی باشتر و کەمتر تێچووی پێشکەش بکرێت، پێشنیار دەکرێت کە تۆ یان ڕەوانەکەرەکەت پەیوەندی بکەیت بۆ بڵاوکردنەوەی تێرمیناڵەکانی DSMS لە ناوخۆدا بۆ بەدەستهێنانی کرێی پشتڕاستکردنەوە.';
+	@override String get noOneCanProvideMeTheSecurityCode => 'کەس ناتوانێت کۆدی ئاسایشم بۆ دابین بکات?';
+	@override String get useSupplementalMode => 'دۆخی تەواوکەر بەکاربهێنە';
+	@override String get returnToSecurityCodeMode => 'گەڕانەوە بۆ دۆخی کۆدی ئاسایش';
+	@override String get enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted => 'تکایە ژمارەی مۆبایلی پەیوەندیداریان داخڵ بکە، دەتوانرێت کۆدی وڵات لاببرێت.';
+	@override String mobileNumberForNameIsIncorrect({required Object name}) => 'ژمارەی مۆبایل بۆ ${name} هەڵەیە';
+	@override String get matchingVerificationStrategyIs => 'ستراتیژی پشتڕاستکردنەوەی هاوتاکردن بریتییە لە...:';
+	@override String get balanceGreater3ICP_noNeedPourFuel => 'هاوسەنگی زیاترە لە 3 ICP، پێویست بە ڕشتنی سووتەمەنی ناکات بۆ ئێستا.';
+	@override String get escrowAccount => 'ئەژمێری ئیسکرۆ';
+	@override String get fuelRelay => 'ڕێلەی سووتەمەنی';
+	@override String get pourFuel => 'سووتەمەنی ڕژێنە';
+	@override String get fuelState => 'دۆخی سووتەمەنی';
+	@override String get pouringFuelTips => 'ڕشتنی سووتەمەنی هیچ سوود و زیانێکت بۆ ناهێنێت، مەبەست لێی دەوڵەمەندکردنی ئەزموونی سیستەمی دێڵتایە.';
+	@override String get sponsorDevelopersByWatchingAds => 'سپۆنسەری گەشەپێدەران بە سەیرکردنی ڕێکلامەکان';
+	@override String get status => 'دۆخ';
+	@override String get date => 'بەروار';
+	@override String get assetApplicationIsInProgressTip => 'بەرنامەی سەرمایە لە پێشکەوتندایە، تکایە لە ٣ چرکەدا هەوڵبدەرەوە.';
+	@override String get delete => 'سڕینەوە';
+	@override String get deleteVerifierTip => 'لەکاتی سڕینەوەی مۆڵەتەکانی پشتڕاستکەرەوە، هەموو داتاکانی نمرەی پەیوەندیدار لە یەک کاتدا دەسڕدرێنەوە، بەڵام ئەو پاداشتانەی پێشتر بەدەست هاتوون کاریگەرییان لەسەر نابێت.';
+	@override String get deleteVerifierStatusTip => 'تکایە پێش سڕینەوە بۆ دۆخی وەستان ڕێکبخە';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'تکایە "${text}" داخڵ بکە، بۆ پشتڕاستکردنەوە';
+	@override String get localSecurity => 'ئاسایشی ناوخۆیی';
+	@override String get deviceLock => 'قفڵی ئامێر';
+	@override String get patternLock => 'قفڵی نەخش';
+	@override String get none => 'هیچ';
+	@override String get exist => 'بوونی هەیە';
+	@override String get prompt => 'داواکاری:';
+	@override String get localSecurityTip1 => '1. ڕەسەنایەتی ئاسایشی ناوخۆیی بەکاردێت بۆ پشتڕاستکردنەوەی ناسنامە لە کاتی هەندێک کارە هەستیارەکاندا. مەبەست لێی ڕێگریکردنە لە کۆنترۆڵکردنی ئامێرەکە لەلایەن کەسانی ترەوە و دڵنیابوونە لە ئاسایشی ئەکاونتەکە.';
+	@override String get localSecurityTip2 => '2. قوفڵی نەخش چارەسەرێکی تەواوکەرە کاتێک قوفڵی ئامێرەکە پشتگیری نەکراوە یان ناگونجێت. بەگشتی، پێویست ناکات قوفڵی نەخش دابنرێت کاتێک قوفڵی ئامێرەکە بەردەستە.';
+	@override String get localSecurityTip3 => '3. کاتێک قفڵی نەخشەکەت لەبیرکرا، تەنها دەتوانیت داتاکانی ئەپەکە پاک بکەیتەوە یان ئەپەکە دووبارە دابمەزرێنیتەوە بۆ پاککردنەوەی.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'خەریکە ڕەسەنایەتی ئامێر بانگ دەکرێت. ئەگەر هەڵەیەک یان ئیستسناء ڕوویدا، تکایە بچۆ بۆ هەڵبژاردەی "${localSecurity}" لە لاپەڕەی "${menu}" بۆ تاقیکردنەوە و ڕێکخستنەکانی زیاتر.';
+	@override String get pleaseDrawUnlockPattern => 'تکایە نەخشی کردنەوەی قفڵەکە بکێشە';
+	@override String get addPatternLock => 'زیادکردنی قفڵی نەخش';
+	@override String get cannotBeLessThan8Dots => 'ناتوانرێت لە ٨ خاڵ کەمتر بێت';
+	@override String get pleaseRepeatThePattern => 'تکایە جارێکی تر نەخشەکە دووبارە بکەرەوە';
+	@override String get notMatchFirstValidPattern => 'لەگەڵ یەکەم نەخشی وێنەکێشانی دروستدا ناگونجێت';
+	@override String get deletePatternLock => 'قفڵی نەخش بسڕەوە';
+	@override String get notMatchExistingPattern => 'لەگەڵ نەخشێکی هەبوودا ناگونجێت';
+	@override String get localAuthentication => 'ڕەسەنایەتی ناوخۆیی';
 }
 
 // Path: <root>
@@ -2517,13 +3330,13 @@ class _StringsDe implements Translations {
 	@override String get tempDepositAddressTip4 => '(4) Wenn Sie andere Arten von Vermögenswerten einzahlen möchten, wechseln Sie bitte auf die entsprechende Währungsseite und die Parameteroptionen, um eine neue Adresse zu beantragen.';
 	@override String get applyExtensionOfValidity => 'Antrag auf Verlängerung der Gültigkeitsdauer';
 	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-		const TextSpan(text: 'Diese Adresse läuft nach '),
+		const TextSpan(text: 'Diese Adresse läuft in '),
 		diff,
-		const TextSpan(text: ' ab und ist '),
+		const TextSpan(text: ' ab. Sie können die Gültigkeitsdauer innerhalb von 6 Stunden vor Ablauf '),
 		tap('manuell verlängern'),
-		const TextSpan(text: ' für 12 Stunden vor Ablauf gültig.'),
+		const TextSpan(text: '.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'Kann nur 12 Stunden im Voraus verlängert werden';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'Kann nur innerhalb von 6 Stunden im Voraus verlängert werden';
 	@override String get theReceivingAddressValidForLongtime => 'Diese Adresse ist für eine lange Zeit gültig.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'Diese Sammeladresse ist lange Zeit gültig und wird automatisch in Echtzeit gutgeschrieben.';
 	@override String get confirmDeposited => 'Bestätigung der Hinterlegung';
@@ -2783,7 +3596,7 @@ class _StringsDe implements Translations {
 	@override String get referrerIdDoesNotExist => 'Referrer ID existiert nicht!';
 	@override String get didIsIncorrectOrInvalid => 'Die DID ist falsch oder ungültig!';
 	@override String get accessTokenIsIncorrectOrInvalid => 'Der accessToken ist falsch oder ungültig!';
-	@override String get minimumWithdrawalAmountIs9USD => 'Mindestens 9USD für eine einzelne Abhebung';
+	@override String get minimumWithdrawalAmountIs1USD => 'Mindestens 1USD für eine einzelne Abhebung';
 	@override String get miningTimeIsNotYet => 'Es ist noch nicht an der Zeit, Bergbau zu betreiben.';
 	@override String get alreadyExists_pleaseDoNotRepeatedly => 'Bereits vorhanden, bitte nicht erneut hinzufügen!';
 	@override String get registrationNumberCannotBeUsedAsAccessNumber => 'Registrierungsnummer kann nicht als Zugangsnummer für die Authentifizierung verwendet werden';
@@ -2871,6 +3684,38 @@ class _StringsDe implements Translations {
 	@override String get enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted => 'Bitte geben Sie die zugehörige Handynummer ein. Die Landesvorwahl kann weggelassen werden.';
 	@override String mobileNumberForNameIsIncorrect({required Object name}) => 'Die Handynummer von ${name} ist falsch';
 	@override String get matchingVerificationStrategyIs => 'Die passende Verifizierungsstrategie ist:';
+	@override String get balanceGreater3ICP_noNeedPourFuel => 'Der Saldo ist größer als 3 ICP, es muss derzeit kein Kraftstoff nachgefüllt werden.';
+	@override String get escrowAccount => 'Treuhandkonto';
+	@override String get fuelRelay => 'Kraftstoffrelais';
+	@override String get pourFuel => 'Kraftstoff einfüllen';
+	@override String get fuelState => 'Kraftstoffzustand';
+	@override String get pouringFuelTips => 'Das Einfüllen von Kraftstoff bringt Ihnen weder Vorteile noch Nachteile, sein Zweck besteht darin, das Delta-Systemerlebnis zu bereichern.';
+	@override String get sponsorDevelopersByWatchingAds => 'Sponsern Sie Entwickler, indem Sie sich Werbung ansehen';
+	@override String get status => 'Status';
+	@override String get date => 'Datum';
+	@override String get assetApplicationIsInProgressTip => 'Asset-Anwendung läuft, bitte versuchen Sie es in 3 Sekunden erneut.';
+	@override String get delete => 'Löschen';
+	@override String get deleteVerifierTip => 'Wenn die Berechtigungen eines Prüfers gelöscht werden, werden gleichzeitig alle zugehörigen Punktedaten gelöscht. Die bereits erhaltenen Belohnungen bleiben jedoch davon unberührt.';
+	@override String get deleteVerifierStatusTip => 'Bitte setzen Sie es vor dem Löschen in den pausierten Zustand.';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'Bitte geben Sie zur Bestätigung "${text}" ein.';
+	@override String get localSecurity => 'Lokale Sicherheit';
+	@override String get deviceLock => 'Gerätesperre';
+	@override String get patternLock => 'Mustersperre';
+	@override String get none => 'keine';
+	@override String get exist => 'existiert';
+	@override String get prompt => 'Eingabeaufforderung:';
+	@override String get localSecurityTip1 => '1. Die lokale Sicherheitsauthentifizierung wird zur Bestätigung der Identität bei einigen sensiblen Vorgängen verwendet. Ihr Zweck besteht darin, die Kontrolle des Geräts durch Dritte zu verhindern und die Sicherheit des Kontos zu gewährleisten.';
+	@override String get localSecurityTip2 => '2. Die Mustersperre ist eine ergänzende Lösung, wenn die Gerätesperre nicht unterstützt wird oder inkompatibel ist. Im Allgemeinen ist es nicht notwendig, eine Mustersperre einzurichten, wenn die Gerätesperre verfügbar ist.';
+	@override String get localSecurityTip3 => '3. Wenn Sie Ihr Sperrmuster vergessen haben, können Sie nur die App-Daten löschen oder die App neu installieren, um sie zu löschen.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'Die Geräteauthentifizierung wird aufgerufen. Wenn ein Fehler oder eine Ausnahme auftritt, gehen Sie zum Testen und für weitere Einstellungen zur Option "${localSecurity}" auf der Seite "${menu}".';
+	@override String get pleaseDrawUnlockPattern => 'Bitte zeichnen Sie das Entsperrmuster';
+	@override String get addPatternLock => 'Mustersperre hinzufügen';
+	@override String get cannotBeLessThan8Dots => 'Kann nicht weniger als 8 Punkte sein';
+	@override String get pleaseRepeatThePattern => 'Bitte wiederholen Sie das Muster erneut';
+	@override String get notMatchFirstValidPattern => 'Entspricht nicht dem ersten gültigen Zeichenmuster';
+	@override String get deletePatternLock => 'Mustersperre löschen';
+	@override String get notMatchExistingPattern => 'Entspricht keinem vorhandenen Muster';
+	@override String get localAuthentication => 'Lokale Authentifizierung';
 }
 
 // Path: <root>
@@ -3200,13 +4045,13 @@ class _StringsEl implements Translations {
 	@override String get tempDepositAddressTip4 => '4. Εάν πρέπει να καταθέσετε άλλα είδη περιουσιακών στοιχείων, μεταβείτε στη σελίδα με το αντίστοιχο νόμισμα και τις επιλογές παραμέτρων για να υποβάλετε αίτηση για νέα διεύθυνση.';
 	@override String get applyExtensionOfValidity => 'Αίτηση για παράταση της περιόδου ισχύος';
 	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-		const TextSpan(text: 'Αυτή η διεύθυνση θα λήξει μετά από '),
+		const TextSpan(text: 'Αυτή η διεύθυνση θα λήξει σε '),
 		diff,
-		const TextSpan(text: ' και θα είναι '),
-		tap('manually extend'),
-		const TextSpan(text: ' έγκυρη για 12 ώρες πριν τη λήξη.'),
+		const TextSpan(text: '. Μπορείτε να '),
+		tap('μη αυτόματη επέκταση'),
+		const TextSpan(text: ' την περίοδο ισχύος εντός 6 ωρών πριν από τη λήξη.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'Μπορεί να ανανεωθεί μόνο 12 ώρες νωρίτερα';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'Μπορεί να ανανεωθεί μόνο εντός 6 ωρών νωρίτερα';
 	@override String get theReceivingAddressValidForLongtime => 'Αυτή η διεύθυνση ισχύει για μεγάλο χρονικό διάστημα.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'Αυτή η διεύθυνση συλλογής ισχύει για μεγάλο χρονικό διάστημα και πιστώνεται αυτόματα σε πραγματικό χρόνο.';
 	@override String get confirmDeposited => 'Επιβεβαίωση της κατάθεσης';
@@ -3466,7 +4311,7 @@ class _StringsEl implements Translations {
 	@override String get referrerIdDoesNotExist => 'Το αναγνωριστικό παραπομπής δεν υπάρχει!';
 	@override String get didIsIncorrectOrInvalid => 'Το DID είναι λανθασμένο ή άκυρο!';
 	@override String get accessTokenIsIncorrectOrInvalid => 'Το accessToken είναι λανθασμένο ή άκυρο!';
-	@override String get minimumWithdrawalAmountIs9USD => 'Ελάχιστο 9USD για μία μόνο ανάληψη';
+	@override String get minimumWithdrawalAmountIs1USD => 'Ελάχιστο 1USD για μία μόνο ανάληψη';
 	@override String get miningTimeIsNotYet => 'Δεν ήρθε ακόμα η ώρα να ορυχτείς.';
 	@override String get alreadyExists_pleaseDoNotRepeatedly => 'Υπάρχει ήδη, παρακαλώ μην το προσθέσετε ξανά!';
 	@override String get registrationNumberCannotBeUsedAsAccessNumber => 'Δεν είναι δυνατή η χρήση του αριθμού εγγραφής ως αριθμού πρόσβασης για έλεγχο ταυτότητας';
@@ -3554,6 +4399,38 @@ class _StringsEl implements Translations {
 	@override String get enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted => 'Παρακαλώ εισάγετε τον αντίστοιχο αριθμό κινητού τηλεφώνου. Ο κωδικός χώρας μπορεί να παραλειφθεί.';
 	@override String mobileNumberForNameIsIncorrect({required Object name}) => 'Ο αριθμός κινητού του ${name} δεν είναι σωστός';
 	@override String get matchingVerificationStrategyIs => 'Η αντίστοιχη στρατηγική επαλήθευσης είναι:';
+	@override String get balanceGreater3ICP_noNeedPourFuel => 'Το υπόλοιπο είναι μεγαλύτερο από 3 ICP, δεν χρειάζεται να χύσετε καύσιμο προς το παρόν.';
+	@override String get escrowAccount => 'Escrow Account';
+	@override String get fuelRelay => 'Fuel Relay';
+	@override String get pourFuel => 'Pour fuel';
+	@override String get fuelState => 'Κατάσταση καυσίμου';
+	@override String get pouringFuelTips => 'Η έκχυση καυσίμου δεν σας φέρνει πλεονεκτήματα ή μειονεκτήματα, σκοπός της είναι να εμπλουτίσει την εμπειρία του συστήματος Delta.';
+	@override String get sponsorDevelopersByWatchingAds => 'Χορηγός προγραμματιστών παρακολουθώντας διαφημίσεις';
+	@override String get status => 'status';
+	@override String get date => 'ημερομηνία';
+	@override String get assetApplicationIsInProgressTip => 'Αίτηση στοιχείου σε εξέλιξη, δοκιμάστε ξανά σε 3 δευτερόλεπτα.';
+	@override String get delete => 'Delete';
+	@override String get deleteVerifierTip => 'Κατά τη διαγραφή των αδειών ενός επαληθευτή, όλα τα σχετικά δεδομένα βαθμολογίας θα διαγραφούν ταυτόχρονα, αλλά οι ανταμοιβές που έχουν ήδη ληφθεί δεν θα επηρεαστούν.';
+	@override String get deleteVerifierStatusTip => 'Ρυθμίστε το σε κατάσταση παύσης πριν από τη διαγραφή';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'Παρακαλώ εισάγετε "${text}", για επιβεβαίωση';
+	@override String get localSecurity => 'Τοπική ασφάλεια';
+	@override String get deviceLock => 'Κλείδωμα συσκευής';
+	@override String get patternLock => 'Κλείδωμα μοτίβου';
+	@override String get none => 'κανένας';
+	@override String get exist => 'υπάρχει';
+	@override String get prompt => 'Prompt:';
+	@override String get localSecurityTip1 => '1. Ο τοπικός έλεγχος ταυτότητας ασφαλείας χρησιμοποιείται για την επιβεβαίωση της ταυτότητας κατά τη διάρκεια ορισμένων ευαίσθητων λειτουργιών. Σκοπός του είναι να αποτρέψει τον έλεγχο της συσκευής από άλλους και να διασφαλίσει την ασφάλεια του λογαριασμού.';
+	@override String get localSecurityTip2 => '2. Το κλείδωμα μοτίβου είναι μια συμπληρωματική λύση όταν το κλείδωμα της συσκευής δεν υποστηρίζεται ή δεν είναι συμβατό. Γενικά, δεν χρειάζεται να ορίσετε ένα κλείδωμα μοτίβου όταν το κλείδωμα της συσκευής είναι διαθέσιμο.';
+	@override String get localSecurityTip3 => '3. Όταν το κλείδωμα μοτίβου σας ξεχαστεί, μπορείτε μόνο να διαγράψετε τα δεδομένα της εφαρμογής ή να εγκαταστήσετε ξανά την εφαρμογή για να το διαγράψετε.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'Ο έλεγχος ταυτότητας συσκευής πρόκειται να κληθεί. Εάν παρουσιαστεί σφάλμα ή εξαίρεση, μεταβείτε στην επιλογή "${localSecurity}" στη σελίδα "${menu}" για δοκιμή και περαιτέρω ρυθμίσεις.';
+	@override String get pleaseDrawUnlockPattern => 'Σχεδιάστε το μοτίβο ξεκλειδώματος';
+	@override String get addPatternLock => 'Προσθήκη κλειδώματος μοτίβου';
+	@override String get cannotBeLessThan8Dots => 'Δεν μπορεί να είναι μικρότερη από 8 τελείες';
+	@override String get pleaseRepeatThePattern => 'Παρακαλώ επαναλάβετε το μοτίβο ξανά';
+	@override String get notMatchFirstValidPattern => 'Δεν ταιριάζει με το πρώτο έγκυρο μοτίβο σχεδίασης';
+	@override String get deletePatternLock => 'Διαγραφή κλειδώματος μοτίβου';
+	@override String get notMatchExistingPattern => 'Δεν ταιριάζει με ένα υπάρχον μοτίβο';
+	@override String get localAuthentication => 'Τοπικός έλεγχος ταυτότητας';
 }
 
 // Path: <root>
@@ -3883,13 +4760,13 @@ class _StringsEs implements Translations {
 	@override String get tempDepositAddressTip4 => '4. Si necesita depositar otros tipos de activos, cambie a la página de la divisa correspondiente y parametrice las opciones para solicitar una nueva dirección.';
 	@override String get applyExtensionOfValidity => 'Solicitud de prórroga';
 	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-		const TextSpan(text: 'Esta dirección expirará después de '),
+		const TextSpan(text: 'Esta dirección caducará en '),
 		diff,
-		const TextSpan(text: ' y será '),
+		const TextSpan(text: '. También puede usar '),
 		tap('manually extend'),
-		const TextSpan(text: ' válida durante 12 horas antes de expirar.'),
+		const TextSpan(text: ' el período de validez dentro de las 6 horas previas al vencimiento.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'Sólo puede renovarse con 12 horas de antelación';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'Solo se puede renovar con 6 horas de antelación';
 	@override String get theReceivingAddressValidForLongtime => 'Esta dirección es válida durante mucho tiempo.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'Esta dirección de cobro es válida durante mucho tiempo y se abona automáticamente en tiempo real.';
 	@override String get confirmDeposited => 'Confirmación del depósito';
@@ -4149,7 +5026,7 @@ class _StringsEs implements Translations {
 	@override String get referrerIdDoesNotExist => 'El ID de referencia no existe.';
 	@override String get didIsIncorrectOrInvalid => 'El DID es incorrecto o inválido.';
 	@override String get accessTokenIsIncorrectOrInvalid => 'El accessToken es incorrecto o inválido.';
-	@override String get minimumWithdrawalAmountIs9USD => 'Mínimo 9USD para una sola retirada';
+	@override String get minimumWithdrawalAmountIs1USD => 'Mínimo 1USD para una sola retirada';
 	@override String get miningTimeIsNotYet => 'Aún no es hora de minar.';
 	@override String get alreadyExists_pleaseDoNotRepeatedly => 'Ya existe, ¡por favor no lo añada de nuevo!';
 	@override String get registrationNumberCannotBeUsedAsAccessNumber => 'No se puede utilizar el número de registro como número de acceso de autenticación';
@@ -4190,7 +5067,7 @@ class _StringsEs implements Translations {
 	@override String get foundNewVersion => 'Descubra la nueva versión:';
 	@override String get upgradeLink => 'Enlace de actualización:';
 	@override String get deviceDescription => 'Descripción del equipamiento.';
-	@override String get notification30SecondsBeforeMiningStops => 'Εκτελέστε υπενθύμιση ειδοποίησης 30 δευτερόλεπτα πριν σταματήσει η εξόρυξη!';
+	@override String get notification30SecondsBeforeMiningStops => 'Ejecutar recordatorio de notificación 30 segundos antes de que se detenga la extracción!';
 	@override String get goMining => 'Ir a minar';
 	@override String get deltaMiningReminder => 'Recordatorio de minería Delta';
 	@override String get clickToMine_miningIsAboutToStop => '¡Haga clic aquí para minar, la minería se detendrá pronto!';
@@ -4238,6 +5115,38 @@ class _StringsEs implements Translations {
 	@override String get enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted => 'Por favor, introduzca el número de móvil asociado. El código de país puede omitirse.';
 	@override String mobileNumberForNameIsIncorrect({required Object name}) => 'El número de móvil de ${name} es incorrecto';
 	@override String get matchingVerificationStrategyIs => 'La estrategia de verificación de coincidencia es:';
+	@override String get balanceGreater3ICP_noNeedPourFuel => 'El saldo es mayor a 3 ICP, no es necesario agregar combustible por ahora.';
+	@override String get escrowAccount => 'Cuenta de depósito en garantía';
+	@override String get fuelRelay => 'Relé de combustible';
+	@override String get pourFuel => 'Vierte combustible';
+	@override String get fuelState => 'Estado del combustible';
+	@override String get pouringFuelTips => 'Verter combustible no aporta ninguna ventaja ni desventaja, su propósito es enriquecer la experiencia del sistema Delta';
+	@override String get sponsorDevelopersByWatchingAds => 'Patrocina a desarrolladores viendo anuncios';
+	@override String get status => 'Estado';
+	@override String get date => 'Fecha';
+	@override String get assetApplicationIsInProgressTip => 'Solicitud de activo en proceso, inténtelo de nuevo en 3 segundos.';
+	@override String get delete => 'Eliminar';
+	@override String get deleteVerifierTip => 'Al eliminar los permisos de un verificador, se eliminarán simultáneamente todos los datos de puntuación relacionados, pero las recompensas ya obtenidas no se verán afectadas.';
+	@override String get deleteVerifierStatusTip => 'Por favor, ponlo en pausa antes de eliminarlo';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'Por favor, introduzca "${text}", para confirmar';
+	@override String get localSecurity => 'Seguridad local';
+	@override String get deviceLock => 'Bloqueo del dispositivo';
+	@override String get patternLock => 'Bloqueo de patrón';
+	@override String get none => 'ninguno';
+	@override String get exist => 'existe';
+	@override String get prompt => 'Mensaje:';
+	@override String get localSecurityTip1 => '1. La autenticación de seguridad local se utiliza para confirmar la identidad durante ciertas operaciones sensibles. Su propósito es evitar que otros controlen el dispositivo y garantizar la seguridad de la cuenta.';
+	@override String get localSecurityTip2 => '2. El bloqueo de patrón es una solución complementaria cuando el bloqueo del dispositivo no es compatible. Generalmente, no es necesario configurar un bloqueo de patrón cuando el bloqueo del dispositivo está disponible.';
+	@override String get localSecurityTip3 => '3. Si olvidas tu patrón de bloqueo, solo puedes borrar los datos de la aplicación o reinstalarla para borrarlo.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'Se está a punto de ejecutar la autenticación del dispositivo. Si se produce un error o una excepción, acceda a la opción "${localSecurity}" en la página "${menu}" para realizar pruebas y realizar más configuraciones.';
+	@override String get pleaseDrawUnlockPattern => 'Por favor, dibuja el patrón de desbloqueo';
+	@override String get addPatternLock => 'Añadir patrón de bloqueo';
+	@override String get cannotBeLessThan8Dots => 'No puede ser menor a 8 puntos';
+	@override String get pleaseRepeatThePattern => 'Por favor, repita el patrón de nuevo';
+	@override String get notMatchFirstValidPattern => 'No coincide con el primer patrón de dibujo válido';
+	@override String get deletePatternLock => 'Eliminar bloqueo de patrón';
+	@override String get notMatchExistingPattern => 'No coincide con ningún patrón existente';
+	@override String get localAuthentication => 'Autenticación local';
 }
 
 // Path: <root>
@@ -4567,13 +5476,13 @@ class _StringsFr implements Translations {
 	@override String get tempDepositAddressTip4 => '4) Si vous devez déposer d\'autres types d\'actifs, veuillez passer à la page de la devise correspondante et aux options de paramètres pour demander une nouvelle adresse.';
 	@override String get applyExtensionOfValidity => 'Demande de prolongation de la période de validité';
 	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-		const TextSpan(text: 'Cette adresse expirera après '),
+		const TextSpan(text: 'Cette adresse expirera dans '),
 		diff,
-		const TextSpan(text: ' et sera '),
+		const TextSpan(text: '. Vous pouvez '),
 		tap('manually extend'),
-		const TextSpan(text: ' valide pendant 12 heures avant l\'expiration.'),
+		const TextSpan(text: ' prolonger la période de validité dans les 6 heures avant l\'expiration.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'Le renouvellement ne peut se faire que 12 heures à l\'avance';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'Ne peut être renouvelé que dans les 6 heures à l\'avance';
 	@override String get theReceivingAddressValidForLongtime => 'Cette adresse est valable pour une longue période.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'Cette adresse de collecte est valable pour une longue durée et est automatiquement créditée en temps réel.';
 	@override String get confirmDeposited => 'Confirmation des dépôts';
@@ -4833,7 +5742,7 @@ class _StringsFr implements Translations {
 	@override String get referrerIdDoesNotExist => 'L\'ID du référent n\'existe pas !';
 	@override String get didIsIncorrectOrInvalid => 'La DID est incorrecte ou invalide !';
 	@override String get accessTokenIsIncorrectOrInvalid => 'Le code d\'accès est incorrect ou invalide !';
-	@override String get minimumWithdrawalAmountIs9USD => 'Minimum 9USD pour un retrait unique';
+	@override String get minimumWithdrawalAmountIs1USD => 'Minimum 1USD pour un retrait unique';
 	@override String get miningTimeIsNotYet => 'Il n\'est pas encore temps de miner.';
 	@override String get alreadyExists_pleaseDoNotRepeatedly => 'Existe déjà, ne l\'ajoutez pas à nouveau !';
 	@override String get registrationNumberCannotBeUsedAsAccessNumber => 'Impossible d\'utiliser le numéro d\'enregistrement comme numéro d\'accès à l\'authentification';
@@ -4922,6 +5831,750 @@ class _StringsFr implements Translations {
 	@override String get enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted => 'Veuillez saisir le numéro de téléphone mobile associé. L\'indicatif du pays peut être omis.';
 	@override String mobileNumberForNameIsIncorrect({required Object name}) => 'Le numéro de téléphone portable de ${name} est incorrect';
 	@override String get matchingVerificationStrategyIs => 'La stratégie de vérification correspondante est: ';
+	@override String get balanceGreater3ICP_noNeedPourFuel => 'Le solde est supérieur à 3 ICP, pas besoin de verser de carburant pour le moment.';
+	@override String get escrowAccount => 'Compte séquestre';
+	@override String get fuelRelay => 'Relais de carburant';
+	@override String get pourFuel => 'Verser du carburant';
+	@override String get fuelState => 'État du carburant';
+	@override String get pouringFuelTips => 'Verser du carburant ne vous apporte aucun avantage ni inconvénient, son but est d\'enrichir l\'expérience du système Delta.';
+	@override String get sponsorDevelopersByWatchingAds => 'Sponsorisez des développeurs en regardant des publicités';
+	@override String get status => 'Statut';
+	@override String get date => 'Date';
+	@override String get assetApplicationIsInProgressTip => 'Demande d\'asset en cours, veuillez réessayer dans 3 secondes.';
+	@override String get delete => 'Supprimer';
+	@override String get deleteVerifierTip => 'Lors de la suppression des autorisations d\'un vérificateur, toutes les données de score associées seront supprimées en même temps, mais les récompenses déjà obtenues ne seront pas affectées.';
+	@override String get deleteVerifierStatusTip => 'Veuillez le mettre en pause avant de le supprimer';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'Veuillez saisir "${text}" pour confirmer';
+	@override String get localSecurity => 'Sécurité locale';
+	@override String get deviceLock => 'Verrouillage de l\'appareil';
+	@override String get patternLock => 'Verrouillage par motif';
+	@override String get none => 'aucun';
+	@override String get exist => 'existe';
+	@override String get prompt => 'Invite :';
+	@override String get localSecurityTip1 => '1. L\'authentification de sécurité locale permet de confirmer l\'identité lors de certaines opérations sensibles. Elle vise à empêcher le contrôle de l\'appareil par d\'autres et à garantir la sécurité du compte. ';
+	@override String get localSecurityTip2 => '2. Le verrouillage par schéma est une solution complémentaire lorsque le verrouillage de l\'appareil n\'est pas pris en charge ou incompatible. En général, il n\'est pas nécessaire de définir un verrouillage par schéma lorsque le verrouillage de l\'appareil est disponible.';
+	@override String get localSecurityTip3 => '3. Lorsque votre schéma de verrouillage est oublié, vous pouvez uniquement effacer les données de l\'application ou réinstaller l\'application pour l\'effacer.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'L\'authentification de l\'appareil est sur le point d\'être appelée. En cas d\'erreur ou d\'exception, accédez à l\'option « ${localSecurity} » de la page « ${menu} » pour effectuer des tests et des réglages supplémentaires.';
+	@override String get pleaseDrawUnlockPattern => 'Veuillez dessiner le schéma de déverrouillage';
+	@override String get addPatternLock => 'Ajouter un verrouillage par motif';
+	@override String get cannotBeLessThan8Dots => 'Ne peut pas être inférieur à 8 points';
+	@override String get pleaseRepeatThePattern => 'Veuillez répéter le modèle à nouveau';
+	@override String get notMatchFirstValidPattern => 'Ne correspond pas au premier modèle de dessin valide';
+	@override String get deletePatternLock => 'Supprimer le verrouillage par motif';
+	@override String get notMatchExistingPattern => 'Ne correspond pas à un modèle existant';
+	@override String get localAuthentication => 'Authentification locale';
+}
+
+// Path: <root>
+class _StringsHi implements Translations {
+	/// You can call this constructor and build your own translation instance of this locale.
+	/// Constructing via the enum [AppLocale.build] is preferred.
+	_StringsHi.build({Map<String, Node>? overrides, PluralResolver? cardinalResolver, PluralResolver? ordinalResolver})
+		: assert(overrides == null, 'Set "translation_overrides: true" in order to enable this feature.'),
+		  $meta = TranslationMetadata(
+		    locale: AppLocale.hi,
+		    overrides: overrides ?? {},
+		    cardinalResolver: cardinalResolver,
+		    ordinalResolver: ordinalResolver,
+		  ) {
+		$meta.setFlatMapFunction(_flatMapFunction);
+	}
+
+	/// Metadata for the translations of <hi>.
+	@override final TranslationMetadata<AppLocale, Translations> $meta;
+
+	/// Access flat map
+	@override dynamic operator[](String key) => $meta.getTranslation(key);
+
+	@override late final _StringsHi _root = this; // ignore: unused_field
+
+	// Translations
+	@override String get home => 'होम';
+	@override String get switchLanguage => 'भाषा बदलें';
+	@override String get languageSwitch => 'भाषा बदलें';
+	@override String get slogan => 'डेल्टा में एक विकेन्द्रीकृत आर्थिक क्षेत्र बनाएं';
+	@override String get countryRegionCode => 'देश कोड';
+	@override String get countryRegionSelection => 'देश चुनें';
+	@override String get nextStep => 'अगला चरण';
+	@override String get yourPhoneNumber => 'आपका फ़ोन नंबर';
+	@override String get pleaseSelectCountryAndRegion => 'कृपया अपना देश चुनें';
+	@override String get pleaseEnterPhoneNumber => 'कृपया एक मान्य फ़ोन नंबर दर्ज करें!';
+	@override String get referrerDid => 'रेफ़रर DID';
+	@override String get pleaseEnterTheReferrersDid => 'कृपया मान्य रेफ़रर DID दर्ज करें!';
+	@override String get thisDidIsInvalid => 'यह DID अमान्य है';
+	@override String get nicknameFormatTips => 'उपनाम खाली नहीं हो सकता और इसकी लंबाई 16 अक्षरों से अधिक नहीं हो सकती';
+	@override String get additionalIinformation => 'अतिरिक्त जानकारी';
+	@override String get invitationSubject => 'डेल्टा सर्वसम्मति निर्माण में भाग लेने के लिए आपको आमंत्रित किया जाता है';
+	@override String invitationLetter({required Object did}) => 'नमस्ते, मैं डेल्टा सर्वसम्मति निर्माण में भाग ले रहा हूँ! डेल्टा एक ओपन-सोर्स नया डिजिटल मनी प्लेटफ़ॉर्म है, जो इंटरनेट कंप्यूटर (ICP) पर चलता है। यह पासवर्ड, निजी कुंजी, या निमोनिक्स के बिना विभिन्न डिजिटल मुद्राओं को प्रबंधित और उपयोग कर सकता है। कृपया इस लिंक पर क्लिक करें: https://delta.kim/auto/download डेल्टा एप्लिकेशन इंस्टॉल करने के लिए। अब हम आपको सर्वसम्मति बनाने और सिक्के मिंट करने के लिए आमंत्रित करते हैं।\n रेफ़रर DID: ${did}';
+	@override String get dSMSverification => 'डिसेंट्रलाइज्ड SMS/dSMS सत्यापन';
+	@override String get getAccessNumbers => 'एक्सेस नंबर प्राप्त करें';
+	@override String get getAccessNumberPromptMessage => 'नीचे दिए गए \'प्राप्त करें\' बटन पर क्लिक करें ताकि कतार में क्रमशः dSMS सत्यापन एक्सेस नंबरों के समूह का चयन किया जा सके।';
+	@override String get optionalAccessNumbers => 'वैकल्पिक एक्सेस नंबर';
+	@override String get accessNumber => 'एक्सेस नंबर';
+	@override String get TELCO => 'टेल्को/देश सूची';
+	@override String get score => 'स्कोर';
+	@override TextSpan checkAccessNumberTip({required num n, required InlineSpan Function(num) nBuilder, required InlineSpanBuilder span}) => RichPluralResolvers.bridge(
+		n: n,
+		resolver: _root.$meta.cardinalResolver ?? PluralResolvers.cardinal('hi'),
+		one: () => TextSpan(children: [
+			nBuilder(n),
+			const TextSpan(text: ' एक्सेस नंबर जांचें और अगले चरण पर जाने के लिए "'),
+			span('text'),
+			const TextSpan(text: '" बटन पर क्लिक करें।'),
+		]),
+		other: () => TextSpan(children: [
+			nBuilder(n),
+			const TextSpan(text: ' एक्सेस नंबरों की जांच करें और अगले चरण पर जाने के लिए "'),
+			span('text'),
+			const TextSpan(text: '" बटन पर क्लिक करें।'),
+		]),
+	);
+	@override String get whatIsDeltaDesc => 'डेल्टा एक ओपन-सोर्स विकेन्द्रीकृत वैश्विक डिजिटल मुद्रा प्रयोगात्मक परियोजना और मुद्रा अनुप्रयोग पारिस्थितिकी तंत्र है।';
+	@override String get deltaGoalsDesc => 'हमारा लक्ष्य है कि लोग डेल्टा का उपयोग करके एक सार्वभौमिक, निष्पक्ष, सुरक्षित, तेज़ और पर्यावरण-अनुकूल नई डिजिटल मुद्रा का सामूहिक रूप से निर्माण करें। साथ ही, इन डिजिटल मुद्राओं और पिछली क्रिप्टोकरेंसी के लिए विभिन्न प्रभावी अनुप्रयोग परिदृश्य प्रदान करें।';
+	@override String get details => 'विवरण';
+	@override String get get => 'प्राप्त करें';
+	@override String get select => 'चुनें';
+	@override String get send => 'संदेश भेजें';
+	@override String get complete => 'पूरा करें';
+	@override String get selectedAccessNumberPrompt => 'चयन किए जाने पर, पूरा एक्सेस नंबर प्रदर्शित होता है और एक प्रमाणीकरण स्ट्रिंग उत्पन्न होती है।';
+	@override String get location => 'लोकेशन';
+	@override String get verificationString => 'सत्यापन स्ट्रिंग';
+	@override TextSpan sendVerificationStringDesc({required InlineSpan num, required InlineSpan accessNumber, required InlineSpan label}) => TextSpan(children: [
+		const TextSpan(text: 'कृपया अपने फोन नंबर '),
+		num,
+		const TextSpan(text: ' का उपयोग करें, सत्यापन पूरा करने के लिए '),
+		accessNumber,
+		const TextSpan(text: ' पर '),
+		label,
+		const TextSpan(text: ' भेजें।'),
+	]);
+	@override String get ihaveSentTheSMS => 'मैंने एसएमएस भेज दिया है';
+	@override TextSpan validWithin6minutes({required InlineSpan time}) => TextSpan(children: [
+		const TextSpan(text: 'सत्यापन स्ट्रिंग 6 मिनट के लिए मान्य है, शेष समय: '),
+		time,
+		const TextSpan(text: ' '),
+	]);
+	@override String tooFast_waitXsecondsContinuing({required Object x}) => 'अति शीघ्र! जारी रखने से पहले ${x} सेकंड प्रतीक्षा करें।';
+	@override String get waitingForVerificationSMS => 'सत्यापन स्ट्रिंग की प्रतीक्षा हो रही है...';
+	@override String get partSuccsForVerificationSMS => 'एसएमएस सत्यापन आपके चुने गए एक्सेस टर्मिनल द्वारा पूरा हो गया है!';
+	@override String get creatingAccessToken => 'आपका एक्सेस टोकन बनाया जा रहा है।';
+	@override String get intoDelta => 'डेल्टा में प्रवेश करें!';
+	@override String get deltaAccountIsLoggedIn => 'आपका डेल्टा अकाउंट लॉग इन हो गया है।';
+	@override String get iHavLoggedOut => 'मैं लॉग आउट हो गया हूँ।';
+	@override String get startTwoFactorVerification => 'टू-फैक्टर सत्यापन शुरू करें।';
+	@override String get securityCircleVerification => 'सुरक्षा सर्कल सत्यापन';
+	@override String get generateSecurityCode => 'सुरक्षा कोड उत्पन्न करें';
+	@override String get generateSecurityCodeHintText => 'उत्पन्न सुरक्षा कोड आपके सुरक्षा सर्कल के किसी यादृच्छिक रूप से चुने गए सदस्य को भेजा जाएगा।';
+	@override String get notSetSecurityCircleEnterPlaceholderTip => 'आपने अभी तक सुरक्षा सर्कल सेट नहीं किया है, आपका अकाउंट बहुत असुरक्षित है। कृपया कोई भी 6-अंकीय प्लेसहोल्डर दर्ज करें और अगले चरण पर जाएं।';
+	@override String get securityCodeHasBeenGenerated_ContactFriendsTip => 'सुरक्षा कोड उत्पन्न हो गया है। कृपया निम्नलिखित रिश्तेदारों और मित्रों से संपर्क करें और उनसे सुरक्षा कोड निकालने के लिए कहें ताकि आप सत्यापन पूरा कर सकें। यह 30 मिनट तक मान्य है!';
+	@override String get itGetSecurityCodeTip => 'सुझाव: यह सदस्य डेल्टा ऐप -> मेनू -> \'सुरक्षा प्रदान करें\' पृष्ठ में आपके अकाउंट उपनाम को खोजेगा और सुरक्षा कोड प्राप्त करने के लिए डबल-क्लिक करेगा।';
+	@override String get securityCircleMemberList => 'सुरक्षा सर्कल सदस्य सूची:';
+	@override String get selectA_friendToProvideSecurityCodeTip => 'कृपया सदस्य सूची से किसी रिश्तेदार या मित्र का चयन करें, जो सुरक्षा कोड उत्पन्न कर आपको प्रदान करे, ताकि आपकी वास्तविक पहचान सत्यापित की जा सके। इसका उद्देश्य यह सुनिश्चित करना है कि मोबाइल नंबर खो जाने या चोरी हो जाने पर आपका अकाउंट किसी अन्य के नियंत्रण में न जाए।';
+	@override String formatIsXdigits({required Object num}) => '${num} अंकों का फ़ॉर्मेट है';
+	@override String get signInSuccessfully => 'साइन इन सफल हुआ!';
+	@override String get twoFAandLogin => 'टू-फैक्टर सत्यापन और लॉगिन';
+	@override String get verificationSuccessful => 'सत्यापन सफल हुआ!';
+	@override String get validationFailed => 'सत्यापन विफल हुआ!';
+	@override String get securityCircle => 'सुरक्षा सर्कल';
+	@override String get securityCode => 'सुरक्षा कोड';
+	@override String get provideSecurity => 'सुरक्षा प्रदान करें';
+	@override String get addManully => 'मैन्युअली जोड़ें';
+	@override String get addFromContacts => 'संपर्कों से जोड़ें';
+	@override String get addSecurityCircle => 'सुरक्षा सर्कल जोड़ें';
+	@override String get inputType => 'इनपुट प्रकार';
+	@override String get mobileNumber => 'मोबाइल नंबर';
+	@override String get did => 'DID (डिजिटल पहचान कोड)';
+	@override String get pleaseEnterValidDID => 'कृपया एक वैध DID दर्ज करें';
+	@override String get pleaseEnterValidWalletAddress => 'कृपया एक वैध वॉलेट एड्रेस दर्ज करें';
+	@override String get appellation => 'उपाधि';
+	@override String get appellationHint => 'आप इसे क्या नाम देना चाहेंगे? जैसे "भाई"';
+	@override String get addSecurityCircleTips => 'कृपया सुरक्षा सर्कल में अविश्वसनीय लोगों को न जोड़ें।';
+	@override String get referralTeam => 'रेफरल टीम';
+	@override String get profile => 'प्रोफ़ाइल';
+	@override String get menu => 'मेनू';
+	@override String get directly => 'प्रत्‍यक्ष रूप से';
+	@override String get indirectly => 'अप्रत्‍यक्ष रूप से';
+	@override String get inviteContacts => 'संपर्कों को आमंत्रित करें';
+	@override TextSpan refereesAtFirstLevelDesc({required InlineSpan nickname, required InlineSpan num1, required InlineSpan num2}) => TextSpan(children: [
+		const TextSpan(text: 'आपके रेफ़रर '),
+		nickname,
+		const TextSpan(text: ' हैं। आपने प्रत्‍यक्ष रूप से '),
+		num1,
+		const TextSpan(text: ' लोगों की सिफारिश की है, जिनमें से '),
+		num2,
+		const TextSpan(text: ' लोग वर्तमान में ऑनलाइन हैं।'),
+	]);
+	@override TextSpan refereesAtSecondLevelDesc({required InlineSpan num1, required InlineSpan num2}) => TextSpan(children: [
+		const TextSpan(text: 'आपने अप्रत्यक्ष रूप से '),
+		num1,
+		const TextSpan(text: ' लोगों की सिफारिश की है, जिनमें से '),
+		num2,
+		const TextSpan(text: ' लोग वर्तमान में ऑनलाइन हैं।'),
+	]);
+	@override TextSpan invitationToBoostMiningDesc({required InlineSpan rate1, required InlineSpan btn}) => TextSpan(children: [
+		const TextSpan(text: 'दोस्तों को डेल्टा से जुड़ने के लिए आमंत्रित करें और सामाजिक सहमति को बेहतर बनाएं। प्रत्येक प्रत्‍यक्ष रूप से अनुशंसित व्यक्ति की माइनिंग दर आधार दर के '),
+		rate1,
+		const TextSpan(text: ' से बढ़ जाती है। '),
+		btn,
+	]);
+	@override TextSpan invitationToBoostMiningDesc2({required InlineSpan rate2}) => TextSpan(children: [
+		const TextSpan(text: 'दोस्तों को डेल्टा से जुड़ने के लिए आमंत्रित करें और सामाजिक सहमति को बेहतर बनाएं। प्रत्येक अप्रत्यक्ष रूप से अनुशंसित व्यक्ति की माइनिंग दर आधार दर के '),
+		rate2,
+		const TextSpan(text: ' से बढ़ जाती है।'),
+	]);
+	@override String areYouSureToRemove_x({required Object name}) => 'क्या आप "${name}" को हटाना सुनिश्चित करते हैं?';
+	@override String get safetyCircleRoleQ => 'सुरक्षा सर्कल का कार्य क्या है?';
+	@override String get safetyCircleRoleA => 'यह संवेदनशील परिस्थितियों में द्वितीयक प्रमाणीकरण प्रदान करता है ताकि आपके खाते की सुरक्षा बनी रहे।';
+	@override String get howSecurityCirclesWorkQ => 'सुरक्षा सर्कल कैसे काम करता है?';
+	@override String get howSecurityCirclesWorkA => 'जब सुरक्षा सर्कल सत्यापन के लिए आवश्यक होता है, तो डेल्टा स्मार्ट कॉन्ट्रैक्ट प्रोग्राम यादृच्छिक रूप से सुरक्षा सर्कल मित्र सूची से एक सदस्य का चयन करेगा, जो आपको सुरक्षा कोड प्रदान करने में मदद करेगा ताकि आपकी पहचान की सुरक्षा पुष्टि हो सके। जब आप सदस्य से सुरक्षा कोड मांगते हैं, तो यह पुष्टि कर सकता है कि आप वास्तव में वही हैं। साथ ही, प्रोग्राम यह संकेत देगा: "यदि यह आप नहीं हैं, तो सुरक्षा कोड प्रदान करने से इनकार करें", ताकि आपके खाते की सुरक्षा बनी रहे। इसलिए, आपको हमेशा यह सुनिश्चित करना चाहिए कि आपके सुरक्षा सर्कल के सदस्य वे लोग हों जिन पर आप भरोसा कर सकते हैं।';
+	@override String get securityCircleBeUsedQ => 'आप इसे कब उपयोग करेंगे?';
+	@override String get securityCircleBeUsedA1 => '1. जब आपका डेल्टा ऐप नियंत्रण से बाहर हो जाए, आमतौर पर यह तब होता है जब आपका मोबाइल फोन खो जाता है या चोरी हो जाता है।';
+	@override String get securityCircleBeUsedA2 => '2. कुछ संवेदनशील प्रक्रियाओं के मामले में, डेल्टा स्मार्ट कॉन्ट्रैक्ट प्रोग्राम को यह पुष्टि करने की आवश्यकता होती है कि आप स्वयं अपना खाता एक्सेस कर रहे हैं, कोई और नहीं।';
+	@override String get provideSafetyTip1 => 'जब आपका मित्र आपसे सुरक्षा कोड मांगे, तो कृपया सुनिश्चित करें कि वह वास्तव में खुद अकाउंट एक्सेस कर रहा है, कोई और नहीं है।';
+	@override String get provideSafetyTip2 => 'आप उपरोक्त मित्रों के लिए सुरक्षा प्रदान कर रहे हैं। उन्होंने आपको सुरक्षा सर्कल में सबसे विश्वसनीय व्यक्ति के रूप में सेट किया है, और जब उनके खाते संवेदनशील प्रक्रियाओं का सामना करते हैं, तो आपको उनके लिए सुरक्षा पुष्टि प्रदान करनी होगी।';
+	@override String get provideSafetyTip3 => 'जब आवश्यक हो, सुरक्षा कोड निकालने के लिए दूसरे व्यक्ति के प्रोफ़ाइल फोटो पर डबल-क्लिक करें।';
+	@override String get doesNotSecurityCodeNeedsRetrieved => 'दूसरे व्यक्ति के पास वर्तमान में कोई सुरक्षा कोड नहीं है जिसे प्राप्त करने की आवश्यकता हो!';
+	@override String get existSecurityCodeTip => 'कृपया सुनिश्चित करें कि जो रिश्तेदार या मित्र आपसे सुरक्षा कोड मांग रहा है, वह वास्तव में वही है। रिश्तेदार या मित्र की सुरक्षा सुनिश्चित करने के लिए, यदि वह स्वयं नहीं है, तो सुरक्षा कोड प्रदान करने से इनकार कर दें।';
+	@override String get avatarSettings => 'प्रोफ़ाइल फोटो सेटिंग्स';
+	@override String get NFTAvatarPropertyRightsText => 'अस्वीकरण: संबंधित NFT को प्रोफ़ाइल फोटो के रूप में उपयोग करना केवल व्यक्तिगत पसंद है और इसका NFT के बौद्धिक संपदा अधिकारों के स्वामित्व से कोई संबंध नहीं है।';
+	@override String get projectWebsite => 'प्रोजेक्ट वेबसाइट: ';
+	@override String get whitepaper => 'व्हाइटपेपर:';
+	@override String get indexID => 'सूचकांक आईडी';
+	@override String indexesRangeFromXtoY({required Object start, required Object end}) => 'सूचकांक ${start} से ${end} तक हैं।';
+	@override String get inputToLoadNFTAvatarTip => 'अपने पसंदीदा NFT का सूचकांक आईडी दर्ज करें, और प्रोग्राम इसे स्वतः आपके प्रोफ़ाइल फोटो के रूप में लोड कर देगा।';
+	@override String get miningRate => 'माइनिंग दर';
+	@override String get miningDetails => 'माइनिंग विवरण';
+	@override TextSpan totalMiningRateEachDay({required InlineSpan rate}) => TextSpan(children: [
+		const TextSpan(text: 'कुल माइनिंग दर: '),
+		rate,
+		const TextSpan(text: ' δ/दिन'),
+	]);
+	@override String get EndOfMiningSession => 'माइनिंग सत्र समाप्त हो चुका है।: ';
+	@override String get tapToMineDeltaCoin => 'डेल्टा कॉइन माइन करने के लिए टैप करें। ↑';
+	@override String get clickToStartMining => 'माइनिंग शुरू करने के लिए टैप करें!';
+	@override String get miningHasStoppedPromptDesc => 'माइनिंग रुक गई है, हर 24 घंटे का एक माइनिंग चक्र होता है। नई माइनिंग शुरू करने के लिए बिजली आइकन पर क्लिक करें। डेल्टा की माइनिंग एक वितरण तंत्र है, जो आपके डिवाइस की अतिरिक्त कंप्यूटिंग शक्ति और नेटवर्क ट्रैफिक का उपयोग नहीं करता।';
+	@override String get aboutBaseRate => 'बेस रेट के बारे में जानना चाहते हैं?';
+	@override String get baseRateDescription => 'व्हाइटपेपर में दिए गए समझौते के अनुसार, डेल्टा माइनिंग की बेसिक रेट घटाने की प्रक्रिया दो चरणों में विभाजित होगी| \nचरण 1: जब प्रतिभागियों (पंजीकरण) की संख्या 3000 या उससे कम होगी, तो दर 32δ/दिन होगी। इसे शुरुआती बिंदु मानते हुए, प्रत्येक बार जब प्रतिभागियों की संख्या 10 गुना बढ़ेगी, तो बेस रेट आधा कर दिया जाएगा। \nचरण 2: जब प्रतिभागियों की संख्या 30 मिलियन या उससे अधिक हो जाएगी, तो प्रत्येक बार जब संख्या 3 गुना बढ़ेगी, बेस रेट आधा हो जाएगा। यह तब तक जारी रहेगा जब तक कि पूरी आपूर्ति नहीं निकल जाती।';
+	@override String get baseRate => 'बेस रेट';
+	@override String get directReferralRewards => 'प्रत्यक्ष रेफरल पुरस्कार';
+	@override String get directReferralRewardDesc => 'प्रत्येक व्यक्ति जिसे आपने प्रत्यक्ष रूप से आमंत्रित किया है, जब वह माइनिंग स्थिति में होगा, तो आपकी माइनिंग दर बेस रेट के 1/3 से बढ़ जाएगी। \n\n इसके अलावा, आपके रेफ़रर की माइनिंग स्थिति भी आपके प्रत्यक्ष रेफरल पुरस्कार में शामिल की जाएगी।';
+	@override String get indirectReferralRewards => 'अप्रत्यक्ष रेफरल पुरस्कार';
+	@override String get indirectReferralRewardDesc => 'जब कोई अप्रत्यक्ष रेफ़रल माइनिंग स्थिति में होगा, तो आपकी माइनिंग दर बेस रेट के 1/10 से अतिरिक्त रूप से बढ़ जाएगी। \n\n आपकी प्रत्यक्ष रेफ़रल टीम और वे जिन लोगों को आमंत्रित करते हैं, वे आपके लिए अप्रत्यक्ष रेफ़रल माने जाएंगे।';
+	@override String get mine => 'माइन';
+	@override String get thisMiningInformation => 'यह माइनिंग जानकारी';
+	@override TextSpan participatedInMiningXtimes({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'कुल बार जब आपने माइनिंग में भाग लिया: '),
+		x,
+		const TextSpan(text: ' बार'),
+	]);
+	@override TextSpan totalIncomeThisTimeXDeltaCoins({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'इस बार की आय: '),
+		x,
+		const TextSpan(text: ' डेल्टा कॉइंस'),
+	]);
+	@override TextSpan basicIncomeXcoins({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'मूल आय: '),
+		x,
+		const TextSpan(text: ' डेल्टा कॉइंस'),
+	]);
+	@override TextSpan directTeamContributionXcoins({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'प्रत्यक्ष टीम योगदान: '),
+		x,
+		const TextSpan(text: ' डेल्टा कॉइंस'),
+	]);
+	@override TextSpan indirectTeamContributionXcoins({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'अप्रत्यक्ष टीम योगदान: '),
+		x,
+		const TextSpan(text: ' डेल्टा कॉइंस'),
+	]);
+	@override TextSpan timeIntervalFromLastMiningX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'पिछली माइनिंग दर से समय अंतराल: '),
+		x,
+	]);
+	@override TextSpan effectiveMiningTimeXhours({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'प्रभावी माइनिंग समय: '),
+		x,
+	]);
+	@override String xhours({required Object x}) => '${x} घंटे';
+	@override String get keep3_5peopleInTheSafetyCircleTip => 'संपत्ति की सुरक्षा के लिए, आपको किसी भी समय अपने सुरक्षा सर्कल में 3-5 विश्वसनीय लोगों को रखना चाहिए।';
+	@override String get index => 'सूचकांक';
+	@override String get amount => 'राशि';
+	@override String get balance => 'बैलेंस';
+	@override String get timeStamp => 'टाइमस्टैम्प';
+	@override String get summary => 'सारांश';
+	@override String get miningHasStopped => 'माइनिंग रुक गई है।';
+	@override String get miningHasStoppedDesc => 'आपकी माइनिंग फिलहाल रुकी हुई है, और आप तुरंत आय अर्जित करना शुरू कर सकते हैं।';
+	@override String get startMining => 'माइनिंग शुरू करें';
+	@override String get changeMobileNumber => 'मोबाइल नंबर बदलें';
+	@override String get currentMobileNumber => 'वर्तमान मोबाइल नंबर';
+	@override String get newMobileNumber => 'नया मोबाइल नंबर';
+	@override String get securityCodeFormatIs6digits => 'सुरक्षा कोड का प्रारूप 6 अंकों का होना चाहिए!';
+	@override String get startVrification => 'सत्यापन शुरू करें';
+	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'यह मोबाइल नंबर पहले से मौजूद है और एक संबद्ध DID: ${dId} से जुड़ा हुआ है।}';
+	@override String get noDataYet => 'अभी तक कोई डेटा नहीं है';
+	@override String get previousMobileNumber => 'पिछला मोबाइल नंबर';
+	@override String get changeLog => 'परिवर्तन लॉग';
+	@override String get referralLinkToShare => 'साझा करने के लिए रेफ़रल लिंक';
+	@override String get referrer => 'रेफ़रर';
+	@override String get isoCountryCode => 'ISO देश कोड';
+	@override String get avatarLogo => 'प्रोफ़ाइल फ़ोटो प्रतीक चिन्ह';
+	@override String get creationTime => 'क्रिएशन टाइम';
+	@override String get lastUpdate => 'पिछला अपडेट';
+	@override String get numberOfSecurityCircleMembers => 'सुरक्षा सर्कल के सदस्यों की संख्या';
+	@override String get theLatestMining => 'हाल की माइनिंग';
+	@override String get effectiveMiningDays => 'प्रभावी माइनिंग दिन';
+	@override String get modifyNickname => 'उपनाम संशोधित करें';
+	@override String get didNotChange => 'बदलाव नहीं हुआ!';
+	@override String get kycVerification => 'KYC सत्यापन';
+	@override String get faceID => 'फेस आईडी';
+	@override String get touchID => 'टच आईडी';
+	@override String get biometricsAuthorizationTest => 'बायोमेट्रिक अधिकरण परीक्षण';
+	@override String get currentState => 'वर्तमान स्थिति';
+	@override String get biometricsAuthenticationLocalizedReason => 'अपनी डिवाइस का अनलॉक उपयोग करके अपनी पहचान सत्यापित करें।';
+	@override String get graph => 'ग्राफ़';
+	@override String get referralRelationshipGraph => 'रेफ़रल संबंध ग्राफ़';
+	@override String get nativeContacts => 'नेटिव संपर्क';
+	@override String get registrationAndMiningTrends => 'पंजीकरण और माइनिंग प्रवृत्तियाँ';
+	@override String get inMining => 'माइनिंग में';
+	@override String get registrationVolume => 'पंजीकरण संख्या';
+	@override String get unmined => 'माइनिंग के लिए उपलब्ध हिस्सा';
+	@override String get mined => 'हिस्सा जो माइन किया जा चुका है';
+	@override String get communityMining => 'समुदाय माइनिंग';
+	@override String get consensusPromotionFund => 'सहमति संवर्धन कोष';
+	@override String get ecologicalAwardFund => 'परिस्थितिकीय पुरस्कार कोष';
+	@override String get icpFuelCrowdfunding => 'ICP ईंधन क्राउडफंडिंग';
+	@override String get coreDeveloperRewards => 'कोर डेवलपर पुरस्कार';
+	@override String get totalAllocation => 'कुल आवंटन';
+	@override String get miningRatio => 'माइनिंग अनुपात';
+	@override Map<String, String> get billion => {
+		'300': '300 बिलियन',
+		'180': '180 बिलियन',
+		'30': '30 बिलियन',
+		'60': '60 बिलियन',
+	};
+	@override String get watchAdsToSupportDevelopers => 'डेवलपर्स का समर्थन करने के लिए विज्ञापन देखें';
+	@override String get loadingAdcomponents => 'विज्ञापन घटकों को लोड किया जा रहा है...';
+	@override String get timeIsNotUp => 'समय समाप्त नहीं हुआ है!';
+	@override String get loadingFailed_maybeTheNetworkIsBlocked => 'लोडिंग विफल, शायद नेटवर्क ब्लॉक हो गया है!';
+	@override String get pendingUSCTrecords => 'लंबित USCT रिकॉर्ड्स';
+	@override String get pendingUSCTrecordsDesc => 'लंबित USCT रिकॉर्ड्स को विज्ञापन प्लेटफॉर्म के साथ 15-30 दिनों के भीतर तुलना और पुष्टि की जाएगी। वैध रिकॉर्ड्स को USCT रिकॉर्ड लिस्ट में ट्रांसफर किया जाएगा, और संबंधित USCT राशि खाते के बैलेंस में जोड़ी जाएगी।';
+	@override String get validity => 'वैधता';
+	@override String get advertiser => 'विज्ञापनदाता';
+	@override String get earned => 'कमाई गई राशि';
+	@override String get withdraw => 'विद्रॉ';
+	@override String get validUSCTrecords => 'मान्य USCT रिकॉर्ड';
+	@override String get USCTmining => 'USCT माइनिंग';
+	@override String get aboutUSCTmining => 'USCT माइनिंग के बारे में?';
+	@override String get aboutUSCTminingItme1 => '1. USDT एक वैश्विक रूप से लोकप्रिय अमेरिकी डॉलर स्टेबलकॉइन है, जिसे दुनिया के प्रमुख क्रिप्टोकरेंसी एक्सचेंजों पर विभिन्न देशों की सरकारी मुद्राओं में आसानी से बदला जा सकता है।';
+	@override String get aboutUSCTminingItme2 => '2. USCT माइनिंग आय का एक अस्थायी माप मूल्य है, इसका पूर्ण नाम USD क्रेडिट है, और अंत में इसे विज्ञापन प्लेटफ़ॉर्म के वास्तविक निपटान कोटा और वितरण नियमों के अनुसार और संबंधित अनुपात में USDT में बदला जा सकता है।';
+	@override String get aboutUSCTminingItme3 => '3. USCT माइनिंग डेल्टा समुदाय में एक ट्रैफ़िक विज्ञापन मुद्रीकरण कार्य है। डेल्टा समुदाय के विशाल उपयोगकर्ता आधार का लाभ उठाते हुए यह विज्ञापनदाताओं, डेल्टा डेवलपर्स और खनिकों के लिए कई लाभ प्रदान करता है। इसका डिज़ाइन उद्देश्य डेल्टा पारिस्थितिकी तंत्र के शुरुआती चरण में कुछ प्रभावी आय प्रदान करना है, जब तक कि यह पूरी तरह से स्थापित और फल-फूल नहीं गया है; साथ ही यह डेवलपर्स के लिए एक निश्चित मात्रा में वित्तीय समर्थन भी प्रदान करता है, ताकि डेवलपर्स लंबे समय तक विकास सेवाएं प्रदान कर सकें और अंततः श्वेतपत्र की सभी योजनाओं को साकार कर सकें; इसके अलावा यह उत्पाद विज्ञापनदाताओं के लिए एक प्रभावी प्रचार चैनल भी प्रदान करता है।';
+	@override String get aboutUSCTminingItme4 => '4. वितरण नियम इस प्रकार डिज़ाइन किए गए हैं कि कुल आय का 40% डेवलपर तकनीकी सेवा आयोगों के रूप में उपयोग किया जाएगा, और शेष 60% को समुदाय की अनुपस्थिति पुरस्कारों के रूप में उपयोग किया जाएगा। अनुपस्थिति पुरस्कार भाग DTC के समान एक मल्टी-लेवल वितरण मॉडल अपनाता है, और ये अनुपस्थिति पुरस्कार 6:3:1 के अनुपात में 3 हिस्सों में विभाजित किए जाते हैं। एक USCT माइनिंग के लिए प्रत्येक बार 60% अनुपस्थिति पुरस्कार उन लोगों को आवंटित किया जाता है जो वर्तमान में विज्ञापन देख रहे होते हैं, 30% उच्चतर अनुशंसा करने वाले को और 10% दूसरे स्तर के अनुशंसा करने वाले को दिया जाता है। इसी तरह, आप भी USCT माइनिंग के माध्यम से उन दोस्तों से समान अनुशंसा पुरस्कार प्राप्त कर सकते हैं जिन्हें आपने अनुशंसा किया है। इस प्रकार के मल्टी-लेवल वितरण का लाभ यह है कि कोई भी व्यक्ति एक ऑफ़लाइन टीम विकसित करके एक बड़ी मात्रा में USDT लाभ प्राप्त कर सकता है।';
+	@override String get aboutUSCTminingItme5 => '5. बिलिंग चक्र 7 दिन का है, यानी, विज्ञापन प्लेटफ़ॉर्म के साथ हर 7 दिन में वैधता की जांच की जाती है, और पुष्टि किए गए प्रभावी आय और वास्तविक राशि को बैलेंस में रिकॉर्ड किया जाता है। प्रत्येक निकासी के लिए न्यूनतम राशि 10USDT है।';
+	@override String linesXtoY({required Object x, required Object y}) => 'लाइनें ${x} से ${y}';
+	@override String get wallet => 'वॉलेट';
+	@override String get multiChainWallet => 'मल्टी-चेन वॉलेट';
+	@override String get deposit => 'डिपॉजिट';
+	@override String get transfer => 'ट्रांसफर';
+	@override String xcoinInWallet({required Object coinCode}) => '${coinCode} वॉलेट में';
+	@override String get transactions => 'लेन-देन विवरण';
+	@override String get network => 'नेटवर्क';
+	@override String get walletAddress => 'वॉलेट एड्रेस';
+	@override String get currentAddress => 'करंट एड्रेस';
+	@override String get depositAddress => 'डिपॉजिट एड्रेस';
+	@override String get receivingMoneyAddress => 'पैसे प्राप्त करने का एड्रेस';
+	@override String get applyTempDepositAddress => 'अस्थायी जमा एड्रेस के लिए आवेदन करें';
+	@override String get tempDepositAddressTip => '1.यह एक साझा जमा एड्रेस है। कृपया पट्टा समाप्त होने या अनबाउंड होने के बाद राशि जमा न करें। ऐसा होने पर राशि खो जाएगी।.';
+	@override String get tempDepositAddressTip2 => '2.जमा करने से पहले, कृपया यह सुनिश्चित करें कि [चेन नाम] और [मुद्रा नाम] बिल्कुल मेल खाते हैं; यदि यह एक अनुबंध टोकन है, तो आपको यह भी सुनिश्चित करना होगा कि [अनुबंध मानक] और [अनुबंध एड्रेस] बिल्कुल मेल खाते हैं।';
+	@override String get tempDepositAddressTip3 => '3.कृपया ऐसे फंड जमा करने की कोशिश न करें जो ऊपर दिए गए किसी भी पैरामीटर से मेल नहीं खाते, अन्यथा राशि खो जाएगी।';
+	@override String get tempDepositAddressTip4 => '4.यदि आपको अन्य प्रकार की संपत्तियां जमा करने की आवश्यकता हो, तो कृपया संबंधित मुद्रा पृष्ठ और पैरामीटर विकल्प पर स्विच करें और नया एड्रेस आवेदन करें।';
+	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
+		const TextSpan(text: 'यह पता '),
+		diff,
+		const TextSpan(text: ' में समाप्त हो जाएगा। आप समाप्ति से 6 घंटे पहले वैधता अवधि को '),
+		tap('मैन्युअल रूप से बढ़ा सकते हैं'),
+		const TextSpan(text: '।'),
+	]);
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'केवल 6 घंटे पहले ही नवीनीकरण किया जा सकता है';
+	@override String get theReceivingAddressValidForLongtime => 'प्राप्ति एड्रेस लंबी अवधि के लिए वैध है।';
+	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'प्राप्ति एड्रेस लंबी अवधि के लिए वैध है और रीयल टाइम में स्वचालित रूप से क्रेडिट हो जाएगा।';
+	@override String get confirmDeposited => 'जमा की पुष्टि करें';
+	@override String get unbindThisDepositAddress => 'इस जमा एड्रेस को अनबाइंड करें';
+	@override String get confirmDepositedTip => 'यदि धनराशि ट्रांसफर की गई है, तो कृपया 10 मिनट के बाद ऊपर दिए गए बटन पर क्लिक करें ताकि वॉलेट में खाता ट्रिगर हो सके।';
+	@override String get unbindDepositAddressTip => 'स्मार्ट कॉन्ट्रैक्ट्स के संचालन पर भार कम करने के लिए, यदि वैधता अवधि के भीतर कोई और धनराशि जमा नहीं की जाएगी, तो कृपया जमा एड्रेस अनबाइंड कर दें।';
+	@override String get transferToAddress => 'एड्रेस पर ट्रांसफर करें';
+	@override String get longPressToPaste => 'पेस्ट करने के लिए लंबे समय तक दबाएं';
+	@override String get all => 'सभी';
+	@override String balanceX({required Object x}) => 'बैलेंस ${x}';
+	@override String get transferOut => 'निकासी करें';
+	@override String depositXcoins({required Object x}) => 'डिपॉजिट ${x}';
+	@override String get sender => 'सेंडर';
+	@override String get recipient => 'प्राप्तकर्ता';
+	@override String get memo => 'मेमो';
+	@override String get kind => 'प्रकार';
+	@override String get transferAmountExceedsAvailableBalance => 'ट्रांसफर राशि उपलब्ध बैलेंस से अधिक है!';
+	@override String get pleaseEnterValidAmount => 'कृपया एक मान्य राशि दर्ज करें';
+	@override String get networkFee => 'नेटवर्क शुल्क';
+	@override String get fee => 'शुल्क';
+	@override String validLengthXcharacters({required Object x}) => 'वैध लंबाई ${x} अक्षर है';
+	@override String get historys => 'लेन-देन इतिहास';
+	@override String get dtcCreditdetail => 'डेल्टा क्रेडिट विवरण';
+	@override String get usdCreditdetail => 'USD क्रेडिट विवरण';
+	@override String get dappSquare => 'dApp स्क्वायर';
+	@override String get amountRaised => 'उठाई गई राशि';
+	@override String get disbursedAmount => 'वितरित राशि';
+	@override String get participationTimes => 'भागीदारी की संख्या';
+	@override String get completionRate => 'पूरा होने की दर';
+	@override String get exchangeRate => 'विनिमय दर';
+	@override String get icpCrowdfunding => 'ICP क्राउडफंडिंग';
+	@override String get crowdfunding => 'क्राउडफंडिंग';
+	@override String get trendsCurve => 'प्रवृत्ति वक्र';
+	@override String get fullScreenView => 'पूर्ण स्क्रीन दृश्य';
+	@override String get walletBalance => 'वॉलेट बैलेंस: ';
+	@override String get manageWallet => 'वॉलेट प्रबंधन';
+	@override String get fundraiseAmount => 'फंडरेज़ राशि';
+	@override String get exchangeRewardAmount => 'एक्सचेंज इनाम राशि';
+	@override String get fundraise => 'फंडरेज़';
+	@override String rangeIntegersX({required Object x}) => 'रेंज: पूर्णांक ${x}';
+	@override String successfullParticipatingFundraisingXtip({required Object amount}) => 'फंडरेज़िंग में सफलतापूर्वक भाग लिया और ${amount}DTCT का इनाम प्राप्त हुआ';
+	@override String get amountSummary => 'राशि सारांश';
+	@override String get changePreferred => 'पसंदीदा बदलें';
+	@override String get changePreferredAddress => 'पसंदीदा एड्रेस बदलें';
+	@override String get preferredAddressTip => 'पंजीकृत मोबाइल नंबर या DID का उपयोग करके धन प्राप्त करने पर, धनराशि स्वचालित रूप से पसंदीदा एड्रेस पर स्थानांतरित कर दी जाएगी।';
+	@override String get newAddress => 'नया एड्रेस';
+	@override String get newAddressTip => 'दुरुपयोग को रोकने के लिए, जब एक से अधिक वॉलेट एड्रेस होता है, तो प्रत्येक नए पते के निर्माण पर लेनदेन शुल्क लगेगा।';
+	@override String get createNew => 'नया वॉलेट बनाएं';
+	@override String get chainNetworkName => 'चेन नेटवर्क नाम';
+	@override String get from => 'फ्रॉम';
+	@override String get to => 'टू';
+	@override String get noAvailableDepositAmountDetected => 'कोई उपलब्ध जमा राशि नहीं मिली!';
+	@override String get crossChainReceiveMoneyMonitoring => 'क्रॉस-चेन प्राप्त धनराशि निगरानी में है…';
+	@override TextSpan receivedV({required InlineSpan v}) => TextSpan(children: [
+		const TextSpan(text: 'प्राप्त किया('),
+		v,
+		const TextSpan(text: ')'),
+	]);
+	@override TextSpan confirming({required InlineSpan v}) => TextSpan(children: [
+		const TextSpan(text: 'पुष्टि की जा रही है ('),
+		v,
+		const TextSpan(text: ')'),
+	]);
+	@override String get thingsToNote_forNewbies => 'नोट्स (नए उपयोगकर्ताओं अवश्य पढ़ें)';
+	@override String get whyUseSharedAddresses => 'साझा एड्रेसों का उपयोग क्यों करें?';
+	@override String get useSharedrAdvantage => 'क्रॉस-चेन डिपॉज़िट के मामले में, साझा एड्रेसों के ये लाभ हैं:';
+	@override String get useSharedrAdvantage1 => '1. ट्रांसफर शुल्क की बर्बादी को कम करें और उपयोगकर्ता की लागत घटाएं। क्योंकि यदि एक विशेष एड्रेस का उपयोग किया जाता है, तो फंड बहुत अधिक बिखर जाएंगे। निकासी के समय अन्य उपयोगकर्ताओं के लिए ट्रांसफर को सुगम बनाने के लिए, जब उपयोगकर्ता डिपॉज़िट करता है, तो फंड के द्वितीयक ट्रांसफर को प्रबंधन के लिए एक या कम संख्या में एड्रेसों में एकत्रित करने की आवश्यकता होती है।';
+	@override String get useSharedrAdvantage2 => '2. शेयरिंग समाधान में, प्रोग्राम को केवल एक अपेक्षाकृत छोटे एड्रेस पूल को बनाए रखने की आवश्यकता होती है, जो जल्दी से आउटगोइंग फंड से मेल खा सकता है और हल्का कलेक्शन मॉनिटरिंग कर सकता है, जिससे कंप्यूटिंग संसाधनों का खर्च कम हो सकता है। इसके विपरीत, एक्सक्लूसिव एड्रेस के मामले में स्थिति बिल्कुल विपरीत होती है।';
+	@override String get tokenType => 'टोकन प्रकार';
+	@override String get contract => 'कॉंट्रैक्ट';
+	@override String get contractStandard => 'कॉंट्रैक्ट स्टैंडर्ड';
+	@override String get contractAddress => 'कॉंट्रैक्ट एड्रेस';
+	@override String get native => 'नेटिव';
+	@override String get confirmUnbindingPleaseEnterYes => 'अनबाइंडिंग की पुष्टि करने के लिए, कृपया "हाँ" दर्ज करें';
+	@override String get listAllWorkingTempReceivingAddresses => 'सभी कार्यरत क्रॉस-चेन प्राप्ति पतों की सूची दें';
+	@override String get setNote => 'नोट सेट करें';
+	@override String lengthCannotExceedXbytes({required Object x}) => 'लंबाई ${x} बाइट्स से अधिक नहीं हो सकती';
+	@override String get transferFee => 'ट्रांसफर शुल्क';
+	@override String get crossChainFee => 'क्रॉस-चेन शुल्क';
+	@override String get crossChainTransferOutError => 'क्रॉस-चेन ट्रांसफर आउट त्रुटि';
+	@override String get chainName => 'चेन नाम';
+	@override String get message => 'संदेश';
+	@override String get dontShowAgain => 'फिर से न दिखाएं';
+	@override String get queuing => 'कतार में है';
+	@override String get optional => 'वैकल्पिक';
+	@override String get publiclyVisible => 'सार्वजनिक रूप से दृश्यमान';
+	@override String get rates => 'दर';
+	@override String get minimum => 'न्यूनतम';
+	@override String get maximum => 'अधिकतम';
+	@override String get minimumBlockConfirmations => 'न्यूनतम ब्लॉक पुष्टि';
+	@override String get dsmsVerifyTerminal => 'DSMS सत्यापनकर्ता टर्मिनल';
+	@override String get overall => 'कुल मिलाकर';
+	@override String get my => 'मेरा / मेरी';
+	@override String get getVerifierPermissions => 'सत्यापनकर्ता अनुमतियाँ प्राप्त करें';
+	@override String get checkValidatorQualifications => 'मान्यकर्ता अनुमतियों की योग्यताएँ जाँचें';
+	@override String get qualification => 'योग्यता';
+	@override String get upperLimit => 'ऊपरी सीमा';
+	@override String get maximumNumberOfTerminalsAllowedToAccess => 'अधिकतम टर्मिनलों की संख्या जिसकी पहुँच अनुमति है';
+	@override String get numberOfExistingAccessTerminals => 'मौजूदा एक्सेस टर्मिनलों की संख्या';
+	@override String get applyingForDSMSVerifierPermissionsTips => 'वेरिफायर अनुमतियों के लिए आवेदन करने से पहले, आपको एक खाली एंड्रॉइड फोन और एक समर्पित एक्सेस नंबर तैयार करना होगा, और DSMS एक्सेस टर्मिनल एप्लिकेशन को डाउनलोड और इंस्टॉल करना होगा।';
+	@override String get downloadLink => 'डाउनलोड लिंक';
+	@override String get alreadyReadyFollowingTheAboveTips => 'मैंने पहले से ही ऊपर दिए गए सुझावों का पालन कर लिया है!';
+	@override String get globalUniversal => 'ग्लोबल यूनिवर्सल';
+	@override TextSpan insufficientLocalVerifierTips({required InlineSpan gu}) => TextSpan(children: [
+		const TextSpan(text: 'वर्तमान में DSMS सत्यापन एक्सेस सेवा में भाग लेने के लिए पर्याप्त स्थानीय सत्यापनकर्ता नहीं हैं। कृपया "'),
+		gu,
+		const TextSpan(text: '" एक्सेस सेवा का चयन करें।'),
+	]);
+	@override String get asDedicatedNumberForAccess => 'एक्सेस के लिए समर्पित नंबर के रूप में';
+	@override String pleaseCheckTip({required Object tip}) => 'कृपया "${tip}" जांचें';
+	@override String get inputLengthTooShort => 'इनपुट की लंबाई बहुत छोटी है';
+	@override String get shortName => 'शॉर्ट-नाम';
+	@override String pleaseEnterXname({required Object name}) => 'कृपया ${name} दर्ज करें';
+	@override String get applicationIsBeingSubmitted_pleaseWait => 'आवेदन सबमिट किया जा रहा है, कृपया प्रतीक्षा करें....';
+	@override String get applyForDSMSVerifierPermission => 'DSMS सत्यापनकर्ता अनुमति के लिए आवेदन करें।';
+	@override String get confirmInformation => 'सूचना की पुष्टि करें।';
+	@override String get lastHeartbeat => 'आखिरी धड़कन';
+	@override String get expirationTime => 'समाप्ति समय';
+	@override String get country => 'देश';
+	@override String get accessTerminals => 'ऐक्सेस टर्मिनल्स';
+	@override String get totalNumberOfDSMSaccessNumberTerminals => 'कुल संख्या DSMS एक्सेस नंबर टर्मिनल्स';
+	@override String get textContent => 'पाठ सामग्री';
+	@override String get scanQRcodeToLogin => 'लॉगिन करने के लिए क्यूआर कोड स्कैन करें';
+	@override String get confirmLogin => 'लॉगिन की पुष्टि करें';
+	@override String get authorizeSubApplicationToLogin => 'इस उप-एप्लिकेशन को लॉगिन करने की अनुमति दें';
+	@override String get authorizationSuccessful => 'प्राधिकरण सफल!';
+	@override String get launchSMSprogram => 'एसएमएस कार्यक्रम लॉन्च करें';
+	@override String get notApplied => 'लागू नहीं किया गया';
+	@override String get validityPeriod => 'वैधता अवधि';
+	@override String get renewal => 'नवीनीकरण';
+	@override String get scanCodeToAuthorizeTerminalLogin => 'टर्मिनल लॉगिन को अधिकृत करने के लिए कोड स्कैन करें';
+	@override String get rewards => 'इनाम';
+	@override String get roles => 'भूमिकाएँ';
+	@override String get developerCenter => 'डेवलपर केंद्र';
+	@override String get appName => 'ऐप का नाम';
+	@override String get pleaseSelect => 'कृपया चयन करें';
+	@override String get category => 'श्रेणी';
+	@override String get keywords => 'किवर्ड्स';
+	@override String get pleaseEnterAkeyword => 'कृपया एक किवर्ड दर्ज करें';
+	@override String get createApplication => 'एप्लिकेशन बनाएं';
+	@override String get appType => 'एप्लिकेशन प्रकार';
+	@override String get numberOfCategoriesMustBetween1and3 => 'श्रेणियों की संख्या 1 से 3 के बीच होनी चाहिए।';
+	@override String get appLogoSpecifications => 'छवि प्रारूप: png, आकार: 100KB के भीतर, रिज़ॉल्यूशन (पिक्सल): 256 * 256';
+	@override String get localAlbum => 'लोकल एल्बम';
+	@override String get networkPath => 'नेटवर्क पथ';
+	@override String get imageURLkAddress => 'इमेज URL एड्रेस';
+	@override String get urlAddressFormatIsIncorrect => 'URL एड्रेस फ़ॉर्मेट गलत है';
+	@override String get imageFormatOnlySupportsPng => 'इमेज़ फ़ॉर्मेट केवल "png" को ही समर्थन करता है।.';
+	@override String lengthMustBeBetweenA_BCharacters({required Object a, required Object b}) => 'लंबाई ${a}-${b} अक्षरों के बीच होनी चाहिए।';
+	@override String get introduction => 'परिचय';
+	@override String imageSizeCannotBeLargerThanA_currentlyB({required Object a, required Object b}) => 'चित्र का आकार ${a} से बड़ा नहीं हो सकता, वर्तमान में ${b} है।';
+	@override String imageResolutionMustBeP1pixels_currentlyP2({required Object p1, required Object p2}) => 'चित्र का रिज़ॉल्यूशन ${p1} (पिक्सल) होना चाहिए, वर्तमान में ${p2} है।';
+	@override String get becomeDeveloper => 'डेवलपर बनें';
+	@override String get developerInformation => 'डेवलपर जानकारी';
+	@override String get teamName => 'टीम का नाम';
+	@override String get website => 'वेबसाइट';
+	@override String get other => 'अन्य';
+	@override String get githubVerification => 'GitHub सत्यापन';
+	@override String get exampleUrl => 'उदाहरण URL';
+	@override String githubVerificationTip({required Object did}) => 'कृपया अपने GitHub खाते का उपयोग करके रिपोजिटरी में एक \'delta.did\' फ़ाइल बनाएँ जिसमें \'${did}\' सामग्री हो; फिर, इस फ़ाइल का githubusercontent URL इस इनपुट बॉक्स में प्रमाणीकरण के लिए पेस्ट करें।';
+	@override String get createApp => 'ऐप बनाएँ';
+	@override String get appManagement => 'ऐप प्रबंधन';
+	@override String get statusLogs => 'स्थिति लॉग';
+	@override String get bad => 'बुरा';
+	@override String get normal => 'सामान्य';
+	@override String get good => 'अच्छा';
+	@override String get onceCreatedItCannotBeChanged => 'एक बार बन जाने के बाद, इसे बदला नहीं जा सकता!';
+	@override String get manageApplicationEntity => 'एप्लिकेशन इकाई का प्रबंधन करें';
+	@override String get currentVersion => 'वर्तमान संस्करण';
+	@override String get submitVersion => 'संस्करण सबमिट करें';
+	@override String get packageOnlySupportZipCompressedFile => 'पैकेज केवल zip फ़ॉर्मेट संकुचित फ़ाइल का समर्थन करता है';
+	@override String theXfileWasNotFoundInTheZipPackage({required Object name}) => '\'${name}\' फ़ाइल ज़िप पैकेज में नहीं मिली';
+	@override String get fileList => 'फ़ाइल सूची: ';
+	@override String get programPackage => 'प्रोग्राम पैकेज: ';
+	@override String get automaticallyExtractFromVersionFile => '\'.version\' फ़ाइल से स्वचालित रूप से निकालें';
+	@override String get dappVersionFormatTip => 'संस्करण संख्या का फ़ॉर्मेट दशमलव होना चाहिए और सटीकता को 2 अंकों तक बनाए रखना चाहिए, और अधिकतम 99.99 से अधिक नहीं हो सकता।';
+	@override String versionNumberMustBeGreaterThanCurrentVersionX({required Object v}) => 'संस्करण संख्या वर्तमान संस्करण \'${v}\' से अधिक होनी चाहिए।';
+	@override String get versionNotes => 'संस्करण नोट्स: ';
+	@override String get dappInfo => 'DApp जानकारी';
+	@override String get updateRelease => 'नया अपडेट';
+	@override String get loadAndRun => 'लोड करें और चलाएं';
+	@override String get notYetSubmittedProgramPackage => 'अभी तक एक प्रोग्राम पैकेज सबमिट नहीं किया गया है!';
+	@override String get authorizeMinidAppLogin => 'mini-dApp लॉगिन को अनुमोदित करें';
+	@override String get confirmAuthorizationPleaseEnterYes => 'अनुमोदन की पुष्टि करें, कृपया "हां" दर्ज करें';
+	@override String get authorizeNow => 'अब अनुमोदित करें';
+	@override String get operation => 'संचालन: ';
+	@override String get statusChange => 'स्थिति परिवर्तन';
+	@override String get changeTo => 'में परिवर्तन करें: ';
+	@override String get notes => 'नोट्स: ';
+	@override String get changesNotEffective => 'परिवर्तित नहीं हुए!';
+	@override String get released => 'रिलीज़ किया गया';
+	@override String get inPublicBeta => 'पब्लिक बीटा में';
+	@override String get developers => 'डेवलपर्स: ';
+	@override String get reviewList => 'समीक्षा सूची: ';
+	@override String get postReview => 'समीक्षा पोस्ट करें';
+	@override String get scoreNow => 'अभी अंक दें';
+	@override String get description => 'विवरण: ';
+	@override String get noData => '(^-^) \n कोई डेटा उपलब्ध नहीं है';
+	@override String versionHasBeenUpdatedFromAtoB({required Object a, required Object b}) => 'संस्करण को ${a} से ${b} में अपडेट किया गया है।';
+	@override String get loadNewVersion => 'नया संस्करण लोड करें';
+	@override String get name => 'नाम: ';
+	@override String get canisterId => 'कैनिस्टर आईडी: ';
+	@override String get updateTime => 'अपडेट समय';
+	@override String get contractCanistersState => 'कॉन्ट्रैक्ट कैनिस्टर्स की स्थिति';
+	@override String get userDistribution => 'उपयोगकर्ता वितरण';
+	@override String get settings => 'सेटिंग्स';
+	@override String get security => 'सुरक्षा';
+	@override String get invite => 'आमंत्रित करें';
+	@override String get more => 'अधिक…';
+	@override String get receiveAddress => 'प्राप्त करने का एड्रेस: ';
+	@override String get hangingAmount => 'हैंगिंग अमाउंट';
+	@override String get hangingAmountTips => 'हैंगिंग अमाउंट आपके अधीनस्थ टीम के खनन द्वारा उत्पन्न इनामों का अस्थायी रिकॉर्ड है। एक बार जब आप खनन करते हैं, तो ये राशियाँ पेंडिंग अमाउंट में इकट्ठा हो जाएँगी।';
+	@override String get pendingAmount => 'पेंडिंग अमाउंट';
+	@override String get pendingAmountTips => 'पेंडिंग अमाउंट उस राशि को संदर्भित करती है जिसे अभी तक पुष्टि नहीं की गई है और विज्ञापनदाता के साथ तुलना की गई है। जो राशि पुष्टि हो जाती है, वह वैध USCT रिकॉर्ड में स्थानांतरित कर दी जाएगी। यदि कोई अवैध भाग है, तो उसे हटा दिया जाएगा।';
+	@override String get received => 'प्राप्त';
+	@override String get processing => 'प्रसंस्करण';
+	@override String get replied => 'उत्तर दिया';
+	@override String get rejected => 'अस्वीकृत';
+	@override String get unknown => 'अज्ञात';
+	@override String get insufficientBalance => 'अपर्याप्त बैलेंस!';
+	@override String InsufficientXbalanceToPayCrossChainNetworkFee({required Object x}) => '${x} बैलेंस क्रॉस-चेन नेटवर्क शुल्क का भुगतान करने के लिए अपर्याप्त है';
+	@override String get aTransactionThatHasNotBeenCompleted_CannotBeTransferredAtMoment => 'एक लेन-देन है जो पूरा नहीं हुआ है और इस समय उसे स्थानांतरित नहीं किया जा सकता।';
+	@override String get thisfunctionNotSupportExternalCalls => 'यह फ़ंक्शन बाहरी कॉल का समर्थन नहीं करता है।';
+	@override String get noMatchingAddressThatCanBeUsedToPayCrossChainFees_switchOtherChainToTry => 'कोई मेल खाने वाला पता नहीं है जिसे क्रॉस-चेन शुल्क का भुगतान करने के लिए उपयोग किया जा सके, कृपया अन्य चेन नेटवर्क्स में स्विच करके प्रयास करें।';
+	@override String currentMaximumMatchedSingleTransferAmountIsX({required Object x}) => 'वर्तमान में अधिकतम मेल खाता एकल स्थानांतरण राशि ${x} है।';
+	@override String get memoMustNotBeMoreThan64bytes => 'स्मृति 64 बाइट्स से अधिक नहीं होनी चाहिए।';
+	@override String insufficientBalance_theAmountIsX({required Object x}) => 'अपर्याप्त बैलेंस, राशि है: ${x}';
+	@override String get boundRreceivingAddressesExceed3Tip => 'बंधन में प्राप्ति पतों की संख्या 3 से अधिक नहीं हो सकती है। \nयदि आपको नया प्राप्ति पता जोड़ने की आवश्यकता है, \nतो कृपया पहले किसी अन्य प्राप्ति पते को अनबाइंड करें।';
+	@override String parametersA_exception({required Object x}) => 'पैरामीटर: ${x}, अपवाद';
+	@override String get transferAmountMustBeLargerThan0 => 'ट्रांसफर राशि 0 से अधिक होनी चाहिए';
+	@override String get authorizationHasExpired => 'अधिकारिता समाप्त हो चुकी है';
+	@override String get theAppHasNotBeenAuthorizedByOwner => 'ऐप को मालिक द्वारा अनुमति नहीं दी गई है।';
+	@override String get authenticationTokenIsInvalid => 'प्रमाणीकरण टोकन अमान्य है।';
+	@override String get verifyInfoIsInvalidOrExpired => 'सत्यापन जानकारी अमान्य है या समाप्त हो गई है।';
+	@override String get verifyThatNumberOfAccessTerminalsHasExceededLimitOf1in10000 => 'सत्यापित करें कि एक्सेस टर्मिनलों की संख्या 10,000 में से एक की सीमा से अधिक नहीं हुई है।';
+	@override String get timeToParticipateInMiningMustBeMoreThan3Days => 'माइनिंग में भाग लेने का समय 3 दिनों से अधिक होना चाहिए।';
+	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'सुरक्षा सर्कल के सदस्य की संख्या 3 लोगों से कम नहीं हो सकती है।';
+	@override String get avatarIsNotSet => 'प्रोफ़ाइल फ़ोटो सेट नहीं किया गया है।';
+	@override String get numberOfDirectReferralsCannotBeLessThan3 => 'प्रत्यक्ष संदर्भों की संख्या 3 लोगों से कम नहीं हो सकती है।';
+	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => 'समय सीमा अपर्याप्त है, मोबाइल नंबर केवल एक बार प्रति वर्ष बदला जा सकता है।';
+	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'यह मोबाइल फोन नंबर पहले से मौजूद है और इसे पुनः उपयोग नहीं किया जा सकता।';
+	@override String get securityCodeIsIncorrect => 'सुरक्षा कोड गलत है।';
+	@override String get securityCodeMayHaveExpired => 'शायद सुरक्षा कोड की समय सीमा समाप्त हो गई है।';
+	@override String get sessionIdIsInvalidOrExpired => 'सत्र ID अमान्य है या समाप्त हो गया है।';
+	@override String get sessionHasBeenAuthorized => 'सत्र को प्रमाणित कर दिया गया है!';
+	@override String canOnlyBeRenewedWithinXdaysBeforeExpiration({required Object x}) => 'केवल समाप्ति से ${x} दिन पहले नवीनीकरण किया जा सकता है।';
+	@override String get notYetGrantedDeveloperPermissions => 'अभी तक डेवलपर अनुमतियाँ प्रदान नहीं की गई हैं।';
+	@override String fieldXcannotBeEmpty({required Object x}) => 'फ़ील्ड ईमेल ${x} खाली नहीं हो सकता।';
+	@override String get emailFormatError => 'ईमेल फ़ॉर्मेट में गलती है।';
+	@override String theXformatIsIncorrect({required Object x}) => '\'${x}\' फ़ॉर्मेट गलत है।';
+	@override String lengthOfFieldXmustBeBetweenYandXcharacters({required Object x, required Object y, required Object z}) => 'फ़ील्ड \'${x}\' की लंबाई ${y} और ${z} वर्णों के बीच होनी चाहिए।';
+	@override String theXselectionMustBeBetweenYandX({required Object x, required Object y, required Object z}) => '\'${x}\' चयन ${y} और ${z} के बीच होना चाहिए।';
+	@override String get unchanged_sameAsOldContent => 'अपरिवर्तित, पुराने विषय के समान!';
+	@override String XYalreadyexists({required Object x, required Object y}) => '${x}: \'${y}\' पहले से मौजूद है!';
+	@override String get mobileNumberHasNotJoinedDelta => 'यह मोबाइल नंबर अभी तक डेल्टा में शामिल नहीं हुआ है!';
+	@override String get referrerIdCannotBeEmpty => 'रेफरर DID खाली नहीं हो सकता! ';
+	@override String get referrerIdDoesNotExist => 'रेफरर DId मौजूद नहीं है!';
+	@override String get didIsIncorrectOrInvalid => 'DID गलत है या अमान्य है！';
+	@override String get accessTokenIsIncorrectOrInvalid => 'अक्सेस टोकन गलत है या अमान्य है।！';
+	@override String get minimumWithdrawalAmountIs1USD => 'न्यूनतम निकासी राशि 1USD है।';
+	@override String get miningTimeIsNotYet => 'माइनिंग  समय अभी तक शुरू नहीं हुआ है।';
+	@override String get alreadyExists_pleaseDoNotRepeatedly => 'पहले से मौजूद है, कृपया पुनः न जोड़ें!';
+	@override String get registrationNumberCannotBeUsedAsAccessNumber => 'रजिस्ट्रेशन नंबर को प्रमाणन एक्सेस नंबर के रूप में उपयोग नहीं किया जा सकता।';
+	@override String get canotAddYourSelf => 'आप खुद को जोड़ नहीं सकते।';
+	@override String get logOut => 'लॉग आउट';
+	@override String get confirmLogout => 'लॉग आउट की पुष्टि करें';
+	@override String get logOutTipsText => 'सादर याद दिलाना: श्वेत पत्र में संबंधित समझौते के अनुसार, प्रत्येक लॉगिन सत्यापन के लिए आपके द्वारा एक निश्चित मात्रा में डेल्टा कॉइंस का उपभोग किया जाएगा, ताकि सत्यापनकर्ता को प्रोत्साहन दिया जा सके। कृपया लॉग इन और लॉग आउट करने की कोशिश न करें, अगर यह आवश्यक न हो। तुरंत लॉग आउट करने के लिए निम्नलिखित बटन पर क्लिक करें।';
+	@override String get ConfirmLogoutPleaseEnterYes => 'लॉग आउट की पुष्टि करने के लिए कृपया "हाँ" दर्ज करें।';
+	@override String get tip => 'सुझाव';
+	@override String get cancel => 'रद्द करें';
+	@override String get close => 'बंद करें';
+	@override String get selected => 'चयनित';
+	@override String get edit => 'संपादित करें';
+	@override String get submit => 'सबमिट करें';
+	@override String get goBack => 'वापिस जाएँ';
+	@override String get copiedToClipboard => 'क्लिपबोर्ड में कॉपी किया गया!';
+	@override String get nickname => 'उपनाम';
+	@override String get confirm => 'पुष्टि करें';
+	@override String get cannotBeEmpty => 'खाली नहीं हो सकता';
+	@override String get deleteSuccessful => 'हटाना सफल!';
+	@override String get successfullyModified => 'सफलतापूर्वक संशोधित किया गया!';
+	@override String get executionSuccessful => 'सफलतापूर्वक निष्पादित किया गया!';
+	@override String get parameterException => 'पैरामीटर अपवाद!';
+	@override String get preview => 'प्रिव्यू';
+	@override String get followSystem => 'सिस्टम अनुसरण करें';
+	@override String get change => 'बदलें';
+	@override String get replace => 'प्रतिस्थापित करें';
+	@override String get view => 'देखें';
+	@override String get manage => 'प्रबंधन करें';
+	@override String get modify => 'संशोधित करें';
+	@override String get replacedSuccessfully => 'सफलतापूर्वक बदला गया!';
+	@override String get authentication => 'प्रमाणीकरण';
+	@override String get reacquire => 'पुनः प्राप्त करें';
+	@override String get tryAgain => 'फिर से प्रयास करें';
+	@override String get querying => 'क्वेरी जारी है…';
+	@override String get writingToOnChain_pleaseWait => 'ऑन-चेन पर लिख रहे हैं, कृपया प्रतीक्षा करें…';
+	@override String get versionCheck => 'संस्करण जाँच करें';
+	@override String get alreadyLatestVersion => 'आपके पास पहले से ही नवीनतम संस्करण है!';
+	@override String get foundNewVersion => 'एक नया संस्करण उपलब्ध है:';
+	@override String get upgradeLink => 'अपग्रेड लिंक: ';
+	@override String get deviceDescription => 'डिवाइस विवरण: ';
+	@override String get notification30SecondsBeforeMiningStops => 'माइनिंग बंद होने से 30 सेकंड पहले अधिसूचना रिमाइंडर निष्पादित करें!';
+	@override String get goMining => 'माइनिंग आरंभ करें';
+	@override String get deltaMiningReminder => 'डेल्टा माइनिंग रिमाइंडर';
+	@override String get clickToMine_miningIsAboutToStop => 'माइन करने के लिए यहां क्लिक करें, माइनिंग बंद होने वाली है!';
+	@override String get incorrect_input => 'गलत इनपुट!';
+	@override String get are_you_sure_delete => 'क्या आप वाकई हटाना चाहते हैं?';
+	@override String get delete_account => 'खाता हटाएँ';
+	@override String get how_to_operate_it => 'इसे संचालित कैसे करें?';
+	@override String get deletion_warning_tip => 'यदि आप अपना खाता हटाते हैं, तो आप अपने सभी डेल्टा कॉइन्स खो देंगे और अन्य सदस्यों से होने वाली सभी कमाई भी समाप्त हो जाएगी।';
+	@override String get launchWhatsAppProgram => 'WhatsApp प्रोग्राम लॉन्च करें';
+	@override String get sms => 'एसएमएस';
+	@override String get whatsApp_verification_tips => 'इस आइकन वाले एक्सेस नंबर इंगित करते हैं कि वे व्हाट्सएप संदेश सत्यापन का भी समर्थन करते हैं। अंतरराष्ट्रीय संदेश भेजते समय, सफलता दर बढ़ाने और लागत कम करने के लिए व्हाट्सएप का उपयोग करने की सिफारिश की जाती है।';
+	@override String get ihaveSentVerificationString => 'मैंने सत्यापन स्ट्रिंग भेज दी है!';
+	@override String get totalOfPeople => 'कुल लोगों की संख्या: ';
+	@override String get numberOfPeopleMining => 'माइनिंग करने वाले लोगों की संख्या';
+	@override String get useBrowserScanQRcodeToSMSprogram => 'आप किसी अन्य डिवाइस पर ब्राउज़र का उपयोग करके QR कोड स्कैन कर सकते हैं और इसे SMS प्रोग्राम में भेज सकते हैं।';
+	@override String get toggle => 'टॉगल';
+	@override String get DSMSverifier => 'DSMS सत्यापनकर्ता';
+	@override String get activate => 'सक्रिय करें';
+	@override String get activated => 'सक्रिय किया गया!';
+	@override String get generateActivationCommand => 'सक्रियकरण कमांड उत्पन्न करें';
+	@override String get activationCommand => 'सक्रियकरण कमांड';
+	@override String get activationSentedTip => 'सक्रियकरण SMS भेजने के बाद, कृपया एक्सेस टर्मिनल डिवाइस पर सक्रियकरण स्थिति जांचें।';
+	@override String get biometricsNotEnabledTip => 'आपके डिवाइस पर बायोमेट्रिक्स (फेस या फिंगरप्रिंट) सक्षम नहीं है, कृपया जारी रखने के लिए इसे सक्षम करें।';
+	@override String get error => 'त्रुटि';
+	@override String get exceptionOccurredWhenCallingBiometric => 'बायोमेट्रिक पहचान (फेस या फिंगरप्रिंट) फ़ंक्शन कॉल करते समय एक अपवाद उत्पन्न हुआ!';
+	@override TextSpan accessNumberSelectionTip({required InlineSpan checkedNum, required InlineSpan shouldNum}) => TextSpan(children: [
+		checkedNum,
+		const TextSpan(text: ' एक्सेस नंबर जांचे गए हैं, '),
+		shouldNum,
+		const TextSpan(text: ' का चयन किया जाना चाहिए।'),
+	]);
+	@override String sentaboveXaccessNumbers({required Object text, required Object n}) => 'क्या ${text} उपरोक्त ${n} एक्सेस नंबरों पर भेजा गया है?';
+	@override String get interface => 'इंटरफ़ेस:';
+	@override String get waitingTimeoutOrSenderNumberMismatch => 'प्रतीक्षा समय समाप्त या प्रेषक संख्या मेल नहीं खाती';
+	@override String mobileNumberOfsecurityCircleYouFilledDoesntMatch({required Object x}) => 'आपके द्वारा भरे गए सुरक्षा सर्कल सदस्य का मोबाइल नंबर मेल नहीं खाता: ${x}';
+	@override String leastXmobileNumbersMustCompleted({required Object n}) => 'कम से कम ${n} मोबाइल नंबर पूरे करने आवश्यक हैं।';
+	@override String get loginWithin10MinutesOfLoggingOutAvoidTwoFactorVerification => 'लॉगआउट करने के बाद 10 मिनट के भीतर लॉग इन करें ताकि टू-फैक्टर सत्यापन से बचा जा सके।';
+	@override String get noAccessNumberInYourRegionYet => 'आपके क्षेत्र में अभी तक कोई एक्सेस नंबर उपलब्ध नहीं है।';
+	@override String get notEnoughAccessNumbersInYourRegion => 'आपके क्षेत्र में पर्याप्त एक्सेस नंबर नहीं हैं।';
+	@override String get tipsForDeployDSMSterminal => 'सिस्टम ने स्वचालित रूप से आपके लिए अन्य देशों से कुछ एक्सेस नंबर लोड कर दिए हैं। बेहतर और कम लागत वाली सत्यापन सेवाएँ प्रदान करने के लिए, यह अनुशंसा की जाती है कि आप या अपने रेफ़रर से संपर्क करें ताकि स्थानीय रूप से DSMS टर्मिनल तैनात किए जा सकें और सत्यापन शुल्क अर्जित किया जा सके।';
+	@override String get noOneCanProvideMeTheSecurityCode => 'कोई भी मुझे इस समय सुरक्षा कोड देने में सक्षम नहीं है!';
+	@override String get useSupplementalMode => 'सप्लीमेंटल मोड का उपयोग करें';
+	@override String get returnToSecurityCodeMode => 'सुरक्षा कोड मोड पर लौटें';
+	@override String get enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted => 'कृपया उनका संबंधित मोबाइल नंबर दर्ज करें, देश कोड छोड़ सकते हैं।';
+	@override String mobileNumberForNameIsIncorrect({required Object name}) => '${name} का मोबाइल नंबर ग़लत है';
+	@override String get matchingVerificationStrategyIs => 'सत्यापन के लिए चुनी गई रणनीति:';
+	@override String get balanceGreater3ICP_noNeedPourFuel => 'शेष 3 ICP से अधिक है, फिलहाल ईंधन डालने की आवश्यकता नहीं है।';
+	@override String get escrowAccount => 'एस्क्रो खाता';
+	@override String get fuelRelay => 'ईंधन रिले';
+	@override String get pourFuel => 'ईंधन डालें';
+	@override String get fuelState => 'ईंधन की स्थिति';
+	@override String get pouringFuelTips => 'ईंधन डालने से आपको कोई लाभ या हानि नहीं होती है, इसका उद्देश्य डेल्टा सिस्टम अनुभव को समृद्ध करना है।';
+	@override String get sponsorDevelopersByWatchingAds => 'विज्ञापन देखकर डेवलपर्स को प्रायोजित करें';
+	@override String get status => 'स्थिति';
+	@override String get date => 'तारीख';
+	@override String get assetApplicationIsInProgressTip => 'एसेट आवेदन प्रगति पर है, कृपया 3 सेकंड में पुनः प्रयास करें।';
+	@override String get delete => 'हटाएँ';
+	@override String get deleteVerifierTip => 'जब किसी सत्यापनकर्ता की अनुमतियाँ हटाई जाती हैं, तो सभी संबंधित स्कोर डेटा एक ही समय में हटा दिए जाएँगे, लेकिन पहले से प्राप्त पुरस्कार प्रभावित नहीं होंगे।';
+	@override String get deleteVerifierStatusTip => 'कृपया इसे हटाने से पहले रुकी हुई स्थिति पर सेट करें';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'कृपया पुष्टि करने के लिए "${text}" दर्ज करें';
+	@override String get localSecurity => 'स्थानीय सुरक्षा';
+	@override String get deviceLock => 'डिवाइस लॉक';
+	@override String get patternLock => 'पैटर्न लॉक';
+	@override String get none => 'कोई नहीं';
+	@override String get exist => 'अस्तित्व में है';
+	@override String get prompt => 'प्रॉम्प्ट:';
+	@override String get localSecurityTip1 => '1. स्थानीय सुरक्षा प्रमाणीकरण का उपयोग कुछ संवेदनशील कार्यों के दौरान पहचान की पुष्टि करने के लिए किया जाता है। इसका उद्देश्य डिवाइस को दूसरों द्वारा नियंत्रित होने से रोकना और खाते की सुरक्षा सुनिश्चित करना है।';
+	@override String get localSecurityTip2 => '2. पैटर्न लॉक एक पूरक समाधान है जब डिवाइस लॉक समर्थित नहीं है या असंगत है। आम तौर पर, डिवाइस लॉक उपलब्ध होने पर पैटर्न लॉक सेट करने की कोई आवश्यकता नहीं होती है।';
+	@override String get localSecurityTip3 => '3. जब आपका पैटर्न लॉक भूल जाता है, तो आप केवल ऐप डेटा साफ़ कर सकते हैं या इसे साफ़ करने के लिए ऐप को फिर से इंस्टॉल कर सकते हैं।';
+	@override String deviceAuthFirstTip({required Object menu, required Object localSecurity}) => 'डिवाइस प्रमाणीकरण को कॉल किया जाने वाला है। यदि कोई त्रुटि या अपवाद होता है, तो कृपया परीक्षण और आगे की सेटिंग के लिए "${menu}" पृष्ठ पर "${localSecurity}" विकल्प पर जाएँ।';
+	@override String get pleaseDrawUnlockPattern => 'कृपया अनलॉक पैटर्न बनाएं';
+	@override String get addPatternLock => 'पैटर्न लॉक जोड़ें';
+	@override String get cannotBeLessThan8Dots => '8 बिंदुओं से कम नहीं हो सकता';
+	@override String get pleaseRepeatThePattern => 'कृपया पैटर्न को पुनः दोहराएं';
+	@override String get notMatchFirstValidPattern => 'पहले वैध ड्राइंग पैटर्न से मेल नहीं खाता';
+	@override String get deletePatternLock => 'पैटर्न लॉक हटाएं';
+	@override String get notMatchExistingPattern => 'मौजूदा पैटर्न से मेल नहीं खाता';
+	@override String get localAuthentication => 'स्थानीय प्रमाणीकरण';
 }
 
 // Path: <root>
@@ -5251,13 +6904,13 @@ class _StringsIt implements Translations {
 	@override String get tempDepositAddressTip4 => '4. Se avete bisogno di depositare altri tipi di beni, passate alla pagina della valuta corrispondente e alle opzioni dei parametri per richiedere un nuovo indirizzo.';
 	@override String get applyExtensionOfValidity => 'Richiesta di proroga del periodo di validità';
 	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-		const TextSpan(text: 'Questo indirizzo scadrà dopo '),
+		const TextSpan(text: 'Questo indirizzo scadrà tra '),
 		diff,
-		const TextSpan(text: ' e sarà '),
-		tap('estendi manualmente'),
-		const TextSpan(text: ' valido per 12 ore prima della scadenza.'),
+		const TextSpan(text: '. Puoi '),
+		tap('manually extend'),
+		const TextSpan(text: ' il periodo di validità entro 6 ore dalla scadenza.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'Può essere rinnovato solo con 12 ore di anticipo';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'È possibile rinnovare solo entro 6 ore di anticipo';
 	@override String get theReceivingAddressValidForLongtime => 'Questo indirizzo è valido per molto tempo.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'Questo indirizzo di raccolta è valido a lungo e viene accreditato automaticamente in tempo reale.';
 	@override String get confirmDeposited => 'Conferma dei depositi';
@@ -5517,7 +7170,7 @@ class _StringsIt implements Translations {
 	@override String get referrerIdDoesNotExist => 'L\'ID del referente non esiste!';
 	@override String get didIsIncorrectOrInvalid => 'La DID non è corretta o non è valida!';
 	@override String get accessTokenIsIncorrectOrInvalid => 'L\'accessToken non è corretto o non è valido!';
-	@override String get minimumWithdrawalAmountIs9USD => 'Minimo 9USD per un singolo prelievo';
+	@override String get minimumWithdrawalAmountIs1USD => 'Minimo 1USD per un singolo prelievo';
 	@override String get miningTimeIsNotYet => 'Non è ancora il momento di estrarre.';
 	@override String get alreadyExists_pleaseDoNotRepeatedly => 'Esiste già, non aggiungerlo di nuovo!';
 	@override String get registrationNumberCannotBeUsedAsAccessNumber => 'Non è possibile utilizzare il numero di registrazione come numero di accesso per l\'autenticazione.';
@@ -5605,6 +7258,38 @@ class _StringsIt implements Translations {
 	@override String get enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted => 'Inserisci il numero di cellulare associato. Il prefisso internazionale può essere omesso.';
 	@override String mobileNumberForNameIsIncorrect({required Object name}) => 'Il numero di cellulare di ${name} è errato';
 	@override String get matchingVerificationStrategyIs => 'La strategia di verifica corrispondente è:';
+	@override String get balanceGreater3ICP_noNeedPourFuel => 'Il saldo è maggiore di 3 ICP, per ora non c\'è bisogno di versare carburante.';
+	@override String get escrowAccount => 'Conto di deposito a garanzia';
+	@override String get fuelRelay => 'Relè carburante';
+	@override String get pourFuel => 'Versare carburante';
+	@override String get fuelState => 'Stato carburante';
+	@override String get pouringFuelTips => 'Il versamento del carburante non comporta alcun vantaggio o svantaggio, il suo scopo è arricchire l\'esperienza del sistema Delta.';
+	@override String get sponsorDevelopersByWatchingAds => 'Sponsorizza gli sviluppatori guardando gli annunci';
+	@override String get status => 'Stato';
+	@override String get date => 'Data';
+	@override String get assetApplicationIsInProgressTip => 'Richiesta di risorse in corso, riprovare tra 3 secondi.';
+	@override String get delete => 'Elimina';
+	@override String get deleteVerifierTip => 'Quando si eliminano i permessi di un verificatore, tutti i dati relativi ai punteggi verranno eliminati contemporaneamente, ma le ricompense già ottenute non saranno interessate.';
+	@override String get deleteVerifierStatusTip => 'Impostalo in pausa prima di eliminarlo';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'Inserisci "${text}" per confermare';
+	@override String get localSecurity => 'Sicurezza locale';
+	@override String get deviceLock => 'Blocco dispositivo';
+	@override String get patternLock => 'Blocco modello';
+	@override String get none => 'nessuno';
+	@override String get exist => 'esiste';
+	@override String get prompt => 'Richiesta:';
+	@override String get localSecurityTip1 => '1. L\'autenticazione di sicurezza locale viene utilizzata per confermare l\'identità durante alcune operazioni sensibili. Il suo scopo è impedire che il dispositivo sia controllato da altri e garantire la sicurezza dell\'account.';
+	@override String get localSecurityTip2 => '2. Il blocco pattern è una soluzione supplementare quando il blocco dispositivo non è supportato o è incompatibile. In genere, non è necessario impostare un blocco pattern quando il blocco dispositivo è disponibile.';
+	@override String get localSecurityTip3 => '3. Se dimentichi il blocco pattern, puoi solo cancellare i dati dell\'app o reinstallare l\'app per eliminarlo.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'L\'autenticazione del dispositivo sta per essere chiamata. Se si verifica un errore o un\'eccezione, accedere all\'opzione "${localSecurity}" nella pagina "${menu}" per testare e configurare ulteriori impostazioni.';
+	@override String get pleaseDrawUnlockPattern => 'Per favore, disegna la sequenza di sblocco';
+	@override String get addPatternLock => 'Aggiungi blocco pattern';
+	@override String get cannotBeLessThan8Dots => 'Non può essere inferiore a 8 punti';
+	@override String get pleaseRepeatThePattern => 'Per favore, ripeti di nuovo lo schema';
+	@override String get notMatchFirstValidPattern => 'Non corrisponde al primo modello di disegno valido';
+	@override String get deletePatternLock => 'Elimina il blocco pattern';
+	@override String get notMatchExistingPattern => 'Non corrisponde a un modello esistente';
+	@override String get localAuthentication => 'Aut. locale';
 }
 
 // Path: <root>
@@ -5932,13 +7617,13 @@ class _StringsJa implements Translations {
 	@override String get tempDepositAddressTip4 => '4.他の種類の資産を入金する必要がある場合は、対応する通貨ページとパラメータオプションに切り替えて、新しい住所を申請してください。';
 	@override String get applyExtensionOfValidity => '有効期間延長申請';
 	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-		const TextSpan(text: 'このアドレスの有効期限は'),
+		const TextSpan(text: 'このアドレスは'),
 		diff,
-		const TextSpan(text: 'の後であり、'),
-		tap('manual extend'),
-		const TextSpan(text: 'は有効期限の12時間前まで有効である。'),
+		const TextSpan(text: '後に有効期限が切れます。有効期限の6時間前までに有効期間を'),
+		tap('manually extend'),
+		const TextSpan(text: 'することができます。'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => '更新は12時間前まで';
+	@override String get canOnlyRenewWithin6hoursInAdvance => '6時間以内のみ更新可能';
 	@override String get theReceivingAddressValidForLongtime => 'この住所は長期間有効である。';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'このコレクション・アドレスは長期間有効で、リアルタイムで自動的に入金される。';
 	@override String get confirmDeposited => '入金の確認';
@@ -6198,7 +7883,7 @@ class _StringsJa implements Translations {
 	@override String get referrerIdDoesNotExist => 'リファラーIDが存在しません！';
 	@override String get didIsIncorrectOrInvalid => 'DIDが正しくないか無効である！';
 	@override String get accessTokenIsIncorrectOrInvalid => 'accessToken が不正または無効です！';
-	@override String get minimumWithdrawalAmountIs9USD => '1回の引き出しで最低9USD';
+	@override String get minimumWithdrawalAmountIs1USD => '1回の引き出しで最低1USD';
 	@override String get miningTimeIsNotYet => 'まだ採掘する時期じゃない。';
 	@override String get alreadyExists_pleaseDoNotRepeatedly => 'すでに存在するので、再度追加しないでください！';
 	@override String get registrationNumberCannotBeUsedAsAccessNumber => '登録番号を認証アクセス番号として使用できない';
@@ -6286,6 +7971,38 @@ class _StringsJa implements Translations {
 	@override String get enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted => '関連付けられている携帯電話番号を入力してください。国番号は省略できます。';
 	@override String mobileNumberForNameIsIncorrect({required Object name}) => '${name} の携帯電話番号が正しくありません';
 	@override String get matchingVerificationStrategyIs => '一致する検証戦略は次のとおりです:';
+	@override String get balanceGreater3ICP_noNeedPourFuel => '残高が 3 ICP より大きいため、今のところ燃料を注ぐ必要はありません。';
+	@override String get escrowAccount => 'エスクローアカウント';
+	@override String get fuelRelay => '燃料リレー';
+	@override String get pourFuel => '燃料を注ぐ';
+	@override String get fuelState => '燃料状態';
+	@override String get pouringFuelTips => '燃料を注ぐことでメリットやデメリットが生じることはありません。その目的は、Delta システムのエクスペリエンスを充実させることです。';
+	@override String get sponsorDevelopersByWatchingAds => '広告を見て開発者をスポンサーする';
+	@override String get status => 'ステータス';
+	@override String get date => '日付';
+	@override String get assetApplicationIsInProgressTip => 'アセット申請が進行中です。3秒後にもう一度お試しください。';
+	@override String get delete => '削除';
+	@override String get deleteVerifierTip => '検証者の権限を削除すると、関連するスコアデータもすべて同時に削除されますが、すでに獲得した報酬には影響しません。';
+	@override String get deleteVerifierStatusTip => '削除する前に一時停止状態に設定してください';
+	@override String pleaseEnterXtoConfirm({required Object text}) => '確認のため、「${text}」を入力してください';
+	@override String get localSecurity => 'ローカルセキュリティ';
+	@override String get deviceLock => 'デバイスロック';
+	@override String get patternLock => 'パターンロック';
+	@override String get none => 'なし';
+	@override String get exist => '存在する';
+	@override String get prompt => 'プロンプト:';
+	@override String get localSecurityTip1 => '1. ローカルセキュリティ認証は、機密性の高い操作を行う際に本人確認を行うために使用されます。その目的は、デバイスが他人に制御されるのを防ぎ、アカウントのセキュリティを確保することです。';
+	@override String get localSecurityTip2 => '2. パターンロックは、デバイスロックがサポートされていない、または互換性がない場合の補助的な解決策です。通常、デバイスロックが利用可能な場合は、パターンロックを設定する必要はありません。';
+	@override String get localSecurityTip3 => '3. パターンロックを忘れた場合は、アプリのデータを消去するか、アプリを再インストールして消去するしかありません。';
+	@override String deviceAuthFirstTip({required Object menu, required Object localSecurity}) => 'デバイス認証が呼び出されようとしています。エラーまたは例外が発生した場合は、"${menu}"ページの"${localSecurity}"オプションに移動してテストと詳細な設定を行ってください。';
+	@override String get pleaseDrawUnlockPattern => 'ロック解除パターンを描いてください';
+	@override String get addPatternLock => 'パターンロックを追加';
+	@override String get cannotBeLessThan8Dots => '8ドット未満にはできません';
+	@override String get pleaseRepeatThePattern => 'パターンをもう一度繰り返してください';
+	@override String get notMatchFirstValidPattern => '最初の有効な描画パターンと一致しません';
+	@override String get deletePatternLock => 'パターンロックの削除';
+	@override String get notMatchExistingPattern => '既存のパターンと一致しません';
+	@override String get localAuthentication => 'ローカル認証';
 }
 
 // Path: <root>
@@ -6617,11 +8334,11 @@ class _StringsKo implements Translations {
 	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
 		const TextSpan(text: '이 주소는 '),
 		diff,
-		const TextSpan(text: ' 이후에 만료되며 만료 전 12시간 동안 '),
+		const TextSpan(text: ' 이후에 만료되며 만료 전 6시간 동안 '),
 		tap('수동으로 연장'),
 		const TextSpan(text: ' 유효합니다.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => '12시간 전에만 갱신 가능';
+	@override String get canOnlyRenewWithin6hoursInAdvance => '6시간 전에만 갱신 가능';
 	@override String get theReceivingAddressValidForLongtime => '이 주소는 오랫동안 유효합니다.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => '이 수집 주소는 오랫동안 유효하며 실시간으로 자동으로 적립됩니다.';
 	@override String get confirmDeposited => '입금 확인';
@@ -6881,7 +8598,7 @@ class _StringsKo implements Translations {
 	@override String get referrerIdDoesNotExist => '리퍼러 ID가 존재하지 않습니다!';
 	@override String get didIsIncorrectOrInvalid => 'DID가 잘못되었거나 유효하지 않습니다!';
 	@override String get accessTokenIsIncorrectOrInvalid => '액세스 토큰이 잘못되었거나 유효하지 않습니다!';
-	@override String get minimumWithdrawalAmountIs9USD => '1회 출금 시 최소 9USD';
+	@override String get minimumWithdrawalAmountIs1USD => '1회 출금 시 최소 1USD';
 	@override String get miningTimeIsNotYet => '아직 채굴할 때가 아닙니다.';
 	@override String get alreadyExists_pleaseDoNotRepeatedly => '이미 존재하므로 다시 추가하지 마세요!';
 	@override String get registrationNumberCannotBeUsedAsAccessNumber => '등록 번호를 인증 액세스 번호로 사용할 수 없습니다.';
@@ -6969,6 +8686,38 @@ class _StringsKo implements Translations {
 	@override String get enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted => '연관된 모바일 번호를 입력하세요. 국가 코드는 생략할 수 있습니다.';
 	@override String mobileNumberForNameIsIncorrect({required Object name}) => '${name}의 휴대폰 번호가 올바르지 않습니다';
 	@override String get matchingVerificationStrategyIs => '매칭 검증 전략은 다음과 같습니다.';
+	@override String get balanceGreater3ICP_noNeedPourFuel => '3 ICP보다 큰 잔액, 당장은 연료를 부을 필요가 없습니다.';
+	@override String get escrowAccount => '에스크로 계정';
+	@override String get fuelRelay => '연료 릴레이';
+	@override String get pourFuel => '연료를 붓다';
+	@override String get fuelState => '연료 상태';
+	@override String get pouringFuelTips => '연료를 주입하는 것은 어떠한 이점이나 단점을 가져다주지 않습니다. 그 목적은 델타 시스템 경험을 풍부하게 하는 것입니다.';
+	@override String get sponsorDevelopersByWatchingAds => '광고를 시청하여 개발자 후원';
+	@override String get status => '상태';
+	@override String get date => '날짜';
+	@override String get assetApplicationIsInProgressTip => '자산 신청이 진행 중입니다. 3초 후에 다시 시도해 주세요.';
+	@override String get delete => '삭제';
+	@override String get deleteVerifierTip => '검증자 권한을 삭제하면 관련 점수 데이터가 모두 동시에 삭제되지만, 이미 획득한 보상에는 영향을 미치지 않습니다.';
+	@override String get deleteVerifierStatusTip => '삭제하기 전에 일시 중지 상태로 설정하세요';
+	@override String pleaseEnterXtoConfirm({required Object text}) => '확인하시려면 "${text}"를 입력하세요.';
+	@override String get localSecurity => '로컬 보안';
+	@override String get deviceLock => '장치 잠금';
+	@override String get patternLock => '패턴 잠금';
+	@override String get none => '없음';
+	@override String get exist => '존재한다';
+	@override String get prompt => '프롬프트:';
+	@override String get localSecurityTip1 => '1. 로컬 보안 인증은 일부 민감한 작업 중에 신원을 확인하는 데 사용됩니다. 로컬 보안 인증의 목적은 다른 사람이 기기를 조작하는 것을 방지하고 계정의 보안을 유지하는 것입니다.';
+	@override String get localSecurityTip2 => '2. 패턴 잠금은 기기 잠금이 지원되지 않거나 호환되지 않을 때 사용할 수 있는 보완적인 솔루션입니다. 일반적으로 기기 잠금을 사용할 수 있는 경우에는 패턴 잠금을 설정할 필요가 없습니다.';
+	@override String get localSecurityTip3 => '3. 패턴 잠금을 잊어버린 경우, 앱 데이터를 삭제하거나 앱을 재설치해야만 삭제할 수 있습니다.';
+	@override String deviceAuthFirstTip({required Object menu, required Object localSecurity}) => '기기 인증이 곧 호출됩니다. 오류나 예외가 발생하면 "${menu}" 페이지의 "${localSecurity}" 옵션으로 이동하여 테스트 및 추가 설정을 진행하세요.';
+	@override String get pleaseDrawUnlockPattern => '잠금 해제 패턴을 그려주세요';
+	@override String get addPatternLock => '패턴 잠금 추가';
+	@override String get cannotBeLessThan8Dots => '8개보다 작을 수 없습니다';
+	@override String get pleaseRepeatThePattern => '패턴을 다시 반복해 주세요';
+	@override String get notMatchFirstValidPattern => '첫 번째 유효한 드로잉 패턴과 일치하지 않습니다';
+	@override String get deletePatternLock => '패턴 잠금 삭제';
+	@override String get notMatchExistingPattern => '기존 패턴과 일치하지 않습니다.';
+	@override String get localAuthentication => '로컬 인증';
 }
 
 // Path: <root>
@@ -7302,9 +9051,9 @@ class _StringsNl implements Translations {
 		diff,
 		const TextSpan(text: ' en is '),
 		tap('handmatig verlengen'),
-		const TextSpan(text: ' nog 12 uur geldig voordat het verloopt.'),
+		const TextSpan(text: ' nog 6 uur geldig voordat het verloopt.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'Kan alleen 12 uur van tevoren worden verlengd';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'Kan alleen 6 uur van tevoren worden verlengd';
 	@override String get theReceivingAddressValidForLongtime => 'Dit adres is lang geldig.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'Dit ophaaladres is lang geldig en wordt automatisch in realtime gecrediteerd.';
 	@override String get confirmDeposited => 'Bevestiging van stortingen';
@@ -7564,7 +9313,7 @@ class _StringsNl implements Translations {
 	@override String get referrerIdDoesNotExist => 'Referrer ID bestaat niet!';
 	@override String get didIsIncorrectOrInvalid => 'De DID is onjuist of ongeldig!';
 	@override String get accessTokenIsIncorrectOrInvalid => 'Het toegangsToken is onjuist of ongeldig!';
-	@override String get minimumWithdrawalAmountIs9USD => 'Minimaal 9USD voor een enkele opname';
+	@override String get minimumWithdrawalAmountIs1USD => 'Minimaal 1USD voor een enkele opname';
 	@override String get miningTimeIsNotYet => 'Het is nog geen tijd om te mijnen.';
 	@override String get alreadyExists_pleaseDoNotRepeatedly => 'Bestaat al, voeg het niet opnieuw toe!';
 	@override String get registrationNumberCannotBeUsedAsAccessNumber => 'Kan registratienummer niet gebruiken als toegangsnummer voor verificatie';
@@ -7652,6 +9401,38 @@ class _StringsNl implements Translations {
 	@override String get enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted => 'Voer het bijbehorende mobiele nummer in. De landcode kan worden weggelaten.';
 	@override String mobileNumberForNameIsIncorrect({required Object name}) => '${name}\'s mobiele nummer is onjuist';
 	@override String get matchingVerificationStrategyIs => 'De overeenkomende verificatiestrategie is:';
+	@override String get balanceGreater3ICP_noNeedPourFuel => 'De balans is groter dan 3 ICP, er hoeft voorlopig geen brandstof te worden bijgevuld.';
+	@override String get escrowAccount => 'Escrow-rekening';
+	@override String get fuelRelay => 'Brandstofrelais';
+	@override String get pourFuel => 'Brandstof gieten';
+	@override String get fuelState => 'Brandstofstatus';
+	@override String get pouringFuelTips => 'Het tanken van brandstof levert u geen voor- of nadelen op. Het doel is om de ervaring met het Delta-systeem te verrijken.';
+	@override String get sponsorDevelopersByWatchingAds => 'Sponsor ontwikkelaars door advertenties te bekijken';
+	@override String get status => 'Status';
+	@override String get date => 'Datum';
+	@override String get assetApplicationIsInProgressTip => 'Assettoepassing is bezig, probeer het over 3 seconden opnieuw.';
+	@override String get delete => 'Verwijderen';
+	@override String get deleteVerifierTip => 'Wanneer u de machtigingen van een verificator verwijdert, worden alle bijbehorende scoregegevens tegelijkertijd verwijderd, maar de reeds verkregen beloningen worden niet beïnvloed.';
+	@override String get deleteVerifierStatusTip => 'Stel het in op de pauzestand voordat u het verwijdert.';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'Voer "${text}" in om te bevestigen';
+	@override String get localSecurity => 'Lokale beveiliging';
+	@override String get deviceLock => 'Apparaatvergrendeling';
+	@override String get patternLock => 'Patroonvergrendeling';
+	@override String get none => 'geen';
+	@override String get exist => 'bestaat';
+	@override String get prompt => 'Prompt:';
+	@override String get localSecurityTip1 => '1. Lokale beveiligingsauthenticatie wordt gebruikt om de identiteit te bevestigen tijdens bepaalde gevoelige handelingen. Het doel hiervan is om te voorkomen dat het apparaat door anderen wordt beheerd en om de beveiliging van het account te waarborgen.';
+	@override String get localSecurityTip2 => '2. Patroonvergrendeling is een aanvullende oplossing wanneer de apparaatvergrendeling niet wordt ondersteund of niet compatibel is. Over het algemeen is het niet nodig om een ​​patroonvergrendeling in te stellen wanneer de apparaatvergrendeling beschikbaar is.';
+	@override String get localSecurityTip3 => '3. Wanneer u uw patroonvergrendeling bent vergeten, kunt u alleen de app-gegevens wissen of de app opnieuw installeren om deze te wissen.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'Apparaatauthenticatie wordt binnenkort aangeroepen. Als er een fout of uitzondering optreedt, ga dan naar de optie "${localSecurity}" op de pagina "${menu}" voor testen en verdere instellingen.';
+	@override String get pleaseDrawUnlockPattern => 'Teken het ontgrendelingspatroon';
+	@override String get addPatternLock => 'Patroonvergrendeling toevoegen';
+	@override String get cannotBeLessThan8Dots => 'Mag niet kleiner zijn dan 8 punten';
+	@override String get pleaseRepeatThePattern => 'Herhaal het patroon nogmaals';
+	@override String get notMatchFirstValidPattern => 'Komt niet overeen met het eerste geldige tekenpatroon';
+	@override String get deletePatternLock => 'Patroonvergrendeling verwijderen';
+	@override String get notMatchExistingPattern => 'Komt niet overeen met een bestaand patroon';
+	@override String get localAuthentication => 'lokale auth.';
 }
 
 // Path: <root>
@@ -7985,9 +9766,9 @@ class _StringsPl implements Translations {
 		diff,
 		const TextSpan(text: ' i będzie '),
 		tap('manually extend'),
-		const TextSpan(text: ' ważny przez 12 godzin przed wygaśnięciem.'),
+		const TextSpan(text: ' ważny przez 6 godzin przed wygaśnięciem.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'Można odnowić tylko z 12-godzinnym wyprzedzeniem';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'Można odnowić tylko z 6-godzinnym wyprzedzeniem';
 	@override String get theReceivingAddressValidForLongtime => 'Ten adres jest ważny przez długi czas.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'Ten adres zbiórki jest ważny przez długi czas i jest automatycznie zasilany w czasie rzeczywistym.';
 	@override String get confirmDeposited => 'Potwierdzenie depozytów';
@@ -8247,7 +10028,7 @@ class _StringsPl implements Translations {
 	@override String get referrerIdDoesNotExist => 'Identyfikator strony odsyłającej nie istnieje!';
 	@override String get didIsIncorrectOrInvalid => 'DID jest nieprawidłowy lub nieważny!';
 	@override String get accessTokenIsIncorrectOrInvalid => 'Token dostępu jest nieprawidłowy lub nieważny!';
-	@override String get minimumWithdrawalAmountIs9USD => 'Minimum 9USD za pojedynczą wypłatę';
+	@override String get minimumWithdrawalAmountIs1USD => 'Minimum 1USD za pojedynczą wypłatę';
 	@override String get miningTimeIsNotYet => 'Jeszcze nie czas na kopanie.';
 	@override String get alreadyExists_pleaseDoNotRepeatedly => 'Już istnieje, nie dodawaj go ponownie!';
 	@override String get registrationNumberCannotBeUsedAsAccessNumber => 'Nie można użyć numeru rejestracyjnego jako numeru dostępu do uwierzytelniania';
@@ -8336,6 +10117,38 @@ class _StringsPl implements Translations {
 	@override String get enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted => 'Wprowadź powiązany numer telefonu komórkowego. Kod kraju można pominąć.';
 	@override String mobileNumberForNameIsIncorrect({required Object name}) => 'Numer telefonu komórkowego ${name} jest niepoprawny';
 	@override String get matchingVerificationStrategyIs => 'Strategia weryfikacji dopasowania to:';
+	@override String get balanceGreater3ICP_noNeedPourFuel => 'Saldo jest większe niż 3 ICP, na razie nie ma potrzeby dolewania paliwa.';
+	@override String get escrowAccount => 'Rachunek powierniczy';
+	@override String get fuelRelay => 'Przekaźnik paliwa';
+	@override String get pourFuel => 'Wlej paliwo';
+	@override String get fuelState => 'Stan paliwa';
+	@override String get pouringFuelTips => 'Wlewanie paliwa nie przynosi żadnych korzyści ani wad, jego celem jest wzbogacenie doświadczenia z systemem Delta';
+	@override String get sponsorDevelopersByWatchingAds => 'Sponsoruj programistów, oglądając reklamy';
+	@override String get status => 'Status';
+	@override String get date => 'Data';
+	@override String get assetApplicationIsInProgressTip => 'Aplikacja zasobu w toku, spróbuj ponownie za 3 sekundy.';
+	@override String get delete => 'Usuń';
+	@override String get deleteVerifierTip => 'Podczas usuwania uprawnień weryfikatora wszystkie powiązane dane dotyczące wyników zostaną usunięte w tym samym czasie, ale nagrody już uzyskane nie zostaną naruszone.';
+	@override String get deleteVerifierStatusTip => 'Przed usunięciem ustaw stan wstrzymania';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'Wprowadź "${text}", aby potwierdzić';
+	@override String get localSecurity => 'Bezpieczeństwo lokalne';
+	@override String get deviceLock => 'Blokada urządzenia';
+	@override String get patternLock => 'Blokada wzoru';
+	@override String get none => 'żaden';
+	@override String get exist => 'istnieje';
+	@override String get prompt => 'Monit:';
+	@override String get localSecurityTip1 => '1. Lokalne uwierzytelnianie zabezpieczeń jest używane do potwierdzania tożsamości podczas niektórych wrażliwych operacji. Jego celem jest zapobieganie kontrolowaniu urządzenia przez innych i zapewnienie bezpieczeństwa konta.';
+	@override String get localSecurityTip2 => '2. Blokada wzoru jest rozwiązaniem uzupełniającym, gdy blokada urządzenia nie jest obsługiwana lub jest niezgodna. Zasadniczo nie ma potrzeby ustawiania blokady wzoru, gdy blokada urządzenia jest dostępna.';
+	@override String get localSecurityTip3 => '3. Gdy zapomnisz o blokadzie wzoru, możesz tylko wyczyścić dane aplikacji lub ponownie zainstalować aplikację, aby ją wyczyścić.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'Uwierzytelnianie urządzenia zostanie wywołane. Jeśli wystąpi błąd lub wyjątek, przejdź do opcji "${localSecurity}" na stronie "${menu}" w celu przetestowania i dalszych ustawień.';
+	@override String get pleaseDrawUnlockPattern => 'Proszę narysować wzór odblokowania';
+	@override String get addPatternLock => 'Dodaj blokadę wzoru';
+	@override String get cannotBeLessThan8Dots => 'Nie może być mniej niż 8 kropek';
+	@override String get pleaseRepeatThePattern => 'Proszę powtórzyć wzór jeszcze raz';
+	@override String get notMatchFirstValidPattern => 'Nie pasuje do pierwszego prawidłowego wzorca rysowania';
+	@override String get deletePatternLock => 'Usuń blokadę wzoru';
+	@override String get notMatchExistingPattern => 'Nie pasuje do istniejącego wzorca';
+	@override String get localAuthentication => 'local Auth';
 }
 
 // Path: <root>
@@ -8669,9 +10482,9 @@ class _StringsPt implements Translations {
 		diff,
 		const TextSpan(text: ' e será '),
 		tap('manually extend'),
-		const TextSpan(text: ' válido durante 12 horas antes de expirar.'),
+		const TextSpan(text: ' válido durante 6 horas antes de expirar.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'Só pode ser renovado com 12 horas de antecedência';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'Só pode ser renovado com 6 horas de antecedência';
 	@override String get theReceivingAddressValidForLongtime => 'Este endereço é válido por um longo período de tempo.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'Este endereço de recolha é válido por um longo período e é automaticamente creditado em tempo real.';
 	@override String get confirmDeposited => 'Confirmação dos depósitos';
@@ -8931,7 +10744,7 @@ class _StringsPt implements Translations {
 	@override String get referrerIdDoesNotExist => 'A ID do referenciador não existe!';
 	@override String get didIsIncorrectOrInvalid => 'A DID está incorrecta ou é inválida!';
 	@override String get accessTokenIsIncorrectOrInvalid => 'O accessToken é incorreto ou inválido!';
-	@override String get minimumWithdrawalAmountIs9USD => 'Mínimo de 9USD para uma única retirada';
+	@override String get minimumWithdrawalAmountIs1USD => 'Mínimo de 1USD para uma única retirada';
 	@override String get miningTimeIsNotYet => 'Ainda não é altura de minerar.';
 	@override String get alreadyExists_pleaseDoNotRepeatedly => 'Já existe, por favor não o adicione novamente!';
 	@override String get registrationNumberCannotBeUsedAsAccessNumber => 'Não é possível utilizar o número de registo como número de acesso de autenticação';
@@ -9019,6 +10832,38 @@ class _StringsPt implements Translations {
 	@override String get enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted => 'Por favor, insira o número de celular associado. O código do país pode ser omitido.';
 	@override String mobileNumberForNameIsIncorrect({required Object name}) => 'O número de celular de ${name} está incorreto';
 	@override String get matchingVerificationStrategyIs => 'A estratégia de verificação de correspondência é:';
+	@override String get balanceGreater3ICP_noNeedPourFuel => 'O saldo é maior que 3 ICP, não há necessidade de despejar combustível por enquanto.';
+	@override String get escrowAccount => 'Conta de custódia';
+	@override String get fuelRelay => 'Relé de combustível';
+	@override String get pourFuel => 'Despeje combustível';
+	@override String get fuelState => 'Estado do combustível';
+	@override String get pouringFuelTips => 'Despejar combustível não traz nenhuma vantagem ou desvantagem, seu objetivo é enriquecer a experiência do sistema Delta.';
+	@override String get sponsorDevelopersByWatchingAds => 'Patrocine desenvolvedores assistindo a anúncios';
+	@override String get status => 'Estado';
+	@override String get date => 'Data';
+	@override String get assetApplicationIsInProgressTip => 'Aplicação de ativo em andamento, tente novamente em 3 segundos.';
+	@override String get delete => 'Excluir';
+	@override String get deleteVerifierTip => 'Ao excluir as permissões de um verificador, todos os dados de pontuação relacionados serão excluídos ao mesmo tempo, mas as recompensas já obtidas não serão afetadas.';
+	@override String get deleteVerifierStatusTip => 'Por favor, defina-o como pausado antes de excluir';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'Por favor, digite "${text}", para confirmar';
+	@override String get localSecurity => 'Segurança local';
+	@override String get deviceLock => 'Bloqueio do dispositivo';
+	@override String get patternLock => 'Bloqueio de padrão';
+	@override String get none => 'nenhum';
+	@override String get exist => 'existe';
+	@override String get prompt => 'Prompt:';
+	@override String get localSecurityTip1 => '1. A autenticação de segurança local é usada para confirmar a identidade durante algumas operações confidenciais. Sua finalidade é impedir que o dispositivo seja controlado por terceiros e garantir a segurança da conta.';
+	@override String get localSecurityTip2 => '2. O bloqueio de padrão é uma solução complementar quando o bloqueio do dispositivo não é suportado ou é incompatível. Geralmente, não há necessidade de definir um bloqueio de padrão quando o bloqueio do dispositivo está disponível.';
+	@override String get localSecurityTip3 => '3. Quando você esquece seu padrão de bloqueio, você só pode limpar os dados do aplicativo ou reinstalar o aplicativo para limpá-lo.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'A autenticação do dispositivo está prestes a ser chamada. Se ocorrer um erro ou exceção, acesse a opção "${localSecurity}" na página "${menu}" para testes e configurações adicionais.';
+	@override String get pleaseDrawUnlockPattern => 'Por favor, desenhe o padrão de desbloqueio';
+	@override String get addPatternLock => 'Adicionar bloqueio de padrão';
+	@override String get cannotBeLessThan8Dots => 'Não pode ter menos de 8 pontos';
+	@override String get pleaseRepeatThePattern => 'Por favor, repita o padrão novamente';
+	@override String get notMatchFirstValidPattern => 'Não corresponde ao primeiro padrão de desenho válido';
+	@override String get deletePatternLock => 'Excluir bloqueio de padrão';
+	@override String get notMatchExistingPattern => 'Não corresponde a um padrão existente';
+	@override String get localAuthentication => 'autenticação local';
 }
 
 // Path: <root>
@@ -9352,9 +11197,9 @@ class _StringsRu implements Translations {
 		diff,
 		const TextSpan(text: ' и будет '),
 		tap('manually extend'),
-		const TextSpan(text: ' действителен в течение 12 часов до истечения срока действия.'),
+		const TextSpan(text: ' действителен в течение 6 часов до истечения срока действия.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'Продление возможно только за 12 часов';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'Продление возможно только за 6 часов';
 	@override String get theReceivingAddressValidForLongtime => 'Этот адрес действителен в течение длительного времени.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'Этот адрес сбора действителен в течение длительного времени и автоматически зачисляется в режиме реального времени.';
 	@override String get confirmDeposited => 'Подтверждение вкладов';
@@ -9614,7 +11459,7 @@ class _StringsRu implements Translations {
 	@override String get referrerIdDoesNotExist => 'Идентификатор реферера не существует!';
 	@override String get didIsIncorrectOrInvalid => 'DID неверен или недействителен!';
 	@override String get accessTokenIsIncorrectOrInvalid => 'Токен доступа неверен или недействителен!';
-	@override String get minimumWithdrawalAmountIs9USD => 'Минимум 9USD для одного вывода средств';
+	@override String get minimumWithdrawalAmountIs1USD => 'Минимум 1USD для одного вывода средств';
 	@override String get miningTimeIsNotYet => 'Время для добычи еще не пришло.';
 	@override String get alreadyExists_pleaseDoNotRepeatedly => 'Уже существует, пожалуйста, не добавляйте его снова!';
 	@override String get registrationNumberCannotBeUsedAsAccessNumber => 'Невозможно использовать регистрационный номер в качестве номера доступа для аутентификации';
@@ -9703,6 +11548,38 @@ class _StringsRu implements Translations {
 	@override String get enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted => 'Пожалуйста, введите их связанный номер мобильного телефона. Код страны можно опустить.';
 	@override String mobileNumberForNameIsIncorrect({required Object name}) => 'Неверный номер мобильного телефона ${name}';
 	@override String get matchingVerificationStrategyIs => 'Стратегия проверки соответствия:';
+	@override String get balanceGreater3ICP_noNeedPourFuel => 'Баланс больше 3 ICP, пока нет необходимости заливать топливо.';
+	@override String get escrowAccount => 'Счет условного депонирования';
+	@override String get fuelRelay => 'Топливное реле';
+	@override String get pourFuel => 'Залить топливо';
+	@override String get fuelState => 'Состояние топлива';
+	@override String get pouringFuelTips => 'Заливка топлива не приносит вам никаких преимуществ или недостатков, ее цель — обогатить опыт использования системы Delta.';
+	@override String get sponsorDevelopersByWatchingAds => 'Спонсируйте разработчиков, просматривая рекламу';
+	@override String get status => 'Статус';
+	@override String get date => 'Дата';
+	@override String get assetApplicationIsInProgressTip => 'Выполняется заявка на актив, повторите попытку через 3 секунды.';
+	@override String get delete => 'Удалить';
+	@override String get deleteVerifierTip => 'При удалении разрешений верификатора все связанные с ним данные о результатах будут одновременно удалены, но уже полученные награды не будут затронуты.';
+	@override String get deleteVerifierStatusTip => 'Перед удалением установите состояние паузы';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'Пожалуйста, введите "${text}" для подтверждения';
+	@override String get localSecurity => 'Локальная безопасность';
+	@override String get deviceLock => 'Блокировка устройства';
+	@override String get patternLock => 'Шаблон блокировки';
+	@override String get none => 'нет';
+	@override String get exist => 'существует';
+	@override String get prompt => 'Подсказка:';
+	@override String get localSecurityTip1 => '1. Локальная аутентификация безопасности используется для подтверждения личности во время некоторых конфиденциальных операций. Ее цель — предотвратить управление устройством другими лицами и обеспечить безопасность учетной записи.';
+	@override String get localSecurityTip2 => '2. Блокировка по шаблону является дополнительным решением, когда блокировка устройства не поддерживается или несовместима. Обычно нет необходимости устанавливать блокировку по шаблону, когда доступна блокировка устройства.';
+	@override String get localSecurityTip3 => '3. Если вы забыли графический ключ, вы можете только очистить данные приложения или переустановить приложение, чтобы очистить их.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'Сейчас будет вызвана аутентификация устройства. Если возникнет ошибка или исключение, перейдите к параметру "${localSecurity}" на странице "${menu}" для тестирования и дополнительных настроек.';
+	@override String get pleaseDrawUnlockPattern => 'Пожалуйста, нарисуйте шаблон разблокировки';
+	@override String get addPatternLock => 'Добавить шаблон блокировки';
+	@override String get cannotBeLessThan8Dots => 'Не может быть меньше 8 точек';
+	@override String get pleaseRepeatThePattern => 'Повторите узор еще раз';
+	@override String get notMatchFirstValidPattern => 'Не соответствует первому допустимому шаблону чертежа';
+	@override String get deletePatternLock => 'Удалить графический ключ';
+	@override String get notMatchExistingPattern => 'Не соответствует существующему шаблону';
+	@override String get localAuthentication => 'локальная аутентификация';
 }
 
 // Path: <root>
@@ -10035,9 +11912,9 @@ class _StringsTh implements Translations {
 		diff,
 		const TextSpan(text: ' และคุณสามารถ '),
 		tap ('ขยายด้วยตนเอง'),
-		const TextSpan(text: ' ระยะเวลาที่ใช้ได้ภายใน 12 ชั่วโมงก่อนหมดอายุ'),
+		const TextSpan(text: ' ระยะเวลาที่ใช้ได้ภายใน 6 ชั่วโมงก่อนหมดอายุ'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'สามารถต่ออายุได้ล่วงหน้า 12 ชั่วโมงเท่านั้น';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'สามารถต่ออายุได้ล่วงหน้า 6 ชั่วโมงเท่านั้น';
 	@override String get theReceivingAddressValidForLongtime => 'ที่อยู่การชำระเงินนี้ใช้ได้เป็นเวลานาน';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'ที่อยู่การชำระเงินนี้ใช้ได้เป็นเวลานานและจะเข้าบัญชีโดยอัตโนมัติแบบเรียลไทม์';
 	@override String get confirmDeposited => 'ยืนยันการฝากเงิน';
@@ -10297,7 +12174,7 @@ class _StringsTh implements Translations {
 	@override String get referrerIdDoesNotExist => 'ไม่มีรหัสผู้อ้างอิง!';
 	@override String get didIsIncorrectOrInvalid => 'DID ไม่ถูกต้องหรือไม่ถูกต้อง!';
 	@override String get accessTokenIsIncorrectOrInvalid => 'accessToken ไม่ถูกต้องหรือไม่ถูกต้อง!';
-	@override String get minimumWithdrawalAmountIs9USD => 'จำนวนถอนขั้นต่ำในครั้งเดียวคือ 9USD';
+	@override String get minimumWithdrawalAmountIs1USD => 'จำนวนถอนขั้นต่ำในครั้งเดียวคือ 1USD';
 	@override String get miningTimeIsNotYet => 'เวลาขุดยังไม่มา';
 	@override String get alreadyExists_pleaseDoNotRepeatedly => 'มีอยู่แล้ว กรุณาอย่าเพิ่มอีก!';
 	@override String get registrationNumberCannotBeUsedAsAccessNumber => 'หมายเลขลงทะเบียนไม่สามารถใช้เป็นหมายเลขการเข้าถึงการยืนยันได้';
@@ -10385,6 +12262,38 @@ class _StringsTh implements Translations {
 	@override String get enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted => 'กรุณาป้อนหมายเลขโทรศัพท์มือถือที่เกี่ยวข้องของพวกเขา สามารถละเว้นรหัสประเทศได้';
 	@override String mobileNumberForNameIsIncorrect({required Object name}) => 'หมายเลขมือถือของ ${name} ไม่ถูกต้อง';
 	@override String get matchingVerificationStrategyIs => 'กลยุทธ์การตรวจสอบการจับคู่คือ:';
+	@override String get balanceGreater3ICP_noNeedPourFuel => 'สมดุลมากกว่า 3 ICP ไม่จำเป็นต้องเติมเชื้อเพลิงในตอนนี้';
+	@override String get escrowAccount => 'บัญชีเอสโครว์';
+	@override String get fuelRelay => 'รีเลย์เชื้อเพลิง';
+	@override String get pourFuel => 'เทเชื้อเพลิง';
+	@override String get fuelState => 'สถานะเชื้อเพลิง';
+	@override String get pouringFuelTips => 'การเติมเชื้อเพลิงไม่ได้ทำให้คุณได้รับข้อดีหรือข้อเสียใดๆ แต่มีจุดประสงค์เพื่อเสริมประสบการณ์ระบบเดลต้า';
+	@override String get sponsorDevelopersByWatchingAds => 'สนับสนุนนักพัฒนาโดยการดูโฆษณา';
+	@override String get status => 'สถานะ';
+	@override String get date => 'วันที่';
+	@override String get assetApplicationIsInProgressTip => 'แอปพลิเคชันสินทรัพย์กำลังดำเนินการอยู่ โปรดลองอีกครั้งใน 3 วินาที';
+	@override String get delete => 'ลบ';
+	@override String get deleteVerifierTip => 'เมื่อทำการลบสิทธิ์ของผู้ตรวจสอบ ข้อมูลคะแนนที่เกี่ยวข้องทั้งหมดจะถูกลบออกพร้อมกัน แต่รางวัลที่ได้รับไปแล้วจะไม่ได้รับผลกระทบ';
+	@override String get deleteVerifierStatusTip => 'กรุณาตั้งค่าเป็นสถานะหยุดชั่วคราวก่อนทำการลบ';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'กรุณาป้อน "${text}" เพื่อยืนยัน';
+	@override String get localSecurity => 'ความปลอดภัยในพื้นที่';
+	@override String get deviceLock => 'ล็อคอุปกรณ์';
+	@override String get patternLock => 'ล็อครูปแบบ';
+	@override String get none => 'ไม่มี';
+	@override String get exist => 'มีอยู่';
+	@override String get prompt => 'แจ้งเตือน:';
+	@override String get localSecurityTip1 => '1. การตรวจสอบความปลอดภัยในพื้นที่ใช้เพื่อยืนยันตัวตนระหว่างการดำเนินการที่ละเอียดอ่อนบางอย่าง วัตถุประสงค์คือเพื่อป้องกันไม่ให้ผู้อื่นควบคุมอุปกรณ์และเพื่อให้แน่ใจว่าบัญชีมีความปลอดภัย';
+	@override String get localSecurityTip2 => '2. การล็อกรูปแบบเป็นโซลูชันเสริมเมื่อการล็อกอุปกรณ์ไม่ได้รับการรองรับหรือเข้ากันไม่ได้ โดยทั่วไปแล้ว ไม่จำเป็นต้องตั้งค่าการล็อกรูปแบบเมื่อการล็อกอุปกรณ์พร้อมใช้งาน';
+	@override String get localSecurityTip3 => '3. เมื่อลืมล็อครูปแบบของคุณ คุณสามารถล้างข้อมูลแอปหรือติดตั้งแอปใหม่เพื่อล้างข้อมูลได้เท่านั้น';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'การตรวจสอบสิทธิ์อุปกรณ์กำลังจะถูกเรียกใช้ หากเกิดข้อผิดพลาดหรือข้อยกเว้น โปรดไปที่ตัวเลือก "${localSecurity}" ในหน้า "${menu}" เพื่อทำการทดสอบและตั้งค่าเพิ่มเติม';
+	@override String get pleaseDrawUnlockPattern => 'กรุณาวาดรูปแบบการปลดล็อค';
+	@override String get addPatternLock => 'เพิ่มการล็อครูปแบบ';
+	@override String get cannotBeLessThan8Dots => 'ไม่สามารถน้อยกว่า 8 จุดได้';
+	@override String get pleaseRepeatThePattern => 'กรุณาทำซ้ำรูปแบบอีกครั้ง';
+	@override String get notMatchFirstValidPattern => 'ไม่ตรงกับรูปแบบการวาดภาพที่ถูกต้องครั้งแรก';
+	@override String get deletePatternLock => 'ลบล็อครูปแบบ';
+	@override String get notMatchExistingPattern => 'ไม่ตรงกับรูปแบบที่มีอยู่';
+	@override String get localAuthentication => 'การรับรองความถูกต้องภายในเครื่อง';
 }
 
 // Path: <root>
@@ -10718,9 +12627,9 @@ class _StringsUk implements Translations {
 		diff,
 		const TextSpan(text: ' і буде '),
 		tap('вручну продовжити'),
-		const TextSpan(text: ' дійсною протягом 12 годин до закінчення терміну дії.'),
+		const TextSpan(text: ' дійсною протягом 6 годин до закінчення терміну дії.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'Можна поновити лише за 12 годин до початку';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'Можна поновити лише за 6 годин до початку';
 	@override String get theReceivingAddressValidForLongtime => 'Ця адреса дійсна протягом тривалого часу.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'Ця адреса для збору коштів є дійсною протягом тривалого часу і автоматично зараховується в режимі реального часу.';
 	@override String get confirmDeposited => 'Підтвердження депозитів';
@@ -10980,7 +12889,7 @@ class _StringsUk implements Translations {
 	@override String get referrerIdDoesNotExist => 'Ідентифікатор реферала не існує!';
 	@override String get didIsIncorrectOrInvalid => 'DID неправильний або недійсний!';
 	@override String get accessTokenIsIncorrectOrInvalid => 'Токен доступу неправильний або недійсний!';
-	@override String get minimumWithdrawalAmountIs9USD => 'Мінімум 9USD для одноразового зняття коштів';
+	@override String get minimumWithdrawalAmountIs1USD => 'Мінімум 1USD для одноразового зняття коштів';
 	@override String get miningTimeIsNotYet => 'Ще не час мінувати.';
 	@override String get alreadyExists_pleaseDoNotRepeatedly => 'Вже існує, будь ласка, не додавайте його знову!';
 	@override String get registrationNumberCannotBeUsedAsAccessNumber => 'Неможливо використовувати реєстраційний номер як номер доступу для автентифікації';
@@ -11068,6 +12977,38 @@ class _StringsUk implements Translations {
 	@override String get enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted => 'Будь ласка, введіть відповідний номер мобільного телефону. Код країни можна опустити.';
 	@override String mobileNumberForNameIsIncorrect({required Object name}) => 'Номер мобільного телефону ${name} неправильний';
 	@override String get matchingVerificationStrategyIs => 'Відповідна стратегія перевірки:';
+	@override String get balanceGreater3ICP_noNeedPourFuel => 'Баланс більше 3 ICP, наразі не потрібно заливати паливо';
+	@override String get escrowAccount => 'Депонований рахунок';
+	@override String get fuelRelay => 'Реле палива';
+	@override String get pourFuel => 'Залити паливо';
+	@override String get fuelState => 'Стан палива';
+	@override String get pouringFuelTips => 'Заливка палива не принесе вам жодних переваг чи недоліків, її мета – збагатити досвід роботи з системою Delta.';
+	@override String get sponsorDevelopersByWatchingAds => 'Спонсоруйте розробників, переглядаючи рекламу';
+	@override String get status => 'статус';
+	@override String get date => 'дата';
+	@override String get assetApplicationIsInProgressTip => 'Виконується заявка на актив, повторіть спробу через 3 секунди.';
+	@override String get delete => 'Видалити';
+	@override String get deleteVerifierTip => 'Під час видалення дозволів верифікатора всі пов’язані дані очок буде видалено одночасно, але це не вплине на вже отримані винагороди.';
+	@override String get deleteVerifierStatusTip => 'Перед видаленням переведіть його в стан паузи';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'Введіть "${text}", щоб підтвердити';
+	@override String get localSecurity => 'Локальна безпека';
+	@override String get deviceLock => 'Блокування пристрою';
+	@override String get patternLock => 'Блокування шаблону';
+	@override String get none => 'жоден';
+	@override String get exist => 'існує';
+	@override String get prompt => 'Підказка:';
+	@override String get localSecurityTip1 => '1. Локальна автентифікація безпеки використовується для підтвердження особи під час деяких конфіденційних операцій. Її призначення полягає в тому, щоб запобігти контролю над пристроєм іншими особами та забезпечити безпеку облікового запису.';
+	@override String get localSecurityTip2 => '2. Блокування шаблоном є додатковим рішенням, якщо блокування пристрою не підтримується або несумісне. Як правило, немає необхідності встановлювати блокування шаблоном, якщо блокування пристрою доступне.';
+	@override String get localSecurityTip3 => '3. Якщо ваш шаблон блокування забутий, ви можете лише очистити дані програми або перевстановити програму, щоб очистити їх.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'Незабаром буде викликана автентифікація пристрою. Якщо станеться помилка чи виняткова ситуація, будь ласка, перейдіть до параметра "${localSecurity}" на сторінці "${menu}" для перевірки та додаткових налаштувань.';
+	@override String get pleaseDrawUnlockPattern => 'Будь ласка, намалюйте шаблон розблокування';
+	@override String get addPatternLock => 'Додати шаблон блокування';
+	@override String get cannotBeLessThan8Dots => 'Не може бути менше 8 точок';
+	@override String get pleaseRepeatThePattern => 'Будь ласка, повторіть шаблон ще раз';
+	@override String get notMatchFirstValidPattern => 'Не збігається з першим дійсним шаблоном малюнка';
+	@override String get deletePatternLock => 'Видалити шаблон блокування';
+	@override String get notMatchExistingPattern => 'Не відповідає існуючому шаблону';
+	@override String get localAuthentication => 'локальна авторизація';
 }
 
 // Path: <root>
@@ -11401,9 +13342,9 @@ class _StringsVi implements Translations {
 		diff,
 		const TextSpan(text: ' và bạn có thể '),
 		tap ('gia hạn thủ công'),
-		const TextSpan(text: ' thời hạn hiệu lực trong vòng 12 giờ trước khi hết hạn.'),
+		const TextSpan(text: ' thời hạn hiệu lực trong vòng 6 giờ trước khi hết hạn.'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => 'Chỉ có thể gia hạn trước 12 giờ';
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'Chỉ có thể gia hạn trước 6 giờ';
 	@override String get theReceivingAddressValidForLongtime => 'Địa chỉ thanh toán này có giá trị trong một thời gian dài.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'Địa chỉ thanh toán này có hiệu lực trong thời gian dài và sẽ được ghi có tự động theo thời gian thực.';
 	@override String get confirmDeposited => 'Xác nhận đã gửi tiền';
@@ -11663,7 +13604,7 @@ class _StringsVi implements Translations {
 	@override String get referrerIdDoesNotExist => 'ID người giới thiệu không tồn tại!';
 	@override String get didIsIncorrectOrInvalid => 'DID không chính xác hoặc không hợp lệ!';
 	@override String get accessTokenIsIncorrectOrInvalid => 'accessToken không chính xác hoặc không hợp lệ!';
-	@override String get minimumWithdrawalAmountIs9USD => 'Số tiền rút tối thiểu một lần là 9USD';
+	@override String get minimumWithdrawalAmountIs1USD => 'Số tiền rút tối thiểu một lần là 1USD';
 	@override String get miningTimeIsNotYet => 'Thời điểm khai thác vẫn chưa đến';
 	@override String get alreadyExists_pleaseDoNotRepeatedly => 'Đã tồn tại rồi, vui lòng không thêm lại!';
 	@override String get registrationNumberCannotBeUsedAsAccessNumber => 'Số đăng ký không thể được sử dụng làm số truy cập xác minh';
@@ -11751,6 +13692,38 @@ class _StringsVi implements Translations {
 	@override String get enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted => 'Vui lòng nhập số điện thoại di động liên kết của họ. Mã quốc gia có thể được bỏ qua.';
 	@override String mobileNumberForNameIsIncorrect({required Object name}) => 'Số điện thoại di động của ${name} không đúng';
 	@override String get matchingVerificationStrategyIs => 'Chiến lược xác minh phù hợp là:';
+	@override String get balanceGreater3ICP_noNeedPourFuel => 'Số dư lớn hơn 3 ICP, hiện tại không cần phải đổ nhiên liệu.';
+	@override String get escrowAccount => 'Tài khoản ký quỹ';
+	@override String get fuelRelay => 'Rơ le nhiên liệu';
+	@override String get pourFuel => 'Đổ nhiên liệu';
+	@override String get fuelState => 'Trạng thái nhiên liệu';
+	@override String get pouringFuelTips => 'Việc đổ nhiên liệu không mang lại cho bạn bất kỳ lợi thế hay bất lợi nào, mục đích của nó là làm phong phú thêm trải nghiệm hệ thống Delta.';
+	@override String get sponsorDevelopersByWatchingAds => 'Tài trợ cho các nhà phát triển bằng cách xem quảng cáo';
+	@override String get status => 'Trạng thái';
+	@override String get date => 'Ngày';
+	@override String get assetApplicationIsInProgressTip => 'Đang tiến hành ứng dụng tài sản, vui lòng thử lại sau 3 giây.';
+	@override String get delete => 'Xóa';
+	@override String get deleteVerifierTip => 'Khi xóa quyền của người xác minh, tất cả dữ liệu điểm liên quan sẽ bị xóa cùng lúc, nhưng phần thưởng đã nhận được sẽ không bị ảnh hưởng.';
+	@override String get deleteVerifierStatusTip => 'Vui lòng đặt nó ở trạng thái tạm dừng trước khi xóa';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'Vui lòng nhập "${text}", để xác nhận';
+	@override String get localSecurity => 'Bảo mật cục bộ';
+	@override String get deviceLock => 'Khóa thiết bị';
+	@override String get patternLock => 'Khóa mẫu';
+	@override String get none => 'không có';
+	@override String get exist => 'tồn tại';
+	@override String get prompt => 'Nhắc nhở:';
+	@override String get localSecurityTip1 => '1. Xác thực bảo mật cục bộ được sử dụng để xác nhận danh tính trong một số hoạt động nhạy cảm. Mục đích của nó là ngăn chặn thiết bị bị người khác kiểm soát và đảm bảo tính bảo mật của tài khoản.';
+	@override String get localSecurityTip2 => '2. Khóa mẫu là giải pháp bổ sung khi khóa thiết bị không được hỗ trợ hoặc không tương thích. Nhìn chung, không cần thiết lập khóa mẫu khi khóa thiết bị khả dụng.';
+	@override String get localSecurityTip3 => '3. Khi quên khóa mẫu, bạn chỉ có thể xóa dữ liệu ứng dụng hoặc cài đặt lại ứng dụng để xóa.';
+	@override String deviceAuthFirstTip({required Object localSecurity, required Object menu}) => 'Xác thực thiết bị sắp được gọi. Nếu xảy ra lỗi hoặc ngoại lệ, vui lòng chuyển đến tùy chọn "${localSecurity}" trên trang "${menu}" để kiểm tra và thiết lập thêm.';
+	@override String get pleaseDrawUnlockPattern => 'Vui lòng vẽ hình mở khóa';
+	@override String get addPatternLock => 'Thêm khóa mẫu';
+	@override String get cannotBeLessThan8Dots => 'Không thể ít hơn 8 chấm';
+	@override String get pleaseRepeatThePattern => 'Vui lòng lặp lại mẫu một lần nữa';
+	@override String get notMatchFirstValidPattern => 'Không khớp với mẫu vẽ hợp lệ đầu tiên';
+	@override String get deletePatternLock => 'Xóa khóa mẫu';
+	@override String get notMatchExistingPattern => 'Không khớp với mẫu hiện có';
+	@override String get localAuthentication => 'Xác thực cục bộ';
 }
 
 // Path: <root>
@@ -12082,11 +14055,11 @@ class _StringsZhCn implements Translations {
 	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
 		const TextSpan(text: '该地址将在'),
 		diff,
-		const TextSpan(text: '后过期，过期前12小时内可'),
+		const TextSpan(text: '后过期，过期前6小时内可'),
 		tap('手动延长'),
 		const TextSpan(text: '有效期。'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => '只能提前12小时内续订';
+	@override String get canOnlyRenewWithin6hoursInAdvance => '只能提前6小时内续订';
 	@override String get theReceivingAddressValidForLongtime => '该收款地址长期有效.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => '该收款地址长期有效，并实时自动入账。';
 	@override String get confirmDeposited => '确认已存入';
@@ -12345,7 +14318,7 @@ class _StringsZhCn implements Translations {
 	@override String get referrerIdDoesNotExist => '推荐人 ID 不存在！';
 	@override String get didIsIncorrectOrInvalid => 'DID 不正确或无效！';
 	@override String get accessTokenIsIncorrectOrInvalid => 'accessToken 不正确或无效！';
-	@override String get minimumWithdrawalAmountIs9USD => '一次提现金额最少9USD';
+	@override String get minimumWithdrawalAmountIs1USD => '一次提现金额最少1USD';
 	@override String get miningTimeIsNotYet => '挖矿时间尚未到';
 	@override String get alreadyExists_pleaseDoNotRepeatedly => '已存在，请不要重复添加！';
 	@override String get registrationNumberCannotBeUsedAsAccessNumber => '不能使用注册号码作为验证接入号';
@@ -12435,6 +14408,38 @@ class _StringsZhCn implements Translations {
 	@override String get enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted => '请输入它们的关联手机号码，可省略国家代码。';
 	@override String mobileNumberForNameIsIncorrect({required Object name}) => '${name}的移动号码不正确';
 	@override String get matchingVerificationStrategyIs => '匹配到的验证策略为：';
+	@override String get balanceGreater3ICP_noNeedPourFuel => '余额大于3 ICP暂时无需倒入燃料。';
+	@override String get escrowAccount => '托管账户';
+	@override String get fuelRelay => '燃料中继';
+	@override String get pourFuel => '倒入燃料';
+	@override String get fuelState => '燃料状态';
+	@override String get pouringFuelTips => '倒入燃料不会给您带来任何的好处或坏处，其目的为了丰富Delta系统体验。';
+	@override String get sponsorDevelopersByWatchingAds => '通过观看广告赞助开发者';
+	@override String get status => '状态';
+	@override String get date => '日期';
+	@override String get assetApplicationIsInProgressTip => '资产申请中，请3秒后再试。';
+	@override String get delete => '删除';
+	@override String get deleteVerifierTip => '删除验证者权限时，所有相关的得分数据都将同时删除，但是已经获得的奖励不会受到影响。';
+	@override String get deleteVerifierStatusTip => '删除前请先设置为暂停状态';
+	@override String pleaseEnterXtoConfirm({required Object text}) => '确认请输入“${text}”';
+	@override String get localSecurity => '本地安全';
+	@override String get deviceLock => '设备锁';
+	@override String get patternLock => '图案锁';
+	@override String get none => '没有';
+	@override String get exist => '存在';
+	@override String get prompt => '提示:';
+	@override String get localSecurityTip1 => '1. 本地安全认证用于在一些敏感操作时的身份确认，其目的是防止设备被他人控制时，并能保证账户的安全性。';
+	@override String get localSecurityTip2 => '2. 图案锁是在调用设备锁不支持或不兼容的情况下的一种补充方案， 一般在设备锁可用的情况下无需设置图案锁。';
+	@override String get localSecurityTip3 => '3. 当您的图案锁被遗忘的情况下，只能清除应用数据或重装应用才能被清除。';
+	@override String deviceAuthFirstTip({required Object menu, required Object localSecurity}) => '即将调用设备认证，如果发生报错或异常，请进入"${menu}"页面的"${localSecurity}"选项进行测试和进一步设置。';
+	@override String get pleaseDrawUnlockPattern => '请绘制解锁图案';
+	@override String get addPatternLock => '添加图案锁';
+	@override String get cannotBeLessThan8Dots => '不能低于8个点阵';
+	@override String get pleaseRepeatThePattern => '请再次重复绘制图案';
+	@override String get notMatchFirstValidPattern => '与首次有效的绘制图案不匹配';
+	@override String get deletePatternLock => '删除图案锁';
+	@override String get notMatchExistingPattern => '与存在的图案不匹配';
+	@override String get localAuthentication => '本地验证';
 }
 
 // Path: <root>
@@ -12766,11 +14771,11 @@ class _StringsZhTw implements Translations {
 	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
 		const TextSpan(text: '該地址將在'),
 		diff,
-		const TextSpan(text: '後過期，過期前12小時內可'),
+		const TextSpan(text: '後過期，過期前6小時內可'),
 		tap('手動延長'),
 		const TextSpan(text: '有效期。'),
 	]);
-	@override String get canOnlyRenewWithin12hoursInAdvance => '只能提前12小時內續訂';
+	@override String get canOnlyRenewWithin6hoursInAdvance => '只能提前6小時內續訂';
 	@override String get theReceivingAddressValidForLongtime => '該收款地址長期有效.';
 	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => '該收款地址長期有效，並實時自動入賬。';
 	@override String get confirmDeposited => '確認已存入';
@@ -13030,7 +15035,7 @@ class _StringsZhTw implements Translations {
 	@override String get referrerIdDoesNotExist => '推薦人 ID 不存在！';
 	@override String get didIsIncorrectOrInvalid => 'DID 不正確或無效！';
 	@override String get accessTokenIsIncorrectOrInvalid => 'accessToken 不正確或無效！';
-	@override String get minimumWithdrawalAmountIs9USD => '一次提現金額最少9USD';
+	@override String get minimumWithdrawalAmountIs1USD => '一次提現金額最少1USD';
 	@override String get miningTimeIsNotYet => '挖礦時間尚未到';
 	@override String get alreadyExists_pleaseDoNotRepeatedly => '已存在，請不要重複新增！';
 	@override String get registrationNumberCannotBeUsedAsAccessNumber => '不能使用註冊號碼作為驗證接入號';
@@ -13119,6 +15124,38 @@ class _StringsZhTw implements Translations {
 	@override String get enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted => '請輸入它們的關聯手機號碼，可省略國家代碼。';
 	@override String mobileNumberForNameIsIncorrect({required Object name}) => '${name}的行動號碼不正確';
 	@override String get matchingVerificationStrategyIs => '符合的驗證策略為：';
+	@override String get balanceGreater3ICP_noNeedPourFuel => '餘額大於3 ICP暫時不需倒入燃料。';
+	@override String get escrowAccount => '託管帳戶';
+	@override String get fuelRelay => '燃料中繼';
+	@override String get pourFuel => '導入燃料';
+	@override String get fuelState => '燃料狀態';
+	@override String get pouringFuelTips => '倒入燃料不會為您帶來任何的好處或壞處，其目的為了豐富Delta系統體驗。';
+	@override String get sponsorDevelopersByWatchingAds => '透過觀看廣告贊助開發者';
+	@override String get status => '狀態';
+	@override String get date => '日期';
+	@override String get assetApplicationIsInProgressTip => '資產申請中，請3秒後再試。';
+	@override String get delete => '刪除';
+	@override String get deleteVerifierTip => '刪除驗證者權限時，所有相關的得分資料都會同時刪除，但是已經獲得的獎勵不會受到影響。';
+	@override String get deleteVerifierStatusTip => '刪除前請先設定為暫停狀態';
+	@override String pleaseEnterXtoConfirm({required Object text}) => '確認請輸入“${text}”';
+	@override String get localSecurity => '本地安全';
+	@override String get deviceLock => '裝置鎖';
+	@override String get patternLock => '圖案鎖';
+	@override String get none => '沒有';
+	@override String get exist => '存在';
+	@override String get prompt => '提示:';
+	@override String get localSecurityTip1 => '1. 本地安全認證用於在一些敏感操作時的身份確認，其目的是防止設備被他人控制時，並能保證帳戶的安全性。';
+	@override String get localSecurityTip2 => '2. 圖案鎖是在呼叫裝置鎖不支援或不相容的情況下的一種補充方案， 一般在裝置鎖可用的情況下無需設定圖案鎖。';
+	@override String get localSecurityTip3 => '3. 當您的圖案鎖定被遺忘的情況下，只能清除應用資料或重裝應用程式才能被清除。';
+	@override String deviceAuthFirstTip({required Object menu, required Object localSecurity}) => '即將呼叫設備認證，如果發生報錯或異常，請進入"${menu}"頁面的"${localSecurity}"選項進行測試和進一步設定。';
+	@override String get pleaseDrawUnlockPattern => '請繪製解鎖圖案';
+	@override String get addPatternLock => '新增圖案鎖定';
+	@override String get cannotBeLessThan8Dots => '不能低於8個點陣';
+	@override String get pleaseRepeatThePattern => '請再重複繪製圖案';
+	@override String get notMatchFirstValidPattern => '與第一個有效的繪製圖案不符';
+	@override String get deletePatternLock => '刪除圖案鎖';
+	@override String get notMatchExistingPattern => '與存在的圖案不符';
+	@override String get localAuthentication => '本地驗證';
 }
 
 /// Flat map(s) containing all translations.
@@ -13426,13 +15463,13 @@ extension on Translations {
 			case 'tempDepositAddressTip3': return '3.Please do not attempt to deposit funds that do not match any of the parameters in the above tips, otherwise the amount will be lost.';
 			case 'tempDepositAddressTip4': return '4.If you need to deposit other types of assets, please switch to the corresponding currency page and parameter options to apply for a new address.';
 			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-				const TextSpan(text: 'The address will expire after '),
+				const TextSpan(text: 'This address will expire in '),
 				diff,
-				const TextSpan(text: ', and the validity period can be '),
-				tap('manually extended'),
-				const TextSpan(text: ' within 12 hours before the expiration.'),
+				const TextSpan(text: '. You can '),
+				tap('manually extend'),
+				const TextSpan(text: ' the validity period within 6 hours before expiration.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Can only renew within 12 hours in advance';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'Can only be renewed within 6 hours in advance';
 			case 'theReceivingAddressValidForLongtime': return 'The receiving address is valid for a long time.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'The receiving address is valid for a long time and will be automatically credited in real time.';
 			case 'confirmDeposited': return 'confirm Deposited';
@@ -13692,7 +15729,7 @@ extension on Translations {
 			case 'referrerIdDoesNotExist': return 'referrerId does not exist!';
 			case 'didIsIncorrectOrInvalid': return 'The DID is incorrect or invalid！';
 			case 'accessTokenIsIncorrectOrInvalid': return 'The accessToken is incorrect or invalid！';
-			case 'minimumWithdrawalAmountIs9USD': return 'The minimum withdrawal amount is 9USD';
+			case 'minimumWithdrawalAmountIs1USD': return 'The minimum withdrawal amount is 1USD';
 			case 'miningTimeIsNotYet': return 'Mining time is not yet';
 			case 'alreadyExists_pleaseDoNotRepeatedly': return 'Already exists, please do not add repeatedly!';
 			case 'registrationNumberCannotBeUsedAsAccessNumber': return 'Registration number cannot be used as verification access number';
@@ -13781,6 +15818,38 @@ extension on Translations {
 			case 'enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted': return 'Please enter their associated mobile phone number, country code can be omitted.';
 			case 'mobileNumberForNameIsIncorrect': return ({required Object name}) => 'The mobile number for ${name} is incorrect';
 			case 'matchingVerificationStrategyIs': return 'The matching verification strategy is:';
+			case 'balanceGreater3ICP_noNeedPourFuel': return 'If the balance is greater than 3 ICP, there is no need to pour fuel temporarily.';
+			case 'escrowAccount': return 'Escrow Account';
+			case 'fuelRelay': return 'Fuel Relay';
+			case 'pourFuel': return 'Pour Fuel';
+			case 'fuelState': return 'fuel State';
+			case 'pouringFuelTips': return 'Pouring fuel will not bring you any advantages or disadvantages, its purpose is to enrich the Delta system experience.';
+			case 'sponsorDevelopersByWatchingAds': return 'Sponsor developers by watching ads';
+			case 'status': return 'Status';
+			case 'date': return 'Date';
+			case 'assetApplicationIsInProgressTip': return 'Asset application in progress, please try again in 3 seconds.';
+			case 'delete': return 'Delete';
+			case 'deleteVerifierTip': return 'When deleting the verifier authority, all related score data will be deleted at the same time, but the rewards already obtained will not be affected.';
+			case 'deleteVerifierStatusTip': return 'Please set it to paused state before deleting';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Please enter "${text}" to confirm';
+			case 'localSecurity': return 'Local Security';
+			case 'deviceLock': return 'Device Lock';
+			case 'patternLock': return 'Pattern Lock';
+			case 'none': return 'None';
+			case 'exist': return 'Exists';
+			case 'prompt': return 'Prompt:';
+			case 'localSecurityTip1': return '1. Local security authentication is used to confirm identity during some sensitive operations. Its purpose is to prevent the device from being controlled by others and to ensure the security of the account.';
+			case 'localSecurityTip2': return '2. Pattern lock is a supplementary solution when the device lock is not supported or incompatible. Generally, there is no need to set a pattern lock when the device lock is available.';
+			case 'localSecurityTip3': return '3. When your pattern lock is forgotten, it can only be cleared by clearing the application data or reinstalling the application.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'Device authentication is about to be called. If an error or exception occurs, please enter the "${localSecurity}" option on the "${menu}" page for testing and further settings.';
+			case 'pleaseDrawUnlockPattern': return 'Please draw your unlock pattern';
+			case 'addPatternLock': return 'Add pattern lock';
+			case 'cannotBeLessThan8Dots': return 'Cannot be less than 8 dots';
+			case 'pleaseRepeatThePattern': return 'Please repeat the pattern';
+			case 'notMatchFirstValidPattern': return 'Does not match the first valid pattern';
+			case 'deletePatternLock': return 'Delete pattern lock';
+			case 'notMatchExistingPattern': return 'Does not match the existing pattern';
+			case 'localAuthentication': return 'local Auth.';
 			default: return null;
 		}
 	}
@@ -13861,7 +15930,7 @@ extension on _StringsBg {
 			case 'partSuccsForVerificationSMS': return 'SMS проверката е премината от един от терминалите за достъп.';
 			case 'creatingAccessToken': return 'Създаване на токен за достъп...';
 			case 'intoDelta': return 'В Delta';
-			case 'deltaAccountIsLoggedIn': return 'Вашият Delta акаунт е влязъл';
+			case 'deltaAccountIsLoggedIn': return 'Вашият Delta акаунт е вписан';
 			case 'iHavLoggedOut': return 'Да, вече излязох';
 			case 'startTwoFactorVerification': return 'стартиране на двуфакторна проверка';
 			case 'securityCircleVerification': return 'Проверка чрез кръга за сигурност';
@@ -13895,7 +15964,7 @@ extension on _StringsBg {
 			case 'profile': return 'Профил';
 			case 'menu': return 'Меню';
 			case 'directly': return 'директно';
-			case 'indirectly': return 'недиректно';
+			case 'indirectly': return 'индиректно';
 			case 'inviteContacts': return 'покани контакти';
 			case 'refereesAtFirstLevelDesc': return ({required InlineSpan nickname, required InlineSpan num1, required InlineSpan num2}) => TextSpan(children: [
 				const TextSpan(text: 'Вашият референт е '),
@@ -13934,7 +16003,7 @@ extension on _StringsBg {
 			case 'securityCircleBeUsedA2': return '2. В случай на някои чувствителни операции, програмата за интелигентен договор на Delta трябва да потвърди, че сте вие.';
 			case 'provideSafetyTip1': return 'Когато вашият приятел ви поиска код за сигурност, моля, да се уверите, че това наистина е той.';
 			case 'provideSafetyTip2': return 'Вие предоставяте защита за приятелите по-горе. Те са ви задали като най-надеждния човек в кръга за сигурност, и вие трябва да предоставяте потвърждение за сигурност за тях, когато техните акаунти срещнат чувствителни операции.';
-			case 'provideSafetyTip3': return 'Когато е необходимо,извличане на код за сигурност кликвате два пъти върху аватара на другата страна, за да извлечете кода.';
+			case 'provideSafetyTip3': return 'Когато е необходимо ,извличане на код за сигурност кликвате два пъти върху аватара на другата страна, за да извлечете кода.';
 			case 'doesNotSecurityCodeNeedsRetrieved': return 'Другата страна в момента няма код за сигурност, който трябва да бъде извлечен!';
 			case 'existSecurityCodeTip': return 'Моля, бъдете сигурни, че роднините или приятелите, които ви искат код за сигурност, са те самите. За да защитите сигурността на роднините или приятелите, трябва да откажете да го предоставите, ако не сте сигурни, че са реално те.';
 			case 'avatarSettings': return 'Настройки на аватара';
@@ -13951,12 +16020,12 @@ extension on _StringsBg {
 				rate,
 				const TextSpan(text: ' δ/ден'),
 			]);
-			case 'EndOfMiningSession': return 'Край на сесията за добив: ';
+			case 'EndOfMiningSession': return 'Край на сесията за добив след: ';
 			case 'tapToMineDeltaCoin': return 'Кликнете, за да започнете добиване Delta токъни↑';
 			case 'clickToStartMining': return 'Кликнете, за да започнете добива!';
 			case 'miningHasStoppedPromptDesc': return 'Добивът е спрян. Цикъла за добив е 24ч, кликнете върху светкавицата , за да започнете нов 24часов цикъл. Добивът на Delta е механизъм за разпределение, който не консумира допълнителна изчислителна мощност и мрежов трафик на вашето устройство.';
 			case 'aboutBaseRate': return 'За базовата скорост?';
-			case 'baseRateDescription': return 'Според споразумението в бялата книга, основното правило за намаляване на скоростта на добив на Delta ще бъде разделено на два етапа. \nФаза 1: Когато броят на участниците (регистрации) е 3000 или по-малко, скоростта е 32δ/ден. Използвайки това като начална точка, всеки път, когато броят на хората се увеличи с фактор 10, базовата скорост се намалява наполовина. \nФаза 2: Когато броят на участниците достигне 30 милиона и повече, базовата скорост се намалява наполовина всеки път, когато броят на хората се увеличи 3 пъти. До изчерпване на токъните предвидени за добиване.';
+			case 'baseRateDescription': return 'Според споразумението в бялата книга, основното правило за намаляване на скоростта на добив на Delta ще бъде разделено на два етапа. \n Фаза 1: Когато броят на участниците (регистрации) е 3000 или по-малко, скоростта е 32δ/ден. Използвайки това като начална точка, всеки път, когато броят на хората се увеличи с фактор 10, базовата скорост се намалява наполовина. \n Фаза 2: Когато броят на участниците достигне 30 милиона и повече, базовата скорост се намалява наполовина всеки път, когато броят на хората се увеличи 3 пъти. До изчерпване на токъните предвидени за добиване.';
 			case 'baseRate': return 'Базова скорост';
 			case 'directReferralRewards': return 'Награди за директни препоръки';
 			case 'directReferralRewardDesc': return 'Всеки директно препоръчан човек, който е в състояние на добив,увеличава вашата скорост на добиване с 1/3 от базовата скорост. \n\n Освен това, състоянието на добив на вашия референт също ще бъде изчислено в наградата ви за директна препоръка.';
@@ -14002,7 +16071,7 @@ extension on _StringsBg {
 			case 'index': return 'Индекс';
 			case 'amount': return 'Количество';
 			case 'balance': return 'Баланс';
-			case 'timeStamp': return 'времеви печат';
+			case 'timeStamp': return 'дата и час';
 			case 'summary': return 'Резюме';
 			case 'miningHasStopped': return 'Добивът е спрян.';
 			case 'miningHasStoppedDesc': return 'Вашият добив в момента е спрян, можете да започнете добив на токъни сега.';
@@ -14016,14 +16085,14 @@ extension on _StringsBg {
 			case 'noDataYet': return 'Все още няма данни';
 			case 'previousMobileNumber': return 'предишен мобилен номер';
 			case 'changeLog': return 'дневник на промените';
-			case 'referralLinkToShare': return 'Рефералена връзка за споделяне';
+			case 'referralLinkToShare': return 'Реферална връзка за споделяне';
 			case 'referrer': return 'Референт';
 			case 'isoCountryCode': return 'ISO код на държавата';
 			case 'avatarLogo': return 'Лого на аватара';
 			case 'creationTime': return 'Време на създаване';
 			case 'lastUpdate': return 'последна актуализация';
-			case 'numberOfSecurityCircleMembers': return 'Брой членове на кръга за сигурност';
-			case 'theLatestMining': return 'Последният добив';
+			case 'numberOfSecurityCircleMembers': return 'Брой членове в кръга за сигурност';
+			case 'theLatestMining': return 'Последен добив';
 			case 'effectiveMiningDays': return 'Ефективни дни на добив';
 			case 'modifyNickname': return 'промяна на прякора';
 			case 'didNotChange': return 'не се промени!';
@@ -14034,12 +16103,12 @@ extension on _StringsBg {
 			case 'currentState': return 'Текущо състояние';
 			case 'biometricsAuthenticationLocalizedReason': return 'Използвайте заключването на устройството си, за да потвърдите идентичността си.';
 			case 'graph': return 'Графика';
-			case 'referralRelationshipGraph': return 'Графика на референтните взаимоотношения';
+			case 'referralRelationshipGraph': return 'Графика на референтните връзки';
 			case 'nativeContacts': return 'Собствени контакти';
 			case 'registrationAndMiningTrends': return 'Тенденции на регистрации и добив';
 			case 'inMining': return 'в добив';
 			case 'registrationVolume': return 'Обем на регистрациите';
-			case 'unmined': return 'недобит';
+			case 'unmined': return 'не-добит';
 			case 'mined': return 'Добит';
 			case 'communityMining': return 'добив на общността';
 			case 'consensusPromotionFund': return 'Фонд за промоция на консенсус';
@@ -14067,12 +16136,12 @@ extension on _StringsBg {
 			case 'aboutUSCTmining': return 'За USCT добива?';
 			case 'aboutUSCTminingItme1': return '1. USDT е популярна световно стабилна монета в щатски долари, която може лесно да бъде преобразувана в суверенни валути на различни държави на световните основни криптовалутни борси.';
 			case 'aboutUSCTminingItme2': return '2. USCT е временна измервателна стойност на доходите от USCT добив, пълното име е USD кредит и накрая може да бъде преобразувана в USDT според действителната разплащателна квота и правилата за разпределение на рекламната платформа и в съответната пропорция.';
-			case 'aboutUSCTminingItme3': return '3. USCT добивът е функция за монетизация на реклама в общността на Delta. Използвайте огромната потребителска база на общността на Delta, за да предоставите множество ползи за рекламодателите, разработчиците на Delta и добивачите. Неговата цел е да предостави определено количество ефективен доход за отсъствията в ранния етап на екологията на Delta, когато тя все още не е формирана и процъфтява; в същото време, също предоставя определено финансово подпомагане за разработчиците, за да гарантира, че разработчиците могат да продължат да предоставят услуги за разработка за дълго време и накрая да реализират цялото планиране на белия документ; също предоставя ефективен канал за промоция за рекламодателите на продукти.';
+			case 'aboutUSCTminingItme3': return '3. USCT добивът е функция за монетизация на реклама в общността на Delta. Използвайте огромната потребителска база на общността на Delta, за да предоставите множество ползи за рекламодателите, разработчиците на Delta и потребителите. Неговата цел е да предостави определено количество ефективен доход за отсъствията в ранния етап на екологията на Delta, когато тя все още не е формирана и процъфтява; в същото време, също предоставя определено финансово подпомагане за разработчиците, за да гарантира, че разработчиците могат да продължат да предоставят услуги за разработка за дълго време и накрая да реализират цялото планиране на белия документ; също предоставя ефективен канал за промоция за рекламодателите на продукти.';
 			case 'aboutUSCTminingItme4': return '4. Правилата за разпределение са проектирани така, че 40% от общите доходи ще бъдат използвани като комисионни за технически услуги на разработчиците, а останалите 60% ще бъдат използвани като награди за отсъствията в общността. Частта за награди за отсъствията използва модел за многостепенно разпределение, подобен на DTC, и тези награди за отсъствията са разделени на 3 дела според съотношението 6:3:1, като 60% от наградата за отсъствията за един USCT добив всеки път са разпределени на отсъстващия, който в момента гледа рекламата, 30% са разпределени на горния препоръчител и 10% са разпределени на второстепенния препоръчител. По същия начин, вие също можете да получите същите награди за препоръчител от приятелите, които препоръчате чрез USCT добив. Предимството на такова многостепенно разпределение е, че всеки може да получи относително голямо количество USDT ползи, като развие офлайн екип.';
 			case 'aboutUSCTminingItme5': return '5. Периодът на фактуриране е 7 дни, тоест валидността се проверява с рекламната платформа на всеки 7 дни и потвърдените ефективни доходи и действителното количество ще бъдат записани в баланса. Минималното количество за всяко теглене е 10USDT.';
 			case 'linesXtoY': return ({required Object x, required Object y}) => 'Редове ${x} до ${y}';
 			case 'wallet': return 'Портфейл';
-			case 'multiChainWallet': return 'мулти-блокчейн портфейл';
+			case 'multiChainWallet': return 'мулти-чейн портфейл';
 			case 'deposit': return 'Депозит';
 			case 'transfer': return 'Прехвърляне';
 			case 'xcoinInWallet': return ({required Object coinCode}) => '${coinCode} в адреса на портфейла';
@@ -14088,13 +16157,13 @@ extension on _StringsBg {
 			case 'tempDepositAddressTip3': return '3. Моля, не опитвайте да депозирате средства, които не съвпадат точно с всички параметри от горните съвети, в противен случай сумата ще бъде загубена.';
 			case 'tempDepositAddressTip4': return '4. Ако трябва да депозирате други видове активи, моля, превключете към съответната страница с валута и опции за параметри, за да заявите нов адрес.';
 			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-				const TextSpan(text: 'Адресът ще изтече след '),
+				const TextSpan(text: 'Този адрес ще изтече след '),
 				diff,
-				const TextSpan(text: ', и периодът на валидност може да бъде '),
-				tap('ръчно удължен'),
-				const TextSpan(text: ' в рамките на 12 часа преди изтичането.'),
+				const TextSpan(text: '. Можете да '),
+				tap('manually extend'),
+				const TextSpan(text: ' периода на валидност в рамките на 6 часа преди изтичането.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Може да бъде удължен само в рамките на 12 часа предварително';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'Може да се поднови само в рамките на 6 часа предварително';
 			case 'theReceivingAddressValidForLongtime': return 'Адресът за получаване е валиден за дълго време.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'Адресът за получаване е валиден за дълго време и ще бъде автоматично кредитиран в реално време.';
 			case 'confirmDeposited': return 'Потвърдете депозита';
@@ -14117,26 +16186,26 @@ extension on _StringsBg {
 			case 'fee': return 'такса';
 			case 'validLengthXcharacters': return ({required Object x}) => 'Валидната дължина е ${x} символа';
 			case 'historys': return 'История';
-			case 'dtcCreditdetail': return 'Детайли на Delta кредита';
-			case 'usdCreditdetail': return 'Детайли на USD кредита';
+			case 'dtcCreditdetail': return 'История на Delta прихода';
+			case 'usdCreditdetail': return 'История на USD прихода';
 			case 'dappSquare': return 'dApp площадка';
 			case 'amountRaised': return 'Събрана сума';
-			case 'disbursedAmount': return 'Разпределена сума';
+			case 'disbursedAmount': return 'Разпр. сума';
 			case 'participationTimes': return 'Брой участия';
-			case 'completionRate': return 'Процент на завършване';
+			case 'completionRate': return '% на завършване';
 			case 'exchangeRate': return 'Обменен курс';
-			case 'icpCrowdfunding': return 'ICP краудфандинг';
+			case 'icpCrowdfunding': return 'ICP краудфъндинг';
 			case 'crowdfunding': return 'Краудфъндинг';
 			case 'trendsCurve': return 'Крива на тенденциите';
 			case 'fullScreenView': return 'преглед на цял екран';
 			case 'walletBalance': return 'Баланс на портфейла: ';
 			case 'manageWallet': return 'Управление на портфейл';
 			case 'fundraiseAmount': return 'Събрана сума';
-			case 'exchangeRewardAmount': return 'Сума на обменната награда';
-			case 'fundraise': return 'Събиране на средства';
+			case 'exchangeRewardAmount': return 'Общо за получаване';
+			case 'fundraise': return 'набиране средства';
 			case 'rangeIntegersX': return ({required Object x}) => 'Диапазон: цели числа ${x}';
 			case 'successfullParticipatingFundraisingXtip': return ({required Object amount}) => 'Успешно участие в събирането на средства и получаване на награда от ${amount}DTCT';
-			case 'amountSummary': return 'Обобщение на сумата';
+			case 'amountSummary': return 'Наличност на сумитеа';
 			case 'changePreferred': return 'Промяна на предпочитанията';
 			case 'changePreferredAddress': return 'Промяна на предпочитания адрес';
 			case 'preferredAddressTip': return 'При получаване на пари с помощта на регистриран мобилен номер или DID, средствата ще бъдат автоматично прехвърлени към предпочитания адрес.';
@@ -14173,7 +16242,7 @@ extension on _StringsBg {
 			case 'setNote': return 'Задайте бележка';
 			case 'lengthCannotExceedXbytes': return ({required Object x}) => 'Дължината не може да надвишава ${x} байта';
 			case 'transferFee': return 'Такса за превод';
-			case 'crossChainFee': return 'Такса за превод между веригите';
+			case 'crossChainFee': return 'Кросчейн такса';
 			case 'crossChainTransferOutError': return 'Грешка при прехвърляне между веригите';
 			case 'chainName': return 'Име на веригата';
 			case 'message': return 'Съобщение';
@@ -14187,7 +16256,7 @@ extension on _StringsBg {
 			case 'minimumBlockConfirmations': return 'Минимално потвърждение на блок';
 			case 'dsmsVerifyTerminal': return 'DSMS терминал за проверка';
 			case 'overall': return 'Общо';
-			case 'my': return 'Моето';
+			case 'my': return 'Собствен';
 			case 'getVerifierPermissions': return 'Получаване на разрешение за валидатор';
 			case 'checkValidatorQualifications': return 'Проверка на квалификацията за валидатор';
 			case 'qualification': return 'Квалификация';
@@ -14299,7 +16368,7 @@ extension on _StringsBg {
 			case 'canisterId': return 'CanisterId: ';
 			case 'updateTime': return 'Обновено на';
 			case 'contractCanistersState': return 'Състояние на договорните контейнери';
-			case 'userDistribution': return 'Разпределение на потребителите';
+			case 'userDistribution': return 'Регистрирани потребители';
 			case 'settings': return 'Настройки';
 			case 'security': return 'Сигурност';
 			case 'invite': return 'Покани';
@@ -14322,12 +16391,12 @@ extension on _StringsBg {
 			case 'currentMaximumMatchedSingleTransferAmountIsX': return ({required Object x}) => 'Текущата максимална съвпадаща единична сума за прехвърляне е ${x}';
 			case 'memoMustNotBeMoreThan64bytes': return 'Бележката не трябва да бъде повече от 64 байта';
 			case 'insufficientBalance_theAmountIsX': return ({required Object x}) => 'Недостатъчен баланс, сумата е: ${x}';
-			case 'boundRreceivingAddressesExceed3Tip': return 'Броят на свързаните адреси за получаване не може да надвишава 3. \nАко трябва да свържете нов адрес за получаване, \nмоля, първо разкачете друг адрес за получаване.';
+			case 'boundRreceivingAddressesExceed3Tip': return 'Броят на свързаните адреси за получаване не може да надвишава 3. \n Ако трябва да свържете нов адрес за получаване, \n моля, първо разкачете друг адрес за получаване.';
 			case 'parametersA_exception': return ({required Object x}) => 'Параметри: ${x}, изключение';
 			case 'transferAmountMustBeLargerThan0': return 'Сумата за прехвърляне трябва да бъде по-голяма от 0';
 			case 'authorizationHasExpired': return 'Ауторизацията е изтекла';
 			case 'theAppHasNotBeenAuthorizedByOwner': return 'Приложението не е ауторизирано от собственика';
-			case 'authenticationTokenIsInvalid': return 'Токенът за удостоверяване е невалиден';
+			case 'authenticationTokenIsInvalid': return 'Токънът за удостоверяване е невалиден';
 			case 'verifyInfoIsInvalidOrExpired': return 'Информацията за проверка е невалидна или е изтекла';
 			case 'verifyThatNumberOfAccessTerminalsHasExceededLimitOf1in10000': return 'Проверете дали броят на терминалите за достъп е надвишил лимита от един на 10 000';
 			case 'timeToParticipateInMiningMustBeMoreThan3Days': return 'За да се участвате трябва да сте добивали повече от 3 дни';
@@ -14353,8 +16422,8 @@ extension on _StringsBg {
 			case 'referrerIdCannotBeEmpty': return 'ID на препоръчителя не може да бъде празен! ';
 			case 'referrerIdDoesNotExist': return 'ID на препоръчителя не съществува!';
 			case 'didIsIncorrectOrInvalid': return 'DID е неправилен или невалиден！';
-			case 'accessTokenIsIncorrectOrInvalid': return 'Токенът за достъп е неправилен или невалиден！';
-			case 'minimumWithdrawalAmountIs9USD': return 'Минималната сума за теглене е 9USD';
+			case 'accessTokenIsIncorrectOrInvalid': return 'Токънът за достъп е неправилен или невалиден！';
+			case 'minimumWithdrawalAmountIs1USD': return 'Минималната сума за теглене е 1USD';
 			case 'miningTimeIsNotYet': return 'Времето за добиване още не е настъпило';
 			case 'alreadyExists_pleaseDoNotRepeatedly': return 'Вече съществува, моля, не добавяйте отново!';
 			case 'registrationNumberCannotBeUsedAsAccessNumber': return 'Този номер не може да бъде използван като номер за валидатор';
@@ -14428,13 +16497,13 @@ extension on _StringsBg {
 				shouldNum,
 				const TextSpan(text: ' трябва да бъдат избрани.'),
 			]);
-			case 'sentaboveXaccessNumbers': return ({required Object text, required Object n}) => 'Беше ли изпратен ${text} към ${n} номера за достъп по-горе?';
+			case 'sentaboveXaccessNumbers': return ({required Object text, required Object n}) => 'Беше ли изпратено съобщени със съдържание: ${text} към номера за достъп: ${n} ?';
 			case 'interface': return 'Интерфейс:';
 			case 'waitingTimeoutOrSenderNumberMismatch': return 'Време за изчакване или несъответствие на номера на изпращача';
-			case 'mobileNumberOfsecurityCircleYouFilledDoesntMatch': return ({required Object x}) => 'Мобилният номер на члена на кръга за сигурност, който сте попълнили, не съвпада: ${x}';
+			case 'mobileNumberOfsecurityCircleYouFilledDoesntMatch': return ({required Object x}) => 'Мобилният номер, който въведохте на члена от кръга за сигурност, не съвпада: ${x}';
 			case 'loginWithin10MinutesOfLoggingOutAvoidTwoFactorVerification': return 'Влезте в рамките на 10 минути след излизане, за да избегнете двуфакторна проверка.';
 			case 'leastXmobileNumbersMustCompleted': return ({required Object n}) => 'Поне ${n} мобилни телефонни номера трябва да бъдат попълнени';
-			case 'noAccessNumberInYourRegionYet': return 'Все още няма номер за достъп във вашия регион';
+			case 'noAccessNumberInYourRegionYet': return 'Все още няма номер за достъп във Вашия регион';
 			case 'notEnoughAccessNumbersInYourRegion': return 'Няма достатъчно номера за достъп във вашия регион';
 			case 'tipsForDeployDSMSterminal': return 'Системата автоматично е заредила някои номера за достъп от други държави за вас. За да предоставите по-добри и евтини услуги за проверка, се препоръчва вие или вашето препоръчано лице да разположите DSMS терминала локално, за да печелите такси за проверка.';
 			case 'noOneCanProvideMeTheSecurityCode': return 'Никой не може да ми предостави кода за сигурност?';
@@ -14443,6 +16512,38 @@ extension on _StringsBg {
 			case 'enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted': return 'Моля, въведете свързания им мобилен номер. Кодът на държавата може да бъде пропуснат.';
 			case 'mobileNumberForNameIsIncorrect': return ({required Object name}) => 'Мобилният номер на ${name} е неправилен';
 			case 'matchingVerificationStrategyIs': return 'Стратегията за проверка на съответствието е:';
+			case 'balanceGreater3ICP_noNeedPourFuel': return 'Салдо по-голямо от 3 ICP, няма нужда да се налива гориво за момента.';
+			case 'escrowAccount': return 'Escrow акаунт';
+			case 'fuelRelay': return 'Реле за гориво';
+			case 'pourFuel': return 'Наливане на гориво';
+			case 'fuelState': return 'състояние на гориво';
+			case 'pouringFuelTips': return 'Наливането на гориво не ви носи никакви предимства или недостатъци, целта му е да обогати изживяването на системата Delta.';
+			case 'sponsorDevelopersByWatchingAds': return 'Спонсорирайте разработчиците, като гледате реклами';
+			case 'status': return 'Състояние';
+			case 'date': return 'Дата';
+			case 'assetApplicationIsInProgressTip': return 'Прилагането на актив се изпълнява, моля, опитайте отново след 3 секунди.';
+			case 'delete': return 'Изтриване';
+			case 'deleteVerifierTip': return 'Когато изтривате разрешенията на верификатор, всички свързани данни за резултатите ще бъдат изтрити едновременно, но вече получените награди няма да бъдат засегнати.';
+			case 'deleteVerifierStatusTip': return 'Моля, задайте го на пауза, преди да изтриете';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Моля, въведете "${text}", за да потвърдите';
+			case 'localSecurity': return 'Локална сигурност';
+			case 'deviceLock': return 'Заключване на устройството';
+			case 'patternLock': return 'Заключване на шаблон';
+			case 'none': return 'няма';
+			case 'exist': return 'съществува';
+			case 'prompt': return 'Подкана:';
+			case 'localSecurityTip1': return '1. Локалното удостоверяване на сигурността се използва за потвърждаване на самоличността по време на някои чувствителни операции. Целта му е да предотврати контролирането на устройството от други и да гарантира сигурността на акаунта.';
+			case 'localSecurityTip2': return '2. Заключването на шаблон е допълнително решение, когато заключването на устройството не се поддържа или е несъвместимо. По принцип няма нужда да задавате заключване на модел, когато заключването на устройството е налично.';
+			case 'localSecurityTip3': return '3. Когато вашето заключване на шаблон е забравено, можете само да изчистите данните на приложението или да го инсталирате отново, за да го изчистите.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'Удостоверяването на устройството е на път да бъде извикано. Ако възникне грешка или изключение, моля, отидете на опцията "${localSecurity}" на страницата "${menu}" за тестване и допълнителни настройки.';
+			case 'pleaseDrawUnlockPattern': return 'Моля, начертайте шаблона за отключване';
+			case 'addPatternLock': return 'Добавяне на заключване на шаблон';
+			case 'cannotBeLessThan8Dots': return 'Не може да бъде по-малко от 8 точки';
+			case 'pleaseRepeatThePattern': return 'Моля, повторете модела отново';
+			case 'notMatchFirstValidPattern': return 'Не съответства на първия валиден модел на чертеж';
+			case 'deletePatternLock': return 'Изтриване на заключване на шаблон';
+			case 'notMatchExistingPattern': return 'Не съответства на съществуващ модел';
+			case 'localAuthentication': return 'Локално удостоверяване';
 			default: return null;
 		}
 	}
@@ -14753,14 +16854,14 @@ extension on _StringsBn {
 			case 'tempDepositAddressTip3': return '3. অনুগ্রহ করে এমন তহবিল জমা করার চেষ্টা করবেন না যা উপরের টিপসগুলির সাথে কোনও প্যারামিটারের সাথে মেলে না, অন্যথায় পরিমাণটি হারিয়ে যাবে৷';
 			case 'tempDepositAddressTip4': return '4. আপনি যদি অন্য ধরনের সম্পদ জমা করতে চান, তাহলে অনুগ্রহ করে একটি নতুন ঠিকানার জন্য আবেদন করার জন্য সংশ্লিষ্ট মুদ্রা পৃষ্ঠা এবং প্যারামিটার বিকল্পগুলিতে স্যুইচ করুন।';
 			case 'applyExtensionOfValidity': return 'মেয়াদ বাড়ানোর জন্য আবেদন করুন';
-			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap }) => TextSpan(children: [
-				const TextSpan(text: 'ঠিকানাটির মেয়াদ '),
+			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
+				const TextSpan(text: 'এই ঠিকানাটির মেয়াদ '),
 				diff,
-				const TextSpan(text: ' পরে শেষ হয়ে যাবে, এবং মেয়াদ শেষ হওয়ার 12 ঘন্টার মধ্যে আপনি '),
-				tap ('ম্যানুয়ালি প্রসারিত'),
-				const TextSpan(text: ' করতে পারেন৷'),
+				const TextSpan(text: '-এ শেষ হবে। মেয়াদ শেষ হওয়ার 6 ঘণ্টার মধ্যে আপনি '),
+				tap('manually extend'),
+				const TextSpan(text: ' করতে পারেন।'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'শুধুমাত্র 12 ঘন্টা আগে পুনর্নবীকরণ করা যাবে';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'শুধুমাত্র 6 ঘন্টা আগে থেকেই নবায়ন করা যাবে';
 			case 'theReceivingAddressValidForLongtime': return 'এই পেমেন্ট ঠিকানা দীর্ঘ সময়ের জন্য বৈধ.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'এই পেমেন্ট ঠিকানাটি দীর্ঘ সময়ের জন্য বৈধ এবং রিয়েল টাইমে স্বয়ংক্রিয়ভাবে জমা হবে।';
 			case 'confirmDeposited': return 'জমা নিশ্চিত করুন';
@@ -15020,7 +17121,7 @@ extension on _StringsBn {
 			case 'referrerIdDoesNotExist': return 'রেফারার আইডি নেই!';
 			case 'didIsIncorrectOrInvalid': return 'ডিআইডি ভুল নাকি অবৈধ!';
 			case 'accessTokenIsIncorrectOrInvalid': return 'অ্যাক্সেস টোকেন ভুল বা অবৈধ!';
-			case 'minimumWithdrawalAmountIs9USD': return 'এক সময়ের জন্য সর্বনিম্ন উত্তোলনের পরিমাণ হল 9USD৷';
+			case 'minimumWithdrawalAmountIs1USD': return 'এক সময়ের জন্য সর্বনিম্ন উত্তোলনের পরিমাণ হল 1USD৷';
 			case 'miningTimeIsNotYet': return 'খনির সময় এখনও আসেনি';
 			case 'alreadyExists_pleaseDoNotRepeatedly': return 'ইতিমধ্যেই বিদ্যমান, দয়া করে আবার যোগ করবেন না!';
 			case 'registrationNumberCannotBeUsedAsAccessNumber': return 'নিবন্ধন নম্বর যাচাইকরণ অ্যাক্সেস নম্বর হিসাবে ব্যবহার করা যাবে না';
@@ -15108,6 +17209,733 @@ extension on _StringsBn {
 			case 'enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted': return 'অনুগ্রহ করে তাদের সংশ্লিষ্ট মোবাইল ফোন নম্বর লিখুন। দেশের কোড বাদ দেওয়া যেতে পারে।';
 			case 'mobileNumberForNameIsIncorrect': return ({required Object name}) => '${name} এর মোবাইল নম্বরটি ভুল';
 			case 'matchingVerificationStrategyIs': return 'ম্যাচিং যাচাইকরণ কৌশল হল:';
+			case 'balanceGreater3ICP_noNeedPourFuel': return 'ব্যালেন্স 3 ICP-এর বেশি, অস্থায়ীভাবে জ্বালানি ঢালার দরকার নেই।';
+			case 'escrowAccount': return 'এসক্রো অ্যাকাউন্ট';
+			case 'fuelRelay': return 'ফুয়েল রিলে';
+			case 'pourFuel': return 'জ্বালানি ঢালা';
+			case 'fuelState': return 'জ্বালানির অবস্থা';
+			case 'pouringFuelTips': return 'জ্বালানি ঢালা আপনার কোন সুবিধা বা অসুবিধা বয়ে আনবে না এবং এর উদ্দেশ্য হল ডেল্টা সিস্টেমের অভিজ্ঞতাকে সমৃদ্ধ করা।';
+			case 'sponsorDevelopersByWatchingAds': return 'বিজ্ঞাপন দেখে ডেভেলপারদের স্পনসর করুন';
+			case 'status': return 'স্থিতি';
+			case 'date': return 'তারিখ';
+			case 'assetApplicationIsInProgressTip': return 'সম্পদ আবেদন প্রক্রিয়াধীন, অনুগ্রহ করে ৩ সেকেন্ডের মধ্যে আবার চেষ্টা করুন।';
+			case 'delete': return 'মুছুন';
+			case 'deleteVerifierTip': return 'একটি যাচাইকারীর অনুমতি মুছে ফেলার সময়, সমস্ত সম্পর্কিত স্কোর ডেটা একই সময়ে মুছে ফেলা হবে, তবে ইতিমধ্যে প্রাপ্ত পুরস্কারগুলি প্রভাবিত হবে না।';
+			case 'deleteVerifierStatusTip': return 'মুছে ফেলার আগে দয়া করে এটিকে বিরতি দেওয়া অবস্থায় সেট করুন';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'নিশ্চিত করতে দয়া করে "${text}" লিখুন';
+			case 'localSecurity': return 'স্থানীয় নিরাপত্তা';
+			case 'deviceLock': return 'ডিভাইস লক';
+			case 'patternLock': return 'প্যাটার্ন লক';
+			case 'none': return 'কিছুই না';
+			case 'exist': return 'বিদ্যমান';
+			case 'prompt': return 'প্রম্পট:';
+			case 'localSecurityTip1': return '1. কিছু সংবেদনশীল ক্রিয়াকলাপের সময় পরিচয় নিশ্চিত করতে স্থানীয় নিরাপত্তা প্রমাণীকরণ ব্যবহার করা হয়। এর উদ্দেশ্য হল ডিভাইসটিকে অন্যদের দ্বারা নিয়ন্ত্রিত হওয়া থেকে বিরত রাখা এবং অ্যাকাউন্টের নিরাপত্তা নিশ্চিত করা।';
+			case 'localSecurityTip2': return '2. প্যাটার্ন লক হল একটি সম্পূরক সমাধান যখন ডিভাইস লক সমর্থিত বা বেমানান। সাধারণত, ডিভাইস লক উপলব্ধ থাকলে প্যাটার্ন লক সেট করার কোন প্রয়োজন নেই।';
+			case 'localSecurityTip3': return '3. যখন আপনার প্যাটার্ন লকটি ভুলে যায়, তখন আপনি শুধুমাত্র অ্যাপের ডেটা সাফ করতে পারেন বা এটি সাফ করতে অ্যাপটি পুনরায় ইনস্টল করতে পারেন।';
+			case 'deviceAuthFirstTip': return ({required Object menu, required Object localSecurity}) => 'ডিভাইস প্রমাণীকরণ কল করা হতে চলেছে। যদি কোনো ত্রুটি বা ব্যতিক্রম ঘটে, অনুগ্রহ করে পরীক্ষা এবং আরও সেটিংসের জন্য "${menu}" পৃষ্ঠার "${localSecurity}" বিকল্পে যান।';
+			case 'pleaseDrawUnlockPattern': return 'অনুগ্রহ করে আনলক প্যাটার্ন আঁকুন';
+			case 'addPatternLock': return 'প্যাটার্ন লক যোগ করুন';
+			case 'cannotBeLessThan8Dots': return '8টি বিন্দুর কম হতে পারে না';
+			case 'pleaseRepeatThePattern': return 'দয়া করে আবার প্যাটার্নটি পুনরাবৃত্তি করুন';
+			case 'notMatchFirstValidPattern': return 'প্রথম বৈধ অঙ্কন প্যাটার্নের সাথে মেলে না';
+			case 'deletePatternLock': return 'প্যাটার্ন লক মুছুন';
+			case 'notMatchExistingPattern': return 'একটি বিদ্যমান প্যাটার্নের সাথে মেলে না';
+			case 'localAuthentication': return 'স্থানীয় প্রমাণীকরণ';
+			default: return null;
+		}
+	}
+}
+
+extension on _StringsCkb {
+	dynamic _flatMapFunction(String path) {
+		switch (path) {
+			case 'home': return 'سەرەتا';
+			case 'switchLanguage': return 'گۆرینی زمان';
+			case 'languageSwitch': return 'گۆڕینی زمان';
+			case 'slogan': return 'ناوچەیەکی ئابووری لامەرکەزی لە دێڵتا دروست بکە';
+			case 'countryRegionCode': return 'کۆدی وڵات / ناوچە';
+			case 'countryRegionSelection': return 'هەڵبژاردنی وڵات / هەرێم';
+			case 'nextStep': return 'هەنگاووی دواتر';
+			case 'yourPhoneNumber': return 'ژمارە مۆبایڵت بنوسە';
+			case 'pleaseSelectCountryAndRegion': return 'تکایە وڵاتەکەت هەڵبژێرە';
+			case 'pleaseEnterPhoneNumber': return 'تکایە ژمارەیەکی تەلەفۆنی دروست دابنێ!';
+			case 'referrerDid': return 'کۆدی بانگێشت نامە';
+			case 'pleaseEnterTheReferrersDid': return 'تکایە ناسێنەری لامەرکەزی ڕەوانەکەرێکی دروست دابنێ';
+			case 'thisDidIsInvalid': return 'ئەم بانگێشت نامەی داتناوە درووست نیە';
+			case 'nicknameFormatTips': return 'نازناو ناتوانرێت بەتاڵ بێت و درێژییەکەی لە ١٦ پیت زیاتر نەبێت';
+			case 'additionalIinformation': return 'زانیاری زیاتر';
+			case 'invitationSubject': return 'بانگهێشتتان دەکەم بۆ بەشداریکردن لە بنیاتنانی کۆدەنگی دێڵتا';
+			case 'invitationLetter': return ({required Object did}) => 'سڵاو، من بەشداری لە بنیاتنانی کۆدەنگیی دێڵتا دەکەم!\n دێڵتا پلاتفۆرمی سەرچاوە کراوەی پارەی دیجیتاڵی نوێیە کە لەسەر ئینتەرنێتکۆمپیوتەر کاردەکات. دەتوانێت دراوی دیجیتاڵی جۆراوجۆر بەڕێوەببات و بەکاریبهێنێت بەبێ وشەی نهێنی، کلیلی تایبەت، یان یادەوەری. تکایە کلیک لەم بەستەرە بکە https://delta.kim/auto/download بۆ دامەزراندنی بەرنامەکە. ئێستا بانگهێشتتان دەکەین بۆ ئەوەی لەگەڵمان بن لە دروستکردنی کۆدەنگی و دروێنەکردنی سکە.\n بانگێشت نامە : ${did}';
+			case 'dSMSverification': return 'پشتڕاستکردنەوەی کورتەنامە';
+			case 'getAccessNumbers': return 'هەندێک ژمارەی دەستگەیشتن بەدەست بهێنە';
+			case 'getAccessNumberPromptMessage': return 'کلیک لە دوگمەی "Get" لە خوارەوە بکە بۆ هەڵبژاردنی کۆمەڵێک ژمارەی دەستڕاگەیشتن بە پشتڕاستکردنەوەی کورتەنامە لە ڕیزەکەدا بە نۆرە';
+			case 'optionalAccessNumbers': return 'ژمارەی دەستگەیشتن بە ئیختیاری';
+			case 'accessNumber': return 'ژمارەی دەستگەیشتن';
+			case 'TELCO': return 'کۆمپانیای تێلکۆ';
+			case 'score': return 'سەرچاوە';
+			case 'checkAccessNumberTip': return ({required num n, required InlineSpan Function(num) nBuilder, required InlineSpanBuilder span}) => RichPluralResolvers.bridge(
+				n: n,
+				resolver: _root.$meta.cardinalResolver ?? PluralResolvers.cardinal('ckb'),
+				one: () => TextSpan(children: [
+					const TextSpan(text: 'تکایە ژمارەی دەستگەیشتن '),
+					nBuilder(n),
+					const TextSpan(text: ' بپشکنە و کرتە لە دوگمەی "'),
+					span('text'),
+					const TextSpan(text: '" بکە بۆ ئەوەی بچیتە هەنگاوی داهاتوو.'),
+				]),
+				other: () => TextSpan(children: [
+					const TextSpan(text: 'تکایە ژمارەکانی دەستگەیشتن '),
+					nBuilder(n),
+					const TextSpan(text: ' بپشکنە و کرتە لە دوگمەی "'),
+					span('text'),
+					const TextSpan(text: '" بکە بۆ ئەوەی بچیتە هەنگاوی داهاتوو.'),
+				]),
+			);
+			case 'whatIsDeltaDesc': return 'دێڵتا پڕۆژەیەکی تاقیکاری جیهانی دراوی دیجیتاڵی لامەرکەزی سەرچاوە کراوە و ئیکۆسیستەمێکی بەکارهێنانی دراوە.';
+			case 'deltaGoalsDesc': return 'ئامانج لێی ئەوەیە خەڵک بتوانن کۆمپانیای دێڵتا بەکاربهێنن بۆ ئەوەی بە هاوبەشی دراوێکی دیجیتاڵی نوێی گشتگیر و دادپەروەرانە و پارێزراو و خێرا و سەوز بنیات بنێن. وە دابینکردنی سیناریۆی جۆراوجۆری کاریگەر بۆ ئەم دراوە دیجیتاڵیانە و دراوە کریپتۆکانی پێشوو.';
+			case 'details': return 'زانیاری زیاتر';
+			case 'get': return 'وەرگرتن';
+			case 'select': return 'دیاریکردن';
+			case 'send': return 'ناردن';
+			case 'complete': return 'سەرکەوتوبو';
+			case 'selectedAccessNumberPrompt': return 'کاتێک هەڵدەبژێردرێت، ژمارەی دەستگەیشتن بە تەواوی پیشان دەدرێت و ڕیزێکی ڕەسەنایەتی دروست دەکرێت.';
+			case 'location': return 'شوێن';
+			case 'verificationString': return 'ڕستەی پشتڕاستکردنەوە';
+			case 'sendVerificationStringDesc': return ({required InlineSpan num, required InlineSpan label, required InlineSpan accessNumber}) => TextSpan(children: [
+				const TextSpan(text: 'تکایە ژمارەی تەلەفۆنەکەت '),
+				num,
+				const TextSpan(text: ' بەکاربهێنە، '),
+				label,
+				const TextSpan(text: ' بنێرە بۆ '),
+				accessNumber,
+				const TextSpan(text: ' بۆ تەواوکردنی پشتڕاستکردنەوەکە.'),
+			]);
+			case 'ihaveSentTheSMS': return 'کورتەنامەکەم ناردووە';
+			case 'validWithin6minutes': return ({required InlineSpan time}) => TextSpan(children: [
+				const TextSpan(text: 'ڕیزەکەی پشتڕاستکردنەوە بۆ ماوەی ٦ خولەک کارا دەبێت، کاتی ماوە: '),
+				time,
+				const TextSpan(text: ' .'),
+			]);
+			case 'tooFast_waitXsecondsContinuing': return ({required Object x}) => 'زۆر خێرا، چاوەڕێی ${x} چرکە بکە پێش ئەوەی بەردەوام بیت!';
+			case 'waitingForVerificationSMS': return 'چاوەڕوانی کورتەنامەی پشتڕاستکردنەوە...';
+			case 'partSuccsForVerificationSMS': return 'پشتڕاستکردنەوەی کورتەنامە لە یەکێک لە تێرمیناڵەکانی دەستگەیشتن تێپەڕیوە.';
+			case 'creatingAccessToken': return 'دروستکردنی نیشانەی دەستڕاگەیشتن...';
+			case 'intoDelta': return 'بۆ ناو دێڵتا';
+			case 'deltaAccountIsLoggedIn': return 'ئەکاونتی Delta ی تۆ چووەتە ژوورەوە';
+			case 'iHavLoggedOut': return 'من چوومەتە دەرەوە';
+			case 'startTwoFactorVerification': return 'دەستپێکردنی پشتڕاستکردنەوەی دوو فاکتەری';
+			case 'securityCircleVerification': return 'دڵنیاکردنەوەی بازنەی ئاسایش';
+			case 'generateSecurityCode': return 'دروستکردنی کۆدی ئاسایش';
+			case 'generateSecurityCodeHintText': return 'کۆدی ئاسایشی دروستکراو دەنێردرێت بۆ ئەندامێکی هەڵبژێردراوی هەڕەمەکی بازنەی ئاسایشەکەت.';
+			case 'notSetSecurityCircleEnterPlaceholderTip': return 'هێشتا بازنەی ئاسایشت دانەناوە، ئەکاونتەکەت زۆر ناپارێزراوە، تکایە هەر شوێنگرەوەیەکی ٦ ژمارەیی داخڵ بکە، و بچۆ بۆ هەنگاوی داهاتوو.';
+			case 'securityCodeHasBeenGenerated_ContactFriendsTip': return 'کۆدی ئاسایش دروست کراوە، تکایە پەیوەندی بەم خزم و هاوڕێیانەوە بکەن، و داوایان لێ بکەن کۆدی ئاسایش دەربهێنن بۆ ئەوەی تۆ لە پشتڕاستکردنەوەکەدا تێپەڕیت. لە ماوەی ٣٠ خولەکدا کارا دەبێت!';
+			case 'itGetSecurityCodeTip': return 'ئامۆژگاری: نازناوی ئەکاونتەکەت لە پەڕەی Delta App -> Menu -> Provide Security دەدۆزێتەوە و دووجار کلیک دەکات بۆ بەدەستهێنانی کۆدی ئاسایش.';
+			case 'securityCircleMemberList': return 'لیستی ئەندامانی بازنەی ئاسایش:';
+			case 'selectA_friendToProvideSecurityCodeTip': return 'تکایە خزمێک یان هاوڕێیەک لە لیستی ئەندامان هەڵبژێرە بۆ ئەوەی دروستی بکات و کۆدێکی ئاسایشت بۆ دابین بکات بۆ پشتڕاستکردنەوەی ناسنامەی ڕاستەقینەی خۆت. مەبەست لێی ڕێگریکردنە لەوەی کە ئەکاونتەکە لەلایەن کەسانی دیکەوە کۆنترۆڵ نەکرێت کاتێک ژمارەی مۆبایلەکە ون دەبێت یان دزراوە.';
+			case 'formatIsXdigits': return ({required Object num}) => 'فۆرماتەکە بریتییە لە ${num} ژمارە';
+			case 'signInSuccessfully': return 'بە سەرکەوتوویی بچۆرە ژوورەوە!';
+			case 'twoFAandLogin': return 'ڕەسەنایەتی دوو فاکتەری و چوونەژوورەوە';
+			case 'verificationSuccessful': return ' پشتڕاستکردنەوە سەرکەوتوو بوو !';
+			case 'validationFailed': return 'چەسپاندن شکستی هێنا !';
+			case 'securityCircle': return 'بازنەی ئاسایش';
+			case 'securityCode': return 'کۆدی ئاسایش';
+			case 'provideSecurity': return 'دابینکردنی ئاسایش';
+			case 'addManully': return 'بە دەست زیادکردن';
+			case 'addFromContacts': return 'زیادکردن لە پەیوەندییەکان';
+			case 'addSecurityCircle': return 'یادکردنی بازنەی ئاسایش';
+			case 'inputType': return 'جۆری هاتنەژوورەوە';
+			case 'mobileNumber': return 'ژمارەی مۆبایل';
+			case 'did': return 'کۆد';
+			case 'pleaseEnterValidDID': return 'تکایە ناسێنەرێکی لامەرکەزی دروست دابنێ';
+			case 'pleaseEnterValidWalletAddress': return 'تکایە ناونیشانی جزدانێکی دروست دابنێ';
+			case 'appellation': return 'ناونیشان';
+			case 'appellationHint': return 'ئەوەی ناوی دەبەیت، وەک "baby"';
+			case 'addSecurityCircleTips': return 'تکایە کەسانی باوەڕپێنەکراو زیاد مەکەن بۆ بازنەکانی ئاسایش.';
+			case 'referralTeam': return 'تیمی ڕەوانەکردن';
+			case 'profile': return 'پڕۆفایلی';
+			case 'menu': return 'مێنۆ';
+			case 'directly': return 'ڕاستەوخۆ';
+			case 'indirectly': return 'ناڕاستەوخۆ';
+			case 'inviteContacts': return 'بانگهێشتی پەیوەندییەکان';
+			case 'refereesAtFirstLevelDesc': return ({required InlineSpan nickname, required InlineSpan num1, required InlineSpan num2}) => TextSpan(children: [
+				const TextSpan(text: 'ناونیشاندەرەکەت '),
+				nickname,
+				const TextSpan(text: ' یە، تۆ ڕاستەوخۆ پێشنیاری '),
+				num1,
+				const TextSpan(text: ' کەست کردووە و '),
+				num2,
+				const TextSpan(text: 'یان لە ئێستادا سەرهێڵن.'),
+			]);
+			case 'refereesAtSecondLevelDesc': return ({required InlineSpan num1, required InlineSpan num2}) => TextSpan(children: [
+				const TextSpan(text: 'تۆ بە شێوەیەکی ناڕاستەوخۆ پێشنیاری '),
+				num1,
+				const TextSpan(text: ' کەست کردووە، لەنێویاندا '),
+				num2,
+				const TextSpan(text: ' کەس کە لە ئێستادا سەرهێڵن.'),
+			]);
+			case 'invitationToBoostMiningDesc': return ({required InlineSpan rate1, required InlineSpan btn}) => TextSpan(children: [
+				const TextSpan(text: 'هاوڕێکان بانگهێشت بکە بۆ ئەوەی بەشداری لە Delta بکەن و پێکەوە کۆدەنگی کۆمەڵایەتی باشتر بکەن. ڕێژەی کانگاکردنی هەر کەسێک کە ڕاستەوخۆ پێشنیار کراوە بە ڕێژەی '),
+				rate1,
+				const TextSpan(text: ' لە ڕێژەی بنەڕەتی زیاد دەکات. '),
+				btn,
+			]);
+			case 'invitationToBoostMiningDesc2': return ({required InlineSpan rate2}) => TextSpan(children: [
+				const TextSpan(text: 'هاوڕێیان بانگهێشت بکە بۆ ئەوەی بەشداری لە کۆمپانیای دێڵتا بکەن و پێکەوە کۆدەنگی کۆمەڵایەتی باشتر بکەن. ڕێژەی کانگاکردنی هەر کەسێک کە بە شێوەیەکی ناڕاستەوخۆ پێشنیار کراوە بە ڕێژەی '),
+				rate2,
+				const TextSpan(text: ' لە ڕێژەی بنەڕەتی زیاد دەکات.'),
+			]);
+			case 'areYouSureToRemove_x': return ({required Object name}) => 'ئایا دڵنیای لە لابردنی "${name}"؟';
+			case 'safetyCircleRoleQ': return 'ئەرکی بازنەی سەلامەتی چییە؟';
+			case 'safetyCircleRoleA': return 'ڕەسەنایەتی لاوەکی لە دۆخە هەستیارەکاندا دابین دەکات بۆ پاراستنی ئاسایشی ئەکاونتەکەت.';
+			case 'howSecurityCirclesWorkQ': return 'بازنەی ئاسایش چۆن کاردەکات؟';
+			case 'howSecurityCirclesWorkA': return 'کاتێک بازنەی ئاسایش پێویستە بۆ پشتڕاستکردنەوە، بەرنامەی گرێبەستی زیرەکی دێڵتا بە شێوەیەکی هەڕەمەکی ئەندامێک لە لیستی هاوڕێکانی بازنەی ئاسایش هەڵدەبژێرێت بۆ ئەوەی یارمەتیت بدات کۆدێکی ئاسایش دابین بکات بۆ تەواوکردنی پشتڕاستکردنەوەی ئاسایشی ناسنامە بۆ تۆ. کاتێک داوای کۆدی ئاسایش لە ئەندامەکە دەکەیت، دەتوانێت پشتڕاستی بکاتەوە کە تۆ بەڕاستی تۆیت. لە هەمان کاتدا، بەرنامەکە داوای لێدەکات: "ئەگەر تۆ نەبیت، ڕەتیدەکاتەوە کۆدی ئاسایش دابین بکات", بۆ ئەوەی ئاسایشی ئەکاونتەکەت بپارێزیت. بۆیە پێویستە هەمیشە دڵنیا بیت لەوەی کە ئەندامانی بازنەی ئاسایشت کەسانێکن کە دەتوانیت متمانەیان پێ بکەیت.';
+			case 'securityCircleBeUsedQ': return 'کەی بەکاری دەهێنیت؟';
+			case 'securityCircleBeUsedA1': return '1. کاتێک Delta APP ـەکەت لە کۆنتڕۆڵ دەرچووە، دۆخی گشتی ئەوەیە کە مۆبایلەکە ون بووە یان دزراوە.';
+			case 'securityCircleBeUsedA2': return '2. لە حاڵەتی هەندێک کارپێکردنی هەستیاردا، بەرنامەی گرێبەستی زیرەکی دێڵتا پێویستی بە پشتڕاستکردنەوەی هەیە کە تۆ خۆتیت.';
+			case 'provideSafetyTip1': return 'کاتێک هاوڕێکەت داوای کۆدی ئاسایشی خۆیت لێدەکات، تکایە دڵنیابە پشتڕاستی دەکەیتەوە کە ئەوە.';
+			case 'provideSafetyTip2': return 'تۆ پاراستنی ئاسایش بۆ ئەو هاوڕێیەی سەرەوە دابین دەکەیت. ئەوان تۆیان وەک متمانەپێکراوترین کەس لە بازنەی ئاسایشدا داناوە، و پێویستە پشتڕاستکردنەوەی ئاسایشیان بۆ دابین بکەیت کاتێک ئەکاونتەکانیان ڕووبەڕووی کارێکی هەستیار دەبنەوە.';
+			case 'provideSafetyTip3': return 'کاتێک پێویست بوو، دووجار کلیک لەسەر ئاڤاتاری لایەنی بەرامبەر بکە بۆ دەرهێنانی کۆدی ئاسایش.';
+			case 'doesNotSecurityCodeNeedsRetrieved': return 'لایەنی بەرامبەر لە ئێستادا کۆدێکی ئاسایشی نییە کە پێویستی بە وەرگرتنەوە هەبێت !';
+			case 'existSecurityCodeTip': return 'تکایە دڵنیابە لەوەی کە ئەو خزم یان هاوڕێیەی کە داوای کۆدی ئاسایشت لێدەکات خۆیەتی. بۆ پاراستنی سەلامەتی خزم یان هاوڕێکە، پێویستە ڕەتی بکەیتەوە دابینی بکەیت ئەگەر خزم یان هاوڕێکە خۆی نەبێت.';
+			case 'avatarSettings': return 'ڕێکخستنەکانی ئاڤاتاری';
+			case 'NFTAvatarPropertyRightsText': return 'ڕەتکردنەوەی بەرپرسیاریەتی: بەکارهێنانی NFT پەیوەندیدارەکان وەک ئاڤاتاری تەنها هەڵبژاردنێکی کەسییە، و هیچ پەیوەندییەکی بە خاوەندارێتی مافی خاوەندارێتی فیکری NFTەوە نییە.';
+			case 'projectWebsite': return 'ماڵپەڕی پڕۆژە: ';
+			case 'whitepaper': return 'کاغەزی سپی:';
+			case 'indexID': return 'ناسنامەی ئیندێکس';
+			case 'indexesRangeFromXtoY': return ({required Object start, required Object end}) => 'ئیندێکسەکان لە ${start} تا ${end}';
+			case 'inputToLoadNFTAvatarTip': return 'ناسنامەی ئیندێکسی NFT دڵخوازەکەت دابنێ، و بەرنامەکە بە شێوەیەکی ئۆتۆماتیکی وەک ئاڤاتاری تۆ باری دەکات.';
+			case 'miningRate': return 'رێژەی کانگاکردن';
+			case 'miningDetails': return 'وردەکارییەکانی کانگا';
+			case 'totalMiningRateEachDay': return ({required InlineSpan rate}) => TextSpan(children: [
+				const TextSpan(text: 'کۆی گشتی ڕێژەی کانگاکردن: '),
+				rate,
+				const TextSpan(text: ' δ/ڕۆژ'),
+			]);
+			case 'EndOfMiningSession': return 'کۆتایی دانیشتنی کانگا: ';
+			case 'tapToMineDeltaCoin': return 'تاپ بۆ کانگاکردنی دراوی دێڵتا ↑';
+			case 'clickToStartMining': return 'بۆ دەستپێکردنی کانگاکردن پەنجە بنێ!';
+			case 'miningHasStoppedPromptDesc': return 'کانگاکردن وەستاوە، هەر ٢٤ کاتژمێر جارێک خولێکی کانگاکردنە، کلیک لەسەر ئایکۆنی ڕەشەبا بکە بۆ دەستپێکردنی خولێکی نوێی کانگاکردن. کانگاکردنی دێڵتا میکانیزمێکی دابەشکردنە کە هێزی کۆمپیوتەری زیادە و هاتوچۆی تۆڕی ئامێرەکەت بەکارناهێنێت.';
+			case 'aboutBaseRate': return 'دەربارەی ڕێژەی بنەڕەتی؟';
+			case 'baseRateDescription': return 'بەپێی ڕێککەوتنەکە لە وەرەقە سپییەکەدا، یاسای بنەڕەتی کەمکردنەوەی ڕێژە لە کانگاکانی دێڵتا دابەش دەکرێت بۆ دوو قۆناغ. \nقۆناغی یەکەم: کاتێک ژمارەی بەشداربووان (تۆمارکردن) ٣٠٠٠ یان کەمتر بێت، ڕێژەکە ٣٢δ/ڕۆژە. بە بەکارهێنانی ئەمە وەک خاڵی دەستپێک، هەر جارێک ژمارەی خەڵک بە فاکتەری ١٠ زیاد دەکات، ڕێژەی بنەڕەتییە. \nقۆناغی دووەم: کاتێک ژمارەی بەشداربووان دەگاتە ٣٠ ملیۆن و سەرووتر، هەر جارێک ژمارەی خەڵک ٣ هێندە زیاد دەکات، ڕێژەی بنەڕەتی بۆ نیوە کەم دەکرێتەوە تا کۆتایی هەڵکەندنی بەرهەمهێنان.';
+			case 'baseRate': return 'ڕێژەی بنەڕەتی';
+			case 'directReferralRewards': return 'پاداشتی ڕەوانەکردنی ڕاستەوخۆ';
+			case 'directReferralRewardDesc': return 'بۆ هەر کەسێک کە ڕاستەوخۆ پێشنیار دەکرێت، کاتێک کەسەکە لە دۆخی کانگاکردندایە، ڕێژەی کانگاکردنەکەت بە ڕێژەی 1/3ی ڕێژەی بنەڕەتی زیاد دەکرێت. \n\n سەرەڕای ئەوەش، دۆخی کانگاکردنی ڕەوانەکەرەکەت هەروەها لە پاداشتی ڕەوانەکردنی ڕاستەوخۆتدا حیسابی بۆ دەکرێت.';
+			case 'indirectReferralRewards': return 'پاداشتی ڕەوانەکردنی ناڕاستەوخۆ';
+			case 'indirectReferralRewardDesc': return 'کاتێک پێشنیارکەرێکی ناڕاستەوخۆ لە دۆخی کانگادا بێت، ڕێژەی کانگاکردنەکەت بە زیادە بە ڕێژەی 1/10ی ڕێژەی بنەڕەتی زیاد دەکرێت. \n\nتیمی ڕەوانەکردنی ڕاستەوخۆت، و هەر کەسێک کە ڕەوانەی دەکەن نوێنەرایەتی ڕەوانەکردنێکی ناڕاستەوخۆ دەکەن بۆ تۆ.';
+			case 'mine': return 'من';
+			case 'thisMiningInformation': return 'ئەم زانیارییە کانزایە';
+			case 'participatedInMiningXtimes': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'بەشداری لە کانگاکردندا کراوە: '),
+				x,
+				const TextSpan(text: ' جار'),
+			]);
+			case 'totalIncomeThisTimeXDeltaCoins': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'کۆی داهاتی ئەمجارە: '),
+				x,
+				const TextSpan(text: ' دراوی دێڵتا'),
+			]);
+			case 'basicIncomeXcoins': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'داهاتی بنەڕەتی: '),
+				x,
+				const TextSpan(text: ' دراو'),
+			]);
+			case 'directTeamContributionXcoins': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'بەشداری ڕاستەوخۆی تیم: '),
+				x,
+				const TextSpan(text: ' دراو'),
+			]);
+			case 'indirectTeamContributionXcoins': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'بەشداریکردنی ناڕاستەوخۆی تیم: '),
+				x,
+				const TextSpan(text: ' دراو'),
+			]);
+			case 'timeIntervalFromLastMiningX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'ماوەی کات لە دوایین کانگا: '),
+				x,
+			]);
+			case 'effectiveMiningTimeXhours': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'کاتی کاریگەرانەی کانگاکردن: '),
+				x,
+			]);
+			case 'xhours': return ({required Object x}) => '${x} کاتژمێر';
+			case 'keep3_5peopleInTheSafetyCircleTip': return 'بۆ ئاسایشی سەروەت و سامان، ئەندامانی بازنەی ئاسایش پێویستە لە هەر کاتێکدا ٣-٥ کەسی متمانەپێکراو بهێڵنەوە.';
+			case 'index': return 'Index';
+			case 'amount': return 'بڕی';
+			case 'balance': return 'هاوسەنگی';
+			case 'timeStamp': return 'مۆری کات';
+			case 'summary': return 'پوختە';
+			case 'miningHasStopped': return 'کانگاکردن وەستاوە.';
+			case 'miningHasStoppedDesc': return 'لە ئێستادا کانگاکەت وەستاوە، و دەتوانیت دەستبەجێ دەست بە بەدەستهێنانی داهات بکەیت.';
+			case 'startMining': return 'دەستپێکردنی کانگا';
+			case 'changeMobileNumber': return 'ژمارەی مۆبایل بگۆڕە';
+			case 'currentMobileNumber': return 'ژمارەی مۆبایلی ئێستا';
+			case 'newMobileNumber': return 'ژمارەی مۆبایلی نوێ';
+			case 'securityCodeFormatIs6digits': return 'فۆرماتەکەی کۆدی ئاسایش ٦ ژمارەیە!';
+			case 'startVrification': return 'دەستپێکردنی پشتڕاستکردنەوە';
+			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'ئەم ژمارەی مۆبایلە پێشتر بوونی هەیە، پەیوەندیدار DID: ${dId}';
+			case 'noDataYet': return 'هێشتا هیچ داتایەک نییە';
+			case 'previousMobileNumber': return 'ژمارەی مۆبایلی پێشوو.';
+			case 'changeLog': return 'لۆگ گۆڕینی';
+			case 'referralLinkToShare': return 'بەستەری ڕەوانەکردن بۆ هاوبەشکردن';
+			case 'referrer': return 'ئاماژەدەر';
+			case 'isoCountryCode': return 'کۆدی وڵاتی ISO';
+			case 'avatarLogo': return 'لۆگۆی ئاڤاتار';
+			case 'creationTime': return 'کاتی دروستکردن';
+			case 'lastUpdate': return 'دوا نوێکردنەوە';
+			case 'numberOfSecurityCircleMembers': return 'ژمارەی ئەندامانی بازنەی ئاسایش';
+			case 'theLatestMining': return 'نوێترین کانگا';
+			case 'effectiveMiningDays': return 'ڕۆژانی کاریگەرانەی کانگا';
+			case 'modifyNickname': return 'دەستکاریکردنی نازناو';
+			case 'didNotChange': return 'نەگۆڕاوە!';
+			case 'kycVerification': return 'پاراستنی KYC';
+			case 'faceID': return 'ناسنامەی ڕووخسار';
+			case 'touchID': return 'ناسنامەی تاچ';
+			case 'biometricsAuthorizationTest': return 'تاقیکردنەوەی ڕێگەپێدانی بایۆمەتری';
+			case 'currentState': return 'دۆخی ئێستا';
+			case 'biometricsAuthenticationLocalizedReason': return 'بۆ پشتڕاستکردنەوەی ناسنامەکەت قفڵی ئامێرەکەت بەکاربهێنە.';
+			case 'graph': return 'گرافیک';
+			case 'referralRelationshipGraph': return 'گرافی پەیوەندی ڕەوانەکردن';
+			case 'nativeContacts': return 'پەیوەندییە ڕەسەنەکان';
+			case 'registrationAndMiningTrends': return 'ڕەوتی تۆمارکردن و کانگاکردن';
+			case 'inMining': return 'لە کانگادا';
+			case 'registrationVolume': return 'قەبارەی تۆمارکردن';
+			case 'unmined': return 'بێ مین';
+			case 'mined': return 'مین';
+			case 'communityMining': return 'کانزاکانی کۆمەڵگا';
+			case 'consensusPromotionFund': return 'سندوقی بەرزکردنەوەی کۆدەنگی';
+			case 'ecologicalAwardFund': return 'سندوقی خەڵاتی ئیکۆلۆژی';
+			case 'icpFuelCrowdfunding': return 'Crowdfunding سووتەمەنی ICP';
+			case 'coreDeveloperRewards': return 'پاداشتی گەشەپێدەری سەرەکی';
+			case 'totalAllocation': return 'کۆی گشتی تەرخانکردن';
+			case 'miningRatio': return 'رێژەی کانگا';
+			case 'billion.300': return '300 ملیار';
+			case 'billion.180': return '180 ملیار';
+			case 'billion.30': return '30 ملیار';
+			case 'billion.60': return '60 ملیار';
+			case 'watchAdsToSupportDevelopers': return 'سەیری ڕێکلامەکان بکە بۆ پشتگیریکردنی گەشەپێدەران';
+			case 'loadingAdcomponents': return 'بارکردنی پێکهاتەکانی ڕێکلام...';
+			case 'timeIsNotUp': return 'کات تەواو نەبووە!';
+			case 'loadingFailed_maybeTheNetworkIsBlocked': return 'بارکردن شکستی هێنا، لەوانەیە تۆڕەکە بلۆک کرابێت!';
+			case 'pendingUSCTrecords': return 'تۆمارە چاوەڕوانکراوەکانی USCT';
+			case 'pendingUSCTrecordsDesc': return 'تۆمارە چاوەڕوانکراوەکانی USCT لە ماوەی 15-30 ڕۆژدا بەراورد دەکرێن و پشتڕاست دەکرێنەوە لەگەڵ پلاتفۆرمی ڕێکلام، تۆمارە ڕەواکان دەگوازرێنەوە بۆ لیستی تۆمارەکانی USCT، و بڕی USCTی هاوتا زیاد دەکرێت بۆ باڵانسی ئەکاونتەکە.';
+			case 'validity': return 'ڕەوایی';
+			case 'advertiser': return 'ڕێکلامکەر';
+			case 'earned': return 'بەدەست هاتووە';
+			case 'withdraw': return 'کشانەوە';
+			case 'validUSCTrecords': return 'تۆمارە دروستەکانی USCT';
+			case 'USCTmining': return 'کانزاکانی USCT';
+			case 'aboutUSCTmining': return 'دەربارەی کانگاکردنی USCT؟';
+			case 'aboutUSCTminingItme1': return '1. USDT stablecoin ی دۆلاری ئەمریکییە کە لە ئاستی جیهانیدا بەناوبانگە، کە دەتوانرێت بە ئاسانی بگۆڕدرێت بۆ دراوی سەروەری وڵاتانی جیاواز لە ئاڵوگۆڕە سەرەکییەکانی دراوی کریپتۆی جیهاندا.';
+			case 'aboutUSCTminingItme2': return '2. USCT بەهایەکی کاتییە بۆ پێوانەکردنی داهاتی کانزاکانی USCT، ناوی تەواوی قەرزی دۆلارە، و لە کۆتاییدا دەتوانرێت بگۆڕدرێت بۆ USDT بەپێی کۆتایی ڕاستەقینەی یەکلاکردنەوە و یاساکانی دابەشکردنی پلاتفۆرمی ڕێکلام و بە ڕێژەیەکی هاوتا.';
+			case 'aboutUSCTminingItme3': return '3. کانگاکردنی USCT ئەرکێکی پارەدارکردنی ڕیکلامی هاتوچۆیە لە کۆمەڵگەی دێڵتا. سوود لە بنکەی بەکارهێنەری گەورەی کۆمەڵگەی دێڵتا وەربگرە بۆ دابینکردنی چەندین سوود بۆ ڕێکلامکەران، گەشەپێدەرانی دێڵتا و کانگەرەکان. ئامانجی دیزاینەکەی دابینکردنی بڕێکی دیاریکراو لە داهاتی کاریگەرە بۆ ئامادەنەبوون لە قۆناغی سەرەتایی ئیکۆلۆژیای دێڵتا هێشتا پێکهاتووە و گەشەی نەکردووە؛ لە هەمان کاتدا، هەروەها بڕێکی دیاریکراو لە پشتگیری دارایی بۆ گەشەپێدەران دابین دەکات بۆ دڵنیابوون لەوەی کە گەشەپێدەران دەتوانن بەردەوام بن لە پێشکەشکردنی خزمەتگوزارییەکانی گەشەپێدان بۆ ماوەیەکی زۆر، و لە کۆتاییدا دەتوانن هەموو پلاندانانی کاغەزی سپی بەدیبهێنن هەروەها کەناڵێکی کاریگەر بۆ بانگەشەکردن بۆ ڕێکلامکەرانی بەرهەمەکە دابین بکەن.';
+			case 'aboutUSCTminingItme4': return '4. یاساکانی دابەشکردن بە شێوەیەک داڕێژراون کە 40%ی کۆی داهاتەکە وەک کۆمیسیۆنی خزمەتگوزاری تەکنیکی گەشەپێدەر بەکاردەهێنرێت، و 60%ی دیکەش وەک پاداشتی ئامادەنەبوونی کۆمەڵگا بەکاردەهێنرێت. بەشی پاداشتی ئامادەنەبوون مۆدێلێکی دابەشکردنی فرە ئاست هاوشێوەی DTC دەگرێتەبەر، و ئەم پاداشتانەی ئامادەنەبوون بەپێی ڕێژەی... 6:3:1، و 60%ی پاداشتی ئامادەنەبوون بۆ یەک کانگاکردنی USCT هەر جارێک بۆ ئەو ئامادەنەبوونە تەرخانکراوە کە لە ئێستادا سەیری ڕیکلامەکە دەکات , 30% بۆ پێشنیارکەری ئاستی دووەم تەرخانکراوە، و 10% بۆ پێشنیارکەری ئاستی دووەم تەرخانکراوە بە هەمان شێوە، دەتوانیت هەمان پاداشتی پێشنیارکراوی ئەو هاوڕێیانە بەدەستبهێنیت کە پێشنیاری دەکەیت لە ڕێگەی کانگاکردنی USCT دابەشکردن ئەوەیە کە هەر کەسێک دەتوانێت بڕێکی تاڕادەیەک زۆر لە سوودەکانی USDT بەدەستبهێنێت بە پەرەپێدانی تیمێکی ئۆفلاین.';
+			case 'aboutUSCTminingItme5': return '5. خولی فەسڵکردن 7 ڕۆژە، واتە هەر 7 ڕۆژ جارێک ڕەوایی لەگەڵ پلاتفۆرمی ڕێکلامدا دەپشکنرێت، و داهاتی کاریگەری پشتڕاستکراوە و بڕی ڕاستەقینە لە باڵانسەکەدا تۆمار دەکرێت. کەمترین بڕی پارە بۆ هەر کشانەوەیەک 10USDTە.';
+			case 'linesXtoY': return ({required Object x, required Object y}) => 'Lines ${x} to ${y}';
+			case 'wallet': return 'جزدان';
+			case 'multiChainWallet': return 'جزدانی فرە زنجیرەیی';
+			case 'deposit': return 'پارە دانان';
+			case 'transfer': return 'گواستنەوە';
+			case 'xcoinInWallet': return ({required Object coinCode}) => '${coinCode} لە ناونیشانی جزدان';
+			case 'transactions': return 'مامەڵەکان';
+			case 'network': return 'Network';
+			case 'walletAddress': return 'ناویشنانی جزدان دانێ';
+			case 'currentAddress': return 'current Address';
+			case 'depositAddress': return 'ناونیشانی ناردن';
+			case 'receivingMoneyAddress': return 'پارە گەیشتە ئەم ناونیشانە';
+			case 'applyTempDepositAddress': return 'داواکاری پێشکەش بکە بۆ ناونیشانی دانانی کاتی';
+			case 'tempDepositAddressTip': return '1.ئەمە ناونیشانی پارەدانێکی هاوبەشە. تکایە دوای تەواوبوونی بەکرێدانەکە یان پابەند نەبوون، بڕە پارەکە مەخەنە ناوەوە. بڕە پارەکە لەدەست دەچێت ئەگەر ئەمە ڕووبدات.';
+			case 'tempDepositAddressTip2': return '2.پێش ئەوەی پارە دابنێیت، تکایە دڵنیابە لەوەی کە [ناوی زنجیرەکە] و [ناوی دراو] بە تەواوی یەکدەگرنەوە؛ ئەگەر نیشانەیەکی گرێبەستە، پێویستە پشتڕاستی بکەیتەوە کە [ستانداردی گرێبەست] و [ناونیشانی گرێبەست] بە تەواوی یەکدەگرنەوە.';
+			case 'tempDepositAddressTip3': return '3.تکایە هەوڵ مەدە ئەو پارانە دابنێیت کە لەگەڵ هیچ کام لە پارامێتەرەکانی ناو ئامۆژگارییەکانی سەرەوەدا ناگونجێت، ئەگەرنا بڕە پارەکە لەدەست دەچێت.';
+			case 'tempDepositAddressTip4': return '4.ئەگەر پێویستت بە دانانی جۆرەکانی تری سەروەت و سامانە، تکایە بگۆڕە بۆ لاپەڕەی دراوی گونجاو و هەڵبژاردەکانی پارامێتەر بۆ ئەوەی داوای ناونیشانێکی نوێ بکەیت.';
+			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
+				const TextSpan(text: 'ئەم ناونیشانە لە '),
+				diff,
+				const TextSpan(text: ' بەسەر دەچێت. دەتوانیت ماوەی ڕەوایی '),
+				tap('بە دەست درێژ بکەیتەوە'),
+				const TextSpan(text: ' لە ماوەی 6 کاتژمێر پێش بەسەرچوون.'),
+			]);
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'تەنها دەتوانرێت لە ماوەی ٦ کاتژمێر پێشوەختە نوێ بکرێتەوە';
+			case 'theReceivingAddressValidForLongtime': return 'ناونیشانی وەرگرتن بۆ ماوەیەکی زۆر کاریگەرە.';
+			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'ناونیشانی وەرگرتن بۆ ماوەیەکی زۆر کاریگەرە و لە کاتی ڕاستەقینەدا بە شێوەیەکی ئۆتۆماتیکی کرێدت دەکرێت.';
+			case 'confirmDeposited': return 'پاراستنی Deposited';
+			case 'unbindThisDepositAddress': return 'ئەم ناونیشانەی پارەدانەکە هەڵبگرە';
+			case 'confirmDepositedTip': return 'ئەگەر پارەکان گواستراونەتەوە، تکایە دوای ١٠ خولەک کلیک لەسەر دوگمەی سەرەوە بکە بۆ دەستپێکردنی ژمێریاری بۆ جزدانەکە.';
+			case 'unbindDepositAddressTip': return 'بۆ کەمکردنەوەی سەرپێچی کارپێکردنی گرێبەستە زیرەکەکان، ئەگەر لە ماوەی کارکردندا هیچ پارەیەکی زیاتر دانەنرێت، تکایە ناونیشانی دانانەکە بکەرەوە.';
+			case 'transferToAddress': return 'گواستنەوە بۆ ناونیشان';
+			case 'longPressToPaste': return 'پەستانێکی درێژ بۆ لێدان';
+			case 'all': return 'هەموو';
+			case 'balanceX': return ({required Object x}) => 'هاوسەنگی ${x}';
+			case 'transferOut': return 'گواستنەوە بۆ دەرەوە';
+			case 'depositXcoins': return ({required Object x}) => 'پاراستنی ${x}';
+			case 'sender': return 'نێرەر';
+			case 'recipient': return 'وەرگر';
+			case 'memo': return 'یاداشت';
+			case 'kind': return 'میهرەبان';
+			case 'transferAmountExceedsAvailableBalance': return 'بڕی گواستنەوە لە باڵانسی بەردەست زیاترە';
+			case 'pleaseEnterValidAmount': return 'تکایە بڕە پارەیەکی دروست دابنێ';
+			case 'networkFee': return 'کرێی تۆڕ';
+			case 'fee': return 'کرێ';
+			case 'validLengthXcharacters': return ({required Object x}) => 'درێژی دروست ${x} پیتە';
+			case 'historys': return 'مێژووەکان';
+			case 'dtcCreditdetail': return 'وردەکارییەکانی قەرزی دێڵتا';
+			case 'usdCreditdetail': return 'وردەکاری قەرزی USD';
+			case 'dappSquare': return 'چوارگۆشەی dApp';
+			case 'amountRaised': return 'بڕی کۆکراوە';
+			case 'disbursedAmount': return 'بڕی خەرجکراو';
+			case 'participationTimes': return 'کاتەکانی بەشداریکردن';
+			case 'completionRate': return 'رێژەی تەواوبوون';
+			case 'exchangeRate': return 'ڕێژەی ئاڵوگۆڕ';
+			case 'icpCrowdfunding': return 'کۆمپانیای ئای سی پی';
+			case 'crowdfunding': return 'کراودفاندینگ';
+			case 'trendsCurve': return 'کێوی ڕەوتەکان';
+			case 'fullScreenView': return 'دیمەنی تەواوی شاشە';
+			case 'walletBalance': return 'باڵانسی جزدان: ';
+			case 'manageWallet': return 'بەڕێوەبردنی جزدان';
+			case 'fundraiseAmount': return 'بڕی کۆکردنەوەی پارە';
+			case 'exchangeRewardAmount': return ' بڕی پاداشتی ئاڵوگۆڕ';
+			case 'fundraise': return 'کۆکردنەوەی پارە';
+			case 'rangeIntegersX': return ({required Object x}) => 'مەودا: ژمارە تەواوەکان ${x}';
+			case 'successfullParticipatingFundraisingXtip': return ({required Object amount}) => 'بە سەرکەوتوویی بەشداری لە کۆکردنەوەی پارەدا کرد و پاداشتی ${amount}DTCT وەرگرت';
+			case 'amountSummary': return 'پوختەی بڕی';
+			case 'changePreferred': return 'گۆڕانکاری پەسەندکراو';
+			case 'changePreferredAddress': return 'ناونیشانی پەسەندکراو بگۆڕە';
+			case 'preferredAddressTip': return 'لەکاتی وەرگرتنی پارە بە بەکارهێنانی ژمارەی مۆبایلی تۆمارکراو یان DID، پارەکان بە شێوەیەکی ئۆتۆماتیکی دەگوازرێنەوە بۆ ناونیشانی پەسەندکراو.';
+			case 'newAddress': return 'ناونیشانی نوێ';
+			case 'newAddressTip': return 'بۆ ڕێگریکردن لە خراپ بەکارهێنان، کاتێک زیاتر لە یەک ناونیشانی جزدان هەیە، کرێی مامەڵەکردن بۆ هەر ناونیشانێکی نوێ کە دروست دەکرێت، خەرج دەکرێت.';
+			case 'createNew': return 'دروستکردنی نوێ';
+			case 'chainNetworkName': return 'تۆڕی زنجیرەیی';
+			case 'from': return 'لە';
+			case 'to': return 'بۆ';
+			case 'noAvailableDepositAmountDetected': return 'هیچ بڕە پارەیەکی پێشەکی بەردەست دەستنیشان نەکراوە !';
+			case 'crossChainReceiveMoneyMonitoring': return 'پارەی وەرگرتنی زنجیرەی بڕاو لە چاودێریکردندایە ...';
+			case 'receivedV': return ({required InlineSpan v}) => TextSpan(children: [
+				const TextSpan(text: 'وەرگیراو('),
+				v,
+				const TextSpan(text: ')'),
+			]);
+			case 'confirming': return ({required InlineSpan v}) => TextSpan(children: [
+				const TextSpan(text: 'دڵنیاکردنەوە('),
+				v,
+				const TextSpan(text: ')'),
+			]);
+			case 'thingsToNote_forNewbies': return 'تێبینییەکان (پێویستە بۆ تازەپێگەیشتووان بخوێنرێتەوە)';
+			case 'whyUseSharedAddresses': return 'بۆچی ناونیشانی هاوبەش بەکاربهێنرێت؟';
+			case 'useSharedrAdvantage': return 'کاتێک باس لە وەبەرهێنانی زنجیرەکان دەکرێت، سوودەکانی بەکارهێنانی ناونیشانی هاوبەش بریتین لە:';
+			case 'useSharedrAdvantage1': return '1. کەمکردنەوەی بەفیڕۆدانی کرێی گواستنەوە و کەمکردنەوەی تێچووی بەکارهێنەر. چونکە ئەگەر ناونیشانێکی تایبەت بەکاربهێنرێت، ئەوا پارەکان زۆر بڵاودەبنەوە. بۆ ئەوەی بەکارهێنەرانی دیکە ئاسانکاری بۆ گواستنەوەی دەرەوە بکەن لە کاتی کشانەوەدا، کاتێک بەکارهێنەر پارەیەکی پێشەکی دەکات، گواستنەوەی لاوەکی پارەکان پێویستی بە کۆکردنەوە هەیە بۆ یەکێک یان ژمارەیەکی کەم لە ناونیشانەکان بۆ بەڕێوەبردن.';
+			case 'useSharedrAdvantage2': return '2. In the sharing solution, the program only needs to maintain a relatively small address pool, which can quickly match outgoing funds and perform lightweight collection monitoring, which can reduce computing resource overhead. In contrast, with exclusive addresses, the situation is exactly the opposite.';
+			case 'tokenType': return 'جۆری نیشانە';
+			case 'contract': return 'گرێبەست';
+			case 'contractStandard': return 'ستانداردی گرێبەست';
+			case 'contractAddress': return 'ناونیشانی گرێبەست';
+			case 'native': return 'ڕەسەن';
+			case 'confirmUnbindingPleaseEnterYes': return 'بۆ پشتڕاستکردنەوەی بەستنەوە، تکایە "بەڵێ"';
+			case 'listAllWorkingTempReceivingAddresses': return 'لیستکردنی هەموو ناونیشانە وەرگرەکانی زنجیرە بڕاوەکانی کارکردن';
+			case 'setNote': return 'تێبینی دابنێ';
+			case 'lengthCannotExceedXbytes': return ({required Object x}) => 'درێژی ناتوانێت لە ${x} بایت زیاتر بێت';
+			case 'transferFee': return 'کرێی گواستنەوە';
+			case 'crossChainFee': return 'کرێی cross-chain';
+			case 'crossChainTransferOutError': return 'هەڵەی گواستنەوەی زنجیرەکان بۆ دەرەوە';
+			case 'chainName': return 'ناوی زنجیرە';
+			case 'message': return 'پەیام';
+			case 'dontShowAgain': return 'جارێکی تر نیشان مەدەرەوە';
+			case 'queuing': return 'ڕیزکردن';
+			case 'optional': return 'ئیختیاری';
+			case 'publiclyVisible': return 'بە ئاشکرا دیارە';
+			case 'rates': return 'ڕێژەکان';
+			case 'minimum': return 'کەمترین';
+			case 'maximum': return 'زۆرترین';
+			case 'minimumBlockConfirmations': return 'کەمترین پشتڕاستکردنەوەکانی بلۆک';
+			case 'dsmsVerifyTerminal': return 'تێرمیناڵی پشتڕاستکەرەوەی DSMS';
+			case 'overall': return 'بە گشتی';
+			case 'my': return 'من';
+			case 'getVerifierPermissions': return 'مۆڵەتی پشتڕاستکەرەوە وەربگرە';
+			case 'checkValidatorQualifications': return 'پشکنینی بڕوانامەی مۆڵەتی چەسپێنەر';
+			case 'qualification': return 'بڕوانامە';
+			case 'upperLimit': return 'سنووری سەرەوە';
+			case 'maximumNumberOfTerminalsAllowedToAccess': return 'زۆرترین ژمارەی تێرمیناڵەکان ڕێگەپێدراوە بۆ دەستگەیشتن';
+			case 'numberOfExistingAccessTerminals': return 'ژمارەی تێرمیناڵەکانی دەستگەیشتن کە هەن';
+			case 'applyingForDSMSVerifierPermissionsTips': return 'پێش ئەوەی داوای مۆڵەتی پشتڕاستکەرەوە بکەیت، پێویستە مۆبایلێکی ئەندرۆیدی بێکار و ژمارەیەکی تایبەت بە دەستگەیشتن ئامادە بکەیت، و بەرنامەی تێرمیناڵی دەستگەیشتن بە DSMS دابەزێنیت و دایبمەزرێنیت.';
+			case 'downloadLink': return 'بەستەری دابەزاندن';
+			case 'alreadyReadyFollowingTheAboveTips': return 'لە ئێستاوە ئامادەی پەیڕەوکردنی ئەو ئامۆژگارییانەی سەرەوەم';
+			case 'globalUniversal': return 'گەردوونی جیهانی';
+			case 'insufficientLocalVerifierTips': return ({required InlineSpan gu}) => TextSpan(children: [
+				const TextSpan(text: 'لە ئێستادا پشتڕاستکەرەوەی ناوخۆیی بەس نییە بۆ بەشداریکردن لە خزمەتگوزاری دەستڕاگەیشتن بە پشتڕاستکردنەوەی DSMS. تکایە خزمەتگوزاری دەستڕاگەیشتن "'),
+				gu,
+				const TextSpan(text: '" هەڵبژێرە.'),
+			]);
+			case 'asDedicatedNumberForAccess': return 'وەک ژمارەیەکی تایبەت بۆ دەستگەیشتن';
+			case 'pleaseCheckTip': return ({required Object tip}) => 'تکایە "${tip}" بپشکنە';
+			case 'inputLengthTooShort': return 'درێژی زانیاری زۆر کورت';
+			case 'shortName': return 'short-name';
+			case 'pleaseEnterXname': return ({required Object name}) => 'تکایە ${name} بنووسە';
+			case 'applicationIsBeingSubmitted_pleaseWait': return 'داواکاری پێشکەش دەکرێت، تکایە چاوەڕوان بن...';
+			case 'applyForDSMSVerifierPermission': return 'داواکاری بۆ مۆڵەتی پشتڕاستکەرەوەی DSMS بکە';
+			case 'confirmInformation': return 'زانیاری پشتڕاست بکەرەوە';
+			case 'lastHeartbeat': return 'دوا لێدانی دڵ';
+			case 'expirationTime': return 'کاتی بەسەرچوون';
+			case 'country': return 'وڵات';
+			case 'accessTerminals': return 'تێرمیناڵەکانی دەستڕاگەیشتن';
+			case 'totalNumberOfDSMSaccessNumberTerminals': return 'کۆی ژمارەی تێرمیناڵەکانی ژمارەی دەستگەیشتن بە DSMS';
+			case 'textContent': return 'ناوەڕۆکی دەق';
+			case 'scanQRcodeToLogin': return 'سکانکردنی QRcode بۆ چوونەژوورەوە';
+			case 'confirmLogin': return 'دووپاتکردنەوەی چوونەژوورەوە';
+			case 'authorizeSubApplicationToLogin': return 'ڕێگە بەم بەرنامە لاوەکییە بدە بۆ چوونەژوورەوە';
+			case 'authorizationSuccessful': return 'ڕێگەپێدان سەرکەوتوو بوو!';
+			case 'launchSMSprogram': return 'دەستپێکردنی بەرنامەی کورتەنامە';
+			case 'notApplied': return 'کارپێنەکراوە';
+			case 'validityPeriod': return 'ماوەی کاریگەری';
+			case 'renewal': return 'نوێبوونەوە';
+			case 'scanCodeToAuthorizeTerminalLogin': return 'کۆد سکان بکە بۆ ڕێگەدان بە چوونەژوورەوەی تێرمیناڵ';
+			case 'rewards': return 'پاداشت';
+			case 'roles': return 'ڕۆڵەکان';
+			case 'developerCenter': return 'ناوەندی گەشەپێدەر';
+			case 'appName': return 'ناوی ئەپ';
+			case 'pleaseSelect': return 'تکایە هەڵبژێرە';
+			case 'category': return 'پۆل';
+			case 'keywords': return 'وشەی سەرەکی';
+			case 'pleaseEnterAkeyword': return 'تکایە وشەیەکی سەرەکی دابنێ';
+			case 'createApplication': return 'دروستکردنی بەرنامە';
+			case 'appType': return 'جۆری ئەپ';
+			case 'numberOfCategoriesMustBetween1and3': return 'ژمارەی پۆلەکان دەبێت لە نێوان 1 و 3 بێت';
+			case 'appLogoSpecifications': return 'فۆرماتە وێنە: png، قەبارە: لە ماوەی 100KB، ڕوونی (پێکسڵ): 256 * 256';
+			case 'localAlbum': return 'ئەلبوومی ناوخۆیی';
+			case 'networkPath': return 'ڕێڕەوی تۆڕ';
+			case 'imageURLkAddress': return 'ناونیشانی URLی وێنە';
+			case 'urlAddressFormatIsIncorrect': return 'فۆرماتەکەی ناونیشانی URL هەڵەیە';
+			case 'imageFormatOnlySupportsPng': return 'فۆرماتەکەی وێنە تەنها پشتگیری "png" دەکات.';
+			case 'lengthMustBeBetweenA_BCharacters': return ({required Object a, required Object b}) => 'درێژییەکە دەبێت لە نێوان ${a}-${b} کاراکتەرەکاندا بێت';
+			case 'introduction': return 'پێشەکی';
+			case 'imageSizeCannotBeLargerThanA_currentlyB': return ({required Object a, required Object b}) => 'قەبارەی وێنەکە ناتوانێت لە ${a} گەورەتر بێت، لە ئێستادا ${b}';
+			case 'imageResolutionMustBeP1pixels_currentlyP2': return ({required Object p1, required Object p2}) => 'ڕوونکردنەوەی وێنەکە دەبێت: ${p1} (پێکسڵەکان), لە ئێستادا ${p2}';
+			case 'becomeDeveloper': return 'ببە بە گەشەپێدەر';
+			case 'developerInformation': return 'زانیاری گەشەپێدەر';
+			case 'teamName': return 'ناوی تیم';
+			case 'website': return 'ماڵپەڕ';
+			case 'other': return 'ئەوەی تر';
+			case 'githubVerification': return 'چەندکردنەوەی گیتوب';
+			case 'exampleUrl': return 'نموونەی Url';
+			case 'githubVerificationTip': return ({required Object did}) => 'تکایە ئەژمێری GitHub ی خۆت بەکاربهێنە بۆ دروستکردنی پەڕگەیەکی \'delta.did\' لە کۆگاکەدا بە ناوەڕۆکی \'${did}\'؛ پاشان، url githubusercontent ی پەڕگەکە بخەرە ناو ئەم بۆکسەی چوونەژوورەوە بۆ ڕەسەنایەتی.';
+			case 'createApp': return 'دروستکردنی ئەپ';
+			case 'appManagement': return 'بەڕێوەبردنی ئەپ';
+			case 'statusLogs': return 'لۆگەکانی دۆخ';
+			case 'bad': return 'خراپ';
+			case 'normal': return 'ئاسایی';
+			case 'good': return 'باشە';
+			case 'onceCreatedItCannotBeChanged': return 'کاتێک دروستکرا، ناتوانرێت بگۆڕدرێت!';
+			case 'manageApplicationEntity': return 'بەڕێوەبردنی یەکەیەکی بەرنامە';
+			case 'currentVersion': return 'وەشانەکەی ئێستا';
+			case 'submitVersion': return 'وەشان پێشکەش بکە';
+			case 'packageOnlySupportZipCompressedFile': return 'پاکێجەکە تەنها پشتگیری لە پەڕگەی پاڵەپەستۆکراوی زیپ دەکات';
+			case 'theXfileWasNotFoundInTheZipPackage': return ({required Object name}) => 'پەڕگەی \'${name}\' لە پاکێجی زیپدا نەدۆزرایەوە';
+			case 'fileList': return 'لیستی فایلەکان: ';
+			case 'programPackage': return 'پاکێجی بەرنامە: ';
+			case 'automaticallyExtractFromVersionFile': return 'بە شێوەیەکی ئۆتۆماتیکی لە پەڕگەی \'.version\' دەربهێنە';
+			case 'dappVersionFormatTip': return 'فۆرماتەکەی ژمارەی وەشانی دەبێت دەهەمی بێت و وردبینییەکەی دەبێت بە ٢ ژمارە بپارێزرێت، و زۆرترینی ناتوانێت لە ٩٩.٩٩ زیاتر بێت';
+			case 'versionNumberMustBeGreaterThanCurrentVersionX': return ({required Object v}) => 'ژمارەی وەشانی دەبێت گەورەتر بێت لە وەشانی ئێستا \'${v}\'';
+			case 'versionNotes': return 'تێبینی وەشانی: ';
+			case 'dappInfo': return 'زانیاری داپ';
+			case 'updateRelease': return 'نوێکردنەوەی بڵاوکردنەوە';
+			case 'loadAndRun': return 'بارکردن و جێبەجێکردن';
+			case 'notYetSubmittedProgramPackage': return 'هێشتا پاکێجێکی بەرنامە پێشکەش نەکراوە!';
+			case 'authorizeMinidAppLogin': return 'ڕێگەدان بە چوونەژوورەوەی مینی-dApp';
+			case 'confirmAuthorizationPleaseEnterYes': return 'ڕێگەپێدان پشتڕاست بکەرەوە، تکایە "بەڵێ" داخڵ بکە';
+			case 'authorizeNow': return 'ئێستا ڕێگەپێدان';
+			case 'operation': return 'ئۆپەراسیۆن: ';
+			case 'statusChange': return 'گۆڕینی دۆخ';
+			case 'changeTo': return 'گۆڕانکاری بۆ: ';
+			case 'notes': return 'تێبینی: ';
+			case 'changesNotEffective': return 'گۆڕانکارییەکان کاریگەر نین!';
+			case 'released': return 'ئازاد';
+			case 'inPublicBeta': return 'لە تاقیکاری گشتیدا';
+			case 'developers': return 'گەشەپێدەران: ';
+			case 'reviewList': return 'لیستی پێداچوونەوە: ';
+			case 'postReview': return 'پۆست پێداچوونەوە';
+			case 'scoreNow': return 'ئێستا گۆڵ تۆمار بکە';
+			case 'description': return 'وەسف: ';
+			case 'noData': return '(^-^) \n بێ داتا';
+			case 'versionHasBeenUpdatedFromAtoB': return ({required Object a, required Object b}) => 'وەشانەکە لە ${a}ەوە بۆ ${b} نوێکراوەتەوە';
+			case 'loadNewVersion': return 'بارکردنی وەشانی نوێ';
+			case 'name': return 'ناو: ';
+			case 'canisterId': return 'CanisterId: ';
+			case 'updateTime': return 'کاتی نوێکردنەوە';
+			case 'contractCanistersState': return 'دەوڵەتی کانستەرەکانی گرێبەست';
+			case 'userDistribution': return 'دابەشکردنی بەکارهێنەر';
+			case 'settings': return 'ڕێکخستنەکان';
+			case 'security': return 'ئاسایشی';
+			case 'invite': return 'بانگهێشت';
+			case 'more': return 'زیاتر...';
+			case 'receiveAddress': return 'ناونیشانی وەرگرتن: ';
+			case 'hangingAmount': return 'هەڵواسینی';
+			case 'hangingAmountTips': return 'بڕی هەڵواسینی تۆمارێکی کاتی ئەو پاداشتانەیە کە لەلایەن کانگاکردنی تیمی ژێردەستەکەتەوە دروست دەبن. کاتێک کانگایەک ئەنجام دەدەیت، ئەم بڕە پارانە کۆدەکرێنەوە بۆ بڕی هەڵپەسێردراو.';
+			case 'pendingAmount': return 'هەڵپەسێردراو';
+			case 'pendingAmountTips': return 'بڕی چاوەڕوانکراو ئاماژەیە بۆ ئەو بڕە پارەیەی کە پشتڕاست نەکراوەتەوە و بەراورد نەکراوە لەگەڵ ڕێکلامکەر. ئەو بڕە پارەیەی کە پشتڕاستکراوەتەوە دەگوازرێتەوە بۆ تۆماری ڕەوای USCT. ئەگەر هەر بەشێکی نادروست هەبێت، ئەوا دەخرێتە دەرەوە.';
+			case 'received': return 'وەرگیراوە';
+			case 'processing': return 'پڕۆسێسکردن';
+			case 'replied': return 'وەڵامی دایەوە';
+			case 'rejected': return 'ڕەتکرایەوە';
+			case 'unknown': return 'نەناسراو';
+			case 'insufficientBalance': return 'هاوسەنگی بەس نییە!';
+			case 'InsufficientXbalanceToPayCrossChainNetworkFee': return ({required Object x}) => 'باڵانسی ${x} بەس نییە بۆ پێدانی کرێی تۆڕی نێوان زنجیرەکان';
+			case 'aTransactionThatHasNotBeenCompleted_CannotBeTransferredAtMoment': return 'مامەڵێک هەیە کە تەواو نەبووە و لە ئێستادا ناتوانرێت بگوازرێتەوە.';
+			case 'thisfunctionNotSupportExternalCalls': return 'ئەم کارە پشتگیری لە پەیوەندی دەرەکی ناکات';
+			case 'noMatchingAddressThatCanBeUsedToPayCrossChainFees_switchOtherChainToTry': return 'هیچ ناونیشانێکی هاوتا نییە کە بتوانرێت بەکاربهێنرێت بۆ پێدانی کرێی زنجیرە بڕاوەکان، تکایە بگۆڕە بۆ تۆڕەکانی زنجیرەی تر بۆ هەوڵدان.';
+			case 'currentMaximumMatchedSingleTransferAmountIsX': return ({required Object x}) => 'زۆرترین بڕی تاکە گواستنەوەی هاوتاکراوی ئێستا ${x}';
+			case 'memoMustNotBeMoreThan64bytes': return 'یاداشتنامەکە نابێت لە ٦٤ بایت زیاتر بێت';
+			case 'insufficientBalance_theAmountIsX': return ({required Object x}) => 'باسەنگی بەس نییە، بڕە پارەکە بریتییە لە: ${x}';
+			case 'boundRreceivingAddressesExceed3Tip': return 'ژمارەی ناونیشانە وەرگرەکانی بەستراو ناتوانێت لە 3 زیاتر بێت. \nئەگەر پێویستت بە بەستنەوەی ناونیشانی وەرگرتنی نوێ بوو، \nتکایە سەرەتا ناونیشانی وەرگرێکی تر بکەرەوە.';
+			case 'parametersA_exception': return ({required Object x}) => ' پارامێتەرەکان: ${x}, ئیستسنای';
+			case 'transferAmountMustBeLargerThan0': return 'بڕی گواستنەوە دەبێت لە 0 گەورەتر بێت';
+			case 'authorizationHasExpired': return 'ڕێگەپێدان بەسەرچووە';
+			case 'theAppHasNotBeenAuthorizedByOwner': return 'ئەپەکە لەلایەن خاوەنەکەیەوە ڕێگەپێنەدراوە';
+			case 'authenticationTokenIsInvalid': return 'نیشانەی ڕەسەنایەتی نادروستە';
+			case 'verifyInfoIsInvalidOrExpired': return 'دڵنیابوون لەوەی زانیاری نادروستە یان بەسەرچووە';
+			case 'verifyThatNumberOfAccessTerminalsHasExceededLimitOf1in10000': return 'دڵنیابە کە ژمارەی تێرمیناڵەکانی دەستڕاگەیشتن سنووری یەکێک لە 10,000 تێپەڕاندووە';
+			case 'timeToParticipateInMiningMustBeMoreThan3Days': return 'کاتی بەشداریکردن لە کانگادا دەبێت زیاتر لە ٣ ڕۆژ بێت';
+			case 'numberOfSafetyCircleCannotBeLessThan3': return 'ژمارەی ئەندامانی بازنەی سەلامەتی ناتوانێت لە ٣ کەس کەمتر بێت';
+			case 'avatarIsNotSet': return 'ئاڤاتاری دانەنراوە';
+			case 'numberOfDirectReferralsCannotBeLessThan3': return 'ژمارەی ڕەوانەکردنی ڕاستەوخۆ ناتوانێت لە ٣ کەس کەمتر بێت';
+			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return 'سنوری کاتیی بەس نییە، ژمارەی مۆبایل تەنها ساڵانە جارێک دەتوانرێت بگۆڕدرێت.';
+			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'ئەم ژمارە مۆبایلە پێشتر بوونی هەیە و ناتوانرێت دووبارە بکرێتەوە';
+			case 'securityCodeIsIncorrect': return 'کۆدی ئاسایش هەڵەیە';
+			case 'securityCodeMayHaveExpired': return 'ڕەنگە کۆدی ئاسایش بەسەرچووبێت';
+			case 'sessionIdIsInvalidOrExpired': return 'ناسنامەی دانیشتنەکە نادروستە یان بەسەرچووە';
+			case 'sessionHasBeenAuthorized': return 'دانیشتنەکە ڕێگەپێدراوە!';
+			case 'canOnlyBeRenewedWithinXdaysBeforeExpiration': return ({required Object x}) => 'تەنها دەتوانرێت لە ماوەی ${x} ڕۆژ پێش بەسەرچوون نوێ بکرێتەوە';
+			case 'notYetGrantedDeveloperPermissions': return 'هێشتا مۆڵەتی گەشەپێدەر نەدراوە';
+			case 'fieldXcannotBeEmpty': return ({required Object x}) => 'ئیمەیڵی مەیدانی ${x} بەتاڵ بێت';
+			case 'emailFormatError': return 'هەڵەی فۆرمات ئیمەیڵ';
+			case 'theXformatIsIncorrect': return ({required Object x}) => 'فۆرماتەکەی \'${x}\' هەڵەیە';
+			case 'lengthOfFieldXmustBeBetweenYandXcharacters': return ({required Object x, required Object y, required Object z}) => 'درێژی مەیدانی \'${x}\' دەبێت لە نێوان ${y} و ${z} پیتەکاندا بێت.';
+			case 'theXselectionMustBeBetweenYandX': return ({required Object x, required Object y, required Object z}) => 'هەڵبژاردنی \'${x}\' دەبێت لە نێوان ${y} و ${z} بێت';
+			case 'unchanged_sameAsOldContent': return 'نەگۆڕاوە، هەمان ناوەڕۆکی کۆن!';
+			case 'XYalreadyexists': return ({required Object x, required Object y}) => '${x}: \'${y}\' پێشتر بوونی هەیە!';
+			case 'mobileNumberHasNotJoinedDelta': return 'ئەم ژمارە مۆبایلە هێشتا پەیوەندی بە Delta نەکردووە!';
+			case 'referrerIdCannotBeEmpty': return 'ناتوانرێت ئاماژەپێکراو بەتاڵ بێت! ';
+			case 'referrerIdDoesNotExist': return 'referrerId بوونی نییە!';
+			case 'didIsIncorrectOrInvalid': return 'DID هەڵەیە یان نادروستە!';
+			case 'accessTokenIsIncorrectOrInvalid': return 'accessToken هەڵەیە یان نادروستە!';
+			case 'minimumWithdrawalAmountIs1USD': return 'کەمترین بڕی کشانەوە 1USD';
+			case 'miningTimeIsNotYet': return 'کاتی کانگاکردن هێشتا نییە';
+			case 'alreadyExists_pleaseDoNotRepeatedly': return 'پێشتر بوونی هەیە، تکایە دووبارە زیاد مەکە!';
+			case 'registrationNumberCannotBeUsedAsAccessNumber': return 'ژمارەی تۆمارکردن ناتوانرێت وەک ژمارەی دەستڕاگەیشتن بە پشتڕاستکردنەوە بەکاربهێنرێت';
+			case 'canotAddYourSelf': return 'ناتوانیت خۆت زیاد بکەیت';
+			case 'logOut': return 'دەرچوون';
+			case 'confirmLogout': return 'دڵنیای لە دەرچوون';
+			case 'logOutTipsText': return 'بیرخستنەوەی دۆستانە: بەپێی ڕێکەوتنی پەیوەندیدار لە کاغەزی سپیدا، هەر پشتڕاستکردنەوەی چوونەژوورەوەی ئەکاونتەکە بڕێکی دیاریکراو لە دراوی DTC لەلایەن تۆوە بەکاردەهێنێت بۆ ئەوەی وەک هاندانێک پارەی پشتڕاستکەرەوە بدەیت. تکایە ئەگەر پێویست نەبوو هەوڵ مەدە بچیتە ژوورەوە و بچیتە دەرەوە. بۆ ئەوەی دەستبەجێ دەربچیت کلیک لەم دوگمەیەی خوارەوە بکە.';
+			case 'ConfirmLogoutPleaseEnterYes': return 'دڵنیای لەوەی کە ئەتەوێ لە ئەکاونتەکەت بچیتە دەرەوە؟ "بەڵێ"';
+			case 'tip': return 'سەرنج';
+			case 'cancel': return 'بگەرێوە';
+			case 'close': return 'داخستن';
+			case 'selected': return 'دیاریکردن';
+			case 'edit': return 'گۆرانکاری';
+			case 'submit': return 'ناردرا';
+			case 'goBack': return 'بگەڕێوە دواوە';
+			case 'copiedToClipboard': return 'هەڵگیرا .';
+			case 'nickname': return 'نازناوو';
+			case 'confirm': return 'دڵنیابوون';
+			case 'cannotBeEmpty': return 'ناتوانێت بەتاڵ بێت';
+			case 'deleteSuccessful': return 'بەسەرکەوتوی سڕاوە!';
+			case 'successfullyModified': return 'بە سەرکەوتوویی دەستکاری کراوە!';
+			case 'executionSuccessful': return 'جێبەجێکردن سەرکەوتوو بوو!';
+			case 'parameterException': return 'ئیستسنای پارامێتەر!';
+			case 'preview': return 'بینین';
+			case 'followSystem': return 'بەدواداچوون بۆ سیستەم';
+			case 'change': return 'دەسکاریکردن';
+			case 'replace': return 'شوێن گرتنەوە';
+			case 'view': return 'بینین';
+			case 'manage': return 'بەڕێوەبردن';
+			case 'modify': return 'دەستکاری بکە';
+			case 'replacedSuccessfully': return 'بە سەرکەوتوویی گۆڕدرا!';
+			case 'authentication': return 'ڕەسەنایەتی';
+			case 'reacquire': return 'بەدەستهێنانەوەی دووبارە';
+			case 'tryAgain': return 'دووبارە هەوڵبدەوە';
+			case 'querying': return 'پرسیارکردن ...';
+			case 'writingToOnChain_pleaseWait': return 'نووسین بۆ سەر زنجیرەکە، تکایە چاوەڕوان بە ...';
+			case 'versionCheck': return 'پشکنینی وەشانی';
+			case 'alreadyLatestVersion': return 'پێشتر نوێترین وەشانی!';
+			case 'foundNewVersion': return 'وەشانێکی نوێ دۆزرایەوە:';
+			case 'upgradeLink': return 'بەستەری بەرزکردنەوە: ';
+			case 'deviceDescription': return 'وەسفکردنی ئامێر: ';
+			case 'notification30SecondsBeforeMiningStops': return '30 چرکە پێش وەستانی کانگاکردن بیرخستنەوەی ئاگادارکردنەوە جێبەجێ بکە!';
+			case 'goMining': return 'بڕۆ بۆ کانگا';
+			case 'deltaMiningReminder': return 'بیرخستنەوەی کانگاکانی دێڵتا';
+			case 'clickToMine_miningIsAboutToStop': return 'کلیک لێرە بکە بۆ مین، خەریکە کانگاکردن بوەستێت!';
+			case 'incorrect_input': return 'هاتنە ژوورەوەی هەڵە !';
+			case 'are_you_sure_delete': return 'دڵنیای دەتەوێت بسڕیتەوە?';
+			case 'delete_account': return 'سڕینەوەی ئەکاونت';
+			case 'how_to_operate_it': return 'چۆن کارپێکردنی؟';
+			case 'deletion_warning_tip': return 'ئەگەر ئەکاونتەکەت بسڕیتەوە، هەموو دێڵتا کۆینەکانت لەدەست دەدەیت و هەموو داهاتەکانی ئەندامانی تریش لەدەست دەچێت.';
+			case 'launchWhatsAppProgram': return 'دەستپێکردنی بەرنامەی واتسئەپ';
+			case 'sms': return 'SMS';
+			case 'whatsApp_verification_tips': return 'ژمارەی دەستگەیشتن بەم ئایکۆنە ئاماژەیە بۆ ئەوەی کە پشتگیری پشتڕاستکردنەوەی نامەی واتسئەپیش دەکەن. لە کاتی ناردنی نامەی نێودەوڵەتیدا پێشنیار دەکرێت واتسئەپ بەکاربهێنیت بۆ زیادکردنی ڕێژەی سەرکەوتن و کەمکردنەوەی تێچوونەکان.';
+			case 'ihaveSentVerificationString': return 'من ڕستەی پشتڕاستکردنەوەم ناردووە';
+			case 'totalOfPeople': return 'کۆی گشتی خەڵک: ';
+			case 'numberOfPeopleMining': return 'ژمارەی ئەو کەسانەی کە کانگا دەکەن';
+			case 'useBrowserScanQRcodeToSMSprogram': return 'دەتوانیت وێبگەڕێک لەسەر ئامێرێکی تر بەکاربهێنیت بۆ سکانکردنی کۆدی QR و گواستنەوەی بۆ بەرنامەی SMS';
+			case 'toggle': return 'گۆڕین';
+			case 'DSMSverifier': return 'دڵنیاکەرەوەی DSMS';
+			case 'activate': return 'چالاککردن';
+			case 'activated': return 'چالاککراوه';
+			case 'generateActivationCommand': return 'فرمانی چالاککردن دروست بکە';
+			case 'activationCommand': return 'فەرمانی چالاککردن';
+			case 'activationSentedTip': return 'دوای ناردنی کورتەنامەی چالاککردنەوە، تکایە دۆخی چالاککردن لەسەر ئامێری تێرمیناڵی دەستگەیشتن بپشکنە.';
+			case 'biometricsNotEnabledTip': return 'ئامێرەکەت بایۆمەتری (ڕووخسار یان پەنجەمۆر)ی چالاک نەکردووە، تکایە چالاکی بکە بۆ بەردەوامبوون.';
+			case 'error': return 'هەڵەیە';
+			case 'exceptionOccurredWhenCallingBiometric': return 'ئیستسنایەک ڕوویدا لەکاتی بانگکردنی فەنکشنی ناسینەوەی بایۆمەتری (ڕووخسار یان پەنجەمۆر)!';
+			case 'accessNumberSelectionTip': return ({required InlineSpan checkedNum, required InlineSpan shouldNum}) => TextSpan(children: [
+				const TextSpan(text: 'ژمارەکانی دەستڕاگەیشتن '),
+				checkedNum,
+				const TextSpan(text: ' پشکنینیان بۆ کراوە، پێویستە '),
+				shouldNum,
+				const TextSpan(text: ' هەڵبژێردرێت.'),
+			]);
+			case 'sentaboveXaccessNumbers': return ({required Object text, required Object n}) => 'ئایا ${text} نێردراوە بۆ ژمارەکانی دەستگەیشتن ${n} لە سەرەوە؟';
+			case 'interface': return 'ڕووکار:';
+			case 'waitingTimeoutOrSenderNumberMismatch': return 'کات بەسەرچوونی چاوەڕوانی یان ناتەبایی ژمارەی نێرەر';
+			case 'mobileNumberOfsecurityCircleYouFilledDoesntMatch': return ({required Object x}) => 'ژمارەی مۆبایلی ئەو ئەندامەی بازنەی ئاسایش کە پڕت کردۆتەوە ناگونجێت:${x}';
+			case 'leastXmobileNumbersMustCompleted': return ({required Object n}) => 'بەلایەنی کەمەوە ${n} ژمارەی مۆبایل دەبێت پڕبکرێتەوە';
+			case 'loginWithin10MinutesOfLoggingOutAvoidTwoFactorVerification': return 'لە ماوەی ١٠ خولەکدا دوای چوونە دەرەوە بچۆرە ژوورەوە بۆ ئەوەی پشتڕاستکردنەوەی دوو فاکتەری نەبێت.';
+			case 'noAccessNumberInYourRegionYet': return 'هێشتا ژمارەیەکی دەستگەیشتن لە ناوچەکەتدا نییە';
+			case 'notEnoughAccessNumbersInYourRegion': return 'لە هەرێمەکەتدا ژمارەی دەستگەیشتن بەس نییە';
+			case 'tipsForDeployDSMSterminal': return 'سیستەمەکە بە شێوەیەکی ئۆتۆماتیکی هەندێک ژمارەی دەستگەیشتن لە وڵاتانی دیکەوە بۆ تۆ بارکردووە. بۆ ئەوەی خزمەتگوزاری پشتڕاستکردنەوەی باشتر و کەمتر تێچووی پێشکەش بکرێت، پێشنیار دەکرێت کە تۆ یان ڕەوانەکەرەکەت پەیوەندی بکەیت بۆ بڵاوکردنەوەی تێرمیناڵەکانی DSMS لە ناوخۆدا بۆ بەدەستهێنانی کرێی پشتڕاستکردنەوە.';
+			case 'noOneCanProvideMeTheSecurityCode': return 'کەس ناتوانێت کۆدی ئاسایشم بۆ دابین بکات?';
+			case 'useSupplementalMode': return 'دۆخی تەواوکەر بەکاربهێنە';
+			case 'returnToSecurityCodeMode': return 'گەڕانەوە بۆ دۆخی کۆدی ئاسایش';
+			case 'enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted': return 'تکایە ژمارەی مۆبایلی پەیوەندیداریان داخڵ بکە، دەتوانرێت کۆدی وڵات لاببرێت.';
+			case 'mobileNumberForNameIsIncorrect': return ({required Object name}) => 'ژمارەی مۆبایل بۆ ${name} هەڵەیە';
+			case 'matchingVerificationStrategyIs': return 'ستراتیژی پشتڕاستکردنەوەی هاوتاکردن بریتییە لە...:';
+			case 'balanceGreater3ICP_noNeedPourFuel': return 'هاوسەنگی زیاترە لە 3 ICP، پێویست بە ڕشتنی سووتەمەنی ناکات بۆ ئێستا.';
+			case 'escrowAccount': return 'ئەژمێری ئیسکرۆ';
+			case 'fuelRelay': return 'ڕێلەی سووتەمەنی';
+			case 'pourFuel': return 'سووتەمەنی ڕژێنە';
+			case 'fuelState': return 'دۆخی سووتەمەنی';
+			case 'pouringFuelTips': return 'ڕشتنی سووتەمەنی هیچ سوود و زیانێکت بۆ ناهێنێت، مەبەست لێی دەوڵەمەندکردنی ئەزموونی سیستەمی دێڵتایە.';
+			case 'sponsorDevelopersByWatchingAds': return 'سپۆنسەری گەشەپێدەران بە سەیرکردنی ڕێکلامەکان';
+			case 'status': return 'دۆخ';
+			case 'date': return 'بەروار';
+			case 'assetApplicationIsInProgressTip': return 'بەرنامەی سەرمایە لە پێشکەوتندایە، تکایە لە ٣ چرکەدا هەوڵبدەرەوە.';
+			case 'delete': return 'سڕینەوە';
+			case 'deleteVerifierTip': return 'لەکاتی سڕینەوەی مۆڵەتەکانی پشتڕاستکەرەوە، هەموو داتاکانی نمرەی پەیوەندیدار لە یەک کاتدا دەسڕدرێنەوە، بەڵام ئەو پاداشتانەی پێشتر بەدەست هاتوون کاریگەرییان لەسەر نابێت.';
+			case 'deleteVerifierStatusTip': return 'تکایە پێش سڕینەوە بۆ دۆخی وەستان ڕێکبخە';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'تکایە "${text}" داخڵ بکە، بۆ پشتڕاستکردنەوە';
+			case 'localSecurity': return 'ئاسایشی ناوخۆیی';
+			case 'deviceLock': return 'قفڵی ئامێر';
+			case 'patternLock': return 'قفڵی نەخش';
+			case 'none': return 'هیچ';
+			case 'exist': return 'بوونی هەیە';
+			case 'prompt': return 'داواکاری:';
+			case 'localSecurityTip1': return '1. ڕەسەنایەتی ئاسایشی ناوخۆیی بەکاردێت بۆ پشتڕاستکردنەوەی ناسنامە لە کاتی هەندێک کارە هەستیارەکاندا. مەبەست لێی ڕێگریکردنە لە کۆنترۆڵکردنی ئامێرەکە لەلایەن کەسانی ترەوە و دڵنیابوونە لە ئاسایشی ئەکاونتەکە.';
+			case 'localSecurityTip2': return '2. قوفڵی نەخش چارەسەرێکی تەواوکەرە کاتێک قوفڵی ئامێرەکە پشتگیری نەکراوە یان ناگونجێت. بەگشتی، پێویست ناکات قوفڵی نەخش دابنرێت کاتێک قوفڵی ئامێرەکە بەردەستە.';
+			case 'localSecurityTip3': return '3. کاتێک قفڵی نەخشەکەت لەبیرکرا، تەنها دەتوانیت داتاکانی ئەپەکە پاک بکەیتەوە یان ئەپەکە دووبارە دابمەزرێنیتەوە بۆ پاککردنەوەی.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'خەریکە ڕەسەنایەتی ئامێر بانگ دەکرێت. ئەگەر هەڵەیەک یان ئیستسناء ڕوویدا، تکایە بچۆ بۆ هەڵبژاردەی "${localSecurity}" لە لاپەڕەی "${menu}" بۆ تاقیکردنەوە و ڕێکخستنەکانی زیاتر.';
+			case 'pleaseDrawUnlockPattern': return 'تکایە نەخشی کردنەوەی قفڵەکە بکێشە';
+			case 'addPatternLock': return 'زیادکردنی قفڵی نەخش';
+			case 'cannotBeLessThan8Dots': return 'ناتوانرێت لە ٨ خاڵ کەمتر بێت';
+			case 'pleaseRepeatThePattern': return 'تکایە جارێکی تر نەخشەکە دووبارە بکەرەوە';
+			case 'notMatchFirstValidPattern': return 'لەگەڵ یەکەم نەخشی وێنەکێشانی دروستدا ناگونجێت';
+			case 'deletePatternLock': return 'قفڵی نەخش بسڕەوە';
+			case 'notMatchExistingPattern': return 'لەگەڵ نەخشێکی هەبوودا ناگونجێت';
+			case 'localAuthentication': return 'ڕەسەنایەتی ناوخۆیی';
 			default: return null;
 		}
 	}
@@ -15417,13 +18245,13 @@ extension on _StringsDe {
 			case 'tempDepositAddressTip4': return '(4) Wenn Sie andere Arten von Vermögenswerten einzahlen möchten, wechseln Sie bitte auf die entsprechende Währungsseite und die Parameteroptionen, um eine neue Adresse zu beantragen.';
 			case 'applyExtensionOfValidity': return 'Antrag auf Verlängerung der Gültigkeitsdauer';
 			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-				const TextSpan(text: 'Diese Adresse läuft nach '),
+				const TextSpan(text: 'Diese Adresse läuft in '),
 				diff,
-				const TextSpan(text: ' ab und ist '),
+				const TextSpan(text: ' ab. Sie können die Gültigkeitsdauer innerhalb von 6 Stunden vor Ablauf '),
 				tap('manuell verlängern'),
-				const TextSpan(text: ' für 12 Stunden vor Ablauf gültig.'),
+				const TextSpan(text: '.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Kann nur 12 Stunden im Voraus verlängert werden';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'Kann nur innerhalb von 6 Stunden im Voraus verlängert werden';
 			case 'theReceivingAddressValidForLongtime': return 'Diese Adresse ist für eine lange Zeit gültig.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'Diese Sammeladresse ist lange Zeit gültig und wird automatisch in Echtzeit gutgeschrieben.';
 			case 'confirmDeposited': return 'Bestätigung der Hinterlegung';
@@ -15683,7 +18511,7 @@ extension on _StringsDe {
 			case 'referrerIdDoesNotExist': return 'Referrer ID existiert nicht!';
 			case 'didIsIncorrectOrInvalid': return 'Die DID ist falsch oder ungültig!';
 			case 'accessTokenIsIncorrectOrInvalid': return 'Der accessToken ist falsch oder ungültig!';
-			case 'minimumWithdrawalAmountIs9USD': return 'Mindestens 9USD für eine einzelne Abhebung';
+			case 'minimumWithdrawalAmountIs1USD': return 'Mindestens 1USD für eine einzelne Abhebung';
 			case 'miningTimeIsNotYet': return 'Es ist noch nicht an der Zeit, Bergbau zu betreiben.';
 			case 'alreadyExists_pleaseDoNotRepeatedly': return 'Bereits vorhanden, bitte nicht erneut hinzufügen!';
 			case 'registrationNumberCannotBeUsedAsAccessNumber': return 'Registrierungsnummer kann nicht als Zugangsnummer für die Authentifizierung verwendet werden';
@@ -15771,6 +18599,38 @@ extension on _StringsDe {
 			case 'enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted': return 'Bitte geben Sie die zugehörige Handynummer ein. Die Landesvorwahl kann weggelassen werden.';
 			case 'mobileNumberForNameIsIncorrect': return ({required Object name}) => 'Die Handynummer von ${name} ist falsch';
 			case 'matchingVerificationStrategyIs': return 'Die passende Verifizierungsstrategie ist:';
+			case 'balanceGreater3ICP_noNeedPourFuel': return 'Der Saldo ist größer als 3 ICP, es muss derzeit kein Kraftstoff nachgefüllt werden.';
+			case 'escrowAccount': return 'Treuhandkonto';
+			case 'fuelRelay': return 'Kraftstoffrelais';
+			case 'pourFuel': return 'Kraftstoff einfüllen';
+			case 'fuelState': return 'Kraftstoffzustand';
+			case 'pouringFuelTips': return 'Das Einfüllen von Kraftstoff bringt Ihnen weder Vorteile noch Nachteile, sein Zweck besteht darin, das Delta-Systemerlebnis zu bereichern.';
+			case 'sponsorDevelopersByWatchingAds': return 'Sponsern Sie Entwickler, indem Sie sich Werbung ansehen';
+			case 'status': return 'Status';
+			case 'date': return 'Datum';
+			case 'assetApplicationIsInProgressTip': return 'Asset-Anwendung läuft, bitte versuchen Sie es in 3 Sekunden erneut.';
+			case 'delete': return 'Löschen';
+			case 'deleteVerifierTip': return 'Wenn die Berechtigungen eines Prüfers gelöscht werden, werden gleichzeitig alle zugehörigen Punktedaten gelöscht. Die bereits erhaltenen Belohnungen bleiben jedoch davon unberührt.';
+			case 'deleteVerifierStatusTip': return 'Bitte setzen Sie es vor dem Löschen in den pausierten Zustand.';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Bitte geben Sie zur Bestätigung "${text}" ein.';
+			case 'localSecurity': return 'Lokale Sicherheit';
+			case 'deviceLock': return 'Gerätesperre';
+			case 'patternLock': return 'Mustersperre';
+			case 'none': return 'keine';
+			case 'exist': return 'existiert';
+			case 'prompt': return 'Eingabeaufforderung:';
+			case 'localSecurityTip1': return '1. Die lokale Sicherheitsauthentifizierung wird zur Bestätigung der Identität bei einigen sensiblen Vorgängen verwendet. Ihr Zweck besteht darin, die Kontrolle des Geräts durch Dritte zu verhindern und die Sicherheit des Kontos zu gewährleisten.';
+			case 'localSecurityTip2': return '2. Die Mustersperre ist eine ergänzende Lösung, wenn die Gerätesperre nicht unterstützt wird oder inkompatibel ist. Im Allgemeinen ist es nicht notwendig, eine Mustersperre einzurichten, wenn die Gerätesperre verfügbar ist.';
+			case 'localSecurityTip3': return '3. Wenn Sie Ihr Sperrmuster vergessen haben, können Sie nur die App-Daten löschen oder die App neu installieren, um sie zu löschen.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'Die Geräteauthentifizierung wird aufgerufen. Wenn ein Fehler oder eine Ausnahme auftritt, gehen Sie zum Testen und für weitere Einstellungen zur Option "${localSecurity}" auf der Seite "${menu}".';
+			case 'pleaseDrawUnlockPattern': return 'Bitte zeichnen Sie das Entsperrmuster';
+			case 'addPatternLock': return 'Mustersperre hinzufügen';
+			case 'cannotBeLessThan8Dots': return 'Kann nicht weniger als 8 Punkte sein';
+			case 'pleaseRepeatThePattern': return 'Bitte wiederholen Sie das Muster erneut';
+			case 'notMatchFirstValidPattern': return 'Entspricht nicht dem ersten gültigen Zeichenmuster';
+			case 'deletePatternLock': return 'Mustersperre löschen';
+			case 'notMatchExistingPattern': return 'Entspricht keinem vorhandenen Muster';
+			case 'localAuthentication': return 'Lokale Authentifizierung';
 			default: return null;
 		}
 	}
@@ -16080,13 +18940,13 @@ extension on _StringsEl {
 			case 'tempDepositAddressTip4': return '4. Εάν πρέπει να καταθέσετε άλλα είδη περιουσιακών στοιχείων, μεταβείτε στη σελίδα με το αντίστοιχο νόμισμα και τις επιλογές παραμέτρων για να υποβάλετε αίτηση για νέα διεύθυνση.';
 			case 'applyExtensionOfValidity': return 'Αίτηση για παράταση της περιόδου ισχύος';
 			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-				const TextSpan(text: 'Αυτή η διεύθυνση θα λήξει μετά από '),
+				const TextSpan(text: 'Αυτή η διεύθυνση θα λήξει σε '),
 				diff,
-				const TextSpan(text: ' και θα είναι '),
-				tap('manually extend'),
-				const TextSpan(text: ' έγκυρη για 12 ώρες πριν τη λήξη.'),
+				const TextSpan(text: '. Μπορείτε να '),
+				tap('μη αυτόματη επέκταση'),
+				const TextSpan(text: ' την περίοδο ισχύος εντός 6 ωρών πριν από τη λήξη.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Μπορεί να ανανεωθεί μόνο 12 ώρες νωρίτερα';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'Μπορεί να ανανεωθεί μόνο εντός 6 ωρών νωρίτερα';
 			case 'theReceivingAddressValidForLongtime': return 'Αυτή η διεύθυνση ισχύει για μεγάλο χρονικό διάστημα.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'Αυτή η διεύθυνση συλλογής ισχύει για μεγάλο χρονικό διάστημα και πιστώνεται αυτόματα σε πραγματικό χρόνο.';
 			case 'confirmDeposited': return 'Επιβεβαίωση της κατάθεσης';
@@ -16346,7 +19206,7 @@ extension on _StringsEl {
 			case 'referrerIdDoesNotExist': return 'Το αναγνωριστικό παραπομπής δεν υπάρχει!';
 			case 'didIsIncorrectOrInvalid': return 'Το DID είναι λανθασμένο ή άκυρο!';
 			case 'accessTokenIsIncorrectOrInvalid': return 'Το accessToken είναι λανθασμένο ή άκυρο!';
-			case 'minimumWithdrawalAmountIs9USD': return 'Ελάχιστο 9USD για μία μόνο ανάληψη';
+			case 'minimumWithdrawalAmountIs1USD': return 'Ελάχιστο 1USD για μία μόνο ανάληψη';
 			case 'miningTimeIsNotYet': return 'Δεν ήρθε ακόμα η ώρα να ορυχτείς.';
 			case 'alreadyExists_pleaseDoNotRepeatedly': return 'Υπάρχει ήδη, παρακαλώ μην το προσθέσετε ξανά!';
 			case 'registrationNumberCannotBeUsedAsAccessNumber': return 'Δεν είναι δυνατή η χρήση του αριθμού εγγραφής ως αριθμού πρόσβασης για έλεγχο ταυτότητας';
@@ -16434,6 +19294,38 @@ extension on _StringsEl {
 			case 'enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted': return 'Παρακαλώ εισάγετε τον αντίστοιχο αριθμό κινητού τηλεφώνου. Ο κωδικός χώρας μπορεί να παραλειφθεί.';
 			case 'mobileNumberForNameIsIncorrect': return ({required Object name}) => 'Ο αριθμός κινητού του ${name} δεν είναι σωστός';
 			case 'matchingVerificationStrategyIs': return 'Η αντίστοιχη στρατηγική επαλήθευσης είναι:';
+			case 'balanceGreater3ICP_noNeedPourFuel': return 'Το υπόλοιπο είναι μεγαλύτερο από 3 ICP, δεν χρειάζεται να χύσετε καύσιμο προς το παρόν.';
+			case 'escrowAccount': return 'Escrow Account';
+			case 'fuelRelay': return 'Fuel Relay';
+			case 'pourFuel': return 'Pour fuel';
+			case 'fuelState': return 'Κατάσταση καυσίμου';
+			case 'pouringFuelTips': return 'Η έκχυση καυσίμου δεν σας φέρνει πλεονεκτήματα ή μειονεκτήματα, σκοπός της είναι να εμπλουτίσει την εμπειρία του συστήματος Delta.';
+			case 'sponsorDevelopersByWatchingAds': return 'Χορηγός προγραμματιστών παρακολουθώντας διαφημίσεις';
+			case 'status': return 'status';
+			case 'date': return 'ημερομηνία';
+			case 'assetApplicationIsInProgressTip': return 'Αίτηση στοιχείου σε εξέλιξη, δοκιμάστε ξανά σε 3 δευτερόλεπτα.';
+			case 'delete': return 'Delete';
+			case 'deleteVerifierTip': return 'Κατά τη διαγραφή των αδειών ενός επαληθευτή, όλα τα σχετικά δεδομένα βαθμολογίας θα διαγραφούν ταυτόχρονα, αλλά οι ανταμοιβές που έχουν ήδη ληφθεί δεν θα επηρεαστούν.';
+			case 'deleteVerifierStatusTip': return 'Ρυθμίστε το σε κατάσταση παύσης πριν από τη διαγραφή';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Παρακαλώ εισάγετε "${text}", για επιβεβαίωση';
+			case 'localSecurity': return 'Τοπική ασφάλεια';
+			case 'deviceLock': return 'Κλείδωμα συσκευής';
+			case 'patternLock': return 'Κλείδωμα μοτίβου';
+			case 'none': return 'κανένας';
+			case 'exist': return 'υπάρχει';
+			case 'prompt': return 'Prompt:';
+			case 'localSecurityTip1': return '1. Ο τοπικός έλεγχος ταυτότητας ασφαλείας χρησιμοποιείται για την επιβεβαίωση της ταυτότητας κατά τη διάρκεια ορισμένων ευαίσθητων λειτουργιών. Σκοπός του είναι να αποτρέψει τον έλεγχο της συσκευής από άλλους και να διασφαλίσει την ασφάλεια του λογαριασμού.';
+			case 'localSecurityTip2': return '2. Το κλείδωμα μοτίβου είναι μια συμπληρωματική λύση όταν το κλείδωμα της συσκευής δεν υποστηρίζεται ή δεν είναι συμβατό. Γενικά, δεν χρειάζεται να ορίσετε ένα κλείδωμα μοτίβου όταν το κλείδωμα της συσκευής είναι διαθέσιμο.';
+			case 'localSecurityTip3': return '3. Όταν το κλείδωμα μοτίβου σας ξεχαστεί, μπορείτε μόνο να διαγράψετε τα δεδομένα της εφαρμογής ή να εγκαταστήσετε ξανά την εφαρμογή για να το διαγράψετε.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'Ο έλεγχος ταυτότητας συσκευής πρόκειται να κληθεί. Εάν παρουσιαστεί σφάλμα ή εξαίρεση, μεταβείτε στην επιλογή "${localSecurity}" στη σελίδα "${menu}" για δοκιμή και περαιτέρω ρυθμίσεις.';
+			case 'pleaseDrawUnlockPattern': return 'Σχεδιάστε το μοτίβο ξεκλειδώματος';
+			case 'addPatternLock': return 'Προσθήκη κλειδώματος μοτίβου';
+			case 'cannotBeLessThan8Dots': return 'Δεν μπορεί να είναι μικρότερη από 8 τελείες';
+			case 'pleaseRepeatThePattern': return 'Παρακαλώ επαναλάβετε το μοτίβο ξανά';
+			case 'notMatchFirstValidPattern': return 'Δεν ταιριάζει με το πρώτο έγκυρο μοτίβο σχεδίασης';
+			case 'deletePatternLock': return 'Διαγραφή κλειδώματος μοτίβου';
+			case 'notMatchExistingPattern': return 'Δεν ταιριάζει με ένα υπάρχον μοτίβο';
+			case 'localAuthentication': return 'Τοπικός έλεγχος ταυτότητας';
 			default: return null;
 		}
 	}
@@ -16743,13 +19635,13 @@ extension on _StringsEs {
 			case 'tempDepositAddressTip4': return '4. Si necesita depositar otros tipos de activos, cambie a la página de la divisa correspondiente y parametrice las opciones para solicitar una nueva dirección.';
 			case 'applyExtensionOfValidity': return 'Solicitud de prórroga';
 			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-				const TextSpan(text: 'Esta dirección expirará después de '),
+				const TextSpan(text: 'Esta dirección caducará en '),
 				diff,
-				const TextSpan(text: ' y será '),
+				const TextSpan(text: '. También puede usar '),
 				tap('manually extend'),
-				const TextSpan(text: ' válida durante 12 horas antes de expirar.'),
+				const TextSpan(text: ' el período de validez dentro de las 6 horas previas al vencimiento.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Sólo puede renovarse con 12 horas de antelación';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'Solo se puede renovar con 6 horas de antelación';
 			case 'theReceivingAddressValidForLongtime': return 'Esta dirección es válida durante mucho tiempo.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'Esta dirección de cobro es válida durante mucho tiempo y se abona automáticamente en tiempo real.';
 			case 'confirmDeposited': return 'Confirmación del depósito';
@@ -17009,7 +19901,7 @@ extension on _StringsEs {
 			case 'referrerIdDoesNotExist': return 'El ID de referencia no existe.';
 			case 'didIsIncorrectOrInvalid': return 'El DID es incorrecto o inválido.';
 			case 'accessTokenIsIncorrectOrInvalid': return 'El accessToken es incorrecto o inválido.';
-			case 'minimumWithdrawalAmountIs9USD': return 'Mínimo 9USD para una sola retirada';
+			case 'minimumWithdrawalAmountIs1USD': return 'Mínimo 1USD para una sola retirada';
 			case 'miningTimeIsNotYet': return 'Aún no es hora de minar.';
 			case 'alreadyExists_pleaseDoNotRepeatedly': return 'Ya existe, ¡por favor no lo añada de nuevo!';
 			case 'registrationNumberCannotBeUsedAsAccessNumber': return 'No se puede utilizar el número de registro como número de acceso de autenticación';
@@ -17050,7 +19942,7 @@ extension on _StringsEs {
 			case 'foundNewVersion': return 'Descubra la nueva versión:';
 			case 'upgradeLink': return 'Enlace de actualización:';
 			case 'deviceDescription': return 'Descripción del equipamiento.';
-			case 'notification30SecondsBeforeMiningStops': return 'Εκτελέστε υπενθύμιση ειδοποίησης 30 δευτερόλεπτα πριν σταματήσει η εξόρυξη!';
+			case 'notification30SecondsBeforeMiningStops': return 'Ejecutar recordatorio de notificación 30 segundos antes de que se detenga la extracción!';
 			case 'goMining': return 'Ir a minar';
 			case 'deltaMiningReminder': return 'Recordatorio de minería Delta';
 			case 'clickToMine_miningIsAboutToStop': return '¡Haga clic aquí para minar, la minería se detendrá pronto!';
@@ -17098,6 +19990,38 @@ extension on _StringsEs {
 			case 'enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted': return 'Por favor, introduzca el número de móvil asociado. El código de país puede omitirse.';
 			case 'mobileNumberForNameIsIncorrect': return ({required Object name}) => 'El número de móvil de ${name} es incorrecto';
 			case 'matchingVerificationStrategyIs': return 'La estrategia de verificación de coincidencia es:';
+			case 'balanceGreater3ICP_noNeedPourFuel': return 'El saldo es mayor a 3 ICP, no es necesario agregar combustible por ahora.';
+			case 'escrowAccount': return 'Cuenta de depósito en garantía';
+			case 'fuelRelay': return 'Relé de combustible';
+			case 'pourFuel': return 'Vierte combustible';
+			case 'fuelState': return 'Estado del combustible';
+			case 'pouringFuelTips': return 'Verter combustible no aporta ninguna ventaja ni desventaja, su propósito es enriquecer la experiencia del sistema Delta';
+			case 'sponsorDevelopersByWatchingAds': return 'Patrocina a desarrolladores viendo anuncios';
+			case 'status': return 'Estado';
+			case 'date': return 'Fecha';
+			case 'assetApplicationIsInProgressTip': return 'Solicitud de activo en proceso, inténtelo de nuevo en 3 segundos.';
+			case 'delete': return 'Eliminar';
+			case 'deleteVerifierTip': return 'Al eliminar los permisos de un verificador, se eliminarán simultáneamente todos los datos de puntuación relacionados, pero las recompensas ya obtenidas no se verán afectadas.';
+			case 'deleteVerifierStatusTip': return 'Por favor, ponlo en pausa antes de eliminarlo';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Por favor, introduzca "${text}", para confirmar';
+			case 'localSecurity': return 'Seguridad local';
+			case 'deviceLock': return 'Bloqueo del dispositivo';
+			case 'patternLock': return 'Bloqueo de patrón';
+			case 'none': return 'ninguno';
+			case 'exist': return 'existe';
+			case 'prompt': return 'Mensaje:';
+			case 'localSecurityTip1': return '1. La autenticación de seguridad local se utiliza para confirmar la identidad durante ciertas operaciones sensibles. Su propósito es evitar que otros controlen el dispositivo y garantizar la seguridad de la cuenta.';
+			case 'localSecurityTip2': return '2. El bloqueo de patrón es una solución complementaria cuando el bloqueo del dispositivo no es compatible. Generalmente, no es necesario configurar un bloqueo de patrón cuando el bloqueo del dispositivo está disponible.';
+			case 'localSecurityTip3': return '3. Si olvidas tu patrón de bloqueo, solo puedes borrar los datos de la aplicación o reinstalarla para borrarlo.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'Se está a punto de ejecutar la autenticación del dispositivo. Si se produce un error o una excepción, acceda a la opción "${localSecurity}" en la página "${menu}" para realizar pruebas y realizar más configuraciones.';
+			case 'pleaseDrawUnlockPattern': return 'Por favor, dibuja el patrón de desbloqueo';
+			case 'addPatternLock': return 'Añadir patrón de bloqueo';
+			case 'cannotBeLessThan8Dots': return 'No puede ser menor a 8 puntos';
+			case 'pleaseRepeatThePattern': return 'Por favor, repita el patrón de nuevo';
+			case 'notMatchFirstValidPattern': return 'No coincide con el primer patrón de dibujo válido';
+			case 'deletePatternLock': return 'Eliminar bloqueo de patrón';
+			case 'notMatchExistingPattern': return 'No coincide con ningún patrón existente';
+			case 'localAuthentication': return 'Autenticación local';
 			default: return null;
 		}
 	}
@@ -17407,13 +20331,13 @@ extension on _StringsFr {
 			case 'tempDepositAddressTip4': return '4) Si vous devez déposer d\'autres types d\'actifs, veuillez passer à la page de la devise correspondante et aux options de paramètres pour demander une nouvelle adresse.';
 			case 'applyExtensionOfValidity': return 'Demande de prolongation de la période de validité';
 			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-				const TextSpan(text: 'Cette adresse expirera après '),
+				const TextSpan(text: 'Cette adresse expirera dans '),
 				diff,
-				const TextSpan(text: ' et sera '),
+				const TextSpan(text: '. Vous pouvez '),
 				tap('manually extend'),
-				const TextSpan(text: ' valide pendant 12 heures avant l\'expiration.'),
+				const TextSpan(text: ' prolonger la période de validité dans les 6 heures avant l\'expiration.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Le renouvellement ne peut se faire que 12 heures à l\'avance';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'Ne peut être renouvelé que dans les 6 heures à l\'avance';
 			case 'theReceivingAddressValidForLongtime': return 'Cette adresse est valable pour une longue période.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'Cette adresse de collecte est valable pour une longue durée et est automatiquement créditée en temps réel.';
 			case 'confirmDeposited': return 'Confirmation des dépôts';
@@ -17673,7 +20597,7 @@ extension on _StringsFr {
 			case 'referrerIdDoesNotExist': return 'L\'ID du référent n\'existe pas !';
 			case 'didIsIncorrectOrInvalid': return 'La DID est incorrecte ou invalide !';
 			case 'accessTokenIsIncorrectOrInvalid': return 'Le code d\'accès est incorrect ou invalide !';
-			case 'minimumWithdrawalAmountIs9USD': return 'Minimum 9USD pour un retrait unique';
+			case 'minimumWithdrawalAmountIs1USD': return 'Minimum 1USD pour un retrait unique';
 			case 'miningTimeIsNotYet': return 'Il n\'est pas encore temps de miner.';
 			case 'alreadyExists_pleaseDoNotRepeatedly': return 'Existe déjà, ne l\'ajoutez pas à nouveau !';
 			case 'registrationNumberCannotBeUsedAsAccessNumber': return 'Impossible d\'utiliser le numéro d\'enregistrement comme numéro d\'accès à l\'authentification';
@@ -17762,6 +20686,730 @@ extension on _StringsFr {
 			case 'enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted': return 'Veuillez saisir le numéro de téléphone mobile associé. L\'indicatif du pays peut être omis.';
 			case 'mobileNumberForNameIsIncorrect': return ({required Object name}) => 'Le numéro de téléphone portable de ${name} est incorrect';
 			case 'matchingVerificationStrategyIs': return 'La stratégie de vérification correspondante est: ';
+			case 'balanceGreater3ICP_noNeedPourFuel': return 'Le solde est supérieur à 3 ICP, pas besoin de verser de carburant pour le moment.';
+			case 'escrowAccount': return 'Compte séquestre';
+			case 'fuelRelay': return 'Relais de carburant';
+			case 'pourFuel': return 'Verser du carburant';
+			case 'fuelState': return 'État du carburant';
+			case 'pouringFuelTips': return 'Verser du carburant ne vous apporte aucun avantage ni inconvénient, son but est d\'enrichir l\'expérience du système Delta.';
+			case 'sponsorDevelopersByWatchingAds': return 'Sponsorisez des développeurs en regardant des publicités';
+			case 'status': return 'Statut';
+			case 'date': return 'Date';
+			case 'assetApplicationIsInProgressTip': return 'Demande d\'asset en cours, veuillez réessayer dans 3 secondes.';
+			case 'delete': return 'Supprimer';
+			case 'deleteVerifierTip': return 'Lors de la suppression des autorisations d\'un vérificateur, toutes les données de score associées seront supprimées en même temps, mais les récompenses déjà obtenues ne seront pas affectées.';
+			case 'deleteVerifierStatusTip': return 'Veuillez le mettre en pause avant de le supprimer';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Veuillez saisir "${text}" pour confirmer';
+			case 'localSecurity': return 'Sécurité locale';
+			case 'deviceLock': return 'Verrouillage de l\'appareil';
+			case 'patternLock': return 'Verrouillage par motif';
+			case 'none': return 'aucun';
+			case 'exist': return 'existe';
+			case 'prompt': return 'Invite :';
+			case 'localSecurityTip1': return '1. L\'authentification de sécurité locale permet de confirmer l\'identité lors de certaines opérations sensibles. Elle vise à empêcher le contrôle de l\'appareil par d\'autres et à garantir la sécurité du compte. ';
+			case 'localSecurityTip2': return '2. Le verrouillage par schéma est une solution complémentaire lorsque le verrouillage de l\'appareil n\'est pas pris en charge ou incompatible. En général, il n\'est pas nécessaire de définir un verrouillage par schéma lorsque le verrouillage de l\'appareil est disponible.';
+			case 'localSecurityTip3': return '3. Lorsque votre schéma de verrouillage est oublié, vous pouvez uniquement effacer les données de l\'application ou réinstaller l\'application pour l\'effacer.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'L\'authentification de l\'appareil est sur le point d\'être appelée. En cas d\'erreur ou d\'exception, accédez à l\'option « ${localSecurity} » de la page « ${menu} » pour effectuer des tests et des réglages supplémentaires.';
+			case 'pleaseDrawUnlockPattern': return 'Veuillez dessiner le schéma de déverrouillage';
+			case 'addPatternLock': return 'Ajouter un verrouillage par motif';
+			case 'cannotBeLessThan8Dots': return 'Ne peut pas être inférieur à 8 points';
+			case 'pleaseRepeatThePattern': return 'Veuillez répéter le modèle à nouveau';
+			case 'notMatchFirstValidPattern': return 'Ne correspond pas au premier modèle de dessin valide';
+			case 'deletePatternLock': return 'Supprimer le verrouillage par motif';
+			case 'notMatchExistingPattern': return 'Ne correspond pas à un modèle existant';
+			case 'localAuthentication': return 'Authentification locale';
+			default: return null;
+		}
+	}
+}
+
+extension on _StringsHi {
+	dynamic _flatMapFunction(String path) {
+		switch (path) {
+			case 'home': return 'होम';
+			case 'switchLanguage': return 'भाषा बदलें';
+			case 'languageSwitch': return 'भाषा बदलें';
+			case 'slogan': return 'डेल्टा में एक विकेन्द्रीकृत आर्थिक क्षेत्र बनाएं';
+			case 'countryRegionCode': return 'देश कोड';
+			case 'countryRegionSelection': return 'देश चुनें';
+			case 'nextStep': return 'अगला चरण';
+			case 'yourPhoneNumber': return 'आपका फ़ोन नंबर';
+			case 'pleaseSelectCountryAndRegion': return 'कृपया अपना देश चुनें';
+			case 'pleaseEnterPhoneNumber': return 'कृपया एक मान्य फ़ोन नंबर दर्ज करें!';
+			case 'referrerDid': return 'रेफ़रर DID';
+			case 'pleaseEnterTheReferrersDid': return 'कृपया मान्य रेफ़रर DID दर्ज करें!';
+			case 'thisDidIsInvalid': return 'यह DID अमान्य है';
+			case 'nicknameFormatTips': return 'उपनाम खाली नहीं हो सकता और इसकी लंबाई 16 अक्षरों से अधिक नहीं हो सकती';
+			case 'additionalIinformation': return 'अतिरिक्त जानकारी';
+			case 'invitationSubject': return 'डेल्टा सर्वसम्मति निर्माण में भाग लेने के लिए आपको आमंत्रित किया जाता है';
+			case 'invitationLetter': return ({required Object did}) => 'नमस्ते, मैं डेल्टा सर्वसम्मति निर्माण में भाग ले रहा हूँ! डेल्टा एक ओपन-सोर्स नया डिजिटल मनी प्लेटफ़ॉर्म है, जो इंटरनेट कंप्यूटर (ICP) पर चलता है। यह पासवर्ड, निजी कुंजी, या निमोनिक्स के बिना विभिन्न डिजिटल मुद्राओं को प्रबंधित और उपयोग कर सकता है। कृपया इस लिंक पर क्लिक करें: https://delta.kim/auto/download डेल्टा एप्लिकेशन इंस्टॉल करने के लिए। अब हम आपको सर्वसम्मति बनाने और सिक्के मिंट करने के लिए आमंत्रित करते हैं।\n रेफ़रर DID: ${did}';
+			case 'dSMSverification': return 'डिसेंट्रलाइज्ड SMS/dSMS सत्यापन';
+			case 'getAccessNumbers': return 'एक्सेस नंबर प्राप्त करें';
+			case 'getAccessNumberPromptMessage': return 'नीचे दिए गए \'प्राप्त करें\' बटन पर क्लिक करें ताकि कतार में क्रमशः dSMS सत्यापन एक्सेस नंबरों के समूह का चयन किया जा सके।';
+			case 'optionalAccessNumbers': return 'वैकल्पिक एक्सेस नंबर';
+			case 'accessNumber': return 'एक्सेस नंबर';
+			case 'TELCO': return 'टेल्को/देश सूची';
+			case 'score': return 'स्कोर';
+			case 'checkAccessNumberTip': return ({required num n, required InlineSpan Function(num) nBuilder, required InlineSpanBuilder span}) => RichPluralResolvers.bridge(
+				n: n,
+				resolver: _root.$meta.cardinalResolver ?? PluralResolvers.cardinal('hi'),
+				one: () => TextSpan(children: [
+					nBuilder(n),
+					const TextSpan(text: ' एक्सेस नंबर जांचें और अगले चरण पर जाने के लिए "'),
+					span('text'),
+					const TextSpan(text: '" बटन पर क्लिक करें।'),
+				]),
+				other: () => TextSpan(children: [
+					nBuilder(n),
+					const TextSpan(text: ' एक्सेस नंबरों की जांच करें और अगले चरण पर जाने के लिए "'),
+					span('text'),
+					const TextSpan(text: '" बटन पर क्लिक करें।'),
+				]),
+			);
+			case 'whatIsDeltaDesc': return 'डेल्टा एक ओपन-सोर्स विकेन्द्रीकृत वैश्विक डिजिटल मुद्रा प्रयोगात्मक परियोजना और मुद्रा अनुप्रयोग पारिस्थितिकी तंत्र है।';
+			case 'deltaGoalsDesc': return 'हमारा लक्ष्य है कि लोग डेल्टा का उपयोग करके एक सार्वभौमिक, निष्पक्ष, सुरक्षित, तेज़ और पर्यावरण-अनुकूल नई डिजिटल मुद्रा का सामूहिक रूप से निर्माण करें। साथ ही, इन डिजिटल मुद्राओं और पिछली क्रिप्टोकरेंसी के लिए विभिन्न प्रभावी अनुप्रयोग परिदृश्य प्रदान करें।';
+			case 'details': return 'विवरण';
+			case 'get': return 'प्राप्त करें';
+			case 'select': return 'चुनें';
+			case 'send': return 'संदेश भेजें';
+			case 'complete': return 'पूरा करें';
+			case 'selectedAccessNumberPrompt': return 'चयन किए जाने पर, पूरा एक्सेस नंबर प्रदर्शित होता है और एक प्रमाणीकरण स्ट्रिंग उत्पन्न होती है।';
+			case 'location': return 'लोकेशन';
+			case 'verificationString': return 'सत्यापन स्ट्रिंग';
+			case 'sendVerificationStringDesc': return ({required InlineSpan num, required InlineSpan accessNumber, required InlineSpan label}) => TextSpan(children: [
+				const TextSpan(text: 'कृपया अपने फोन नंबर '),
+				num,
+				const TextSpan(text: ' का उपयोग करें, सत्यापन पूरा करने के लिए '),
+				accessNumber,
+				const TextSpan(text: ' पर '),
+				label,
+				const TextSpan(text: ' भेजें।'),
+			]);
+			case 'ihaveSentTheSMS': return 'मैंने एसएमएस भेज दिया है';
+			case 'validWithin6minutes': return ({required InlineSpan time}) => TextSpan(children: [
+				const TextSpan(text: 'सत्यापन स्ट्रिंग 6 मिनट के लिए मान्य है, शेष समय: '),
+				time,
+				const TextSpan(text: ' '),
+			]);
+			case 'tooFast_waitXsecondsContinuing': return ({required Object x}) => 'अति शीघ्र! जारी रखने से पहले ${x} सेकंड प्रतीक्षा करें।';
+			case 'waitingForVerificationSMS': return 'सत्यापन स्ट्रिंग की प्रतीक्षा हो रही है...';
+			case 'partSuccsForVerificationSMS': return 'एसएमएस सत्यापन आपके चुने गए एक्सेस टर्मिनल द्वारा पूरा हो गया है!';
+			case 'creatingAccessToken': return 'आपका एक्सेस टोकन बनाया जा रहा है।';
+			case 'intoDelta': return 'डेल्टा में प्रवेश करें!';
+			case 'deltaAccountIsLoggedIn': return 'आपका डेल्टा अकाउंट लॉग इन हो गया है।';
+			case 'iHavLoggedOut': return 'मैं लॉग आउट हो गया हूँ।';
+			case 'startTwoFactorVerification': return 'टू-फैक्टर सत्यापन शुरू करें।';
+			case 'securityCircleVerification': return 'सुरक्षा सर्कल सत्यापन';
+			case 'generateSecurityCode': return 'सुरक्षा कोड उत्पन्न करें';
+			case 'generateSecurityCodeHintText': return 'उत्पन्न सुरक्षा कोड आपके सुरक्षा सर्कल के किसी यादृच्छिक रूप से चुने गए सदस्य को भेजा जाएगा।';
+			case 'notSetSecurityCircleEnterPlaceholderTip': return 'आपने अभी तक सुरक्षा सर्कल सेट नहीं किया है, आपका अकाउंट बहुत असुरक्षित है। कृपया कोई भी 6-अंकीय प्लेसहोल्डर दर्ज करें और अगले चरण पर जाएं।';
+			case 'securityCodeHasBeenGenerated_ContactFriendsTip': return 'सुरक्षा कोड उत्पन्न हो गया है। कृपया निम्नलिखित रिश्तेदारों और मित्रों से संपर्क करें और उनसे सुरक्षा कोड निकालने के लिए कहें ताकि आप सत्यापन पूरा कर सकें। यह 30 मिनट तक मान्य है!';
+			case 'itGetSecurityCodeTip': return 'सुझाव: यह सदस्य डेल्टा ऐप -> मेनू -> \'सुरक्षा प्रदान करें\' पृष्ठ में आपके अकाउंट उपनाम को खोजेगा और सुरक्षा कोड प्राप्त करने के लिए डबल-क्लिक करेगा।';
+			case 'securityCircleMemberList': return 'सुरक्षा सर्कल सदस्य सूची:';
+			case 'selectA_friendToProvideSecurityCodeTip': return 'कृपया सदस्य सूची से किसी रिश्तेदार या मित्र का चयन करें, जो सुरक्षा कोड उत्पन्न कर आपको प्रदान करे, ताकि आपकी वास्तविक पहचान सत्यापित की जा सके। इसका उद्देश्य यह सुनिश्चित करना है कि मोबाइल नंबर खो जाने या चोरी हो जाने पर आपका अकाउंट किसी अन्य के नियंत्रण में न जाए।';
+			case 'formatIsXdigits': return ({required Object num}) => '${num} अंकों का फ़ॉर्मेट है';
+			case 'signInSuccessfully': return 'साइन इन सफल हुआ!';
+			case 'twoFAandLogin': return 'टू-फैक्टर सत्यापन और लॉगिन';
+			case 'verificationSuccessful': return 'सत्यापन सफल हुआ!';
+			case 'validationFailed': return 'सत्यापन विफल हुआ!';
+			case 'securityCircle': return 'सुरक्षा सर्कल';
+			case 'securityCode': return 'सुरक्षा कोड';
+			case 'provideSecurity': return 'सुरक्षा प्रदान करें';
+			case 'addManully': return 'मैन्युअली जोड़ें';
+			case 'addFromContacts': return 'संपर्कों से जोड़ें';
+			case 'addSecurityCircle': return 'सुरक्षा सर्कल जोड़ें';
+			case 'inputType': return 'इनपुट प्रकार';
+			case 'mobileNumber': return 'मोबाइल नंबर';
+			case 'did': return 'DID (डिजिटल पहचान कोड)';
+			case 'pleaseEnterValidDID': return 'कृपया एक वैध DID दर्ज करें';
+			case 'pleaseEnterValidWalletAddress': return 'कृपया एक वैध वॉलेट एड्रेस दर्ज करें';
+			case 'appellation': return 'उपाधि';
+			case 'appellationHint': return 'आप इसे क्या नाम देना चाहेंगे? जैसे "भाई"';
+			case 'addSecurityCircleTips': return 'कृपया सुरक्षा सर्कल में अविश्वसनीय लोगों को न जोड़ें।';
+			case 'referralTeam': return 'रेफरल टीम';
+			case 'profile': return 'प्रोफ़ाइल';
+			case 'menu': return 'मेनू';
+			case 'directly': return 'प्रत्‍यक्ष रूप से';
+			case 'indirectly': return 'अप्रत्‍यक्ष रूप से';
+			case 'inviteContacts': return 'संपर्कों को आमंत्रित करें';
+			case 'refereesAtFirstLevelDesc': return ({required InlineSpan nickname, required InlineSpan num1, required InlineSpan num2}) => TextSpan(children: [
+				const TextSpan(text: 'आपके रेफ़रर '),
+				nickname,
+				const TextSpan(text: ' हैं। आपने प्रत्‍यक्ष रूप से '),
+				num1,
+				const TextSpan(text: ' लोगों की सिफारिश की है, जिनमें से '),
+				num2,
+				const TextSpan(text: ' लोग वर्तमान में ऑनलाइन हैं।'),
+			]);
+			case 'refereesAtSecondLevelDesc': return ({required InlineSpan num1, required InlineSpan num2}) => TextSpan(children: [
+				const TextSpan(text: 'आपने अप्रत्यक्ष रूप से '),
+				num1,
+				const TextSpan(text: ' लोगों की सिफारिश की है, जिनमें से '),
+				num2,
+				const TextSpan(text: ' लोग वर्तमान में ऑनलाइन हैं।'),
+			]);
+			case 'invitationToBoostMiningDesc': return ({required InlineSpan rate1, required InlineSpan btn}) => TextSpan(children: [
+				const TextSpan(text: 'दोस्तों को डेल्टा से जुड़ने के लिए आमंत्रित करें और सामाजिक सहमति को बेहतर बनाएं। प्रत्येक प्रत्‍यक्ष रूप से अनुशंसित व्यक्ति की माइनिंग दर आधार दर के '),
+				rate1,
+				const TextSpan(text: ' से बढ़ जाती है। '),
+				btn,
+			]);
+			case 'invitationToBoostMiningDesc2': return ({required InlineSpan rate2}) => TextSpan(children: [
+				const TextSpan(text: 'दोस्तों को डेल्टा से जुड़ने के लिए आमंत्रित करें और सामाजिक सहमति को बेहतर बनाएं। प्रत्येक अप्रत्यक्ष रूप से अनुशंसित व्यक्ति की माइनिंग दर आधार दर के '),
+				rate2,
+				const TextSpan(text: ' से बढ़ जाती है।'),
+			]);
+			case 'areYouSureToRemove_x': return ({required Object name}) => 'क्या आप "${name}" को हटाना सुनिश्चित करते हैं?';
+			case 'safetyCircleRoleQ': return 'सुरक्षा सर्कल का कार्य क्या है?';
+			case 'safetyCircleRoleA': return 'यह संवेदनशील परिस्थितियों में द्वितीयक प्रमाणीकरण प्रदान करता है ताकि आपके खाते की सुरक्षा बनी रहे।';
+			case 'howSecurityCirclesWorkQ': return 'सुरक्षा सर्कल कैसे काम करता है?';
+			case 'howSecurityCirclesWorkA': return 'जब सुरक्षा सर्कल सत्यापन के लिए आवश्यक होता है, तो डेल्टा स्मार्ट कॉन्ट्रैक्ट प्रोग्राम यादृच्छिक रूप से सुरक्षा सर्कल मित्र सूची से एक सदस्य का चयन करेगा, जो आपको सुरक्षा कोड प्रदान करने में मदद करेगा ताकि आपकी पहचान की सुरक्षा पुष्टि हो सके। जब आप सदस्य से सुरक्षा कोड मांगते हैं, तो यह पुष्टि कर सकता है कि आप वास्तव में वही हैं। साथ ही, प्रोग्राम यह संकेत देगा: "यदि यह आप नहीं हैं, तो सुरक्षा कोड प्रदान करने से इनकार करें", ताकि आपके खाते की सुरक्षा बनी रहे। इसलिए, आपको हमेशा यह सुनिश्चित करना चाहिए कि आपके सुरक्षा सर्कल के सदस्य वे लोग हों जिन पर आप भरोसा कर सकते हैं।';
+			case 'securityCircleBeUsedQ': return 'आप इसे कब उपयोग करेंगे?';
+			case 'securityCircleBeUsedA1': return '1. जब आपका डेल्टा ऐप नियंत्रण से बाहर हो जाए, आमतौर पर यह तब होता है जब आपका मोबाइल फोन खो जाता है या चोरी हो जाता है।';
+			case 'securityCircleBeUsedA2': return '2. कुछ संवेदनशील प्रक्रियाओं के मामले में, डेल्टा स्मार्ट कॉन्ट्रैक्ट प्रोग्राम को यह पुष्टि करने की आवश्यकता होती है कि आप स्वयं अपना खाता एक्सेस कर रहे हैं, कोई और नहीं।';
+			case 'provideSafetyTip1': return 'जब आपका मित्र आपसे सुरक्षा कोड मांगे, तो कृपया सुनिश्चित करें कि वह वास्तव में खुद अकाउंट एक्सेस कर रहा है, कोई और नहीं है।';
+			case 'provideSafetyTip2': return 'आप उपरोक्त मित्रों के लिए सुरक्षा प्रदान कर रहे हैं। उन्होंने आपको सुरक्षा सर्कल में सबसे विश्वसनीय व्यक्ति के रूप में सेट किया है, और जब उनके खाते संवेदनशील प्रक्रियाओं का सामना करते हैं, तो आपको उनके लिए सुरक्षा पुष्टि प्रदान करनी होगी।';
+			case 'provideSafetyTip3': return 'जब आवश्यक हो, सुरक्षा कोड निकालने के लिए दूसरे व्यक्ति के प्रोफ़ाइल फोटो पर डबल-क्लिक करें।';
+			case 'doesNotSecurityCodeNeedsRetrieved': return 'दूसरे व्यक्ति के पास वर्तमान में कोई सुरक्षा कोड नहीं है जिसे प्राप्त करने की आवश्यकता हो!';
+			case 'existSecurityCodeTip': return 'कृपया सुनिश्चित करें कि जो रिश्तेदार या मित्र आपसे सुरक्षा कोड मांग रहा है, वह वास्तव में वही है। रिश्तेदार या मित्र की सुरक्षा सुनिश्चित करने के लिए, यदि वह स्वयं नहीं है, तो सुरक्षा कोड प्रदान करने से इनकार कर दें।';
+			case 'avatarSettings': return 'प्रोफ़ाइल फोटो सेटिंग्स';
+			case 'NFTAvatarPropertyRightsText': return 'अस्वीकरण: संबंधित NFT को प्रोफ़ाइल फोटो के रूप में उपयोग करना केवल व्यक्तिगत पसंद है और इसका NFT के बौद्धिक संपदा अधिकारों के स्वामित्व से कोई संबंध नहीं है।';
+			case 'projectWebsite': return 'प्रोजेक्ट वेबसाइट: ';
+			case 'whitepaper': return 'व्हाइटपेपर:';
+			case 'indexID': return 'सूचकांक आईडी';
+			case 'indexesRangeFromXtoY': return ({required Object start, required Object end}) => 'सूचकांक ${start} से ${end} तक हैं।';
+			case 'inputToLoadNFTAvatarTip': return 'अपने पसंदीदा NFT का सूचकांक आईडी दर्ज करें, और प्रोग्राम इसे स्वतः आपके प्रोफ़ाइल फोटो के रूप में लोड कर देगा।';
+			case 'miningRate': return 'माइनिंग दर';
+			case 'miningDetails': return 'माइनिंग विवरण';
+			case 'totalMiningRateEachDay': return ({required InlineSpan rate}) => TextSpan(children: [
+				const TextSpan(text: 'कुल माइनिंग दर: '),
+				rate,
+				const TextSpan(text: ' δ/दिन'),
+			]);
+			case 'EndOfMiningSession': return 'माइनिंग सत्र समाप्त हो चुका है।: ';
+			case 'tapToMineDeltaCoin': return 'डेल्टा कॉइन माइन करने के लिए टैप करें। ↑';
+			case 'clickToStartMining': return 'माइनिंग शुरू करने के लिए टैप करें!';
+			case 'miningHasStoppedPromptDesc': return 'माइनिंग रुक गई है, हर 24 घंटे का एक माइनिंग चक्र होता है। नई माइनिंग शुरू करने के लिए बिजली आइकन पर क्लिक करें। डेल्टा की माइनिंग एक वितरण तंत्र है, जो आपके डिवाइस की अतिरिक्त कंप्यूटिंग शक्ति और नेटवर्क ट्रैफिक का उपयोग नहीं करता।';
+			case 'aboutBaseRate': return 'बेस रेट के बारे में जानना चाहते हैं?';
+			case 'baseRateDescription': return 'व्हाइटपेपर में दिए गए समझौते के अनुसार, डेल्टा माइनिंग की बेसिक रेट घटाने की प्रक्रिया दो चरणों में विभाजित होगी| \nचरण 1: जब प्रतिभागियों (पंजीकरण) की संख्या 3000 या उससे कम होगी, तो दर 32δ/दिन होगी। इसे शुरुआती बिंदु मानते हुए, प्रत्येक बार जब प्रतिभागियों की संख्या 10 गुना बढ़ेगी, तो बेस रेट आधा कर दिया जाएगा। \nचरण 2: जब प्रतिभागियों की संख्या 30 मिलियन या उससे अधिक हो जाएगी, तो प्रत्येक बार जब संख्या 3 गुना बढ़ेगी, बेस रेट आधा हो जाएगा। यह तब तक जारी रहेगा जब तक कि पूरी आपूर्ति नहीं निकल जाती।';
+			case 'baseRate': return 'बेस रेट';
+			case 'directReferralRewards': return 'प्रत्यक्ष रेफरल पुरस्कार';
+			case 'directReferralRewardDesc': return 'प्रत्येक व्यक्ति जिसे आपने प्रत्यक्ष रूप से आमंत्रित किया है, जब वह माइनिंग स्थिति में होगा, तो आपकी माइनिंग दर बेस रेट के 1/3 से बढ़ जाएगी। \n\n इसके अलावा, आपके रेफ़रर की माइनिंग स्थिति भी आपके प्रत्यक्ष रेफरल पुरस्कार में शामिल की जाएगी।';
+			case 'indirectReferralRewards': return 'अप्रत्यक्ष रेफरल पुरस्कार';
+			case 'indirectReferralRewardDesc': return 'जब कोई अप्रत्यक्ष रेफ़रल माइनिंग स्थिति में होगा, तो आपकी माइनिंग दर बेस रेट के 1/10 से अतिरिक्त रूप से बढ़ जाएगी। \n\n आपकी प्रत्यक्ष रेफ़रल टीम और वे जिन लोगों को आमंत्रित करते हैं, वे आपके लिए अप्रत्यक्ष रेफ़रल माने जाएंगे।';
+			case 'mine': return 'माइन';
+			case 'thisMiningInformation': return 'यह माइनिंग जानकारी';
+			case 'participatedInMiningXtimes': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'कुल बार जब आपने माइनिंग में भाग लिया: '),
+				x,
+				const TextSpan(text: ' बार'),
+			]);
+			case 'totalIncomeThisTimeXDeltaCoins': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'इस बार की आय: '),
+				x,
+				const TextSpan(text: ' डेल्टा कॉइंस'),
+			]);
+			case 'basicIncomeXcoins': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'मूल आय: '),
+				x,
+				const TextSpan(text: ' डेल्टा कॉइंस'),
+			]);
+			case 'directTeamContributionXcoins': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'प्रत्यक्ष टीम योगदान: '),
+				x,
+				const TextSpan(text: ' डेल्टा कॉइंस'),
+			]);
+			case 'indirectTeamContributionXcoins': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'अप्रत्यक्ष टीम योगदान: '),
+				x,
+				const TextSpan(text: ' डेल्टा कॉइंस'),
+			]);
+			case 'timeIntervalFromLastMiningX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'पिछली माइनिंग दर से समय अंतराल: '),
+				x,
+			]);
+			case 'effectiveMiningTimeXhours': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'प्रभावी माइनिंग समय: '),
+				x,
+			]);
+			case 'xhours': return ({required Object x}) => '${x} घंटे';
+			case 'keep3_5peopleInTheSafetyCircleTip': return 'संपत्ति की सुरक्षा के लिए, आपको किसी भी समय अपने सुरक्षा सर्कल में 3-5 विश्वसनीय लोगों को रखना चाहिए।';
+			case 'index': return 'सूचकांक';
+			case 'amount': return 'राशि';
+			case 'balance': return 'बैलेंस';
+			case 'timeStamp': return 'टाइमस्टैम्प';
+			case 'summary': return 'सारांश';
+			case 'miningHasStopped': return 'माइनिंग रुक गई है।';
+			case 'miningHasStoppedDesc': return 'आपकी माइनिंग फिलहाल रुकी हुई है, और आप तुरंत आय अर्जित करना शुरू कर सकते हैं।';
+			case 'startMining': return 'माइनिंग शुरू करें';
+			case 'changeMobileNumber': return 'मोबाइल नंबर बदलें';
+			case 'currentMobileNumber': return 'वर्तमान मोबाइल नंबर';
+			case 'newMobileNumber': return 'नया मोबाइल नंबर';
+			case 'securityCodeFormatIs6digits': return 'सुरक्षा कोड का प्रारूप 6 अंकों का होना चाहिए!';
+			case 'startVrification': return 'सत्यापन शुरू करें';
+			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'यह मोबाइल नंबर पहले से मौजूद है और एक संबद्ध DID: ${dId} से जुड़ा हुआ है।}';
+			case 'noDataYet': return 'अभी तक कोई डेटा नहीं है';
+			case 'previousMobileNumber': return 'पिछला मोबाइल नंबर';
+			case 'changeLog': return 'परिवर्तन लॉग';
+			case 'referralLinkToShare': return 'साझा करने के लिए रेफ़रल लिंक';
+			case 'referrer': return 'रेफ़रर';
+			case 'isoCountryCode': return 'ISO देश कोड';
+			case 'avatarLogo': return 'प्रोफ़ाइल फ़ोटो प्रतीक चिन्ह';
+			case 'creationTime': return 'क्रिएशन टाइम';
+			case 'lastUpdate': return 'पिछला अपडेट';
+			case 'numberOfSecurityCircleMembers': return 'सुरक्षा सर्कल के सदस्यों की संख्या';
+			case 'theLatestMining': return 'हाल की माइनिंग';
+			case 'effectiveMiningDays': return 'प्रभावी माइनिंग दिन';
+			case 'modifyNickname': return 'उपनाम संशोधित करें';
+			case 'didNotChange': return 'बदलाव नहीं हुआ!';
+			case 'kycVerification': return 'KYC सत्यापन';
+			case 'faceID': return 'फेस आईडी';
+			case 'touchID': return 'टच आईडी';
+			case 'biometricsAuthorizationTest': return 'बायोमेट्रिक अधिकरण परीक्षण';
+			case 'currentState': return 'वर्तमान स्थिति';
+			case 'biometricsAuthenticationLocalizedReason': return 'अपनी डिवाइस का अनलॉक उपयोग करके अपनी पहचान सत्यापित करें।';
+			case 'graph': return 'ग्राफ़';
+			case 'referralRelationshipGraph': return 'रेफ़रल संबंध ग्राफ़';
+			case 'nativeContacts': return 'नेटिव संपर्क';
+			case 'registrationAndMiningTrends': return 'पंजीकरण और माइनिंग प्रवृत्तियाँ';
+			case 'inMining': return 'माइनिंग में';
+			case 'registrationVolume': return 'पंजीकरण संख्या';
+			case 'unmined': return 'माइनिंग के लिए उपलब्ध हिस्सा';
+			case 'mined': return 'हिस्सा जो माइन किया जा चुका है';
+			case 'communityMining': return 'समुदाय माइनिंग';
+			case 'consensusPromotionFund': return 'सहमति संवर्धन कोष';
+			case 'ecologicalAwardFund': return 'परिस्थितिकीय पुरस्कार कोष';
+			case 'icpFuelCrowdfunding': return 'ICP ईंधन क्राउडफंडिंग';
+			case 'coreDeveloperRewards': return 'कोर डेवलपर पुरस्कार';
+			case 'totalAllocation': return 'कुल आवंटन';
+			case 'miningRatio': return 'माइनिंग अनुपात';
+			case 'billion.300': return '300 बिलियन';
+			case 'billion.180': return '180 बिलियन';
+			case 'billion.30': return '30 बिलियन';
+			case 'billion.60': return '60 बिलियन';
+			case 'watchAdsToSupportDevelopers': return 'डेवलपर्स का समर्थन करने के लिए विज्ञापन देखें';
+			case 'loadingAdcomponents': return 'विज्ञापन घटकों को लोड किया जा रहा है...';
+			case 'timeIsNotUp': return 'समय समाप्त नहीं हुआ है!';
+			case 'loadingFailed_maybeTheNetworkIsBlocked': return 'लोडिंग विफल, शायद नेटवर्क ब्लॉक हो गया है!';
+			case 'pendingUSCTrecords': return 'लंबित USCT रिकॉर्ड्स';
+			case 'pendingUSCTrecordsDesc': return 'लंबित USCT रिकॉर्ड्स को विज्ञापन प्लेटफॉर्म के साथ 15-30 दिनों के भीतर तुलना और पुष्टि की जाएगी। वैध रिकॉर्ड्स को USCT रिकॉर्ड लिस्ट में ट्रांसफर किया जाएगा, और संबंधित USCT राशि खाते के बैलेंस में जोड़ी जाएगी।';
+			case 'validity': return 'वैधता';
+			case 'advertiser': return 'विज्ञापनदाता';
+			case 'earned': return 'कमाई गई राशि';
+			case 'withdraw': return 'विद्रॉ';
+			case 'validUSCTrecords': return 'मान्य USCT रिकॉर्ड';
+			case 'USCTmining': return 'USCT माइनिंग';
+			case 'aboutUSCTmining': return 'USCT माइनिंग के बारे में?';
+			case 'aboutUSCTminingItme1': return '1. USDT एक वैश्विक रूप से लोकप्रिय अमेरिकी डॉलर स्टेबलकॉइन है, जिसे दुनिया के प्रमुख क्रिप्टोकरेंसी एक्सचेंजों पर विभिन्न देशों की सरकारी मुद्राओं में आसानी से बदला जा सकता है।';
+			case 'aboutUSCTminingItme2': return '2. USCT माइनिंग आय का एक अस्थायी माप मूल्य है, इसका पूर्ण नाम USD क्रेडिट है, और अंत में इसे विज्ञापन प्लेटफ़ॉर्म के वास्तविक निपटान कोटा और वितरण नियमों के अनुसार और संबंधित अनुपात में USDT में बदला जा सकता है।';
+			case 'aboutUSCTminingItme3': return '3. USCT माइनिंग डेल्टा समुदाय में एक ट्रैफ़िक विज्ञापन मुद्रीकरण कार्य है। डेल्टा समुदाय के विशाल उपयोगकर्ता आधार का लाभ उठाते हुए यह विज्ञापनदाताओं, डेल्टा डेवलपर्स और खनिकों के लिए कई लाभ प्रदान करता है। इसका डिज़ाइन उद्देश्य डेल्टा पारिस्थितिकी तंत्र के शुरुआती चरण में कुछ प्रभावी आय प्रदान करना है, जब तक कि यह पूरी तरह से स्थापित और फल-फूल नहीं गया है; साथ ही यह डेवलपर्स के लिए एक निश्चित मात्रा में वित्तीय समर्थन भी प्रदान करता है, ताकि डेवलपर्स लंबे समय तक विकास सेवाएं प्रदान कर सकें और अंततः श्वेतपत्र की सभी योजनाओं को साकार कर सकें; इसके अलावा यह उत्पाद विज्ञापनदाताओं के लिए एक प्रभावी प्रचार चैनल भी प्रदान करता है।';
+			case 'aboutUSCTminingItme4': return '4. वितरण नियम इस प्रकार डिज़ाइन किए गए हैं कि कुल आय का 40% डेवलपर तकनीकी सेवा आयोगों के रूप में उपयोग किया जाएगा, और शेष 60% को समुदाय की अनुपस्थिति पुरस्कारों के रूप में उपयोग किया जाएगा। अनुपस्थिति पुरस्कार भाग DTC के समान एक मल्टी-लेवल वितरण मॉडल अपनाता है, और ये अनुपस्थिति पुरस्कार 6:3:1 के अनुपात में 3 हिस्सों में विभाजित किए जाते हैं। एक USCT माइनिंग के लिए प्रत्येक बार 60% अनुपस्थिति पुरस्कार उन लोगों को आवंटित किया जाता है जो वर्तमान में विज्ञापन देख रहे होते हैं, 30% उच्चतर अनुशंसा करने वाले को और 10% दूसरे स्तर के अनुशंसा करने वाले को दिया जाता है। इसी तरह, आप भी USCT माइनिंग के माध्यम से उन दोस्तों से समान अनुशंसा पुरस्कार प्राप्त कर सकते हैं जिन्हें आपने अनुशंसा किया है। इस प्रकार के मल्टी-लेवल वितरण का लाभ यह है कि कोई भी व्यक्ति एक ऑफ़लाइन टीम विकसित करके एक बड़ी मात्रा में USDT लाभ प्राप्त कर सकता है।';
+			case 'aboutUSCTminingItme5': return '5. बिलिंग चक्र 7 दिन का है, यानी, विज्ञापन प्लेटफ़ॉर्म के साथ हर 7 दिन में वैधता की जांच की जाती है, और पुष्टि किए गए प्रभावी आय और वास्तविक राशि को बैलेंस में रिकॉर्ड किया जाता है। प्रत्येक निकासी के लिए न्यूनतम राशि 10USDT है।';
+			case 'linesXtoY': return ({required Object x, required Object y}) => 'लाइनें ${x} से ${y}';
+			case 'wallet': return 'वॉलेट';
+			case 'multiChainWallet': return 'मल्टी-चेन वॉलेट';
+			case 'deposit': return 'डिपॉजिट';
+			case 'transfer': return 'ट्रांसफर';
+			case 'xcoinInWallet': return ({required Object coinCode}) => '${coinCode} वॉलेट में';
+			case 'transactions': return 'लेन-देन विवरण';
+			case 'network': return 'नेटवर्क';
+			case 'walletAddress': return 'वॉलेट एड्रेस';
+			case 'currentAddress': return 'करंट एड्रेस';
+			case 'depositAddress': return 'डिपॉजिट एड्रेस';
+			case 'receivingMoneyAddress': return 'पैसे प्राप्त करने का एड्रेस';
+			case 'applyTempDepositAddress': return 'अस्थायी जमा एड्रेस के लिए आवेदन करें';
+			case 'tempDepositAddressTip': return '1.यह एक साझा जमा एड्रेस है। कृपया पट्टा समाप्त होने या अनबाउंड होने के बाद राशि जमा न करें। ऐसा होने पर राशि खो जाएगी।.';
+			case 'tempDepositAddressTip2': return '2.जमा करने से पहले, कृपया यह सुनिश्चित करें कि [चेन नाम] और [मुद्रा नाम] बिल्कुल मेल खाते हैं; यदि यह एक अनुबंध टोकन है, तो आपको यह भी सुनिश्चित करना होगा कि [अनुबंध मानक] और [अनुबंध एड्रेस] बिल्कुल मेल खाते हैं।';
+			case 'tempDepositAddressTip3': return '3.कृपया ऐसे फंड जमा करने की कोशिश न करें जो ऊपर दिए गए किसी भी पैरामीटर से मेल नहीं खाते, अन्यथा राशि खो जाएगी।';
+			case 'tempDepositAddressTip4': return '4.यदि आपको अन्य प्रकार की संपत्तियां जमा करने की आवश्यकता हो, तो कृपया संबंधित मुद्रा पृष्ठ और पैरामीटर विकल्प पर स्विच करें और नया एड्रेस आवेदन करें।';
+			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
+				const TextSpan(text: 'यह पता '),
+				diff,
+				const TextSpan(text: ' में समाप्त हो जाएगा। आप समाप्ति से 6 घंटे पहले वैधता अवधि को '),
+				tap('मैन्युअल रूप से बढ़ा सकते हैं'),
+				const TextSpan(text: '।'),
+			]);
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'केवल 6 घंटे पहले ही नवीनीकरण किया जा सकता है';
+			case 'theReceivingAddressValidForLongtime': return 'प्राप्ति एड्रेस लंबी अवधि के लिए वैध है।';
+			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'प्राप्ति एड्रेस लंबी अवधि के लिए वैध है और रीयल टाइम में स्वचालित रूप से क्रेडिट हो जाएगा।';
+			case 'confirmDeposited': return 'जमा की पुष्टि करें';
+			case 'unbindThisDepositAddress': return 'इस जमा एड्रेस को अनबाइंड करें';
+			case 'confirmDepositedTip': return 'यदि धनराशि ट्रांसफर की गई है, तो कृपया 10 मिनट के बाद ऊपर दिए गए बटन पर क्लिक करें ताकि वॉलेट में खाता ट्रिगर हो सके।';
+			case 'unbindDepositAddressTip': return 'स्मार्ट कॉन्ट्रैक्ट्स के संचालन पर भार कम करने के लिए, यदि वैधता अवधि के भीतर कोई और धनराशि जमा नहीं की जाएगी, तो कृपया जमा एड्रेस अनबाइंड कर दें।';
+			case 'transferToAddress': return 'एड्रेस पर ट्रांसफर करें';
+			case 'longPressToPaste': return 'पेस्ट करने के लिए लंबे समय तक दबाएं';
+			case 'all': return 'सभी';
+			case 'balanceX': return ({required Object x}) => 'बैलेंस ${x}';
+			case 'transferOut': return 'निकासी करें';
+			case 'depositXcoins': return ({required Object x}) => 'डिपॉजिट ${x}';
+			case 'sender': return 'सेंडर';
+			case 'recipient': return 'प्राप्तकर्ता';
+			case 'memo': return 'मेमो';
+			case 'kind': return 'प्रकार';
+			case 'transferAmountExceedsAvailableBalance': return 'ट्रांसफर राशि उपलब्ध बैलेंस से अधिक है!';
+			case 'pleaseEnterValidAmount': return 'कृपया एक मान्य राशि दर्ज करें';
+			case 'networkFee': return 'नेटवर्क शुल्क';
+			case 'fee': return 'शुल्क';
+			case 'validLengthXcharacters': return ({required Object x}) => 'वैध लंबाई ${x} अक्षर है';
+			case 'historys': return 'लेन-देन इतिहास';
+			case 'dtcCreditdetail': return 'डेल्टा क्रेडिट विवरण';
+			case 'usdCreditdetail': return 'USD क्रेडिट विवरण';
+			case 'dappSquare': return 'dApp स्क्वायर';
+			case 'amountRaised': return 'उठाई गई राशि';
+			case 'disbursedAmount': return 'वितरित राशि';
+			case 'participationTimes': return 'भागीदारी की संख्या';
+			case 'completionRate': return 'पूरा होने की दर';
+			case 'exchangeRate': return 'विनिमय दर';
+			case 'icpCrowdfunding': return 'ICP क्राउडफंडिंग';
+			case 'crowdfunding': return 'क्राउडफंडिंग';
+			case 'trendsCurve': return 'प्रवृत्ति वक्र';
+			case 'fullScreenView': return 'पूर्ण स्क्रीन दृश्य';
+			case 'walletBalance': return 'वॉलेट बैलेंस: ';
+			case 'manageWallet': return 'वॉलेट प्रबंधन';
+			case 'fundraiseAmount': return 'फंडरेज़ राशि';
+			case 'exchangeRewardAmount': return 'एक्सचेंज इनाम राशि';
+			case 'fundraise': return 'फंडरेज़';
+			case 'rangeIntegersX': return ({required Object x}) => 'रेंज: पूर्णांक ${x}';
+			case 'successfullParticipatingFundraisingXtip': return ({required Object amount}) => 'फंडरेज़िंग में सफलतापूर्वक भाग लिया और ${amount}DTCT का इनाम प्राप्त हुआ';
+			case 'amountSummary': return 'राशि सारांश';
+			case 'changePreferred': return 'पसंदीदा बदलें';
+			case 'changePreferredAddress': return 'पसंदीदा एड्रेस बदलें';
+			case 'preferredAddressTip': return 'पंजीकृत मोबाइल नंबर या DID का उपयोग करके धन प्राप्त करने पर, धनराशि स्वचालित रूप से पसंदीदा एड्रेस पर स्थानांतरित कर दी जाएगी।';
+			case 'newAddress': return 'नया एड्रेस';
+			case 'newAddressTip': return 'दुरुपयोग को रोकने के लिए, जब एक से अधिक वॉलेट एड्रेस होता है, तो प्रत्येक नए पते के निर्माण पर लेनदेन शुल्क लगेगा।';
+			case 'createNew': return 'नया वॉलेट बनाएं';
+			case 'chainNetworkName': return 'चेन नेटवर्क नाम';
+			case 'from': return 'फ्रॉम';
+			case 'to': return 'टू';
+			case 'noAvailableDepositAmountDetected': return 'कोई उपलब्ध जमा राशि नहीं मिली!';
+			case 'crossChainReceiveMoneyMonitoring': return 'क्रॉस-चेन प्राप्त धनराशि निगरानी में है…';
+			case 'receivedV': return ({required InlineSpan v}) => TextSpan(children: [
+				const TextSpan(text: 'प्राप्त किया('),
+				v,
+				const TextSpan(text: ')'),
+			]);
+			case 'confirming': return ({required InlineSpan v}) => TextSpan(children: [
+				const TextSpan(text: 'पुष्टि की जा रही है ('),
+				v,
+				const TextSpan(text: ')'),
+			]);
+			case 'thingsToNote_forNewbies': return 'नोट्स (नए उपयोगकर्ताओं अवश्य पढ़ें)';
+			case 'whyUseSharedAddresses': return 'साझा एड्रेसों का उपयोग क्यों करें?';
+			case 'useSharedrAdvantage': return 'क्रॉस-चेन डिपॉज़िट के मामले में, साझा एड्रेसों के ये लाभ हैं:';
+			case 'useSharedrAdvantage1': return '1. ट्रांसफर शुल्क की बर्बादी को कम करें और उपयोगकर्ता की लागत घटाएं। क्योंकि यदि एक विशेष एड्रेस का उपयोग किया जाता है, तो फंड बहुत अधिक बिखर जाएंगे। निकासी के समय अन्य उपयोगकर्ताओं के लिए ट्रांसफर को सुगम बनाने के लिए, जब उपयोगकर्ता डिपॉज़िट करता है, तो फंड के द्वितीयक ट्रांसफर को प्रबंधन के लिए एक या कम संख्या में एड्रेसों में एकत्रित करने की आवश्यकता होती है।';
+			case 'useSharedrAdvantage2': return '2. शेयरिंग समाधान में, प्रोग्राम को केवल एक अपेक्षाकृत छोटे एड्रेस पूल को बनाए रखने की आवश्यकता होती है, जो जल्दी से आउटगोइंग फंड से मेल खा सकता है और हल्का कलेक्शन मॉनिटरिंग कर सकता है, जिससे कंप्यूटिंग संसाधनों का खर्च कम हो सकता है। इसके विपरीत, एक्सक्लूसिव एड्रेस के मामले में स्थिति बिल्कुल विपरीत होती है।';
+			case 'tokenType': return 'टोकन प्रकार';
+			case 'contract': return 'कॉंट्रैक्ट';
+			case 'contractStandard': return 'कॉंट्रैक्ट स्टैंडर्ड';
+			case 'contractAddress': return 'कॉंट्रैक्ट एड्रेस';
+			case 'native': return 'नेटिव';
+			case 'confirmUnbindingPleaseEnterYes': return 'अनबाइंडिंग की पुष्टि करने के लिए, कृपया "हाँ" दर्ज करें';
+			case 'listAllWorkingTempReceivingAddresses': return 'सभी कार्यरत क्रॉस-चेन प्राप्ति पतों की सूची दें';
+			case 'setNote': return 'नोट सेट करें';
+			case 'lengthCannotExceedXbytes': return ({required Object x}) => 'लंबाई ${x} बाइट्स से अधिक नहीं हो सकती';
+			case 'transferFee': return 'ट्रांसफर शुल्क';
+			case 'crossChainFee': return 'क्रॉस-चेन शुल्क';
+			case 'crossChainTransferOutError': return 'क्रॉस-चेन ट्रांसफर आउट त्रुटि';
+			case 'chainName': return 'चेन नाम';
+			case 'message': return 'संदेश';
+			case 'dontShowAgain': return 'फिर से न दिखाएं';
+			case 'queuing': return 'कतार में है';
+			case 'optional': return 'वैकल्पिक';
+			case 'publiclyVisible': return 'सार्वजनिक रूप से दृश्यमान';
+			case 'rates': return 'दर';
+			case 'minimum': return 'न्यूनतम';
+			case 'maximum': return 'अधिकतम';
+			case 'minimumBlockConfirmations': return 'न्यूनतम ब्लॉक पुष्टि';
+			case 'dsmsVerifyTerminal': return 'DSMS सत्यापनकर्ता टर्मिनल';
+			case 'overall': return 'कुल मिलाकर';
+			case 'my': return 'मेरा / मेरी';
+			case 'getVerifierPermissions': return 'सत्यापनकर्ता अनुमतियाँ प्राप्त करें';
+			case 'checkValidatorQualifications': return 'मान्यकर्ता अनुमतियों की योग्यताएँ जाँचें';
+			case 'qualification': return 'योग्यता';
+			case 'upperLimit': return 'ऊपरी सीमा';
+			case 'maximumNumberOfTerminalsAllowedToAccess': return 'अधिकतम टर्मिनलों की संख्या जिसकी पहुँच अनुमति है';
+			case 'numberOfExistingAccessTerminals': return 'मौजूदा एक्सेस टर्मिनलों की संख्या';
+			case 'applyingForDSMSVerifierPermissionsTips': return 'वेरिफायर अनुमतियों के लिए आवेदन करने से पहले, आपको एक खाली एंड्रॉइड फोन और एक समर्पित एक्सेस नंबर तैयार करना होगा, और DSMS एक्सेस टर्मिनल एप्लिकेशन को डाउनलोड और इंस्टॉल करना होगा।';
+			case 'downloadLink': return 'डाउनलोड लिंक';
+			case 'alreadyReadyFollowingTheAboveTips': return 'मैंने पहले से ही ऊपर दिए गए सुझावों का पालन कर लिया है!';
+			case 'globalUniversal': return 'ग्लोबल यूनिवर्सल';
+			case 'insufficientLocalVerifierTips': return ({required InlineSpan gu}) => TextSpan(children: [
+				const TextSpan(text: 'वर्तमान में DSMS सत्यापन एक्सेस सेवा में भाग लेने के लिए पर्याप्त स्थानीय सत्यापनकर्ता नहीं हैं। कृपया "'),
+				gu,
+				const TextSpan(text: '" एक्सेस सेवा का चयन करें।'),
+			]);
+			case 'asDedicatedNumberForAccess': return 'एक्सेस के लिए समर्पित नंबर के रूप में';
+			case 'pleaseCheckTip': return ({required Object tip}) => 'कृपया "${tip}" जांचें';
+			case 'inputLengthTooShort': return 'इनपुट की लंबाई बहुत छोटी है';
+			case 'shortName': return 'शॉर्ट-नाम';
+			case 'pleaseEnterXname': return ({required Object name}) => 'कृपया ${name} दर्ज करें';
+			case 'applicationIsBeingSubmitted_pleaseWait': return 'आवेदन सबमिट किया जा रहा है, कृपया प्रतीक्षा करें....';
+			case 'applyForDSMSVerifierPermission': return 'DSMS सत्यापनकर्ता अनुमति के लिए आवेदन करें।';
+			case 'confirmInformation': return 'सूचना की पुष्टि करें।';
+			case 'lastHeartbeat': return 'आखिरी धड़कन';
+			case 'expirationTime': return 'समाप्ति समय';
+			case 'country': return 'देश';
+			case 'accessTerminals': return 'ऐक्सेस टर्मिनल्स';
+			case 'totalNumberOfDSMSaccessNumberTerminals': return 'कुल संख्या DSMS एक्सेस नंबर टर्मिनल्स';
+			case 'textContent': return 'पाठ सामग्री';
+			case 'scanQRcodeToLogin': return 'लॉगिन करने के लिए क्यूआर कोड स्कैन करें';
+			case 'confirmLogin': return 'लॉगिन की पुष्टि करें';
+			case 'authorizeSubApplicationToLogin': return 'इस उप-एप्लिकेशन को लॉगिन करने की अनुमति दें';
+			case 'authorizationSuccessful': return 'प्राधिकरण सफल!';
+			case 'launchSMSprogram': return 'एसएमएस कार्यक्रम लॉन्च करें';
+			case 'notApplied': return 'लागू नहीं किया गया';
+			case 'validityPeriod': return 'वैधता अवधि';
+			case 'renewal': return 'नवीनीकरण';
+			case 'scanCodeToAuthorizeTerminalLogin': return 'टर्मिनल लॉगिन को अधिकृत करने के लिए कोड स्कैन करें';
+			case 'rewards': return 'इनाम';
+			case 'roles': return 'भूमिकाएँ';
+			case 'developerCenter': return 'डेवलपर केंद्र';
+			case 'appName': return 'ऐप का नाम';
+			case 'pleaseSelect': return 'कृपया चयन करें';
+			case 'category': return 'श्रेणी';
+			case 'keywords': return 'किवर्ड्स';
+			case 'pleaseEnterAkeyword': return 'कृपया एक किवर्ड दर्ज करें';
+			case 'createApplication': return 'एप्लिकेशन बनाएं';
+			case 'appType': return 'एप्लिकेशन प्रकार';
+			case 'numberOfCategoriesMustBetween1and3': return 'श्रेणियों की संख्या 1 से 3 के बीच होनी चाहिए।';
+			case 'appLogoSpecifications': return 'छवि प्रारूप: png, आकार: 100KB के भीतर, रिज़ॉल्यूशन (पिक्सल): 256 * 256';
+			case 'localAlbum': return 'लोकल एल्बम';
+			case 'networkPath': return 'नेटवर्क पथ';
+			case 'imageURLkAddress': return 'इमेज URL एड्रेस';
+			case 'urlAddressFormatIsIncorrect': return 'URL एड्रेस फ़ॉर्मेट गलत है';
+			case 'imageFormatOnlySupportsPng': return 'इमेज़ फ़ॉर्मेट केवल "png" को ही समर्थन करता है।.';
+			case 'lengthMustBeBetweenA_BCharacters': return ({required Object a, required Object b}) => 'लंबाई ${a}-${b} अक्षरों के बीच होनी चाहिए।';
+			case 'introduction': return 'परिचय';
+			case 'imageSizeCannotBeLargerThanA_currentlyB': return ({required Object a, required Object b}) => 'चित्र का आकार ${a} से बड़ा नहीं हो सकता, वर्तमान में ${b} है।';
+			case 'imageResolutionMustBeP1pixels_currentlyP2': return ({required Object p1, required Object p2}) => 'चित्र का रिज़ॉल्यूशन ${p1} (पिक्सल) होना चाहिए, वर्तमान में ${p2} है।';
+			case 'becomeDeveloper': return 'डेवलपर बनें';
+			case 'developerInformation': return 'डेवलपर जानकारी';
+			case 'teamName': return 'टीम का नाम';
+			case 'website': return 'वेबसाइट';
+			case 'other': return 'अन्य';
+			case 'githubVerification': return 'GitHub सत्यापन';
+			case 'exampleUrl': return 'उदाहरण URL';
+			case 'githubVerificationTip': return ({required Object did}) => 'कृपया अपने GitHub खाते का उपयोग करके रिपोजिटरी में एक \'delta.did\' फ़ाइल बनाएँ जिसमें \'${did}\' सामग्री हो; फिर, इस फ़ाइल का githubusercontent URL इस इनपुट बॉक्स में प्रमाणीकरण के लिए पेस्ट करें।';
+			case 'createApp': return 'ऐप बनाएँ';
+			case 'appManagement': return 'ऐप प्रबंधन';
+			case 'statusLogs': return 'स्थिति लॉग';
+			case 'bad': return 'बुरा';
+			case 'normal': return 'सामान्य';
+			case 'good': return 'अच्छा';
+			case 'onceCreatedItCannotBeChanged': return 'एक बार बन जाने के बाद, इसे बदला नहीं जा सकता!';
+			case 'manageApplicationEntity': return 'एप्लिकेशन इकाई का प्रबंधन करें';
+			case 'currentVersion': return 'वर्तमान संस्करण';
+			case 'submitVersion': return 'संस्करण सबमिट करें';
+			case 'packageOnlySupportZipCompressedFile': return 'पैकेज केवल zip फ़ॉर्मेट संकुचित फ़ाइल का समर्थन करता है';
+			case 'theXfileWasNotFoundInTheZipPackage': return ({required Object name}) => '\'${name}\' फ़ाइल ज़िप पैकेज में नहीं मिली';
+			case 'fileList': return 'फ़ाइल सूची: ';
+			case 'programPackage': return 'प्रोग्राम पैकेज: ';
+			case 'automaticallyExtractFromVersionFile': return '\'.version\' फ़ाइल से स्वचालित रूप से निकालें';
+			case 'dappVersionFormatTip': return 'संस्करण संख्या का फ़ॉर्मेट दशमलव होना चाहिए और सटीकता को 2 अंकों तक बनाए रखना चाहिए, और अधिकतम 99.99 से अधिक नहीं हो सकता।';
+			case 'versionNumberMustBeGreaterThanCurrentVersionX': return ({required Object v}) => 'संस्करण संख्या वर्तमान संस्करण \'${v}\' से अधिक होनी चाहिए।';
+			case 'versionNotes': return 'संस्करण नोट्स: ';
+			case 'dappInfo': return 'DApp जानकारी';
+			case 'updateRelease': return 'नया अपडेट';
+			case 'loadAndRun': return 'लोड करें और चलाएं';
+			case 'notYetSubmittedProgramPackage': return 'अभी तक एक प्रोग्राम पैकेज सबमिट नहीं किया गया है!';
+			case 'authorizeMinidAppLogin': return 'mini-dApp लॉगिन को अनुमोदित करें';
+			case 'confirmAuthorizationPleaseEnterYes': return 'अनुमोदन की पुष्टि करें, कृपया "हां" दर्ज करें';
+			case 'authorizeNow': return 'अब अनुमोदित करें';
+			case 'operation': return 'संचालन: ';
+			case 'statusChange': return 'स्थिति परिवर्तन';
+			case 'changeTo': return 'में परिवर्तन करें: ';
+			case 'notes': return 'नोट्स: ';
+			case 'changesNotEffective': return 'परिवर्तित नहीं हुए!';
+			case 'released': return 'रिलीज़ किया गया';
+			case 'inPublicBeta': return 'पब्लिक बीटा में';
+			case 'developers': return 'डेवलपर्स: ';
+			case 'reviewList': return 'समीक्षा सूची: ';
+			case 'postReview': return 'समीक्षा पोस्ट करें';
+			case 'scoreNow': return 'अभी अंक दें';
+			case 'description': return 'विवरण: ';
+			case 'noData': return '(^-^) \n कोई डेटा उपलब्ध नहीं है';
+			case 'versionHasBeenUpdatedFromAtoB': return ({required Object a, required Object b}) => 'संस्करण को ${a} से ${b} में अपडेट किया गया है।';
+			case 'loadNewVersion': return 'नया संस्करण लोड करें';
+			case 'name': return 'नाम: ';
+			case 'canisterId': return 'कैनिस्टर आईडी: ';
+			case 'updateTime': return 'अपडेट समय';
+			case 'contractCanistersState': return 'कॉन्ट्रैक्ट कैनिस्टर्स की स्थिति';
+			case 'userDistribution': return 'उपयोगकर्ता वितरण';
+			case 'settings': return 'सेटिंग्स';
+			case 'security': return 'सुरक्षा';
+			case 'invite': return 'आमंत्रित करें';
+			case 'more': return 'अधिक…';
+			case 'receiveAddress': return 'प्राप्त करने का एड्रेस: ';
+			case 'hangingAmount': return 'हैंगिंग अमाउंट';
+			case 'hangingAmountTips': return 'हैंगिंग अमाउंट आपके अधीनस्थ टीम के खनन द्वारा उत्पन्न इनामों का अस्थायी रिकॉर्ड है। एक बार जब आप खनन करते हैं, तो ये राशियाँ पेंडिंग अमाउंट में इकट्ठा हो जाएँगी।';
+			case 'pendingAmount': return 'पेंडिंग अमाउंट';
+			case 'pendingAmountTips': return 'पेंडिंग अमाउंट उस राशि को संदर्भित करती है जिसे अभी तक पुष्टि नहीं की गई है और विज्ञापनदाता के साथ तुलना की गई है। जो राशि पुष्टि हो जाती है, वह वैध USCT रिकॉर्ड में स्थानांतरित कर दी जाएगी। यदि कोई अवैध भाग है, तो उसे हटा दिया जाएगा।';
+			case 'received': return 'प्राप्त';
+			case 'processing': return 'प्रसंस्करण';
+			case 'replied': return 'उत्तर दिया';
+			case 'rejected': return 'अस्वीकृत';
+			case 'unknown': return 'अज्ञात';
+			case 'insufficientBalance': return 'अपर्याप्त बैलेंस!';
+			case 'InsufficientXbalanceToPayCrossChainNetworkFee': return ({required Object x}) => '${x} बैलेंस क्रॉस-चेन नेटवर्क शुल्क का भुगतान करने के लिए अपर्याप्त है';
+			case 'aTransactionThatHasNotBeenCompleted_CannotBeTransferredAtMoment': return 'एक लेन-देन है जो पूरा नहीं हुआ है और इस समय उसे स्थानांतरित नहीं किया जा सकता।';
+			case 'thisfunctionNotSupportExternalCalls': return 'यह फ़ंक्शन बाहरी कॉल का समर्थन नहीं करता है।';
+			case 'noMatchingAddressThatCanBeUsedToPayCrossChainFees_switchOtherChainToTry': return 'कोई मेल खाने वाला पता नहीं है जिसे क्रॉस-चेन शुल्क का भुगतान करने के लिए उपयोग किया जा सके, कृपया अन्य चेन नेटवर्क्स में स्विच करके प्रयास करें।';
+			case 'currentMaximumMatchedSingleTransferAmountIsX': return ({required Object x}) => 'वर्तमान में अधिकतम मेल खाता एकल स्थानांतरण राशि ${x} है।';
+			case 'memoMustNotBeMoreThan64bytes': return 'स्मृति 64 बाइट्स से अधिक नहीं होनी चाहिए।';
+			case 'insufficientBalance_theAmountIsX': return ({required Object x}) => 'अपर्याप्त बैलेंस, राशि है: ${x}';
+			case 'boundRreceivingAddressesExceed3Tip': return 'बंधन में प्राप्ति पतों की संख्या 3 से अधिक नहीं हो सकती है। \nयदि आपको नया प्राप्ति पता जोड़ने की आवश्यकता है, \nतो कृपया पहले किसी अन्य प्राप्ति पते को अनबाइंड करें।';
+			case 'parametersA_exception': return ({required Object x}) => 'पैरामीटर: ${x}, अपवाद';
+			case 'transferAmountMustBeLargerThan0': return 'ट्रांसफर राशि 0 से अधिक होनी चाहिए';
+			case 'authorizationHasExpired': return 'अधिकारिता समाप्त हो चुकी है';
+			case 'theAppHasNotBeenAuthorizedByOwner': return 'ऐप को मालिक द्वारा अनुमति नहीं दी गई है।';
+			case 'authenticationTokenIsInvalid': return 'प्रमाणीकरण टोकन अमान्य है।';
+			case 'verifyInfoIsInvalidOrExpired': return 'सत्यापन जानकारी अमान्य है या समाप्त हो गई है।';
+			case 'verifyThatNumberOfAccessTerminalsHasExceededLimitOf1in10000': return 'सत्यापित करें कि एक्सेस टर्मिनलों की संख्या 10,000 में से एक की सीमा से अधिक नहीं हुई है।';
+			case 'timeToParticipateInMiningMustBeMoreThan3Days': return 'माइनिंग में भाग लेने का समय 3 दिनों से अधिक होना चाहिए।';
+			case 'numberOfSafetyCircleCannotBeLessThan3': return 'सुरक्षा सर्कल के सदस्य की संख्या 3 लोगों से कम नहीं हो सकती है।';
+			case 'avatarIsNotSet': return 'प्रोफ़ाइल फ़ोटो सेट नहीं किया गया है।';
+			case 'numberOfDirectReferralsCannotBeLessThan3': return 'प्रत्यक्ष संदर्भों की संख्या 3 लोगों से कम नहीं हो सकती है।';
+			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return 'समय सीमा अपर्याप्त है, मोबाइल नंबर केवल एक बार प्रति वर्ष बदला जा सकता है।';
+			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'यह मोबाइल फोन नंबर पहले से मौजूद है और इसे पुनः उपयोग नहीं किया जा सकता।';
+			case 'securityCodeIsIncorrect': return 'सुरक्षा कोड गलत है।';
+			case 'securityCodeMayHaveExpired': return 'शायद सुरक्षा कोड की समय सीमा समाप्त हो गई है।';
+			case 'sessionIdIsInvalidOrExpired': return 'सत्र ID अमान्य है या समाप्त हो गया है।';
+			case 'sessionHasBeenAuthorized': return 'सत्र को प्रमाणित कर दिया गया है!';
+			case 'canOnlyBeRenewedWithinXdaysBeforeExpiration': return ({required Object x}) => 'केवल समाप्ति से ${x} दिन पहले नवीनीकरण किया जा सकता है।';
+			case 'notYetGrantedDeveloperPermissions': return 'अभी तक डेवलपर अनुमतियाँ प्रदान नहीं की गई हैं।';
+			case 'fieldXcannotBeEmpty': return ({required Object x}) => 'फ़ील्ड ईमेल ${x} खाली नहीं हो सकता।';
+			case 'emailFormatError': return 'ईमेल फ़ॉर्मेट में गलती है।';
+			case 'theXformatIsIncorrect': return ({required Object x}) => '\'${x}\' फ़ॉर्मेट गलत है।';
+			case 'lengthOfFieldXmustBeBetweenYandXcharacters': return ({required Object x, required Object y, required Object z}) => 'फ़ील्ड \'${x}\' की लंबाई ${y} और ${z} वर्णों के बीच होनी चाहिए।';
+			case 'theXselectionMustBeBetweenYandX': return ({required Object x, required Object y, required Object z}) => '\'${x}\' चयन ${y} और ${z} के बीच होना चाहिए।';
+			case 'unchanged_sameAsOldContent': return 'अपरिवर्तित, पुराने विषय के समान!';
+			case 'XYalreadyexists': return ({required Object x, required Object y}) => '${x}: \'${y}\' पहले से मौजूद है!';
+			case 'mobileNumberHasNotJoinedDelta': return 'यह मोबाइल नंबर अभी तक डेल्टा में शामिल नहीं हुआ है!';
+			case 'referrerIdCannotBeEmpty': return 'रेफरर DID खाली नहीं हो सकता! ';
+			case 'referrerIdDoesNotExist': return 'रेफरर DId मौजूद नहीं है!';
+			case 'didIsIncorrectOrInvalid': return 'DID गलत है या अमान्य है！';
+			case 'accessTokenIsIncorrectOrInvalid': return 'अक्सेस टोकन गलत है या अमान्य है।！';
+			case 'minimumWithdrawalAmountIs1USD': return 'न्यूनतम निकासी राशि 1USD है।';
+			case 'miningTimeIsNotYet': return 'माइनिंग  समय अभी तक शुरू नहीं हुआ है।';
+			case 'alreadyExists_pleaseDoNotRepeatedly': return 'पहले से मौजूद है, कृपया पुनः न जोड़ें!';
+			case 'registrationNumberCannotBeUsedAsAccessNumber': return 'रजिस्ट्रेशन नंबर को प्रमाणन एक्सेस नंबर के रूप में उपयोग नहीं किया जा सकता।';
+			case 'canotAddYourSelf': return 'आप खुद को जोड़ नहीं सकते।';
+			case 'logOut': return 'लॉग आउट';
+			case 'confirmLogout': return 'लॉग आउट की पुष्टि करें';
+			case 'logOutTipsText': return 'सादर याद दिलाना: श्वेत पत्र में संबंधित समझौते के अनुसार, प्रत्येक लॉगिन सत्यापन के लिए आपके द्वारा एक निश्चित मात्रा में डेल्टा कॉइंस का उपभोग किया जाएगा, ताकि सत्यापनकर्ता को प्रोत्साहन दिया जा सके। कृपया लॉग इन और लॉग आउट करने की कोशिश न करें, अगर यह आवश्यक न हो। तुरंत लॉग आउट करने के लिए निम्नलिखित बटन पर क्लिक करें।';
+			case 'ConfirmLogoutPleaseEnterYes': return 'लॉग आउट की पुष्टि करने के लिए कृपया "हाँ" दर्ज करें।';
+			case 'tip': return 'सुझाव';
+			case 'cancel': return 'रद्द करें';
+			case 'close': return 'बंद करें';
+			case 'selected': return 'चयनित';
+			case 'edit': return 'संपादित करें';
+			case 'submit': return 'सबमिट करें';
+			case 'goBack': return 'वापिस जाएँ';
+			case 'copiedToClipboard': return 'क्लिपबोर्ड में कॉपी किया गया!';
+			case 'nickname': return 'उपनाम';
+			case 'confirm': return 'पुष्टि करें';
+			case 'cannotBeEmpty': return 'खाली नहीं हो सकता';
+			case 'deleteSuccessful': return 'हटाना सफल!';
+			case 'successfullyModified': return 'सफलतापूर्वक संशोधित किया गया!';
+			case 'executionSuccessful': return 'सफलतापूर्वक निष्पादित किया गया!';
+			case 'parameterException': return 'पैरामीटर अपवाद!';
+			case 'preview': return 'प्रिव्यू';
+			case 'followSystem': return 'सिस्टम अनुसरण करें';
+			case 'change': return 'बदलें';
+			case 'replace': return 'प्रतिस्थापित करें';
+			case 'view': return 'देखें';
+			case 'manage': return 'प्रबंधन करें';
+			case 'modify': return 'संशोधित करें';
+			case 'replacedSuccessfully': return 'सफलतापूर्वक बदला गया!';
+			case 'authentication': return 'प्रमाणीकरण';
+			case 'reacquire': return 'पुनः प्राप्त करें';
+			case 'tryAgain': return 'फिर से प्रयास करें';
+			case 'querying': return 'क्वेरी जारी है…';
+			case 'writingToOnChain_pleaseWait': return 'ऑन-चेन पर लिख रहे हैं, कृपया प्रतीक्षा करें…';
+			case 'versionCheck': return 'संस्करण जाँच करें';
+			case 'alreadyLatestVersion': return 'आपके पास पहले से ही नवीनतम संस्करण है!';
+			case 'foundNewVersion': return 'एक नया संस्करण उपलब्ध है:';
+			case 'upgradeLink': return 'अपग्रेड लिंक: ';
+			case 'deviceDescription': return 'डिवाइस विवरण: ';
+			case 'notification30SecondsBeforeMiningStops': return 'माइनिंग बंद होने से 30 सेकंड पहले अधिसूचना रिमाइंडर निष्पादित करें!';
+			case 'goMining': return 'माइनिंग आरंभ करें';
+			case 'deltaMiningReminder': return 'डेल्टा माइनिंग रिमाइंडर';
+			case 'clickToMine_miningIsAboutToStop': return 'माइन करने के लिए यहां क्लिक करें, माइनिंग बंद होने वाली है!';
+			case 'incorrect_input': return 'गलत इनपुट!';
+			case 'are_you_sure_delete': return 'क्या आप वाकई हटाना चाहते हैं?';
+			case 'delete_account': return 'खाता हटाएँ';
+			case 'how_to_operate_it': return 'इसे संचालित कैसे करें?';
+			case 'deletion_warning_tip': return 'यदि आप अपना खाता हटाते हैं, तो आप अपने सभी डेल्टा कॉइन्स खो देंगे और अन्य सदस्यों से होने वाली सभी कमाई भी समाप्त हो जाएगी।';
+			case 'launchWhatsAppProgram': return 'WhatsApp प्रोग्राम लॉन्च करें';
+			case 'sms': return 'एसएमएस';
+			case 'whatsApp_verification_tips': return 'इस आइकन वाले एक्सेस नंबर इंगित करते हैं कि वे व्हाट्सएप संदेश सत्यापन का भी समर्थन करते हैं। अंतरराष्ट्रीय संदेश भेजते समय, सफलता दर बढ़ाने और लागत कम करने के लिए व्हाट्सएप का उपयोग करने की सिफारिश की जाती है।';
+			case 'ihaveSentVerificationString': return 'मैंने सत्यापन स्ट्रिंग भेज दी है!';
+			case 'totalOfPeople': return 'कुल लोगों की संख्या: ';
+			case 'numberOfPeopleMining': return 'माइनिंग करने वाले लोगों की संख्या';
+			case 'useBrowserScanQRcodeToSMSprogram': return 'आप किसी अन्य डिवाइस पर ब्राउज़र का उपयोग करके QR कोड स्कैन कर सकते हैं और इसे SMS प्रोग्राम में भेज सकते हैं।';
+			case 'toggle': return 'टॉगल';
+			case 'DSMSverifier': return 'DSMS सत्यापनकर्ता';
+			case 'activate': return 'सक्रिय करें';
+			case 'activated': return 'सक्रिय किया गया!';
+			case 'generateActivationCommand': return 'सक्रियकरण कमांड उत्पन्न करें';
+			case 'activationCommand': return 'सक्रियकरण कमांड';
+			case 'activationSentedTip': return 'सक्रियकरण SMS भेजने के बाद, कृपया एक्सेस टर्मिनल डिवाइस पर सक्रियकरण स्थिति जांचें।';
+			case 'biometricsNotEnabledTip': return 'आपके डिवाइस पर बायोमेट्रिक्स (फेस या फिंगरप्रिंट) सक्षम नहीं है, कृपया जारी रखने के लिए इसे सक्षम करें।';
+			case 'error': return 'त्रुटि';
+			case 'exceptionOccurredWhenCallingBiometric': return 'बायोमेट्रिक पहचान (फेस या फिंगरप्रिंट) फ़ंक्शन कॉल करते समय एक अपवाद उत्पन्न हुआ!';
+			case 'accessNumberSelectionTip': return ({required InlineSpan checkedNum, required InlineSpan shouldNum}) => TextSpan(children: [
+				checkedNum,
+				const TextSpan(text: ' एक्सेस नंबर जांचे गए हैं, '),
+				shouldNum,
+				const TextSpan(text: ' का चयन किया जाना चाहिए।'),
+			]);
+			case 'sentaboveXaccessNumbers': return ({required Object text, required Object n}) => 'क्या ${text} उपरोक्त ${n} एक्सेस नंबरों पर भेजा गया है?';
+			case 'interface': return 'इंटरफ़ेस:';
+			case 'waitingTimeoutOrSenderNumberMismatch': return 'प्रतीक्षा समय समाप्त या प्रेषक संख्या मेल नहीं खाती';
+			case 'mobileNumberOfsecurityCircleYouFilledDoesntMatch': return ({required Object x}) => 'आपके द्वारा भरे गए सुरक्षा सर्कल सदस्य का मोबाइल नंबर मेल नहीं खाता: ${x}';
+			case 'leastXmobileNumbersMustCompleted': return ({required Object n}) => 'कम से कम ${n} मोबाइल नंबर पूरे करने आवश्यक हैं।';
+			case 'loginWithin10MinutesOfLoggingOutAvoidTwoFactorVerification': return 'लॉगआउट करने के बाद 10 मिनट के भीतर लॉग इन करें ताकि टू-फैक्टर सत्यापन से बचा जा सके।';
+			case 'noAccessNumberInYourRegionYet': return 'आपके क्षेत्र में अभी तक कोई एक्सेस नंबर उपलब्ध नहीं है।';
+			case 'notEnoughAccessNumbersInYourRegion': return 'आपके क्षेत्र में पर्याप्त एक्सेस नंबर नहीं हैं।';
+			case 'tipsForDeployDSMSterminal': return 'सिस्टम ने स्वचालित रूप से आपके लिए अन्य देशों से कुछ एक्सेस नंबर लोड कर दिए हैं। बेहतर और कम लागत वाली सत्यापन सेवाएँ प्रदान करने के लिए, यह अनुशंसा की जाती है कि आप या अपने रेफ़रर से संपर्क करें ताकि स्थानीय रूप से DSMS टर्मिनल तैनात किए जा सकें और सत्यापन शुल्क अर्जित किया जा सके।';
+			case 'noOneCanProvideMeTheSecurityCode': return 'कोई भी मुझे इस समय सुरक्षा कोड देने में सक्षम नहीं है!';
+			case 'useSupplementalMode': return 'सप्लीमेंटल मोड का उपयोग करें';
+			case 'returnToSecurityCodeMode': return 'सुरक्षा कोड मोड पर लौटें';
+			case 'enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted': return 'कृपया उनका संबंधित मोबाइल नंबर दर्ज करें, देश कोड छोड़ सकते हैं।';
+			case 'mobileNumberForNameIsIncorrect': return ({required Object name}) => '${name} का मोबाइल नंबर ग़लत है';
+			case 'matchingVerificationStrategyIs': return 'सत्यापन के लिए चुनी गई रणनीति:';
+			case 'balanceGreater3ICP_noNeedPourFuel': return 'शेष 3 ICP से अधिक है, फिलहाल ईंधन डालने की आवश्यकता नहीं है।';
+			case 'escrowAccount': return 'एस्क्रो खाता';
+			case 'fuelRelay': return 'ईंधन रिले';
+			case 'pourFuel': return 'ईंधन डालें';
+			case 'fuelState': return 'ईंधन की स्थिति';
+			case 'pouringFuelTips': return 'ईंधन डालने से आपको कोई लाभ या हानि नहीं होती है, इसका उद्देश्य डेल्टा सिस्टम अनुभव को समृद्ध करना है।';
+			case 'sponsorDevelopersByWatchingAds': return 'विज्ञापन देखकर डेवलपर्स को प्रायोजित करें';
+			case 'status': return 'स्थिति';
+			case 'date': return 'तारीख';
+			case 'assetApplicationIsInProgressTip': return 'एसेट आवेदन प्रगति पर है, कृपया 3 सेकंड में पुनः प्रयास करें।';
+			case 'delete': return 'हटाएँ';
+			case 'deleteVerifierTip': return 'जब किसी सत्यापनकर्ता की अनुमतियाँ हटाई जाती हैं, तो सभी संबंधित स्कोर डेटा एक ही समय में हटा दिए जाएँगे, लेकिन पहले से प्राप्त पुरस्कार प्रभावित नहीं होंगे।';
+			case 'deleteVerifierStatusTip': return 'कृपया इसे हटाने से पहले रुकी हुई स्थिति पर सेट करें';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'कृपया पुष्टि करने के लिए "${text}" दर्ज करें';
+			case 'localSecurity': return 'स्थानीय सुरक्षा';
+			case 'deviceLock': return 'डिवाइस लॉक';
+			case 'patternLock': return 'पैटर्न लॉक';
+			case 'none': return 'कोई नहीं';
+			case 'exist': return 'अस्तित्व में है';
+			case 'prompt': return 'प्रॉम्प्ट:';
+			case 'localSecurityTip1': return '1. स्थानीय सुरक्षा प्रमाणीकरण का उपयोग कुछ संवेदनशील कार्यों के दौरान पहचान की पुष्टि करने के लिए किया जाता है। इसका उद्देश्य डिवाइस को दूसरों द्वारा नियंत्रित होने से रोकना और खाते की सुरक्षा सुनिश्चित करना है।';
+			case 'localSecurityTip2': return '2. पैटर्न लॉक एक पूरक समाधान है जब डिवाइस लॉक समर्थित नहीं है या असंगत है। आम तौर पर, डिवाइस लॉक उपलब्ध होने पर पैटर्न लॉक सेट करने की कोई आवश्यकता नहीं होती है।';
+			case 'localSecurityTip3': return '3. जब आपका पैटर्न लॉक भूल जाता है, तो आप केवल ऐप डेटा साफ़ कर सकते हैं या इसे साफ़ करने के लिए ऐप को फिर से इंस्टॉल कर सकते हैं।';
+			case 'deviceAuthFirstTip': return ({required Object menu, required Object localSecurity}) => 'डिवाइस प्रमाणीकरण को कॉल किया जाने वाला है। यदि कोई त्रुटि या अपवाद होता है, तो कृपया परीक्षण और आगे की सेटिंग के लिए "${menu}" पृष्ठ पर "${localSecurity}" विकल्प पर जाएँ।';
+			case 'pleaseDrawUnlockPattern': return 'कृपया अनलॉक पैटर्न बनाएं';
+			case 'addPatternLock': return 'पैटर्न लॉक जोड़ें';
+			case 'cannotBeLessThan8Dots': return '8 बिंदुओं से कम नहीं हो सकता';
+			case 'pleaseRepeatThePattern': return 'कृपया पैटर्न को पुनः दोहराएं';
+			case 'notMatchFirstValidPattern': return 'पहले वैध ड्राइंग पैटर्न से मेल नहीं खाता';
+			case 'deletePatternLock': return 'पैटर्न लॉक हटाएं';
+			case 'notMatchExistingPattern': return 'मौजूदा पैटर्न से मेल नहीं खाता';
+			case 'localAuthentication': return 'स्थानीय प्रमाणीकरण';
 			default: return null;
 		}
 	}
@@ -18071,13 +21719,13 @@ extension on _StringsIt {
 			case 'tempDepositAddressTip4': return '4. Se avete bisogno di depositare altri tipi di beni, passate alla pagina della valuta corrispondente e alle opzioni dei parametri per richiedere un nuovo indirizzo.';
 			case 'applyExtensionOfValidity': return 'Richiesta di proroga del periodo di validità';
 			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-				const TextSpan(text: 'Questo indirizzo scadrà dopo '),
+				const TextSpan(text: 'Questo indirizzo scadrà tra '),
 				diff,
-				const TextSpan(text: ' e sarà '),
-				tap('estendi manualmente'),
-				const TextSpan(text: ' valido per 12 ore prima della scadenza.'),
+				const TextSpan(text: '. Puoi '),
+				tap('manually extend'),
+				const TextSpan(text: ' il periodo di validità entro 6 ore dalla scadenza.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Può essere rinnovato solo con 12 ore di anticipo';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'È possibile rinnovare solo entro 6 ore di anticipo';
 			case 'theReceivingAddressValidForLongtime': return 'Questo indirizzo è valido per molto tempo.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'Questo indirizzo di raccolta è valido a lungo e viene accreditato automaticamente in tempo reale.';
 			case 'confirmDeposited': return 'Conferma dei depositi';
@@ -18337,7 +21985,7 @@ extension on _StringsIt {
 			case 'referrerIdDoesNotExist': return 'L\'ID del referente non esiste!';
 			case 'didIsIncorrectOrInvalid': return 'La DID non è corretta o non è valida!';
 			case 'accessTokenIsIncorrectOrInvalid': return 'L\'accessToken non è corretto o non è valido!';
-			case 'minimumWithdrawalAmountIs9USD': return 'Minimo 9USD per un singolo prelievo';
+			case 'minimumWithdrawalAmountIs1USD': return 'Minimo 1USD per un singolo prelievo';
 			case 'miningTimeIsNotYet': return 'Non è ancora il momento di estrarre.';
 			case 'alreadyExists_pleaseDoNotRepeatedly': return 'Esiste già, non aggiungerlo di nuovo!';
 			case 'registrationNumberCannotBeUsedAsAccessNumber': return 'Non è possibile utilizzare il numero di registrazione come numero di accesso per l\'autenticazione.';
@@ -18425,6 +22073,38 @@ extension on _StringsIt {
 			case 'enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted': return 'Inserisci il numero di cellulare associato. Il prefisso internazionale può essere omesso.';
 			case 'mobileNumberForNameIsIncorrect': return ({required Object name}) => 'Il numero di cellulare di ${name} è errato';
 			case 'matchingVerificationStrategyIs': return 'La strategia di verifica corrispondente è:';
+			case 'balanceGreater3ICP_noNeedPourFuel': return 'Il saldo è maggiore di 3 ICP, per ora non c\'è bisogno di versare carburante.';
+			case 'escrowAccount': return 'Conto di deposito a garanzia';
+			case 'fuelRelay': return 'Relè carburante';
+			case 'pourFuel': return 'Versare carburante';
+			case 'fuelState': return 'Stato carburante';
+			case 'pouringFuelTips': return 'Il versamento del carburante non comporta alcun vantaggio o svantaggio, il suo scopo è arricchire l\'esperienza del sistema Delta.';
+			case 'sponsorDevelopersByWatchingAds': return 'Sponsorizza gli sviluppatori guardando gli annunci';
+			case 'status': return 'Stato';
+			case 'date': return 'Data';
+			case 'assetApplicationIsInProgressTip': return 'Richiesta di risorse in corso, riprovare tra 3 secondi.';
+			case 'delete': return 'Elimina';
+			case 'deleteVerifierTip': return 'Quando si eliminano i permessi di un verificatore, tutti i dati relativi ai punteggi verranno eliminati contemporaneamente, ma le ricompense già ottenute non saranno interessate.';
+			case 'deleteVerifierStatusTip': return 'Impostalo in pausa prima di eliminarlo';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Inserisci "${text}" per confermare';
+			case 'localSecurity': return 'Sicurezza locale';
+			case 'deviceLock': return 'Blocco dispositivo';
+			case 'patternLock': return 'Blocco modello';
+			case 'none': return 'nessuno';
+			case 'exist': return 'esiste';
+			case 'prompt': return 'Richiesta:';
+			case 'localSecurityTip1': return '1. L\'autenticazione di sicurezza locale viene utilizzata per confermare l\'identità durante alcune operazioni sensibili. Il suo scopo è impedire che il dispositivo sia controllato da altri e garantire la sicurezza dell\'account.';
+			case 'localSecurityTip2': return '2. Il blocco pattern è una soluzione supplementare quando il blocco dispositivo non è supportato o è incompatibile. In genere, non è necessario impostare un blocco pattern quando il blocco dispositivo è disponibile.';
+			case 'localSecurityTip3': return '3. Se dimentichi il blocco pattern, puoi solo cancellare i dati dell\'app o reinstallare l\'app per eliminarlo.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'L\'autenticazione del dispositivo sta per essere chiamata. Se si verifica un errore o un\'eccezione, accedere all\'opzione "${localSecurity}" nella pagina "${menu}" per testare e configurare ulteriori impostazioni.';
+			case 'pleaseDrawUnlockPattern': return 'Per favore, disegna la sequenza di sblocco';
+			case 'addPatternLock': return 'Aggiungi blocco pattern';
+			case 'cannotBeLessThan8Dots': return 'Non può essere inferiore a 8 punti';
+			case 'pleaseRepeatThePattern': return 'Per favore, ripeti di nuovo lo schema';
+			case 'notMatchFirstValidPattern': return 'Non corrisponde al primo modello di disegno valido';
+			case 'deletePatternLock': return 'Elimina il blocco pattern';
+			case 'notMatchExistingPattern': return 'Non corrisponde a un modello esistente';
+			case 'localAuthentication': return 'Aut. locale';
 			default: return null;
 		}
 	}
@@ -18732,13 +22412,13 @@ extension on _StringsJa {
 			case 'tempDepositAddressTip4': return '4.他の種類の資産を入金する必要がある場合は、対応する通貨ページとパラメータオプションに切り替えて、新しい住所を申請してください。';
 			case 'applyExtensionOfValidity': return '有効期間延長申請';
 			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
-				const TextSpan(text: 'このアドレスの有効期限は'),
+				const TextSpan(text: 'このアドレスは'),
 				diff,
-				const TextSpan(text: 'の後であり、'),
-				tap('manual extend'),
-				const TextSpan(text: 'は有効期限の12時間前まで有効である。'),
+				const TextSpan(text: '後に有効期限が切れます。有効期限の6時間前までに有効期間を'),
+				tap('manually extend'),
+				const TextSpan(text: 'することができます。'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return '更新は12時間前まで';
+			case 'canOnlyRenewWithin6hoursInAdvance': return '6時間以内のみ更新可能';
 			case 'theReceivingAddressValidForLongtime': return 'この住所は長期間有効である。';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'このコレクション・アドレスは長期間有効で、リアルタイムで自動的に入金される。';
 			case 'confirmDeposited': return '入金の確認';
@@ -18998,7 +22678,7 @@ extension on _StringsJa {
 			case 'referrerIdDoesNotExist': return 'リファラーIDが存在しません！';
 			case 'didIsIncorrectOrInvalid': return 'DIDが正しくないか無効である！';
 			case 'accessTokenIsIncorrectOrInvalid': return 'accessToken が不正または無効です！';
-			case 'minimumWithdrawalAmountIs9USD': return '1回の引き出しで最低9USD';
+			case 'minimumWithdrawalAmountIs1USD': return '1回の引き出しで最低1USD';
 			case 'miningTimeIsNotYet': return 'まだ採掘する時期じゃない。';
 			case 'alreadyExists_pleaseDoNotRepeatedly': return 'すでに存在するので、再度追加しないでください！';
 			case 'registrationNumberCannotBeUsedAsAccessNumber': return '登録番号を認証アクセス番号として使用できない';
@@ -19086,6 +22766,38 @@ extension on _StringsJa {
 			case 'enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted': return '関連付けられている携帯電話番号を入力してください。国番号は省略できます。';
 			case 'mobileNumberForNameIsIncorrect': return ({required Object name}) => '${name} の携帯電話番号が正しくありません';
 			case 'matchingVerificationStrategyIs': return '一致する検証戦略は次のとおりです:';
+			case 'balanceGreater3ICP_noNeedPourFuel': return '残高が 3 ICP より大きいため、今のところ燃料を注ぐ必要はありません。';
+			case 'escrowAccount': return 'エスクローアカウント';
+			case 'fuelRelay': return '燃料リレー';
+			case 'pourFuel': return '燃料を注ぐ';
+			case 'fuelState': return '燃料状態';
+			case 'pouringFuelTips': return '燃料を注ぐことでメリットやデメリットが生じることはありません。その目的は、Delta システムのエクスペリエンスを充実させることです。';
+			case 'sponsorDevelopersByWatchingAds': return '広告を見て開発者をスポンサーする';
+			case 'status': return 'ステータス';
+			case 'date': return '日付';
+			case 'assetApplicationIsInProgressTip': return 'アセット申請が進行中です。3秒後にもう一度お試しください。';
+			case 'delete': return '削除';
+			case 'deleteVerifierTip': return '検証者の権限を削除すると、関連するスコアデータもすべて同時に削除されますが、すでに獲得した報酬には影響しません。';
+			case 'deleteVerifierStatusTip': return '削除する前に一時停止状態に設定してください';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => '確認のため、「${text}」を入力してください';
+			case 'localSecurity': return 'ローカルセキュリティ';
+			case 'deviceLock': return 'デバイスロック';
+			case 'patternLock': return 'パターンロック';
+			case 'none': return 'なし';
+			case 'exist': return '存在する';
+			case 'prompt': return 'プロンプト:';
+			case 'localSecurityTip1': return '1. ローカルセキュリティ認証は、機密性の高い操作を行う際に本人確認を行うために使用されます。その目的は、デバイスが他人に制御されるのを防ぎ、アカウントのセキュリティを確保することです。';
+			case 'localSecurityTip2': return '2. パターンロックは、デバイスロックがサポートされていない、または互換性がない場合の補助的な解決策です。通常、デバイスロックが利用可能な場合は、パターンロックを設定する必要はありません。';
+			case 'localSecurityTip3': return '3. パターンロックを忘れた場合は、アプリのデータを消去するか、アプリを再インストールして消去するしかありません。';
+			case 'deviceAuthFirstTip': return ({required Object menu, required Object localSecurity}) => 'デバイス認証が呼び出されようとしています。エラーまたは例外が発生した場合は、"${menu}"ページの"${localSecurity}"オプションに移動してテストと詳細な設定を行ってください。';
+			case 'pleaseDrawUnlockPattern': return 'ロック解除パターンを描いてください';
+			case 'addPatternLock': return 'パターンロックを追加';
+			case 'cannotBeLessThan8Dots': return '8ドット未満にはできません';
+			case 'pleaseRepeatThePattern': return 'パターンをもう一度繰り返してください';
+			case 'notMatchFirstValidPattern': return '最初の有効な描画パターンと一致しません';
+			case 'deletePatternLock': return 'パターンロックの削除';
+			case 'notMatchExistingPattern': return '既存のパターンと一致しません';
+			case 'localAuthentication': return 'ローカル認証';
 			default: return null;
 		}
 	}
@@ -19397,11 +23109,11 @@ extension on _StringsKo {
 			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
 				const TextSpan(text: '이 주소는 '),
 				diff,
-				const TextSpan(text: ' 이후에 만료되며 만료 전 12시간 동안 '),
+				const TextSpan(text: ' 이후에 만료되며 만료 전 6시간 동안 '),
 				tap('수동으로 연장'),
 				const TextSpan(text: ' 유효합니다.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return '12시간 전에만 갱신 가능';
+			case 'canOnlyRenewWithin6hoursInAdvance': return '6시간 전에만 갱신 가능';
 			case 'theReceivingAddressValidForLongtime': return '이 주소는 오랫동안 유효합니다.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return '이 수집 주소는 오랫동안 유효하며 실시간으로 자동으로 적립됩니다.';
 			case 'confirmDeposited': return '입금 확인';
@@ -19661,7 +23373,7 @@ extension on _StringsKo {
 			case 'referrerIdDoesNotExist': return '리퍼러 ID가 존재하지 않습니다!';
 			case 'didIsIncorrectOrInvalid': return 'DID가 잘못되었거나 유효하지 않습니다!';
 			case 'accessTokenIsIncorrectOrInvalid': return '액세스 토큰이 잘못되었거나 유효하지 않습니다!';
-			case 'minimumWithdrawalAmountIs9USD': return '1회 출금 시 최소 9USD';
+			case 'minimumWithdrawalAmountIs1USD': return '1회 출금 시 최소 1USD';
 			case 'miningTimeIsNotYet': return '아직 채굴할 때가 아닙니다.';
 			case 'alreadyExists_pleaseDoNotRepeatedly': return '이미 존재하므로 다시 추가하지 마세요!';
 			case 'registrationNumberCannotBeUsedAsAccessNumber': return '등록 번호를 인증 액세스 번호로 사용할 수 없습니다.';
@@ -19749,6 +23461,38 @@ extension on _StringsKo {
 			case 'enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted': return '연관된 모바일 번호를 입력하세요. 국가 코드는 생략할 수 있습니다.';
 			case 'mobileNumberForNameIsIncorrect': return ({required Object name}) => '${name}의 휴대폰 번호가 올바르지 않습니다';
 			case 'matchingVerificationStrategyIs': return '매칭 검증 전략은 다음과 같습니다.';
+			case 'balanceGreater3ICP_noNeedPourFuel': return '3 ICP보다 큰 잔액, 당장은 연료를 부을 필요가 없습니다.';
+			case 'escrowAccount': return '에스크로 계정';
+			case 'fuelRelay': return '연료 릴레이';
+			case 'pourFuel': return '연료를 붓다';
+			case 'fuelState': return '연료 상태';
+			case 'pouringFuelTips': return '연료를 주입하는 것은 어떠한 이점이나 단점을 가져다주지 않습니다. 그 목적은 델타 시스템 경험을 풍부하게 하는 것입니다.';
+			case 'sponsorDevelopersByWatchingAds': return '광고를 시청하여 개발자 후원';
+			case 'status': return '상태';
+			case 'date': return '날짜';
+			case 'assetApplicationIsInProgressTip': return '자산 신청이 진행 중입니다. 3초 후에 다시 시도해 주세요.';
+			case 'delete': return '삭제';
+			case 'deleteVerifierTip': return '검증자 권한을 삭제하면 관련 점수 데이터가 모두 동시에 삭제되지만, 이미 획득한 보상에는 영향을 미치지 않습니다.';
+			case 'deleteVerifierStatusTip': return '삭제하기 전에 일시 중지 상태로 설정하세요';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => '확인하시려면 "${text}"를 입력하세요.';
+			case 'localSecurity': return '로컬 보안';
+			case 'deviceLock': return '장치 잠금';
+			case 'patternLock': return '패턴 잠금';
+			case 'none': return '없음';
+			case 'exist': return '존재한다';
+			case 'prompt': return '프롬프트:';
+			case 'localSecurityTip1': return '1. 로컬 보안 인증은 일부 민감한 작업 중에 신원을 확인하는 데 사용됩니다. 로컬 보안 인증의 목적은 다른 사람이 기기를 조작하는 것을 방지하고 계정의 보안을 유지하는 것입니다.';
+			case 'localSecurityTip2': return '2. 패턴 잠금은 기기 잠금이 지원되지 않거나 호환되지 않을 때 사용할 수 있는 보완적인 솔루션입니다. 일반적으로 기기 잠금을 사용할 수 있는 경우에는 패턴 잠금을 설정할 필요가 없습니다.';
+			case 'localSecurityTip3': return '3. 패턴 잠금을 잊어버린 경우, 앱 데이터를 삭제하거나 앱을 재설치해야만 삭제할 수 있습니다.';
+			case 'deviceAuthFirstTip': return ({required Object menu, required Object localSecurity}) => '기기 인증이 곧 호출됩니다. 오류나 예외가 발생하면 "${menu}" 페이지의 "${localSecurity}" 옵션으로 이동하여 테스트 및 추가 설정을 진행하세요.';
+			case 'pleaseDrawUnlockPattern': return '잠금 해제 패턴을 그려주세요';
+			case 'addPatternLock': return '패턴 잠금 추가';
+			case 'cannotBeLessThan8Dots': return '8개보다 작을 수 없습니다';
+			case 'pleaseRepeatThePattern': return '패턴을 다시 반복해 주세요';
+			case 'notMatchFirstValidPattern': return '첫 번째 유효한 드로잉 패턴과 일치하지 않습니다';
+			case 'deletePatternLock': return '패턴 잠금 삭제';
+			case 'notMatchExistingPattern': return '기존 패턴과 일치하지 않습니다.';
+			case 'localAuthentication': return '로컬 인증';
 			default: return null;
 		}
 	}
@@ -20062,9 +23806,9 @@ extension on _StringsNl {
 				diff,
 				const TextSpan(text: ' en is '),
 				tap('handmatig verlengen'),
-				const TextSpan(text: ' nog 12 uur geldig voordat het verloopt.'),
+				const TextSpan(text: ' nog 6 uur geldig voordat het verloopt.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Kan alleen 12 uur van tevoren worden verlengd';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'Kan alleen 6 uur van tevoren worden verlengd';
 			case 'theReceivingAddressValidForLongtime': return 'Dit adres is lang geldig.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'Dit ophaaladres is lang geldig en wordt automatisch in realtime gecrediteerd.';
 			case 'confirmDeposited': return 'Bevestiging van stortingen';
@@ -20324,7 +24068,7 @@ extension on _StringsNl {
 			case 'referrerIdDoesNotExist': return 'Referrer ID bestaat niet!';
 			case 'didIsIncorrectOrInvalid': return 'De DID is onjuist of ongeldig!';
 			case 'accessTokenIsIncorrectOrInvalid': return 'Het toegangsToken is onjuist of ongeldig!';
-			case 'minimumWithdrawalAmountIs9USD': return 'Minimaal 9USD voor een enkele opname';
+			case 'minimumWithdrawalAmountIs1USD': return 'Minimaal 1USD voor een enkele opname';
 			case 'miningTimeIsNotYet': return 'Het is nog geen tijd om te mijnen.';
 			case 'alreadyExists_pleaseDoNotRepeatedly': return 'Bestaat al, voeg het niet opnieuw toe!';
 			case 'registrationNumberCannotBeUsedAsAccessNumber': return 'Kan registratienummer niet gebruiken als toegangsnummer voor verificatie';
@@ -20412,6 +24156,38 @@ extension on _StringsNl {
 			case 'enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted': return 'Voer het bijbehorende mobiele nummer in. De landcode kan worden weggelaten.';
 			case 'mobileNumberForNameIsIncorrect': return ({required Object name}) => '${name}\'s mobiele nummer is onjuist';
 			case 'matchingVerificationStrategyIs': return 'De overeenkomende verificatiestrategie is:';
+			case 'balanceGreater3ICP_noNeedPourFuel': return 'De balans is groter dan 3 ICP, er hoeft voorlopig geen brandstof te worden bijgevuld.';
+			case 'escrowAccount': return 'Escrow-rekening';
+			case 'fuelRelay': return 'Brandstofrelais';
+			case 'pourFuel': return 'Brandstof gieten';
+			case 'fuelState': return 'Brandstofstatus';
+			case 'pouringFuelTips': return 'Het tanken van brandstof levert u geen voor- of nadelen op. Het doel is om de ervaring met het Delta-systeem te verrijken.';
+			case 'sponsorDevelopersByWatchingAds': return 'Sponsor ontwikkelaars door advertenties te bekijken';
+			case 'status': return 'Status';
+			case 'date': return 'Datum';
+			case 'assetApplicationIsInProgressTip': return 'Assettoepassing is bezig, probeer het over 3 seconden opnieuw.';
+			case 'delete': return 'Verwijderen';
+			case 'deleteVerifierTip': return 'Wanneer u de machtigingen van een verificator verwijdert, worden alle bijbehorende scoregegevens tegelijkertijd verwijderd, maar de reeds verkregen beloningen worden niet beïnvloed.';
+			case 'deleteVerifierStatusTip': return 'Stel het in op de pauzestand voordat u het verwijdert.';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Voer "${text}" in om te bevestigen';
+			case 'localSecurity': return 'Lokale beveiliging';
+			case 'deviceLock': return 'Apparaatvergrendeling';
+			case 'patternLock': return 'Patroonvergrendeling';
+			case 'none': return 'geen';
+			case 'exist': return 'bestaat';
+			case 'prompt': return 'Prompt:';
+			case 'localSecurityTip1': return '1. Lokale beveiligingsauthenticatie wordt gebruikt om de identiteit te bevestigen tijdens bepaalde gevoelige handelingen. Het doel hiervan is om te voorkomen dat het apparaat door anderen wordt beheerd en om de beveiliging van het account te waarborgen.';
+			case 'localSecurityTip2': return '2. Patroonvergrendeling is een aanvullende oplossing wanneer de apparaatvergrendeling niet wordt ondersteund of niet compatibel is. Over het algemeen is het niet nodig om een ​​patroonvergrendeling in te stellen wanneer de apparaatvergrendeling beschikbaar is.';
+			case 'localSecurityTip3': return '3. Wanneer u uw patroonvergrendeling bent vergeten, kunt u alleen de app-gegevens wissen of de app opnieuw installeren om deze te wissen.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'Apparaatauthenticatie wordt binnenkort aangeroepen. Als er een fout of uitzondering optreedt, ga dan naar de optie "${localSecurity}" op de pagina "${menu}" voor testen en verdere instellingen.';
+			case 'pleaseDrawUnlockPattern': return 'Teken het ontgrendelingspatroon';
+			case 'addPatternLock': return 'Patroonvergrendeling toevoegen';
+			case 'cannotBeLessThan8Dots': return 'Mag niet kleiner zijn dan 8 punten';
+			case 'pleaseRepeatThePattern': return 'Herhaal het patroon nogmaals';
+			case 'notMatchFirstValidPattern': return 'Komt niet overeen met het eerste geldige tekenpatroon';
+			case 'deletePatternLock': return 'Patroonvergrendeling verwijderen';
+			case 'notMatchExistingPattern': return 'Komt niet overeen met een bestaand patroon';
+			case 'localAuthentication': return 'lokale auth.';
 			default: return null;
 		}
 	}
@@ -20725,9 +24501,9 @@ extension on _StringsPl {
 				diff,
 				const TextSpan(text: ' i będzie '),
 				tap('manually extend'),
-				const TextSpan(text: ' ważny przez 12 godzin przed wygaśnięciem.'),
+				const TextSpan(text: ' ważny przez 6 godzin przed wygaśnięciem.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Można odnowić tylko z 12-godzinnym wyprzedzeniem';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'Można odnowić tylko z 6-godzinnym wyprzedzeniem';
 			case 'theReceivingAddressValidForLongtime': return 'Ten adres jest ważny przez długi czas.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'Ten adres zbiórki jest ważny przez długi czas i jest automatycznie zasilany w czasie rzeczywistym.';
 			case 'confirmDeposited': return 'Potwierdzenie depozytów';
@@ -20987,7 +24763,7 @@ extension on _StringsPl {
 			case 'referrerIdDoesNotExist': return 'Identyfikator strony odsyłającej nie istnieje!';
 			case 'didIsIncorrectOrInvalid': return 'DID jest nieprawidłowy lub nieważny!';
 			case 'accessTokenIsIncorrectOrInvalid': return 'Token dostępu jest nieprawidłowy lub nieważny!';
-			case 'minimumWithdrawalAmountIs9USD': return 'Minimum 9USD za pojedynczą wypłatę';
+			case 'minimumWithdrawalAmountIs1USD': return 'Minimum 1USD za pojedynczą wypłatę';
 			case 'miningTimeIsNotYet': return 'Jeszcze nie czas na kopanie.';
 			case 'alreadyExists_pleaseDoNotRepeatedly': return 'Już istnieje, nie dodawaj go ponownie!';
 			case 'registrationNumberCannotBeUsedAsAccessNumber': return 'Nie można użyć numeru rejestracyjnego jako numeru dostępu do uwierzytelniania';
@@ -21076,6 +24852,38 @@ extension on _StringsPl {
 			case 'enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted': return 'Wprowadź powiązany numer telefonu komórkowego. Kod kraju można pominąć.';
 			case 'mobileNumberForNameIsIncorrect': return ({required Object name}) => 'Numer telefonu komórkowego ${name} jest niepoprawny';
 			case 'matchingVerificationStrategyIs': return 'Strategia weryfikacji dopasowania to:';
+			case 'balanceGreater3ICP_noNeedPourFuel': return 'Saldo jest większe niż 3 ICP, na razie nie ma potrzeby dolewania paliwa.';
+			case 'escrowAccount': return 'Rachunek powierniczy';
+			case 'fuelRelay': return 'Przekaźnik paliwa';
+			case 'pourFuel': return 'Wlej paliwo';
+			case 'fuelState': return 'Stan paliwa';
+			case 'pouringFuelTips': return 'Wlewanie paliwa nie przynosi żadnych korzyści ani wad, jego celem jest wzbogacenie doświadczenia z systemem Delta';
+			case 'sponsorDevelopersByWatchingAds': return 'Sponsoruj programistów, oglądając reklamy';
+			case 'status': return 'Status';
+			case 'date': return 'Data';
+			case 'assetApplicationIsInProgressTip': return 'Aplikacja zasobu w toku, spróbuj ponownie za 3 sekundy.';
+			case 'delete': return 'Usuń';
+			case 'deleteVerifierTip': return 'Podczas usuwania uprawnień weryfikatora wszystkie powiązane dane dotyczące wyników zostaną usunięte w tym samym czasie, ale nagrody już uzyskane nie zostaną naruszone.';
+			case 'deleteVerifierStatusTip': return 'Przed usunięciem ustaw stan wstrzymania';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Wprowadź "${text}", aby potwierdzić';
+			case 'localSecurity': return 'Bezpieczeństwo lokalne';
+			case 'deviceLock': return 'Blokada urządzenia';
+			case 'patternLock': return 'Blokada wzoru';
+			case 'none': return 'żaden';
+			case 'exist': return 'istnieje';
+			case 'prompt': return 'Monit:';
+			case 'localSecurityTip1': return '1. Lokalne uwierzytelnianie zabezpieczeń jest używane do potwierdzania tożsamości podczas niektórych wrażliwych operacji. Jego celem jest zapobieganie kontrolowaniu urządzenia przez innych i zapewnienie bezpieczeństwa konta.';
+			case 'localSecurityTip2': return '2. Blokada wzoru jest rozwiązaniem uzupełniającym, gdy blokada urządzenia nie jest obsługiwana lub jest niezgodna. Zasadniczo nie ma potrzeby ustawiania blokady wzoru, gdy blokada urządzenia jest dostępna.';
+			case 'localSecurityTip3': return '3. Gdy zapomnisz o blokadzie wzoru, możesz tylko wyczyścić dane aplikacji lub ponownie zainstalować aplikację, aby ją wyczyścić.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'Uwierzytelnianie urządzenia zostanie wywołane. Jeśli wystąpi błąd lub wyjątek, przejdź do opcji "${localSecurity}" na stronie "${menu}" w celu przetestowania i dalszych ustawień.';
+			case 'pleaseDrawUnlockPattern': return 'Proszę narysować wzór odblokowania';
+			case 'addPatternLock': return 'Dodaj blokadę wzoru';
+			case 'cannotBeLessThan8Dots': return 'Nie może być mniej niż 8 kropek';
+			case 'pleaseRepeatThePattern': return 'Proszę powtórzyć wzór jeszcze raz';
+			case 'notMatchFirstValidPattern': return 'Nie pasuje do pierwszego prawidłowego wzorca rysowania';
+			case 'deletePatternLock': return 'Usuń blokadę wzoru';
+			case 'notMatchExistingPattern': return 'Nie pasuje do istniejącego wzorca';
+			case 'localAuthentication': return 'local Auth';
 			default: return null;
 		}
 	}
@@ -21389,9 +25197,9 @@ extension on _StringsPt {
 				diff,
 				const TextSpan(text: ' e será '),
 				tap('manually extend'),
-				const TextSpan(text: ' válido durante 12 horas antes de expirar.'),
+				const TextSpan(text: ' válido durante 6 horas antes de expirar.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Só pode ser renovado com 12 horas de antecedência';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'Só pode ser renovado com 6 horas de antecedência';
 			case 'theReceivingAddressValidForLongtime': return 'Este endereço é válido por um longo período de tempo.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'Este endereço de recolha é válido por um longo período e é automaticamente creditado em tempo real.';
 			case 'confirmDeposited': return 'Confirmação dos depósitos';
@@ -21651,7 +25459,7 @@ extension on _StringsPt {
 			case 'referrerIdDoesNotExist': return 'A ID do referenciador não existe!';
 			case 'didIsIncorrectOrInvalid': return 'A DID está incorrecta ou é inválida!';
 			case 'accessTokenIsIncorrectOrInvalid': return 'O accessToken é incorreto ou inválido!';
-			case 'minimumWithdrawalAmountIs9USD': return 'Mínimo de 9USD para uma única retirada';
+			case 'minimumWithdrawalAmountIs1USD': return 'Mínimo de 1USD para uma única retirada';
 			case 'miningTimeIsNotYet': return 'Ainda não é altura de minerar.';
 			case 'alreadyExists_pleaseDoNotRepeatedly': return 'Já existe, por favor não o adicione novamente!';
 			case 'registrationNumberCannotBeUsedAsAccessNumber': return 'Não é possível utilizar o número de registo como número de acesso de autenticação';
@@ -21739,6 +25547,38 @@ extension on _StringsPt {
 			case 'enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted': return 'Por favor, insira o número de celular associado. O código do país pode ser omitido.';
 			case 'mobileNumberForNameIsIncorrect': return ({required Object name}) => 'O número de celular de ${name} está incorreto';
 			case 'matchingVerificationStrategyIs': return 'A estratégia de verificação de correspondência é:';
+			case 'balanceGreater3ICP_noNeedPourFuel': return 'O saldo é maior que 3 ICP, não há necessidade de despejar combustível por enquanto.';
+			case 'escrowAccount': return 'Conta de custódia';
+			case 'fuelRelay': return 'Relé de combustível';
+			case 'pourFuel': return 'Despeje combustível';
+			case 'fuelState': return 'Estado do combustível';
+			case 'pouringFuelTips': return 'Despejar combustível não traz nenhuma vantagem ou desvantagem, seu objetivo é enriquecer a experiência do sistema Delta.';
+			case 'sponsorDevelopersByWatchingAds': return 'Patrocine desenvolvedores assistindo a anúncios';
+			case 'status': return 'Estado';
+			case 'date': return 'Data';
+			case 'assetApplicationIsInProgressTip': return 'Aplicação de ativo em andamento, tente novamente em 3 segundos.';
+			case 'delete': return 'Excluir';
+			case 'deleteVerifierTip': return 'Ao excluir as permissões de um verificador, todos os dados de pontuação relacionados serão excluídos ao mesmo tempo, mas as recompensas já obtidas não serão afetadas.';
+			case 'deleteVerifierStatusTip': return 'Por favor, defina-o como pausado antes de excluir';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Por favor, digite "${text}", para confirmar';
+			case 'localSecurity': return 'Segurança local';
+			case 'deviceLock': return 'Bloqueio do dispositivo';
+			case 'patternLock': return 'Bloqueio de padrão';
+			case 'none': return 'nenhum';
+			case 'exist': return 'existe';
+			case 'prompt': return 'Prompt:';
+			case 'localSecurityTip1': return '1. A autenticação de segurança local é usada para confirmar a identidade durante algumas operações confidenciais. Sua finalidade é impedir que o dispositivo seja controlado por terceiros e garantir a segurança da conta.';
+			case 'localSecurityTip2': return '2. O bloqueio de padrão é uma solução complementar quando o bloqueio do dispositivo não é suportado ou é incompatível. Geralmente, não há necessidade de definir um bloqueio de padrão quando o bloqueio do dispositivo está disponível.';
+			case 'localSecurityTip3': return '3. Quando você esquece seu padrão de bloqueio, você só pode limpar os dados do aplicativo ou reinstalar o aplicativo para limpá-lo.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'A autenticação do dispositivo está prestes a ser chamada. Se ocorrer um erro ou exceção, acesse a opção "${localSecurity}" na página "${menu}" para testes e configurações adicionais.';
+			case 'pleaseDrawUnlockPattern': return 'Por favor, desenhe o padrão de desbloqueio';
+			case 'addPatternLock': return 'Adicionar bloqueio de padrão';
+			case 'cannotBeLessThan8Dots': return 'Não pode ter menos de 8 pontos';
+			case 'pleaseRepeatThePattern': return 'Por favor, repita o padrão novamente';
+			case 'notMatchFirstValidPattern': return 'Não corresponde ao primeiro padrão de desenho válido';
+			case 'deletePatternLock': return 'Excluir bloqueio de padrão';
+			case 'notMatchExistingPattern': return 'Não corresponde a um padrão existente';
+			case 'localAuthentication': return 'autenticação local';
 			default: return null;
 		}
 	}
@@ -22052,9 +25892,9 @@ extension on _StringsRu {
 				diff,
 				const TextSpan(text: ' и будет '),
 				tap('manually extend'),
-				const TextSpan(text: ' действителен в течение 12 часов до истечения срока действия.'),
+				const TextSpan(text: ' действителен в течение 6 часов до истечения срока действия.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Продление возможно только за 12 часов';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'Продление возможно только за 6 часов';
 			case 'theReceivingAddressValidForLongtime': return 'Этот адрес действителен в течение длительного времени.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'Этот адрес сбора действителен в течение длительного времени и автоматически зачисляется в режиме реального времени.';
 			case 'confirmDeposited': return 'Подтверждение вкладов';
@@ -22314,7 +26154,7 @@ extension on _StringsRu {
 			case 'referrerIdDoesNotExist': return 'Идентификатор реферера не существует!';
 			case 'didIsIncorrectOrInvalid': return 'DID неверен или недействителен!';
 			case 'accessTokenIsIncorrectOrInvalid': return 'Токен доступа неверен или недействителен!';
-			case 'minimumWithdrawalAmountIs9USD': return 'Минимум 9USD для одного вывода средств';
+			case 'minimumWithdrawalAmountIs1USD': return 'Минимум 1USD для одного вывода средств';
 			case 'miningTimeIsNotYet': return 'Время для добычи еще не пришло.';
 			case 'alreadyExists_pleaseDoNotRepeatedly': return 'Уже существует, пожалуйста, не добавляйте его снова!';
 			case 'registrationNumberCannotBeUsedAsAccessNumber': return 'Невозможно использовать регистрационный номер в качестве номера доступа для аутентификации';
@@ -22403,6 +26243,38 @@ extension on _StringsRu {
 			case 'enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted': return 'Пожалуйста, введите их связанный номер мобильного телефона. Код страны можно опустить.';
 			case 'mobileNumberForNameIsIncorrect': return ({required Object name}) => 'Неверный номер мобильного телефона ${name}';
 			case 'matchingVerificationStrategyIs': return 'Стратегия проверки соответствия:';
+			case 'balanceGreater3ICP_noNeedPourFuel': return 'Баланс больше 3 ICP, пока нет необходимости заливать топливо.';
+			case 'escrowAccount': return 'Счет условного депонирования';
+			case 'fuelRelay': return 'Топливное реле';
+			case 'pourFuel': return 'Залить топливо';
+			case 'fuelState': return 'Состояние топлива';
+			case 'pouringFuelTips': return 'Заливка топлива не приносит вам никаких преимуществ или недостатков, ее цель — обогатить опыт использования системы Delta.';
+			case 'sponsorDevelopersByWatchingAds': return 'Спонсируйте разработчиков, просматривая рекламу';
+			case 'status': return 'Статус';
+			case 'date': return 'Дата';
+			case 'assetApplicationIsInProgressTip': return 'Выполняется заявка на актив, повторите попытку через 3 секунды.';
+			case 'delete': return 'Удалить';
+			case 'deleteVerifierTip': return 'При удалении разрешений верификатора все связанные с ним данные о результатах будут одновременно удалены, но уже полученные награды не будут затронуты.';
+			case 'deleteVerifierStatusTip': return 'Перед удалением установите состояние паузы';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Пожалуйста, введите "${text}" для подтверждения';
+			case 'localSecurity': return 'Локальная безопасность';
+			case 'deviceLock': return 'Блокировка устройства';
+			case 'patternLock': return 'Шаблон блокировки';
+			case 'none': return 'нет';
+			case 'exist': return 'существует';
+			case 'prompt': return 'Подсказка:';
+			case 'localSecurityTip1': return '1. Локальная аутентификация безопасности используется для подтверждения личности во время некоторых конфиденциальных операций. Ее цель — предотвратить управление устройством другими лицами и обеспечить безопасность учетной записи.';
+			case 'localSecurityTip2': return '2. Блокировка по шаблону является дополнительным решением, когда блокировка устройства не поддерживается или несовместима. Обычно нет необходимости устанавливать блокировку по шаблону, когда доступна блокировка устройства.';
+			case 'localSecurityTip3': return '3. Если вы забыли графический ключ, вы можете только очистить данные приложения или переустановить приложение, чтобы очистить их.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'Сейчас будет вызвана аутентификация устройства. Если возникнет ошибка или исключение, перейдите к параметру "${localSecurity}" на странице "${menu}" для тестирования и дополнительных настроек.';
+			case 'pleaseDrawUnlockPattern': return 'Пожалуйста, нарисуйте шаблон разблокировки';
+			case 'addPatternLock': return 'Добавить шаблон блокировки';
+			case 'cannotBeLessThan8Dots': return 'Не может быть меньше 8 точек';
+			case 'pleaseRepeatThePattern': return 'Повторите узор еще раз';
+			case 'notMatchFirstValidPattern': return 'Не соответствует первому допустимому шаблону чертежа';
+			case 'deletePatternLock': return 'Удалить графический ключ';
+			case 'notMatchExistingPattern': return 'Не соответствует существующему шаблону';
+			case 'localAuthentication': return 'локальная аутентификация';
 			default: return null;
 		}
 	}
@@ -22715,9 +26587,9 @@ extension on _StringsTh {
 				diff,
 				const TextSpan(text: ' และคุณสามารถ '),
 				tap ('ขยายด้วยตนเอง'),
-				const TextSpan(text: ' ระยะเวลาที่ใช้ได้ภายใน 12 ชั่วโมงก่อนหมดอายุ'),
+				const TextSpan(text: ' ระยะเวลาที่ใช้ได้ภายใน 6 ชั่วโมงก่อนหมดอายุ'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'สามารถต่ออายุได้ล่วงหน้า 12 ชั่วโมงเท่านั้น';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'สามารถต่ออายุได้ล่วงหน้า 6 ชั่วโมงเท่านั้น';
 			case 'theReceivingAddressValidForLongtime': return 'ที่อยู่การชำระเงินนี้ใช้ได้เป็นเวลานาน';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'ที่อยู่การชำระเงินนี้ใช้ได้เป็นเวลานานและจะเข้าบัญชีโดยอัตโนมัติแบบเรียลไทม์';
 			case 'confirmDeposited': return 'ยืนยันการฝากเงิน';
@@ -22977,7 +26849,7 @@ extension on _StringsTh {
 			case 'referrerIdDoesNotExist': return 'ไม่มีรหัสผู้อ้างอิง!';
 			case 'didIsIncorrectOrInvalid': return 'DID ไม่ถูกต้องหรือไม่ถูกต้อง!';
 			case 'accessTokenIsIncorrectOrInvalid': return 'accessToken ไม่ถูกต้องหรือไม่ถูกต้อง!';
-			case 'minimumWithdrawalAmountIs9USD': return 'จำนวนถอนขั้นต่ำในครั้งเดียวคือ 9USD';
+			case 'minimumWithdrawalAmountIs1USD': return 'จำนวนถอนขั้นต่ำในครั้งเดียวคือ 1USD';
 			case 'miningTimeIsNotYet': return 'เวลาขุดยังไม่มา';
 			case 'alreadyExists_pleaseDoNotRepeatedly': return 'มีอยู่แล้ว กรุณาอย่าเพิ่มอีก!';
 			case 'registrationNumberCannotBeUsedAsAccessNumber': return 'หมายเลขลงทะเบียนไม่สามารถใช้เป็นหมายเลขการเข้าถึงการยืนยันได้';
@@ -23065,6 +26937,38 @@ extension on _StringsTh {
 			case 'enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted': return 'กรุณาป้อนหมายเลขโทรศัพท์มือถือที่เกี่ยวข้องของพวกเขา สามารถละเว้นรหัสประเทศได้';
 			case 'mobileNumberForNameIsIncorrect': return ({required Object name}) => 'หมายเลขมือถือของ ${name} ไม่ถูกต้อง';
 			case 'matchingVerificationStrategyIs': return 'กลยุทธ์การตรวจสอบการจับคู่คือ:';
+			case 'balanceGreater3ICP_noNeedPourFuel': return 'สมดุลมากกว่า 3 ICP ไม่จำเป็นต้องเติมเชื้อเพลิงในตอนนี้';
+			case 'escrowAccount': return 'บัญชีเอสโครว์';
+			case 'fuelRelay': return 'รีเลย์เชื้อเพลิง';
+			case 'pourFuel': return 'เทเชื้อเพลิง';
+			case 'fuelState': return 'สถานะเชื้อเพลิง';
+			case 'pouringFuelTips': return 'การเติมเชื้อเพลิงไม่ได้ทำให้คุณได้รับข้อดีหรือข้อเสียใดๆ แต่มีจุดประสงค์เพื่อเสริมประสบการณ์ระบบเดลต้า';
+			case 'sponsorDevelopersByWatchingAds': return 'สนับสนุนนักพัฒนาโดยการดูโฆษณา';
+			case 'status': return 'สถานะ';
+			case 'date': return 'วันที่';
+			case 'assetApplicationIsInProgressTip': return 'แอปพลิเคชันสินทรัพย์กำลังดำเนินการอยู่ โปรดลองอีกครั้งใน 3 วินาที';
+			case 'delete': return 'ลบ';
+			case 'deleteVerifierTip': return 'เมื่อทำการลบสิทธิ์ของผู้ตรวจสอบ ข้อมูลคะแนนที่เกี่ยวข้องทั้งหมดจะถูกลบออกพร้อมกัน แต่รางวัลที่ได้รับไปแล้วจะไม่ได้รับผลกระทบ';
+			case 'deleteVerifierStatusTip': return 'กรุณาตั้งค่าเป็นสถานะหยุดชั่วคราวก่อนทำการลบ';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'กรุณาป้อน "${text}" เพื่อยืนยัน';
+			case 'localSecurity': return 'ความปลอดภัยในพื้นที่';
+			case 'deviceLock': return 'ล็อคอุปกรณ์';
+			case 'patternLock': return 'ล็อครูปแบบ';
+			case 'none': return 'ไม่มี';
+			case 'exist': return 'มีอยู่';
+			case 'prompt': return 'แจ้งเตือน:';
+			case 'localSecurityTip1': return '1. การตรวจสอบความปลอดภัยในพื้นที่ใช้เพื่อยืนยันตัวตนระหว่างการดำเนินการที่ละเอียดอ่อนบางอย่าง วัตถุประสงค์คือเพื่อป้องกันไม่ให้ผู้อื่นควบคุมอุปกรณ์และเพื่อให้แน่ใจว่าบัญชีมีความปลอดภัย';
+			case 'localSecurityTip2': return '2. การล็อกรูปแบบเป็นโซลูชันเสริมเมื่อการล็อกอุปกรณ์ไม่ได้รับการรองรับหรือเข้ากันไม่ได้ โดยทั่วไปแล้ว ไม่จำเป็นต้องตั้งค่าการล็อกรูปแบบเมื่อการล็อกอุปกรณ์พร้อมใช้งาน';
+			case 'localSecurityTip3': return '3. เมื่อลืมล็อครูปแบบของคุณ คุณสามารถล้างข้อมูลแอปหรือติดตั้งแอปใหม่เพื่อล้างข้อมูลได้เท่านั้น';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'การตรวจสอบสิทธิ์อุปกรณ์กำลังจะถูกเรียกใช้ หากเกิดข้อผิดพลาดหรือข้อยกเว้น โปรดไปที่ตัวเลือก "${localSecurity}" ในหน้า "${menu}" เพื่อทำการทดสอบและตั้งค่าเพิ่มเติม';
+			case 'pleaseDrawUnlockPattern': return 'กรุณาวาดรูปแบบการปลดล็อค';
+			case 'addPatternLock': return 'เพิ่มการล็อครูปแบบ';
+			case 'cannotBeLessThan8Dots': return 'ไม่สามารถน้อยกว่า 8 จุดได้';
+			case 'pleaseRepeatThePattern': return 'กรุณาทำซ้ำรูปแบบอีกครั้ง';
+			case 'notMatchFirstValidPattern': return 'ไม่ตรงกับรูปแบบการวาดภาพที่ถูกต้องครั้งแรก';
+			case 'deletePatternLock': return 'ลบล็อครูปแบบ';
+			case 'notMatchExistingPattern': return 'ไม่ตรงกับรูปแบบที่มีอยู่';
+			case 'localAuthentication': return 'การรับรองความถูกต้องภายในเครื่อง';
 			default: return null;
 		}
 	}
@@ -23378,9 +27282,9 @@ extension on _StringsUk {
 				diff,
 				const TextSpan(text: ' і буде '),
 				tap('вручну продовжити'),
-				const TextSpan(text: ' дійсною протягом 12 годин до закінчення терміну дії.'),
+				const TextSpan(text: ' дійсною протягом 6 годин до закінчення терміну дії.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Можна поновити лише за 12 годин до початку';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'Можна поновити лише за 6 годин до початку';
 			case 'theReceivingAddressValidForLongtime': return 'Ця адреса дійсна протягом тривалого часу.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'Ця адреса для збору коштів є дійсною протягом тривалого часу і автоматично зараховується в режимі реального часу.';
 			case 'confirmDeposited': return 'Підтвердження депозитів';
@@ -23640,7 +27544,7 @@ extension on _StringsUk {
 			case 'referrerIdDoesNotExist': return 'Ідентифікатор реферала не існує!';
 			case 'didIsIncorrectOrInvalid': return 'DID неправильний або недійсний!';
 			case 'accessTokenIsIncorrectOrInvalid': return 'Токен доступу неправильний або недійсний!';
-			case 'minimumWithdrawalAmountIs9USD': return 'Мінімум 9USD для одноразового зняття коштів';
+			case 'minimumWithdrawalAmountIs1USD': return 'Мінімум 1USD для одноразового зняття коштів';
 			case 'miningTimeIsNotYet': return 'Ще не час мінувати.';
 			case 'alreadyExists_pleaseDoNotRepeatedly': return 'Вже існує, будь ласка, не додавайте його знову!';
 			case 'registrationNumberCannotBeUsedAsAccessNumber': return 'Неможливо використовувати реєстраційний номер як номер доступу для автентифікації';
@@ -23728,6 +27632,38 @@ extension on _StringsUk {
 			case 'enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted': return 'Будь ласка, введіть відповідний номер мобільного телефону. Код країни можна опустити.';
 			case 'mobileNumberForNameIsIncorrect': return ({required Object name}) => 'Номер мобільного телефону ${name} неправильний';
 			case 'matchingVerificationStrategyIs': return 'Відповідна стратегія перевірки:';
+			case 'balanceGreater3ICP_noNeedPourFuel': return 'Баланс більше 3 ICP, наразі не потрібно заливати паливо';
+			case 'escrowAccount': return 'Депонований рахунок';
+			case 'fuelRelay': return 'Реле палива';
+			case 'pourFuel': return 'Залити паливо';
+			case 'fuelState': return 'Стан палива';
+			case 'pouringFuelTips': return 'Заливка палива не принесе вам жодних переваг чи недоліків, її мета – збагатити досвід роботи з системою Delta.';
+			case 'sponsorDevelopersByWatchingAds': return 'Спонсоруйте розробників, переглядаючи рекламу';
+			case 'status': return 'статус';
+			case 'date': return 'дата';
+			case 'assetApplicationIsInProgressTip': return 'Виконується заявка на актив, повторіть спробу через 3 секунди.';
+			case 'delete': return 'Видалити';
+			case 'deleteVerifierTip': return 'Під час видалення дозволів верифікатора всі пов’язані дані очок буде видалено одночасно, але це не вплине на вже отримані винагороди.';
+			case 'deleteVerifierStatusTip': return 'Перед видаленням переведіть його в стан паузи';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Введіть "${text}", щоб підтвердити';
+			case 'localSecurity': return 'Локальна безпека';
+			case 'deviceLock': return 'Блокування пристрою';
+			case 'patternLock': return 'Блокування шаблону';
+			case 'none': return 'жоден';
+			case 'exist': return 'існує';
+			case 'prompt': return 'Підказка:';
+			case 'localSecurityTip1': return '1. Локальна автентифікація безпеки використовується для підтвердження особи під час деяких конфіденційних операцій. Її призначення полягає в тому, щоб запобігти контролю над пристроєм іншими особами та забезпечити безпеку облікового запису.';
+			case 'localSecurityTip2': return '2. Блокування шаблоном є додатковим рішенням, якщо блокування пристрою не підтримується або несумісне. Як правило, немає необхідності встановлювати блокування шаблоном, якщо блокування пристрою доступне.';
+			case 'localSecurityTip3': return '3. Якщо ваш шаблон блокування забутий, ви можете лише очистити дані програми або перевстановити програму, щоб очистити їх.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'Незабаром буде викликана автентифікація пристрою. Якщо станеться помилка чи виняткова ситуація, будь ласка, перейдіть до параметра "${localSecurity}" на сторінці "${menu}" для перевірки та додаткових налаштувань.';
+			case 'pleaseDrawUnlockPattern': return 'Будь ласка, намалюйте шаблон розблокування';
+			case 'addPatternLock': return 'Додати шаблон блокування';
+			case 'cannotBeLessThan8Dots': return 'Не може бути менше 8 точок';
+			case 'pleaseRepeatThePattern': return 'Будь ласка, повторіть шаблон ще раз';
+			case 'notMatchFirstValidPattern': return 'Не збігається з першим дійсним шаблоном малюнка';
+			case 'deletePatternLock': return 'Видалити шаблон блокування';
+			case 'notMatchExistingPattern': return 'Не відповідає існуючому шаблону';
+			case 'localAuthentication': return 'локальна авторизація';
 			default: return null;
 		}
 	}
@@ -24041,9 +27977,9 @@ extension on _StringsVi {
 				diff,
 				const TextSpan(text: ' và bạn có thể '),
 				tap ('gia hạn thủ công'),
-				const TextSpan(text: ' thời hạn hiệu lực trong vòng 12 giờ trước khi hết hạn.'),
+				const TextSpan(text: ' thời hạn hiệu lực trong vòng 6 giờ trước khi hết hạn.'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return 'Chỉ có thể gia hạn trước 12 giờ';
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'Chỉ có thể gia hạn trước 6 giờ';
 			case 'theReceivingAddressValidForLongtime': return 'Địa chỉ thanh toán này có giá trị trong một thời gian dài.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'Địa chỉ thanh toán này có hiệu lực trong thời gian dài và sẽ được ghi có tự động theo thời gian thực.';
 			case 'confirmDeposited': return 'Xác nhận đã gửi tiền';
@@ -24303,7 +28239,7 @@ extension on _StringsVi {
 			case 'referrerIdDoesNotExist': return 'ID người giới thiệu không tồn tại!';
 			case 'didIsIncorrectOrInvalid': return 'DID không chính xác hoặc không hợp lệ!';
 			case 'accessTokenIsIncorrectOrInvalid': return 'accessToken không chính xác hoặc không hợp lệ!';
-			case 'minimumWithdrawalAmountIs9USD': return 'Số tiền rút tối thiểu một lần là 9USD';
+			case 'minimumWithdrawalAmountIs1USD': return 'Số tiền rút tối thiểu một lần là 1USD';
 			case 'miningTimeIsNotYet': return 'Thời điểm khai thác vẫn chưa đến';
 			case 'alreadyExists_pleaseDoNotRepeatedly': return 'Đã tồn tại rồi, vui lòng không thêm lại!';
 			case 'registrationNumberCannotBeUsedAsAccessNumber': return 'Số đăng ký không thể được sử dụng làm số truy cập xác minh';
@@ -24391,6 +28327,38 @@ extension on _StringsVi {
 			case 'enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted': return 'Vui lòng nhập số điện thoại di động liên kết của họ. Mã quốc gia có thể được bỏ qua.';
 			case 'mobileNumberForNameIsIncorrect': return ({required Object name}) => 'Số điện thoại di động của ${name} không đúng';
 			case 'matchingVerificationStrategyIs': return 'Chiến lược xác minh phù hợp là:';
+			case 'balanceGreater3ICP_noNeedPourFuel': return 'Số dư lớn hơn 3 ICP, hiện tại không cần phải đổ nhiên liệu.';
+			case 'escrowAccount': return 'Tài khoản ký quỹ';
+			case 'fuelRelay': return 'Rơ le nhiên liệu';
+			case 'pourFuel': return 'Đổ nhiên liệu';
+			case 'fuelState': return 'Trạng thái nhiên liệu';
+			case 'pouringFuelTips': return 'Việc đổ nhiên liệu không mang lại cho bạn bất kỳ lợi thế hay bất lợi nào, mục đích của nó là làm phong phú thêm trải nghiệm hệ thống Delta.';
+			case 'sponsorDevelopersByWatchingAds': return 'Tài trợ cho các nhà phát triển bằng cách xem quảng cáo';
+			case 'status': return 'Trạng thái';
+			case 'date': return 'Ngày';
+			case 'assetApplicationIsInProgressTip': return 'Đang tiến hành ứng dụng tài sản, vui lòng thử lại sau 3 giây.';
+			case 'delete': return 'Xóa';
+			case 'deleteVerifierTip': return 'Khi xóa quyền của người xác minh, tất cả dữ liệu điểm liên quan sẽ bị xóa cùng lúc, nhưng phần thưởng đã nhận được sẽ không bị ảnh hưởng.';
+			case 'deleteVerifierStatusTip': return 'Vui lòng đặt nó ở trạng thái tạm dừng trước khi xóa';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'Vui lòng nhập "${text}", để xác nhận';
+			case 'localSecurity': return 'Bảo mật cục bộ';
+			case 'deviceLock': return 'Khóa thiết bị';
+			case 'patternLock': return 'Khóa mẫu';
+			case 'none': return 'không có';
+			case 'exist': return 'tồn tại';
+			case 'prompt': return 'Nhắc nhở:';
+			case 'localSecurityTip1': return '1. Xác thực bảo mật cục bộ được sử dụng để xác nhận danh tính trong một số hoạt động nhạy cảm. Mục đích của nó là ngăn chặn thiết bị bị người khác kiểm soát và đảm bảo tính bảo mật của tài khoản.';
+			case 'localSecurityTip2': return '2. Khóa mẫu là giải pháp bổ sung khi khóa thiết bị không được hỗ trợ hoặc không tương thích. Nhìn chung, không cần thiết lập khóa mẫu khi khóa thiết bị khả dụng.';
+			case 'localSecurityTip3': return '3. Khi quên khóa mẫu, bạn chỉ có thể xóa dữ liệu ứng dụng hoặc cài đặt lại ứng dụng để xóa.';
+			case 'deviceAuthFirstTip': return ({required Object localSecurity, required Object menu}) => 'Xác thực thiết bị sắp được gọi. Nếu xảy ra lỗi hoặc ngoại lệ, vui lòng chuyển đến tùy chọn "${localSecurity}" trên trang "${menu}" để kiểm tra và thiết lập thêm.';
+			case 'pleaseDrawUnlockPattern': return 'Vui lòng vẽ hình mở khóa';
+			case 'addPatternLock': return 'Thêm khóa mẫu';
+			case 'cannotBeLessThan8Dots': return 'Không thể ít hơn 8 chấm';
+			case 'pleaseRepeatThePattern': return 'Vui lòng lặp lại mẫu một lần nữa';
+			case 'notMatchFirstValidPattern': return 'Không khớp với mẫu vẽ hợp lệ đầu tiên';
+			case 'deletePatternLock': return 'Xóa khóa mẫu';
+			case 'notMatchExistingPattern': return 'Không khớp với mẫu hiện có';
+			case 'localAuthentication': return 'Xác thực cục bộ';
 			default: return null;
 		}
 	}
@@ -24702,11 +28670,11 @@ extension on _StringsZhCn {
 			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
 				const TextSpan(text: '该地址将在'),
 				diff,
-				const TextSpan(text: '后过期，过期前12小时内可'),
+				const TextSpan(text: '后过期，过期前6小时内可'),
 				tap('手动延长'),
 				const TextSpan(text: '有效期。'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return '只能提前12小时内续订';
+			case 'canOnlyRenewWithin6hoursInAdvance': return '只能提前6小时内续订';
 			case 'theReceivingAddressValidForLongtime': return '该收款地址长期有效.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return '该收款地址长期有效，并实时自动入账。';
 			case 'confirmDeposited': return '确认已存入';
@@ -24965,7 +28933,7 @@ extension on _StringsZhCn {
 			case 'referrerIdDoesNotExist': return '推荐人 ID 不存在！';
 			case 'didIsIncorrectOrInvalid': return 'DID 不正确或无效！';
 			case 'accessTokenIsIncorrectOrInvalid': return 'accessToken 不正确或无效！';
-			case 'minimumWithdrawalAmountIs9USD': return '一次提现金额最少9USD';
+			case 'minimumWithdrawalAmountIs1USD': return '一次提现金额最少1USD';
 			case 'miningTimeIsNotYet': return '挖矿时间尚未到';
 			case 'alreadyExists_pleaseDoNotRepeatedly': return '已存在，请不要重复添加！';
 			case 'registrationNumberCannotBeUsedAsAccessNumber': return '不能使用注册号码作为验证接入号';
@@ -25055,6 +29023,38 @@ extension on _StringsZhCn {
 			case 'enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted': return '请输入它们的关联手机号码，可省略国家代码。';
 			case 'mobileNumberForNameIsIncorrect': return ({required Object name}) => '${name}的移动号码不正确';
 			case 'matchingVerificationStrategyIs': return '匹配到的验证策略为：';
+			case 'balanceGreater3ICP_noNeedPourFuel': return '余额大于3 ICP暂时无需倒入燃料。';
+			case 'escrowAccount': return '托管账户';
+			case 'fuelRelay': return '燃料中继';
+			case 'pourFuel': return '倒入燃料';
+			case 'fuelState': return '燃料状态';
+			case 'pouringFuelTips': return '倒入燃料不会给您带来任何的好处或坏处，其目的为了丰富Delta系统体验。';
+			case 'sponsorDevelopersByWatchingAds': return '通过观看广告赞助开发者';
+			case 'status': return '状态';
+			case 'date': return '日期';
+			case 'assetApplicationIsInProgressTip': return '资产申请中，请3秒后再试。';
+			case 'delete': return '删除';
+			case 'deleteVerifierTip': return '删除验证者权限时，所有相关的得分数据都将同时删除，但是已经获得的奖励不会受到影响。';
+			case 'deleteVerifierStatusTip': return '删除前请先设置为暂停状态';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => '确认请输入“${text}”';
+			case 'localSecurity': return '本地安全';
+			case 'deviceLock': return '设备锁';
+			case 'patternLock': return '图案锁';
+			case 'none': return '没有';
+			case 'exist': return '存在';
+			case 'prompt': return '提示:';
+			case 'localSecurityTip1': return '1. 本地安全认证用于在一些敏感操作时的身份确认，其目的是防止设备被他人控制时，并能保证账户的安全性。';
+			case 'localSecurityTip2': return '2. 图案锁是在调用设备锁不支持或不兼容的情况下的一种补充方案， 一般在设备锁可用的情况下无需设置图案锁。';
+			case 'localSecurityTip3': return '3. 当您的图案锁被遗忘的情况下，只能清除应用数据或重装应用才能被清除。';
+			case 'deviceAuthFirstTip': return ({required Object menu, required Object localSecurity}) => '即将调用设备认证，如果发生报错或异常，请进入"${menu}"页面的"${localSecurity}"选项进行测试和进一步设置。';
+			case 'pleaseDrawUnlockPattern': return '请绘制解锁图案';
+			case 'addPatternLock': return '添加图案锁';
+			case 'cannotBeLessThan8Dots': return '不能低于8个点阵';
+			case 'pleaseRepeatThePattern': return '请再次重复绘制图案';
+			case 'notMatchFirstValidPattern': return '与首次有效的绘制图案不匹配';
+			case 'deletePatternLock': return '删除图案锁';
+			case 'notMatchExistingPattern': return '与存在的图案不匹配';
+			case 'localAuthentication': return '本地验证';
 			default: return null;
 		}
 	}
@@ -25366,11 +29366,11 @@ extension on _StringsZhTw {
 			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
 				const TextSpan(text: '該地址將在'),
 				diff,
-				const TextSpan(text: '後過期，過期前12小時內可'),
+				const TextSpan(text: '後過期，過期前6小時內可'),
 				tap('手動延長'),
 				const TextSpan(text: '有效期。'),
 			]);
-			case 'canOnlyRenewWithin12hoursInAdvance': return '只能提前12小時內續訂';
+			case 'canOnlyRenewWithin6hoursInAdvance': return '只能提前6小時內續訂';
 			case 'theReceivingAddressValidForLongtime': return '該收款地址長期有效.';
 			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return '該收款地址長期有效，並實時自動入賬。';
 			case 'confirmDeposited': return '確認已存入';
@@ -25630,7 +29630,7 @@ extension on _StringsZhTw {
 			case 'referrerIdDoesNotExist': return '推薦人 ID 不存在！';
 			case 'didIsIncorrectOrInvalid': return 'DID 不正確或無效！';
 			case 'accessTokenIsIncorrectOrInvalid': return 'accessToken 不正確或無效！';
-			case 'minimumWithdrawalAmountIs9USD': return '一次提現金額最少9USD';
+			case 'minimumWithdrawalAmountIs1USD': return '一次提現金額最少1USD';
 			case 'miningTimeIsNotYet': return '挖礦時間尚未到';
 			case 'alreadyExists_pleaseDoNotRepeatedly': return '已存在，請不要重複新增！';
 			case 'registrationNumberCannotBeUsedAsAccessNumber': return '不能使用註冊號碼作為驗證接入號';
@@ -25719,6 +29719,38 @@ extension on _StringsZhTw {
 			case 'enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted': return '請輸入它們的關聯手機號碼，可省略國家代碼。';
 			case 'mobileNumberForNameIsIncorrect': return ({required Object name}) => '${name}的行動號碼不正確';
 			case 'matchingVerificationStrategyIs': return '符合的驗證策略為：';
+			case 'balanceGreater3ICP_noNeedPourFuel': return '餘額大於3 ICP暫時不需倒入燃料。';
+			case 'escrowAccount': return '託管帳戶';
+			case 'fuelRelay': return '燃料中繼';
+			case 'pourFuel': return '導入燃料';
+			case 'fuelState': return '燃料狀態';
+			case 'pouringFuelTips': return '倒入燃料不會為您帶來任何的好處或壞處，其目的為了豐富Delta系統體驗。';
+			case 'sponsorDevelopersByWatchingAds': return '透過觀看廣告贊助開發者';
+			case 'status': return '狀態';
+			case 'date': return '日期';
+			case 'assetApplicationIsInProgressTip': return '資產申請中，請3秒後再試。';
+			case 'delete': return '刪除';
+			case 'deleteVerifierTip': return '刪除驗證者權限時，所有相關的得分資料都會同時刪除，但是已經獲得的獎勵不會受到影響。';
+			case 'deleteVerifierStatusTip': return '刪除前請先設定為暫停狀態';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => '確認請輸入“${text}”';
+			case 'localSecurity': return '本地安全';
+			case 'deviceLock': return '裝置鎖';
+			case 'patternLock': return '圖案鎖';
+			case 'none': return '沒有';
+			case 'exist': return '存在';
+			case 'prompt': return '提示:';
+			case 'localSecurityTip1': return '1. 本地安全認證用於在一些敏感操作時的身份確認，其目的是防止設備被他人控制時，並能保證帳戶的安全性。';
+			case 'localSecurityTip2': return '2. 圖案鎖是在呼叫裝置鎖不支援或不相容的情況下的一種補充方案， 一般在裝置鎖可用的情況下無需設定圖案鎖。';
+			case 'localSecurityTip3': return '3. 當您的圖案鎖定被遺忘的情況下，只能清除應用資料或重裝應用程式才能被清除。';
+			case 'deviceAuthFirstTip': return ({required Object menu, required Object localSecurity}) => '即將呼叫設備認證，如果發生報錯或異常，請進入"${menu}"頁面的"${localSecurity}"選項進行測試和進一步設定。';
+			case 'pleaseDrawUnlockPattern': return '請繪製解鎖圖案';
+			case 'addPatternLock': return '新增圖案鎖定';
+			case 'cannotBeLessThan8Dots': return '不能低於8個點陣';
+			case 'pleaseRepeatThePattern': return '請再重複繪製圖案';
+			case 'notMatchFirstValidPattern': return '與第一個有效的繪製圖案不符';
+			case 'deletePatternLock': return '刪除圖案鎖';
+			case 'notMatchExistingPattern': return '與存在的圖案不符';
+			case 'localAuthentication': return '本地驗證';
 			default: return null;
 		}
 	}
