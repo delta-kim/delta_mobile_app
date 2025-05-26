@@ -51,8 +51,8 @@ if (typeof window.delta == "object") {
       });
     },
 
-    getDAppAcctInfo() {
-      let message = { model: "getDAppAcctInfo", args: [this.AppId], handle: "getDAppAcctInfo" + new Date().getTime() };
+    getDAppAcctInfo(dAppIdentToken) {
+      let message = { model: "getDAppAcctInfo", args: [dAppIdentToken], handle: "getDAppAcctInfo" + new Date().getTime() };
       return new Promise((resolve, reject) => {
         window.flutter.postMessage(JSON.stringify(message));
         this.handles[message.handle] = resolve;
