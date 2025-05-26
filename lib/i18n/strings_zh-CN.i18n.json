@@ -175,9 +175,8 @@
 	"mined": "已开采",
 	"communityMining": "社区采矿",
 	"consensusPromotionFund": "共识促进基金",
-	"ecologicalAwardFund": "生态奖励基金",
+	"ecologicalIncentiveFund": "生态激励基金",
 	"icpFuelCrowdfunding": "ICP燃料众筹",
-	"coreDeveloperRewards": "核心开发者奖励",
 	"totalAllocation": "总量分配",
 	"miningRatio": "开采比例",
 	"billion(map)": {
@@ -196,7 +195,16 @@
 	"advertiser": "广告商",
 	"earned": "已赚取",
 	"withdraw": "提现",
-	"validUSCTrecords": "有效的USCT记录",
+	"usctHistory": "USCT历史记录",
+	"self" : "自己",
+	"settlement" : "结算",
+	"settlementReport" : "结算报告",
+	"periodsSettlementSuccessful" : "本期结算成功！",
+	"timeRange":"时间范围",
+	"convertRate" :"转换率",
+	"peoples" : "人",
+	"alreadySettled" :"已结算",
+	"reportID" : "报告ID",
 	"USCTmining": "USCT 挖矿",
 	"aboutUSCTmining": "关于USCT挖矿？",
 	"aboutUSCTminingItme1": "1. USDT 是一种全球流行的美元稳定币，可在全球主流加密货币交易所轻松的兑换成各国主权货币。",
@@ -585,5 +593,6 @@
 	"notMatchFirstValidPattern": "与首次有效的绘制图案不匹配",
 	"deletePatternLock": "删除图案锁",
 	"notMatchExistingPattern": "与存在的图案不匹配",
-	"localAuthentication": "本地验证"
+	"localAuthentication": "本地验证",
+	"No settlement amount available" : "No settlement amount available"
 }

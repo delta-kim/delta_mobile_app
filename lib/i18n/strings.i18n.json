@@ -174,9 +174,8 @@
      "mined": "Mined",
      "communityMining": "community mining",
      "consensusPromotionFund": "Consensus Promotion Fund",
-     "ecologicalAwardFund": "Ecological Award Fund",
+     "ecologicalIncentiveFund": "Ecological Incentive Fund",
      "icpFuelCrowdfunding": "ICP fuel crowdfunding",
-     "coreDeveloperRewards": "Core Developer Rewards",
      "totalAllocation": "Total allocation",
      "miningRatio": "Mining ratio",
      "billion(map)": {
@@ -195,7 +194,16 @@
      "advertiser": "advertiser",
      "earned": "Earned",
      "withdraw": "withdraw",
-     "validUSCTrecords": "Valid USCT records",
+     "usctHistory": "USCT History",
+     "self": "Self",
+     "settlement": "Settlement",
+     "settlementReport": "Settlement Report",
+     "periodsSettlementSuccessful": "This period's settlement is successful!",
+     "timeRange": "Time Range",
+     "convertRate": "Conversion Rate",
+     "peoples": "peoples",
+     "alreadySettled": "Already Settled",
+     "reportID": "Report ID",
      "USCTmining": "USCT mining",
      "aboutUSCTmining": "About USCT mining?",
      "aboutUSCTminingItme1": "1. USDT is a globally popular US dollar stablecoin, which can be easily converted into sovereign currencies of various countries on the world's mainstream cryptocurrency exchanges.",
@@ -584,5 +592,6 @@
      "notMatchFirstValidPattern": "Does not match the first valid pattern",
      "deletePatternLock": "Delete pattern lock",
      "notMatchExistingPattern": "Does not match the existing pattern",
-     "localAuthentication": "local Auth."
+     "localAuthentication": "local Auth.",
+     "noSettlementAmountAvailableForThisPeriod": "No settlement amount available for this period"
 }
