@@ -590,5 +590,6 @@
     "notMatchFirstValidPattern": "لەگەڵ یەکەم نەخشی وێنەکێشانی دروستدا ناگونجێت",
     "deletePatternLock": "قفڵی نەخش بسڕەوە",
     "notMatchExistingPattern": "لەگەڵ نەخشێکی هەبوودا ناگونجێت",
-    "localAuthentication": "ڕەسەنایەتی ناوخۆیی"
+    "localAuthentication": "ڕەسەنایەتی ناوخۆیی",
+    "noSettlementAmountAvailableForThisPeriod": "هیچ بڕە پارەیەکی یەکلاکردنەوە بۆ ئەم ماوەیە بەردەست نییە"
 }

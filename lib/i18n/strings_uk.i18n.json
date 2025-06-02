@@ -591,5 +591,6 @@
   "notMatchFirstValidPattern": "Не збігається з першим дійсним шаблоном малюнка",
   "deletePatternLock": "Видалити шаблон блокування",
   "notMatchExistingPattern": "Не відповідає існуючому шаблону",
-  "localAuthentication": "локальна авторизація"
+  "localAuthentication": "локальна авторизація",
+  "noSettlementAmountAvailableForThisPeriod": "Сума розрахунку за цей період недоступна"
 }

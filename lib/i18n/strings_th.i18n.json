@@ -591,5 +591,6 @@
   "notMatchFirstValidPattern": "ไม่ตรงกับรูปแบบการวาดภาพที่ถูกต้องครั้งแรก",
   "deletePatternLock": "ลบล็อครูปแบบ",
   "notMatchExistingPattern": "ไม่ตรงกับรูปแบบที่มีอยู่",
-  "localAuthentication": "การรับรองความถูกต้องภายในเครื่อง"
+  "localAuthentication": "การรับรองความถูกต้องภายในเครื่อง",
+  "noSettlementAmountAvailableForThisPeriod": "ไม่มีจำนวนเงินชำระสำหรับช่วงเวลานี้"
 }

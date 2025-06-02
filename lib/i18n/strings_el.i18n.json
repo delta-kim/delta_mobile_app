@@ -591,5 +591,6 @@
   "notMatchFirstValidPattern": "Δεν ταιριάζει με το πρώτο έγκυρο μοτίβο σχεδίασης",
   "deletePatternLock": "Διαγραφή κλειδώματος μοτίβου",
   "notMatchExistingPattern": "Δεν ταιριάζει με ένα υπάρχον μοτίβο",
-  "localAuthentication": "Τοπικός έλεγχος ταυτότητας"
+  "localAuthentication": "Τοπικός έλεγχος ταυτότητας",
+  "noSettlementAmountAvailableForThisPeriod": "Δεν υπάρχει διαθέσιμο ποσό διακανονισμού για αυτήν την περίοδο"
 }

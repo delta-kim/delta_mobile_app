@@ -590,5 +590,6 @@
      "notMatchFirstValidPattern": "पहले वैध ड्राइंग पैटर्न से मेल नहीं खाता",
      "deletePatternLock": "पैटर्न लॉक हटाएं",
      "notMatchExistingPattern": "मौजूदा पैटर्न से मेल नहीं खाता",
-     "localAuthentication": "स्थानीय प्रमाणीकरण"
+     "localAuthentication": "स्थानीय प्रमाणीकरण",
+     "noSettlementAmountAvailableForThisPeriod": "इस अवधि के लिए कोई निपटान राशि उपलब्ध नहीं है"
 }

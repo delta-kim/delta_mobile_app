@@ -590,5 +590,6 @@
      "notMatchFirstValidPattern": "Non corrisponde al primo schema valido",
      "deletePatternLock": "Elimina blocco con schema",
      "notMatchExistingPattern": "Non corrisponde allo schema esistente",
-     "localAuthentication": "Autenticazione locale"
+     "localAuthentication": "Autenticazione locale",
+     "noSettlementAmountAvailableForThisPeriod": "Nessun importo di liquidazione disponibile per questo periodo"
 }

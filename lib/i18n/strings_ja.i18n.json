@@ -591,5 +591,6 @@
 	"notMatchFirstValidPattern": "最初の有効な描画パターンと一致しません",
 	"deletePatternLock": "パターンロックの削除",
 	"notMatchExistingPattern": "既存のパターンと一致しません",
-	"localAuthentication": "ローカル認証"
+	"localAuthentication": "ローカル認証",
+	"noSettlementAmountAvailableForThisPeriod": "この期間に利用可能な決済額はありません"
 }

@@ -591,5 +591,6 @@
   "notMatchFirstValidPattern": "Не соответствует первому допустимому шаблону чертежа",
   "deletePatternLock": "Удалить графический ключ",
   "notMatchExistingPattern": "Не соответствует существующему шаблону",
-  "localAuthentication": "локальная аутентификация"
+  "localAuthentication": "локальная аутентификация",
+  "noSettlementAmountAvailableForThisPeriod": "Для этого периода сумма расчета недоступна"
 }

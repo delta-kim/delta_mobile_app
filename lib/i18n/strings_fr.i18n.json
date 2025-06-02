@@ -591,5 +591,6 @@
 	"notMatchFirstValidPattern": "Ne correspond pas au premier modèle de dessin valide",
 	"deletePatternLock": "Supprimer le verrouillage par motif",
 	"notMatchExistingPattern": "Ne correspond pas à un modèle existant",
-	"localAuthentication": "Authentification locale"
+	"localAuthentication": "Authentification locale",
+	"noSettlementAmountAvailableForThisPeriod": "Aucun montant de règlement disponible pour cette période"
 }

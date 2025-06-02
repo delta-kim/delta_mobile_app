@@ -591,5 +591,6 @@
 	"notMatchFirstValidPattern": "與第一個有效的繪製圖案不符",
 	"deletePatternLock": "刪除圖案鎖",
 	"notMatchExistingPattern": "與存在的圖案不符",
-	"localAuthentication": "本地驗證"
+	"localAuthentication": "本地驗證",
+	"noSettlementAmountAvailableForThisPeriod": "此期間沒有可用的結算金額"
 }

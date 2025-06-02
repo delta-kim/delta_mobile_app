@@ -593,5 +593,6 @@
   "notMatchFirstValidPattern": "প্রথম বৈধ অঙ্কন প্যাটার্নের সাথে মেলে না",
   "deletePatternLock": "প্যাটার্ন লক মুছুন",
   "notMatchExistingPattern": "একটি বিদ্যমান প্যাটার্নের সাথে মেলে না",
-  "localAuthentication": "স্থানীয় প্রমাণীকরণ"
+  "localAuthentication": "স্থানীয় প্রমাণীকরণ",
+  "noSettlementAmountAvailableForThisPeriod": "এই সময়ের জন্য কোনও নিষ্পত্তির পরিমাণ উপলব্ধ নেই"
 }

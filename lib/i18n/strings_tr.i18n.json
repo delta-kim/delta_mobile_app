@@ -590,5 +590,6 @@
      "notMatchFirstValidPattern": "İlk geçerli desenle eşleşmiyor",
      "deletePatternLock": "Desen kilidini sil",
      "notMatchExistingPattern": "Mevcut desenle eşleşmiyor",
-     "localAuthentication": "yerel Doğrulama"
+     "localAuthentication": "yerel Doğrulama",
+     "noSettlementAmountAvailableForThisPeriod": "Bu dönem için kullanılabilir bir yerleşim tutarı yok"
 }

@@ -591,5 +591,6 @@
   "notMatchFirstValidPattern": "Không khớp với mẫu vẽ hợp lệ đầu tiên",
   "deletePatternLock": "Xóa khóa mẫu",
   "notMatchExistingPattern": "Không khớp với mẫu hiện có",
-  "localAuthentication": "Xác thực cục bộ"
+  "localAuthentication": "Xác thực cục bộ",
+  "noSettlementAmountAvailableForThisPeriod": "Không có số tiền thanh toán nào khả dụng cho giai đoạn này"
 }

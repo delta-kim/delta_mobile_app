@@ -590,5 +590,6 @@
     "notMatchFirstValidPattern": "Не съответства на първия валиден модел на чертеж",
     "deletePatternLock": "Изтриване на заключване на шаблон",
     "notMatchExistingPattern": "Не съответства на съществуващ модел",
-    "localAuthentication": "Локално удостоверяване"
+    "localAuthentication": "Локално удостоверяване",
+    "noSettlementAmountAvailableForThisPeriod": "Няма налична сума за сетълмент за този период"
 }

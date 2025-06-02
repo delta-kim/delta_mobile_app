@@ -591,5 +591,6 @@
 	"notMatchFirstValidPattern": "Não corresponde ao primeiro padrão de desenho válido",
 	"deletePatternLock": "Excluir bloqueio de padrão",
 	"notMatchExistingPattern": "Não corresponde a um padrão existente",
-	"localAuthentication": "autenticação local"
+	"localAuthentication": "autenticação local",
+	"noSettlementAmountAvailableForThisPeriod": "Nenhum valor de liquidação disponível para este período"
 }

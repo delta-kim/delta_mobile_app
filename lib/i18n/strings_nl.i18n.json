@@ -591,5 +591,6 @@
   "notMatchFirstValidPattern": "Komt niet overeen met het eerste geldige tekenpatroon",
   "deletePatternLock": "Patroonvergrendeling verwijderen",
   "notMatchExistingPattern": "Komt niet overeen met een bestaand patroon",
-  "localAuthentication": "lokale auth."
+  "localAuthentication": "lokale auth.",
+  "noSettlementAmountAvailableForThisPeriod": "Geen vereffeningsbedrag beschikbaar voor deze periode"
 }

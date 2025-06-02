@@ -591,5 +591,6 @@
 	"notMatchFirstValidPattern": "No coincide con el primer patrón de dibujo válido",
 	"deletePatternLock": "Eliminar bloqueo de patrón",
 	"notMatchExistingPattern": "No coincide con ningún patrón existente",
-	"localAuthentication": "Autenticación local"
+	"localAuthentication": "Autenticación local",
+	"noSettlementAmountAvailableForThisPeriod": "No hay importe de liquidación disponible para este período"
 }

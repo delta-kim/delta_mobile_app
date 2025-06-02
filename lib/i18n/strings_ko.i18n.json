@@ -591,5 +591,6 @@
 	"notMatchFirstValidPattern": "첫 번째 유효한 드로잉 패턴과 일치하지 않습니다",
 	"deletePatternLock": "패턴 잠금 삭제",
 	"notMatchExistingPattern": "기존 패턴과 일치하지 않습니다.",
-	"localAuthentication": "로컬 인증"
+	"localAuthentication": "로컬 인증",
+	"noSettlementAmountAvailableForThisPeriod": "이 기간 동안 사용 가능한 정산 금액이 없습니다."
 }

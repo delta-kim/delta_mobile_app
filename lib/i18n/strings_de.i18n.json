@@ -591,5 +591,6 @@
   "notMatchFirstValidPattern": "Entspricht nicht dem ersten gültigen Zeichenmuster",
   "deletePatternLock": "Mustersperre löschen",
   "notMatchExistingPattern": "Entspricht keinem vorhandenen Muster",
-  "localAuthentication": "Lokale Authentifizierung"
+  "localAuthentication": "Lokale Authentifizierung",
+  "noSettlementAmountAvailableForThisPeriod": "Kein Abrechnungsbetrag für diesen Zeitraum verfügbar"
 }

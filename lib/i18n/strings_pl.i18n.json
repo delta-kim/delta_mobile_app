@@ -591,5 +591,6 @@
   "notMatchFirstValidPattern": "Nie pasuje do pierwszego prawidłowego wzorca rysowania",
   "deletePatternLock": "Usuń blokadę wzoru",
   "notMatchExistingPattern": "Nie pasuje do istniejącego wzorca",
-  "localAuthentication": "local Auth"
+  "localAuthentication": "local Auth",
+  "noSettlementAmountAvailableForThisPeriod": "Brak dostępnej kwoty rozliczenia na ten okres"
 }
