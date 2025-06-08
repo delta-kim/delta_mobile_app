@@ -591,5 +591,5 @@
      "deletePatternLock": "Șterge blocarea model",
      "notMatchExistingPattern": "Nu se potrivește cu modelul existent",
      "localAuthentication": "Autentificare locală",
-     "noSettlementAmountAvailableForThisPeriod": "Nu există sumă de decontare disponibilă pentru această perioadă",
+     "noSettlementAmountAvailableForThisPeriod": "Nu există sumă de decontare disponibilă pentru această perioadă"
 }

@@ -444,7 +444,7 @@
      "noMatchingAddressThatCanBeUsedToPayCrossChainFees_switchOtherChainToTry": "Er is geen overeenkomend adres dat gebruikt kan worden om cross-chain kosten te betalen, schakel over naar andere chain-netwerken om het te proberen.",
      "currentMaximumMatchedSingleTransferAmountIsX": "Het huidige maximale gematchte bedrag voor een enkele overdracht is ${x}",
      "memoMustNotBeMoreThan64bytes": "Memo mag niet meer dan 64 bytes zijn",
-     "insufficientBalance_theAmountIsX": "Ontoereikend saldo, het bedrag is:",
+     "insufficientBalance_theAmountIsX": "Ontoereikend saldo, het bedrag is:${x}",
      "boundRreceivingAddressesExceed3Tip": "Je kunt niet meer dan 3 ontvangende adressen binden.\nAls je een nieuw ontvangstadres wilt koppelen.\nOntkoppel eerst een ander ontvangend adres",
      "parametersA_exception": "Parameters: ${x}, uitzondering",
      "parameterException": "Parameter Uitzondering!",
@@ -591,6 +591,6 @@
      "notMatchFirstValidPattern": "Komt niet overeen met het eerste geldige tekenpatroon",
      "deletePatternLock": "Patroonvergrendeling verwijderen",
      "notMatchExistingPattern": "Komt niet overeen met een bestaand patroon",
-     "localAuthentication": "lokale auth."
+     "localAuthentication": "lokale auth.",
      "noSettlementAmountAvailableForThisPeriod": "Geen verrekeningsbedrag beschikbaar voor deze periode"
 }

@@ -324,9 +324,9 @@
      "downloadLink": "ڈاؤن لوڈ کرنے کا لنک",
      "alreadyReadyFollowingTheAboveTips": "اوپر دی گئی ہدایات کے بعد پہلے ہی تیار ہوں",
      "globalUniversal": "عالمی عالمگیر",
-     "insufficientLocalVerifierTips(rich)": "فی الحال مقامی تصدیق کرنے والوں کی تعداد DSMS تصدیق خدمات میں شرکت کرنے کے لیے کافی نہیں ہے۔ براہ کرم ","${gu}":" رسائی کی خدمت کو منتخب کریں۔",
+     "insufficientLocalVerifierTips(rich)": "فی الحال DSMS تصدیق تک رسائی کی خدمت میں حصہ لینے کے لیے کافی مقامی سرٹیفائر نہیں ہیں۔ براہ کرم \"${gu}\" رسائی کی خدمت کو منتخب کریں۔",
      "asDedicatedNumberForAccess": "رسائی کے لیے مخصوص نمبر کی طرح",
-     "pleaseCheckTip": "براہ کرم ","${tip}":" چیک کریں",
+     "pleaseCheckTip": "براہ کرم \"${tip}\" کو چیک کریں",
      "inputLengthTooShort": "ان پٹ کی لمبائی بہت کم ہے",
      "shortName": "مختصر نام",
      "pleaseEnterXname": "براہ کرم ${name} درج کریں",
@@ -591,5 +591,5 @@
      "deletePatternLock": "پیٹرن لاک حذف کریں",
      "notMatchExistingPattern": "موجودہ پیٹرن سے میل نہیں کھاتا",
      "localAuthentication": "مقامی تصدیقِ شناخت",
-     "noSettlementAmountAvailableForThisPeriod": "اس مدت کے لیے تصفیہ کی کوئی رقم دستیاب نہیں ہے۔",
+     "noSettlementAmountAvailableForThisPeriod": "اس مدت کے لیے تصفیہ کی کوئی رقم دستیاب نہیں ہے۔"
 }

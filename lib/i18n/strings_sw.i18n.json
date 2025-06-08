@@ -194,7 +194,7 @@
      "advertiser": "mtangazaji",
      "earned": "Imepatikana",
      "withdraw": "ondoa",
-     "USCT History": "Historia ya miamala ya USCT",
+     "usctHistory": "Historia ya miamala ya USCT",
      "self": "Binafsi",
      "settlement": "Malipo",
      "settlementReport": "Ripoti ya Malipo",
@@ -590,6 +590,6 @@
      "notMatchFirstValidPattern": "Haifanani na muundo wa kwanza halali",
      "deletePatternLock": "Futa kufunga muundo",
      "notMatchExistingPattern": "Haifanani na muundo uliopo",
-     "localAuthentication": "Uthibitisho wa Ndani"
+     "localAuthentication": "Uthibitisho wa Ndani",
      "noSettlementAmountAvailableForThisPeriod": "Hakuna kiasi cha malipo kinachopatikana kwa kipindi hiki"
 }
