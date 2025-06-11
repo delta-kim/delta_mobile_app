@@ -501,7 +501,7 @@
   "successfullyModified": "Модификация прошла успешно!",
   "executionSuccessful": "Реализация прошла успешно!",
   "preview": "превью",
-  "followSystem": "система контроля",
+  "useSystemDefault": "Системное значение по умолчанию",
   "change": "вариация",
   "replace": "замены",
   "view": "проверять",
@@ -592,5 +592,6 @@
   "deletePatternLock": "Удалить графический ключ",
   "notMatchExistingPattern": "Не соответствует существующему шаблону",
   "localAuthentication": "локальная аутентификация",
-  "noSettlementAmountAvailableForThisPeriod": "Для этого периода сумма расчета недоступна"
+  "noSettlementAmountAvailableForThisPeriod": "Для этого периода сумма расчета недоступна",
+  "verificationChannel": "Канал проверки"
 }

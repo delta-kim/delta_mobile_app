@@ -500,7 +500,7 @@
      "executionSuccessful": "Yürütme başarılı!",
      "parameterException": "Parametre istisnası!",
      "preview": "Önİzleme",
-     "followSystem": "sistemi takip et",
+     "useSystemDefault": "Sistem varsayılanını kullan",
      "change": "Değiştir",
      "replace": "Değiştir",
      "view": "Görüntüle",
@@ -591,5 +591,6 @@
      "deletePatternLock": "Desen kilidini sil",
      "notMatchExistingPattern": "Mevcut desenle eşleşmiyor",
      "localAuthentication": "yerel Doğrulama",
-     "noSettlementAmountAvailableForThisPeriod": "Bu dönem için kullanılabilir bir yerleşim tutarı yok"
+     "noSettlementAmountAvailableForThisPeriod": "Bu dönem için kullanılabilir bir yerleşim tutarı yok",
+     "verificationChannel": "Doğrulama Kanalı"
 }

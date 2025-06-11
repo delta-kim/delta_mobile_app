@@ -503,7 +503,7 @@
   "successfullyModified": "পরিবর্তন সফল!",
   "executionSuccessful": "মৃত্যুদন্ড সফল!",
   "preview": "পূর্বরূপ",
-  "followSystem": "সিস্টেম অনুসরণ করুন",
+  "useSystemDefault": "সিস্টেমের ডিফল্ট ব্যবহার করুন",
   "change": "পরিবর্তন",
   "replace": "প্রতিস্থাপন",
   "view": "চেক করুন",
@@ -594,5 +594,6 @@
   "deletePatternLock": "প্যাটার্ন লক মুছুন",
   "notMatchExistingPattern": "একটি বিদ্যমান প্যাটার্নের সাথে মেলে না",
   "localAuthentication": "স্থানীয় প্রমাণীকরণ",
-  "noSettlementAmountAvailableForThisPeriod": "এই সময়ের জন্য কোনও নিষ্পত্তির পরিমাণ উপলব্ধ নেই"
+  "noSettlementAmountAvailableForThisPeriod": "এই সময়ের জন্য কোনও নিষ্পত্তির পরিমাণ উপলব্ধ নেই",
+  "verificationChannel": "যাচাইকরণ চ্যানেল"
 }

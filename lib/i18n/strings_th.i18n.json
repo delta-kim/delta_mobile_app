@@ -501,7 +501,7 @@
   "successfullyModified": "การปรับเปลี่ยนสำเร็จ!",
   "executionSuccessful": "ดำเนินการสำเร็จ!",
   "preview": "ดูตัวอย่าง",
-  "followSystem": "ทำตามระบบ",
+  "useSystemDefault": "ใช้ค่าเริ่มต้นของระบบ",
   "change": "เปลี่ยน",
   "replace": "แทนที่",
   "view": "ตรวจสอบ",
@@ -592,5 +592,6 @@
   "deletePatternLock": "ลบล็อครูปแบบ",
   "notMatchExistingPattern": "ไม่ตรงกับรูปแบบที่มีอยู่",
   "localAuthentication": "การรับรองความถูกต้องภายในเครื่อง",
-  "noSettlementAmountAvailableForThisPeriod": "ไม่มีจำนวนเงินชำระสำหรับช่วงเวลานี้"
+  "noSettlementAmountAvailableForThisPeriod": "ไม่มีจำนวนเงินชำระสำหรับช่วงเวลานี้",
+  "verificationChannel": "ช่องทางการยืนยัน"
 }

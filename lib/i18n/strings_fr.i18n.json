@@ -501,7 +501,7 @@
 	"successfullyModified": "La modification est réussie !",
 	"executionSuccessful": "La mise en œuvre a été couronnée de succès !",
 	"preview": "Aperçu",
-	"followSystem": "système de suivi",
+	"useSystemDefault": "Utiliser la valeur par défaut du système",
 	"change": "variation",
 	"replace": "changement",
 	"view": "voir",
@@ -592,5 +592,6 @@
 	"deletePatternLock": "Supprimer le verrouillage par motif",
 	"notMatchExistingPattern": "Ne correspond pas à un modèle existant",
 	"localAuthentication": "Authentification locale",
-	"noSettlementAmountAvailableForThisPeriod": "Aucun montant de règlement disponible pour cette période"
+	"noSettlementAmountAvailableForThisPeriod": "Aucun montant de règlement disponible pour cette période",
+	"verificationChannel": "Canal de verificación"
 }

@@ -500,7 +500,7 @@
      "executionSuccessful": "Utekelezaji umefanikiwa!",
      "parameterException": "Isipokuwa ya Parameta!",
      "preview": "Hakiki",
-     "followSystem": "fuata Mfumo",
+     "useSystemDefault": "Tumia chaguomsingi la mfumo",
      "change": "Badilisha",
      "replace": "Badilisha",
      "view": "Tazama",
@@ -591,5 +591,6 @@
      "deletePatternLock": "Futa kufunga muundo",
      "notMatchExistingPattern": "Haifanani na muundo uliopo",
      "localAuthentication": "Uthibitisho wa Ndani",
-     "noSettlementAmountAvailableForThisPeriod": "Hakuna kiasi cha malipo kinachopatikana kwa kipindi hiki"
+     "noSettlementAmountAvailableForThisPeriod": "Hakuna kiasi cha malipo kinachopatikana kwa kipindi hiki",
+     "verificationChannel": "Idhaa ya Uthibitishaji"
 }

@@ -24,8 +24,8 @@
      "TELCO": "Operator",
      "score": "Scor",
      "checkAccessNumberTip(rich)": {
-          "one":"Te rugăm să verifici $n număr de acces și să apeși butonul \"${span(text)}\" pentru a continua.",
-          "other":"Te rugăm să verifici $n numere de acces și să apeși butonul \"${span(text)}\" pentru a continua."
+          "one": "Te rugăm să verifici $n număr de acces și să apeși butonul \"${span(text)}\" pentru a continua.",
+          "other": "Te rugăm să verifici $n numere de acces și să apeși butonul \"${span(text)}\" pentru a continua."
      },
      "whatIsDeltaDesc": "Delta este un proiect experimental descentralizat de monedă digitală globală și un ecosistem de aplicații monetare.",
      "deltaGoalsDesc": "Scopul este să permită oamenilor să folosească Delta pentru a construi împreună o nouă monedă digitală universală, corectă, sigură, rapidă și ecologică. Și să ofere diverse scenarii de aplicație eficiente pentru aceste monede digitale și criptomonede anterioare.",
@@ -179,10 +179,10 @@
      "totalAllocation": "Alocare totală",
      "miningRatio": "Raport de minare",
      "billion(map)": {
-          "300":"300 de miliarde",
-          "180":"180 de miliarde",
-          "30":"30 de miliarde",
-          "60":"60 de miliarde"
+          "300": "300 de miliarde",
+          "180": "180 de miliarde",
+          "30": "30 de miliarde",
+          "60": "60 de miliarde"
      },
      "watchAdsToSupportDevelopers": "Urmărește reclame pentru a sprijini dezvoltatorii",
      "loadingAdcomponents": "Se încarcă componentele publicitare…",
@@ -500,7 +500,7 @@
      "executionSuccessful": "Execuție reușită!",
      "parameterException": "Excepție de parametru!",
      "preview": "Previzualizare",
-     "followSystem": "urmează sistemul",
+     "useSystemDefault": "Folosește valorile implicite ale sistemului",
      "change": "Schimbă",
      "replace": "Înlocuiește",
      "view": "Vizualizează",
@@ -591,5 +591,6 @@
      "deletePatternLock": "Șterge blocarea model",
      "notMatchExistingPattern": "Nu se potrivește cu modelul existent",
      "localAuthentication": "Autentificare locală",
-     "noSettlementAmountAvailableForThisPeriod": "Nu există sumă de decontare disponibilă pentru această perioadă"
+     "noSettlementAmountAvailableForThisPeriod": "Nu există sumă de decontare disponibilă pentru această perioadă",
+     "verificationChannel": "Canal de verificare"
 }

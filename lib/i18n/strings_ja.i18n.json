@@ -501,7 +501,7 @@
 	"successfullyModified": "修正は成功した！",
 	"executionSuccessful": "実施は成功した！",
 	"preview": "プレビュー",
-	"followSystem": "フォローアップシステム",
+	"useSystemDefault": "システムのデフォルトを使用する",
 	"change": "バリエーション",
 	"replace": "リプレイスメント",
 	"view": "調べる",
@@ -592,5 +592,6 @@
 	"deletePatternLock": "パターンロックの削除",
 	"notMatchExistingPattern": "既存のパターンと一致しません",
 	"localAuthentication": "ローカル認証",
-	"noSettlementAmountAvailableForThisPeriod": "この期間に利用可能な決済額はありません"
+	"noSettlementAmountAvailableForThisPeriod": "この期間に利用可能な決済額はありません",
+	"verificationChannel": "検証チャネル"
 }

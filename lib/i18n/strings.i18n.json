@@ -1,6 +1,6 @@
 {
      "home": "Home",
-     "switchLanguage": "switch Language",
+     "switchLanguage": "Switch language",
      "languageSwitch": "Language switch",
      "slogan": "Build a decentralized economic zone in delta",
      "countryRegionCode": "Country / region code",
@@ -500,7 +500,7 @@
      "executionSuccessful": "Execution successful!",
      "parameterException": "Parameter exception!",
      "preview": "PreView",
-     "followSystem": "follow System",
+     "useSystemDefault": "Use system default",
      "change": "Change",
      "replace": "Replace",
      "view": "View",
@@ -591,5 +591,6 @@
      "deletePatternLock": "Delete pattern lock",
      "notMatchExistingPattern": "Does not match the existing pattern",
      "localAuthentication": "local Auth.",
-     "noSettlementAmountAvailableForThisPeriod": "No settlement amount available for this period"
+     "noSettlementAmountAvailableForThisPeriod": "No settlement amount available for this period",
+     "verificationChannel": "Verification Channel"
 }

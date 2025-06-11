@@ -501,7 +501,7 @@
   "successfullyModified": "Sửa đổi thành công!",
   "executionSuccessful": "Thực hiện thành công!",
   "preview": "Xem trước",
-  "followSystem": "Theo dõi hệ thống",
+  "useSystemDefault": "Mặc định của hệ thống",
   "change": "Thay đổi",
   "replace": "thay thế",
   "view": "Kiểm tra",
@@ -592,5 +592,6 @@
   "deletePatternLock": "Xóa khóa mẫu",
   "notMatchExistingPattern": "Không khớp với mẫu hiện có",
   "localAuthentication": "Xác thực cục bộ",
-  "noSettlementAmountAvailableForThisPeriod": "Không có số tiền thanh toán nào khả dụng cho giai đoạn này"
+  "noSettlementAmountAvailableForThisPeriod": "Không có số tiền thanh toán nào khả dụng cho giai đoạn này",
+  "verificationChannel": "Kênh xác minh"
 }

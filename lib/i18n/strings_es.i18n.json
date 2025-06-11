@@ -501,7 +501,7 @@
 	"successfullyModified": "La modificación ha sido un éxito.",
 	"executionSuccessful": "La aplicación fue un éxito.",
 	"preview": "avances",
-	"followSystem": "sistema de seguimiento",
+	"useSystemDefault": "predeterminado del sistema",
 	"change": "variación",
 	"replace": "recambios",
 	"view": "comprobar",
@@ -592,5 +592,6 @@
 	"deletePatternLock": "Eliminar bloqueo de patrón",
 	"notMatchExistingPattern": "No coincide con ningún patrón existente",
 	"localAuthentication": "Autenticación local",
-	"noSettlementAmountAvailableForThisPeriod": "No hay importe de liquidación disponible para este período"
+	"noSettlementAmountAvailableForThisPeriod": "No hay importe de liquidación disponible para este período",
+	"verificationChannel": "Canal de verificación"
 }

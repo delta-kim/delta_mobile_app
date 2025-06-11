@@ -501,7 +501,7 @@
 	"successfullyModified": "修改成功！",
 	"executionSuccessful": "執行成功！",
 	"preview": "預覽",
-	"followSystem": "跟隨系統",
+	"useSystemDefault": "使用系統預設",
 	"change": "更改",
 	"replace": "更換",
 	"view": "檢視",
@@ -592,5 +592,6 @@
 	"deletePatternLock": "刪除圖案鎖",
 	"notMatchExistingPattern": "與存在的圖案不符",
 	"localAuthentication": "本地驗證",
-	"noSettlementAmountAvailableForThisPeriod": "此期間沒有可用的結算金額"
+	"noSettlementAmountAvailableForThisPeriod": "此期間沒有可用的結算金額",
+	"verificationChannel": "驗證頻道"
 }

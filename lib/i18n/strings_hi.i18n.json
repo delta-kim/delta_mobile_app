@@ -500,7 +500,7 @@
      "executionSuccessful": "सफलतापूर्वक निष्पादित किया गया!",
      "parameterException": "पैरामीटर अपवाद!",
      "preview": "प्रिव्यू",
-     "followSystem": "सिस्टम अनुसरण करें",
+     "useSystemDefault": "सिस्टम डिफ़ॉल्ट का उपयोग करें",
      "change": "बदलें",
      "replace": "प्रतिस्थापित करें",
      "view": "देखें",
@@ -591,5 +591,6 @@
      "deletePatternLock": "पैटर्न लॉक हटाएं",
      "notMatchExistingPattern": "मौजूदा पैटर्न से मेल नहीं खाता",
      "localAuthentication": "स्थानीय प्रमाणीकरण",
-     "noSettlementAmountAvailableForThisPeriod": "इस अवधि के लिए कोई निपटान राशि उपलब्ध नहीं है"
+     "noSettlementAmountAvailableForThisPeriod": "इस अवधि के लिए कोई निपटान राशि उपलब्ध नहीं है",
+     "verificationChannel": "सत्यापन चैनल"
 }

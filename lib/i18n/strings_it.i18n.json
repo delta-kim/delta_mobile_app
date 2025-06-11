@@ -500,7 +500,7 @@
      "executionSuccessful": "Esecuzione riuscita!",
      "parameterException": "Parameter exception!",
      "preview": "Anteprima",
-     "followSystem": "segui Sistema",
+     "useSystemDefault": "Usa il sistema predefinito",
      "change": "Cambia",
      "replace": "Sostituisci",
      "view": "Visualizza",
@@ -591,5 +591,6 @@
      "deletePatternLock": "Elimina blocco con schema",
      "notMatchExistingPattern": "Non corrisponde allo schema esistente",
      "localAuthentication": "Autenticazione locale",
-     "noSettlementAmountAvailableForThisPeriod": "Nessun importo di liquidazione disponibile per questo periodo"
+     "noSettlementAmountAvailableForThisPeriod": "Nessun importo di liquidazione disponibile per questo periodo",
+     "verificationChannel": "Canale di verifica"
 }

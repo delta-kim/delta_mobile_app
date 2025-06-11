@@ -501,7 +501,7 @@
   "successfullyModified": "Модифікація пройшла успішно!",
   "executionSuccessful": "Реалізація пройшла успішно!",
   "preview": "попередні перегляди",
-  "followSystem": "система подальших дій",
+  "useSystemDefault": "Системний за замовчуванням",
   "change": "варіація",
   "replace": "зміна (адреси тощо)",
   "view": "перевірте.",
@@ -592,5 +592,6 @@
   "deletePatternLock": "Видалити шаблон блокування",
   "notMatchExistingPattern": "Не відповідає існуючому шаблону",
   "localAuthentication": "локальна авторизація",
-  "noSettlementAmountAvailableForThisPeriod": "Сума розрахунку за цей період недоступна"
+  "noSettlementAmountAvailableForThisPeriod": "Сума розрахунку за цей період недоступна",
+  "verificationChannel": "Канал підтвердження"
 }

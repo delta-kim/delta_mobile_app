@@ -501,7 +501,7 @@
   "successfullyModified": "Modyfikacja zakończyła się sukcesem!",
   "executionSuccessful": "Wdrożenie zakończyło się sukcesem!",
   "preview": "zapowiedzi",
-  "followSystem": "system monitorowania",
+  "useSystemDefault": "Użyj domyślnych ustawień systemowych",
   "change": "wariacja",
   "replace": "zamienniki",
   "view": "sprawdź",
@@ -592,5 +592,6 @@
   "deletePatternLock": "Usuń blokadę wzoru",
   "notMatchExistingPattern": "Nie pasuje do istniejącego wzorca",
   "localAuthentication": "local Auth",
-  "noSettlementAmountAvailableForThisPeriod": "Brak dostępnej kwoty rozliczenia na ten okres"
+  "noSettlementAmountAvailableForThisPeriod": "Brak dostępnej kwoty rozliczenia na ten okres",
+  "verificationChannel": "Kanał weryfikacji"
 }

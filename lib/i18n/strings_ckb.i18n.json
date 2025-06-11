@@ -500,7 +500,7 @@
     "executionSuccessful": "جێبەجێکردن سەرکەوتوو بوو!",
     "parameterException": "ئیستسنای پارامێتەر!",
     "preview": "بینین",
-    "followSystem": "بەدواداچوون بۆ سیستەم",
+    "useSystemDefault": "بەکارهێنانی سیستەم پێشوەختە",
     "change": "دەسکاریکردن",
     "replace": "شوێن گرتنەوە",
     "view": "بینین",
@@ -591,5 +591,6 @@
     "deletePatternLock": "قفڵی نەخش بسڕەوە",
     "notMatchExistingPattern": "لەگەڵ نەخشێکی هەبوودا ناگونجێت",
     "localAuthentication": "ڕەسەنایەتی ناوخۆیی",
-    "noSettlementAmountAvailableForThisPeriod": "هیچ بڕە پارەیەکی یەکلاکردنەوە بۆ ئەم ماوەیە بەردەست نییە"
+    "noSettlementAmountAvailableForThisPeriod": "هیچ بڕە پارەیەکی یەکلاکردنەوە بۆ ئەم ماوەیە بەردەست نییە",
+    "verificationChannel": "کەناڵی پشتڕاستکردنەوە"
 }

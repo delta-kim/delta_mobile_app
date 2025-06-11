@@ -501,7 +501,7 @@
      "successfullyModified": "Succesvol gewijzigd!",
      "executionSuccessful": "De uitvoering was succesvol!",
      "preview": "Voorbeeld",
-     "followSystem": "Volgsysteem",
+     "useSystemDefault": "Gebruik systeemstandaard",
      "change": "Verander",
      "replace": "Vervang",
      "view": "Bekijk",
@@ -592,5 +592,6 @@
      "deletePatternLock": "Patroonvergrendeling verwijderen",
      "notMatchExistingPattern": "Komt niet overeen met een bestaand patroon",
      "localAuthentication": "lokale auth.",
-     "noSettlementAmountAvailableForThisPeriod": "Geen verrekeningsbedrag beschikbaar voor deze periode"
+     "noSettlementAmountAvailableForThisPeriod": "Geen verrekeningsbedrag beschikbaar voor deze periode",
+     "verificationChannel": "Verificatiekanaal"
 }

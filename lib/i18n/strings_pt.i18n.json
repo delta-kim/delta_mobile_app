@@ -501,7 +501,7 @@
 	"successfullyModified": "A modificação foi bem sucedida!",
 	"executionSuccessful": "A implementação foi bem sucedida!",
 	"preview": "antevisões",
-	"followSystem": "sistema de acompanhamento",
+	"useSystemDefault": "Usar padrão do sistema",
 	"change": "variação",
 	"replace": "mudança (de endereço, etc.)",
 	"view": "verificar",
@@ -592,5 +592,6 @@
 	"deletePatternLock": "Excluir bloqueio de padrão",
 	"notMatchExistingPattern": "Não corresponde a um padrão existente",
 	"localAuthentication": "autenticação local",
-	"noSettlementAmountAvailableForThisPeriod": "Nenhum valor de liquidação disponível para este período"
+	"noSettlementAmountAvailableForThisPeriod": "Nenhum valor de liquidação disponível para este período",
+	"verificationChannel": "Canal de Verificação"
 }

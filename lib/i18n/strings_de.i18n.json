@@ -501,7 +501,7 @@
   "successfullyModified": "Die Änderung war erfolgreich!",
   "executionSuccessful": "Die Umsetzung war erfolgreich!",
   "preview": "Vorschauen",
-  "followSystem": "Wiedervorlageverfahren",
+  "useSystemDefault": "Systemstandard verwenden",
   "change": "Variation",
   "replace": "Ersetzungen",
   "view": "auschecken",
@@ -592,5 +592,6 @@
   "deletePatternLock": "Mustersperre löschen",
   "notMatchExistingPattern": "Entspricht keinem vorhandenen Muster",
   "localAuthentication": "Lokale Authentifizierung",
-  "noSettlementAmountAvailableForThisPeriod": "Kein Abrechnungsbetrag für diesen Zeitraum verfügbar"
+  "noSettlementAmountAvailableForThisPeriod": "Kein Abrechnungsbetrag für diesen Zeitraum verfügbar",
+  "verificationChannel": "Verifizierungskanal"
 }

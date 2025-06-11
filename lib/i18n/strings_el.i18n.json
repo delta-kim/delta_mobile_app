@@ -500,7 +500,7 @@
      "executionSuccessful": "Η εκτέλεση ήταν επιτυχής!",
      "parameterException": "Εξαίρεση παραμέτρου!",
      "preview": "Προεπισκόπηση",
-     "followSystem": "ακολουθήστε το σύστημα",
+     "useSystemDefault": "Χρήση προεπιλογής συστήματος",
      "change": "Αλλαγή",
      "replace": "Αντικατάσταση",
      "view": "Προβολή",
@@ -591,5 +591,6 @@
      "deletePatternLock": "Διαγραφή κλειδώματος μοτίβου",
      "notMatchExistingPattern": "Δεν ταιριάζει με το υπάρχον μοτίβο",
      "localAuthentication": "τοπική εξουσιοδότηση.",
-     "noSettlementAmountAvailableForThisPeriod": "Δεν υπάρχει διαθέσιμο ποσό εξόφλησης για αυτήν την περίοδο"
+     "noSettlementAmountAvailableForThisPeriod": "Δεν υπάρχει διαθέσιμο ποσό εξόφλησης για αυτήν την περίοδο",
+     "verificationChannel": "Κανάλι επαλήθευσης"
 }

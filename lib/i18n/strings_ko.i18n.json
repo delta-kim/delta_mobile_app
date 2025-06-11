@@ -501,7 +501,7 @@
 	"successfullyModified": "수정에 성공했습니다!",
 	"executionSuccessful": "구현은 성공적이었습니다!",
 	"preview": "미리 보기",
-	"followSystem": "후속 조치 시스템",
+	"useSystemDefault": "시스템 기본값 사용",
 	"change": "변형",
 	"replace": "교체",
 	"view": "체크 아웃",
@@ -592,5 +592,6 @@
 	"deletePatternLock": "패턴 잠금 삭제",
 	"notMatchExistingPattern": "기존 패턴과 일치하지 않습니다.",
 	"localAuthentication": "로컬 인증",
-	"noSettlementAmountAvailableForThisPeriod": "이 기간 동안 사용 가능한 정산 금액이 없습니다."
+	"noSettlementAmountAvailableForThisPeriod": "이 기간 동안 사용 가능한 정산 금액이 없습니다.",
+	"verificationChannel": "검증 채널"
 }

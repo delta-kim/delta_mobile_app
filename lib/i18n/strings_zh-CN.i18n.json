@@ -501,7 +501,7 @@
 	"executionSuccessful": "执行成功！",
 	"parameterException": "参数异常！",
 	"preview": "预览",
-	"followSystem": "跟随系统",
+	"useSystemDefault": "使用系统默认",
 	"change": "更改",
 	"replace": "更换",
 	"view": "查看",
@@ -592,5 +592,6 @@
 	"deletePatternLock": "删除图案锁",
 	"notMatchExistingPattern": "与存在的图案不匹配",
 	"localAuthentication": "本地验证",
-	"noSettlementAmountAvailableForThisPeriod": "此期间没有可用的结算金额"
+	"noSettlementAmountAvailableForThisPeriod": "此期间没有可用的结算金额",
+	"verificationChannel": "验证渠道"
 }
