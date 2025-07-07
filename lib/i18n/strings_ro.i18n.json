@@ -119,7 +119,7 @@
      "directReferralRewardDesc": "Pentru fiecare persoană recomandată direct, când acea persoană este în starea de minare, rata ta de minare va crește cu 1/3 din rata de bază. \n\n În plus, starea de minare a recomandatorului tău va fi, de asemenea, calculată în recompensa ta pentru recomandare directă.",
      "indirectReferralRewards": "Recompense pentru recomandare indirectă",
      "indirectReferralRewardDesc": "Când un recomandator indirect este în starea de minare, rata ta de minare va crește suplimentar cu 1/10 din rata de bază. \n\nEchipa ta de recomandare directă și fiecare persoană pe care o recomandă reprezintă o recomandare indirectă pentru tine.",
-     "mine": "Minerează",
+     "mine": "Minează",
      "thisMiningInformation": "Această informație de minare",
      "participatedInMiningXtimes(rich)": "Ai participat la minare: ${x} ori",
      "totalIncomeThisTimeXDeltaCoins(rich)": "Venit total de data aceasta: ${x} monede Delta",
