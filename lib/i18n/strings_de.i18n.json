@@ -27,7 +27,7 @@
     "one": "Bitte kreuzen Sie $n Zugangsnummern an und klicken Sie auf die Schaltfläche \"${span(text)}\", um zum nächsten Schritt zu gelangen.",
     "other": "Bitte kreuzen Sie $n Zugangsnummern an und klicken Sie auf die Schaltfläche \"${span(text)}\", um zum nächsten Schritt zu gelangen. "
   },
-  "whatIsDeltaDesc": "Delta ist ein quelloffenes, dezentralisiertes, globales digitales Währungsexperiment und ein Ökosystem von Kryptowährungsanwendungen.",
+  "whatIsDeltaDesc": "Delta ist ein dezentrales Open-Source-Innovationsprojekt für globale digitale Währungen und ein Währungsanwendungs-Ökosystem.",
   "deltaGoalsDesc": "Ziel ist es, den Menschen die Möglichkeit zu geben, mit Delta neue digitale Währungen mitzugestalten, die universell, fair, sicher, schnell und umweltfreundlich sind. Und verschiedene effektive Anwendungsszenarien für diese digitalen Währungen und bisherige Kryptowährungen bereitzustellen.",
   "details": "Einzelheiten",
   "get": "gewinnen",
@@ -593,5 +593,7 @@
   "notMatchExistingPattern": "Entspricht keinem vorhandenen Muster",
   "localAuthentication": "Lokale Authentifizierung",
   "noSettlementAmountAvailableForThisPeriod": "Kein Abrechnungsbetrag für diesen Zeitraum verfügbar",
-  "verificationChannel": "Verifizierungskanal"
+  "verificationChannel": "Verifizierungskanal",
+  "launchAdTips": "Wenn Sie \"launchAd\" aktivieren, wird beim Starten der App eine Anzeige angezeigt und das Ergebnis in ein USCT-Mining-Gewicht umgewandelt.",
+  "help": "Hilfe"
 }

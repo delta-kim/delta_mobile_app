@@ -27,7 +27,7 @@
     "one": "Vui lòng kiểm tra $n số truy cập và nhấp vào nút \"${span(text)}\" để chuyển sang bước tiếp theo",
     "other": "Vui lòng kiểm tra $n số truy cập và nhấp vào nút \"${span(text)}\" để chuyển sang bước tiếp theo."
   },
-  "whatIsDeltaDesc": "Delta là một dự án thử nghiệm tiền kỹ thuật số toàn cầu phi tập trung nguồn mở và chuỗi sinh thái ứng dụng tiền tệ.",
+  "whatIsDeltaDesc": "Delta là một dự án đổi mới tiền tệ kỹ thuật số toàn cầu phi tập trung nguồn mở và hệ sinh thái ứng dụng tiền tệ.",
   "deltaGoalsDesc": "Mục tiêu là cho phép mọi người sử dụng Delta để cùng nhau xây dựng một loại tiền kỹ thuật số mới phổ biến, công bằng, an toàn, nhanh chóng và xanh. Và cung cấp các kịch bản ứng dụng hiệu quả khác nhau cho các loại tiền kỹ thuật số này và các loại tiền điện tử trước đó.",
   "details": "Chi tiết",
   "get": "Lấy",
@@ -593,5 +593,7 @@
   "notMatchExistingPattern": "Không khớp với mẫu hiện có",
   "localAuthentication": "Xác thực cục bộ",
   "noSettlementAmountAvailableForThisPeriod": "Không có số tiền thanh toán nào khả dụng cho giai đoạn này",
-  "verificationChannel": "Kênh xác minh"
+  "verificationChannel": "Kênh xác minh",
+  "launchAdTips": "Bật \"launchAd\" có nghĩa là một quảng cáo sẽ được hiển thị khi ứng dụng được khởi chạy và kết quả của quảng cáo đó sẽ được chuyển đổi thành trọng số khai thác USCT.",
+  "help": "Trợ giúp"
 }

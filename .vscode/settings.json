@@ -1,4 +1,6 @@
 {
+    "dart.analysisExcludedFolders": ["build", ".dart_tool", ".pub-cache"],
     "java.compile.nullAnalysis.mode": "automatic",
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "dart.flutterSdkPath": "C:\\Users\\ippow\\fvm\\versions\\3.29.3"
 }

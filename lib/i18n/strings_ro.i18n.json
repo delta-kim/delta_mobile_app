@@ -27,7 +27,7 @@
           "one": "Te rugăm să verifici $n număr de acces și să apeși butonul \"${span(text)}\" pentru a continua.",
           "other": "Te rugăm să verifici $n numere de acces și să apeși butonul \"${span(text)}\" pentru a continua."
      },
-     "whatIsDeltaDesc": "Delta este un proiect experimental descentralizat de monedă digitală globală și un ecosistem de aplicații monetare.",
+     "whatIsDeltaDesc": "Delta este un proiect global descentralizat, open-source, de inovare în domeniul monedelor digitale și un ecosistem de aplicații valutare.",
      "deltaGoalsDesc": "Scopul este să permită oamenilor să folosească Delta pentru a construi împreună o nouă monedă digitală universală, corectă, sigură, rapidă și ecologică. Și să ofere diverse scenarii de aplicație eficiente pentru aceste monede digitale și criptomonede anterioare.",
      "details": "detalii",
      "get": "Obține",
@@ -592,5 +592,7 @@
      "notMatchExistingPattern": "Nu se potrivește cu modelul existent",
      "localAuthentication": "Autentificare locală",
      "noSettlementAmountAvailableForThisPeriod": "Nu există sumă de decontare disponibilă pentru această perioadă",
-     "verificationChannel": "Canal de verificare"
+     "verificationChannel": "Canal de verificare",
+     "launchAdTips": "Activarea opțiunii «launchAd» înseamnă că o reclamă va fi afișată la lansarea aplicației, iar rezultatul acesteia va fi convertit în pondere de minat USCT.",
+     "help": "Ajutor"
 }

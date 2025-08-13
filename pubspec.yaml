@@ -16,29 +16,24 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 1.1.6+16
+version: 1.2.3+40
 
 environment:
-  sdk: '>=3.4.4 <4.0.0'
-  flutter: ">=3.24.0"
+  sdk: ^3.7.2
 
-# Dependencies specify other packages that your package needs in order to work.
-# To automatically upgrade your package dependencies to the latest versions
-# consider running `flutter pub upgrade --major-versions`. Alternatively,
-# dependencies can be manually updated by changing the version numbers below to
-# the latest version available on pub.dev. To see which dependencies have newer
-# versions available, run `flutter pub outdated`.
+
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.6
+
+  cupertino_icons: ^1.0.8
   adset_flutter_hw:
     path: plugins/adset_flutter_hw
-  agent_dart: 1.0.0-dev.35
+  agent_dart: 1.0.0-dev.36
   intl: ^0.19.0
   provider: ^6.0.5
   scroll_to_index: ^3.0.1
-  fluttertoast: ^8.2.1
+  fluttertoast: ^8.2.12
   slang: ^3.20.0
   slang_flutter: ^3.20.0
   encrypt: ^5.0.1
@@ -46,65 +41,73 @@ dependencies:
   get_storage: ^2.1.1
   url_launcher: ^6.1.10
   cached_network_image: ^3.2.3
-  fl_chart: ^0.68.0
+  fl_chart: ^0.71.0
   local_auth: ^2.3.0
   flutter_echarts: ^2.4.0
-  permission_handler: ^10.2.0
-  #google_mobile_ads: ^2.4.0
+  permission_handler: ^11.4.0
   syncfusion_flutter_core: 28.2.7
   syncfusion_flutter_maps: 28.2.7
   syncfusion_flutter_charts: 28.2.7
   syncfusion_flutter_gauges: 28.2.7
   qr_flutter: ^4.1.0
-  mobile_scanner: ^3.3.0
-  image_picker: ^1.0.1
+  mobile_scanner: ^7.0.0
+  image_picker: ^1.1.2
   syncfusion_flutter_datagrid: 28.2.7
   collection: ^1.18.0
   path_provider: ^2.1.3
   dio: 5.4.3+1
-  flutter_simple_multiselect: ^2.1.1
- # multiselect: ^0.1.0
-  multi_select_flutter: ^4.1.3
   image_size_getter: ^2.1.3
-  aws_s3_upload_lite: ^0.0.7
   xml: ^6.5.0
-  aws_common: ^0.7.0
   aws_signature_v4: ^0.6.0
   envied: ^0.5.4+1
   http: ^1.2.1
   file_picker: ^8.0.5
-  webview_flutter: ^4.8.0
+  #webview_flutter: ^4.11.0
+  #webview_flutter_android: 4.4.2
   states_rebuilder: ^6.4.0
   archive: 3.6.1
   package_info_plus: ^8.0.2
   share_plus: ^10.0.2
-  #tradplus_sdk: ^1.1.7
-  flutter_local_notifications: ^18.0.1
+  flutter_local_notifications: ^19.2.1
   flutter_timezone: ^3.0.1
   animated_flip_counter: ^0.3.4
   fast_contacts: ^4.0.0
   local_auth_android: ^1.0.46
+  flutter_locker: ^2.1.6
+  better_pattern_lock: ^1.0.1
+  cloudflare_r2: ^0.0.11
+  #shelf_static: ^1.1.3
+  #google_mobile_ads: ^6.0.0
+  flutter_inappwebview: ^6.1.5
+  flutter_floaty: ^0.2.0
+  pubscale_offerwall_plugin:
+    path: 'plugins/pubscale_offerwall_plugin_flutter'
+  growdeck_playtime_plugin:
+    path: 'plugins/growdeck_playtime_plugin'
+  ayetstudios_flutter_sdk:
+    path: plugins/ayetstudios_flutter_sdk
 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.0
-  candid_dart: ^1.1.5
-  envied_generator: ^0.5.4+1
-  build_runner: ^2.4.9
-  flutter_launcher_icons: ^0.14.0
+
+  flutter_lints: ^5.0.0
+
 
 flutter:
   uses-material-design: true
   assets:
+  - assets/
   - assets/coinIcon/
   - assets/img/
   - assets/flag/
   - assets/fonts/
   - assets/avatar/
-  - assets/world_map2.json
   - assets/icon/
+  - assets/ca/
+  - assets/icp-js/
+  - assets/icp-js/js/
   - js_plugins/
   fonts:
     - family: IconFont

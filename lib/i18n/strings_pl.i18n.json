@@ -27,7 +27,7 @@
     "one": "Zaznacz $n numery dostępu i kliknij przycisk \"${span(text)}\", aby przejść do następnego kroku.",
     "other": "Zaznacz $n numery dostępu i kliknij przycisk \"${span(text)}\", aby przejść do następnego kroku."
   },
-  "whatIsDeltaDesc": "Delta to otwarty, zdecentralizowany, globalny eksperyment z walutą cyfrową i ekosystem aplikacji kryptowalutowych.",
+  "whatIsDeltaDesc": "Delta to zdecentralizowany, globalny projekt innowacji w dziedzinie waluty cyfrowej i ekosystem aplikacji walutowych o otwartym kodzie źródłowym.",
   "deltaGoalsDesc": "Celem jest umożliwienie ludziom korzystania z Delty do współtworzenia nowych walut cyfrowych, które są uniwersalne, sprawiedliwe, bezpieczne, szybkie i ekologiczne. A także zapewnienie różnych skutecznych scenariuszy zastosowań dla tych walut cyfrowych i poprzednich kryptowalut.",
   "details": "szczegóły",
   "get": "zysk",
@@ -593,5 +593,7 @@
   "notMatchExistingPattern": "Nie pasuje do istniejącego wzorca",
   "localAuthentication": "local Auth",
   "noSettlementAmountAvailableForThisPeriod": "Brak dostępnej kwoty rozliczenia na ten okres",
-  "verificationChannel": "Kanał weryfikacji"
+  "verificationChannel": "Kanał weryfikacji",
+  "launchAdTips": "Włączenie „launchAd” oznacza, że ​​reklama będzie wyświetlana po uruchomieniu aplikacji, a jej wynik zostanie przekonwertowany na wagę wydobywczą USCT.",
+  "help": "Pomoc"
 }

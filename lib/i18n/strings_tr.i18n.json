@@ -27,7 +27,7 @@
           "one": "Lütfen $n erişim numarasını kontrol edin ve \"${span(text)}\" butonuna tıklayarak sonraki adıma geçin.",
           "other": "Lütfen $n erişim numarasını kontrol edin ve \"${span(text)}\" butonuna tıklayarak sonraki adıma geçin."
      },
-     "whatIsDeltaDesc": "Delta, açık kaynaklı bir merkeziyetsiz küresel dijital para deney projesi ve bir para uygulama ekosistemidir.",
+     "whatIsDeltaDesc": "Delta, açık kaynaklı, merkezi olmayan küresel dijital para inovasyon projesi ve para uygulama ekosistemidir.",
      "deltaGoalsDesc": "Amaç, insanların Delta'yı kullanarak evrensel, adil, güvenli, hızlı ve yeşil yeni bir dijital para inşa etmelerini sağlamaktır. Ayrıca bu dijital paralar ve önceki kripto paralar için çeşitli etkili uygulama senaryoları sunmaktır.",
      "details": "detaylar",
      "get": "Al",
@@ -592,5 +592,7 @@
      "notMatchExistingPattern": "Mevcut desenle eşleşmiyor",
      "localAuthentication": "yerel Doğrulama",
      "noSettlementAmountAvailableForThisPeriod": "Bu dönem için kullanılabilir bir yerleşim tutarı yok",
-     "verificationChannel": "Doğrulama Kanalı"
+     "verificationChannel": "Doğrulama Kanalı",
+     "launchAdTips": "“launchAd” özelliğini açmak, uygulama başlatıldığında bir reklam gösterileceği ve sonucunun USCT madencilik ağırlığına dönüştürüleceği anlamına gelir.",
+     "help": "Yardım"
 }

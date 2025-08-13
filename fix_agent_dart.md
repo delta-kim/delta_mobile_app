@@ -20,3 +20,17 @@ file : ".\lib\agent.dart"
       }
       
 ```
+
+
+C:\Users\ippow\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.1.3\lib\src\in_app_webview\in_app_webview_controller.dart
+C:\Users\ippow\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_ios-1.1.2\lib\src\in_app_webview\in_app_webview_controller.dart
+
+``` dart
+            toEncodable(Object? nonEncodable) {
+              if (nonEncodable is BigInt) {
+                return nonEncodable.toInt();
+              }
+              return nonEncodable.toString();
+            }
+            return jsonEncode(await _javaScriptHandlersMap[handlerName]!(args), toEncodable: toEncodable);
+```

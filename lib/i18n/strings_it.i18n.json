@@ -27,7 +27,7 @@
           "one": "Per favore, controlla $n numero di accesso e clicca sul pulsante \"${span(text)}\" per procedere al passo successivo.",
           "other": "Please check $n access numbers and click the \"${span(text)}\" button to proceed to the next step."
      },
-     "whatIsDeltaDesc": "Delta è un progetto sperimentale open source di valuta digitale globale decentralizzata e un ecosistema di applicazioni di valuta.",
+     "whatIsDeltaDesc": "Delta è un progetto di innovazione per la valuta digitale globale decentralizzata e open source e un ecosistema di applicazioni valutarie.",
      "deltaGoalsDesc": "L'obiettivo è consentire alle persone di usare Delta per costruire insieme una nuova valuta digitale universale, equa, sicura, veloce e verde. E fornire vari scenari applicativi efficaci per queste valute digitali e le criptovalute precedenti.",
      "details": "dettagli",
      "get": "Ottieni",
@@ -592,5 +592,7 @@
      "notMatchExistingPattern": "Non corrisponde allo schema esistente",
      "localAuthentication": "Autenticazione locale",
      "noSettlementAmountAvailableForThisPeriod": "Nessun importo di liquidazione disponibile per questo periodo",
-     "verificationChannel": "Canale di verifica"
+     "verificationChannel": "Canale di verifica",
+     "launchAdTips": "Attivando \"launchAd\" verrà visualizzato un annuncio quando l'app viene avviata e il suo risultato verrà convertito in peso di mining USCT.",
+     "help": "Aiuto"
 }

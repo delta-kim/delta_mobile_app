@@ -27,7 +27,7 @@
 		"one": "다음 단계로 진행하려면 $n 개의 액세스 번호를 선택하고 \"${span(text)}\" 버튼을 클릭하세요.",
 		"other": "다음 단계로 진행하려면 $n 개의 액세스 번호를 선택하고 \"${span(text)}\" 버튼을 클릭하세요."
 	},
-	"whatIsDeltaDesc": "델타는 오픈 소스 탈중앙화 글로벌 디지털 화폐 실험이자 암호화폐 애플리케이션 생태계입니다.",
+	"whatIsDeltaDesc": "델타는 오픈 소스 분산형 글로벌 디지털 화폐 혁신 프로젝트이자 화폐 애플리케이션 생태계입니다.",
 	"deltaGoalsDesc": "목표는 사람들이 델타를 사용하여 보편적이고, 공정하며, 안전하고, 빠르고, 친환경적인 새로운 디지털 화폐를 공동으로 구축할 수 있도록 하는 것입니다. 그리고 이러한 디지털 화폐와 기존 암호화폐에 대한 다양하고 효과적인 적용 시나리오를 제공하는 것입니다.",
 	"details": "세부 정보",
 	"get": "gain",
@@ -593,5 +593,7 @@
 	"notMatchExistingPattern": "기존 패턴과 일치하지 않습니다.",
 	"localAuthentication": "로컬 인증",
 	"noSettlementAmountAvailableForThisPeriod": "이 기간 동안 사용 가능한 정산 금액이 없습니다.",
-	"verificationChannel": "검증 채널"
+	"verificationChannel": "검증 채널",
+	"launchAdTips": "\"launchAd\"를 켜면 앱이 실행될 때 광고가 표시되고, 그 결과가 USCT 마이닝 가중치로 변환됩니다.",
+	"help": "도움말"
 }

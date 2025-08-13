@@ -27,7 +27,7 @@
           "one": "Tafadhali angalia nambari $n ya upatikanaji na ubofye kitufe cha \"${span(text)}\" ili kuendelea na hatua ya pili.",
           "other": "Tafadhali angalia nambari $n za upatikanaji na ubofye kitufe cha \"${span(text)}\" ili kuendelea na hatua ya pili."
      },
-     "whatIsDeltaDesc": "Delta ni mradi wa majaribio wa sarafu za kidijitali za kimataifa zisizo na mamlaka za chanzo huria na mfumo wa maombi ya sarafu.",
+     "whatIsDeltaDesc": "Delta ni mradi huria wa uvumbuzi wa kimataifa wa sarafu ya dijiti na mfumo ikolojia wa utumizi wa sarafu.",
      "deltaGoalsDesc": "Lengo ni kuwezesha watu kutumia Delta kujenga pamoja sarafu ya kidijitali ya kimataifa, ya haki, salama, ya haraka, na ya kijani. Na kutoa mazingira ya maombi ya ufanisi kwa sarafu hizi za kidijitali na sarafu za awali za crypto.",
      "details": "maelezo",
      "get": "Pata",
@@ -592,5 +592,7 @@
      "notMatchExistingPattern": "Haifanani na muundo uliopo",
      "localAuthentication": "Uthibitisho wa Ndani",
      "noSettlementAmountAvailableForThisPeriod": "Hakuna kiasi cha malipo kinachopatikana kwa kipindi hiki",
-     "verificationChannel": "Idhaa ya Uthibitishaji"
+     "verificationChannel": "Idhaa ya Uthibitishaji",
+     "launchAdTips": "Kuwasha \"launchAd\" inamaanisha kuwa tangazo litaonyeshwa programu itakapozinduliwa, na matokeo yake yatabadilishwa kuwa uzito wa uchimbaji madini wa USCT.",
+     "help": "Msaada"
 }

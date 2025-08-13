@@ -27,7 +27,7 @@
 		"one": "Assinale $n números de acesso e clique no botão \"${span(text)}\" para avançar para o passo seguinte.",
 		"other": "Assinale $n números de acesso e clique no botão \"${span(text)}\" para avançar para o passo seguinte."
 	},
-	"whatIsDeltaDesc": "Delta é uma experiência de moeda digital global, descentralizada e de fonte aberta e um ecossistema de aplicações de criptomoeda.",
+	"whatIsDeltaDesc": "Delta é um projeto de inovação em moeda digital global, descentralizada e de código aberto, e um ecossistema de aplicação de moeda.",
 	"deltaGoalsDesc": "O objetivo é permitir que as pessoas utilizem a Delta para co-construir novas moedas digitais que sejam universais, justas, seguras, rápidas e ecológicas. E fornecer vários cenários de aplicação efectiva para estas moedas digitais e criptomoedas anteriores.",
 	"details": "informações",
 	"get": "ganho",
@@ -593,5 +593,7 @@
 	"notMatchExistingPattern": "Não corresponde a um padrão existente",
 	"localAuthentication": "autenticação local",
 	"noSettlementAmountAvailableForThisPeriod": "Nenhum valor de liquidação disponível para este período",
-	"verificationChannel": "Canal de Verificação"
+	"verificationChannel": "Canal de Verificação",
+	"launchAdTips": "Ativar \"launchAd\" significa que um anúncio será exibido quando o aplicativo for iniciado, e seu resultado será convertido em peso de mineração USCT.",
+	"help": "Ajuda"
 }

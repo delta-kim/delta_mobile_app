@@ -27,7 +27,7 @@
 		"one": "请勾选 ${n} 个接入号码后点击\"${span(text)}\"按钮进入下一步",
 		"other": "请勾选 ${n} 个接入号码后点击\"${span(text)}\"按钮进入下一步"
 	},
-	"whatIsDeltaDesc": "Delta是一个开源的去中心化全球性数字货币实验项目, 以及货币应用生态链。",
+	"whatIsDeltaDesc": "Delta是开源的一个去中心化全球性数字货币创新项目, 以及货币应用生态链。",
 	"deltaGoalsDesc": "目标是让人们可以利用Delta共同构建通用、公平、安全、快速、绿色的新型数字货币。并为这些数字货币和以往的加密货币提供各种有效的应用场景。",
 	"details": "详情",
 	"get": "获取",
@@ -593,5 +593,7 @@
 	"notMatchExistingPattern": "与存在的图案不匹配",
 	"localAuthentication": "本地验证",
 	"noSettlementAmountAvailableForThisPeriod": "此期间没有可用的结算金额",
-	"verificationChannel": "验证渠道"
+	"verificationChannel": "验证渠道",
+	"launchAdTips": "开启“launchAd”表示将在启动应用时展示一个广告，并将其结果转换为USCT挖矿权重。",
+	"help": "帮助"
 }

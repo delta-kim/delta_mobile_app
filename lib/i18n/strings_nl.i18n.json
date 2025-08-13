@@ -27,7 +27,7 @@
           "one": "Vink $n toegangsnummer aan en klik op de knop \"${span(text)}\" om door te gaan naar de volgende stap.",
           "other": "Vink $n toegangsnummers aan en klik op de knop \"${span(text)}\" om door te gaan naar de volgende stap."
      },
-     "whatIsDeltaDesc": "Delta is een open source, gedecentraliseerd, wereldwijd experiment met digitale valuta en een ecosysteem van valuta-toepassingen.",
+     "whatIsDeltaDesc": "Delta is een open source, gedecentraliseerd wereldwijd innovatieproject voor digitale valuta en een ecosysteem voor valutatoepassingen.",
      "deltaGoalsDesc": "Het doel is om mensen in staat te stellen Delta te gebruiken om gezamenlijk een universele, eerlijke, veilige, snelle en groene nieuwe digitale valuta te bouwen. En verschillende effectieve toepassingsscenario's te bieden voor deze digitale valuta en eerdere cryptocurrencies.",
      "details": "Gegevens",
      "get": "Ophalen",
@@ -593,5 +593,7 @@
      "notMatchExistingPattern": "Komt niet overeen met een bestaand patroon",
      "localAuthentication": "lokale auth.",
      "noSettlementAmountAvailableForThisPeriod": "Geen verrekeningsbedrag beschikbaar voor deze periode",
-     "verificationChannel": "Verificatiekanaal"
+     "verificationChannel": "Verificatiekanaal",
+     "launchAdTips": "Als u \"launchAd\" inschakelt, wordt er een advertentie weergegeven wanneer de app wordt gestart en wordt het resultaat omgezet in USCT-mijngewicht.",
+     "help": "Hulp"
 }
