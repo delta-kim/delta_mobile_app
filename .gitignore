@@ -51,3 +51,5 @@ ADB debug.md
 /plugins/
 lib/*
 !lib/i18n
+/ios
+/android

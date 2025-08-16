@@ -1,5 +1,7 @@
 file : ".\lib\agent.dart"
 
+Tip: Different versions may have different file paths for this code, you can find it by searching for "QueryResponseRejected("
+
 ``` dart
       switch (result.status) {
         case QueryResponseStatus.rejected:
@@ -11,7 +13,7 @@ file : ".\lib\agent.dart"
           //     rejectMessage: result.rejectMessage,
           //   ),
           // );
-          throw QueryResponseRejected(
+          throw QueryResponseRejected(  // Replace the above code with the code here
             rejectCode: result.rejectCode,
             rejectMessage: result.rejectMessage,
           );

@@ -16,7 +16,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 1.2.3+40
+version: 1.2.4+41
 
 environment:
   sdk: ^3.7.2
@@ -76,7 +76,8 @@ dependencies:
   flutter_locker: ^2.1.6
   better_pattern_lock: ^1.0.1
   cloudflare_r2: ^0.0.11
-  #shelf_static: ^1.1.3
+  shelf: 1.1.3
+  shelf_static: ^1.1.3
   #google_mobile_ads: ^6.0.0
   flutter_inappwebview: ^6.1.5
   flutter_floaty: ^0.2.0
@@ -86,6 +87,7 @@ dependencies:
     path: 'plugins/growdeck_playtime_plugin'
   ayetstudios_flutter_sdk:
     path: plugins/ayetstudios_flutter_sdk
+  skeletonizer: ^1.4.3
 
 
 dev_dependencies:
