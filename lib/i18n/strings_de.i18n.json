@@ -146,7 +146,7 @@
   "startVrification": "Überprüfung starten",
   "mobileNumberAlreadyExists_associated": "Diese Mobilfunknummer existiert bereits, zugehörige DID: ${dId}",
   "noDataYet": "Keine Daten verfügbar",
-  "previousMobileNumber": "Frühere Mobiltelefonnummer",
+  "previousMSISDN": "Vorherige MSISDN",
   "changeLog": "Aufzeichnung der Änderungen",
   "referralLinkToShare": "Empfohlene Links zum Teilen",
   "referrer": "Referrer",
@@ -343,7 +343,7 @@
   "textContent": "Inhalt des Textes",
   "scanQRcodeToLogin": "Zum Einloggen wischen",
   "confirmLogin": "Anmeldung bestätigen",
-  "authorizeSubApplicationToLogin": "Diese Teilanwendung zum Einloggen autorisieren",
+  "authorizeDappAppToLogin": "Diese Teilanwendung zum Einloggen autorisieren",
   "authorizationSuccessful": "Die Genehmigung war erfolgreich!",
   "launchSMSprogram": "Start des SMS-Programms",
   "notApplied": "Kein Antrag",
@@ -457,7 +457,7 @@
   "numberOfSafetyCircleCannotBeLessThan3": "Die Anzahl der Mitglieder des Sicherheitskreises darf nicht weniger als drei betragen",
   "avatarIsNotSet": "Avatar nicht gesetzt",
   "numberOfDirectReferralsCannotBeLessThan3": "Die Anzahl der direkten Verweise darf nicht weniger als 3 betragen.",
-  "insufficientTimeLimit_mobileNumberOnlyChangedOnceYear": "Die zeitliche Begrenzung ist unzureichend, und Sie können Ihre Mobiltelefonnummer nur einmal im Jahr ändern.",
+  "insufficientTimeLimit_changeMSISDNInterval3months": "Das Zeitlimit ist unzureichend. Das Mindestintervall für die Änderung der MSISDN beträgt 3 Monate.",
   "mobileNumberAlreadyExistsAndCannotBeRepeated": "Diese Mobiltelefonnummer existiert bereits und kann nicht dupliziert werden",
   "securityCodeIsIncorrect": "Falscher Sicherheitscode",
   "securityCodeMayHaveExpired": "Der Sicherheitscode ist möglicherweise abgelaufen",
@@ -594,5 +594,6 @@
   "noSettlementAmountAvailableForThisPeriod": "Kein Abrechnungsbetrag für diesen Zeitraum verfügbar",
   "verificationChannel": "Verifizierungskanal",
   "launchAdTips": "Wenn Sie \"launchAd\" aktivieren, wird beim Starten der App eine Anzeige angezeigt und das Ergebnis in ein USCT-Mining-Gewicht umgewandelt.",
-  "help": "Hilfe"
+  "help": "Hilfe",
+  "verifyOriginalMSISDN": "Ursprüngliche MSISDN verifizieren"
 }

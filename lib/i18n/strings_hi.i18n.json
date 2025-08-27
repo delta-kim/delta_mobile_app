@@ -145,7 +145,7 @@
      "startVrification": "सत्यापन शुरू करें",
      "mobileNumberAlreadyExists_associated": "यह मोबाइल नंबर पहले से मौजूद है और एक संबद्ध DID: ${dId} से जुड़ा हुआ है।}",
      "noDataYet": "अभी तक कोई डेटा नहीं है",
-     "previousMobileNumber": "पिछला मोबाइल नंबर",
+     "previousMSISDN": "पिछला MSISDN",
      "changeLog": "परिवर्तन लॉग",
      "referralLinkToShare": "साझा करने के लिए रेफ़रल लिंक",
      "referrer": "रेफ़रर",
@@ -341,7 +341,7 @@
      "textContent": "पाठ सामग्री",
      "scanQRcodeToLogin": "लॉगिन करने के लिए क्यूआर कोड स्कैन करें",
      "confirmLogin": "लॉगिन की पुष्टि करें",
-     "authorizeSubApplicationToLogin": "इस उप-एप्लिकेशन को लॉगिन करने की अनुमति दें",
+     "authorizeDappAppToLogin": "इस उप-एप्लिकेशन को लॉगिन करने की अनुमति दें",
      "authorizationSuccessful": "प्राधिकरण सफल!",
      "launchSMSprogram": "एसएमएस कार्यक्रम लॉन्च करें",
      "notApplied": "लागू नहीं किया गया",
@@ -455,7 +455,7 @@
      "numberOfSafetyCircleCannotBeLessThan3": "सुरक्षा सर्कल के सदस्य की संख्या 3 लोगों से कम नहीं हो सकती है।",
      "avatarIsNotSet": "प्रोफ़ाइल फ़ोटो सेट नहीं किया गया है।",
      "numberOfDirectReferralsCannotBeLessThan3": "प्रत्यक्ष संदर्भों की संख्या 3 लोगों से कम नहीं हो सकती है।",
-     "insufficientTimeLimit_mobileNumberOnlyChangedOnceYear": "समय सीमा अपर्याप्त है, मोबाइल नंबर केवल एक बार प्रति वर्ष बदला जा सकता है।",
+     "insufficientTimeLimit_changeMSISDNInterval3months": "समय सीमा अपर्याप्त है। MSISDN बदलने के लिए न्यूनतम अंतराल 3 महीने है।",
      "mobileNumberAlreadyExistsAndCannotBeRepeated": "यह मोबाइल फोन नंबर पहले से मौजूद है और इसे पुनः उपयोग नहीं किया जा सकता।",
      "securityCodeIsIncorrect": "सुरक्षा कोड गलत है।",
      "securityCodeMayHaveExpired": "शायद सुरक्षा कोड की समय सीमा समाप्त हो गई है।",
@@ -593,5 +593,6 @@
      "noSettlementAmountAvailableForThisPeriod": "इस अवधि के लिए कोई निपटान राशि उपलब्ध नहीं है",
      "verificationChannel": "सत्यापन चैनल",
      "launchAdTips": "\"launchAd\" चालू करने का अर्थ है कि ऐप लॉन्च होने पर एक विज्ञापन प्रदर्शित किया जाएगा, और इसका परिणाम USCT खनन भार में परिवर्तित हो जाएगा।",
-     "help": "सहायता"
+     "help": "सहायता",
+     "verifyOriginalMSISDN": "मूल MSISDN सत्यापित करें"
 }

@@ -146,7 +146,7 @@
 	"startVrification": "인증 시작",
 	"mobileNumberAlreadyExists_associated": "이 휴대폰 번호는 이미 존재하며 연결된 DID: ${dId}입니다.",
 	"noDataYet": "사용 가능한 데이터 없음",
-	"previousMobileNumber": "이전 휴대폰 번호",
+	"previousMSISDN": "이전 MSISDN",
 	"changeLog": "변경 사항 기록",
 	"referralLinkToShare": "공유할 추천 링크",
 	"referrer": "참조자",
@@ -343,7 +343,7 @@
 	"textContent": "텍스트 콘텐츠",
 	"scanQRcodeToLogin": "스와이프하여 로그인",
 	"confirmLogin": "로그인 확인",
-	"authorizeSubApplicationToLogin": "로그인할 수 있도록 이 하위 애플리케이션을 승인합니다.",
+	"authorizeDappAppToLogin": "로그인할 수 있도록 이 하위 애플리케이션을 승인합니다.",
 	"authorizationSuccessful": "인증이 성공했습니다!",
 	"launchSMSprogram": "SMS 프로그램 시작하기",
 	"notApplied": "신청 없음",
@@ -457,7 +457,7 @@
 	"numberOfSafetyCircleCannotBeLessThan3": "보안 서클의 구성원 수는 3명 이상이어야 합니다.",
 	"avatarIsNotSet": "아바타가 설정되지 않음",
 	"numberOfDirectReferralsCannotBeLessThan3": "직접 추천 횟수는 3건 이상이어야 합니다.",
-	"insufficientTimeLimit_mobileNumberOnlyChangedOnceYear": "시간 제한이 충분하지 않으며 휴대폰 번호는 1년에 한 번만 변경할 수 있습니다.",
+	"insufficientTimeLimit_changeMSISDNInterval3months": "시간 제한이 부족합니다. MSISDN을 변경하기 위한 최소 간격은 3개월입니다.",
 	"mobileNumberAlreadyExistsAndCannotBeRepeated": "이 휴대폰 번호는 이미 존재하며 복제할 수 없습니다.",
 	"securityCodeIsIncorrect": "잘못된 보안 코드",
 	"securityCodeMayHaveExpired": "보안 코드가 만료되었을 수 있습니다.",
@@ -594,5 +594,6 @@
 	"noSettlementAmountAvailableForThisPeriod": "이 기간 동안 사용 가능한 정산 금액이 없습니다.",
 	"verificationChannel": "검증 채널",
 	"launchAdTips": "\"launchAd\"를 켜면 앱이 실행될 때 광고가 표시되고, 그 결과가 USCT 마이닝 가중치로 변환됩니다.",
-	"help": "도움말"
+	"help": "도움말",
+	"verifyOriginalMSISDN": "원래 MSISDN 확인"
 }

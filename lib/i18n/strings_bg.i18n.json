@@ -145,7 +145,7 @@
     "startVrification": "стартиране на проверката",
     "mobileNumberAlreadyExists_associated": "Този мобилен номер вече съществува, асоцииран DID: ${dId}",
     "noDataYet": "Все още няма данни",
-    "previousMobileNumber": "предишен мобилен номер",
+    "previousMSISDN": "Предишно MSISDN",
     "changeLog": "дневник на промените",
     "referralLinkToShare": "Реферална връзка за споделяне",
     "referrer": "Референт",
@@ -341,7 +341,7 @@
     "textContent": "Съдържание на текста",
     "scanQRcodeToLogin": "Сканирайте QR кода за влизане",
     "confirmLogin": "Потвърдете влизането",
-    "authorizeSubApplicationToLogin": "Разрешаване на подприложението да влезе",
+    "authorizeDappAppToLogin": "Разрешаване на подприложението да влезе",
     "authorizationSuccessful": "Влизането е успешно!",
     "launchSMSprogram": "Стартиране на SMS програма",
     "notApplied": "Не е приложено",
@@ -455,7 +455,7 @@
     "numberOfSafetyCircleCannotBeLessThan3": "Броят на членовете в кръга за сигурност не може да бъде по-малък от 3 души",
     "avatarIsNotSet": "Аватарът не е зададен",
     "numberOfDirectReferralsCannotBeLessThan3": "Броят на директно препоръчаните лица не може да бъде по-малък от 3 души",
-    "insufficientTimeLimit_mobileNumberOnlyChangedOnceYear": "Недостатъчен времеви лимит, мобилният номер може да бъде променен само веднъж годишно.",
+    "insufficientTimeLimit_changeMSISDNInterval3months": "Времевият лимит е недостатъчен. Минималният интервал за промяна на MSISDN е 3 месеца.",
     "mobileNumberAlreadyExistsAndCannotBeRepeated": "Този мобилен номер вече съществува и не може да бъде повторен",
     "securityCodeIsIncorrect": "Кодът за сигурност е неправилен",
     "securityCodeMayHaveExpired": "Кодът за сигурност е невалиден или изтекъл",
@@ -593,5 +593,6 @@
     "noSettlementAmountAvailableForThisPeriod": "Няма налична сума за сетълмент за този период",
     "verificationChannel": "Канал за проверка",
     "launchAdTips": "Включването на „launchAd“ означава, че при стартиране на приложението ще се показва реклама, а резултатът от нея ще бъде преобразуван в USCT тегло за добив.",
-    "help": "Помощ"
+    "help": "Помощ",
+    "verifyOriginalMSISDN": "Проверете оригиналния MSISDN"
 }

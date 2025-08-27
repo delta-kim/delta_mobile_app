@@ -146,7 +146,7 @@
   "startVrification": "เริ่มการยืนยัน",
   "mobileNumberAlreadyExists_associated": "หมายเลขโทรศัพท์มือถือนี้มีอยู่แล้ว DID ที่เกี่ยวข้อง: ${dId}",
   "noDataYet": "ยังไม่มีข้อมูล",
-  "previousMobileNumber": "เบอร์มือถือเดิม",
+  "previousMSISDN": "MSISDN ก่อนหน้า",
   "changeLog": "ประวัติการเปลี่ยนแปลง",
   "referralLinkToShare": "แนะนำการแชร์ลิงก์",
   "referrer": "ผู้แนะนำ",
@@ -343,7 +343,7 @@
   "textContent": "เนื้อหาข้อความ",
   "scanQRcodeToLogin": "สแกนรหัสเพื่อเข้าสู่ระบบ",
   "confirmLogin": "ยืนยันการเข้าสู่ระบบ",
-  "authorizeSubApplicationToLogin": "อนุญาตแอปพลิเคชันย่อยเพื่อเข้าสู่ระบบ",
+  "authorizeDappAppToLogin": "อนุญาตแอปพลิเคชันย่อยเพื่อเข้าสู่ระบบ",
   "authorizationSuccessful": "การอนุญาตสำเร็จ!",
   "launchSMSprogram": "เริ่มโปรแกรม SMS",
   "notApplied": "ไม่มีการสมัคร",
@@ -457,7 +457,7 @@
   "numberOfSafetyCircleCannotBeLessThan3": "จำนวนสมาชิกของวงความปลอดภัยต้องไม่ต่ำกว่า 3 คน",
   "avatarIsNotSet": "ไม่ได้ตั้งค่าอวาตาร์",
   "numberOfDirectReferralsCannotBeLessThan3": "จำนวนผู้อ้างอิงโดยตรงต้องไม่น้อยกว่า 3 คน",
-  "insufficientTimeLimit_mobileNumberOnlyChangedOnceYear": "ระยะเวลาไม่เพียงพอและคุณสามารถเปลี่ยนหมายเลขโทรศัพท์มือถือได้ปีละครั้งเท่านั้น",
+  "insufficientTimeLimit_changeMSISDNInterval3months": "ระยะเวลาจำกัดไม่เพียงพอ ช่วงเวลาขั้นต่ำสำหรับการเปลี่ยน MSISDN คือ 3 เดือน",
   "mobileNumberAlreadyExistsAndCannotBeRepeated": "หมายเลขโทรศัพท์มือถือมีอยู่แล้วและไม่สามารถทำซ้ำได้",
   "securityCodeIsIncorrect": "รหัสความปลอดภัยไม่ถูกต้อง",
   "securityCodeMayHaveExpired": "รหัสความปลอดภัยอาจหมดอายุแล้ว",
@@ -594,5 +594,6 @@
   "noSettlementAmountAvailableForThisPeriod": "ไม่มีจำนวนเงินชำระสำหรับช่วงเวลานี้",
   "verificationChannel": "ช่องทางการยืนยัน",
   "launchAdTips": "การเปิดใช้งาน \"launchAd\" หมายถึงโฆษณาจะปรากฏเมื่อเปิดใช้งานแอป และผลลัพธ์จะถูกแปลงเป็นน้ำหนักการขุด USCT",
-  "help": "ช่วยเหลือ"
+  "help": "ช่วยเหลือ",
+  "verifyOriginalMSISDN": "ตรวจสอบ MSISDN ดั้งเดิม"
 }

@@ -148,7 +148,7 @@
   "startVrification": "যাচাইকরণ শুরু করুন",
   "mobileNumberAlreadyExists_associated": "এই মোবাইল নম্বরটি ইতিমধ্যেই বিদ্যমান, সংশ্লিষ্ট DID: ${dId}",
   "noDataYet": "এখনো কোনো তথ্য নেই",
-  "previousMobileNumber": "আগের মোবাইল নম্বর",
+  "previousMSISDN": "পূর্ববর্তী MSISDN",
   "changeLog": "ইতিহাস পরিবর্তন করুন",
   "referralLinkToShare": "প্রস্তাবিত লিঙ্ক শেয়ারিং",
   "referrer": "সুপারিশকারী",
@@ -345,7 +345,7 @@
   "textContent": "পাঠ্য বিষয়বস্তু",
   "scanQRcodeToLogin": "লগ ইন করতে কোড স্ক্যান করুন",
   "confirmLogin": "লগইন নিশ্চিত করুন",
-  "authorizeSubApplicationToLogin": "লগ ইন করার জন্য সাব-অ্যাপ্লিকেশন অনুমোদন করুন",
+  "authorizeDappAppToLogin": "লগ ইন করার জন্য সাব-অ্যাপ্লিকেশন অনুমোদন করুন",
   "authorizationSuccessful": "অনুমোদন সফল!",
   "launchSMSprogram": "এসএমএস প্রোগ্রাম শুরু করুন",
   "notApplied": "কোন আবেদন নেই",
@@ -459,7 +459,7 @@
   "numberOfSafetyCircleCannotBeLessThan3": "নিরাপত্তা চক্রের সদস্য সংখ্যা 3 জনের কম হতে পারবে না",
   "avatarIsNotSet": "অবতার সেট করা নেই",
   "numberOfDirectReferralsCannotBeLessThan3": "সরাসরি রেফারেলের সংখ্যা 3 জনের কম হতে পারে না",
-  "insufficientTimeLimit_mobileNumberOnlyChangedOnceYear": "সময়সীমা অপর্যাপ্ত এবং আপনি বছরে একবার আপনার মোবাইল ফোন নম্বর পরিবর্তন করতে পারবেন।",
+  "insufficientTimeLimit_changeMSISDNInterval3months": "সময়সীমা অপর্যাপ্ত। MSISDN পরিবর্তনের জন্য সর্বনিম্ন ব্যবধান হল 3 মাস।",
   "mobileNumberAlreadyExistsAndCannotBeRepeated": "মোবাইল ফোন নম্বরটি ইতিমধ্যেই বিদ্যমান এবং পুনরাবৃত্তি করা যাবে না৷",
   "securityCodeIsIncorrect": "নিরাপত্তা কোড ভুল",
   "securityCodeMayHaveExpired": "নিরাপত্তা কোড মেয়াদ উত্তীর্ণ হতে পারে",
@@ -596,5 +596,6 @@
   "noSettlementAmountAvailableForThisPeriod": "এই সময়ের জন্য কোনও নিষ্পত্তির পরিমাণ উপলব্ধ নেই",
   "verificationChannel": "যাচাইকরণ চ্যানেল",
   "launchAdTips": "\"launchAd\" চালু করার অর্থ হল অ্যাপটি চালু হওয়ার সাথে সাথে একটি বিজ্ঞাপন প্রদর্শিত হবে এবং এর ফলাফল USCT মাইনিং ওয়েটে রূপান্তরিত হবে।",
-  "help": "সাহায্য"
+  "help": "সাহায্য",
+  "verifyOriginalMSISDN": "মূল MSISDN যাচাই করুন"
 }

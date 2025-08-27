@@ -146,7 +146,7 @@
   "startVrification": "Начало проверки",
   "mobileNumberAlreadyExists_associated": "Этот мобильный номер уже существует, связанный с ним DID: ${dId}",
   "noDataYet": "Нет данных",
-  "previousMobileNumber": "Предыдущий номер мобильного телефона",
+  "previousMSISDN": "Предыдущий MSISDN",
   "changeLog": "Запись изменений",
   "referralLinkToShare": "Рекомендуемые ссылки для обмена",
   "referrer": "реферер",
@@ -343,7 +343,7 @@
   "textContent": "Содержание текста",
   "scanQRcodeToLogin": "Проведите пальцем по экрану, чтобы войти в систему",
   "confirmLogin": "Подтвердите вход",
-  "authorizeSubApplicationToLogin": "Разрешите этому подприложению войти в систему",
+  "authorizeDappAppToLogin": "Разрешите этому подприложению войти в систему",
   "authorizationSuccessful": "Авторизация прошла успешно!",
   "launchSMSprogram": "Запуск программы SMS",
   "notApplied": "Нет приложения",
@@ -457,7 +457,7 @@
   "numberOfSafetyCircleCannotBeLessThan3": "Число членов круга безопасности не может быть меньше трех",
   "avatarIsNotSet": "Аватар не установлен",
   "numberOfDirectReferralsCannotBeLessThan3": "Количество прямых рефералов не может быть меньше 3",
-  "insufficientTimeLimit_mobileNumberOnlyChangedOnceYear": "Временной лимит недостаточен, и вы можете менять номер мобильного телефона только один раз в год.",
+  "insufficientTimeLimit_changeMSISDNInterval3months": "Недостаточный срок. Минимальный интервал для смены MSISDN составляет 3 месяца.",
   "mobileNumberAlreadyExistsAndCannotBeRepeated": "Этот номер мобильного телефона уже существует и не может быть продублирован",
   "securityCodeIsIncorrect": "Неверный код безопасности",
   "securityCodeMayHaveExpired": "Возможно, истек срок действия кода безопасности",
@@ -594,5 +594,6 @@
   "noSettlementAmountAvailableForThisPeriod": "Для этого периода сумма расчета недоступна",
   "verificationChannel": "Канал проверки",
   "launchAdTips": "Включение \"launchAd\" означает, что при запуске приложения будет отображаться реклама, а ее результат будет преобразован в вес майнинга USCT.",
-  "help": "Помощь"
+  "help": "Помощь",
+  "verifyOriginalMSISDN": "Проверить исходный MSISDN"
 }

@@ -145,7 +145,7 @@
      "startVrification": "تصدیق شروع کریں",
      "mobileNumberAlreadyExists_associated": "یہ موبائل نمبر پہلے سے موجود ہے، متعلقہ DID: ${dId}",
      "noDataYet": "ابھی تک کوئی ڈیٹا نہیں",
-     "previousMobileNumber": "پہلا موبائل نمبر",
+     "previousMSISDN": "پچھلا MSISDN",
      "changeLog": "تبدیلی کا لاگ",
      "referralLinkToShare": "شیئر کرنے کے لیے حوالہ لنک",
      "referrer": "ریفرر",
@@ -341,7 +341,7 @@
      "textContent": "متن مواد",
      "scanQRcodeToLogin": "QRcode کو لاگ ان کرنے کے لئے اسکین کریں",
      "confirmLogin": "لاگ ان کی تصدیق کریں",
-     "authorizeSubApplicationToLogin": "اس ذیلی ایپلیکیشن کو لاگ ان کرنے کے لیے اختیار دیں",
+     "authorizeDappAppToLogin": "اس ذیلی ایپلیکیشن کو لاگ ان کرنے کے لیے اختیار دیں",
      "authorizationSuccessful": "اختیار کامیاب!",
      "launchSMSprogram": "SMS پروگرام کا آغاز کریں",
      "notApplied": "درخواست نہیں دی گئی",
@@ -455,7 +455,7 @@
      "numberOfSafetyCircleCannotBeLessThan3": "سیکیورٹی سرکل کے اراکین کی تعداد 3 افراد سے کم نہیں ہونی چاہئے",
      "avatarIsNotSet": "اوٹار سیٹ نہیں ہے",
      "numberOfDirectReferralsCannotBeLessThan3": "براہ راست سفارشات کی تعداد 3 افراد سے کم نہیں ہونی چاہئے",
-     "insufficientTimeLimit_mobileNumberOnlyChangedOnceYear": "ناکافی وقت کی حد، موبائل نمبر کو سال میں صرف ایک بار تبدیل کیا جا سکتا ہے۔",
+     "insufficientTimeLimit_changeMSISDNInterval3months": "وقت کی حد ناکافی ہے۔ MSISDN کو تبدیل کرنے کے لیے کم از کم وقفہ 3 ماہ ہے۔",
      "mobileNumberAlreadyExistsAndCannotBeRepeated": "یہ موبائل نمبر پہلے سے موجود ہے اور اسے دہرایا نہیں جا سکتا",
      "securityCodeIsIncorrect": "سیکیورٹی کوڈ غلط ہے",
      "securityCodeMayHaveExpired": "سیکیورٹی کوڈ کی میعاد ختم ہو سکتی ہے",
@@ -593,5 +593,6 @@
      "noSettlementAmountAvailableForThisPeriod": "اس مدت کے لیے تصفیہ کی کوئی رقم دستیاب نہیں ہے۔",
      "verificationChannel": "تصدیق چینل",
      "launchAdTips": "\"launchAd\" کو آن کرنے کا مطلب ہے کہ ایپ کے لانچ ہونے پر ایک اشتہار دکھایا جائے گا، اور اس کا نتیجہ USCT مائننگ وزن میں تبدیل ہو جائے گا۔",
-     "help": "مدد"
+     "help": "مدد",
+     "verifyOriginalMSISDN": "اصل MSISDN کی تصدیق کریں"
 }

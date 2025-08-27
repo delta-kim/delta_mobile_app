@@ -145,7 +145,7 @@
      "startVrification": "έναρξη επαλήθευσης",
      "mobileNumberAlreadyExists_associated": "Αυτός ο αριθμός κινητού υπάρχει ήδη, σχετικό DID: ${dId}",
      "noDataYet": "Δεν υπάρχουν δεδομένα ακόμα",
-     "previousMobileNumber": "προηγούμενο Κινητό NO.",
+     "previousMSISDN": "Προηγούμενο MSISDN",
      "changeLog": "αρχείο καταγραφής αλλαγών",
      "referralLinkToShare": "Σύνδεσμος παραπομπής για κοινή χρήση",
      "referrer": "Παραπέμπων",
@@ -341,7 +341,7 @@
      "textContent": "Περιεχόμενο κειμένου",
      "scanQRcodeToLogin": "Σαρώστε το QRcode για να συνδεθείτε",
      "confirmLogin": "Επιβεβαίωση εισόδου",
-     "authorizeSubApplicationToLogin": "Εξουσιοδότηση αυτής της υπο-εφαρμογής για σύνδεση",
+     "authorizeDappAppToLogin": "Εξουσιοδότηση αυτής της υπο-εφαρμογής για σύνδεση",
      "authorizationSuccessful": "Εξουσιοδότηση επιτυχής",
      "launchSMSprogram": "Εκκίνηση προγράμματος SMS",
      "notApplied": "Δεν εφαρμόστηκε",
@@ -455,7 +455,7 @@
      "numberOfSafetyCircleCannotBeLessThan3": "Ο αριθμός των μελών του κύκλου ασφαλείας δεν μπορεί να είναι μικρότερος από 3 άτομα.",
      "avatarIsNotSet": "Το Avatar δεν έχει οριστεί",
      "numberOfDirectReferralsCannotBeLessThan3": "Ο αριθμός των άμεσων παραπομπών δεν μπορεί να είναι μικρότερος από 3 άτομα",
-     "insufficientTimeLimit_mobileNumberOnlyChangedOnceYear": "Ανεπαρκές χρονικό όριο, ο αριθμός κινητού μπορεί να αλλάξει μόνο μία φορά το χρόνο.",
+     "insufficientTimeLimit_changeMSISDNInterval3months": "Το χρονικό όριο είναι ανεπαρκές. Το ελάχιστο διάστημα για την αλλαγή του MSISDN είναι 3 μήνες.",
      "mobileNumberAlreadyExistsAndCannotBeRepeated": "Αυτός ο αριθμός κινητού τηλεφώνου υπάρχει ήδη και δεν μπορεί να επαναληφθεί",
      "securityCodeIsIncorrect": "Ο κωδικός ασφαλείας είναι λανθασμένος",
      "securityCodeMayHaveExpired": "Ο κωδικός ασφαλείας μπορεί να έχει λήξει",
@@ -593,5 +593,6 @@
      "noSettlementAmountAvailableForThisPeriod": "Δεν υπάρχει διαθέσιμο ποσό εξόφλησης για αυτήν την περίοδο",
      "verificationChannel": "Κανάλι επαλήθευσης",
      "launchAdTips": "Η ενεργοποίηση του \"launchAd\" σημαίνει ότι θα εμφανίζεται μια διαφήμιση κατά την εκκίνηση της εφαρμογής και το αποτέλεσμά της θα μετατραπεί σε βάρος εξόρυξης USCT.",
-     "help": "Βοήθεια"
+     "help": "Βοήθεια",
+     "verifyOriginalMSISDN": "Επαλήθευση αρχικού MSISDN"
 }

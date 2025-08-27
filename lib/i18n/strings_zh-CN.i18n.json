@@ -146,7 +146,7 @@
 	"startVrification": "开始验证",
 	"mobileNumberAlreadyExists_associated": "这个手机号码已存在，关联DID： ${dId}",
 	"noDataYet": "暂无数据",
-	"previousMobileNumber": "以前的手机号码",
+	"previousMSISDN": "以前的MSISDN",
 	"changeLog": "变更记录",
 	"referralLinkToShare": "推荐链接分享",
 	"referrer": "推荐人",
@@ -343,7 +343,7 @@
 	"textContent": "文本内容",
 	"scanQRcodeToLogin": "扫码登录",
 	"confirmLogin": "确认登录",
-	"authorizeSubApplicationToLogin": "授权该子应用登录",
+	"authorizeDappAppToLogin": "授权该子应用登录",
 	"authorizationSuccessful": "授权成功！",
 	"launchSMSprogram": "启动短信程序",
 	"notApplied": "没有申请",
@@ -456,7 +456,7 @@
 	"numberOfSafetyCircleCannotBeLessThan3": "安全圈成员人数不能少于3人",
 	"avatarIsNotSet": "头像未设置",
 	"numberOfDirectReferralsCannotBeLessThan3": "直接推荐人数不能小于3人",
-	"insufficientTimeLimit_mobileNumberOnlyChangedOnceYear": "时限不足，一年内只能换一次手机号码。",
+	"insufficientTimeLimit_changeMSISDNInterval3months": "时限不足，更改MSISDN最少需要间隔3个月。",
 	"mobileNumberAlreadyExistsAndCannotBeRepeated": "该手机号码已存在，不能重复",
 	"securityCodeIsIncorrect": "安全码不正确",
 	"securityCodeMayHaveExpired": "安全码可能已过期",
@@ -594,5 +594,6 @@
 	"noSettlementAmountAvailableForThisPeriod": "此期间没有可用的结算金额",
 	"verificationChannel": "验证渠道",
 	"launchAdTips": "开启“launchAd”表示将在启动应用时展示一个广告，并将其结果转换为USCT挖矿权重。",
-	"help": "帮助"
+	"help": "帮助",
+	"verifyOriginalMSISDN": "验证原MSISDN"
 }

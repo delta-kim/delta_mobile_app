@@ -146,7 +146,7 @@
   "startVrification": "Почніть перевірку",
   "mobileNumberAlreadyExists_associated": "Цей мобільний номер вже існує, асоційований DID: ${dId}.",
   "noDataYet": "Дані відсутні",
-  "previousMobileNumber": "Попередній номер мобільного телефону",
+  "previousMSISDN": "Попередній MSISDN",
   "changeLog": "Запис змін",
   "referralLinkToShare": "Рекомендовані посилання для поширення",
   "referrer": "реферал",
@@ -343,7 +343,7 @@
   "textContent": "Текстовий вміст",
   "scanQRcodeToLogin": "Проведіть пальцем, щоб увійти",
   "confirmLogin": "Підтвердити логін",
-  "authorizeSubApplicationToLogin": "Дозвольте цій субпрограмі увійти в систему",
+  "authorizeDappAppToLogin": "Дозвольте цій субпрограмі увійти в систему",
   "authorizationSuccessful": "Авторизація пройшла успішно!",
   "launchSMSprogram": "Запуск SMS-програми",
   "notApplied": "Немає заявки",
@@ -457,7 +457,7 @@
   "numberOfSafetyCircleCannotBeLessThan3": "Кількість членів кола безпеки не може бути менше трьох",
   "avatarIsNotSet": "Аватар не встановлено",
   "numberOfDirectReferralsCannotBeLessThan3": "Кількість прямих рефералів не може бути менше 3",
-  "insufficientTimeLimit_mobileNumberOnlyChangedOnceYear": "Часовий ліміт недостатній, і ви можете змінити номер мобільного телефону лише один раз на рік.",
+  "insufficientTimeLimit_changeMSISDNInterval3months": "Часовий ліміт недостатній. Мінімальний інтервал для зміни MSISDN становить 3 місяці.",
   "mobileNumberAlreadyExistsAndCannotBeRepeated": "Цей номер мобільного телефону вже існує і не може бути продубльований",
   "securityCodeIsIncorrect": "Неправильний код безпеки",
   "securityCodeMayHaveExpired": "Можливо, термін дії коду безпеки закінчився",
@@ -594,5 +594,6 @@
   "noSettlementAmountAvailableForThisPeriod": "Сума розрахунку за цей період недоступна",
   "verificationChannel": "Канал підтвердження",
   "launchAdTips": "Увімкнення \"launchAd\" означає, що під час запуску програми відображатиметься реклама, а її результат буде конвертовано у вагу для майнінгу USCT.",
-  "help": "Довідка"
+  "help": "Довідка",
+  "verifyOriginalMSISDN": "Перевірити оригінальний MSISDN"
 }

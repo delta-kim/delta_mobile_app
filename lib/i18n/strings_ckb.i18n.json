@@ -145,7 +145,7 @@
     "startVrification": "دەستپێکردنی پشتڕاستکردنەوە",
     "mobileNumberAlreadyExists_associated": "ئەم ژمارەی مۆبایلە پێشتر بوونی هەیە، پەیوەندیدار DID: ${dId}",
     "noDataYet": "هێشتا هیچ داتایەک نییە",
-    "previousMobileNumber": "ژمارەی مۆبایلی پێشوو.",
+    "previousMSISDN": "MSISDNی پێشوو",
     "changeLog": "لۆگ گۆڕینی",
     "referralLinkToShare": "بەستەری ڕەوانەکردن بۆ هاوبەشکردن",
     "referrer": "ئاماژەدەر",
@@ -341,7 +341,7 @@
     "textContent": "ناوەڕۆکی دەق",
     "scanQRcodeToLogin": "سکانکردنی QRcode بۆ چوونەژوورەوە",
     "confirmLogin": "دووپاتکردنەوەی چوونەژوورەوە",
-    "authorizeSubApplicationToLogin": "ڕێگە بەم بەرنامە لاوەکییە بدە بۆ چوونەژوورەوە",
+    "authorizeDappAppToLogin": "ڕێگە بەم بەرنامە لاوەکییە بدە بۆ چوونەژوورەوە",
     "authorizationSuccessful": "ڕێگەپێدان سەرکەوتوو بوو!",
     "launchSMSprogram": "دەستپێکردنی بەرنامەی کورتەنامە",
     "notApplied": "کارپێنەکراوە",
@@ -455,7 +455,7 @@
     "numberOfSafetyCircleCannotBeLessThan3": "ژمارەی ئەندامانی بازنەی سەلامەتی ناتوانێت لە ٣ کەس کەمتر بێت",
     "avatarIsNotSet": "ئاڤاتاری دانەنراوە",
     "numberOfDirectReferralsCannotBeLessThan3": "ژمارەی ڕەوانەکردنی ڕاستەوخۆ ناتوانێت لە ٣ کەس کەمتر بێت",
-    "insufficientTimeLimit_mobileNumberOnlyChangedOnceYear": "سنوری کاتیی بەس نییە، ژمارەی مۆبایل تەنها ساڵانە جارێک دەتوانرێت بگۆڕدرێت.",
+    "insufficientTimeLimit_changeMSISDNInterval3months": "سنووری کات بەس نییە. کەمترین ماوەی بۆ گۆڕینی MSISDN 3 مانگە.",
     "mobileNumberAlreadyExistsAndCannotBeRepeated": "ئەم ژمارە مۆبایلە پێشتر بوونی هەیە و ناتوانرێت دووبارە بکرێتەوە",
     "securityCodeIsIncorrect": "کۆدی ئاسایش هەڵەیە",
     "securityCodeMayHaveExpired": "ڕەنگە کۆدی ئاسایش بەسەرچووبێت",
@@ -593,5 +593,6 @@
     "noSettlementAmountAvailableForThisPeriod": "هیچ بڕە پارەیەکی یەکلاکردنەوە بۆ ئەم ماوەیە بەردەست نییە",
     "verificationChannel": "کەناڵی پشتڕاستکردنەوە",
     "launchAdTips": "داگیرساندنی \"launchAd\" بەو مانایەیە کە ڕێکلامێک پیشان دەدرێت کاتێک ئەپەکە دەکرێتەوە، و ئەنجامەکەی دەگۆڕدرێت بۆ کێشی کانزای USCT.",
-    "help": "یارمەتی"
+    "help": "یارمەتی",
+    "verifyOriginalMSISDN": "MSISDN ئەسڵی پشتڕاست بکەرەوە"
 }

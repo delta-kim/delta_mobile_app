@@ -145,7 +145,7 @@
      "startVrification": "start Verification",
      "mobileNumberAlreadyExists_associated": "This MobileNumber already exists, associated DID: ${dId}",
      "noDataYet": "No data yet",
-     "previousMobileNumber": "previous Mobile NO.",
+     "previousMSISDN":"Previous MSISDN",
      "changeLog": "change log",
      "referralLinkToShare": "Referral link to share",
      "referrer": "Referrer",
@@ -341,7 +341,7 @@
      "textContent": "Text content",
      "scanQRcodeToLogin": "Scan QRcode to login",
      "confirmLogin": "Confirm login",
-     "authorizeSubApplicationToLogin": "Authorize this sub-application to login",
+     "authorizeDappAppToLogin": "Authorize this dapp to login",
      "authorizationSuccessful": "Authorization successful!",
      "launchSMSprogram": "launch SMS program",
      "notApplied": "Not applied",
@@ -455,7 +455,7 @@
      "numberOfSafetyCircleCannotBeLessThan3": "The number of safety circle members cannot be less than 3 people",
      "avatarIsNotSet": "Avatar is not set",
      "numberOfDirectReferralsCannotBeLessThan3": "The number of direct referrals cannot be less than 3 people",
-     "insufficientTimeLimit_mobileNumberOnlyChangedOnceYear": "Insufficient time limit, mobile number can only be changed once a year.",
+     "insufficientTimeLimit_changeMSISDNInterval3months": "Insufficient time limit. changing the MSISDN requires a minimum interval of 3 months.",
      "mobileNumberAlreadyExistsAndCannotBeRepeated": "This mobile phone number already exists and cannot be repeated",
      "securityCodeIsIncorrect": "Security code is incorrect",
      "securityCodeMayHaveExpired": "Security code may have expired",
@@ -593,5 +593,6 @@
      "noSettlementAmountAvailableForThisPeriod": "No settlement amount available for this period",
      "verificationChannel": "Verification Channel",
      "launchAdTips": "Turning on \"launchAd\" means that an ad will be displayed when the app is launched, and its result will be converted into USCT mining weight.",
-     "help": "Help"
+     "help": "Help",
+     "verifyOriginalMSISDN": "Verify original MSISDN"
 }

@@ -146,7 +146,7 @@
      "startVrification": "Verificatie starten",
      "mobileNumberAlreadyExists_associated": "Dit mobiele nummer bestaat al, bijbehorende DID: ${dId}",
      "noDataYet": "Nog geen gegevens beschikbaar",
-     "previousMobileNumber": "Vorig mobiel telefoonnummer",
+     "previousMSISDN": "Vorige MSISDN",
      "changeLog": "Wijzigingenlogboek",
      "referralLinkToShare": "Referentie link om te delen",
      "referrer": "Refereerder",
@@ -343,7 +343,7 @@
      "textContent": "Tekstinhoud",
      "scanQRcodeToLogin": "Scan QR-code om in te loggen",
      "confirmLogin": "Inloggen bevestigen",
-     "authorizeSubApplicationToLogin": "Deze subapplicatie machtigen om in te loggen",
+     "authorizeDappAppToLogin": "Deze subapplicatie machtigen om in te loggen",
      "authorizationSuccessful": "De autorisatie was succesvol!",
      "launchSMSprogram": "Start het SMS-programma",
      "notApplied": "Niet toegepast",
@@ -457,7 +457,7 @@
      "numberOfSafetyCircleCannotBeLessThan3": "Het aantal leden van de security circle mag niet minder dan drie zijn",
      "avatarIsNotSet": "Avatar is niet ingesteld",
      "numberOfDirectReferralsCannotBeLessThan3": "Het aantal directe verwijzingen mag niet minder zijn dan 3",
-     "insufficientTimeLimit_mobileNumberOnlyChangedOnceYear": "Onvoldoende tijdslimiet, het mobiele nummer kan maar één keer per jaar worden gewijzigd.",
+     "insufficientTimeLimit_changeMSISDNInterval3months": "De tijdslimiet is onvoldoende. Het minimale interval voor het wijzigen van MSISDN is 3 maanden.",
      "mobileNumberAlreadyExistsAndCannotBeRepeated": "Dit mobiele telefoonnummer bestaat al en kan niet worden herhaald.",
      "securityCodeIsIncorrect": "De security code is onjuist",
      "securityCodeMayHaveExpired": "Security code is mogelijk verlopen",
@@ -594,5 +594,6 @@
      "noSettlementAmountAvailableForThisPeriod": "Geen verrekeningsbedrag beschikbaar voor deze periode",
      "verificationChannel": "Verificatiekanaal",
      "launchAdTips": "Als u \"launchAd\" inschakelt, wordt er een advertentie weergegeven wanneer de app wordt gestart en wordt het resultaat omgezet in USCT-mijngewicht.",
-     "help": "Hulp"
+     "help": "Hulp",
+     "verifyOriginalMSISDN": "Originele MSISDN verifiëren"
 }

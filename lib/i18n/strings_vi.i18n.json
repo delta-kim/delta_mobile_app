@@ -146,7 +146,7 @@
   "startVrification": "Bắt đầu xác minh",
   "mobileNumberAlreadyExists_associated": "Số điện thoại di động này đã tồn tại, được liên kết DID: ${dId}",
   "noDataYet": "Chưa có dữ liệu",
-  "previousMobileNumber": "Số điện thoại di động trước đó",
+  "previousMSISDN": "MSISDN trước đó",
   "changeLog": "Lịch sử thay đổi",
   "referralLinkToShare": "Chia sẻ liên kết được đề xuất",
   "referrer": "người giới thiệu",
@@ -343,7 +343,7 @@
   "textContent": "nội dung văn bản",
   "scanQRcodeToLogin": "Quét mã để đăng nhập",
   "confirmLogin": "Xác nhận đăng nhập",
-  "authorizeSubApplicationToLogin": "Cho phép ứng dụng phụ đăng nhập",
+  "authorizeDappAppToLogin": "Cho phép ứng dụng phụ đăng nhập",
   "authorizationSuccessful": "Ủy quyền thành công!",
   "launchSMSprogram": "Bắt đầu chương trình SMS",
   "notApplied": "Không có ứng dụng",
@@ -457,7 +457,7 @@
   "numberOfSafetyCircleCannotBeLessThan3": "Số lượng thành viên trong vòng an toàn không được ít hơn 3 người",
   "avatarIsNotSet": "Hình đại diện chưa được đặt",
   "numberOfDirectReferralsCannotBeLessThan3": "Số người giới thiệu trực tiếp không được ít hơn 3 người",
-  "insufficientTimeLimit_mobileNumberOnlyChangedOnceYear": "Thời hạn không đủ và bạn chỉ có thể thay đổi số điện thoại di động của mình mỗi năm một lần.",
+  "insufficientTimeLimit_changeMSISDNInterval3months": "Thời hạn không đủ. Khoảng thời gian tối thiểu để thay đổi MSISDN là 3 tháng.",
   "mobileNumberAlreadyExistsAndCannotBeRepeated": "Số điện thoại di động đã tồn tại và không thể lặp lại",
   "securityCodeIsIncorrect": "Mã bảo mật không chính xác",
   "securityCodeMayHaveExpired": "Mã bảo mật có thể đã hết hạn",
@@ -594,5 +594,6 @@
   "noSettlementAmountAvailableForThisPeriod": "Không có số tiền thanh toán nào khả dụng cho giai đoạn này",
   "verificationChannel": "Kênh xác minh",
   "launchAdTips": "Bật \"launchAd\" có nghĩa là một quảng cáo sẽ được hiển thị khi ứng dụng được khởi chạy và kết quả của quảng cáo đó sẽ được chuyển đổi thành trọng số khai thác USCT.",
-  "help": "Trợ giúp"
+  "help": "Trợ giúp",
+  "verifyOriginalMSISDN": "Xác minh MSISDN gốc"
 }

@@ -4,9 +4,9 @@
 /// To regenerate, run: `dart run slang`
 ///
 /// Locales: 25
-/// Strings: 14792 (591 per locale)
+/// Strings: 14817 (592 per locale)
 ///
-/// Built on 2025-08-15 at 10:40 UTC
+/// Built on 2025-08-27 at 10:58 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -396,7 +396,7 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	String get startVrification => 'start Verification';
 	String mobileNumberAlreadyExists_associated({required Object dId}) => 'This MobileNumber already exists, associated DID: ${dId}';
 	String get noDataYet => 'No data yet';
-	String get previousMobileNumber => 'previous Mobile NO.';
+	String get previousMSISDN => 'Previous MSISDN';
 	String get changeLog => 'change log';
 	String get referralLinkToShare => 'Referral link to share';
 	String get referrer => 'Referrer';
@@ -610,7 +610,7 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	String get textContent => 'Text content';
 	String get scanQRcodeToLogin => 'Scan QRcode to login';
 	String get confirmLogin => 'Confirm login';
-	String get authorizeSubApplicationToLogin => 'Authorize this sub-application to login';
+	String get authorizeDappAppToLogin => 'Authorize this dapp to login';
 	String get authorizationSuccessful => 'Authorization successful!';
 	String get launchSMSprogram => 'launch SMS program';
 	String get notApplied => 'Not applied';
@@ -724,7 +724,7 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	String get numberOfSafetyCircleCannotBeLessThan3 => 'The number of safety circle members cannot be less than 3 people';
 	String get avatarIsNotSet => 'Avatar is not set';
 	String get numberOfDirectReferralsCannotBeLessThan3 => 'The number of direct referrals cannot be less than 3 people';
-	String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => 'Insufficient time limit, mobile number can only be changed once a year.';
+	String get insufficientTimeLimit_changeMSISDNInterval3months => 'Insufficient time limit. changing the MSISDN requires a minimum interval of 3 months.';
 	String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'This mobile phone number already exists and cannot be repeated';
 	String get securityCodeIsIncorrect => 'Security code is incorrect';
 	String get securityCodeMayHaveExpired => 'Security code may have expired';
@@ -868,6 +868,7 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	String get verificationChannel => 'Verification Channel';
 	String get launchAdTips => 'Turning on "launchAd" means that an ad will be displayed when the app is launched, and its result will be converted into USCT mining weight.';
 	String get help => 'Help';
+	String get verifyOriginalMSISDN => 'Verify original MSISDN';
 }
 
 // Path: <root>
@@ -1119,7 +1120,7 @@ class _StringsBg implements Translations {
 	@override String get startVrification => 'стартиране на проверката';
 	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'Този мобилен номер вече съществува, асоцииран DID: ${dId}';
 	@override String get noDataYet => 'Все още няма данни';
-	@override String get previousMobileNumber => 'предишен мобилен номер';
+	@override String get previousMSISDN => 'Предишно MSISDN';
 	@override String get changeLog => 'дневник на промените';
 	@override String get referralLinkToShare => 'Реферална връзка за споделяне';
 	@override String get referrer => 'Референт';
@@ -1333,7 +1334,7 @@ class _StringsBg implements Translations {
 	@override String get textContent => 'Съдържание на текста';
 	@override String get scanQRcodeToLogin => 'Сканирайте QR кода за влизане';
 	@override String get confirmLogin => 'Потвърдете влизането';
-	@override String get authorizeSubApplicationToLogin => 'Разрешаване на подприложението да влезе';
+	@override String get authorizeDappAppToLogin => 'Разрешаване на подприложението да влезе';
 	@override String get authorizationSuccessful => 'Влизането е успешно!';
 	@override String get launchSMSprogram => 'Стартиране на SMS програма';
 	@override String get notApplied => 'Не е приложено';
@@ -1447,7 +1448,7 @@ class _StringsBg implements Translations {
 	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'Броят на членовете в кръга за сигурност не може да бъде по-малък от 3 души';
 	@override String get avatarIsNotSet => 'Аватарът не е зададен';
 	@override String get numberOfDirectReferralsCannotBeLessThan3 => 'Броят на директно препоръчаните лица не може да бъде по-малък от 3 души';
-	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => 'Недостатъчен времеви лимит, мобилният номер може да бъде променен само веднъж годишно.';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => 'Времевият лимит е недостатъчен. Минималният интервал за промяна на MSISDN е 3 месеца.';
 	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'Този мобилен номер вече съществува и не може да бъде повторен';
 	@override String get securityCodeIsIncorrect => 'Кодът за сигурност е неправилен';
 	@override String get securityCodeMayHaveExpired => 'Кодът за сигурност е невалиден или изтекъл';
@@ -1591,6 +1592,7 @@ class _StringsBg implements Translations {
 	@override String get verificationChannel => 'Канал за проверка';
 	@override String get launchAdTips => 'Включването на „launchAd“ означава, че при стартиране на приложението ще се показва реклама, а резултатът от нея ще бъде преобразуван в USCT тегло за добив.';
 	@override String get help => 'Помощ';
+	@override String get verifyOriginalMSISDN => 'Проверете оригиналния MSISDN';
 }
 
 // Path: <root>
@@ -1845,7 +1847,7 @@ class _StringsBn implements Translations {
 	@override String get startVrification => 'যাচাইকরণ শুরু করুন';
 	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'এই মোবাইল নম্বরটি ইতিমধ্যেই বিদ্যমান, সংশ্লিষ্ট DID: ${dId}';
 	@override String get noDataYet => 'এখনো কোনো তথ্য নেই';
-	@override String get previousMobileNumber => 'আগের মোবাইল নম্বর';
+	@override String get previousMSISDN => 'পূর্ববর্তী MSISDN';
 	@override String get changeLog => 'ইতিহাস পরিবর্তন করুন';
 	@override String get referralLinkToShare => 'প্রস্তাবিত লিঙ্ক শেয়ারিং';
 	@override String get referrer => 'সুপারিশকারী';
@@ -2060,7 +2062,7 @@ class _StringsBn implements Translations {
 	@override String get textContent => 'পাঠ্য বিষয়বস্তু';
 	@override String get scanQRcodeToLogin => 'লগ ইন করতে কোড স্ক্যান করুন';
 	@override String get confirmLogin => 'লগইন নিশ্চিত করুন';
-	@override String get authorizeSubApplicationToLogin => 'লগ ইন করার জন্য সাব-অ্যাপ্লিকেশন অনুমোদন করুন';
+	@override String get authorizeDappAppToLogin => 'লগ ইন করার জন্য সাব-অ্যাপ্লিকেশন অনুমোদন করুন';
 	@override String get authorizationSuccessful => 'অনুমোদন সফল!';
 	@override String get launchSMSprogram => 'এসএমএস প্রোগ্রাম শুরু করুন';
 	@override String get notApplied => 'কোন আবেদন নেই';
@@ -2174,7 +2176,7 @@ class _StringsBn implements Translations {
 	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'নিরাপত্তা চক্রের সদস্য সংখ্যা 3 জনের কম হতে পারবে না';
 	@override String get avatarIsNotSet => 'অবতার সেট করা নেই';
 	@override String get numberOfDirectReferralsCannotBeLessThan3 => 'সরাসরি রেফারেলের সংখ্যা 3 জনের কম হতে পারে না';
-	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => 'সময়সীমা অপর্যাপ্ত এবং আপনি বছরে একবার আপনার মোবাইল ফোন নম্বর পরিবর্তন করতে পারবেন।';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => 'সময়সীমা অপর্যাপ্ত। MSISDN পরিবর্তনের জন্য সর্বনিম্ন ব্যবধান হল 3 মাস।';
 	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'মোবাইল ফোন নম্বরটি ইতিমধ্যেই বিদ্যমান এবং পুনরাবৃত্তি করা যাবে না৷';
 	@override String get securityCodeIsIncorrect => 'নিরাপত্তা কোড ভুল';
 	@override String get securityCodeMayHaveExpired => 'নিরাপত্তা কোড মেয়াদ উত্তীর্ণ হতে পারে';
@@ -2317,6 +2319,7 @@ class _StringsBn implements Translations {
 	@override String get verificationChannel => 'যাচাইকরণ চ্যানেল';
 	@override String get launchAdTips => '"launchAd" চালু করার অর্থ হল অ্যাপটি চালু হওয়ার সাথে সাথে একটি বিজ্ঞাপন প্রদর্শিত হবে এবং এর ফলাফল USCT মাইনিং ওয়েটে রূপান্তরিত হবে।';
 	@override String get help => 'সাহায্য';
+	@override String get verifyOriginalMSISDN => 'মূল MSISDN যাচাই করুন';
 }
 
 // Path: <root>
@@ -2568,7 +2571,7 @@ class _StringsCkb implements Translations {
 	@override String get startVrification => 'دەستپێکردنی پشتڕاستکردنەوە';
 	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'ئەم ژمارەی مۆبایلە پێشتر بوونی هەیە، پەیوەندیدار DID: ${dId}';
 	@override String get noDataYet => 'هێشتا هیچ داتایەک نییە';
-	@override String get previousMobileNumber => 'ژمارەی مۆبایلی پێشوو.';
+	@override String get previousMSISDN => 'MSISDNی پێشوو';
 	@override String get changeLog => 'لۆگ گۆڕینی';
 	@override String get referralLinkToShare => 'بەستەری ڕەوانەکردن بۆ هاوبەشکردن';
 	@override String get referrer => 'ئاماژەدەر';
@@ -2782,7 +2785,7 @@ class _StringsCkb implements Translations {
 	@override String get textContent => 'ناوەڕۆکی دەق';
 	@override String get scanQRcodeToLogin => 'سکانکردنی QRcode بۆ چوونەژوورەوە';
 	@override String get confirmLogin => 'دووپاتکردنەوەی چوونەژوورەوە';
-	@override String get authorizeSubApplicationToLogin => 'ڕێگە بەم بەرنامە لاوەکییە بدە بۆ چوونەژوورەوە';
+	@override String get authorizeDappAppToLogin => 'ڕێگە بەم بەرنامە لاوەکییە بدە بۆ چوونەژوورەوە';
 	@override String get authorizationSuccessful => 'ڕێگەپێدان سەرکەوتوو بوو!';
 	@override String get launchSMSprogram => 'دەستپێکردنی بەرنامەی کورتەنامە';
 	@override String get notApplied => 'کارپێنەکراوە';
@@ -2896,7 +2899,7 @@ class _StringsCkb implements Translations {
 	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'ژمارەی ئەندامانی بازنەی سەلامەتی ناتوانێت لە ٣ کەس کەمتر بێت';
 	@override String get avatarIsNotSet => 'ئاڤاتاری دانەنراوە';
 	@override String get numberOfDirectReferralsCannotBeLessThan3 => 'ژمارەی ڕەوانەکردنی ڕاستەوخۆ ناتوانێت لە ٣ کەس کەمتر بێت';
-	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => 'سنوری کاتیی بەس نییە، ژمارەی مۆبایل تەنها ساڵانە جارێک دەتوانرێت بگۆڕدرێت.';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => 'سنووری کات بەس نییە. کەمترین ماوەی بۆ گۆڕینی MSISDN 3 مانگە.';
 	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'ئەم ژمارە مۆبایلە پێشتر بوونی هەیە و ناتوانرێت دووبارە بکرێتەوە';
 	@override String get securityCodeIsIncorrect => 'کۆدی ئاسایش هەڵەیە';
 	@override String get securityCodeMayHaveExpired => 'ڕەنگە کۆدی ئاسایش بەسەرچووبێت';
@@ -3041,6 +3044,7 @@ class _StringsCkb implements Translations {
 	@override String get verificationChannel => 'کەناڵی پشتڕاستکردنەوە';
 	@override String get launchAdTips => 'داگیرساندنی "launchAd" بەو مانایەیە کە ڕێکلامێک پیشان دەدرێت کاتێک ئەپەکە دەکرێتەوە، و ئەنجامەکەی دەگۆڕدرێت بۆ کێشی کانزای USCT.';
 	@override String get help => 'یارمەتی';
+	@override String get verifyOriginalMSISDN => 'MSISDN ئەسڵی پشتڕاست بکەرەوە';
 }
 
 // Path: <root>
@@ -3293,7 +3297,7 @@ class _StringsDe implements Translations {
 	@override String get startVrification => 'Überprüfung starten';
 	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'Diese Mobilfunknummer existiert bereits, zugehörige DID: ${dId}';
 	@override String get noDataYet => 'Keine Daten verfügbar';
-	@override String get previousMobileNumber => 'Frühere Mobiltelefonnummer';
+	@override String get previousMSISDN => 'Vorherige MSISDN';
 	@override String get changeLog => 'Aufzeichnung der Änderungen';
 	@override String get referralLinkToShare => 'Empfohlene Links zum Teilen';
 	@override String get referrer => 'Referrer';
@@ -3508,7 +3512,7 @@ class _StringsDe implements Translations {
 	@override String get textContent => 'Inhalt des Textes';
 	@override String get scanQRcodeToLogin => 'Zum Einloggen wischen';
 	@override String get confirmLogin => 'Anmeldung bestätigen';
-	@override String get authorizeSubApplicationToLogin => 'Diese Teilanwendung zum Einloggen autorisieren';
+	@override String get authorizeDappAppToLogin => 'Diese Teilanwendung zum Einloggen autorisieren';
 	@override String get authorizationSuccessful => 'Die Genehmigung war erfolgreich!';
 	@override String get launchSMSprogram => 'Start des SMS-Programms';
 	@override String get notApplied => 'Kein Antrag';
@@ -3622,7 +3626,7 @@ class _StringsDe implements Translations {
 	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'Die Anzahl der Mitglieder des Sicherheitskreises darf nicht weniger als drei betragen';
 	@override String get avatarIsNotSet => 'Avatar nicht gesetzt';
 	@override String get numberOfDirectReferralsCannotBeLessThan3 => 'Die Anzahl der direkten Verweise darf nicht weniger als 3 betragen.';
-	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => 'Die zeitliche Begrenzung ist unzureichend, und Sie können Ihre Mobiltelefonnummer nur einmal im Jahr ändern.';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => 'Das Zeitlimit ist unzureichend. Das Mindestintervall für die Änderung der MSISDN beträgt 3 Monate.';
 	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'Diese Mobiltelefonnummer existiert bereits und kann nicht dupliziert werden';
 	@override String get securityCodeIsIncorrect => 'Falscher Sicherheitscode';
 	@override String get securityCodeMayHaveExpired => 'Der Sicherheitscode ist möglicherweise abgelaufen';
@@ -3765,6 +3769,7 @@ class _StringsDe implements Translations {
 	@override String get verificationChannel => 'Verifizierungskanal';
 	@override String get launchAdTips => 'Wenn Sie "launchAd" aktivieren, wird beim Starten der App eine Anzeige angezeigt und das Ergebnis in ein USCT-Mining-Gewicht umgewandelt.';
 	@override String get help => 'Hilfe';
+	@override String get verifyOriginalMSISDN => 'Ursprüngliche MSISDN verifizieren';
 }
 
 // Path: <root>
@@ -4016,7 +4021,7 @@ class _StringsEl implements Translations {
 	@override String get startVrification => 'έναρξη επαλήθευσης';
 	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'Αυτός ο αριθμός κινητού υπάρχει ήδη, σχετικό DID: ${dId}';
 	@override String get noDataYet => 'Δεν υπάρχουν δεδομένα ακόμα';
-	@override String get previousMobileNumber => 'προηγούμενο Κινητό NO.';
+	@override String get previousMSISDN => 'Προηγούμενο MSISDN';
 	@override String get changeLog => 'αρχείο καταγραφής αλλαγών';
 	@override String get referralLinkToShare => 'Σύνδεσμος παραπομπής για κοινή χρήση';
 	@override String get referrer => 'Παραπέμπων';
@@ -4230,7 +4235,7 @@ class _StringsEl implements Translations {
 	@override String get textContent => 'Περιεχόμενο κειμένου';
 	@override String get scanQRcodeToLogin => 'Σαρώστε το QRcode για να συνδεθείτε';
 	@override String get confirmLogin => 'Επιβεβαίωση εισόδου';
-	@override String get authorizeSubApplicationToLogin => 'Εξουσιοδότηση αυτής της υπο-εφαρμογής για σύνδεση';
+	@override String get authorizeDappAppToLogin => 'Εξουσιοδότηση αυτής της υπο-εφαρμογής για σύνδεση';
 	@override String get authorizationSuccessful => 'Εξουσιοδότηση επιτυχής';
 	@override String get launchSMSprogram => 'Εκκίνηση προγράμματος SMS';
 	@override String get notApplied => 'Δεν εφαρμόστηκε';
@@ -4344,7 +4349,7 @@ class _StringsEl implements Translations {
 	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'Ο αριθμός των μελών του κύκλου ασφαλείας δεν μπορεί να είναι μικρότερος από 3 άτομα.';
 	@override String get avatarIsNotSet => 'Το Avatar δεν έχει οριστεί';
 	@override String get numberOfDirectReferralsCannotBeLessThan3 => 'Ο αριθμός των άμεσων παραπομπών δεν μπορεί να είναι μικρότερος από 3 άτομα';
-	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => 'Ανεπαρκές χρονικό όριο, ο αριθμός κινητού μπορεί να αλλάξει μόνο μία φορά το χρόνο.';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => 'Το χρονικό όριο είναι ανεπαρκές. Το ελάχιστο διάστημα για την αλλαγή του MSISDN είναι 3 μήνες.';
 	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'Αυτός ο αριθμός κινητού τηλεφώνου υπάρχει ήδη και δεν μπορεί να επαναληφθεί';
 	@override String get securityCodeIsIncorrect => 'Ο κωδικός ασφαλείας είναι λανθασμένος';
 	@override String get securityCodeMayHaveExpired => 'Ο κωδικός ασφαλείας μπορεί να έχει λήξει';
@@ -4489,6 +4494,7 @@ class _StringsEl implements Translations {
 	@override String get verificationChannel => 'Κανάλι επαλήθευσης';
 	@override String get launchAdTips => 'Η ενεργοποίηση του "launchAd" σημαίνει ότι θα εμφανίζεται μια διαφήμιση κατά την εκκίνηση της εφαρμογής και το αποτέλεσμά της θα μετατραπεί σε βάρος εξόρυξης USCT.';
 	@override String get help => 'Βοήθεια';
+	@override String get verifyOriginalMSISDN => 'Επαλήθευση αρχικού MSISDN';
 }
 
 // Path: <root>
@@ -4741,7 +4747,7 @@ class _StringsEs implements Translations {
 	@override String get startVrification => 'Iniciar verificación';
 	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'Este número de móvil ya existe, DID asociado: ${dId}';
 	@override String get noDataYet => 'No hay datos disponibles';
-	@override String get previousMobileNumber => 'Número de teléfono móvil anterior';
+	@override String get previousMSISDN => 'MSISDN anterior';
 	@override String get changeLog => 'Registro de cambios';
 	@override String get referralLinkToShare => 'Enlaces recomendados para compartir';
 	@override String get referrer => 'remitente';
@@ -4956,7 +4962,7 @@ class _StringsEs implements Translations {
 	@override String get textContent => 'Contenido del texto';
 	@override String get scanQRcodeToLogin => 'Pase el dedo para iniciar sesión';
 	@override String get confirmLogin => 'Confirmar inicio de sesión';
-	@override String get authorizeSubApplicationToLogin => 'Autorizar esta sub-solicitud para iniciar sesión';
+	@override String get authorizeDappAppToLogin => 'Autorizar esta sub-solicitud para iniciar sesión';
 	@override String get authorizationSuccessful => 'La autorización se ha realizado correctamente.';
 	@override String get launchSMSprogram => 'Lanzamiento del programa SMS';
 	@override String get notApplied => 'Ninguna solicitud';
@@ -5070,7 +5076,7 @@ class _StringsEs implements Translations {
 	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'El número de miembros del círculo de seguridad no puede ser inferior a tres';
 	@override String get avatarIsNotSet => 'Avatar no fijado';
 	@override String get numberOfDirectReferralsCannotBeLessThan3 => 'El número de remisiones directas no puede ser inferior a 3';
-	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => 'El plazo es insuficiente y sólo puedes cambiar de número de teléfono móvil una vez al año.';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => 'El límite de tiempo es insuficiente. El intervalo mínimo para cambiar el MSISDN es de 3 meses.';
 	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'Este número de teléfono móvil ya existe y no se puede duplicar';
 	@override String get securityCodeIsIncorrect => 'Código de seguridad incorrecto';
 	@override String get securityCodeMayHaveExpired => 'El código de seguridad puede haber caducado';
@@ -5214,6 +5220,7 @@ class _StringsEs implements Translations {
 	@override String get verificationChannel => 'Canal de verificación';
 	@override String get launchAdTips => 'Activar "launchAd" significa que se mostrará un anuncio cuando se inicie la aplicación y su resultado se convertirá en peso de minería USCT.';
 	@override String get help => 'Ayuda';
+	@override String get verifyOriginalMSISDN => 'Verificar el MSISDN original';
 }
 
 // Path: <root>
@@ -5466,7 +5473,7 @@ class _StringsFr implements Translations {
 	@override String get startVrification => 'Début de la vérification';
 	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'Ce numéro mobile existe déjà, DID associé : ${dId}';
 	@override String get noDataYet => 'Pas de données disponibles';
-	@override String get previousMobileNumber => 'Numéro de téléphone mobile précédent';
+	@override String get previousMSISDN => 'MSISDN précédent';
 	@override String get changeLog => 'Registre des modifications';
 	@override String get referralLinkToShare => 'Liens de parrainage à partager';
 	@override String get referrer => 'parrain';
@@ -5681,7 +5688,7 @@ class _StringsFr implements Translations {
 	@override String get textContent => 'Contenu du texte';
 	@override String get scanQRcodeToLogin => 'Scanner le QR code pour se connecter';
 	@override String get confirmLogin => 'Confirmer la connexion';
-	@override String get authorizeSubApplicationToLogin => 'Autoriser cette sous-application à se connecter';
+	@override String get authorizeDappAppToLogin => 'Autoriser cette sous-application à se connecter';
 	@override String get authorizationSuccessful => 'L\'autorisation a été délivrée avec succès !';
 	@override String get launchSMSprogram => 'Lancement du programme SMS';
 	@override String get notApplied => 'Pas de demande';
@@ -5795,7 +5802,7 @@ class _StringsFr implements Translations {
 	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'Le nombre de membres du cercle de sécurité ne peut être inférieur à trois';
 	@override String get avatarIsNotSet => 'Avatar non défini';
 	@override String get numberOfDirectReferralsCannotBeLessThan3 => 'Le nombre de références directes ne peut être inférieur à 3';
-	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => 'Le délai est insuffisant et vous ne pouvez changer de numéro de téléphone mobile qu\'une fois par an.';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => 'Le délai est insuffisant. L\'intervalle minimum pour modifier le MSISDN est de 3 mois.';
 	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'Ce numéro de téléphone mobile existe déjà et ne peut être dupliqué';
 	@override String get securityCodeIsIncorrect => 'Code de sécurité incorrect';
 	@override String get securityCodeMayHaveExpired => 'Le code de sécurité a peut-être expiré';
@@ -5939,6 +5946,7 @@ class _StringsFr implements Translations {
 	@override String get verificationChannel => 'Canal de verificación';
 	@override String get launchAdTips => 'L\'activation de "launchAd" signifie qu\'une publicité sera affichée au lancement de l\'application et que son résultat sera converti en poids minier USCT.';
 	@override String get help => 'Aide';
+	@override String get verifyOriginalMSISDN => 'Vérifier le MSISDN d\'origine';
 }
 
 // Path: <root>
@@ -6188,7 +6196,7 @@ class _StringsHi implements Translations {
 	@override String get startVrification => 'सत्यापन शुरू करें';
 	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'यह मोबाइल नंबर पहले से मौजूद है और एक संबद्ध DID: ${dId} से जुड़ा हुआ है।}';
 	@override String get noDataYet => 'अभी तक कोई डेटा नहीं है';
-	@override String get previousMobileNumber => 'पिछला मोबाइल नंबर';
+	@override String get previousMSISDN => 'पिछला MSISDN';
 	@override String get changeLog => 'परिवर्तन लॉग';
 	@override String get referralLinkToShare => 'साझा करने के लिए रेफ़रल लिंक';
 	@override String get referrer => 'रेफ़रर';
@@ -6402,7 +6410,7 @@ class _StringsHi implements Translations {
 	@override String get textContent => 'पाठ सामग्री';
 	@override String get scanQRcodeToLogin => 'लॉगिन करने के लिए क्यूआर कोड स्कैन करें';
 	@override String get confirmLogin => 'लॉगिन की पुष्टि करें';
-	@override String get authorizeSubApplicationToLogin => 'इस उप-एप्लिकेशन को लॉगिन करने की अनुमति दें';
+	@override String get authorizeDappAppToLogin => 'इस उप-एप्लिकेशन को लॉगिन करने की अनुमति दें';
 	@override String get authorizationSuccessful => 'प्राधिकरण सफल!';
 	@override String get launchSMSprogram => 'एसएमएस कार्यक्रम लॉन्च करें';
 	@override String get notApplied => 'लागू नहीं किया गया';
@@ -6516,7 +6524,7 @@ class _StringsHi implements Translations {
 	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'सुरक्षा सर्कल के सदस्य की संख्या 3 लोगों से कम नहीं हो सकती है।';
 	@override String get avatarIsNotSet => 'प्रोफ़ाइल फ़ोटो सेट नहीं किया गया है।';
 	@override String get numberOfDirectReferralsCannotBeLessThan3 => 'प्रत्यक्ष संदर्भों की संख्या 3 लोगों से कम नहीं हो सकती है।';
-	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => 'समय सीमा अपर्याप्त है, मोबाइल नंबर केवल एक बार प्रति वर्ष बदला जा सकता है।';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => 'समय सीमा अपर्याप्त है। MSISDN बदलने के लिए न्यूनतम अंतराल 3 महीने है।';
 	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'यह मोबाइल फोन नंबर पहले से मौजूद है और इसे पुनः उपयोग नहीं किया जा सकता।';
 	@override String get securityCodeIsIncorrect => 'सुरक्षा कोड गलत है।';
 	@override String get securityCodeMayHaveExpired => 'शायद सुरक्षा कोड की समय सीमा समाप्त हो गई है।';
@@ -6660,6 +6668,7 @@ class _StringsHi implements Translations {
 	@override String get verificationChannel => 'सत्यापन चैनल';
 	@override String get launchAdTips => '"launchAd" चालू करने का अर्थ है कि ऐप लॉन्च होने पर एक विज्ञापन प्रदर्शित किया जाएगा, और इसका परिणाम USCT खनन भार में परिवर्तित हो जाएगा।';
 	@override String get help => 'सहायता';
+	@override String get verifyOriginalMSISDN => 'मूल MSISDN सत्यापित करें';
 }
 
 // Path: <root>
@@ -6911,7 +6920,7 @@ class _StringsIt implements Translations {
 	@override String get startVrification => 'avvia Verifica';
 	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'Questo numero di telefono esiste già, DID associato: ${dId}';
 	@override String get noDataYet => 'Nessun dato ancora';
-	@override String get previousMobileNumber => 'numero di telefono precedente';
+	@override String get previousMSISDN => 'MSISDN precedente';
 	@override String get changeLog => 'log di cambiamento';
 	@override String get referralLinkToShare => 'Link di referral da condividere';
 	@override String get referrer => 'Referente';
@@ -7125,7 +7134,7 @@ class _StringsIt implements Translations {
 	@override String get textContent => 'Contenuto testuale';
 	@override String get scanQRcodeToLogin => 'Scansiona QR code per accedere';
 	@override String get confirmLogin => 'Conferma accesso';
-	@override String get authorizeSubApplicationToLogin => 'Autorizza questa sotto-applicazione ad accedere';
+	@override String get authorizeDappAppToLogin => 'Autorizza questa sotto-applicazione ad accedere';
 	@override String get authorizationSuccessful => 'Autorizzazione riuscita!';
 	@override String get launchSMSprogram => 'avvia programma SMS';
 	@override String get notApplied => 'Non applicato';
@@ -7239,7 +7248,7 @@ class _StringsIt implements Translations {
 	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'Il numero di membri del cerchio di sicurezza non può essere inferiore a 3 persone';
 	@override String get avatarIsNotSet => 'Avatar non impostato';
 	@override String get numberOfDirectReferralsCannotBeLessThan3 => 'Il numero di referral diretti non può essere inferiore a 3 persone';
-	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => 'Limite di tempo insufficiente, il numero di telefono può essere cambiato solo una volta all\'anno.';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => 'Il limite di tempo non è sufficiente. L\'intervallo minimo per la modifica dell\'MSISDN è di 3 mesi.';
 	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'Questo numero di telefono esiste già e non può essere ripetuto';
 	@override String get securityCodeIsIncorrect => 'Il codice di sicurezza è incorretto';
 	@override String get securityCodeMayHaveExpired => 'Il codice di sicurezza potrebbe essere scaduto';
@@ -7383,6 +7392,7 @@ class _StringsIt implements Translations {
 	@override String get verificationChannel => 'Canale di verifica';
 	@override String get launchAdTips => 'Attivando "launchAd" verrà visualizzato un annuncio quando l\'app viene avviata e il suo risultato verrà convertito in peso di mining USCT.';
 	@override String get help => 'Aiuto';
+	@override String get verifyOriginalMSISDN => 'Verifica MSISDN originale';
 }
 
 // Path: <root>
@@ -7633,7 +7643,7 @@ class _StringsJa implements Translations {
 	@override String get startVrification => '検証開始';
 	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'この携帯電話番号はすでに存在し、関連するDIDは${dId}です。';
 	@override String get noDataYet => 'データなし';
-	@override String get previousMobileNumber => '以前の携帯電話番号';
+	@override String get previousMSISDN => '以前のMSISDN';
 	@override String get changeLog => '変更の記録';
 	@override String get referralLinkToShare => '共有するための推奨リンク';
 	@override String get referrer => 'リファラー';
@@ -7848,7 +7858,7 @@ class _StringsJa implements Translations {
 	@override String get textContent => 'テキストコンテンツ';
 	@override String get scanQRcodeToLogin => 'スワイプでログイン';
 	@override String get confirmLogin => 'ログインの確認';
-	@override String get authorizeSubApplicationToLogin => 'このサブアプリケーションのログインを許可する';
+	@override String get authorizeDappAppToLogin => 'このサブアプリケーションのログインを許可する';
 	@override String get authorizationSuccessful => '認可は成功した！';
 	@override String get launchSMSprogram => 'SMSプログラムの開始';
 	@override String get notApplied => '応募なし';
@@ -7962,7 +7972,7 @@ class _StringsJa implements Translations {
 	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'セキュリティー・サークルのメンバーは3人以下にはできない。';
 	@override String get avatarIsNotSet => 'アバターが設定されていない';
 	@override String get numberOfDirectReferralsCannotBeLessThan3 => '直接の紹介者数が3人を下回ることはない。';
-	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => '携帯電話番号の変更は1年に1度しかできない。';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => '時間制限が不十分です。MSISDNを変更できる最小間隔は3か月です。';
 	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'この携帯電話番号はすでに存在しており、複製することはできません。';
 	@override String get securityCodeIsIncorrect => 'セキュリティコードの誤り';
 	@override String get securityCodeMayHaveExpired => 'セキュリティコードの有効期限が切れている可能性があります。';
@@ -8105,6 +8115,7 @@ class _StringsJa implements Translations {
 	@override String get verificationChannel => '検証チャネル';
 	@override String get launchAdTips => '「launchAd」をオンにすると、アプリの起動時に広告が表示され、その結果が USCT マイニング重量に変換されます。';
 	@override String get help => 'ヘルプ';
+	@override String get verifyOriginalMSISDN => '元のMSISDNを確認する';
 }
 
 // Path: <root>
@@ -8357,7 +8368,7 @@ class _StringsKo implements Translations {
 	@override String get startVrification => '인증 시작';
 	@override String mobileNumberAlreadyExists_associated({required Object dId}) => '이 휴대폰 번호는 이미 존재하며 연결된 DID: ${dId}입니다.';
 	@override String get noDataYet => '사용 가능한 데이터 없음';
-	@override String get previousMobileNumber => '이전 휴대폰 번호';
+	@override String get previousMSISDN => '이전 MSISDN';
 	@override String get changeLog => '변경 사항 기록';
 	@override String get referralLinkToShare => '공유할 추천 링크';
 	@override String get referrer => '참조자';
@@ -8572,7 +8583,7 @@ class _StringsKo implements Translations {
 	@override String get textContent => '텍스트 콘텐츠';
 	@override String get scanQRcodeToLogin => '스와이프하여 로그인';
 	@override String get confirmLogin => '로그인 확인';
-	@override String get authorizeSubApplicationToLogin => '로그인할 수 있도록 이 하위 애플리케이션을 승인합니다.';
+	@override String get authorizeDappAppToLogin => '로그인할 수 있도록 이 하위 애플리케이션을 승인합니다.';
 	@override String get authorizationSuccessful => '인증이 성공했습니다!';
 	@override String get launchSMSprogram => 'SMS 프로그램 시작하기';
 	@override String get notApplied => '신청 없음';
@@ -8686,7 +8697,7 @@ class _StringsKo implements Translations {
 	@override String get numberOfSafetyCircleCannotBeLessThan3 => '보안 서클의 구성원 수는 3명 이상이어야 합니다.';
 	@override String get avatarIsNotSet => '아바타가 설정되지 않음';
 	@override String get numberOfDirectReferralsCannotBeLessThan3 => '직접 추천 횟수는 3건 이상이어야 합니다.';
-	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => '시간 제한이 충분하지 않으며 휴대폰 번호는 1년에 한 번만 변경할 수 있습니다.';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => '시간 제한이 부족합니다. MSISDN을 변경하기 위한 최소 간격은 3개월입니다.';
 	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => '이 휴대폰 번호는 이미 존재하며 복제할 수 없습니다.';
 	@override String get securityCodeIsIncorrect => '잘못된 보안 코드';
 	@override String get securityCodeMayHaveExpired => '보안 코드가 만료되었을 수 있습니다.';
@@ -8829,6 +8840,7 @@ class _StringsKo implements Translations {
 	@override String get verificationChannel => '검증 채널';
 	@override String get launchAdTips => '"launchAd"를 켜면 앱이 실행될 때 광고가 표시되고, 그 결과가 USCT 마이닝 가중치로 변환됩니다.';
 	@override String get help => '도움말';
+	@override String get verifyOriginalMSISDN => '원래 MSISDN 확인';
 }
 
 // Path: <root>
@@ -9081,7 +9093,7 @@ class _StringsNl implements Translations {
 	@override String get startVrification => 'Verificatie starten';
 	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'Dit mobiele nummer bestaat al, bijbehorende DID: ${dId}';
 	@override String get noDataYet => 'Nog geen gegevens beschikbaar';
-	@override String get previousMobileNumber => 'Vorig mobiel telefoonnummer';
+	@override String get previousMSISDN => 'Vorige MSISDN';
 	@override String get changeLog => 'Wijzigingenlogboek';
 	@override String get referralLinkToShare => 'Referentie link om te delen';
 	@override String get referrer => 'Refereerder';
@@ -9296,7 +9308,7 @@ class _StringsNl implements Translations {
 	@override String get textContent => 'Tekstinhoud';
 	@override String get scanQRcodeToLogin => 'Scan QR-code om in te loggen';
 	@override String get confirmLogin => 'Inloggen bevestigen';
-	@override String get authorizeSubApplicationToLogin => 'Deze subapplicatie machtigen om in te loggen';
+	@override String get authorizeDappAppToLogin => 'Deze subapplicatie machtigen om in te loggen';
 	@override String get authorizationSuccessful => 'De autorisatie was succesvol!';
 	@override String get launchSMSprogram => 'Start het SMS-programma';
 	@override String get notApplied => 'Niet toegepast';
@@ -9410,7 +9422,7 @@ class _StringsNl implements Translations {
 	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'Het aantal leden van de security circle mag niet minder dan drie zijn';
 	@override String get avatarIsNotSet => 'Avatar is niet ingesteld';
 	@override String get numberOfDirectReferralsCannotBeLessThan3 => 'Het aantal directe verwijzingen mag niet minder zijn dan 3';
-	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => 'Onvoldoende tijdslimiet, het mobiele nummer kan maar één keer per jaar worden gewijzigd.';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => 'De tijdslimiet is onvoldoende. Het minimale interval voor het wijzigen van MSISDN is 3 maanden.';
 	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'Dit mobiele telefoonnummer bestaat al en kan niet worden herhaald.';
 	@override String get securityCodeIsIncorrect => 'De security code is onjuist';
 	@override String get securityCodeMayHaveExpired => 'Security code is mogelijk verlopen';
@@ -9553,6 +9565,7 @@ class _StringsNl implements Translations {
 	@override String get verificationChannel => 'Verificatiekanaal';
 	@override String get launchAdTips => 'Als u "launchAd" inschakelt, wordt er een advertentie weergegeven wanneer de app wordt gestart en wordt het resultaat omgezet in USCT-mijngewicht.';
 	@override String get help => 'Hulp';
+	@override String get verifyOriginalMSISDN => 'Originele MSISDN verifiëren';
 }
 
 // Path: <root>
@@ -9805,7 +9818,7 @@ class _StringsPl implements Translations {
 	@override String get startVrification => 'Rozpoczęcie weryfikacji';
 	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'Ten numer telefonu komórkowego już istnieje, powiązany DID: ${dId}';
 	@override String get noDataYet => 'Brak dostępnych danych';
-	@override String get previousMobileNumber => 'Poprzedni numer telefonu komórkowego';
+	@override String get previousMSISDN => 'Poprzedni MSISDN';
 	@override String get changeLog => 'Rejestr zmian';
 	@override String get referralLinkToShare => 'Zalecane linki do udostępnienia';
 	@override String get referrer => 'polecający';
@@ -10020,7 +10033,7 @@ class _StringsPl implements Translations {
 	@override String get textContent => 'Zawartość tekstowa';
 	@override String get scanQRcodeToLogin => 'Przesuń, aby się zalogować';
 	@override String get confirmLogin => 'Potwierdź logowanie';
-	@override String get authorizeSubApplicationToLogin => 'Autoryzuj tę aplikację podrzędną do logowania';
+	@override String get authorizeDappAppToLogin => 'Autoryzuj tę aplikację podrzędną do logowania';
 	@override String get authorizationSuccessful => 'Autoryzacja przebiegła pomyślnie!';
 	@override String get launchSMSprogram => 'Uruchomienie programu SMS';
 	@override String get notApplied => 'Brak aplikacji';
@@ -10134,7 +10147,7 @@ class _StringsPl implements Translations {
 	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'Liczba członków kręgu bezpieczeństwa nie może być mniejsza niż trzy.';
 	@override String get avatarIsNotSet => 'Awatar nie został ustawiony';
 	@override String get numberOfDirectReferralsCannotBeLessThan3 => 'Liczba bezpośrednich poleceń nie może być mniejsza niż 3.';
-	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => 'Limit czasowy jest niewystarczający i numer telefonu komórkowego można zmienić tylko raz w roku.';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => 'Limit czasu jest niewystarczający. Minimalny odstęp czasu na zmianę numeru MSISDN to 3 miesiące.';
 	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'Ten numer telefonu komórkowego już istnieje i nie można go powielić.';
 	@override String get securityCodeIsIncorrect => 'Nieprawidłowy kod bezpieczeństwa';
 	@override String get securityCodeMayHaveExpired => 'Kod zabezpieczający mógł wygasnąć';
@@ -10278,6 +10291,7 @@ class _StringsPl implements Translations {
 	@override String get verificationChannel => 'Kanał weryfikacji';
 	@override String get launchAdTips => 'Włączenie „launchAd” oznacza, że ​​reklama będzie wyświetlana po uruchomieniu aplikacji, a jej wynik zostanie przekonwertowany na wagę wydobywczą USCT.';
 	@override String get help => 'Pomoc';
+	@override String get verifyOriginalMSISDN => 'Zweryfikuj oryginalny numer MSISDN';
 }
 
 // Path: <root>
@@ -10530,7 +10544,7 @@ class _StringsPt implements Translations {
 	@override String get startVrification => 'Iniciar verificação';
 	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'Este número de telemóvel já existe, DID associado: ${dId}';
 	@override String get noDataYet => 'Não existem dados disponíveis';
-	@override String get previousMobileNumber => 'Número de telemóvel anterior';
+	@override String get previousMSISDN => 'MSISDN anterior';
 	@override String get changeLog => 'Registo das alterações';
 	@override String get referralLinkToShare => 'Ligações recomendadas para partilhar';
 	@override String get referrer => 'referenciador';
@@ -10745,7 +10759,7 @@ class _StringsPt implements Translations {
 	@override String get textContent => 'Conteúdo do texto';
 	@override String get scanQRcodeToLogin => 'Deslizar para iniciar sessão';
 	@override String get confirmLogin => 'Confirmar o início de sessão';
-	@override String get authorizeSubApplicationToLogin => 'Autorizar esta sub-aplicação a iniciar sessão';
+	@override String get authorizeDappAppToLogin => 'Autorizar esta sub-aplicação a iniciar sessão';
 	@override String get authorizationSuccessful => 'A autorização foi bem sucedida!';
 	@override String get launchSMSprogram => 'Lançamento do programa SMS';
 	@override String get notApplied => 'Nenhum pedido';
@@ -10859,7 +10873,7 @@ class _StringsPt implements Translations {
 	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'O número de membros do círculo de segurança não pode ser inferior a três';
 	@override String get avatarIsNotSet => 'Avatar não definido';
 	@override String get numberOfDirectReferralsCannotBeLessThan3 => 'O número de referências diretas não pode ser inferior a 3';
-	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => 'O limite de tempo é insuficiente e só pode alterar o seu número de telemóvel uma vez por ano.';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => 'O limite de tempo é insuficiente. O intervalo mínimo para alteração do MSISDN é de 3 meses.';
 	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'Este número de telemóvel já existe e não pode ser duplicado';
 	@override String get securityCodeIsIncorrect => 'Código de segurança incorreto';
 	@override String get securityCodeMayHaveExpired => 'O código de segurança pode ter expirado';
@@ -11002,6 +11016,7 @@ class _StringsPt implements Translations {
 	@override String get verificationChannel => 'Canal de Verificação';
 	@override String get launchAdTips => 'Ativar "launchAd" significa que um anúncio será exibido quando o aplicativo for iniciado, e seu resultado será convertido em peso de mineração USCT.';
 	@override String get help => 'Ajuda';
+	@override String get verifyOriginalMSISDN => 'Verificar MSISDN original';
 }
 
 // Path: <root>
@@ -11253,7 +11268,7 @@ class _StringsRo implements Translations {
 	@override String get startVrification => 'începe verificarea';
 	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'Acest număr de telefon există deja, asociat cu DID: ${dId}';
 	@override String get noDataYet => 'Încă nu există date';
-	@override String get previousMobileNumber => 'număr de telefon anterior';
+	@override String get previousMSISDN => 'MSISDN-ul anterior';
 	@override String get changeLog => 'jurnal de modificări';
 	@override String get referralLinkToShare => 'Link de recomandare de partajat';
 	@override String get referrer => 'Recomandator';
@@ -11467,7 +11482,7 @@ class _StringsRo implements Translations {
 	@override String get textContent => 'Conținut text';
 	@override String get scanQRcodeToLogin => 'Scanează cod QR pentru autentificare';
 	@override String get confirmLogin => 'Confirmă autentificarea';
-	@override String get authorizeSubApplicationToLogin => 'Autorizează această sub-aplicație să se autentifice';
+	@override String get authorizeDappAppToLogin => 'Autorizează această sub-aplicație să se autentifice';
 	@override String get authorizationSuccessful => 'Autorizare reușită!';
 	@override String get launchSMSprogram => 'lansează program SMS';
 	@override String get notApplied => 'Neaplicat';
@@ -11581,7 +11596,7 @@ class _StringsRo implements Translations {
 	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'Numărul de membri ai cercului de securitate nu poate fi mai mic de 3 persoane';
 	@override String get avatarIsNotSet => 'Avatarul nu este setat';
 	@override String get numberOfDirectReferralsCannotBeLessThan3 => 'Numărul de recomandări directe nu poate fi mai mic de 3 persoane';
-	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => 'Limită de timp insuficientă, numărul de telefon poate fi schimbat doar o dată pe an.';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => 'Limita de timp este insuficientă. Intervalul minim pentru schimbarea MSISDN este de 3 luni.';
 	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'Acest număr de telefon există deja și nu poate fi repetat';
 	@override String get securityCodeIsIncorrect => 'Codul de securitate este incorect';
 	@override String get securityCodeMayHaveExpired => 'Codul de securitate poate fi expirat';
@@ -11725,6 +11740,7 @@ class _StringsRo implements Translations {
 	@override String get verificationChannel => 'Canal de verificare';
 	@override String get launchAdTips => 'Activarea opțiunii «launchAd» înseamnă că o reclamă va fi afișată la lansarea aplicației, iar rezultatul acesteia va fi convertit în pondere de minat USCT.';
 	@override String get help => 'Ajutor';
+	@override String get verifyOriginalMSISDN => 'Verifică MSISDN-ul original';
 }
 
 // Path: <root>
@@ -11977,7 +11993,7 @@ class _StringsRu implements Translations {
 	@override String get startVrification => 'Начало проверки';
 	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'Этот мобильный номер уже существует, связанный с ним DID: ${dId}';
 	@override String get noDataYet => 'Нет данных';
-	@override String get previousMobileNumber => 'Предыдущий номер мобильного телефона';
+	@override String get previousMSISDN => 'Предыдущий MSISDN';
 	@override String get changeLog => 'Запись изменений';
 	@override String get referralLinkToShare => 'Рекомендуемые ссылки для обмена';
 	@override String get referrer => 'реферер';
@@ -12192,7 +12208,7 @@ class _StringsRu implements Translations {
 	@override String get textContent => 'Содержание текста';
 	@override String get scanQRcodeToLogin => 'Проведите пальцем по экрану, чтобы войти в систему';
 	@override String get confirmLogin => 'Подтвердите вход';
-	@override String get authorizeSubApplicationToLogin => 'Разрешите этому подприложению войти в систему';
+	@override String get authorizeDappAppToLogin => 'Разрешите этому подприложению войти в систему';
 	@override String get authorizationSuccessful => 'Авторизация прошла успешно!';
 	@override String get launchSMSprogram => 'Запуск программы SMS';
 	@override String get notApplied => 'Нет приложения';
@@ -12306,7 +12322,7 @@ class _StringsRu implements Translations {
 	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'Число членов круга безопасности не может быть меньше трех';
 	@override String get avatarIsNotSet => 'Аватар не установлен';
 	@override String get numberOfDirectReferralsCannotBeLessThan3 => 'Количество прямых рефералов не может быть меньше 3';
-	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => 'Временной лимит недостаточен, и вы можете менять номер мобильного телефона только один раз в год.';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => 'Недостаточный срок. Минимальный интервал для смены MSISDN составляет 3 месяца.';
 	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'Этот номер мобильного телефона уже существует и не может быть продублирован';
 	@override String get securityCodeIsIncorrect => 'Неверный код безопасности';
 	@override String get securityCodeMayHaveExpired => 'Возможно, истек срок действия кода безопасности';
@@ -12450,6 +12466,7 @@ class _StringsRu implements Translations {
 	@override String get verificationChannel => 'Канал проверки';
 	@override String get launchAdTips => 'Включение "launchAd" означает, что при запуске приложения будет отображаться реклама, а ее результат будет преобразован в вес майнинга USCT.';
 	@override String get help => 'Помощь';
+	@override String get verifyOriginalMSISDN => 'Проверить исходный MSISDN';
 }
 
 // Path: <root>
@@ -12697,7 +12714,7 @@ class _StringsSw implements Translations {
 	@override String get startVrification => 'Anza Uthibitisho';
 	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'Nambari hii ya simu tayari ipo, DID inayohusishwa: ${dId}';
 	@override String get noDataYet => 'Bado hakuna data';
-	@override String get previousMobileNumber => 'Nambari ya Simu ya Awali';
+	@override String get previousMSISDN => 'MSISDN Iliyopita';
 	@override String get changeLog => 'rekodi ya mabadiliko';
 	@override String get referralLinkToShare => 'Kiungo cha mrejelezaji cha kushiriki';
 	@override String get referrer => 'Mrejelezaji';
@@ -12911,7 +12928,7 @@ class _StringsSw implements Translations {
 	@override String get textContent => 'Maudhui ya maandishi';
 	@override String get scanQRcodeToLogin => 'Changanua nambari ya QR ili kuingia';
 	@override String get confirmLogin => 'Thibitisha kuingia';
-	@override String get authorizeSubApplicationToLogin => 'Idhinisha programu hii ndogo kuingia';
+	@override String get authorizeDappAppToLogin => 'Idhinisha programu hii ndogo kuingia';
 	@override String get authorizationSuccessful => 'Uidhinishaji umefanikiwa!';
 	@override String get launchSMSprogram => 'anzisha programu ya SMS';
 	@override String get notApplied => 'Haijatumika';
@@ -13025,7 +13042,7 @@ class _StringsSw implements Translations {
 	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'Idadi ya wanachama wa mduara wa usalama haiwezi kuwa chini ya watu 3';
 	@override String get avatarIsNotSet => 'Avatar haijawekwa';
 	@override String get numberOfDirectReferralsCannotBeLessThan3 => 'Idadi ya marejeleo ya moja kwa moja haiwezi kuwa chini ya watu 3';
-	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => 'Kikomo cha muda kisichotosha, nambari ya simu inaweza kubadilishwa mara moja tu kwa mwaka.';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => 'Kikomo cha muda hakitoshi. Muda wa chini wa kubadilisha MSISDN ni miezi 3.';
 	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'Nambari hii ya simu tayari ipo na haiwezi kurudiwa';
 	@override String get securityCodeIsIncorrect => 'Nambari ya usalama si sahihi';
 	@override String get securityCodeMayHaveExpired => 'Nambari ya usalama inaweza kuwa imesha';
@@ -13170,6 +13187,7 @@ class _StringsSw implements Translations {
 	@override String get verificationChannel => 'Idhaa ya Uthibitishaji';
 	@override String get launchAdTips => 'Kuwasha "launchAd" inamaanisha kuwa tangazo litaonyeshwa programu itakapozinduliwa, na matokeo yake yatabadilishwa kuwa uzito wa uchimbaji madini wa USCT.';
 	@override String get help => 'Msaada';
+	@override String get verifyOriginalMSISDN => 'Thibitisha MSISDN asili';
 }
 
 // Path: <root>
@@ -13421,7 +13439,7 @@ class _StringsTh implements Translations {
 	@override String get startVrification => 'เริ่มการยืนยัน';
 	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'หมายเลขโทรศัพท์มือถือนี้มีอยู่แล้ว DID ที่เกี่ยวข้อง: ${dId}';
 	@override String get noDataYet => 'ยังไม่มีข้อมูล';
-	@override String get previousMobileNumber => 'เบอร์มือถือเดิม';
+	@override String get previousMSISDN => 'MSISDN ก่อนหน้า';
 	@override String get changeLog => 'ประวัติการเปลี่ยนแปลง';
 	@override String get referralLinkToShare => 'แนะนำการแชร์ลิงก์';
 	@override String get referrer => 'ผู้แนะนำ';
@@ -13636,7 +13654,7 @@ class _StringsTh implements Translations {
 	@override String get textContent => 'เนื้อหาข้อความ';
 	@override String get scanQRcodeToLogin => 'สแกนรหัสเพื่อเข้าสู่ระบบ';
 	@override String get confirmLogin => 'ยืนยันการเข้าสู่ระบบ';
-	@override String get authorizeSubApplicationToLogin => 'อนุญาตแอปพลิเคชันย่อยเพื่อเข้าสู่ระบบ';
+	@override String get authorizeDappAppToLogin => 'อนุญาตแอปพลิเคชันย่อยเพื่อเข้าสู่ระบบ';
 	@override String get authorizationSuccessful => 'การอนุญาตสำเร็จ!';
 	@override String get launchSMSprogram => 'เริ่มโปรแกรม SMS';
 	@override String get notApplied => 'ไม่มีการสมัคร';
@@ -13750,7 +13768,7 @@ class _StringsTh implements Translations {
 	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'จำนวนสมาชิกของวงความปลอดภัยต้องไม่ต่ำกว่า 3 คน';
 	@override String get avatarIsNotSet => 'ไม่ได้ตั้งค่าอวาตาร์';
 	@override String get numberOfDirectReferralsCannotBeLessThan3 => 'จำนวนผู้อ้างอิงโดยตรงต้องไม่น้อยกว่า 3 คน';
-	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => 'ระยะเวลาไม่เพียงพอและคุณสามารถเปลี่ยนหมายเลขโทรศัพท์มือถือได้ปีละครั้งเท่านั้น';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => 'ระยะเวลาจำกัดไม่เพียงพอ ช่วงเวลาขั้นต่ำสำหรับการเปลี่ยน MSISDN คือ 3 เดือน';
 	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'หมายเลขโทรศัพท์มือถือมีอยู่แล้วและไม่สามารถทำซ้ำได้';
 	@override String get securityCodeIsIncorrect => 'รหัสความปลอดภัยไม่ถูกต้อง';
 	@override String get securityCodeMayHaveExpired => 'รหัสความปลอดภัยอาจหมดอายุแล้ว';
@@ -13893,6 +13911,7 @@ class _StringsTh implements Translations {
 	@override String get verificationChannel => 'ช่องทางการยืนยัน';
 	@override String get launchAdTips => 'การเปิดใช้งาน "launchAd" หมายถึงโฆษณาจะปรากฏเมื่อเปิดใช้งานแอป และผลลัพธ์จะถูกแปลงเป็นน้ำหนักการขุด USCT';
 	@override String get help => 'ช่วยเหลือ';
+	@override String get verifyOriginalMSISDN => 'ตรวจสอบ MSISDN ดั้งเดิม';
 }
 
 // Path: <root>
@@ -14144,7 +14163,7 @@ class _StringsTr implements Translations {
 	@override String get startVrification => 'Doğrulamayı Başlat';
 	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'Bu telefon numarası zaten mevcut, ilişkili DID: ${dId}';
 	@override String get noDataYet => 'Henüz veri yok';
-	@override String get previousMobileNumber => 'önceki telefon NO.';
+	@override String get previousMSISDN => 'Önceki MSISDN';
 	@override String get changeLog => 'değişiklik günlüğü';
 	@override String get referralLinkToShare => 'Paylaşılacak referans bağlantısı';
 	@override String get referrer => 'Referans';
@@ -14358,7 +14377,7 @@ class _StringsTr implements Translations {
 	@override String get textContent => 'Metin içeriği';
 	@override String get scanQRcodeToLogin => 'Giriş yapmak için QR kodu tara';
 	@override String get confirmLogin => 'Girişi onayla';
-	@override String get authorizeSubApplicationToLogin => 'Bu alt uygulamanın giriş yapmasına izin ver';
+	@override String get authorizeDappAppToLogin => 'Bu alt uygulamanın giriş yapmasına izin ver';
 	@override String get authorizationSuccessful => 'Yetkilendirme başarılı!';
 	@override String get launchSMSprogram => 'SMS programını başlat';
 	@override String get notApplied => 'Uygulanmadı';
@@ -14472,7 +14491,7 @@ class _StringsTr implements Translations {
 	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'Güvenlik çemberi üye sayısı 3 kişiden az olamaz';
 	@override String get avatarIsNotSet => 'Avatar ayarlanmamış';
 	@override String get numberOfDirectReferralsCannotBeLessThan3 => 'Doğrudan referans sayısı 3 kişiden az olamaz';
-	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => 'Yetersiz zaman limiti, telefon numarası yılda yalnızca bir kez değiştirilebilir.';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => 'Zaman sınırı yetersiz. MSISDN\'yi değiştirmek için minimum aralık 3 aydır.';
 	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'Bu telefon numarası zaten mevcut ve tekrarlanamaz';
 	@override String get securityCodeIsIncorrect => 'Güvenlik kodu yanlış';
 	@override String get securityCodeMayHaveExpired => 'Güvenlik kodunun süresi dolmuş olabilir';
@@ -14616,6 +14635,7 @@ class _StringsTr implements Translations {
 	@override String get verificationChannel => 'Doğrulama Kanalı';
 	@override String get launchAdTips => '“launchAd” özelliğini açmak, uygulama başlatıldığında bir reklam gösterileceği ve sonucunun USCT madencilik ağırlığına dönüştürüleceği anlamına gelir.';
 	@override String get help => 'Yardım';
+	@override String get verifyOriginalMSISDN => 'Orijinal MSISDN\'yi doğrulayın';
 }
 
 // Path: <root>
@@ -14868,7 +14888,7 @@ class _StringsUk implements Translations {
 	@override String get startVrification => 'Почніть перевірку';
 	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'Цей мобільний номер вже існує, асоційований DID: ${dId}.';
 	@override String get noDataYet => 'Дані відсутні';
-	@override String get previousMobileNumber => 'Попередній номер мобільного телефону';
+	@override String get previousMSISDN => 'Попередній MSISDN';
 	@override String get changeLog => 'Запис змін';
 	@override String get referralLinkToShare => 'Рекомендовані посилання для поширення';
 	@override String get referrer => 'реферал';
@@ -15083,7 +15103,7 @@ class _StringsUk implements Translations {
 	@override String get textContent => 'Текстовий вміст';
 	@override String get scanQRcodeToLogin => 'Проведіть пальцем, щоб увійти';
 	@override String get confirmLogin => 'Підтвердити логін';
-	@override String get authorizeSubApplicationToLogin => 'Дозвольте цій субпрограмі увійти в систему';
+	@override String get authorizeDappAppToLogin => 'Дозвольте цій субпрограмі увійти в систему';
 	@override String get authorizationSuccessful => 'Авторизація пройшла успішно!';
 	@override String get launchSMSprogram => 'Запуск SMS-програми';
 	@override String get notApplied => 'Немає заявки';
@@ -15197,7 +15217,7 @@ class _StringsUk implements Translations {
 	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'Кількість членів кола безпеки не може бути менше трьох';
 	@override String get avatarIsNotSet => 'Аватар не встановлено';
 	@override String get numberOfDirectReferralsCannotBeLessThan3 => 'Кількість прямих рефералів не може бути менше 3';
-	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => 'Часовий ліміт недостатній, і ви можете змінити номер мобільного телефону лише один раз на рік.';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => 'Часовий ліміт недостатній. Мінімальний інтервал для зміни MSISDN становить 3 місяці.';
 	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'Цей номер мобільного телефону вже існує і не може бути продубльований';
 	@override String get securityCodeIsIncorrect => 'Неправильний код безпеки';
 	@override String get securityCodeMayHaveExpired => 'Можливо, термін дії коду безпеки закінчився';
@@ -15340,6 +15360,7 @@ class _StringsUk implements Translations {
 	@override String get verificationChannel => 'Канал підтвердження';
 	@override String get launchAdTips => 'Увімкнення "launchAd" означає, що під час запуску програми відображатиметься реклама, а її результат буде конвертовано у вагу для майнінгу USCT.';
 	@override String get help => 'Довідка';
+	@override String get verifyOriginalMSISDN => 'Перевірити оригінальний MSISDN';
 }
 
 // Path: <root>
@@ -15591,7 +15612,7 @@ class _StringsUr implements Translations {
 	@override String get startVrification => 'تصدیق شروع کریں';
 	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'یہ موبائل نمبر پہلے سے موجود ہے، متعلقہ DID: ${dId}';
 	@override String get noDataYet => 'ابھی تک کوئی ڈیٹا نہیں';
-	@override String get previousMobileNumber => 'پہلا موبائل نمبر';
+	@override String get previousMSISDN => 'پچھلا MSISDN';
 	@override String get changeLog => 'تبدیلی کا لاگ';
 	@override String get referralLinkToShare => 'شیئر کرنے کے لیے حوالہ لنک';
 	@override String get referrer => 'ریفرر';
@@ -15805,7 +15826,7 @@ class _StringsUr implements Translations {
 	@override String get textContent => 'متن مواد';
 	@override String get scanQRcodeToLogin => 'QRcode کو لاگ ان کرنے کے لئے اسکین کریں';
 	@override String get confirmLogin => 'لاگ ان کی تصدیق کریں';
-	@override String get authorizeSubApplicationToLogin => 'اس ذیلی ایپلیکیشن کو لاگ ان کرنے کے لیے اختیار دیں';
+	@override String get authorizeDappAppToLogin => 'اس ذیلی ایپلیکیشن کو لاگ ان کرنے کے لیے اختیار دیں';
 	@override String get authorizationSuccessful => 'اختیار کامیاب!';
 	@override String get launchSMSprogram => 'SMS پروگرام کا آغاز کریں';
 	@override String get notApplied => 'درخواست نہیں دی گئی';
@@ -15919,7 +15940,7 @@ class _StringsUr implements Translations {
 	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'سیکیورٹی سرکل کے اراکین کی تعداد 3 افراد سے کم نہیں ہونی چاہئے';
 	@override String get avatarIsNotSet => 'اوٹار سیٹ نہیں ہے';
 	@override String get numberOfDirectReferralsCannotBeLessThan3 => 'براہ راست سفارشات کی تعداد 3 افراد سے کم نہیں ہونی چاہئے';
-	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => 'ناکافی وقت کی حد، موبائل نمبر کو سال میں صرف ایک بار تبدیل کیا جا سکتا ہے۔';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => 'وقت کی حد ناکافی ہے۔ MSISDN کو تبدیل کرنے کے لیے کم از کم وقفہ 3 ماہ ہے۔';
 	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'یہ موبائل نمبر پہلے سے موجود ہے اور اسے دہرایا نہیں جا سکتا';
 	@override String get securityCodeIsIncorrect => 'سیکیورٹی کوڈ غلط ہے';
 	@override String get securityCodeMayHaveExpired => 'سیکیورٹی کوڈ کی میعاد ختم ہو سکتی ہے';
@@ -16063,6 +16084,7 @@ class _StringsUr implements Translations {
 	@override String get verificationChannel => 'تصدیق چینل';
 	@override String get launchAdTips => '"launchAd" کو آن کرنے کا مطلب ہے کہ ایپ کے لانچ ہونے پر ایک اشتہار دکھایا جائے گا، اور اس کا نتیجہ USCT مائننگ وزن میں تبدیل ہو جائے گا۔';
 	@override String get help => 'مدد';
+	@override String get verifyOriginalMSISDN => 'اصل MSISDN کی تصدیق کریں';
 }
 
 // Path: <root>
@@ -16315,7 +16337,7 @@ class _StringsVi implements Translations {
 	@override String get startVrification => 'Bắt đầu xác minh';
 	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'Số điện thoại di động này đã tồn tại, được liên kết DID: ${dId}';
 	@override String get noDataYet => 'Chưa có dữ liệu';
-	@override String get previousMobileNumber => 'Số điện thoại di động trước đó';
+	@override String get previousMSISDN => 'MSISDN trước đó';
 	@override String get changeLog => 'Lịch sử thay đổi';
 	@override String get referralLinkToShare => 'Chia sẻ liên kết được đề xuất';
 	@override String get referrer => 'người giới thiệu';
@@ -16530,7 +16552,7 @@ class _StringsVi implements Translations {
 	@override String get textContent => 'nội dung văn bản';
 	@override String get scanQRcodeToLogin => 'Quét mã để đăng nhập';
 	@override String get confirmLogin => 'Xác nhận đăng nhập';
-	@override String get authorizeSubApplicationToLogin => 'Cho phép ứng dụng phụ đăng nhập';
+	@override String get authorizeDappAppToLogin => 'Cho phép ứng dụng phụ đăng nhập';
 	@override String get authorizationSuccessful => 'Ủy quyền thành công!';
 	@override String get launchSMSprogram => 'Bắt đầu chương trình SMS';
 	@override String get notApplied => 'Không có ứng dụng';
@@ -16644,7 +16666,7 @@ class _StringsVi implements Translations {
 	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'Số lượng thành viên trong vòng an toàn không được ít hơn 3 người';
 	@override String get avatarIsNotSet => 'Hình đại diện chưa được đặt';
 	@override String get numberOfDirectReferralsCannotBeLessThan3 => 'Số người giới thiệu trực tiếp không được ít hơn 3 người';
-	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => 'Thời hạn không đủ và bạn chỉ có thể thay đổi số điện thoại di động của mình mỗi năm một lần.';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => 'Thời hạn không đủ. Khoảng thời gian tối thiểu để thay đổi MSISDN là 3 tháng.';
 	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'Số điện thoại di động đã tồn tại và không thể lặp lại';
 	@override String get securityCodeIsIncorrect => 'Mã bảo mật không chính xác';
 	@override String get securityCodeMayHaveExpired => 'Mã bảo mật có thể đã hết hạn';
@@ -16787,6 +16809,7 @@ class _StringsVi implements Translations {
 	@override String get verificationChannel => 'Kênh xác minh';
 	@override String get launchAdTips => 'Bật "launchAd" có nghĩa là một quảng cáo sẽ được hiển thị khi ứng dụng được khởi chạy và kết quả của quảng cáo đó sẽ được chuyển đổi thành trọng số khai thác USCT.';
 	@override String get help => 'Trợ giúp';
+	@override String get verifyOriginalMSISDN => 'Xác minh MSISDN gốc';
 }
 
 // Path: <root>
@@ -17039,7 +17062,7 @@ class _StringsZhCn implements Translations {
 	@override String get startVrification => '开始验证';
 	@override String mobileNumberAlreadyExists_associated({required Object dId}) => '这个手机号码已存在，关联DID： ${dId}';
 	@override String get noDataYet => '暂无数据';
-	@override String get previousMobileNumber => '以前的手机号码';
+	@override String get previousMSISDN => '以前的MSISDN';
 	@override String get changeLog => '变更记录';
 	@override String get referralLinkToShare => '推荐链接分享';
 	@override String get referrer => '推荐人';
@@ -17254,7 +17277,7 @@ class _StringsZhCn implements Translations {
 	@override String get textContent => '文本内容';
 	@override String get scanQRcodeToLogin => '扫码登录';
 	@override String get confirmLogin => '确认登录';
-	@override String get authorizeSubApplicationToLogin => '授权该子应用登录';
+	@override String get authorizeDappAppToLogin => '授权该子应用登录';
 	@override String get authorizationSuccessful => '授权成功！';
 	@override String get launchSMSprogram => '启动短信程序';
 	@override String get notApplied => '没有申请';
@@ -17367,7 +17390,7 @@ class _StringsZhCn implements Translations {
 	@override String get numberOfSafetyCircleCannotBeLessThan3 => '安全圈成员人数不能少于3人';
 	@override String get avatarIsNotSet => '头像未设置';
 	@override String get numberOfDirectReferralsCannotBeLessThan3 => '直接推荐人数不能小于3人';
-	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => '时限不足，一年内只能换一次手机号码。';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => '时限不足，更改MSISDN最少需要间隔3个月。';
 	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => '该手机号码已存在，不能重复';
 	@override String get securityCodeIsIncorrect => '安全码不正确';
 	@override String get securityCodeMayHaveExpired => '安全码可能已过期';
@@ -17512,6 +17535,7 @@ class _StringsZhCn implements Translations {
 	@override String get verificationChannel => '验证渠道';
 	@override String get launchAdTips => '开启“launchAd”表示将在启动应用时展示一个广告，并将其结果转换为USCT挖矿权重。';
 	@override String get help => '帮助';
+	@override String get verifyOriginalMSISDN => '验证原MSISDN';
 }
 
 // Path: <root>
@@ -17764,7 +17788,7 @@ class _StringsZhTw implements Translations {
 	@override String get startVrification => '開始驗證';
 	@override String mobileNumberAlreadyExists_associated({required Object dId}) => '這個手機號碼已存在，關聯DID： ${dId}';
 	@override String get noDataYet => '暫無資料';
-	@override String get previousMobileNumber => '以前的手機號碼';
+	@override String get previousMSISDN => '以前的MSISDN';
 	@override String get changeLog => '變更記錄';
 	@override String get referralLinkToShare => '推薦連結分享';
 	@override String get referrer => '推薦人';
@@ -17979,7 +18003,7 @@ class _StringsZhTw implements Translations {
 	@override String get textContent => '文字內容';
 	@override String get scanQRcodeToLogin => '掃碼登入';
 	@override String get confirmLogin => '確認登入';
-	@override String get authorizeSubApplicationToLogin => '授權該子應用登入';
+	@override String get authorizeDappAppToLogin => '授權該子應用登入';
 	@override String get authorizationSuccessful => '授權成功！';
 	@override String get launchSMSprogram => '啟動簡訊程式';
 	@override String get notApplied => '沒有申請';
@@ -18093,7 +18117,7 @@ class _StringsZhTw implements Translations {
 	@override String get numberOfSafetyCircleCannotBeLessThan3 => '安全圈成員人數不能少於3人';
 	@override String get avatarIsNotSet => '頭像未設定';
 	@override String get numberOfDirectReferralsCannotBeLessThan3 => '直接推薦人數不能小於3人';
-	@override String get insufficientTimeLimit_mobileNumberOnlyChangedOnceYear => '時限不足，一年內只能換一次手機號碼。';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => '時限不足，更改MSISDN最少需要間隔3個月。';
 	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => '該手機號碼已存在，不能重複';
 	@override String get securityCodeIsIncorrect => '安全碼不正確';
 	@override String get securityCodeMayHaveExpired => '安全碼可能已過期';
@@ -18237,6 +18261,7 @@ class _StringsZhTw implements Translations {
 	@override String get verificationChannel => '驗證頻道';
 	@override String get launchAdTips => '開啟「launchAd」表示將在啟動應用程式時顯示一個廣告，並將其結果轉換為USCT挖礦權重。';
 	@override String get help => '幫助';
+	@override String get verifyOriginalMSISDN => '驗證原始 MSISDN';
 }
 
 /// Flat map(s) containing all translations.
@@ -18470,7 +18495,7 @@ extension on Translations {
 			case 'startVrification': return 'start Verification';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'This MobileNumber already exists, associated DID: ${dId}';
 			case 'noDataYet': return 'No data yet';
-			case 'previousMobileNumber': return 'previous Mobile NO.';
+			case 'previousMSISDN': return 'Previous MSISDN';
 			case 'changeLog': return 'change log';
 			case 'referralLinkToShare': return 'Referral link to share';
 			case 'referrer': return 'Referrer';
@@ -18682,7 +18707,7 @@ extension on Translations {
 			case 'textContent': return 'Text content';
 			case 'scanQRcodeToLogin': return 'Scan QRcode to login';
 			case 'confirmLogin': return 'Confirm login';
-			case 'authorizeSubApplicationToLogin': return 'Authorize this sub-application to login';
+			case 'authorizeDappAppToLogin': return 'Authorize this dapp to login';
 			case 'authorizationSuccessful': return 'Authorization successful!';
 			case 'launchSMSprogram': return 'launch SMS program';
 			case 'notApplied': return 'Not applied';
@@ -18796,7 +18821,7 @@ extension on Translations {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return 'The number of safety circle members cannot be less than 3 people';
 			case 'avatarIsNotSet': return 'Avatar is not set';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return 'The number of direct referrals cannot be less than 3 people';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return 'Insufficient time limit, mobile number can only be changed once a year.';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return 'Insufficient time limit. changing the MSISDN requires a minimum interval of 3 months.';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'This mobile phone number already exists and cannot be repeated';
 			case 'securityCodeIsIncorrect': return 'Security code is incorrect';
 			case 'securityCodeMayHaveExpired': return 'Security code may have expired';
@@ -18940,6 +18965,7 @@ extension on Translations {
 			case 'verificationChannel': return 'Verification Channel';
 			case 'launchAdTips': return 'Turning on "launchAd" means that an ad will be displayed when the app is launched, and its result will be converted into USCT mining weight.';
 			case 'help': return 'Help';
+			case 'verifyOriginalMSISDN': return 'Verify original MSISDN';
 			default: return null;
 		}
 	}
@@ -19173,7 +19199,7 @@ extension on _StringsBg {
 			case 'startVrification': return 'стартиране на проверката';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'Този мобилен номер вече съществува, асоцииран DID: ${dId}';
 			case 'noDataYet': return 'Все още няма данни';
-			case 'previousMobileNumber': return 'предишен мобилен номер';
+			case 'previousMSISDN': return 'Предишно MSISDN';
 			case 'changeLog': return 'дневник на промените';
 			case 'referralLinkToShare': return 'Реферална връзка за споделяне';
 			case 'referrer': return 'Референт';
@@ -19385,7 +19411,7 @@ extension on _StringsBg {
 			case 'textContent': return 'Съдържание на текста';
 			case 'scanQRcodeToLogin': return 'Сканирайте QR кода за влизане';
 			case 'confirmLogin': return 'Потвърдете влизането';
-			case 'authorizeSubApplicationToLogin': return 'Разрешаване на подприложението да влезе';
+			case 'authorizeDappAppToLogin': return 'Разрешаване на подприложението да влезе';
 			case 'authorizationSuccessful': return 'Влизането е успешно!';
 			case 'launchSMSprogram': return 'Стартиране на SMS програма';
 			case 'notApplied': return 'Не е приложено';
@@ -19499,7 +19525,7 @@ extension on _StringsBg {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return 'Броят на членовете в кръга за сигурност не може да бъде по-малък от 3 души';
 			case 'avatarIsNotSet': return 'Аватарът не е зададен';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return 'Броят на директно препоръчаните лица не може да бъде по-малък от 3 души';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return 'Недостатъчен времеви лимит, мобилният номер може да бъде променен само веднъж годишно.';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return 'Времевият лимит е недостатъчен. Минималният интервал за промяна на MSISDN е 3 месеца.';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'Този мобилен номер вече съществува и не може да бъде повторен';
 			case 'securityCodeIsIncorrect': return 'Кодът за сигурност е неправилен';
 			case 'securityCodeMayHaveExpired': return 'Кодът за сигурност е невалиден или изтекъл';
@@ -19643,6 +19669,7 @@ extension on _StringsBg {
 			case 'verificationChannel': return 'Канал за проверка';
 			case 'launchAdTips': return 'Включването на „launchAd“ означава, че при стартиране на приложението ще се показва реклама, а резултатът от нея ще бъде преобразуван в USCT тегло за добив.';
 			case 'help': return 'Помощ';
+			case 'verifyOriginalMSISDN': return 'Проверете оригиналния MSISDN';
 			default: return null;
 		}
 	}
@@ -19879,7 +19906,7 @@ extension on _StringsBn {
 			case 'startVrification': return 'যাচাইকরণ শুরু করুন';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'এই মোবাইল নম্বরটি ইতিমধ্যেই বিদ্যমান, সংশ্লিষ্ট DID: ${dId}';
 			case 'noDataYet': return 'এখনো কোনো তথ্য নেই';
-			case 'previousMobileNumber': return 'আগের মোবাইল নম্বর';
+			case 'previousMSISDN': return 'পূর্ববর্তী MSISDN';
 			case 'changeLog': return 'ইতিহাস পরিবর্তন করুন';
 			case 'referralLinkToShare': return 'প্রস্তাবিত লিঙ্ক শেয়ারিং';
 			case 'referrer': return 'সুপারিশকারী';
@@ -20092,7 +20119,7 @@ extension on _StringsBn {
 			case 'textContent': return 'পাঠ্য বিষয়বস্তু';
 			case 'scanQRcodeToLogin': return 'লগ ইন করতে কোড স্ক্যান করুন';
 			case 'confirmLogin': return 'লগইন নিশ্চিত করুন';
-			case 'authorizeSubApplicationToLogin': return 'লগ ইন করার জন্য সাব-অ্যাপ্লিকেশন অনুমোদন করুন';
+			case 'authorizeDappAppToLogin': return 'লগ ইন করার জন্য সাব-অ্যাপ্লিকেশন অনুমোদন করুন';
 			case 'authorizationSuccessful': return 'অনুমোদন সফল!';
 			case 'launchSMSprogram': return 'এসএমএস প্রোগ্রাম শুরু করুন';
 			case 'notApplied': return 'কোন আবেদন নেই';
@@ -20206,7 +20233,7 @@ extension on _StringsBn {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return 'নিরাপত্তা চক্রের সদস্য সংখ্যা 3 জনের কম হতে পারবে না';
 			case 'avatarIsNotSet': return 'অবতার সেট করা নেই';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return 'সরাসরি রেফারেলের সংখ্যা 3 জনের কম হতে পারে না';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return 'সময়সীমা অপর্যাপ্ত এবং আপনি বছরে একবার আপনার মোবাইল ফোন নম্বর পরিবর্তন করতে পারবেন।';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return 'সময়সীমা অপর্যাপ্ত। MSISDN পরিবর্তনের জন্য সর্বনিম্ন ব্যবধান হল 3 মাস।';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'মোবাইল ফোন নম্বরটি ইতিমধ্যেই বিদ্যমান এবং পুনরাবৃত্তি করা যাবে না৷';
 			case 'securityCodeIsIncorrect': return 'নিরাপত্তা কোড ভুল';
 			case 'securityCodeMayHaveExpired': return 'নিরাপত্তা কোড মেয়াদ উত্তীর্ণ হতে পারে';
@@ -20349,6 +20376,7 @@ extension on _StringsBn {
 			case 'verificationChannel': return 'যাচাইকরণ চ্যানেল';
 			case 'launchAdTips': return '"launchAd" চালু করার অর্থ হল অ্যাপটি চালু হওয়ার সাথে সাথে একটি বিজ্ঞাপন প্রদর্শিত হবে এবং এর ফলাফল USCT মাইনিং ওয়েটে রূপান্তরিত হবে।';
 			case 'help': return 'সাহায্য';
+			case 'verifyOriginalMSISDN': return 'মূল MSISDN যাচাই করুন';
 			default: return null;
 		}
 	}
@@ -20582,7 +20610,7 @@ extension on _StringsCkb {
 			case 'startVrification': return 'دەستپێکردنی پشتڕاستکردنەوە';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'ئەم ژمارەی مۆبایلە پێشتر بوونی هەیە، پەیوەندیدار DID: ${dId}';
 			case 'noDataYet': return 'هێشتا هیچ داتایەک نییە';
-			case 'previousMobileNumber': return 'ژمارەی مۆبایلی پێشوو.';
+			case 'previousMSISDN': return 'MSISDNی پێشوو';
 			case 'changeLog': return 'لۆگ گۆڕینی';
 			case 'referralLinkToShare': return 'بەستەری ڕەوانەکردن بۆ هاوبەشکردن';
 			case 'referrer': return 'ئاماژەدەر';
@@ -20794,7 +20822,7 @@ extension on _StringsCkb {
 			case 'textContent': return 'ناوەڕۆکی دەق';
 			case 'scanQRcodeToLogin': return 'سکانکردنی QRcode بۆ چوونەژوورەوە';
 			case 'confirmLogin': return 'دووپاتکردنەوەی چوونەژوورەوە';
-			case 'authorizeSubApplicationToLogin': return 'ڕێگە بەم بەرنامە لاوەکییە بدە بۆ چوونەژوورەوە';
+			case 'authorizeDappAppToLogin': return 'ڕێگە بەم بەرنامە لاوەکییە بدە بۆ چوونەژوورەوە';
 			case 'authorizationSuccessful': return 'ڕێگەپێدان سەرکەوتوو بوو!';
 			case 'launchSMSprogram': return 'دەستپێکردنی بەرنامەی کورتەنامە';
 			case 'notApplied': return 'کارپێنەکراوە';
@@ -20908,7 +20936,7 @@ extension on _StringsCkb {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return 'ژمارەی ئەندامانی بازنەی سەلامەتی ناتوانێت لە ٣ کەس کەمتر بێت';
 			case 'avatarIsNotSet': return 'ئاڤاتاری دانەنراوە';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return 'ژمارەی ڕەوانەکردنی ڕاستەوخۆ ناتوانێت لە ٣ کەس کەمتر بێت';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return 'سنوری کاتیی بەس نییە، ژمارەی مۆبایل تەنها ساڵانە جارێک دەتوانرێت بگۆڕدرێت.';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return 'سنووری کات بەس نییە. کەمترین ماوەی بۆ گۆڕینی MSISDN 3 مانگە.';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'ئەم ژمارە مۆبایلە پێشتر بوونی هەیە و ناتوانرێت دووبارە بکرێتەوە';
 			case 'securityCodeIsIncorrect': return 'کۆدی ئاسایش هەڵەیە';
 			case 'securityCodeMayHaveExpired': return 'ڕەنگە کۆدی ئاسایش بەسەرچووبێت';
@@ -21053,6 +21081,7 @@ extension on _StringsCkb {
 			case 'verificationChannel': return 'کەناڵی پشتڕاستکردنەوە';
 			case 'launchAdTips': return 'داگیرساندنی "launchAd" بەو مانایەیە کە ڕێکلامێک پیشان دەدرێت کاتێک ئەپەکە دەکرێتەوە، و ئەنجامەکەی دەگۆڕدرێت بۆ کێشی کانزای USCT.';
 			case 'help': return 'یارمەتی';
+			case 'verifyOriginalMSISDN': return 'MSISDN ئەسڵی پشتڕاست بکەرەوە';
 			default: return null;
 		}
 	}
@@ -21287,7 +21316,7 @@ extension on _StringsDe {
 			case 'startVrification': return 'Überprüfung starten';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'Diese Mobilfunknummer existiert bereits, zugehörige DID: ${dId}';
 			case 'noDataYet': return 'Keine Daten verfügbar';
-			case 'previousMobileNumber': return 'Frühere Mobiltelefonnummer';
+			case 'previousMSISDN': return 'Vorherige MSISDN';
 			case 'changeLog': return 'Aufzeichnung der Änderungen';
 			case 'referralLinkToShare': return 'Empfohlene Links zum Teilen';
 			case 'referrer': return 'Referrer';
@@ -21500,7 +21529,7 @@ extension on _StringsDe {
 			case 'textContent': return 'Inhalt des Textes';
 			case 'scanQRcodeToLogin': return 'Zum Einloggen wischen';
 			case 'confirmLogin': return 'Anmeldung bestätigen';
-			case 'authorizeSubApplicationToLogin': return 'Diese Teilanwendung zum Einloggen autorisieren';
+			case 'authorizeDappAppToLogin': return 'Diese Teilanwendung zum Einloggen autorisieren';
 			case 'authorizationSuccessful': return 'Die Genehmigung war erfolgreich!';
 			case 'launchSMSprogram': return 'Start des SMS-Programms';
 			case 'notApplied': return 'Kein Antrag';
@@ -21614,7 +21643,7 @@ extension on _StringsDe {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return 'Die Anzahl der Mitglieder des Sicherheitskreises darf nicht weniger als drei betragen';
 			case 'avatarIsNotSet': return 'Avatar nicht gesetzt';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return 'Die Anzahl der direkten Verweise darf nicht weniger als 3 betragen.';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return 'Die zeitliche Begrenzung ist unzureichend, und Sie können Ihre Mobiltelefonnummer nur einmal im Jahr ändern.';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return 'Das Zeitlimit ist unzureichend. Das Mindestintervall für die Änderung der MSISDN beträgt 3 Monate.';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'Diese Mobiltelefonnummer existiert bereits und kann nicht dupliziert werden';
 			case 'securityCodeIsIncorrect': return 'Falscher Sicherheitscode';
 			case 'securityCodeMayHaveExpired': return 'Der Sicherheitscode ist möglicherweise abgelaufen';
@@ -21757,6 +21786,7 @@ extension on _StringsDe {
 			case 'verificationChannel': return 'Verifizierungskanal';
 			case 'launchAdTips': return 'Wenn Sie "launchAd" aktivieren, wird beim Starten der App eine Anzeige angezeigt und das Ergebnis in ein USCT-Mining-Gewicht umgewandelt.';
 			case 'help': return 'Hilfe';
+			case 'verifyOriginalMSISDN': return 'Ursprüngliche MSISDN verifizieren';
 			default: return null;
 		}
 	}
@@ -21990,7 +22020,7 @@ extension on _StringsEl {
 			case 'startVrification': return 'έναρξη επαλήθευσης';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'Αυτός ο αριθμός κινητού υπάρχει ήδη, σχετικό DID: ${dId}';
 			case 'noDataYet': return 'Δεν υπάρχουν δεδομένα ακόμα';
-			case 'previousMobileNumber': return 'προηγούμενο Κινητό NO.';
+			case 'previousMSISDN': return 'Προηγούμενο MSISDN';
 			case 'changeLog': return 'αρχείο καταγραφής αλλαγών';
 			case 'referralLinkToShare': return 'Σύνδεσμος παραπομπής για κοινή χρήση';
 			case 'referrer': return 'Παραπέμπων';
@@ -22202,7 +22232,7 @@ extension on _StringsEl {
 			case 'textContent': return 'Περιεχόμενο κειμένου';
 			case 'scanQRcodeToLogin': return 'Σαρώστε το QRcode για να συνδεθείτε';
 			case 'confirmLogin': return 'Επιβεβαίωση εισόδου';
-			case 'authorizeSubApplicationToLogin': return 'Εξουσιοδότηση αυτής της υπο-εφαρμογής για σύνδεση';
+			case 'authorizeDappAppToLogin': return 'Εξουσιοδότηση αυτής της υπο-εφαρμογής για σύνδεση';
 			case 'authorizationSuccessful': return 'Εξουσιοδότηση επιτυχής';
 			case 'launchSMSprogram': return 'Εκκίνηση προγράμματος SMS';
 			case 'notApplied': return 'Δεν εφαρμόστηκε';
@@ -22316,7 +22346,7 @@ extension on _StringsEl {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return 'Ο αριθμός των μελών του κύκλου ασφαλείας δεν μπορεί να είναι μικρότερος από 3 άτομα.';
 			case 'avatarIsNotSet': return 'Το Avatar δεν έχει οριστεί';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return 'Ο αριθμός των άμεσων παραπομπών δεν μπορεί να είναι μικρότερος από 3 άτομα';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return 'Ανεπαρκές χρονικό όριο, ο αριθμός κινητού μπορεί να αλλάξει μόνο μία φορά το χρόνο.';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return 'Το χρονικό όριο είναι ανεπαρκές. Το ελάχιστο διάστημα για την αλλαγή του MSISDN είναι 3 μήνες.';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'Αυτός ο αριθμός κινητού τηλεφώνου υπάρχει ήδη και δεν μπορεί να επαναληφθεί';
 			case 'securityCodeIsIncorrect': return 'Ο κωδικός ασφαλείας είναι λανθασμένος';
 			case 'securityCodeMayHaveExpired': return 'Ο κωδικός ασφαλείας μπορεί να έχει λήξει';
@@ -22461,6 +22491,7 @@ extension on _StringsEl {
 			case 'verificationChannel': return 'Κανάλι επαλήθευσης';
 			case 'launchAdTips': return 'Η ενεργοποίηση του "launchAd" σημαίνει ότι θα εμφανίζεται μια διαφήμιση κατά την εκκίνηση της εφαρμογής και το αποτέλεσμά της θα μετατραπεί σε βάρος εξόρυξης USCT.';
 			case 'help': return 'Βοήθεια';
+			case 'verifyOriginalMSISDN': return 'Επαλήθευση αρχικού MSISDN';
 			default: return null;
 		}
 	}
@@ -22695,7 +22726,7 @@ extension on _StringsEs {
 			case 'startVrification': return 'Iniciar verificación';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'Este número de móvil ya existe, DID asociado: ${dId}';
 			case 'noDataYet': return 'No hay datos disponibles';
-			case 'previousMobileNumber': return 'Número de teléfono móvil anterior';
+			case 'previousMSISDN': return 'MSISDN anterior';
 			case 'changeLog': return 'Registro de cambios';
 			case 'referralLinkToShare': return 'Enlaces recomendados para compartir';
 			case 'referrer': return 'remitente';
@@ -22908,7 +22939,7 @@ extension on _StringsEs {
 			case 'textContent': return 'Contenido del texto';
 			case 'scanQRcodeToLogin': return 'Pase el dedo para iniciar sesión';
 			case 'confirmLogin': return 'Confirmar inicio de sesión';
-			case 'authorizeSubApplicationToLogin': return 'Autorizar esta sub-solicitud para iniciar sesión';
+			case 'authorizeDappAppToLogin': return 'Autorizar esta sub-solicitud para iniciar sesión';
 			case 'authorizationSuccessful': return 'La autorización se ha realizado correctamente.';
 			case 'launchSMSprogram': return 'Lanzamiento del programa SMS';
 			case 'notApplied': return 'Ninguna solicitud';
@@ -23022,7 +23053,7 @@ extension on _StringsEs {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return 'El número de miembros del círculo de seguridad no puede ser inferior a tres';
 			case 'avatarIsNotSet': return 'Avatar no fijado';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return 'El número de remisiones directas no puede ser inferior a 3';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return 'El plazo es insuficiente y sólo puedes cambiar de número de teléfono móvil una vez al año.';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return 'El límite de tiempo es insuficiente. El intervalo mínimo para cambiar el MSISDN es de 3 meses.';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'Este número de teléfono móvil ya existe y no se puede duplicar';
 			case 'securityCodeIsIncorrect': return 'Código de seguridad incorrecto';
 			case 'securityCodeMayHaveExpired': return 'El código de seguridad puede haber caducado';
@@ -23166,6 +23197,7 @@ extension on _StringsEs {
 			case 'verificationChannel': return 'Canal de verificación';
 			case 'launchAdTips': return 'Activar "launchAd" significa que se mostrará un anuncio cuando se inicie la aplicación y su resultado se convertirá en peso de minería USCT.';
 			case 'help': return 'Ayuda';
+			case 'verifyOriginalMSISDN': return 'Verificar el MSISDN original';
 			default: return null;
 		}
 	}
@@ -23400,7 +23432,7 @@ extension on _StringsFr {
 			case 'startVrification': return 'Début de la vérification';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'Ce numéro mobile existe déjà, DID associé : ${dId}';
 			case 'noDataYet': return 'Pas de données disponibles';
-			case 'previousMobileNumber': return 'Numéro de téléphone mobile précédent';
+			case 'previousMSISDN': return 'MSISDN précédent';
 			case 'changeLog': return 'Registre des modifications';
 			case 'referralLinkToShare': return 'Liens de parrainage à partager';
 			case 'referrer': return 'parrain';
@@ -23613,7 +23645,7 @@ extension on _StringsFr {
 			case 'textContent': return 'Contenu du texte';
 			case 'scanQRcodeToLogin': return 'Scanner le QR code pour se connecter';
 			case 'confirmLogin': return 'Confirmer la connexion';
-			case 'authorizeSubApplicationToLogin': return 'Autoriser cette sous-application à se connecter';
+			case 'authorizeDappAppToLogin': return 'Autoriser cette sous-application à se connecter';
 			case 'authorizationSuccessful': return 'L\'autorisation a été délivrée avec succès !';
 			case 'launchSMSprogram': return 'Lancement du programme SMS';
 			case 'notApplied': return 'Pas de demande';
@@ -23727,7 +23759,7 @@ extension on _StringsFr {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return 'Le nombre de membres du cercle de sécurité ne peut être inférieur à trois';
 			case 'avatarIsNotSet': return 'Avatar non défini';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return 'Le nombre de références directes ne peut être inférieur à 3';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return 'Le délai est insuffisant et vous ne pouvez changer de numéro de téléphone mobile qu\'une fois par an.';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return 'Le délai est insuffisant. L\'intervalle minimum pour modifier le MSISDN est de 3 mois.';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'Ce numéro de téléphone mobile existe déjà et ne peut être dupliqué';
 			case 'securityCodeIsIncorrect': return 'Code de sécurité incorrect';
 			case 'securityCodeMayHaveExpired': return 'Le code de sécurité a peut-être expiré';
@@ -23871,6 +23903,7 @@ extension on _StringsFr {
 			case 'verificationChannel': return 'Canal de verificación';
 			case 'launchAdTips': return 'L\'activation de "launchAd" signifie qu\'une publicité sera affichée au lancement de l\'application et que son résultat sera converti en poids minier USCT.';
 			case 'help': return 'Aide';
+			case 'verifyOriginalMSISDN': return 'Vérifier le MSISDN d\'origine';
 			default: return null;
 		}
 	}
@@ -24102,7 +24135,7 @@ extension on _StringsHi {
 			case 'startVrification': return 'सत्यापन शुरू करें';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'यह मोबाइल नंबर पहले से मौजूद है और एक संबद्ध DID: ${dId} से जुड़ा हुआ है।}';
 			case 'noDataYet': return 'अभी तक कोई डेटा नहीं है';
-			case 'previousMobileNumber': return 'पिछला मोबाइल नंबर';
+			case 'previousMSISDN': return 'पिछला MSISDN';
 			case 'changeLog': return 'परिवर्तन लॉग';
 			case 'referralLinkToShare': return 'साझा करने के लिए रेफ़रल लिंक';
 			case 'referrer': return 'रेफ़रर';
@@ -24314,7 +24347,7 @@ extension on _StringsHi {
 			case 'textContent': return 'पाठ सामग्री';
 			case 'scanQRcodeToLogin': return 'लॉगिन करने के लिए क्यूआर कोड स्कैन करें';
 			case 'confirmLogin': return 'लॉगिन की पुष्टि करें';
-			case 'authorizeSubApplicationToLogin': return 'इस उप-एप्लिकेशन को लॉगिन करने की अनुमति दें';
+			case 'authorizeDappAppToLogin': return 'इस उप-एप्लिकेशन को लॉगिन करने की अनुमति दें';
 			case 'authorizationSuccessful': return 'प्राधिकरण सफल!';
 			case 'launchSMSprogram': return 'एसएमएस कार्यक्रम लॉन्च करें';
 			case 'notApplied': return 'लागू नहीं किया गया';
@@ -24428,7 +24461,7 @@ extension on _StringsHi {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return 'सुरक्षा सर्कल के सदस्य की संख्या 3 लोगों से कम नहीं हो सकती है।';
 			case 'avatarIsNotSet': return 'प्रोफ़ाइल फ़ोटो सेट नहीं किया गया है।';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return 'प्रत्यक्ष संदर्भों की संख्या 3 लोगों से कम नहीं हो सकती है।';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return 'समय सीमा अपर्याप्त है, मोबाइल नंबर केवल एक बार प्रति वर्ष बदला जा सकता है।';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return 'समय सीमा अपर्याप्त है। MSISDN बदलने के लिए न्यूनतम अंतराल 3 महीने है।';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'यह मोबाइल फोन नंबर पहले से मौजूद है और इसे पुनः उपयोग नहीं किया जा सकता।';
 			case 'securityCodeIsIncorrect': return 'सुरक्षा कोड गलत है।';
 			case 'securityCodeMayHaveExpired': return 'शायद सुरक्षा कोड की समय सीमा समाप्त हो गई है।';
@@ -24572,6 +24605,7 @@ extension on _StringsHi {
 			case 'verificationChannel': return 'सत्यापन चैनल';
 			case 'launchAdTips': return '"launchAd" चालू करने का अर्थ है कि ऐप लॉन्च होने पर एक विज्ञापन प्रदर्शित किया जाएगा, और इसका परिणाम USCT खनन भार में परिवर्तित हो जाएगा।';
 			case 'help': return 'सहायता';
+			case 'verifyOriginalMSISDN': return 'मूल MSISDN सत्यापित करें';
 			default: return null;
 		}
 	}
@@ -24805,7 +24839,7 @@ extension on _StringsIt {
 			case 'startVrification': return 'avvia Verifica';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'Questo numero di telefono esiste già, DID associato: ${dId}';
 			case 'noDataYet': return 'Nessun dato ancora';
-			case 'previousMobileNumber': return 'numero di telefono precedente';
+			case 'previousMSISDN': return 'MSISDN precedente';
 			case 'changeLog': return 'log di cambiamento';
 			case 'referralLinkToShare': return 'Link di referral da condividere';
 			case 'referrer': return 'Referente';
@@ -25017,7 +25051,7 @@ extension on _StringsIt {
 			case 'textContent': return 'Contenuto testuale';
 			case 'scanQRcodeToLogin': return 'Scansiona QR code per accedere';
 			case 'confirmLogin': return 'Conferma accesso';
-			case 'authorizeSubApplicationToLogin': return 'Autorizza questa sotto-applicazione ad accedere';
+			case 'authorizeDappAppToLogin': return 'Autorizza questa sotto-applicazione ad accedere';
 			case 'authorizationSuccessful': return 'Autorizzazione riuscita!';
 			case 'launchSMSprogram': return 'avvia programma SMS';
 			case 'notApplied': return 'Non applicato';
@@ -25131,7 +25165,7 @@ extension on _StringsIt {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return 'Il numero di membri del cerchio di sicurezza non può essere inferiore a 3 persone';
 			case 'avatarIsNotSet': return 'Avatar non impostato';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return 'Il numero di referral diretti non può essere inferiore a 3 persone';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return 'Limite di tempo insufficiente, il numero di telefono può essere cambiato solo una volta all\'anno.';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return 'Il limite di tempo non è sufficiente. L\'intervallo minimo per la modifica dell\'MSISDN è di 3 mesi.';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'Questo numero di telefono esiste già e non può essere ripetuto';
 			case 'securityCodeIsIncorrect': return 'Il codice di sicurezza è incorretto';
 			case 'securityCodeMayHaveExpired': return 'Il codice di sicurezza potrebbe essere scaduto';
@@ -25275,6 +25309,7 @@ extension on _StringsIt {
 			case 'verificationChannel': return 'Canale di verifica';
 			case 'launchAdTips': return 'Attivando "launchAd" verrà visualizzato un annuncio quando l\'app viene avviata e il suo risultato verrà convertito in peso di mining USCT.';
 			case 'help': return 'Aiuto';
+			case 'verifyOriginalMSISDN': return 'Verifica MSISDN originale';
 			default: return null;
 		}
 	}
@@ -25507,7 +25542,7 @@ extension on _StringsJa {
 			case 'startVrification': return '検証開始';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'この携帯電話番号はすでに存在し、関連するDIDは${dId}です。';
 			case 'noDataYet': return 'データなし';
-			case 'previousMobileNumber': return '以前の携帯電話番号';
+			case 'previousMSISDN': return '以前のMSISDN';
 			case 'changeLog': return '変更の記録';
 			case 'referralLinkToShare': return '共有するための推奨リンク';
 			case 'referrer': return 'リファラー';
@@ -25720,7 +25755,7 @@ extension on _StringsJa {
 			case 'textContent': return 'テキストコンテンツ';
 			case 'scanQRcodeToLogin': return 'スワイプでログイン';
 			case 'confirmLogin': return 'ログインの確認';
-			case 'authorizeSubApplicationToLogin': return 'このサブアプリケーションのログインを許可する';
+			case 'authorizeDappAppToLogin': return 'このサブアプリケーションのログインを許可する';
 			case 'authorizationSuccessful': return '認可は成功した！';
 			case 'launchSMSprogram': return 'SMSプログラムの開始';
 			case 'notApplied': return '応募なし';
@@ -25834,7 +25869,7 @@ extension on _StringsJa {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return 'セキュリティー・サークルのメンバーは3人以下にはできない。';
 			case 'avatarIsNotSet': return 'アバターが設定されていない';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return '直接の紹介者数が3人を下回ることはない。';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return '携帯電話番号の変更は1年に1度しかできない。';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return '時間制限が不十分です。MSISDNを変更できる最小間隔は3か月です。';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'この携帯電話番号はすでに存在しており、複製することはできません。';
 			case 'securityCodeIsIncorrect': return 'セキュリティコードの誤り';
 			case 'securityCodeMayHaveExpired': return 'セキュリティコードの有効期限が切れている可能性があります。';
@@ -25977,6 +26012,7 @@ extension on _StringsJa {
 			case 'verificationChannel': return '検証チャネル';
 			case 'launchAdTips': return '「launchAd」をオンにすると、アプリの起動時に広告が表示され、その結果が USCT マイニング重量に変換されます。';
 			case 'help': return 'ヘルプ';
+			case 'verifyOriginalMSISDN': return '元のMSISDNを確認する';
 			default: return null;
 		}
 	}
@@ -26211,7 +26247,7 @@ extension on _StringsKo {
 			case 'startVrification': return '인증 시작';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => '이 휴대폰 번호는 이미 존재하며 연결된 DID: ${dId}입니다.';
 			case 'noDataYet': return '사용 가능한 데이터 없음';
-			case 'previousMobileNumber': return '이전 휴대폰 번호';
+			case 'previousMSISDN': return '이전 MSISDN';
 			case 'changeLog': return '변경 사항 기록';
 			case 'referralLinkToShare': return '공유할 추천 링크';
 			case 'referrer': return '참조자';
@@ -26424,7 +26460,7 @@ extension on _StringsKo {
 			case 'textContent': return '텍스트 콘텐츠';
 			case 'scanQRcodeToLogin': return '스와이프하여 로그인';
 			case 'confirmLogin': return '로그인 확인';
-			case 'authorizeSubApplicationToLogin': return '로그인할 수 있도록 이 하위 애플리케이션을 승인합니다.';
+			case 'authorizeDappAppToLogin': return '로그인할 수 있도록 이 하위 애플리케이션을 승인합니다.';
 			case 'authorizationSuccessful': return '인증이 성공했습니다!';
 			case 'launchSMSprogram': return 'SMS 프로그램 시작하기';
 			case 'notApplied': return '신청 없음';
@@ -26538,7 +26574,7 @@ extension on _StringsKo {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return '보안 서클의 구성원 수는 3명 이상이어야 합니다.';
 			case 'avatarIsNotSet': return '아바타가 설정되지 않음';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return '직접 추천 횟수는 3건 이상이어야 합니다.';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return '시간 제한이 충분하지 않으며 휴대폰 번호는 1년에 한 번만 변경할 수 있습니다.';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return '시간 제한이 부족합니다. MSISDN을 변경하기 위한 최소 간격은 3개월입니다.';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return '이 휴대폰 번호는 이미 존재하며 복제할 수 없습니다.';
 			case 'securityCodeIsIncorrect': return '잘못된 보안 코드';
 			case 'securityCodeMayHaveExpired': return '보안 코드가 만료되었을 수 있습니다.';
@@ -26681,6 +26717,7 @@ extension on _StringsKo {
 			case 'verificationChannel': return '검증 채널';
 			case 'launchAdTips': return '"launchAd"를 켜면 앱이 실행될 때 광고가 표시되고, 그 결과가 USCT 마이닝 가중치로 변환됩니다.';
 			case 'help': return '도움말';
+			case 'verifyOriginalMSISDN': return '원래 MSISDN 확인';
 			default: return null;
 		}
 	}
@@ -26915,7 +26952,7 @@ extension on _StringsNl {
 			case 'startVrification': return 'Verificatie starten';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'Dit mobiele nummer bestaat al, bijbehorende DID: ${dId}';
 			case 'noDataYet': return 'Nog geen gegevens beschikbaar';
-			case 'previousMobileNumber': return 'Vorig mobiel telefoonnummer';
+			case 'previousMSISDN': return 'Vorige MSISDN';
 			case 'changeLog': return 'Wijzigingenlogboek';
 			case 'referralLinkToShare': return 'Referentie link om te delen';
 			case 'referrer': return 'Refereerder';
@@ -27128,7 +27165,7 @@ extension on _StringsNl {
 			case 'textContent': return 'Tekstinhoud';
 			case 'scanQRcodeToLogin': return 'Scan QR-code om in te loggen';
 			case 'confirmLogin': return 'Inloggen bevestigen';
-			case 'authorizeSubApplicationToLogin': return 'Deze subapplicatie machtigen om in te loggen';
+			case 'authorizeDappAppToLogin': return 'Deze subapplicatie machtigen om in te loggen';
 			case 'authorizationSuccessful': return 'De autorisatie was succesvol!';
 			case 'launchSMSprogram': return 'Start het SMS-programma';
 			case 'notApplied': return 'Niet toegepast';
@@ -27242,7 +27279,7 @@ extension on _StringsNl {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return 'Het aantal leden van de security circle mag niet minder dan drie zijn';
 			case 'avatarIsNotSet': return 'Avatar is niet ingesteld';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return 'Het aantal directe verwijzingen mag niet minder zijn dan 3';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return 'Onvoldoende tijdslimiet, het mobiele nummer kan maar één keer per jaar worden gewijzigd.';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return 'De tijdslimiet is onvoldoende. Het minimale interval voor het wijzigen van MSISDN is 3 maanden.';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'Dit mobiele telefoonnummer bestaat al en kan niet worden herhaald.';
 			case 'securityCodeIsIncorrect': return 'De security code is onjuist';
 			case 'securityCodeMayHaveExpired': return 'Security code is mogelijk verlopen';
@@ -27385,6 +27422,7 @@ extension on _StringsNl {
 			case 'verificationChannel': return 'Verificatiekanaal';
 			case 'launchAdTips': return 'Als u "launchAd" inschakelt, wordt er een advertentie weergegeven wanneer de app wordt gestart en wordt het resultaat omgezet in USCT-mijngewicht.';
 			case 'help': return 'Hulp';
+			case 'verifyOriginalMSISDN': return 'Originele MSISDN verifiëren';
 			default: return null;
 		}
 	}
@@ -27619,7 +27657,7 @@ extension on _StringsPl {
 			case 'startVrification': return 'Rozpoczęcie weryfikacji';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'Ten numer telefonu komórkowego już istnieje, powiązany DID: ${dId}';
 			case 'noDataYet': return 'Brak dostępnych danych';
-			case 'previousMobileNumber': return 'Poprzedni numer telefonu komórkowego';
+			case 'previousMSISDN': return 'Poprzedni MSISDN';
 			case 'changeLog': return 'Rejestr zmian';
 			case 'referralLinkToShare': return 'Zalecane linki do udostępnienia';
 			case 'referrer': return 'polecający';
@@ -27832,7 +27870,7 @@ extension on _StringsPl {
 			case 'textContent': return 'Zawartość tekstowa';
 			case 'scanQRcodeToLogin': return 'Przesuń, aby się zalogować';
 			case 'confirmLogin': return 'Potwierdź logowanie';
-			case 'authorizeSubApplicationToLogin': return 'Autoryzuj tę aplikację podrzędną do logowania';
+			case 'authorizeDappAppToLogin': return 'Autoryzuj tę aplikację podrzędną do logowania';
 			case 'authorizationSuccessful': return 'Autoryzacja przebiegła pomyślnie!';
 			case 'launchSMSprogram': return 'Uruchomienie programu SMS';
 			case 'notApplied': return 'Brak aplikacji';
@@ -27946,7 +27984,7 @@ extension on _StringsPl {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return 'Liczba członków kręgu bezpieczeństwa nie może być mniejsza niż trzy.';
 			case 'avatarIsNotSet': return 'Awatar nie został ustawiony';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return 'Liczba bezpośrednich poleceń nie może być mniejsza niż 3.';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return 'Limit czasowy jest niewystarczający i numer telefonu komórkowego można zmienić tylko raz w roku.';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return 'Limit czasu jest niewystarczający. Minimalny odstęp czasu na zmianę numeru MSISDN to 3 miesiące.';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'Ten numer telefonu komórkowego już istnieje i nie można go powielić.';
 			case 'securityCodeIsIncorrect': return 'Nieprawidłowy kod bezpieczeństwa';
 			case 'securityCodeMayHaveExpired': return 'Kod zabezpieczający mógł wygasnąć';
@@ -28090,6 +28128,7 @@ extension on _StringsPl {
 			case 'verificationChannel': return 'Kanał weryfikacji';
 			case 'launchAdTips': return 'Włączenie „launchAd” oznacza, że ​​reklama będzie wyświetlana po uruchomieniu aplikacji, a jej wynik zostanie przekonwertowany na wagę wydobywczą USCT.';
 			case 'help': return 'Pomoc';
+			case 'verifyOriginalMSISDN': return 'Zweryfikuj oryginalny numer MSISDN';
 			default: return null;
 		}
 	}
@@ -28324,7 +28363,7 @@ extension on _StringsPt {
 			case 'startVrification': return 'Iniciar verificação';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'Este número de telemóvel já existe, DID associado: ${dId}';
 			case 'noDataYet': return 'Não existem dados disponíveis';
-			case 'previousMobileNumber': return 'Número de telemóvel anterior';
+			case 'previousMSISDN': return 'MSISDN anterior';
 			case 'changeLog': return 'Registo das alterações';
 			case 'referralLinkToShare': return 'Ligações recomendadas para partilhar';
 			case 'referrer': return 'referenciador';
@@ -28537,7 +28576,7 @@ extension on _StringsPt {
 			case 'textContent': return 'Conteúdo do texto';
 			case 'scanQRcodeToLogin': return 'Deslizar para iniciar sessão';
 			case 'confirmLogin': return 'Confirmar o início de sessão';
-			case 'authorizeSubApplicationToLogin': return 'Autorizar esta sub-aplicação a iniciar sessão';
+			case 'authorizeDappAppToLogin': return 'Autorizar esta sub-aplicação a iniciar sessão';
 			case 'authorizationSuccessful': return 'A autorização foi bem sucedida!';
 			case 'launchSMSprogram': return 'Lançamento do programa SMS';
 			case 'notApplied': return 'Nenhum pedido';
@@ -28651,7 +28690,7 @@ extension on _StringsPt {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return 'O número de membros do círculo de segurança não pode ser inferior a três';
 			case 'avatarIsNotSet': return 'Avatar não definido';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return 'O número de referências diretas não pode ser inferior a 3';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return 'O limite de tempo é insuficiente e só pode alterar o seu número de telemóvel uma vez por ano.';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return 'O limite de tempo é insuficiente. O intervalo mínimo para alteração do MSISDN é de 3 meses.';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'Este número de telemóvel já existe e não pode ser duplicado';
 			case 'securityCodeIsIncorrect': return 'Código de segurança incorreto';
 			case 'securityCodeMayHaveExpired': return 'O código de segurança pode ter expirado';
@@ -28794,6 +28833,7 @@ extension on _StringsPt {
 			case 'verificationChannel': return 'Canal de Verificação';
 			case 'launchAdTips': return 'Ativar "launchAd" significa que um anúncio será exibido quando o aplicativo for iniciado, e seu resultado será convertido em peso de mineração USCT.';
 			case 'help': return 'Ajuda';
+			case 'verifyOriginalMSISDN': return 'Verificar MSISDN original';
 			default: return null;
 		}
 	}
@@ -29027,7 +29067,7 @@ extension on _StringsRo {
 			case 'startVrification': return 'începe verificarea';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'Acest număr de telefon există deja, asociat cu DID: ${dId}';
 			case 'noDataYet': return 'Încă nu există date';
-			case 'previousMobileNumber': return 'număr de telefon anterior';
+			case 'previousMSISDN': return 'MSISDN-ul anterior';
 			case 'changeLog': return 'jurnal de modificări';
 			case 'referralLinkToShare': return 'Link de recomandare de partajat';
 			case 'referrer': return 'Recomandator';
@@ -29239,7 +29279,7 @@ extension on _StringsRo {
 			case 'textContent': return 'Conținut text';
 			case 'scanQRcodeToLogin': return 'Scanează cod QR pentru autentificare';
 			case 'confirmLogin': return 'Confirmă autentificarea';
-			case 'authorizeSubApplicationToLogin': return 'Autorizează această sub-aplicație să se autentifice';
+			case 'authorizeDappAppToLogin': return 'Autorizează această sub-aplicație să se autentifice';
 			case 'authorizationSuccessful': return 'Autorizare reușită!';
 			case 'launchSMSprogram': return 'lansează program SMS';
 			case 'notApplied': return 'Neaplicat';
@@ -29353,7 +29393,7 @@ extension on _StringsRo {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return 'Numărul de membri ai cercului de securitate nu poate fi mai mic de 3 persoane';
 			case 'avatarIsNotSet': return 'Avatarul nu este setat';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return 'Numărul de recomandări directe nu poate fi mai mic de 3 persoane';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return 'Limită de timp insuficientă, numărul de telefon poate fi schimbat doar o dată pe an.';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return 'Limita de timp este insuficientă. Intervalul minim pentru schimbarea MSISDN este de 3 luni.';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'Acest număr de telefon există deja și nu poate fi repetat';
 			case 'securityCodeIsIncorrect': return 'Codul de securitate este incorect';
 			case 'securityCodeMayHaveExpired': return 'Codul de securitate poate fi expirat';
@@ -29497,6 +29537,7 @@ extension on _StringsRo {
 			case 'verificationChannel': return 'Canal de verificare';
 			case 'launchAdTips': return 'Activarea opțiunii «launchAd» înseamnă că o reclamă va fi afișată la lansarea aplicației, iar rezultatul acesteia va fi convertit în pondere de minat USCT.';
 			case 'help': return 'Ajutor';
+			case 'verifyOriginalMSISDN': return 'Verifică MSISDN-ul original';
 			default: return null;
 		}
 	}
@@ -29731,7 +29772,7 @@ extension on _StringsRu {
 			case 'startVrification': return 'Начало проверки';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'Этот мобильный номер уже существует, связанный с ним DID: ${dId}';
 			case 'noDataYet': return 'Нет данных';
-			case 'previousMobileNumber': return 'Предыдущий номер мобильного телефона';
+			case 'previousMSISDN': return 'Предыдущий MSISDN';
 			case 'changeLog': return 'Запись изменений';
 			case 'referralLinkToShare': return 'Рекомендуемые ссылки для обмена';
 			case 'referrer': return 'реферер';
@@ -29944,7 +29985,7 @@ extension on _StringsRu {
 			case 'textContent': return 'Содержание текста';
 			case 'scanQRcodeToLogin': return 'Проведите пальцем по экрану, чтобы войти в систему';
 			case 'confirmLogin': return 'Подтвердите вход';
-			case 'authorizeSubApplicationToLogin': return 'Разрешите этому подприложению войти в систему';
+			case 'authorizeDappAppToLogin': return 'Разрешите этому подприложению войти в систему';
 			case 'authorizationSuccessful': return 'Авторизация прошла успешно!';
 			case 'launchSMSprogram': return 'Запуск программы SMS';
 			case 'notApplied': return 'Нет приложения';
@@ -30058,7 +30099,7 @@ extension on _StringsRu {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return 'Число членов круга безопасности не может быть меньше трех';
 			case 'avatarIsNotSet': return 'Аватар не установлен';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return 'Количество прямых рефералов не может быть меньше 3';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return 'Временной лимит недостаточен, и вы можете менять номер мобильного телефона только один раз в год.';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return 'Недостаточный срок. Минимальный интервал для смены MSISDN составляет 3 месяца.';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'Этот номер мобильного телефона уже существует и не может быть продублирован';
 			case 'securityCodeIsIncorrect': return 'Неверный код безопасности';
 			case 'securityCodeMayHaveExpired': return 'Возможно, истек срок действия кода безопасности';
@@ -30202,6 +30243,7 @@ extension on _StringsRu {
 			case 'verificationChannel': return 'Канал проверки';
 			case 'launchAdTips': return 'Включение "launchAd" означает, что при запуске приложения будет отображаться реклама, а ее результат будет преобразован в вес майнинга USCT.';
 			case 'help': return 'Помощь';
+			case 'verifyOriginalMSISDN': return 'Проверить исходный MSISDN';
 			default: return null;
 		}
 	}
@@ -30431,7 +30473,7 @@ extension on _StringsSw {
 			case 'startVrification': return 'Anza Uthibitisho';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'Nambari hii ya simu tayari ipo, DID inayohusishwa: ${dId}';
 			case 'noDataYet': return 'Bado hakuna data';
-			case 'previousMobileNumber': return 'Nambari ya Simu ya Awali';
+			case 'previousMSISDN': return 'MSISDN Iliyopita';
 			case 'changeLog': return 'rekodi ya mabadiliko';
 			case 'referralLinkToShare': return 'Kiungo cha mrejelezaji cha kushiriki';
 			case 'referrer': return 'Mrejelezaji';
@@ -30643,7 +30685,7 @@ extension on _StringsSw {
 			case 'textContent': return 'Maudhui ya maandishi';
 			case 'scanQRcodeToLogin': return 'Changanua nambari ya QR ili kuingia';
 			case 'confirmLogin': return 'Thibitisha kuingia';
-			case 'authorizeSubApplicationToLogin': return 'Idhinisha programu hii ndogo kuingia';
+			case 'authorizeDappAppToLogin': return 'Idhinisha programu hii ndogo kuingia';
 			case 'authorizationSuccessful': return 'Uidhinishaji umefanikiwa!';
 			case 'launchSMSprogram': return 'anzisha programu ya SMS';
 			case 'notApplied': return 'Haijatumika';
@@ -30757,7 +30799,7 @@ extension on _StringsSw {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return 'Idadi ya wanachama wa mduara wa usalama haiwezi kuwa chini ya watu 3';
 			case 'avatarIsNotSet': return 'Avatar haijawekwa';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return 'Idadi ya marejeleo ya moja kwa moja haiwezi kuwa chini ya watu 3';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return 'Kikomo cha muda kisichotosha, nambari ya simu inaweza kubadilishwa mara moja tu kwa mwaka.';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return 'Kikomo cha muda hakitoshi. Muda wa chini wa kubadilisha MSISDN ni miezi 3.';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'Nambari hii ya simu tayari ipo na haiwezi kurudiwa';
 			case 'securityCodeIsIncorrect': return 'Nambari ya usalama si sahihi';
 			case 'securityCodeMayHaveExpired': return 'Nambari ya usalama inaweza kuwa imesha';
@@ -30902,6 +30944,7 @@ extension on _StringsSw {
 			case 'verificationChannel': return 'Idhaa ya Uthibitishaji';
 			case 'launchAdTips': return 'Kuwasha "launchAd" inamaanisha kuwa tangazo litaonyeshwa programu itakapozinduliwa, na matokeo yake yatabadilishwa kuwa uzito wa uchimbaji madini wa USCT.';
 			case 'help': return 'Msaada';
+			case 'verifyOriginalMSISDN': return 'Thibitisha MSISDN asili';
 			default: return null;
 		}
 	}
@@ -31135,7 +31178,7 @@ extension on _StringsTh {
 			case 'startVrification': return 'เริ่มการยืนยัน';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'หมายเลขโทรศัพท์มือถือนี้มีอยู่แล้ว DID ที่เกี่ยวข้อง: ${dId}';
 			case 'noDataYet': return 'ยังไม่มีข้อมูล';
-			case 'previousMobileNumber': return 'เบอร์มือถือเดิม';
+			case 'previousMSISDN': return 'MSISDN ก่อนหน้า';
 			case 'changeLog': return 'ประวัติการเปลี่ยนแปลง';
 			case 'referralLinkToShare': return 'แนะนำการแชร์ลิงก์';
 			case 'referrer': return 'ผู้แนะนำ';
@@ -31348,7 +31391,7 @@ extension on _StringsTh {
 			case 'textContent': return 'เนื้อหาข้อความ';
 			case 'scanQRcodeToLogin': return 'สแกนรหัสเพื่อเข้าสู่ระบบ';
 			case 'confirmLogin': return 'ยืนยันการเข้าสู่ระบบ';
-			case 'authorizeSubApplicationToLogin': return 'อนุญาตแอปพลิเคชันย่อยเพื่อเข้าสู่ระบบ';
+			case 'authorizeDappAppToLogin': return 'อนุญาตแอปพลิเคชันย่อยเพื่อเข้าสู่ระบบ';
 			case 'authorizationSuccessful': return 'การอนุญาตสำเร็จ!';
 			case 'launchSMSprogram': return 'เริ่มโปรแกรม SMS';
 			case 'notApplied': return 'ไม่มีการสมัคร';
@@ -31462,7 +31505,7 @@ extension on _StringsTh {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return 'จำนวนสมาชิกของวงความปลอดภัยต้องไม่ต่ำกว่า 3 คน';
 			case 'avatarIsNotSet': return 'ไม่ได้ตั้งค่าอวาตาร์';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return 'จำนวนผู้อ้างอิงโดยตรงต้องไม่น้อยกว่า 3 คน';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return 'ระยะเวลาไม่เพียงพอและคุณสามารถเปลี่ยนหมายเลขโทรศัพท์มือถือได้ปีละครั้งเท่านั้น';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return 'ระยะเวลาจำกัดไม่เพียงพอ ช่วงเวลาขั้นต่ำสำหรับการเปลี่ยน MSISDN คือ 3 เดือน';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'หมายเลขโทรศัพท์มือถือมีอยู่แล้วและไม่สามารถทำซ้ำได้';
 			case 'securityCodeIsIncorrect': return 'รหัสความปลอดภัยไม่ถูกต้อง';
 			case 'securityCodeMayHaveExpired': return 'รหัสความปลอดภัยอาจหมดอายุแล้ว';
@@ -31605,6 +31648,7 @@ extension on _StringsTh {
 			case 'verificationChannel': return 'ช่องทางการยืนยัน';
 			case 'launchAdTips': return 'การเปิดใช้งาน "launchAd" หมายถึงโฆษณาจะปรากฏเมื่อเปิดใช้งานแอป และผลลัพธ์จะถูกแปลงเป็นน้ำหนักการขุด USCT';
 			case 'help': return 'ช่วยเหลือ';
+			case 'verifyOriginalMSISDN': return 'ตรวจสอบ MSISDN ดั้งเดิม';
 			default: return null;
 		}
 	}
@@ -31838,7 +31882,7 @@ extension on _StringsTr {
 			case 'startVrification': return 'Doğrulamayı Başlat';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'Bu telefon numarası zaten mevcut, ilişkili DID: ${dId}';
 			case 'noDataYet': return 'Henüz veri yok';
-			case 'previousMobileNumber': return 'önceki telefon NO.';
+			case 'previousMSISDN': return 'Önceki MSISDN';
 			case 'changeLog': return 'değişiklik günlüğü';
 			case 'referralLinkToShare': return 'Paylaşılacak referans bağlantısı';
 			case 'referrer': return 'Referans';
@@ -32050,7 +32094,7 @@ extension on _StringsTr {
 			case 'textContent': return 'Metin içeriği';
 			case 'scanQRcodeToLogin': return 'Giriş yapmak için QR kodu tara';
 			case 'confirmLogin': return 'Girişi onayla';
-			case 'authorizeSubApplicationToLogin': return 'Bu alt uygulamanın giriş yapmasına izin ver';
+			case 'authorizeDappAppToLogin': return 'Bu alt uygulamanın giriş yapmasına izin ver';
 			case 'authorizationSuccessful': return 'Yetkilendirme başarılı!';
 			case 'launchSMSprogram': return 'SMS programını başlat';
 			case 'notApplied': return 'Uygulanmadı';
@@ -32164,7 +32208,7 @@ extension on _StringsTr {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return 'Güvenlik çemberi üye sayısı 3 kişiden az olamaz';
 			case 'avatarIsNotSet': return 'Avatar ayarlanmamış';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return 'Doğrudan referans sayısı 3 kişiden az olamaz';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return 'Yetersiz zaman limiti, telefon numarası yılda yalnızca bir kez değiştirilebilir.';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return 'Zaman sınırı yetersiz. MSISDN\'yi değiştirmek için minimum aralık 3 aydır.';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'Bu telefon numarası zaten mevcut ve tekrarlanamaz';
 			case 'securityCodeIsIncorrect': return 'Güvenlik kodu yanlış';
 			case 'securityCodeMayHaveExpired': return 'Güvenlik kodunun süresi dolmuş olabilir';
@@ -32308,6 +32352,7 @@ extension on _StringsTr {
 			case 'verificationChannel': return 'Doğrulama Kanalı';
 			case 'launchAdTips': return '“launchAd” özelliğini açmak, uygulama başlatıldığında bir reklam gösterileceği ve sonucunun USCT madencilik ağırlığına dönüştürüleceği anlamına gelir.';
 			case 'help': return 'Yardım';
+			case 'verifyOriginalMSISDN': return 'Orijinal MSISDN\'yi doğrulayın';
 			default: return null;
 		}
 	}
@@ -32542,7 +32587,7 @@ extension on _StringsUk {
 			case 'startVrification': return 'Почніть перевірку';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'Цей мобільний номер вже існує, асоційований DID: ${dId}.';
 			case 'noDataYet': return 'Дані відсутні';
-			case 'previousMobileNumber': return 'Попередній номер мобільного телефону';
+			case 'previousMSISDN': return 'Попередній MSISDN';
 			case 'changeLog': return 'Запис змін';
 			case 'referralLinkToShare': return 'Рекомендовані посилання для поширення';
 			case 'referrer': return 'реферал';
@@ -32755,7 +32800,7 @@ extension on _StringsUk {
 			case 'textContent': return 'Текстовий вміст';
 			case 'scanQRcodeToLogin': return 'Проведіть пальцем, щоб увійти';
 			case 'confirmLogin': return 'Підтвердити логін';
-			case 'authorizeSubApplicationToLogin': return 'Дозвольте цій субпрограмі увійти в систему';
+			case 'authorizeDappAppToLogin': return 'Дозвольте цій субпрограмі увійти в систему';
 			case 'authorizationSuccessful': return 'Авторизація пройшла успішно!';
 			case 'launchSMSprogram': return 'Запуск SMS-програми';
 			case 'notApplied': return 'Немає заявки';
@@ -32869,7 +32914,7 @@ extension on _StringsUk {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return 'Кількість членів кола безпеки не може бути менше трьох';
 			case 'avatarIsNotSet': return 'Аватар не встановлено';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return 'Кількість прямих рефералів не може бути менше 3';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return 'Часовий ліміт недостатній, і ви можете змінити номер мобільного телефону лише один раз на рік.';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return 'Часовий ліміт недостатній. Мінімальний інтервал для зміни MSISDN становить 3 місяці.';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'Цей номер мобільного телефону вже існує і не може бути продубльований';
 			case 'securityCodeIsIncorrect': return 'Неправильний код безпеки';
 			case 'securityCodeMayHaveExpired': return 'Можливо, термін дії коду безпеки закінчився';
@@ -33012,6 +33057,7 @@ extension on _StringsUk {
 			case 'verificationChannel': return 'Канал підтвердження';
 			case 'launchAdTips': return 'Увімкнення "launchAd" означає, що під час запуску програми відображатиметься реклама, а її результат буде конвертовано у вагу для майнінгу USCT.';
 			case 'help': return 'Довідка';
+			case 'verifyOriginalMSISDN': return 'Перевірити оригінальний MSISDN';
 			default: return null;
 		}
 	}
@@ -33245,7 +33291,7 @@ extension on _StringsUr {
 			case 'startVrification': return 'تصدیق شروع کریں';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'یہ موبائل نمبر پہلے سے موجود ہے، متعلقہ DID: ${dId}';
 			case 'noDataYet': return 'ابھی تک کوئی ڈیٹا نہیں';
-			case 'previousMobileNumber': return 'پہلا موبائل نمبر';
+			case 'previousMSISDN': return 'پچھلا MSISDN';
 			case 'changeLog': return 'تبدیلی کا لاگ';
 			case 'referralLinkToShare': return 'شیئر کرنے کے لیے حوالہ لنک';
 			case 'referrer': return 'ریفرر';
@@ -33457,7 +33503,7 @@ extension on _StringsUr {
 			case 'textContent': return 'متن مواد';
 			case 'scanQRcodeToLogin': return 'QRcode کو لاگ ان کرنے کے لئے اسکین کریں';
 			case 'confirmLogin': return 'لاگ ان کی تصدیق کریں';
-			case 'authorizeSubApplicationToLogin': return 'اس ذیلی ایپلیکیشن کو لاگ ان کرنے کے لیے اختیار دیں';
+			case 'authorizeDappAppToLogin': return 'اس ذیلی ایپلیکیشن کو لاگ ان کرنے کے لیے اختیار دیں';
 			case 'authorizationSuccessful': return 'اختیار کامیاب!';
 			case 'launchSMSprogram': return 'SMS پروگرام کا آغاز کریں';
 			case 'notApplied': return 'درخواست نہیں دی گئی';
@@ -33571,7 +33617,7 @@ extension on _StringsUr {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return 'سیکیورٹی سرکل کے اراکین کی تعداد 3 افراد سے کم نہیں ہونی چاہئے';
 			case 'avatarIsNotSet': return 'اوٹار سیٹ نہیں ہے';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return 'براہ راست سفارشات کی تعداد 3 افراد سے کم نہیں ہونی چاہئے';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return 'ناکافی وقت کی حد، موبائل نمبر کو سال میں صرف ایک بار تبدیل کیا جا سکتا ہے۔';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return 'وقت کی حد ناکافی ہے۔ MSISDN کو تبدیل کرنے کے لیے کم از کم وقفہ 3 ماہ ہے۔';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'یہ موبائل نمبر پہلے سے موجود ہے اور اسے دہرایا نہیں جا سکتا';
 			case 'securityCodeIsIncorrect': return 'سیکیورٹی کوڈ غلط ہے';
 			case 'securityCodeMayHaveExpired': return 'سیکیورٹی کوڈ کی میعاد ختم ہو سکتی ہے';
@@ -33715,6 +33761,7 @@ extension on _StringsUr {
 			case 'verificationChannel': return 'تصدیق چینل';
 			case 'launchAdTips': return '"launchAd" کو آن کرنے کا مطلب ہے کہ ایپ کے لانچ ہونے پر ایک اشتہار دکھایا جائے گا، اور اس کا نتیجہ USCT مائننگ وزن میں تبدیل ہو جائے گا۔';
 			case 'help': return 'مدد';
+			case 'verifyOriginalMSISDN': return 'اصل MSISDN کی تصدیق کریں';
 			default: return null;
 		}
 	}
@@ -33949,7 +33996,7 @@ extension on _StringsVi {
 			case 'startVrification': return 'Bắt đầu xác minh';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'Số điện thoại di động này đã tồn tại, được liên kết DID: ${dId}';
 			case 'noDataYet': return 'Chưa có dữ liệu';
-			case 'previousMobileNumber': return 'Số điện thoại di động trước đó';
+			case 'previousMSISDN': return 'MSISDN trước đó';
 			case 'changeLog': return 'Lịch sử thay đổi';
 			case 'referralLinkToShare': return 'Chia sẻ liên kết được đề xuất';
 			case 'referrer': return 'người giới thiệu';
@@ -34162,7 +34209,7 @@ extension on _StringsVi {
 			case 'textContent': return 'nội dung văn bản';
 			case 'scanQRcodeToLogin': return 'Quét mã để đăng nhập';
 			case 'confirmLogin': return 'Xác nhận đăng nhập';
-			case 'authorizeSubApplicationToLogin': return 'Cho phép ứng dụng phụ đăng nhập';
+			case 'authorizeDappAppToLogin': return 'Cho phép ứng dụng phụ đăng nhập';
 			case 'authorizationSuccessful': return 'Ủy quyền thành công!';
 			case 'launchSMSprogram': return 'Bắt đầu chương trình SMS';
 			case 'notApplied': return 'Không có ứng dụng';
@@ -34276,7 +34323,7 @@ extension on _StringsVi {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return 'Số lượng thành viên trong vòng an toàn không được ít hơn 3 người';
 			case 'avatarIsNotSet': return 'Hình đại diện chưa được đặt';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return 'Số người giới thiệu trực tiếp không được ít hơn 3 người';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return 'Thời hạn không đủ và bạn chỉ có thể thay đổi số điện thoại di động của mình mỗi năm một lần.';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return 'Thời hạn không đủ. Khoảng thời gian tối thiểu để thay đổi MSISDN là 3 tháng.';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'Số điện thoại di động đã tồn tại và không thể lặp lại';
 			case 'securityCodeIsIncorrect': return 'Mã bảo mật không chính xác';
 			case 'securityCodeMayHaveExpired': return 'Mã bảo mật có thể đã hết hạn';
@@ -34419,6 +34466,7 @@ extension on _StringsVi {
 			case 'verificationChannel': return 'Kênh xác minh';
 			case 'launchAdTips': return 'Bật "launchAd" có nghĩa là một quảng cáo sẽ được hiển thị khi ứng dụng được khởi chạy và kết quả của quảng cáo đó sẽ được chuyển đổi thành trọng số khai thác USCT.';
 			case 'help': return 'Trợ giúp';
+			case 'verifyOriginalMSISDN': return 'Xác minh MSISDN gốc';
 			default: return null;
 		}
 	}
@@ -34653,7 +34701,7 @@ extension on _StringsZhCn {
 			case 'startVrification': return '开始验证';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => '这个手机号码已存在，关联DID： ${dId}';
 			case 'noDataYet': return '暂无数据';
-			case 'previousMobileNumber': return '以前的手机号码';
+			case 'previousMSISDN': return '以前的MSISDN';
 			case 'changeLog': return '变更记录';
 			case 'referralLinkToShare': return '推荐链接分享';
 			case 'referrer': return '推荐人';
@@ -34866,7 +34914,7 @@ extension on _StringsZhCn {
 			case 'textContent': return '文本内容';
 			case 'scanQRcodeToLogin': return '扫码登录';
 			case 'confirmLogin': return '确认登录';
-			case 'authorizeSubApplicationToLogin': return '授权该子应用登录';
+			case 'authorizeDappAppToLogin': return '授权该子应用登录';
 			case 'authorizationSuccessful': return '授权成功！';
 			case 'launchSMSprogram': return '启动短信程序';
 			case 'notApplied': return '没有申请';
@@ -34979,7 +35027,7 @@ extension on _StringsZhCn {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return '安全圈成员人数不能少于3人';
 			case 'avatarIsNotSet': return '头像未设置';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return '直接推荐人数不能小于3人';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return '时限不足，一年内只能换一次手机号码。';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return '时限不足，更改MSISDN最少需要间隔3个月。';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return '该手机号码已存在，不能重复';
 			case 'securityCodeIsIncorrect': return '安全码不正确';
 			case 'securityCodeMayHaveExpired': return '安全码可能已过期';
@@ -35124,6 +35172,7 @@ extension on _StringsZhCn {
 			case 'verificationChannel': return '验证渠道';
 			case 'launchAdTips': return '开启“launchAd”表示将在启动应用时展示一个广告，并将其结果转换为USCT挖矿权重。';
 			case 'help': return '帮助';
+			case 'verifyOriginalMSISDN': return '验证原MSISDN';
 			default: return null;
 		}
 	}
@@ -35358,7 +35407,7 @@ extension on _StringsZhTw {
 			case 'startVrification': return '開始驗證';
 			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => '這個手機號碼已存在，關聯DID： ${dId}';
 			case 'noDataYet': return '暫無資料';
-			case 'previousMobileNumber': return '以前的手機號碼';
+			case 'previousMSISDN': return '以前的MSISDN';
 			case 'changeLog': return '變更記錄';
 			case 'referralLinkToShare': return '推薦連結分享';
 			case 'referrer': return '推薦人';
@@ -35571,7 +35620,7 @@ extension on _StringsZhTw {
 			case 'textContent': return '文字內容';
 			case 'scanQRcodeToLogin': return '掃碼登入';
 			case 'confirmLogin': return '確認登入';
-			case 'authorizeSubApplicationToLogin': return '授權該子應用登入';
+			case 'authorizeDappAppToLogin': return '授權該子應用登入';
 			case 'authorizationSuccessful': return '授權成功！';
 			case 'launchSMSprogram': return '啟動簡訊程式';
 			case 'notApplied': return '沒有申請';
@@ -35685,7 +35734,7 @@ extension on _StringsZhTw {
 			case 'numberOfSafetyCircleCannotBeLessThan3': return '安全圈成員人數不能少於3人';
 			case 'avatarIsNotSet': return '頭像未設定';
 			case 'numberOfDirectReferralsCannotBeLessThan3': return '直接推薦人數不能小於3人';
-			case 'insufficientTimeLimit_mobileNumberOnlyChangedOnceYear': return '時限不足，一年內只能換一次手機號碼。';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return '時限不足，更改MSISDN最少需要間隔3個月。';
 			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return '該手機號碼已存在，不能重複';
 			case 'securityCodeIsIncorrect': return '安全碼不正確';
 			case 'securityCodeMayHaveExpired': return '安全碼可能已過期';
@@ -35829,6 +35878,7 @@ extension on _StringsZhTw {
 			case 'verificationChannel': return '驗證頻道';
 			case 'launchAdTips': return '開啟「launchAd」表示將在啟動應用程式時顯示一個廣告，並將其結果轉換為USCT挖礦權重。';
 			case 'help': return '幫助';
+			case 'verifyOriginalMSISDN': return '驗證原始 MSISDN';
 			default: return null;
 		}
 	}

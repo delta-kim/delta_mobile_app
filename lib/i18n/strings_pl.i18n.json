@@ -146,7 +146,7 @@
   "startVrification": "Rozpoczęcie weryfikacji",
   "mobileNumberAlreadyExists_associated": "Ten numer telefonu komórkowego już istnieje, powiązany DID: ${dId}",
   "noDataYet": "Brak dostępnych danych",
-  "previousMobileNumber": "Poprzedni numer telefonu komórkowego",
+  "previousMSISDN": "Poprzedni MSISDN",
   "changeLog": "Rejestr zmian",
   "referralLinkToShare": "Zalecane linki do udostępnienia",
   "referrer": "polecający",
@@ -343,7 +343,7 @@
   "textContent": "Zawartość tekstowa",
   "scanQRcodeToLogin": "Przesuń, aby się zalogować",
   "confirmLogin": "Potwierdź logowanie",
-  "authorizeSubApplicationToLogin": "Autoryzuj tę aplikację podrzędną do logowania",
+  "authorizeDappAppToLogin": "Autoryzuj tę aplikację podrzędną do logowania",
   "authorizationSuccessful": "Autoryzacja przebiegła pomyślnie!",
   "launchSMSprogram": "Uruchomienie programu SMS",
   "notApplied": "Brak aplikacji",
@@ -457,7 +457,7 @@
   "numberOfSafetyCircleCannotBeLessThan3": "Liczba członków kręgu bezpieczeństwa nie może być mniejsza niż trzy.",
   "avatarIsNotSet": "Awatar nie został ustawiony",
   "numberOfDirectReferralsCannotBeLessThan3": "Liczba bezpośrednich poleceń nie może być mniejsza niż 3.",
-  "insufficientTimeLimit_mobileNumberOnlyChangedOnceYear": "Limit czasowy jest niewystarczający i numer telefonu komórkowego można zmienić tylko raz w roku.",
+  "insufficientTimeLimit_changeMSISDNInterval3months": "Limit czasu jest niewystarczający. Minimalny odstęp czasu na zmianę numeru MSISDN to 3 miesiące.",
   "mobileNumberAlreadyExistsAndCannotBeRepeated": "Ten numer telefonu komórkowego już istnieje i nie można go powielić.",
   "securityCodeIsIncorrect": "Nieprawidłowy kod bezpieczeństwa",
   "securityCodeMayHaveExpired": "Kod zabezpieczający mógł wygasnąć",
@@ -594,5 +594,6 @@
   "noSettlementAmountAvailableForThisPeriod": "Brak dostępnej kwoty rozliczenia na ten okres",
   "verificationChannel": "Kanał weryfikacji",
   "launchAdTips": "Włączenie „launchAd” oznacza, że ​​reklama będzie wyświetlana po uruchomieniu aplikacji, a jej wynik zostanie przekonwertowany na wagę wydobywczą USCT.",
-  "help": "Pomoc"
+  "help": "Pomoc",
+  "verifyOriginalMSISDN": "Zweryfikuj oryginalny numer MSISDN"
 }

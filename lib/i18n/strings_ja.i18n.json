@@ -146,7 +146,7 @@
 	"startVrification": "検証開始",
 	"mobileNumberAlreadyExists_associated": "この携帯電話番号はすでに存在し、関連するDIDは${dId}です。",
 	"noDataYet": "データなし",
-	"previousMobileNumber": "以前の携帯電話番号",
+	"previousMSISDN": "以前のMSISDN",
 	"changeLog": "変更の記録",
 	"referralLinkToShare": "共有するための推奨リンク",
 	"referrer": "リファラー",
@@ -343,7 +343,7 @@
 	"textContent": "テキストコンテンツ",
 	"scanQRcodeToLogin": "スワイプでログイン",
 	"confirmLogin": "ログインの確認",
-	"authorizeSubApplicationToLogin": "このサブアプリケーションのログインを許可する",
+	"authorizeDappAppToLogin": "このサブアプリケーションのログインを許可する",
 	"authorizationSuccessful": "認可は成功した！",
 	"launchSMSprogram": "SMSプログラムの開始",
 	"notApplied": "応募なし",
@@ -457,7 +457,7 @@
 	"numberOfSafetyCircleCannotBeLessThan3": "セキュリティー・サークルのメンバーは3人以下にはできない。",
 	"avatarIsNotSet": "アバターが設定されていない",
 	"numberOfDirectReferralsCannotBeLessThan3": "直接の紹介者数が3人を下回ることはない。",
-	"insufficientTimeLimit_mobileNumberOnlyChangedOnceYear": "携帯電話番号の変更は1年に1度しかできない。",
+	"insufficientTimeLimit_changeMSISDNInterval3months": "時間制限が不十分です。MSISDNを変更できる最小間隔は3か月です。",
 	"mobileNumberAlreadyExistsAndCannotBeRepeated": "この携帯電話番号はすでに存在しており、複製することはできません。",
 	"securityCodeIsIncorrect": "セキュリティコードの誤り",
 	"securityCodeMayHaveExpired": "セキュリティコードの有効期限が切れている可能性があります。",
@@ -594,5 +594,6 @@
 	"noSettlementAmountAvailableForThisPeriod": "この期間に利用可能な決済額はありません",
 	"verificationChannel": "検証チャネル",
 	"launchAdTips": "「launchAd」をオンにすると、アプリの起動時に広告が表示され、その結果が USCT マイニング重量に変換されます。",
-	"help": "ヘルプ"
+	"help": "ヘルプ",
+	"verifyOriginalMSISDN": "元のMSISDNを確認する"
 }

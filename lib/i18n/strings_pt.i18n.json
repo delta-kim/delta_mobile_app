@@ -146,7 +146,7 @@
 	"startVrification": "Iniciar verificação",
 	"mobileNumberAlreadyExists_associated": "Este número de telemóvel já existe, DID associado: ${dId}",
 	"noDataYet": "Não existem dados disponíveis",
-	"previousMobileNumber": "Número de telemóvel anterior",
+	"previousMSISDN": "MSISDN anterior",
 	"changeLog": "Registo das alterações",
 	"referralLinkToShare": "Ligações recomendadas para partilhar",
 	"referrer": "referenciador",
@@ -343,7 +343,7 @@
 	"textContent": "Conteúdo do texto",
 	"scanQRcodeToLogin": "Deslizar para iniciar sessão",
 	"confirmLogin": "Confirmar o início de sessão",
-	"authorizeSubApplicationToLogin": "Autorizar esta sub-aplicação a iniciar sessão",
+	"authorizeDappAppToLogin": "Autorizar esta sub-aplicação a iniciar sessão",
 	"authorizationSuccessful": "A autorização foi bem sucedida!",
 	"launchSMSprogram": "Lançamento do programa SMS",
 	"notApplied": "Nenhum pedido",
@@ -457,7 +457,7 @@
 	"numberOfSafetyCircleCannotBeLessThan3": "O número de membros do círculo de segurança não pode ser inferior a três",
 	"avatarIsNotSet": "Avatar não definido",
 	"numberOfDirectReferralsCannotBeLessThan3": "O número de referências diretas não pode ser inferior a 3",
-	"insufficientTimeLimit_mobileNumberOnlyChangedOnceYear": "O limite de tempo é insuficiente e só pode alterar o seu número de telemóvel uma vez por ano.",
+	"insufficientTimeLimit_changeMSISDNInterval3months": "O limite de tempo é insuficiente. O intervalo mínimo para alteração do MSISDN é de 3 meses.",
 	"mobileNumberAlreadyExistsAndCannotBeRepeated": "Este número de telemóvel já existe e não pode ser duplicado",
 	"securityCodeIsIncorrect": "Código de segurança incorreto",
 	"securityCodeMayHaveExpired": "O código de segurança pode ter expirado",
@@ -594,5 +594,6 @@
 	"noSettlementAmountAvailableForThisPeriod": "Nenhum valor de liquidação disponível para este período",
 	"verificationChannel": "Canal de Verificação",
 	"launchAdTips": "Ativar \"launchAd\" significa que um anúncio será exibido quando o aplicativo for iniciado, e seu resultado será convertido em peso de mineração USCT.",
-	"help": "Ajuda"
+	"help": "Ajuda",
+	"verifyOriginalMSISDN": "Verificar MSISDN original"
 }

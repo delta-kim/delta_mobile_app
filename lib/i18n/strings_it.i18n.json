@@ -145,7 +145,7 @@
      "startVrification": "avvia Verifica",
      "mobileNumberAlreadyExists_associated": "Questo numero di telefono esiste già, DID associato: ${dId}",
      "noDataYet": "Nessun dato ancora",
-     "previousMobileNumber": "numero di telefono precedente",
+     "previousMSISDN": "MSISDN precedente",
      "changeLog": "log di cambiamento",
      "referralLinkToShare": "Link di referral da condividere",
      "referrer": "Referente",
@@ -341,7 +341,7 @@
      "textContent": "Contenuto testuale",
      "scanQRcodeToLogin": "Scansiona QR code per accedere",
      "confirmLogin": "Conferma accesso",
-     "authorizeSubApplicationToLogin": "Autorizza questa sotto-applicazione ad accedere",
+     "authorizeDappAppToLogin": "Autorizza questa sotto-applicazione ad accedere",
      "authorizationSuccessful": "Autorizzazione riuscita!",
      "launchSMSprogram": "avvia programma SMS",
      "notApplied": "Non applicato",
@@ -455,7 +455,7 @@
      "numberOfSafetyCircleCannotBeLessThan3": "Il numero di membri del cerchio di sicurezza non può essere inferiore a 3 persone",
      "avatarIsNotSet": "Avatar non impostato",
      "numberOfDirectReferralsCannotBeLessThan3": "Il numero di referral diretti non può essere inferiore a 3 persone",
-     "insufficientTimeLimit_mobileNumberOnlyChangedOnceYear": "Limite di tempo insufficiente, il numero di telefono può essere cambiato solo una volta all'anno.",
+     "insufficientTimeLimit_changeMSISDNInterval3months": "Il limite di tempo non è sufficiente. L'intervallo minimo per la modifica dell'MSISDN è di 3 mesi.",
      "mobileNumberAlreadyExistsAndCannotBeRepeated": "Questo numero di telefono esiste già e non può essere ripetuto",
      "securityCodeIsIncorrect": "Il codice di sicurezza è incorretto",
      "securityCodeMayHaveExpired": "Il codice di sicurezza potrebbe essere scaduto",
@@ -593,5 +593,6 @@
      "noSettlementAmountAvailableForThisPeriod": "Nessun importo di liquidazione disponibile per questo periodo",
      "verificationChannel": "Canale di verifica",
      "launchAdTips": "Attivando \"launchAd\" verrà visualizzato un annuncio quando l'app viene avviata e il suo risultato verrà convertito in peso di mining USCT.",
-     "help": "Aiuto"
+     "help": "Aiuto",
+     "verifyOriginalMSISDN": "Verifica MSISDN originale"
 }

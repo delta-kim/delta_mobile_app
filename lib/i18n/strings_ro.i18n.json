@@ -145,7 +145,7 @@
      "startVrification": "începe verificarea",
      "mobileNumberAlreadyExists_associated": "Acest număr de telefon există deja, asociat cu DID: ${dId}",
      "noDataYet": "Încă nu există date",
-     "previousMobileNumber": "număr de telefon anterior",
+     "previousMSISDN": "MSISDN-ul anterior",
      "changeLog": "jurnal de modificări",
      "referralLinkToShare": "Link de recomandare de partajat",
      "referrer": "Recomandator",
@@ -341,7 +341,7 @@
      "textContent": "Conținut text",
      "scanQRcodeToLogin": "Scanează cod QR pentru autentificare",
      "confirmLogin": "Confirmă autentificarea",
-     "authorizeSubApplicationToLogin": "Autorizează această sub-aplicație să se autentifice",
+     "authorizeDappAppToLogin": "Autorizează această sub-aplicație să se autentifice",
      "authorizationSuccessful": "Autorizare reușită!",
      "launchSMSprogram": "lansează program SMS",
      "notApplied": "Neaplicat",
@@ -455,7 +455,7 @@
      "numberOfSafetyCircleCannotBeLessThan3": "Numărul de membri ai cercului de securitate nu poate fi mai mic de 3 persoane",
      "avatarIsNotSet": "Avatarul nu este setat",
      "numberOfDirectReferralsCannotBeLessThan3": "Numărul de recomandări directe nu poate fi mai mic de 3 persoane",
-     "insufficientTimeLimit_mobileNumberOnlyChangedOnceYear": "Limită de timp insuficientă, numărul de telefon poate fi schimbat doar o dată pe an.",
+     "insufficientTimeLimit_changeMSISDNInterval3months": "Limita de timp este insuficientă. Intervalul minim pentru schimbarea MSISDN este de 3 luni.",
      "mobileNumberAlreadyExistsAndCannotBeRepeated": "Acest număr de telefon există deja și nu poate fi repetat",
      "securityCodeIsIncorrect": "Codul de securitate este incorect",
      "securityCodeMayHaveExpired": "Codul de securitate poate fi expirat",
@@ -593,5 +593,6 @@
      "noSettlementAmountAvailableForThisPeriod": "Nu există sumă de decontare disponibilă pentru această perioadă",
      "verificationChannel": "Canal de verificare",
      "launchAdTips": "Activarea opțiunii «launchAd» înseamnă că o reclamă va fi afișată la lansarea aplicației, iar rezultatul acesteia va fi convertit în pondere de minat USCT.",
-     "help": "Ajutor"
+     "help": "Ajutor",
+     "verifyOriginalMSISDN": "Verifică MSISDN-ul original"
 }

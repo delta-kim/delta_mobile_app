@@ -145,7 +145,7 @@
      "startVrification": "Anza Uthibitisho",
      "mobileNumberAlreadyExists_associated": "Nambari hii ya simu tayari ipo, DID inayohusishwa: ${dId}",
      "noDataYet": "Bado hakuna data",
-     "previousMobileNumber": "Nambari ya Simu ya Awali",
+     "previousMSISDN": "MSISDN Iliyopita",
      "changeLog": "rekodi ya mabadiliko",
      "referralLinkToShare": "Kiungo cha mrejelezaji cha kushiriki",
      "referrer": "Mrejelezaji",
@@ -341,7 +341,7 @@
      "textContent": "Maudhui ya maandishi",
      "scanQRcodeToLogin": "Changanua nambari ya QR ili kuingia",
      "confirmLogin": "Thibitisha kuingia",
-     "authorizeSubApplicationToLogin": "Idhinisha programu hii ndogo kuingia",
+     "authorizeDappAppToLogin": "Idhinisha programu hii ndogo kuingia",
      "authorizationSuccessful": "Uidhinishaji umefanikiwa!",
      "launchSMSprogram": "anzisha programu ya SMS",
      "notApplied": "Haijatumika",
@@ -455,7 +455,7 @@
      "numberOfSafetyCircleCannotBeLessThan3": "Idadi ya wanachama wa mduara wa usalama haiwezi kuwa chini ya watu 3",
      "avatarIsNotSet": "Avatar haijawekwa",
      "numberOfDirectReferralsCannotBeLessThan3": "Idadi ya marejeleo ya moja kwa moja haiwezi kuwa chini ya watu 3",
-     "insufficientTimeLimit_mobileNumberOnlyChangedOnceYear": "Kikomo cha muda kisichotosha, nambari ya simu inaweza kubadilishwa mara moja tu kwa mwaka.",
+     "insufficientTimeLimit_changeMSISDNInterval3months": "Kikomo cha muda hakitoshi. Muda wa chini wa kubadilisha MSISDN ni miezi 3.",
      "mobileNumberAlreadyExistsAndCannotBeRepeated": "Nambari hii ya simu tayari ipo na haiwezi kurudiwa",
      "securityCodeIsIncorrect": "Nambari ya usalama si sahihi",
      "securityCodeMayHaveExpired": "Nambari ya usalama inaweza kuwa imesha",
@@ -593,5 +593,6 @@
      "noSettlementAmountAvailableForThisPeriod": "Hakuna kiasi cha malipo kinachopatikana kwa kipindi hiki",
      "verificationChannel": "Idhaa ya Uthibitishaji",
      "launchAdTips": "Kuwasha \"launchAd\" inamaanisha kuwa tangazo litaonyeshwa programu itakapozinduliwa, na matokeo yake yatabadilishwa kuwa uzito wa uchimbaji madini wa USCT.",
-     "help": "Msaada"
+     "help": "Msaada",
+     "verifyOriginalMSISDN": "Thibitisha MSISDN asili"
 }

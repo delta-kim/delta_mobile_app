@@ -145,7 +145,7 @@
      "startVrification": "Doğrulamayı Başlat",
      "mobileNumberAlreadyExists_associated": "Bu telefon numarası zaten mevcut, ilişkili DID: ${dId}",
      "noDataYet": "Henüz veri yok",
-     "previousMobileNumber": "önceki telefon NO.",
+     "previousMSISDN": "Önceki MSISDN",
      "changeLog": "değişiklik günlüğü",
      "referralLinkToShare": "Paylaşılacak referans bağlantısı",
      "referrer": "Referans",
@@ -341,7 +341,7 @@
      "textContent": "Metin içeriği",
      "scanQRcodeToLogin": "Giriş yapmak için QR kodu tara",
      "confirmLogin": "Girişi onayla",
-     "authorizeSubApplicationToLogin": "Bu alt uygulamanın giriş yapmasına izin ver",
+     "authorizeDappAppToLogin": "Bu alt uygulamanın giriş yapmasına izin ver",
      "authorizationSuccessful": "Yetkilendirme başarılı!",
      "launchSMSprogram": "SMS programını başlat",
      "notApplied": "Uygulanmadı",
@@ -455,7 +455,7 @@
      "numberOfSafetyCircleCannotBeLessThan3": "Güvenlik çemberi üye sayısı 3 kişiden az olamaz",
      "avatarIsNotSet": "Avatar ayarlanmamış",
      "numberOfDirectReferralsCannotBeLessThan3": "Doğrudan referans sayısı 3 kişiden az olamaz",
-     "insufficientTimeLimit_mobileNumberOnlyChangedOnceYear": "Yetersiz zaman limiti, telefon numarası yılda yalnızca bir kez değiştirilebilir.",
+     "insufficientTimeLimit_changeMSISDNInterval3months": "Zaman sınırı yetersiz. MSISDN'yi değiştirmek için minimum aralık 3 aydır.",
      "mobileNumberAlreadyExistsAndCannotBeRepeated": "Bu telefon numarası zaten mevcut ve tekrarlanamaz",
      "securityCodeIsIncorrect": "Güvenlik kodu yanlış",
      "securityCodeMayHaveExpired": "Güvenlik kodunun süresi dolmuş olabilir",
@@ -593,5 +593,6 @@
      "noSettlementAmountAvailableForThisPeriod": "Bu dönem için kullanılabilir bir yerleşim tutarı yok",
      "verificationChannel": "Doğrulama Kanalı",
      "launchAdTips": "“launchAd” özelliğini açmak, uygulama başlatıldığında bir reklam gösterileceği ve sonucunun USCT madencilik ağırlığına dönüştürüleceği anlamına gelir.",
-     "help": "Yardım"
+     "help": "Yardım",
+     "verifyOriginalMSISDN": "Orijinal MSISDN'yi doğrulayın"
 }

@@ -146,7 +146,7 @@
 	"startVrification": "開始驗證",
 	"mobileNumberAlreadyExists_associated": "這個手機號碼已存在，關聯DID： ${dId}",
 	"noDataYet": "暫無資料",
-	"previousMobileNumber": "以前的手機號碼",
+	"previousMSISDN": "以前的MSISDN",
 	"changeLog": "變更記錄",
 	"referralLinkToShare": "推薦連結分享",
 	"referrer": "推薦人",
@@ -343,7 +343,7 @@
 	"textContent": "文字內容",
 	"scanQRcodeToLogin": "掃碼登入",
 	"confirmLogin": "確認登入",
-	"authorizeSubApplicationToLogin": "授權該子應用登入",
+	"authorizeDappAppToLogin": "授權該子應用登入",
 	"authorizationSuccessful": "授權成功！",
 	"launchSMSprogram": "啟動簡訊程式",
 	"notApplied": "沒有申請",
@@ -457,7 +457,7 @@
 	"numberOfSafetyCircleCannotBeLessThan3": "安全圈成員人數不能少於3人",
 	"avatarIsNotSet": "頭像未設定",
 	"numberOfDirectReferralsCannotBeLessThan3": "直接推薦人數不能小於3人",
-	"insufficientTimeLimit_mobileNumberOnlyChangedOnceYear": "時限不足，一年內只能換一次手機號碼。",
+	"insufficientTimeLimit_changeMSISDNInterval3months": "時限不足，更改MSISDN最少需要間隔3個月。",
 	"mobileNumberAlreadyExistsAndCannotBeRepeated": "該手機號碼已存在，不能重複",
 	"securityCodeIsIncorrect": "安全碼不正確",
 	"securityCodeMayHaveExpired": "安全碼可能已過期",
@@ -594,5 +594,6 @@
 	"noSettlementAmountAvailableForThisPeriod": "此期間沒有可用的結算金額",
 	"verificationChannel": "驗證頻道",
 	"launchAdTips": "開啟「launchAd」表示將在啟動應用程式時顯示一個廣告，並將其結果轉換為USCT挖礦權重。",
-	"help": "幫助"
+	"help": "幫助",
+	"verifyOriginalMSISDN": "驗證原始 MSISDN"
 }

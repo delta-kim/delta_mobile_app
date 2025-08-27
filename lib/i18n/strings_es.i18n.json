@@ -146,7 +146,7 @@
 	"startVrification": "Iniciar verificación",
 	"mobileNumberAlreadyExists_associated": "Este número de móvil ya existe, DID asociado: ${dId}",
 	"noDataYet": "No hay datos disponibles",
-	"previousMobileNumber": "Número de teléfono móvil anterior",
+	"previousMSISDN": "MSISDN anterior",
 	"changeLog": "Registro de cambios",
 	"referralLinkToShare": "Enlaces recomendados para compartir",
 	"referrer": "remitente",
@@ -343,7 +343,7 @@
 	"textContent": "Contenido del texto",
 	"scanQRcodeToLogin": "Pase el dedo para iniciar sesión",
 	"confirmLogin": "Confirmar inicio de sesión",
-	"authorizeSubApplicationToLogin": "Autorizar esta sub-solicitud para iniciar sesión",
+	"authorizeDappAppToLogin": "Autorizar esta sub-solicitud para iniciar sesión",
 	"authorizationSuccessful": "La autorización se ha realizado correctamente.",
 	"launchSMSprogram": "Lanzamiento del programa SMS",
 	"notApplied": "Ninguna solicitud",
@@ -457,7 +457,7 @@
 	"numberOfSafetyCircleCannotBeLessThan3": "El número de miembros del círculo de seguridad no puede ser inferior a tres",
 	"avatarIsNotSet": "Avatar no fijado",
 	"numberOfDirectReferralsCannotBeLessThan3": "El número de remisiones directas no puede ser inferior a 3",
-	"insufficientTimeLimit_mobileNumberOnlyChangedOnceYear": "El plazo es insuficiente y sólo puedes cambiar de número de teléfono móvil una vez al año.",
+	"insufficientTimeLimit_changeMSISDNInterval3months": "El límite de tiempo es insuficiente. El intervalo mínimo para cambiar el MSISDN es de 3 meses.",
 	"mobileNumberAlreadyExistsAndCannotBeRepeated": "Este número de teléfono móvil ya existe y no se puede duplicar",
 	"securityCodeIsIncorrect": "Código de seguridad incorrecto",
 	"securityCodeMayHaveExpired": "El código de seguridad puede haber caducado",
@@ -594,5 +594,6 @@
 	"noSettlementAmountAvailableForThisPeriod": "No hay importe de liquidación disponible para este período",
 	"verificationChannel": "Canal de verificación",
 	"launchAdTips": "Activar \"launchAd\" significa que se mostrará un anuncio cuando se inicie la aplicación y su resultado se convertirá en peso de minería USCT.",
-	"help": "Ayuda"
+	"help": "Ayuda",
+	"verifyOriginalMSISDN": "Verificar el MSISDN original"
 }
