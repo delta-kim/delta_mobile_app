@@ -4,9 +4,9 @@
 /// To regenerate, run: `dart run slang`
 ///
 /// Locales: 25
-/// Strings: 14817 (592 per locale)
+/// Strings: 15167 (606 per locale)
 ///
-/// Built on 2025-08-27 at 10:58 UTC
+/// Built on 2025-09-10 at 08:05 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -430,10 +430,10 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	String get totalAllocation => 'Total allocation';
 	String get miningRatio => 'Mining ratio';
 	Map<String, String> get billion => {
-		'300': '300 billion',
-		'180': '180 billion',
 		'30': '30 billion',
 		'60': '60 billion',
+		'180': '180 billion',
+		'300': '300 billion',
 	};
 	String get watchAdsToSupportDevelopers => 'Watch ads to support developers';
 	String get loadingAdcomponents => 'Loading ad components…';
@@ -698,7 +698,7 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	String get receiveAddress => 'Receive address: ';
 	String get hangingAmount => 'hanging';
 	String get points => 'Points: ';
-	String get pendingPointsTips => 'Points refer to the weighted amount that has not yet been confirmed and compared with advertisers. \n\nThe redemption rate varies between channels, and the final settlement amount is based on the actual settlement amount with the channel.';
+	String get pendingPointsTips => 'Points refer to the weighted amount that has not yet been confirmed and compared with advertisers. \nThe redemption rate varies between channels, and the final settlement amount is based on the actual settlement amount with the channel.';
 	String get received => 'Received';
 	String get processing => 'Processing';
 	String get replied => 'Replied';
@@ -869,6 +869,20 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	String get launchAdTips => 'Turning on "launchAd" means that an ad will be displayed when the app is launched, and its result will be converted into USCT mining weight.';
 	String get help => 'Help';
 	String get verifyOriginalMSISDN => 'Verify original MSISDN';
+	String get noLongerPopup => 'No longer popup';
+	String get encoding => 'Encoding:';
+	String get switchingVerificationStringEncodingMethodsTips => 'Switching to different verification string encoding methods can help bypass the ban of telecom operators.';
+	String get remainUnchanged => 'remain unchanged';
+	String get offersGuidline1 => '1). In an effort to increase the USCT payout for the users, we have tied up with some of the highly reputed offerwall networks like Playtime and Ayet Studios. Users can earn points completing simple tasks like “Download Apps and Open”, “Download Games and Reaching Levels”, “Spending time across games” etc. Please read the information below to understand crucial information.';
+	String get offersGuidline2 => '2). Users will earn points for completing the offers. Unlike ads, these points have an already established exchange ratio in relation to USDT. Depending on the payout from the networks, the conversion between points and USDT can be anywhere between 235K points = 1 USDT to 250K points = 1 USDT. \n\nThese points can be converted to USDT within six to seven weeks of any month’s end. For instance: If you accumulate 400K points in the month of August, then you’ll be able to redeem these 400K points as 1.68 USDT by 15th October (which is when we receive the payout for the month of August). Subsequently, the payout for points accumulated in the month of September will be settled by 15th November, and so on. This delay is primarily because of the payment cycles in the “performance marketing” niche and the fact that these offerwall networks pay us out on a Net-30 basis. \n\nWe’re just starting out with the offerwalls, and over time, as our cash flow improves, we would love to lower this withdrawal timeframe. Until then, we appreciate your patience.';
+	String get offersGuidline3 => '3). You’ll also accumulate points every time your referrals complete an offer. You’ll earn points equivalent to “43% of the points earned by your direct referrals”. For instance: If your direct referral has earned 7000 points, you’ll automatically be credited 3000 points.';
+	String get offersGuidline4 => '4). If you’re interested in a particular app/game pertaining to an offer and want to try it out, please visit the app/game through the provided link/button within the offerwall. If you don’t do so, the milestones and activity won’t be tracked. ';
+	String get offersGuidline5 => '5). Never use VPN while accessing these offers. You’ll be disqualified by the offerwall networks.';
+	String get offersGuidline6 => '6). You may be prompted by the Offerwall networks to provide relevant permissions. Please do so in order to ensure your milestones are properly tracked, otherwise you may not be rewarded for the offers.';
+	String get offersGuidline7 => '7). PlayTime provides a unique blend of game offers where users are rewarded for simply spending time across the games. However, please ensure that you’re also progressing through the levels across these games instead of just killing time or the advertiser may reverse the payout (although it’s rare).';
+	String get offersGuidline8 => '8). The milestones/tasks completed by you are usually registered across the offerwalls within a few minutes of completion, but in certain cases, it may take up to three hours, so please be patient in such cases. If the milestone doesn’t get registered, please reach out to the customer support pertaining to the Offerwall network. There’s a separate section for Customer Support across every Offerwall you access. Always ensure you check the offerwalls within our app every time you finish a milestone to ensure it has been tracked.';
+	String get offersGuidline9 => '9). In case you’re interested in a game/app offer, but you previously had that game/app installed in your device, please don’t attempt the offer pertaining to that app/game. You may not get credited for your activity.';
+	String get offersGuidline10 => '10). Always read the tips provided by each Offerwall. They often contain crucial details that can help maximize your chances of successful tracking across the offers.';
 }
 
 // Path: <root>
@@ -1154,10 +1168,10 @@ class _StringsBg implements Translations {
 	@override String get totalAllocation => 'Общо разпределение';
 	@override String get miningRatio => 'Съотношение на добива';
 	@override Map<String, String> get billion => {
-		'300': '300 милиарда',
-		'180': '180 милиарда',
 		'30': '30 милиарда',
 		'60': '60 милиарда',
+		'180': '180 милиарда',
+		'300': '300 милиарда',
 	};
 	@override String get watchAdsToSupportDevelopers => 'Гледайте реклами, за да подкрепите разработчиците';
 	@override String get loadingAdcomponents => 'Зареждане на рекламни компоненти…';
@@ -1593,6 +1607,20 @@ class _StringsBg implements Translations {
 	@override String get launchAdTips => 'Включването на „launchAd“ означава, че при стартиране на приложението ще се показва реклама, а резултатът от нея ще бъде преобразуван в USCT тегло за добив.';
 	@override String get help => 'Помощ';
 	@override String get verifyOriginalMSISDN => 'Проверете оригиналния MSISDN';
+	@override String get noLongerPopup => 'Вече не се появява';
+	@override String get encoding => 'Кодиране:';
+	@override String get switchingVerificationStringEncodingMethodsTips => 'Преминаването към различни методи за кодиране на низове за проверка може да помогне за заобикаляне на забраната на телекомуникационните оператори.';
+	@override String get remainUnchanged => 'остават непроменени';
+	@override String get offersGuidline1 => '1). В опит да увеличим изплащането на USCT за потребителите, ние се обвързахме с някои от високо реномираните мрежи за оферти, като Playtime и Ayet Studios. Потребителите могат да печелят точки, изпълнявайки прости задачи като „Изтегляне на приложения и отваряне“, „Изтегляне на игри и достигане на нива“, „Прекарване на време в игри“ и др. Моля, прочетете информацията по-долу, за да разберете важната информация.';
+	@override String get offersGuidline2 => '2). Потребителите ще печелят точки за изпълнение на офертите. За разлика от рекламите, тези точки имат вече установено съотношение на обмен спрямо USDT. В зависимост от изплащането от мрежите, конвертирането между точки и USDT може да бъде между 235 000 точки = 1 USDT и 250 000 точки = 1 USDT.\n\nТези точки могат да бъдат конвертирани в USDT в рамките на шест до седем седмици след края на всеки месец. Например: Ако натрупате 400 000 точки през месец август, тогава ще можете да осребрите тези 400 000 точки за 1,68 USDT до 15 октомври (когато получим изплащането за месец август). Впоследствие изплащането на точките, натрупани през месец септември, ще бъде уредено до 15 ноември и т.н. Това забавяне се дължи главно на циклите на плащане в нишата на „маркетинга, базиран на ефективността“ и на факта, че тези мрежи за оферти ни плащат на база Net-30.\n\nТепърва започваме с офертните стени и с течение на времето, с подобряването на паричния ни поток, бихме искали да намалим този срок за теглене. Дотогава, оценяваме вашето търпение.';
+	@override String get offersGuidline3 => '3). Ще трупате точки всеки път, когато вашите препоръчители изпълнят оферта. Ще печелите точки, еквивалентни на „43% от точките, спечелени от вашите директни препоръчители“. Например: Ако вашият директен препоръчител е спечелил 7000 точки, автоматично ще ви бъдат добавени 3000 точки.';
+	@override String get offersGuidline4 => '4). Ако се интересувате от конкретно приложение/игра, свързано с оферта, и искате да го изпробвате, моля, посетете приложението/играта чрез предоставената връзка/бутон в рамките на офертата. Ако не го направите, етапите и активността няма да бъдат проследявани.';
+	@override String get offersGuidline5 => '5). Никога не използвайте VPN, докато осъществявате достъп до тези оферти. Ще бъдете дисквалифицирани от мрежите на offerwall.';
+	@override String get offersGuidline6 => '6). Възможно е мрежите на Offerwall да ви подканят да предоставите съответните разрешения. Моля, направете го, за да сте сигурни, че вашите етапи се проследяват правилно, в противен случай може да не получите възнаграждение за офертите.';
+	@override String get offersGuidline7 => '7). PlayTime предлага уникална комбинация от игрови оферти, при които потребителите биват възнаграждавани само за това, че прекарват време в игрите. Моля, уверете се обаче, че преминавате през нивата в тези игри, вместо просто да убивате време, в противен случай рекламодателят може да отмени изплащането (въпреки че това е рядкост).';
+	@override String get offersGuidline8 => '8). Завършените от вас етапи/задачи обикновено се регистрират в офертните стени в рамките на няколко минути след завършването им, но в определени случаи това може да отнеме до три часа, така че, моля, бъдете търпеливи. Ако етапът не се регистрира, моля, свържете се с отдела за обслужване на клиенти на мрежата на Offerwall. Има отделен раздел за обслужване на клиенти във всеки Offerwall, до който имате достъп. Винаги проверявайте офертните стени в нашето приложение всеки път, когато завършите етап, за да се уверите, че е проследен.';
+	@override String get offersGuidline9 => '9). В случай че се интересувате от оферта за игра/приложение, но преди това сте имали инсталирана тази игра/приложение на устройството си, моля, не се възползвайте от офертата, отнасяща се до това приложение/игра. Възможно е да не получите кредит за активността си.';
+	@override String get offersGuidline10 => '10). Винаги четете съветите, предоставени от всяка Offerwall. Те често съдържат важни подробности, които могат да ви помогнат да увеличите максимално шансовете си за успешно проследяване на офертите.';
 }
 
 // Path: <root>
@@ -2320,6 +2348,20 @@ class _StringsBn implements Translations {
 	@override String get launchAdTips => '"launchAd" চালু করার অর্থ হল অ্যাপটি চালু হওয়ার সাথে সাথে একটি বিজ্ঞাপন প্রদর্শিত হবে এবং এর ফলাফল USCT মাইনিং ওয়েটে রূপান্তরিত হবে।';
 	@override String get help => 'সাহায্য';
 	@override String get verifyOriginalMSISDN => 'মূল MSISDN যাচাই করুন';
+	@override String get noLongerPopup => 'আর পপ আপ হবে না';
+	@override String get encoding => 'এনকোডিং:';
+	@override String get switchingVerificationStringEncodingMethodsTips => 'বিভিন্ন যাচাইকরণ স্ট্রিং এনকোডিং পদ্ধতিতে স্যুইচ করা টেলিকম অপারেটরদের নিষেধাজ্ঞা এড়াতে সাহায্য করতে পারে।';
+	@override String get remainUnchanged => 'অপরিবর্তিত থাকুন';
+	@override String get offersGuidline1 => '১). ব্যবহারকারীদের জন্য USCT পেমেন্ট বৃদ্ধির প্রচেষ্টায়, আমরা Playtime এবং Ayet Studios এর মতো কিছু অত্যন্ত স্বনামধন্য অফারওয়াল নেটওয়ার্কের সাথে চুক্তিবদ্ধ হয়েছি। ব্যবহারকারীরা "অ্যাপ ডাউনলোড করুন এবং খুলুন", "গেম ডাউনলোড করুন এবং স্তরে পৌঁছান", "গেম জুড়ে সময় ব্যয় করুন" ইত্যাদির মতো সহজ কাজগুলি সম্পন্ন করে পয়েন্ট অর্জন করতে পারেন। গুরুত্বপূর্ণ তথ্য বুঝতে নীচের তথ্যটি পড়ুন।';
+	@override String get offersGuidline2 => '২). অফারগুলি সম্পন্ন করার জন্য ব্যবহারকারীরা পয়েন্ট অর্জন করবেন। বিজ্ঞাপনের বিপরীতে, এই পয়েন্টগুলির USDT-এর সাথে সম্পর্কিত একটি প্রতিষ্ঠিত বিনিময় অনুপাত রয়েছে। নেটওয়ার্ক থেকে প্রাপ্ত অর্থপ্রদানের উপর নির্ভর করে, পয়েন্ট এবং USDT-এর মধ্যে রূপান্তর 235K পয়েন্ট = 1 USDT থেকে 250K পয়েন্ট = 1 USDT-এর মধ্যে হতে পারে। \n\nযেকোনো মাস শেষ হওয়ার ছয় থেকে সাত সপ্তাহের মধ্যে এই পয়েন্টগুলিকে USDT-তে রূপান্তর করা যেতে পারে। উদাহরণস্বরূপ: যদি আপনি আগস্ট মাসে 400K পয়েন্ট জমা করেন, তাহলে আপনি 15 অক্টোবরের মধ্যে এই 400K পয়েন্টগুলিকে 1.68 USDT হিসাবে রিডিম করতে পারবেন (যে সময় আমরা আগস্ট মাসের জন্য অর্থপ্রদান পাই)। পরবর্তীকালে, সেপ্টেম্বর মাসে জমা হওয়া পয়েন্টের অর্থপ্রদান 15 নভেম্বরের মধ্যে নিষ্পত্তি করা হবে, ইত্যাদি। এই বিলম্ব মূলত "পারফরম্যান্স মার্কেটিং" নিশে পেমেন্ট চক্র এবং এই অফারওয়াল নেটওয়ার্কগুলি আমাদের নেট-30 ভিত্তিতে অর্থপ্রদান করে বলে। \n\nআমরা সবেমাত্র অফারওয়াল দিয়ে শুরু করছি, এবং সময়ের সাথে সাথে, আমাদের নগদ প্রবাহ উন্নত হওয়ার সাথে সাথে, আমরা এই উত্তোলনের সময়সীমা কমাতে চাই। ততক্ষণ পর্যন্ত, আমরা আপনার ধৈর্যের জন্য কৃতজ্ঞ।';
+	@override String get offersGuidline3 => '৩)। আপনার রেফারেলরা যখনই কোনও অফার সম্পূর্ণ করবে তখন আপনি পয়েন্ট সংগ্রহ করবেন। আপনি "আপনার ডাইরেক্ট রেফারেল দ্বারা অর্জিত পয়েন্টের ৪৩%" এর সমতুল্য পয়েন্ট অর্জন করবেন। উদাহরণস্বরূপ: যদি আপনার ডাইরেক্ট রেফারেল ৭০০০ পয়েন্ট অর্জন করে থাকে, তাহলে আপনাকে স্বয়ংক্রিয়ভাবে ৩০০০ পয়েন্ট জমা দেওয়া হবে।';
+	@override String get offersGuidline4 => '৪)। যদি আপনি কোনও অফার সম্পর্কিত কোনও নির্দিষ্ট অ্যাপ/গেমে আগ্রহী হন এবং এটি ব্যবহার করে দেখতে চান, তাহলে অনুগ্রহ করে অফারওয়ালের মধ্যে প্রদত্ত লিঙ্ক/বোতামের মাধ্যমে অ্যাপ/গেমটি দেখুন। যদি আপনি তা না করেন, তাহলে মাইলফলক এবং কার্যকলাপ ট্র্যাক করা হবে না।';
+	@override String get offersGuidline5 => '৫). এই অফারগুলি অ্যাক্সেস করার সময় কখনও VPN ব্যবহার করবেন না। অফারওয়াল নেটওয়ার্কগুলি আপনাকে অযোগ্য ঘোষণা করবে।';
+	@override String get offersGuidline6 => '৬)। অফারওয়াল নেটওয়ার্কগুলি আপনাকে প্রাসঙ্গিক অনুমতি প্রদানের জন্য অনুরোধ করতে পারে। আপনার মাইলফলকগুলি সঠিকভাবে ট্র্যাক করা হয়েছে তা নিশ্চিত করার জন্য দয়া করে এটি করুন, অন্যথায় আপনাকে অফারগুলির জন্য পুরস্কৃত নাও করা হতে পারে।';
+	@override String get offersGuidline7 => '৭)। প্লেটাইম গেম অফারের এক অনন্য মিশ্রণ প্রদান করে যেখানে ব্যবহারকারীরা কেবল গেম জুড়ে সময় ব্যয় করার জন্য পুরস্কৃত হন। তবে, দয়া করে নিশ্চিত করুন যে আপনি কেবল সময় নষ্ট করার পরিবর্তে এই গেম জুড়ে স্তরগুলির মধ্য দিয়েও অগ্রগতি করছেন, অন্যথায় বিজ্ঞাপনদাতা পেমেন্টটি বিপরীত করতে পারে (যদিও এটি বিরল)।';
+	@override String get offersGuidline8 => '৮)। আপনার দ্বারা সম্পন্ন মাইলস্টোন/কাজগুলি সাধারণত অফারওয়ালগুলিতে কয়েক মিনিটের মধ্যে নিবন্ধিত হয়, তবে কিছু ক্ষেত্রে, এটি তিন ঘন্টা পর্যন্ত সময় নিতে পারে, তাই এই ক্ষেত্রে ধৈর্য ধরুন। যদি মাইলস্টোনটি নিবন্ধিত না হয়, তাহলে অনুগ্রহ করে অফারওয়াল নেটওয়ার্ক সম্পর্কিত গ্রাহক সহায়তার সাথে যোগাযোগ করুন। আপনার অ্যাক্সেস করা প্রতিটি অফারওয়ালে গ্রাহক সহায়তার জন্য একটি পৃথক বিভাগ রয়েছে। আপনি যখনই কোনও মাইলস্টোন সম্পূর্ণ করেন তখন তা ট্র্যাক করা হয়েছে কিনা তা নিশ্চিত করার জন্য সর্বদা আমাদের অ্যাপের মধ্যে অফারওয়ালগুলি পরীক্ষা করে দেখুন।';
+	@override String get offersGuidline9 => '৯). যদি আপনি কোনও গেম/অ্যাপ অফারে আগ্রহী হন, কিন্তু আপনার ডিভাইসে সেই গেম/অ্যাপটি আগে ইনস্টল করা থাকে, তাহলে অনুগ্রহ করে সেই অ্যাপ/গেম সম্পর্কিত অফারটি ব্যবহার করার চেষ্টা করবেন না। আপনার কার্যকলাপের জন্য আপনাকে ক্রেডিট নাও দেওয়া হতে পারে।';
+	@override String get offersGuidline10 => '১০). প্রতিটি অফারওয়ালের দেওয়া টিপসগুলি সর্বদা পড়ুন। এগুলিতে প্রায়শই গুরুত্বপূর্ণ বিবরণ থাকে যা অফারগুলি জুড়ে সফলভাবে ট্র্যাক করার সম্ভাবনা সর্বাধিক করতে সাহায্য করতে পারে।';
 }
 
 // Path: <root>
@@ -2605,10 +2647,10 @@ class _StringsCkb implements Translations {
 	@override String get totalAllocation => 'کۆی گشتی تەرخانکردن';
 	@override String get miningRatio => 'رێژەی کانگا';
 	@override Map<String, String> get billion => {
-		'300': '300 ملیار',
-		'180': '180 ملیار',
 		'30': '30 ملیار',
 		'60': '60 ملیار',
+		'180': '180 ملیار',
+		'300': '300 ملیار',
 	};
 	@override String get watchAdsToSupportDevelopers => 'سەیری ڕێکلامەکان بکە بۆ پشتگیریکردنی گەشەپێدەران';
 	@override String get loadingAdcomponents => 'بارکردنی پێکهاتەکانی ڕێکلام...';
@@ -3045,6 +3087,20 @@ class _StringsCkb implements Translations {
 	@override String get launchAdTips => 'داگیرساندنی "launchAd" بەو مانایەیە کە ڕێکلامێک پیشان دەدرێت کاتێک ئەپەکە دەکرێتەوە، و ئەنجامەکەی دەگۆڕدرێت بۆ کێشی کانزای USCT.';
 	@override String get help => 'یارمەتی';
 	@override String get verifyOriginalMSISDN => 'MSISDN ئەسڵی پشتڕاست بکەرەوە';
+	@override String get noLongerPopup => 'چیتر پەپ ئەپ ناکات';
+	@override String get encoding => 'کۆدکردن:';
+	@override String get switchingVerificationStringEncodingMethodsTips => 'گۆڕین بۆ شێوازە جیاوازەکانی کۆدکردنی ڕیزەکانی پشتڕاستکردنەوە دەتوانێت یارمەتیدەر بێت لە تێپەڕاندنی قەدەغەکردنی بەڕێوەبەرانی پەیوەندییەکان.';
+	@override String get remainUnchanged => 'وەک خۆی بمێنێتەوە';
+	@override String get offersGuidline1 => '1). لە هەوڵێکدا بۆ زیادکردنی پارەی USCT بۆ بەکارهێنەران، ئێمە پەیوەندیمان لەگەڵ هەندێک لە تۆڕەکانی ئۆفەروۆڵ کە بەناوبانگن وەک Playtime و Ayet Studios. بەکارهێنەران دەتوانن خاڵ بەدەستبهێنن بە تەواوکردنی ئەرکە سادەکانی وەک "دابەزاندنی ئەپەکان و کردنەوەی"، "دابەزاندنی یارییەکان و گەیشتن بە ئاستەکان"، "بەسەربردنی کات لە سەرانسەری یارییەکاندا" و هتد. تکایە زانیارییەکانی خوارەوە بخوێنەرەوە بۆ تێگەیشتن لە زانیارییە گرنگەکان.';
+	@override String get offersGuidline2 => '2). بەکارهێنەران خاڵ بەدەستدەهێنن بۆ تەواوکردنی ئۆفەرەکان. بە پێچەوانەی ڕێکلامەکانەوە، ئەم خاڵانە ڕێژەیەکی ئاڵوگۆڕی پێشتر دامەزراویان هەیە لە پێوەندی لەگەڵ USDT. بەپێی پارەدان لە تۆڕەکانەوە، گۆڕینی نێوان خاڵەکان و USDT دەتوانێت لە هەر شوێنێک بێت لە نێوان 235K خاڵ = 1 USDT بۆ 250K خاڵ = 1 USDT. \n\nئەم خاڵانە دەتوانرێت لە ماوەی شەش بۆ حەوت هەفتەدا لە کۆتایی هەر مانگێکەوە بگۆڕدرێن بۆ USDT. بۆ نموونە: ئەگەر لە مانگی ئابدا 400K خاڵت کۆکردەوە، ئەوا دەتوانیت ئەم 400K خاڵانە وەک 1.68 USDT تا 15ی تشرینی یەکەم وەربگریتەوە (کە کاتێکە کە ئێمە پارەی مانگی ئاب وەردەگرین). دواتر، پارەی خاڵەکانی کەڵەکەبوو لە مانگی ئەیلولدا تا ١٥ی تشرینی دووەم یەکلایی دەکرێتەوە و هتد. ئەم دواکەوتنە بە پلەی یەکەم بەهۆی خولەکانی پارەدان لە شوێنی "بازاڕکردنی ئەدای کارکردن" و ئەو ڕاستییەی کە ئەم تۆڕانەی دیواری ئۆفەر لەسەر بنەمای نێت-٣٠ پارەمان دەدەن. \n\nئێمە تازە دەستمان پێکردووە بە دیواری ئۆفەرەکان، و بە تێپەڕبوونی کات، لەگەڵ باشتربوونی ڕۆیشتنی پارەمان، زۆرمان پێ خۆشە ئەم ماوەیەی کشانەوە کەم بکەینەوە. تا ئەو کاتە سەبرتان بەرز دەنرخێنین.';
+	@override String get offersGuidline3 => '3). هەروەها هەر جارێک کە ڕەوانەکردنەکانت ئۆفەرێک تەواو دەکەن، خاڵەکانت کۆدەکەیتەوە. تۆ خاڵ بەدەست دەهێنیت کە یەکسانە بە "43%ی ئەو خاڵانەی کە بەهۆی ڕەوانەکردنی ڕاستەوخۆتەوە بەدەستت هێناوە". بۆ نموونە: ئەگەر ڕەوانەکردنی ڕاستەوخۆت 7000 خاڵ بەدەست هێنابێت، ئەوا بە شێوەیەکی ئۆتۆماتیکی 3000 خاڵت پێدەدرێت.';
+	@override String get offersGuidline4 => '4). ئەگەر ئارەزووی ئەپ/یارییەکی تایبەت دەکەیت کە پەیوەندی بە ئۆفەرێکەوە هەیە و دەتەوێت تاقی بکەیتەوە، تکایە سەردانی ئەپ/یارییەکە بکە لە ڕێگەی بەستەر/دوگمەی دابینکراو لەناو دیواری ئۆفەرەکەدا. ئەگەر ئەوە نەکەیت، ئەوا بەدواداچوون بۆ بەربەست و چالاکییەکان ناکرێت. ';
+	@override String get offersGuidline5 => '5). هەرگیز لەکاتی دەستگەیشتن بەم ئۆفەرانەدا VPN بەکارمەهێنە. تۆ لەلایەن تۆڕەکانی دیواری ئۆفەرەوە بێبەش دەکرێیت.';
+	@override String get offersGuidline6 => '6). لەوانەیە لەلایەن تۆڕەکانی ئۆفەروالەوە داوات لێ بکرێت کە مۆڵەتی پەیوەندیدار پێشکەش بکەیت. تکایە ئەوە بکە بۆ ئەوەی دڵنیا بیت کە بە باشی بەدواداچوون بۆ بەربەستەکانت دەکرێت، ئەگەرنا لەوانەیە پاداشتت نەدرێتەوە بۆ ئۆفەرەکان.';
+	@override String get offersGuidline7 => '7). پلەی تایم تێکەڵەیەکی ناوازە لە ئۆفەرەکانی یارییەکان دابین دەکات کە بەکارهێنەران پاداشت دەکرێن بۆ بەسەربردنی کات بە سادەیی لە سەرانسەری یارییەکاندا. بەڵام تکایە دڵنیابە لەوەی کە تۆش لە ئاستەکانی ئەم یارییانەدا پێشدەکەویت لەبری ئەوەی تەنها کات بکوژیت یان ڕێکلامکەر ڕەنگە پارەدانەکە پێچەوانە بکاتەوە (هەرچەندە دەگمەنە).';
+	@override String get offersGuidline8 => '8). ئەو بەربەستە گرنگانە/ئەرکانەی کە لەلایەن تۆوە تەواو دەکرێن بەزۆری لە سەرانسەری دیوارەکانی ئۆفەرەکاندا تۆمار دەکرێن لە ماوەی چەند خولەکێکدا دوای تەواوبوون، بەڵام لە هەندێک حاڵەتدا، لەوانەیە تا سێ کاتژمێر بخایەنێت، بۆیە تکایە سەبر بگرە لەم جۆرە حاڵەتانەدا. ئەگەر ئەو بڕگەیە تۆمار نەکرا، تکایە دەستت بگات بە پشتگیری کڕیار کە پەیوەندی بە تۆڕی ئۆفەروالەوە هەیە. بەشێکی جیاواز هەیە بۆ پشتگیری کڕیار لە سەرانسەری هەموو دیوارە ئۆفەرێکدا کە دەستت پێدەگات. هەمیشە دڵنیابە کە هەر جارێک کە بڕگەیەکی گرنگ تەواو دەکەیت، دیوارەکانی ئۆفەرەکان لەناو ئەپەکەماندا دەپشکنیت بۆ ئەوەی دڵنیا بیت کە بەدواداچوونی بۆ کراوە.';
+	@override String get offersGuidline9 => '9). لە ئەگەری ئەوەی کە تۆ ئارەزووی ئۆفەرێکی یاری/ئەپێک دەکەیت، بەڵام پێشتر ئەو یارییە/ئەپەت لە ئامێرەکەتدا دامەزراندبوو، تکایە هەوڵی ئەو ئۆفەرە مەدە کە پەیوەندی بەو ئەپ/یارییەوە هەیە. لەوانەیە تۆ کریدت بۆ چالاکییەکەت وەرنەگیرێت.';
+	@override String get offersGuidline10 => '10). هەمیشە ئەو ئامۆژگارییانە بخوێنەرەوە کە لەلایەن هەر ئۆفەروالێکەوە پێشکەش کراوە. زۆرجار وردەکاری گرنگیان تێدایە کە دەتوانن یارمەتیدەر بن بۆ زۆرترین چانسی بەدواداچوونی سەرکەوتووت لە سەرانسەری ئۆفەرەکاندا.';
 }
 
 // Path: <root>
@@ -3770,6 +3826,20 @@ class _StringsDe implements Translations {
 	@override String get launchAdTips => 'Wenn Sie "launchAd" aktivieren, wird beim Starten der App eine Anzeige angezeigt und das Ergebnis in ein USCT-Mining-Gewicht umgewandelt.';
 	@override String get help => 'Hilfe';
 	@override String get verifyOriginalMSISDN => 'Ursprüngliche MSISDN verifizieren';
+	@override String get noLongerPopup => 'Wird nicht mehr angezeigt';
+	@override String get encoding => 'Codierung:';
+	@override String get switchingVerificationStringEncodingMethodsTips => 'Durch die Umstellung auf andere Methoden zur Verschlüsselung von Verifizierungszeichenfolgen kann das Verbot der Telekommunikationsbetreiber umgangen werden.';
+	@override String get remainUnchanged => 'bleiben unverändert';
+	@override String get offersGuidline1 => '1). Um die USCT-Auszahlung für unsere Nutzer zu erhöhen, haben wir uns mit renommierten Offerwall-Netzwerken wie Playtime und Ayet Studios zusammengeschlossen. Nutzer können Punkte sammeln, indem sie einfache Aufgaben wie „Apps herunterladen und öffnen“, „Spiele herunterladen und Level erreichen“, „Zeit mit Spielen verbringen“ usw. erledigen. Bitte lesen Sie die folgenden Informationen, um wichtige Informationen zu verstehen.';
+	@override String get offersGuidline2 => '2) Nutzer erhalten Punkte für das Abschließen der Angebote. Im Gegensatz zu Anzeigen haben diese Punkte ein festes Umtauschverhältnis zu USDT. Abhängig von der Auszahlung der Netzwerke kann der Umtausch zwischen Punkten und USDT zwischen 235.000 Punkten = 1 USDT und 250.000 Punkten = 1 USDT liegen.\n\nDiese Punkte können innerhalb von sechs bis sieben Wochen nach Monatsende in USDT umgetauscht werden. Beispiel: Wenn Sie im August 400.000 Punkte sammeln, können Sie diese 400.000 Punkte bis zum 15. Oktober (dem Tag, an dem wir die Auszahlung für den Monat August erhalten) für 1,68 USDT einlösen. Anschließend erfolgt die Auszahlung der im September gesammelten Punkte bis zum 15. November usw. Diese Verzögerung ist hauptsächlich auf die Zahlungszyklen im Performance-Marketing-Bereich und die Tatsache zurückzuführen, dass diese Offerwall-Netzwerke uns auf Net-30-Basis auszahlen.\n\nWir stehen noch ganz am Anfang mit den Offerwalls und würden die Auszahlungsfrist mit der Zeit gerne verkürzen, wenn sich unser Cashflow verbessert. Bis dahin danken wir Ihnen für Ihre Geduld.';
+	@override String get offersGuidline3 => '3). Sie sammeln außerdem jedes Mal Punkte, wenn Ihre Empfehlungen ein Angebot abschließen. Sie erhalten Punkte in Höhe von 43 % der Punkte, die Ihre direkten Empfehlungen erhalten. Beispiel: Wenn Ihre direkte Empfehlung 7.000 Punkte gesammelt hat, werden Ihnen automatisch 3.000 Punkte gutgeschrieben.';
+	@override String get offersGuidline4 => '4). Wenn Sie an einer bestimmten App/einem bestimmten Spiel im Rahmen eines Angebots interessiert sind und diese/s ausprobieren möchten, besuchen Sie die App/das Spiel bitte über den bereitgestellten Link/Button in der Angebotswand. Andernfalls werden die Meilensteine und Aktivitäten nicht erfasst.';
+	@override String get offersGuidline5 => '5). Verwenden Sie niemals VPN, während Sie auf diese Angebote zugreifen. Sie werden von den Offerwall-Netzwerken disqualifiziert.';
+	@override String get offersGuidline6 => '6). Sie werden möglicherweise von den Offerwall-Netzwerken aufgefordert, entsprechende Berechtigungen zu erteilen. Bitte tun Sie dies, um sicherzustellen, dass Ihre Meilensteine ordnungsgemäß verfolgt werden, da Sie sonst möglicherweise nicht für die Angebote belohnt werden.';
+	@override String get offersGuidline7 => '7). PlayTime bietet eine einzigartige Mischung aus Spielangeboten, bei denen Nutzer für ihre Zeit in den Spielen belohnt werden. Achten Sie jedoch darauf, dass Sie in den Spielen auch Levels erreichen und nicht nur Zeit totschlagen. Andernfalls kann der Werbetreibende die Auszahlung rückgängig machen (was jedoch selten vorkommt).';
+	@override String get offersGuidline8 => '8). Die von Ihnen abgeschlossenen Meilensteine/Aufgaben werden in der Regel innerhalb weniger Minuten nach Abschluss in den Offerwalls registriert. In Einzelfällen kann es jedoch bis zu drei Stunden dauern. Bitte haben Sie in solchen Fällen Geduld. Sollte der Meilenstein nicht registriert werden, wenden Sie sich bitte an den Kundensupport des Offerwall-Netzwerks. Für jede Offerwall, auf die Sie zugreifen, gibt es einen separaten Bereich für den Kundensupport. Überprüfen Sie die Offerwalls in unserer App nach jedem abgeschlossenen Meilenstein, um sicherzustellen, dass dieser erfasst wurde.';
+	@override String get offersGuidline9 => '9). Falls Sie an einem Spiel-/App-Angebot interessiert sind, dieses Spiel/diese App aber bereits auf Ihrem Gerät installiert haben, versuchen Sie bitte nicht, das entsprechende Angebot in Anspruch zu nehmen. Möglicherweise erhalten Sie für Ihre Aktivität keine Gutschrift.';
+	@override String get offersGuidline10 => '10). Lesen Sie immer die Tipps der einzelnen Offerwalls. Sie enthalten oft wichtige Details, die Ihnen helfen können, Ihre Chancen auf ein erfolgreiches Tracking der Angebote zu maximieren.';
 }
 
 // Path: <root>
@@ -4055,10 +4125,10 @@ class _StringsEl implements Translations {
 	@override String get totalAllocation => 'Συνολική κατανομή';
 	@override String get miningRatio => 'Λόγος Εξόρυξης';
 	@override Map<String, String> get billion => {
-		'300': '300 δισεκατομμύρια',
-		'180': '180 δισεκατομμύρια',
 		'30': '30 δισεκατομμύρια',
 		'60': '60 δισεκατομμύρια',
+		'180': '180 δισεκατομμύρια',
+		'300': '300 δισεκατομμύρια',
 	};
 	@override String get watchAdsToSupportDevelopers => 'Παρακολουθήστε διαφημίσεις για να υποστηρίξετε τους προγραμματιστές';
 	@override String get loadingAdcomponents => 'Φόρτωση στοιχείων διαφήμισης...';
@@ -4495,6 +4565,20 @@ class _StringsEl implements Translations {
 	@override String get launchAdTips => 'Η ενεργοποίηση του "launchAd" σημαίνει ότι θα εμφανίζεται μια διαφήμιση κατά την εκκίνηση της εφαρμογής και το αποτέλεσμά της θα μετατραπεί σε βάρος εξόρυξης USCT.';
 	@override String get help => 'Βοήθεια';
 	@override String get verifyOriginalMSISDN => 'Επαλήθευση αρχικού MSISDN';
+	@override String get noLongerPopup => 'Δεν εμφανίζεται πλέον';
+	@override String get encoding => 'Κωδικοποίηση:';
+	@override String get switchingVerificationStringEncodingMethodsTips => 'Η μετάβαση σε διαφορετικές μεθόδους κωδικοποίησης συμβολοσειρών επαλήθευσης μπορεί να βοηθήσει στην παράκαμψη της απαγόρευσης των τηλεπικοινωνιακών εταιρειών.';
+	@override String get remainUnchanged => 'παραμένουν αμετάβλητα';
+	@override String get offersGuidline1 => '1). Σε μια προσπάθεια να αυξήσουμε την πληρωμή του USCT για τους χρήστες, έχουμε συνεργαστεί με μερικά από τα φημισμένα δίκτυα προσφορών όπως το Playtime και το Ayet Studios. Οι χρήστες μπορούν να κερδίσουν πόντους ολοκληρώνοντας απλές εργασίες όπως «Λήψη εφαρμογών και άνοιγμα», «Λήψη παιχνιδιών και επίτευξη επιπέδων», «Διατήρηση χρόνου σε παιχνίδια» κ.λπ. Διαβάστε τις παρακάτω πληροφορίες για να κατανοήσετε κρίσιμες πληροφορίες.';
+	@override String get offersGuidline2 => '2). Οι χρήστες θα κερδίζουν πόντους για την ολοκλήρωση των προσφορών. Σε αντίθεση με τις διαφημίσεις, αυτοί οι πόντοι έχουν μια ήδη καθορισμένη αναλογία ανταλλαγής σε σχέση με το USDT. Ανάλογα με την πληρωμή από τα δίκτυα, η μετατροπή μεταξύ πόντων και USDT μπορεί να είναι από 235.000 πόντους = 1 USDT έως 250.000 πόντους = 1 USDT.\n\nΑυτοί οι πόντοι μπορούν να μετατραπούν σε USDT εντός έξι έως επτά εβδομάδων από το τέλος οποιουδήποτε μήνα. Για παράδειγμα: Εάν συγκεντρώσετε 400.000 πόντους τον μήνα Αύγουστο, τότε θα μπορείτε να εξαργυρώσετε αυτούς τους 400.000 πόντους ως 1,68 USDT έως τις 15 Οκτωβρίου (οπότε λαμβάνουμε την πληρωμή για τον μήνα Αύγουστο). Στη συνέχεια, η πληρωμή για τους πόντους που συσσωρεύτηκαν τον μήνα Σεπτέμβριο θα διευθετηθεί έως τις 15 Νοεμβρίου, και ούτω καθεξής. Αυτή η καθυστέρηση οφείλεται κυρίως στους κύκλους πληρωμών στην εξειδίκευση του "μάρκετινγκ απόδοσης" και στο γεγονός ότι αυτά τα δίκτυα προσφορών μας πληρώνουν σε βάση Net-30.\n\nΜόλις ξεκινάμε με τα τείχη προσφορών και με την πάροδο του χρόνου, καθώς βελτιώνεται η ταμειακή μας ροή, θα θέλαμε πολύ να μειώσουμε αυτό το χρονικό πλαίσιο ανάληψης. Μέχρι τότε, εκτιμούμε την υπομονή σας.';
+	@override String get offersGuidline3 => '3). Θα συγκεντρώνετε επίσης πόντους κάθε φορά που οι παραπομπές σας ολοκληρώνουν μια προσφορά. Θα κερδίζετε πόντους που ισοδυναμούν με το «43% των πόντων που κερδίζονται από τις άμεσες παραπομπές σας». Για παράδειγμα: Εάν η άμεση παραπομπή σας έχει κερδίσει 7000 πόντους, θα πιστωθείτε αυτόματα με 3000 πόντους.';
+	@override String get offersGuidline4 => '4). Εάν ενδιαφέρεστε για μια συγκεκριμένη εφαρμογή/παιχνίδι που σχετίζεται με μια προσφορά και θέλετε να τη δοκιμάσετε, επισκεφθείτε την εφαρμογή/παιχνίδι μέσω του παρεχόμενου συνδέσμου/κουμπιού στο τείχος προσφορών. Εάν δεν το κάνετε αυτό, τα ορόσημα και η δραστηριότητα δεν θα παρακολουθούνται.';
+	@override String get offersGuidline5 => '5). Μην χρησιμοποιείτε ποτέ VPN κατά την πρόσβαση σε αυτές τις προσφορές. Θα αποκλειστείτε από τα δίκτυα προσφορών.';
+	@override String get offersGuidline6 => '6). Ενδέχεται να σας ζητηθεί από τα δίκτυα Offerwall να παράσχετε σχετικές άδειες. Παρακαλούμε να το κάνετε αυτό για να διασφαλίσετε ότι τα ορόσημα σας παρακολουθούνται σωστά, διαφορετικά ενδέχεται να μην ανταμειφθείτε για τις προσφορές.';
+	@override String get offersGuidline7 => '7). Το PlayTime παρέχει ένα μοναδικό μείγμα προσφορών παιχνιδιών όπου οι χρήστες ανταμείβονται απλώς και μόνο επειδή αφιερώνουν χρόνο σε όλα τα παιχνίδια. Ωστόσο, βεβαιωθείτε ότι προχωράτε και στα επίπεδα σε αυτά τα παιχνίδια αντί απλώς να χάνετε χρόνο, διαφορετικά ο διαφημιζόμενος μπορεί να αντιστρέψει την πληρωμή (αν και αυτό είναι σπάνιο).';
+	@override String get offersGuidline8 => '8). Τα ορόσημα/εργασίες που ολοκληρώνετε συνήθως καταγράφονται στα τείχη προσφορών εντός λίγων λεπτών από την ολοκλήρωσή τους, αλλά σε ορισμένες περιπτώσεις, μπορεί να χρειαστούν έως και τρεις ώρες, γι\' αυτό παρακαλούμε να είστε υπομονετικοί σε αυτές τις περιπτώσεις. Εάν το ορόσημο δεν καταχωρηθεί, επικοινωνήστε με την υποστήριξη πελατών του δικτύου Offerwall. Υπάρχει ξεχωριστή ενότητα για την Υποστήριξη Πελατών σε κάθε τείχος προσφορών στο οποίο έχετε πρόσβαση. Βεβαιωθείτε ότι ελέγχετε πάντα τα τείχη προσφορών στην εφαρμογή μας κάθε φορά που ολοκληρώνετε ένα ορόσημο για να βεβαιωθείτε ότι έχει παρακολουθηθεί.';
+	@override String get offersGuidline9 => '9). Σε περίπτωση που ενδιαφέρεστε για μια προσφορά παιχνιδιού/εφαρμογής, αλλά είχατε προηγουμένως εγκαταστήσει αυτό το παιχνίδι/εφαρμογή στη συσκευή σας, μην επιχειρήσετε την προσφορά που σχετίζεται με αυτήν την εφαρμογή/παιχνίδι. Ενδέχεται να μην λάβετε πίστωση για τη δραστηριότητά σας.';
+	@override String get offersGuidline10 => '10). Να διαβάζετε πάντα τις συμβουλές που παρέχονται από κάθε Προσφοροwall. Συχνά περιέχουν κρίσιμες λεπτομέρειες που μπορούν να σας βοηθήσουν να μεγιστοποιήσετε τις πιθανότητές σας για επιτυχημένη παρακολούθηση όλων των προσφορών.';
 }
 
 // Path: <root>
@@ -5221,6 +5305,20 @@ class _StringsEs implements Translations {
 	@override String get launchAdTips => 'Activar "launchAd" significa que se mostrará un anuncio cuando se inicie la aplicación y su resultado se convertirá en peso de minería USCT.';
 	@override String get help => 'Ayuda';
 	@override String get verifyOriginalMSISDN => 'Verificar el MSISDN original';
+	@override String get noLongerPopup => 'Ya no aparece';
+	@override String get encoding => 'Codificación:';
+	@override String get switchingVerificationStringEncodingMethodsTips => 'Cambiar a diferentes métodos de codificación de cadenas de verificación puede ayudar a eludir la prohibición de los operadores de telecomunicaciones.';
+	@override String get remainUnchanged => 'permanecer sin cambios';
+	@override String get offersGuidline1 => '1) Para aumentar el pago de USCT para los usuarios, nos hemos asociado con algunas de las redes de muros de ofertas más prestigiosas, como Playtime y Ayet Studios. Los usuarios pueden ganar puntos completando tareas sencillas como "Descargar y abrir aplicaciones", "Descargar y alcanzar niveles" y "Divertirse jugando", entre otras. Lea la siguiente información para comprender la información crucial.';
+	@override String get offersGuidline2 => '2). Los usuarios ganarán puntos al completar las ofertas. A diferencia de los anuncios, estos puntos tienen una tasa de cambio predefinida en relación con USDT. Dependiendo del pago de las redes, la conversión entre puntos y USDT puede variar entre 235 000 puntos = 1 USDT y 250 000 puntos = 1 USDT.\n\nEstos puntos se pueden convertir a USDT en un plazo de seis a siete semanas tras el fin de mes. Por ejemplo: si acumula 400 000 puntos en agosto, podrá canjearlos por 1,68 USDT antes del 15 de octubre (fecha en que recibimos el pago de agosto). Posteriormente, el pago de los puntos acumulados en septiembre se liquidará antes del 15 de noviembre, y así sucesivamente. Este retraso se debe principalmente a los ciclos de pago en el nicho de marketing de resultados y a que estas redes de muros de ofertas nos pagan a 30 días.\n\nEstamos empezando con los muros de ofertas y, con el tiempo, a medida que mejore nuestro flujo de caja, nos gustaría reducir el plazo de retiro. Hasta entonces, agradecemos su paciencia.';
+	@override String get offersGuidline3 => '3) También acumularás puntos cada vez que tus referidos completen una oferta. Ganarás puntos equivalentes al 43 % de los puntos obtenidos por tus referidos directos. Por ejemplo: si tu referido directo ha obtenido 7000 puntos, recibirás automáticamente 3000 puntos.';
+	@override String get offersGuidline4 => '4) Si te interesa una app o un juego en particular de una oferta y quieres probarlo, visita la app o el juego a través del enlace o botón proporcionado en el muro de ofertas. Si no lo haces, no se registrarán los hitos ni la actividad.';
+	@override String get offersGuidline5 => '5) Nunca uses una VPN para acceder a estas ofertas. Quedarás descalificado por las redes de ofertas.';
+	@override String get offersGuidline6 => '6) Las redes de Offerwall podrían solicitarle que proporcione los permisos pertinentes. Hágalo para garantizar el correcto seguimiento de sus hitos; de lo contrario, podría no recibir las recompensas por las ofertas.';
+	@override String get offersGuidline7 => '7) PlayTime ofrece una combinación única de ofertas de juegos donde los usuarios reciben recompensas simplemente por jugar. Sin embargo, asegúrate de progresar en los niveles de estos juegos en lugar de simplemente pasar el rato; de lo contrario, el anunciante podría revertir el pago (aunque es poco frecuente).';
+	@override String get offersGuidline8 => '8) Los hitos o tareas que completes suelen registrarse en los Offerwalls en cuestión de minutos, pero en algunos casos puede tardar hasta tres horas, así que ten paciencia. Si el hito no se registra, contacta con el servicio de atención al cliente de la red Offerwall. Hay una sección independiente para el servicio de atención al cliente en cada Offerwall al que accedas. Asegúrate de consultar los Offerwalls en nuestra app cada vez que completes un hito para asegurarte de que se haya registrado.';
+	@override String get offersGuidline9 => '9) Si te interesa una oferta de un juego o aplicación, pero ya la tenías instalada en tu dispositivo, no intentes usarla. Es posible que no se te acredite tu actividad.';
+	@override String get offersGuidline10 => '10) Lea siempre los consejos de cada Offerwall. Suelen contener detalles cruciales que pueden ayudarle a maximizar sus posibilidades de éxito en el seguimiento de las ofertas.';
 }
 
 // Path: <root>
@@ -5947,6 +6045,20 @@ class _StringsFr implements Translations {
 	@override String get launchAdTips => 'L\'activation de "launchAd" signifie qu\'une publicité sera affichée au lancement de l\'application et que son résultat sera converti en poids minier USCT.';
 	@override String get help => 'Aide';
 	@override String get verifyOriginalMSISDN => 'Vérifier le MSISDN d\'origine';
+	@override String get noLongerPopup => 'N\'apparaît plus';
+	@override String get encoding => 'Codage:';
+	@override String get switchingVerificationStringEncodingMethodsTips => 'Le passage à différentes méthodes de codage des chaînes de vérification peut aider à contourner l’interdiction des opérateurs de télécommunications.';
+	@override String get remainUnchanged => 'rester inchangé';
+	@override String get offersGuidline1 => '1) Afin d\'augmenter les gains USCT pour nos utilisateurs, nous avons noué des partenariats avec des réseaux d\'offres réputés comme Playtime et Ayet Studios. Les utilisateurs peuvent gagner des points en effectuant des tâches simples comme « Télécharger des applications et les ouvrir », « Télécharger des jeux et atteindre des niveaux », « Passer du temps sur plusieurs jeux », etc. Veuillez lire les informations ci-dessous pour en comprendre les points essentiels.';
+	@override String get offersGuidline2 => '2) Les utilisateurs gagneront des points en complétant les offres. Contrairement aux publicités, ces points ont un taux de change préétabli par rapport aux USDT. Selon le paiement des réseaux, la conversion entre points et USDT peut varier de 235 000 points = 1 USDT à 250 000 points = 1 USDT.\n\nCes points peuvent être convertis en USDT dans les six à sept semaines suivant la fin du mois. Par exemple : si vous cumulez 400 000 points au mois d’août, vous pourrez les échanger contre 1,68 USDT avant le 15 octobre (date à laquelle nous recevons le paiement du mois d’août). Par la suite, le paiement des points accumulés en septembre sera effectué avant le 15 novembre, et ainsi de suite. Ce retard est principalement dû aux cycles de paiement du secteur du « marketing à la performance » et au fait que ces réseaux de murs d’offres nous rémunèrent sur une base nette à 30 %.\n\nNous commençons tout juste à utiliser les Offerwalls et, au fil du temps et à mesure que notre trésorerie s\'améliorera, nous aimerions réduire ce délai de retrait. En attendant, nous vous remercions de votre patience.';
+	@override String get offersGuidline3 => '3) Vous cumulerez également des points chaque fois que vos filleuls complèteront une offre. Vous gagnerez un montant de points équivalent à « 43 % des points gagnés par vos filleuls directs ». Par exemple : si votre filleul direct a cumulé 7 000 points, vous recevrez automatiquement 3 000 points.';
+	@override String get offersGuidline4 => '4) Si vous êtes intéressé par une application ou un jeu en particulier et souhaitez l\'essayer, veuillez vous rendre sur l\'application ou le jeu via le lien/bouton fourni dans le mur d\'offres. Dans le cas contraire, les étapes et l\'activité ne seront pas suivies.';
+	@override String get offersGuidline5 => '5) N\'utilisez jamais de VPN pour accéder à ces offres. Vous seriez disqualifié par les réseaux d\'offres.';
+	@override String get offersGuidline6 => '6). Les réseaux Offerwall peuvent vous demander de fournir les autorisations nécessaires. Veuillez le faire afin de garantir le suivi de vos étapes clés, sans quoi vous risquez de ne pas être récompensé pour les offres.';
+	@override String get offersGuidline7 => '7) PlayTime propose une offre unique de jeux où les utilisateurs sont récompensés simplement pour leur temps passé sur les jeux. Cependant, assurez-vous de progresser dans les niveaux de ces jeux au lieu de simplement tuer le temps, sinon l\'annonceur pourrait annuler le paiement (bien que cela soit rare).';
+	@override String get offersGuidline8 => '8) Les étapes/tâches que vous avez complétées sont généralement enregistrées sur les Offerwalls quelques minutes après leur achèvement, mais dans certains cas, cela peut prendre jusqu\'à trois heures ; veuillez donc patienter. Si l\'étape n\'est pas enregistrée, veuillez contacter le service client du réseau Offerwall. Une section dédiée au service client est disponible sur chaque Offerwall auquel vous accédez. Assurez-vous de toujours consulter les Offerwalls dans notre application chaque fois que vous franchissez une étape pour vous assurer qu\'elle a bien été suivie.';
+	@override String get offersGuidline9 => '9) Si vous êtes intéressé par une offre de jeu ou d\'application, mais que vous l\'aviez déjà installée sur votre appareil, veuillez ne pas tenter de participer à l\'offre correspondante. Votre activité pourrait ne pas être créditée.';
+	@override String get offersGuidline10 => '10) Lisez toujours les conseils fournis par chaque Offerwall. Ils contiennent souvent des informations cruciales qui peuvent vous aider à maximiser vos chances de succès dans le suivi des offres.';
 }
 
 // Path: <root>
@@ -6230,10 +6342,10 @@ class _StringsHi implements Translations {
 	@override String get totalAllocation => 'कुल आवंटन';
 	@override String get miningRatio => 'माइनिंग अनुपात';
 	@override Map<String, String> get billion => {
-		'300': '300 बिलियन',
-		'180': '180 बिलियन',
 		'30': '30 बिलियन',
 		'60': '60 बिलियन',
+		'180': '180 बिलियन',
+		'300': '300 बिलियन',
 	};
 	@override String get watchAdsToSupportDevelopers => 'डेवलपर्स का समर्थन करने के लिए विज्ञापन देखें';
 	@override String get loadingAdcomponents => 'विज्ञापन घटकों को लोड किया जा रहा है...';
@@ -6669,6 +6781,20 @@ class _StringsHi implements Translations {
 	@override String get launchAdTips => '"launchAd" चालू करने का अर्थ है कि ऐप लॉन्च होने पर एक विज्ञापन प्रदर्शित किया जाएगा, और इसका परिणाम USCT खनन भार में परिवर्तित हो जाएगा।';
 	@override String get help => 'सहायता';
 	@override String get verifyOriginalMSISDN => 'मूल MSISDN सत्यापित करें';
+	@override String get noLongerPopup => 'अब पॉप अप नहीं होगा';
+	@override String get encoding => 'एनकोडिंग:';
+	@override String get switchingVerificationStringEncodingMethodsTips => 'विभिन्न सत्यापन स्ट्रिंग एनकोडिंग विधियों पर स्विच करने से दूरसंचार ऑपरेटरों के प्रतिबंध को दरकिनार करने में मदद मिल सकती है।';
+	@override String get remainUnchanged => 'अपरिवर्तित ही रहेंगे';
+	@override String get offersGuidline1 => '1) उपयोगकर्ताओं के लिए USCT भुगतान बढ़ाने के प्रयास में, हमने Playtime और Ayet Studios जैसे कुछ बेहद प्रतिष्ठित ऑफ़रवॉल नेटवर्क्स के साथ साझेदारी की है। उपयोगकर्ता "ऐप्स डाउनलोड करें और खोलें", "गेम डाउनलोड करें और लेवल तक पहुँचें", "गेम्स में समय बिताएँ" आदि जैसे सरल कार्यों को पूरा करके पॉइंट अर्जित कर सकते हैं। महत्वपूर्ण जानकारी समझने के लिए कृपया नीचे दी गई जानकारी पढ़ें।';
+	@override String get offersGuidline2 => '2). ऑफ़र पूरा करने पर उपयोगकर्ताओं को पॉइंट मिलेंगे। विज्ञापनों के विपरीत, इन पॉइंट्स का USDT के सापेक्ष एक पहले से ही स्थापित विनिमय अनुपात होता है। नेटवर्क से प्राप्त भुगतान के आधार पर, पॉइंट्स और USDT के बीच रूपांतरण 235,000 पॉइंट्स = 1 USDT से लेकर 250,000 पॉइंट्स = 1 USDT तक हो सकता है।\n\nइन पॉइंट्स को किसी भी महीने के अंत के छह से सात हफ़्तों के भीतर USDT में बदला जा सकता है। उदाहरण के लिए: यदि आप अगस्त महीने में 400,000 पॉइंट्स जमा करते हैं, तो आप 15 अक्टूबर तक (जब हमें अगस्त महीने का भुगतान प्राप्त होगा) इन 400,000 पॉइंट्स को 1.68 USDT के रूप में भुना सकेंगे। इसके बाद, सितंबर महीने में जमा किए गए पॉइंट्स का भुगतान 15 नवंबर तक किया जाएगा, और इसी तरह आगे भी। यह देरी मुख्य रूप से "परफ़ॉर्मेंस मार्केटिंग" क्षेत्र में भुगतान चक्रों और इस तथ्य के कारण है कि ये ऑफ़रवॉल नेटवर्क हमें नेट-30 आधार पर भुगतान करते हैं।\n\nहम अभी ऑफ़रवॉल के साथ शुरुआत कर रहे हैं, और समय के साथ, जैसे-जैसे हमारा नकदी प्रवाह बेहतर होता जाएगा, हम इस निकासी समय-सीमा को कम करना चाहेंगे। तब तक, हम आपके धैर्य की सराहना करते हैं।';
+	@override String get offersGuidline3 => '3). जब भी आपके रेफ़रल कोई ऑफ़र पूरा करेंगे, आपको पॉइंट्स भी मिलेंगे। आपको "आपके डायरेक्ट रेफ़रल द्वारा अर्जित पॉइंट्स के 43%" के बराबर पॉइंट्स मिलेंगे। उदाहरण के लिए: अगर आपके डायरेक्ट रेफ़रल ने 7000 पॉइंट्स अर्जित किए हैं, तो आपको अपने आप 3000 पॉइंट्स क्रेडिट कर दिए जाएँगे।';
+	@override String get offersGuidline4 => '4) अगर आप किसी ऑफ़र से संबंधित किसी खास ऐप/गेम में रुचि रखते हैं और उसे आज़माना चाहते हैं, तो कृपया ऑफ़रवॉल में दिए गए लिंक/बटन के ज़रिए उस ऐप/गेम पर जाएँ। अगर आप ऐसा नहीं करते हैं, तो माइलस्टोन और गतिविधि ट्रैक नहीं की जाएँगी।';
+	@override String get offersGuidline5 => '5) इन ऑफ़र का लाभ उठाते समय कभी भी VPN का इस्तेमाल न करें। ऑफ़रवॉल नेटवर्क आपको अयोग्य घोषित कर देंगे।';
+	@override String get offersGuidline6 => '6). ऑफ़रवॉल नेटवर्क आपको प्रासंगिक अनुमतियाँ प्रदान करने के लिए कह सकते हैं। कृपया ऐसा करें ताकि यह सुनिश्चित हो सके कि आपके माइलस्टोन ठीक से ट्रैक किए जा रहे हैं, अन्यथा आपको ऑफ़र के लिए पुरस्कृत नहीं किया जा सकता है।';
+	@override String get offersGuidline7 => '7). PlayTime गेम ऑफ़र का एक अनूठा मिश्रण प्रदान करता है जहाँ उपयोगकर्ताओं को केवल गेम में समय बिताने के लिए पुरस्कृत किया जाता है। हालाँकि, कृपया सुनिश्चित करें कि आप केवल समय बर्बाद करने के बजाय इन खेलों के स्तरों से आगे बढ़ रहे हैं, अन्यथा विज्ञापनदाता भुगतान वापस कर सकता है (हालाँकि ऐसा दुर्लभ है)।';
+	@override String get offersGuidline8 => '8). आपके द्वारा पूरे किए गए माइलस्टोन/कार्य आमतौर पर कुछ ही मिनटों में ऑफ़रवॉल पर दर्ज हो जाते हैं, लेकिन कुछ मामलों में, इसमें तीन घंटे तक का समय लग सकता है, इसलिए कृपया ऐसे मामलों में धैर्य रखें। अगर माइलस्टोन दर्ज नहीं होता है, तो कृपया ऑफ़रवॉल नेटवर्क से संबंधित ग्राहक सहायता से संपर्क करें। आपके द्वारा एक्सेस किए जाने वाले प्रत्येक ऑफ़रवॉल में ग्राहक सहायता के लिए एक अलग सेक्शन होता है। हर बार जब आप कोई माइलस्टोन पूरा करते हैं, तो यह सुनिश्चित करने के लिए कि उसे ट्रैक किया गया है, हमारे ऐप में ऑफ़रवॉल की जाँच अवश्य करें।';
+	@override String get offersGuidline9 => '9) अगर आप किसी गेम/ऐप ऑफ़र में रुचि रखते हैं, लेकिन आपके डिवाइस में वह गेम/ऐप पहले से इंस्टॉल है, तो कृपया उस ऐप/गेम से संबंधित ऑफ़र का इस्तेमाल न करें। हो सकता है कि आपको आपकी गतिविधि का क्रेडिट न मिले।';
+	@override String get offersGuidline10 => '10) हर ऑफ़रवॉल द्वारा दिए गए सुझावों को हमेशा पढ़ें। इनमें अक्सर महत्वपूर्ण विवरण होते हैं जो ऑफ़र पर सफलतापूर्वक नज़र रखने की आपकी संभावनाओं को अधिकतम करने में मदद कर सकते हैं।';
 }
 
 // Path: <root>
@@ -6954,10 +7080,10 @@ class _StringsIt implements Translations {
 	@override String get totalAllocation => 'Allocazione totale';
 	@override String get miningRatio => 'Rapporto di mining';
 	@override Map<String, String> get billion => {
-		'300': '300 miliardi',
-		'180': '180 miliardi',
 		'30': '30 miliardi',
 		'60': '60 miliardi',
+		'180': '180 miliardi',
+		'300': '300 miliardi',
 	};
 	@override String get watchAdsToSupportDevelopers => 'Guarda annunci per supportare gli sviluppatori';
 	@override String get loadingAdcomponents => 'Caricamento componenti annunci…';
@@ -7393,6 +7519,20 @@ class _StringsIt implements Translations {
 	@override String get launchAdTips => 'Attivando "launchAd" verrà visualizzato un annuncio quando l\'app viene avviata e il suo risultato verrà convertito in peso di mining USCT.';
 	@override String get help => 'Aiuto';
 	@override String get verifyOriginalMSISDN => 'Verifica MSISDN originale';
+	@override String get noLongerPopup => 'Non compare più';
+	@override String get encoding => 'Codifica:';
+	@override String get switchingVerificationStringEncodingMethodsTips => 'Passare a metodi di codifica delle stringhe di verifica diversi può aiutare ad aggirare il divieto imposto agli operatori di telecomunicazioni.';
+	@override String get remainUnchanged => 'rimangono invariati';
+	@override String get offersGuidline1 => '1). Nel tentativo di aumentare il guadagno USCT per gli utenti, abbiamo stretto accordi con alcune delle reti di offerwall più rinomate, come Playtime e Ayet Studios. Gli utenti possono guadagnare punti completando semplici attività come "Scarica app e apri", "Scarica giochi e raggiungi livelli", "Trascorri del tempo giocando", ecc. Si prega di leggere le informazioni seguenti per comprendere i dettagli cruciali.';
+	@override String get offersGuidline2 => '2). Gli utenti guadagneranno punti completando le offerte. A differenza degli annunci, questi punti hanno un rapporto di cambio già stabilito in relazione agli USDT. A seconda del pagamento ricevuto dalle reti, la conversione tra punti e USDT può variare da 235.000 punti = 1 USDT a 250.000 punti = 1 USDT.\n\nQuesti punti possono essere convertiti in USDT entro sei o sette settimane dalla fine di qualsiasi mese. Ad esempio: se accumuli 400.000 punti nel mese di agosto, potrai riscattare questi 400.000 punti come 1,68 USDT entro il 15 ottobre (data in cui riceveremo il pagamento per il mese di agosto). Successivamente, il pagamento per i punti accumulati nel mese di settembre verrà effettuato entro il 15 novembre e così via. Questo ritardo è dovuto principalmente ai cicli di pagamento nella nicchia del "performance marketing" e al fatto che queste reti di offerwall ci pagano su base Net-30.\n\nStiamo appena iniziando a utilizzare le offerte a muro e, con il tempo, man mano che il nostro flusso di cassa migliorerà, vorremmo ridurre i tempi di prelievo. Nel frattempo, apprezziamo la vostra pazienza.';
+	@override String get offersGuidline3 => '3). Accumulerai punti anche ogni volta che i tuoi referral completano un\'offerta. Guadagnerai punti equivalenti al "43% dei punti guadagnati dai tuoi referral diretti". Ad esempio: se il tuo referral diretto ha guadagnato 7000 punti, ti verranno automaticamente accreditati 3000 punti.';
+	@override String get offersGuidline4 => '4) Se sei interessato a un\'app/gioco specifico relativo a un\'offerta e desideri provarlo, visita l\'app/gioco tramite il link/pulsante fornito all\'interno dell\'offerta. In caso contrario, i traguardi e l\'attività non verranno monitorati.';
+	@override String get offersGuidline5 => '5). Non utilizzare mai una VPN per accedere a queste offerte. Verrai squalificato dalle reti di Offerwall.';
+	@override String get offersGuidline6 => '6). Le reti di Offerwall potrebbero richiederti di fornire le autorizzazioni necessarie. Ti preghiamo di farlo per garantire che i tuoi traguardi vengano monitorati correttamente, altrimenti potresti non essere ricompensato per le offerte.';
+	@override String get offersGuidline7 => '7). PlayTime offre un mix unico di offerte di gioco in cui gli utenti vengono premiati semplicemente per il tempo trascorso giocando. Tuttavia, assicurati di progredire nei livelli di questi giochi invece di limitarti a perdere tempo, altrimenti l\'inserzionista potrebbe annullare il pagamento (anche se è raro).';
+	@override String get offersGuidline8 => '8). Le milestone/attività completate vengono solitamente registrate su tutti gli offerwall entro pochi minuti dal completamento, ma in alcuni casi potrebbero essere necessarie fino a tre ore, quindi sii paziente in questi casi. Se la milestone non viene registrata, contatta l\'assistenza clienti della rete Offerwall. È presente una sezione dedicata all\'assistenza clienti in ogni Offerwall a cui accedi. Assicurati sempre di controllare gli offerwall all\'interno della nostra app ogni volta che completi una milestone per assicurarti che sia stata tracciata.';
+	@override String get offersGuidline9 => '9) Se sei interessato a un\'offerta relativa a un gioco/app, ma in precedenza avevi installato quel gioco/app sul tuo dispositivo, ti preghiamo di non tentare l\'offerta relativa a quell\'app/gioco. Potresti non ricevere alcun accredito per la tua attività.';
+	@override String get offersGuidline10 => '10) Leggi sempre i suggerimenti forniti da ogni Offerwall. Spesso contengono dettagli cruciali che possono aiutarti a massimizzare le tue possibilità di successo nel tracciamento delle offerte.';
 }
 
 // Path: <root>
@@ -8116,6 +8256,20 @@ class _StringsJa implements Translations {
 	@override String get launchAdTips => '「launchAd」をオンにすると、アプリの起動時に広告が表示され、その結果が USCT マイニング重量に変換されます。';
 	@override String get help => 'ヘルプ';
 	@override String get verifyOriginalMSISDN => '元のMSISDNを確認する';
+	@override String get noLongerPopup => 'ポップアップしなくなりました';
+	@override String get encoding => 'エンコーディング：';
+	@override String get switchingVerificationStringEncodingMethodsTips => '異なる検証文字列エンコード方式に切り替えると、通信事業者の禁止を回避できる場合があります。';
+	@override String get remainUnchanged => '変わらない';
+	@override String get offersGuidline1 => '1) USCTのユーザーへの報酬を増やすため、PlaytimeやAyet Studiosといった評判の高いオファーウォールネットワークと提携しました。ユーザーは「アプリをダウンロードして開く」「ゲームをダウンロードしてレベルアップ」「ゲーム間で時間を過ごす」といった簡単なタスクを完了することでポイントを獲得できます。重要な情報については、以下の情報をお読みください。';
+	@override String get offersGuidline2 => '2) ユーザーはオファーを完了することでポイントを獲得します。広告とは異なり、これらのポイントはUSDTとの交換比率が既に設定されています。ネットワークからの支払いに応じて、ポイントとUSDTの交換比率は235,000ポイント = 1 USDTから250,000ポイント = 1 USDTの範囲となります。\n\nこれらのポイントは、月末から6～7週間以内にUSDTに交換できます。例えば、8月に400,000ポイントを獲得した場合、10月15日（8月分の支払い日）までに400,000ポイントを1.68 USDTとして交換できます。その後、9月に獲得したポイントの支払いは11月15日までに確定し、以降も同様に繰り越されます。この遅延は主に、「パフォーマンスマーケティング」ニッチにおける支払いサイクルと、これらのオファーウォールネットワークがNet-30ベースで支払いを行うという事実によるものです。\n\nオファーウォールはまだ始まったばかりですが、今後キャッシュフローが改善していくにつれて、出金にかかる期間を短縮していきたいと考えています。それまでは、ご理解とご協力をお願いいたします。';
+	@override String get offersGuidline3 => '3）紹介者がオファーを完了するたびにポイントが貯まります。「直接紹介者が獲得したポイントの43%」に相当するポイントを獲得できます。例えば、直接紹介者が7000ポイントを獲得した場合、あなたには3000ポイントが自動的に付与されます。';
+	@override String get offersGuidline4 => '4) オファー対象のアプリやゲームに興味があり、試してみたい場合は、オファーウォール内のリンクまたはボタンからアプリやゲームにアクセスしてください。アクセスしない場合、マイルストーンやアクティビティは追跡されません。';
+	@override String get offersGuidline5 => '5）これらのオファーにアクセスする際は、VPNを使用しないでください。オファーウォールネットワークによって失格となります。';
+	@override String get offersGuidline6 => '6）オファーウォールネットワークから、必要な権限の提供を求められる場合があります。マイルストーンが正しく追跡されるため、権限の提供をお願いいたします。権限がない場合、オファーの報酬を受け取れない可能性があります。';
+	@override String get offersGuidline7 => '7）PlayTimeは、ユーザーがゲームで時間を費やすだけで報酬を獲得できる、独自のゲームオファーを提供しています。ただし、単に時間をつぶすだけでなく、ゲームのレベルアップも確実に行うようにしてください。そうしないと、広告主が報酬を撤回する可能性があります（ただし、稀です）。';
+	@override String get offersGuidline8 => '8) 完了したマイルストーン/タスクは通常、完了後数分以内にオファーウォール全体に反映されますが、場合によっては最大3時間かかることもありますので、その際はしばらくお待ちください。マイルストーンが反映されない場合は、オファーウォールネットワークのカスタマーサポートまでお問い合わせください。アクセスするオファーウォールごとにカスタマーサポート専用のセクションがあります。マイルストーンを達成するたびに、アプリ内のオファーウォールで追跡されていることを確認してください。';
+	@override String get offersGuidline9 => '9) ゲーム/アプリのオファーに興味があるものの、既にデバイスにそのゲーム/アプリがインストールされている場合は、そのアプリ/ゲームに関連するオファーをご利用にならないでください。アクティビティがクレジットされない可能性があります。';
+	@override String get offersGuidline10 => '10）各オファーウォールで提供されているヒントを必ず読んでください。オファーウォール全体におけるトラッキング成功率を最大化するのに役立つ重要な詳細が含まれていることがよくあります。';
 }
 
 // Path: <root>
@@ -8841,6 +8995,20 @@ class _StringsKo implements Translations {
 	@override String get launchAdTips => '"launchAd"를 켜면 앱이 실행될 때 광고가 표시되고, 그 결과가 USCT 마이닝 가중치로 변환됩니다.';
 	@override String get help => '도움말';
 	@override String get verifyOriginalMSISDN => '원래 MSISDN 확인';
+	@override String get noLongerPopup => '더 이상 팝업되지 않습니다';
+	@override String get encoding => '부호화:';
+	@override String get switchingVerificationStringEncodingMethodsTips => '다른 검증 문자열 인코딩 방법으로 전환하면 통신 사업자 금지를 우회하는 데 도움이 될 수 있습니다.';
+	@override String get remainUnchanged => '변함없이 유지되다';
+	@override String get offersGuidline1 => '1) 사용자들의 USCT 지급액을 높이기 위해 Playtime 및 Ayet Studios와 같은 평판이 좋은 오퍼월 네트워크와 제휴를 맺었습니다. 사용자들은 "앱 다운로드 및 실행", "게임 다운로드 및 레벨 달성", "여러 게임에서 시간 보내기" 등의 간단한 작업을 완료하여 포인트를 획득할 수 있습니다. 중요한 정보를 이해하려면 아래 정보를 읽어주세요.';
+	@override String get offersGuidline2 => '2). 사용자는 오퍼를 완료하면 포인트를 적립합니다. 광고와 달리, 이 포인트는 USDT 대비 이미 정해진 환율을 가지고 있습니다. 네트워크 지급액에 따라 포인트와 USDT의 환산 비율은 23만 5천 포인트 = 1 USDT에서 25만 포인트 = 1 USDT까지입니다.\n\n이 포인트는 매월 말일로부터 6~7주 이내에 USDT로 환산될 수 있습니다. 예를 들어, 8월에 40만 포인트를 적립했다면 10월 15일(8월 지급일)까지 이 40만 포인트를 1.68 USDT로 교환할 수 있습니다. 이후 9월에 적립된 포인트는 11월 15일에 정산되며, 이후 지급은 11월 15일에 이루어집니다. 이러한 지연은 주로 "성과 마케팅" 분야의 지급 주기와 오퍼월 네트워크가 30일 순 지급 방식을 사용하기 때문입니다.\n\n저희는 이제 막 오퍼월(offerwall)을 도입하기 시작했으며, 시간이 지남에 따라 자금 흐름이 개선됨에 따라 출금 기간을 단축하고자 합니다. 그때까지 양해 부탁드립니다.';
+	@override String get offersGuidline3 => '3) 추천인이 제안을 완료할 때마다 포인트가 적립됩니다. 직접 추천인이 적립한 포인트의 43%에 해당하는 포인트가 적립됩니다. 예를 들어, 직접 추천인이 7,000포인트를 적립했다면 3,000포인트가 자동으로 적립됩니다.';
+	@override String get offersGuidline4 => '4) 특정 오퍼와 관련된 앱/게임에 관심이 있으시고 체험해 보고 싶으시다면, 오퍼월 내에 제공된 링크/버튼을 통해 해당 앱/게임을 방문하세요. 그렇지 않으면 마일스톤 및 활동 내역이 추적되지 않습니다.';
+	@override String get offersGuidline5 => '5) 이러한 혜택을 이용하는 동안 VPN을 사용하지 마세요. 오퍼월 네트워크에서 제외됩니다.';
+	@override String get offersGuidline6 => '6) Offerwall 네트워크에서 관련 권한을 요청하는 메시지가 표시될 수 있습니다. 마일스톤이 제대로 추적되도록 권한을 부여해 주시기 바랍니다. 그렇지 않으면 오퍼에 대한 보상을 받지 못할 수 있습니다.';
+	@override String get offersGuidline7 => '7) PlayTime은 사용자가 게임 내에서 시간을 보내는 것만으로도 보상을 받을 수 있는 독특한 게임 상품을 제공합니다. 하지만 단순히 시간을 보내기보다는 게임의 레벨을 진행해야 합니다. 그렇지 않으면 광고주가 보상을 취소할 수 있습니다(물론 드문 경우지만).';
+	@override String get offersGuidline8 => '8) 완료하신 마일스톤/작업은 일반적으로 완료 후 몇 분 이내에 오퍼월 전체에 등록되지만, 경우에 따라 최대 3시간까지 소요될 수 있으니 양해 부탁드립니다. 마일스톤이 등록되지 않을 경우, 오퍼월 네트워크 관련 고객 지원팀에 문의해 주세요. 모든 오퍼월에는 고객 지원팀이 별도로 마련되어 있습니다. 마일스톤을 완료할 때마다 앱 내 오퍼월을 확인하여 마일스톤이 제대로 추적되었는지 확인하세요.';
+	@override String get offersGuidline9 => '9) 게임/앱 혜택에 관심이 있지만 이전에 기기에 해당 게임/앱을 설치한 적이 있는 경우, 해당 앱/게임과 관련된 혜택을 시도하지 마세요. 활동 내역이 적립되지 않을 수 있습니다.';
+	@override String get offersGuidline10 => '10) 각 오퍼월에서 제공하는 팁을 항상 읽어보세요. 여기에는 오퍼 전반의 추적 성공률을 극대화하는 데 도움이 되는 중요한 정보가 포함되어 있는 경우가 많습니다.';
 }
 
 // Path: <root>
@@ -9395,7 +9563,7 @@ class _StringsNl implements Translations {
 	@override String get receiveAddress => 'Ontvang adres:';
 	@override String get hangingAmount => 'Uitstaande';
 	@override String get points => 'Punten: ';
-	@override String get pendingPointsTips => 'Punkty odnoszą się do ważonej kwoty, która nie została jeszcze potwierdzona i porównana z reklamodawcami. \n\nWspółczynnik realizacji różni się w zależności od kanału, a ostateczna kwota rozliczenia opiera się na rzeczywistej kwocie rozliczenia z kanałem';
+	@override String get pendingPointsTips => 'Het puntenbedrag verwijst naar het gewogen bedrag dat nog niet is bevestigd en vergeleken met de adverteerder. \nHet inwisselingspercentage varieert per kanaal en het uiteindelijke vereffeningsbedrag is gebaseerd op het werkelijke vereffeningsbedrag van het kanaal.';
 	@override String get received => 'Ontvangen';
 	@override String get processing => 'Verwerken';
 	@override String get replied => 'Beantwoord';
@@ -9566,6 +9734,20 @@ class _StringsNl implements Translations {
 	@override String get launchAdTips => 'Als u "launchAd" inschakelt, wordt er een advertentie weergegeven wanneer de app wordt gestart en wordt het resultaat omgezet in USCT-mijngewicht.';
 	@override String get help => 'Hulp';
 	@override String get verifyOriginalMSISDN => 'Originele MSISDN verifiëren';
+	@override String get noLongerPopup => 'Niet meer opduiken';
+	@override String get encoding => 'Codering:';
+	@override String get switchingVerificationStringEncodingMethodsTips => 'Door over te schakelen op andere verificatiereekscoderingsmethoden, kan het verbod van telecomoperatoren worden omzeild.';
+	@override String get remainUnchanged => 'onveranderd blijven';
+	@override String get offersGuidline1 => '1). Om de USCT-uitbetaling voor gebruikers te verhogen, werken we samen met een aantal gerenommeerde offerwall-netwerken zoals Playtime en Ayet Studios. Gebruikers kunnen punten verdienen door eenvoudige taken uit te voeren, zoals "Apps downloaden en openen", "Games downloaden en levels bereiken", "Tijd besteden aan games", enz. Lees de onderstaande informatie aandachtig door om de belangrijkste informatie te begrijpen.';
+	@override String get offersGuidline2 => '2). Gebruikers verdienen punten door de aanbiedingen te voltooien. In tegenstelling tot advertenties hebben deze punten een reeds vastgestelde wisselkoers ten opzichte van USDT. Afhankelijk van de uitbetaling van de netwerken kan de conversie tussen punten en USDT variëren van 235.000 punten = 1 USDT tot 250.000 punten = 1 USDT.\n\nDeze punten kunnen binnen zes tot zeven weken na het einde van een maand worden omgezet naar USDT. Bijvoorbeeld: als u in augustus 400.000 punten verzamelt, kunt u deze 400.000 punten inwisselen voor 1,68 USDT tot 15 oktober (wanneer wij de uitbetaling voor de maand augustus ontvangen). Vervolgens wordt de uitbetaling voor de in september verzamelde punten uiterlijk 15 november verrekend, enzovoort. Deze vertraging is voornamelijk te wijten aan de betalingscycli in de niche van "performance marketing" en het feit dat deze offerwall-netwerken ons op basis van Net-30 uitbetalen.\n\nWe zijn nog maar net begonnen met de offerwalls en naarmate onze cashflow verbetert, willen we deze opnametermijn graag verkorten. Tot die tijd stellen we uw geduld op prijs.';
+	@override String get offersGuidline3 => '3). Je spaart ook punten elke keer dat je referrals een aanbieding voltooien. Je verdient punten gelijk aan "43% van de punten die je directe referrals hebben verdiend". Bijvoorbeeld: als je directe referral 7000 punten heeft verdiend, krijg je automatisch 3000 punten.';
+	@override String get offersGuidline4 => '4). Als je geïnteresseerd bent in een specifieke app/game die bij een aanbieding hoort en deze wilt uitproberen, ga dan naar de app/game via de link/knop in de aanbiedingspagina. Doe je dit niet, dan worden de mijlpalen en activiteit niet bijgehouden.';
+	@override String get offersGuidline5 => '5). Gebruik nooit een VPN wanneer u deze aanbiedingen gebruikt. U wordt dan gediskwalificeerd door de offerwall-netwerken.';
+	@override String get offersGuidline6 => '6). De Offerwall-netwerken kunnen u vragen om relevante toestemmingen te verlenen. Doe dit om ervoor te zorgen dat uw mijlpalen correct worden bijgehouden, anders ontvangt u mogelijk geen beloning voor de aanbiedingen.';
+	@override String get offersGuidline7 => '7). PlayTime biedt een unieke mix van spelaanbiedingen waarbij gebruikers worden beloond voor het simpelweg besteden van tijd aan de spellen. Zorg er echter wel voor dat je ook door de levels van deze spellen heen speelt in plaats van alleen maar tijd te doden, anders kan de adverteerder de uitbetaling terugdraaien (hoewel dit zelden voorkomt).';
+	@override String get offersGuidline8 => '8). De mijlpalen/taken die je voltooit, worden meestal binnen enkele minuten na voltooiing geregistreerd op de offerwalls, maar in sommige gevallen kan dit tot drie uur duren. Wees daarom geduldig. Als de mijlpaal niet wordt geregistreerd, neem dan contact op met de klantenservice van het Offerwall-netwerk. Er is een aparte sectie voor klantenservice voor elke Offerwall die je bezoekt. Controleer altijd de offerwalls in onze app elke keer dat je een mijlpaal voltooit om er zeker van te zijn dat deze is bijgehouden.';
+	@override String get offersGuidline9 => '9). Als je geïnteresseerd bent in een game-/app-aanbieding, maar je had die game/app al op je apparaat geïnstalleerd, probeer dan niet op de aanbieding voor die app/game in te gaan. Je krijgt mogelijk geen tegoed voor je activiteit.';
+	@override String get offersGuidline10 => '10). Lees altijd de tips die bij elke Offerwall worden gegeven. Deze bevatten vaak cruciale details die je kansen op succesvolle tracking van de aanbiedingen kunnen maximaliseren.';
 }
 
 // Path: <root>
@@ -10292,6 +10474,20 @@ class _StringsPl implements Translations {
 	@override String get launchAdTips => 'Włączenie „launchAd” oznacza, że ​​reklama będzie wyświetlana po uruchomieniu aplikacji, a jej wynik zostanie przekonwertowany na wagę wydobywczą USCT.';
 	@override String get help => 'Pomoc';
 	@override String get verifyOriginalMSISDN => 'Zweryfikuj oryginalny numer MSISDN';
+	@override String get noLongerPopup => 'Już nie wyskakuje';
+	@override String get encoding => 'Kodowanie:';
+	@override String get switchingVerificationStringEncodingMethodsTips => 'Przejście na inne metody kodowania ciągu weryfikacyjnego może pomóc ominąć zakaz operatorów telekomunikacyjnych.';
+	@override String get remainUnchanged => 'pozostają niezmienione';
+	@override String get offersGuidline1 => '1). Aby zwiększyć wypłaty USCT dla użytkowników, nawiązaliśmy współpracę z renomowanymi sieciami Offerwall, takimi jak Playtime i Ayet Studios. Użytkownicy mogą zdobywać punkty, wykonując proste zadania, takie jak „Pobieranie aplikacji i otwieranie”, „Pobieranie gier i osiąganie poziomów”, „Spędzanie czasu w grach” itp. Prosimy o zapoznanie się z poniższymi informacjami, aby zrozumieć kluczowe informacje.';
+	@override String get offersGuidline2 => '2). Użytkownicy będą zdobywać punkty za realizację ofert. W przeciwieństwie do reklam, punkty te mają ustalony kurs wymiany w stosunku do USDT. W zależności od wypłaty z sieci, przeliczenie punktów na USDT może wynosić od 235 tys. punktów = 1 USDT do 250 tys. punktów = 1 USDT.\n\nPunkty te można przeliczyć na USDT w ciągu sześciu do siedmiu tygodni od końca dowolnego miesiąca. Na przykład: jeśli zgromadzisz 400 tys. punktów w sierpniu, będziesz mógł wymienić te 400 tys. punktów na 1,68 USDT do 15 października (kiedy otrzymamy wypłatę za sierpień). Następnie wypłata za punkty zgromadzone we wrześniu zostanie rozliczona do 15 listopada i tak dalej. To opóźnienie wynika głównie z cykli płatności w niszy „marketingu efektywnościowego” oraz z faktu, że sieci Offerwall wypłacają nam środki w oparciu o zasadę Net-30.\n\nDopiero zaczynamy wprowadzać Offerwalle i z czasem, w miarę poprawy przepływów pieniężnych, chcielibyśmy skrócić ten czas wypłat. Do tego czasu dziękujemy za cierpliwość.';
+	@override String get offersGuidline3 => '3). Będziesz również gromadzić punkty za każdym razem, gdy poleceni przez Ciebie użytkownicy wypełnią ofertę. Otrzymasz punkty w wysokości „43% punktów zdobytych przez Twoich bezpośrednich poleconych”. Na przykład: jeśli Twój bezpośredni polecony użytkownik zdobędzie 7000 punktów, automatycznie otrzymasz 3000 punktów.';
+	@override String get offersGuidline4 => '4). Jeśli interesuje Cię konkretna aplikacja/gra związana z ofertą i chcesz ją wypróbować, odwiedź aplikację/grę za pomocą linku/przycisku w panelu ofert. W przeciwnym razie kamienie milowe i aktywność nie będą rejestrowane.';
+	@override String get offersGuidline5 => '5). Nigdy nie korzystaj z VPN podczas korzystania z tych ofert. Zostaniesz zdyskwalifikowany przez sieci Offerwall.';
+	@override String get offersGuidline6 => '6). Sieci Offerwall mogą poprosić Cię o podanie odpowiednich uprawnień. Zrób to, aby zapewnić prawidłowe śledzenie Twoich kamieni milowych. W przeciwnym razie możesz nie otrzymać nagród za oferty.';
+	@override String get offersGuidline7 => '7). PlayTime oferuje unikalną mieszankę gier, w których użytkownicy są nagradzani za samo spędzanie czasu w grach. Należy jednak pamiętać o tym, aby przechodzić kolejne poziomy w tych grach, a nie tylko zabijać czas, w przeciwnym razie reklamodawca może cofnąć wypłatę (choć zdarza się to rzadko).';
+	@override String get offersGuidline8 => '8). Kamienie milowe/zadania, które ukończyłeś/ukończyłaś, są zazwyczaj rejestrowane na Offerwallach w ciągu kilku minut od ich ukończenia, ale w niektórych przypadkach może to potrwać do trzech godzin, dlatego prosimy o cierpliwość. Jeśli kamień milowy nie zostanie zarejestrowany, skontaktuj się z obsługą klienta sieci Offerwall. W każdej witrynie Offerwall, do której uzyskujesz dostęp, znajduje się osobna sekcja obsługi klienta. Zawsze sprawdzaj Offerwalle w naszej aplikacji po każdym ukończeniu kamienia milowego, aby upewnić się, że został on zarejestrowany.';
+	@override String get offersGuidline9 => '9). Jeśli jesteś zainteresowany ofertą gry/aplikacji, ale miałeś ją wcześniej zainstalowaną na swoim urządzeniu, nie próbuj skorzystać z oferty dotyczącej tej gry/aplikacji. Możesz nie otrzymać punktów za swoją aktywność.';
+	@override String get offersGuidline10 => '10). Zawsze czytaj wskazówki zawarte na każdej ścianie ofert. Często zawierają one kluczowe szczegóły, które pomogą Ci zmaksymalizować szanse na skuteczne śledzenie ofert.';
 }
 
 // Path: <root>
@@ -11017,6 +11213,20 @@ class _StringsPt implements Translations {
 	@override String get launchAdTips => 'Ativar "launchAd" significa que um anúncio será exibido quando o aplicativo for iniciado, e seu resultado será convertido em peso de mineração USCT.';
 	@override String get help => 'Ajuda';
 	@override String get verifyOriginalMSISDN => 'Verificar MSISDN original';
+	@override String get noLongerPopup => 'Não aparece mais';
+	@override String get encoding => 'Codificação:';
+	@override String get switchingVerificationStringEncodingMethodsTips => 'Mudar para diferentes métodos de codificação de strings de verificação pode ajudar a contornar a proibição de operadoras de telecomunicações.';
+	@override String get remainUnchanged => 'permanecem inalterados';
+	@override String get offersGuidline1 => '1). Para aumentar o pagamento do USCT para os usuários, firmamos parcerias com algumas das redes de offerwall mais renomadas, como Playtime e Ayet Studios. Os usuários podem ganhar pontos completando tarefas simples como "Baixar Aplicativos e Abrir", "Baixar Jogos e Alcançar Níveis", "Passar Tempo em Jogos" etc. Leia as informações abaixo para entender informações cruciais.';
+	@override String get offersGuidline2 => '2) Os usuários ganharão pontos ao completar as ofertas. Ao contrário dos anúncios, esses pontos têm uma taxa de conversão já estabelecida em relação ao USDT. Dependendo do pagamento das redes, a conversão entre pontos e USDT pode variar entre 235 mil pontos = 1 USDT e 250 mil pontos = 1 USDT.\n\nEsses pontos podem ser convertidos para USDT dentro de seis a sete semanas após o final de qualquer mês. Por exemplo: se você acumular 400 mil pontos no mês de agosto, poderá resgatar esses 400 mil pontos como 1,68 USDT até 15 de outubro (que é quando recebemos o pagamento referente ao mês de agosto). Posteriormente, o pagamento dos pontos acumulados no mês de setembro será liquidado até 15 de novembro, e assim por diante. Esse atraso se deve principalmente aos ciclos de pagamento no nicho de "marketing de desempenho" e ao fato de que essas redes de offerwall nos pagam com base no Net-30.\n\nEstamos apenas começando com os offerwalls e, com o tempo, conforme nosso fluxo de caixa melhorar, gostaríamos de reduzir esse prazo de saque. Até lá, agradecemos sua paciência.';
+	@override String get offersGuidline3 => '3) Você também acumulará pontos sempre que suas indicações concluírem uma oferta. Você ganhará pontos equivalentes a "43% dos pontos ganhos por suas indicações diretas". Por exemplo: se sua indicação direta acumular 7.000 pontos, você receberá automaticamente 3.000 pontos.';
+	@override String get offersGuidline4 => '4). Se você estiver interessado em um aplicativo/jogo específico referente a uma oferta e quiser experimentá-lo, visite o aplicativo/jogo por meio do link/botão fornecido no mural de ofertas. Caso contrário, os marcos e a atividade não serão rastreados.';
+	@override String get offersGuidline5 => '5) Nunca use VPN para acessar essas ofertas. Você será desqualificado pelas redes Offerwall.';
+	@override String get offersGuidline6 => '6) As redes Offerwall podem solicitar que você forneça as permissões relevantes. Faça isso para garantir que seus marcos sejam monitorados corretamente, caso contrário, você poderá não ser recompensado pelas ofertas.';
+	@override String get offersGuidline7 => '7). O PlayTime oferece uma combinação única de ofertas de jogos, onde os usuários são recompensados simplesmente por passarem tempo jogando. No entanto, certifique-se de que você também esteja progredindo pelos níveis desses jogos, em vez de apenas passar o tempo, ou o anunciante poderá reverter o pagamento (embora isso seja raro).';
+	@override String get offersGuidline8 => '8). Os marcos/tarefas concluídos por você geralmente são registrados nos Offerwalls poucos minutos após a conclusão, mas, em certos casos, pode levar até três horas, portanto, seja paciente. Caso o marco não seja registrado, entre em contato com o suporte ao cliente da rede Offerwall. Há uma seção dedicada ao Suporte ao Cliente em cada Offerwall que você acessa. Certifique-se sempre de verificar os Offerwalls em nosso aplicativo sempre que concluir um marco para garantir que ele tenha sido rastreado.';
+	@override String get offersGuidline9 => '9). Caso você esteja interessado em uma oferta de jogo/aplicativo, mas já o tenha instalado em seu dispositivo, não tente a oferta referente a esse aplicativo/jogo. Você pode não receber créditos pela sua atividade.';
+	@override String get offersGuidline10 => '10) Leia sempre as dicas fornecidas por cada Offerwall. Elas geralmente contêm detalhes cruciais que podem ajudar a maximizar suas chances de sucesso no rastreamento de todas as ofertas.';
 }
 
 // Path: <root>
@@ -11302,10 +11512,10 @@ class _StringsRo implements Translations {
 	@override String get totalAllocation => 'Alocare totală';
 	@override String get miningRatio => 'Raport de minare';
 	@override Map<String, String> get billion => {
-		'300': '300 de miliarde',
-		'180': '180 de miliarde',
 		'30': '30 de miliarde',
 		'60': '60 de miliarde',
+		'180': '180 de miliarde',
+		'300': '300 de miliarde',
 	};
 	@override String get watchAdsToSupportDevelopers => 'Urmărește reclame pentru a sprijini dezvoltatorii';
 	@override String get loadingAdcomponents => 'Se încarcă componentele publicitare…';
@@ -11741,6 +11951,20 @@ class _StringsRo implements Translations {
 	@override String get launchAdTips => 'Activarea opțiunii «launchAd» înseamnă că o reclamă va fi afișată la lansarea aplicației, iar rezultatul acesteia va fi convertit în pondere de minat USCT.';
 	@override String get help => 'Ajutor';
 	@override String get verifyOriginalMSISDN => 'Verifică MSISDN-ul original';
+	@override String get noLongerPopup => 'Nu mai apare';
+	@override String get encoding => 'Codificare:';
+	@override String get switchingVerificationStringEncodingMethodsTips => 'Trecerea la diferite metode de codificare a șirurilor de verificare poate ajuta la ocolirea interdicției impuse operatorilor de telecomunicații.';
+	@override String get remainUnchanged => 'rămâne neschimbat';
+	@override String get offersGuidline1 => '1). În efortul de a crește plățile USCT pentru utilizatori, am colaborat cu unele dintre cele mai reputate rețele offerwall, precum Playtime și Ayet Studios. Utilizatorii pot câștiga puncte completând sarcini simple precum „Descărcați aplicații și deschideți”, „Descărcați jocuri și atingeți niveluri”, „Petreceți timp în jocuri” etc. Vă rugăm să citiți informațiile de mai jos pentru a înțelege informațiile esențiale.';
+	@override String get offersGuidline2 => '2). Utilizatorii vor câștiga puncte pentru finalizarea ofertelor. Spre deosebire de reclame, aceste puncte au un raport de schimb deja stabilit în raport cu USDT. În funcție de plata din partea rețelelor, conversia dintre puncte și USDT poate fi între 235.000 de puncte = 1 USDT și 250.000 de puncte = 1 USDT.\n\nAceste puncte pot fi convertite în USDT în termen de șase până la șapte săptămâni de la sfârșitul oricărei luni. De exemplu: Dacă acumulați 400.000 de puncte în luna august, atunci veți putea răscumpăra aceste 400.000 de puncte în 1,68 USDT până pe 15 octombrie (când primim plata pentru luna august). Ulterior, plata pentru punctele acumulate în luna septembrie va fi soluționată până pe 15 noiembrie și așa mai departe. Această întârziere se datorează în principal ciclurilor de plată din nișa „marketingului de performanță” și faptului că aceste rețele de tip „offerwall” ne plătesc pe bază Net-30.\n\nAbia am început cu ofertele și, în timp, pe măsură ce fluxul nostru de numerar se îmbunătățește, am dori să reducem acest interval de retragere. Până atunci, vă apreciem răbdarea.';
+	@override String get offersGuidline3 => '3). De asemenea, veți acumula puncte de fiecare dată când recomandările dvs. finalizează o ofertă. Veți câștiga puncte echivalente cu „43% din punctele câștigate de recomandările dvs. directe”. De exemplu: Dacă recomandarea dvs. directă a câștigat 7000 de puncte, vi se vor acorda automat 3000 de puncte.';
+	@override String get offersGuidline4 => '4). Dacă sunteți interesat de o anumită aplicație/un anumit joc care face parte dintr-o ofertă și doriți să îl/o încercați, vă rugăm să accesați aplicația/jocul prin linkul/butonul furnizat în cadrul barei de oferte. Dacă nu faceți acest lucru, etapele și activitatea nu vor fi urmărite.';
+	@override String get offersGuidline5 => '5). Nu folosiți niciodată o rețea VPN în timp ce accesați aceste oferte. Veți fi descalificat de rețelele de tip „offerwall”.';
+	@override String get offersGuidline6 => '6). Rețelele Offerwall vi se pot solicita permisiunile relevante. Vă rugăm să faceți acest lucru pentru a vă asigura că etapele importante sunt urmărite corespunzător, altfel este posibil să nu fiți recompensat pentru oferte.';
+	@override String get offersGuidline7 => '7). PlayTime oferă o combinație unică de oferte de jocuri în care utilizatorii sunt recompensați pur și simplu pentru timpul petrecut în jocuri. Cu toate acestea, asigurați-vă că progresați și voi înșivă prin nivelurile din aceste jocuri, în loc să pierdeți timpul, altfel agentul de publicitate ar putea anula plata (deși acest lucru este rar).';
+	@override String get offersGuidline8 => '8). Etapele/sarcinile finalizate de dvs. sunt de obicei înregistrate pe Offerwall-uri în câteva minute de la finalizare, dar în anumite cazuri, poate dura până la trei ore, așa că vă rugăm să aveți răbdare în astfel de cazuri. Dacă etapa nu este înregistrată, vă rugăm să contactați serviciul de asistență pentru clienți din rețeaua Offerwall. Există o secțiune separată pentru Asistență pentru clienți pe fiecare Offerwall pe care îl accesați. Asigurați-vă întotdeauna că verificați ofertewall-urile din aplicația noastră de fiecare dată când finalizați o etapă pentru a vă asigura că a fost urmărită.';
+	@override String get offersGuidline9 => '9). În cazul în care sunteți interesat de o ofertă pentru un joc/o aplicație, dar ați avut anterior jocul/aplicația respectivă instalată pe dispozitiv, vă rugăm să nu încercați oferta aferentă aplicației/jocului respectiv. Este posibil să nu fiți creditat pentru activitatea dvs.';
+	@override String get offersGuidline10 => '10). Citiți întotdeauna sfaturile oferite de fiecare Offerwall. Acestea conțin adesea detalii cruciale care vă pot ajuta să maximizați șansele de urmărire cu succes a ofertelor.';
 }
 
 // Path: <root>
@@ -12467,6 +12691,20 @@ class _StringsRu implements Translations {
 	@override String get launchAdTips => 'Включение "launchAd" означает, что при запуске приложения будет отображаться реклама, а ее результат будет преобразован в вес майнинга USCT.';
 	@override String get help => 'Помощь';
 	@override String get verifyOriginalMSISDN => 'Проверить исходный MSISDN';
+	@override String get noLongerPopup => 'Больше не всплывает';
+	@override String get encoding => 'Кодировка:';
+	@override String get switchingVerificationStringEncodingMethodsTips => 'Переход на другие методы кодирования проверочной строки может помочь обойти запрет операторов связи.';
+	@override String get remainUnchanged => 'остаются неизменными';
+	@override String get offersGuidline1 => '1). Чтобы увеличить выплаты USCT для пользователей, мы сотрудничаем с некоторыми известными сетями офферволлов, такими как Playtime и Ayet Studios. Пользователи могут зарабатывать баллы, выполняя простые задания, такие как «Скачать приложения и открыть», «Скачать игры и пройти уровни», «Провести время в играх» и т. д. Пожалуйста, ознакомьтесь с информацией ниже, чтобы понять её важность.';
+	@override String get offersGuidline2 => '2). Пользователи будут получать баллы за выполнение предложений. В отличие от рекламы, эти баллы имеют уже установленный обменный курс по отношению к USDT. В зависимости от выплат от сетей, конвертация баллов в USDT может составлять от 235 тыс. баллов = 1 USDT до 250 тыс. баллов = 1 USDT.\n\nЭти баллы можно конвертировать в USDT в течение шести-семи недель после окончания любого месяца. Например: если вы накопите 400 тыс. баллов в августе, вы сможете обменять их на 1,68 USDT к 15 октября (когда мы получим выплату за август). Впоследствии выплата баллов, накопленных в сентябре, будет произведена к 15 ноября и так далее. Эта задержка в первую очередь связана с циклами выплат в нише «перфоманс-маркетинга» и тем фактом, что эти сети с офферволлами выплачивают нам вознаграждение по принципу Net-30.\n\nМы только начинаем работу с офферволами, и со временем, по мере улучшения нашего денежного потока, мы хотели бы сократить сроки вывода средств. А пока мы ценим ваше терпение.';
+	@override String get offersGuidline3 => '3) Вы также будете накапливать баллы каждый раз, когда ваши рефералы выполняют предложение. Вы заработаете баллы, эквивалентные «43% от баллов, заработанных вашими прямыми рефералами». Например: если ваш прямой реферал заработал 7000 баллов, вам автоматически будут начислены 3000 баллов.';
+	@override String get offersGuidline4 => '4) Если вас интересует конкретное приложение/игра, участвующее в акции, и вы хотите её опробовать, перейдите по ссылке/кнопке на странице акций. В противном случае этапы и активность не будут отслеживаться.';
+	@override String get offersGuidline5 => '5) Никогда не используйте VPN при доступе к этим предложениям. Вы будете дисквалифицированы сетями, участвующими в акции.';
+	@override String get offersGuidline6 => '6) Сети Offerwall могут запросить у вас соответствующие разрешения. Пожалуйста, сделайте это, чтобы обеспечить корректное отслеживание ваших достижений, иначе вы можете не получить вознаграждение за предложения.';
+	@override String get offersGuidline7 => '7). PlayTime предлагает уникальный набор игровых предложений, где пользователи получают вознаграждение просто за время, проведённое в играх. Однако, пожалуйста, убедитесь, что вы также проходите уровни в этих играх, а не просто убиваете время, иначе рекламодатель может отменить выплату (хотя это случается редко).';
+	@override String get offersGuidline8 => '8). Выполненные вами этапы/задачи обычно регистрируются на Offerwalls в течение нескольких минут после завершения, но в некоторых случаях это может занять до трёх часов, поэтому, пожалуйста, проявите терпение. Если этап не регистрируется, обратитесь в службу поддержки клиентов сети Offerwall. Для каждого Offerwall, к которому вы обращаетесь, есть отдельный раздел для службы поддержки клиентов. Всегда проверяйте offerwalls в нашем приложении каждый раз после завершения этапа, чтобы убедиться, что он отслежен.';
+	@override String get offersGuidline9 => '9) Если вас интересует предложение игры/приложения, но оно уже было установлено на вашем устройстве, пожалуйста, не пытайтесь воспользоваться предложением, связанным с этим приложением/игрой. Бонусы за вашу активность могут быть не засчитаны.';
+	@override String get offersGuidline10 => '10) Всегда читайте советы, представленные на каждом Offerwall. Они часто содержат важную информацию, которая поможет вам максимально увеличить шансы на успешное отслеживание предложений.';
 }
 
 // Path: <root>
@@ -12748,10 +12986,10 @@ class _StringsSw implements Translations {
 	@override String get totalAllocation => 'Mgao wa Jumla';
 	@override String get miningRatio => 'Uwiano wa Uchimbaji';
 	@override Map<String, String> get billion => {
-		'300': 'bilioni 300',
-		'180': 'bilioni 180',
 		'30': 'bilioni 30',
 		'60': 'bilioni 60',
+		'180': 'bilioni 180',
+		'300': 'bilioni 300',
 	};
 	@override String get watchAdsToSupportDevelopers => 'Tazama matangazo ili kuwasaidia wasanidi';
 	@override String get loadingAdcomponents => 'Inapakia vipengele vya tangazo…';
@@ -13188,6 +13426,20 @@ class _StringsSw implements Translations {
 	@override String get launchAdTips => 'Kuwasha "launchAd" inamaanisha kuwa tangazo litaonyeshwa programu itakapozinduliwa, na matokeo yake yatabadilishwa kuwa uzito wa uchimbaji madini wa USCT.';
 	@override String get help => 'Msaada';
 	@override String get verifyOriginalMSISDN => 'Thibitisha MSISDN asili';
+	@override String get noLongerPopup => 'Haionekani tena';
+	@override String get encoding => 'Usimbaji:';
+	@override String get switchingVerificationStringEncodingMethodsTips => 'Kubadilisha hadi mbinu tofauti za usimbaji wa kamba za uthibitishaji kunaweza kusaidia kukwepa marufuku ya waendeshaji wa mawasiliano ya simu.';
+	@override String get remainUnchanged => 'kubaki bila kubadilika';
+	@override String get offersGuidline1 => '1). Katika jitihada za kuongeza malipo ya USCT kwa watumiaji, tumefungamana na baadhi ya mitandao ya ukuta inayojulikana sana kama vile Playtime na Ayet Studios. Watumiaji wanaweza kupata pointi kwa kukamilisha kazi rahisi kama vile "Pakua Programu na Ufungue", "Pakua Michezo na Kufikia Viwango", "Kutumia muda katika michezo" n.k. Tafadhali soma maelezo yaliyo hapa chini ili kuelewa maelezo muhimu.';
+	@override String get offersGuidline2 => '2). Watumiaji watapata pointi kwa kukamilisha matoleo. Tofauti na matangazo, pointi hizi zina uwiano wa ubadilishaji ulioanzishwa tayari kuhusiana na USDT. Kulingana na malipo kutoka kwa mitandao, ubadilishaji kati ya pointi na USDT unaweza kuwa popote kati ya pointi 235K = 1 USDT hadi pointi 250K = 1 USDT. \n\nPointi hizi zinaweza kubadilishwa kuwa USDT ndani ya wiki sita hadi saba za mwisho wa mwezi wowote. Kwa mfano: Ukikusanya pointi 400K katika mwezi wa Agosti, basi utaweza kukomboa pointi hizi za 400K kama 1.68 USDT kufikia tarehe 15 Oktoba (wakati ambapo tutapokea malipo ya mwezi wa Agosti). Baadaye, malipo ya pointi zilizokusanywa katika mwezi wa Septemba yatatatuliwa ifikapo tarehe 15 Novemba, na kadhalika. Ucheleweshaji huu ni kwa sababu ya mzunguko wa malipo katika niche ya "masoko ya utendaji" na ukweli kwamba mitandao hii ya matangazo hutulipa kwa misingi ya Net-30. \n\nTunaanza na kuta za ofa, na baada ya muda, kadri mtiririko wetu wa pesa unavyoboreka, tungependa kupunguza muda huu wa uondoaji. Hadi wakati huo, tunashukuru uvumilivu wako.';
+	@override String get offersGuidline3 => '3). Pia utakusanya pointi kila wakati marejeleo yako yanapokamilisha ofa. Utapata pointi sawa na "43% ya pointi ulizopata kupitia rufaa zako za moja kwa moja". Kwa mfano: Ikiwa rufaa yako ya moja kwa moja imepata pointi 7000, utapokea pointi 3000 kiotomatiki.';
+	@override String get offersGuidline4 => '4). Iwapo ungependa kupata programu/mchezo fulani unaohusiana na ofa na ungependa kuujaribu, tafadhali tembelea programu/mchezo kupitia kiungo/kitufe kilichotolewa ndani ya ukuta wa ofa. Usipofanya hivyo, hatua muhimu na shughuli hazitafuatiliwa. ';
+	@override String get offersGuidline5 => '5). Usiwahi kutumia VPN unapofikia ofa hizi. Utaondolewa kwenye mtandao wa ofa.';
+	@override String get offersGuidline6 => '6). Unaweza kuombwa na mitandao ya Offerwall kutoa ruhusa zinazofaa. Tafadhali fanya hivyo ili kuhakikisha mafanikio yako yanafuatiliwa ipasavyo, vinginevyo unaweza usituzwe kwa ofa.';
+	@override String get offersGuidline7 => '7). PlayTime hutoa mseto wa kipekee wa ofa za mchezo ambapo watumiaji hutuzwa kwa kutumia tu muda katika michezo yote. Hata hivyo, tafadhali hakikisha kuwa unaendelea kupitia viwango vya michezo hii yote badala ya kuua tu wakati au mtangazaji anaweza kutengua malipo (ingawa ni nadra).';
+	@override String get offersGuidline8 => '8). Mafanikio/majukumu yanayokamilishwa na wewe kwa kawaida husajiliwa kote kwenye kuta ndani ya dakika chache baada ya kukamilika, lakini katika hali fulani, inaweza kuchukua hadi saa tatu, kwa hivyo tafadhali kuwa na subira katika hali kama hizi. Ikiwa hatua muhimu haitasajiliwa, tafadhali wasiliana na usaidizi kwa wateja unaohusiana na mtandao wa Offerwall. Kuna sehemu tofauti ya Usaidizi kwa Wateja katika kila Ofa unayofikia. Daima hakikisha unaangalia kuta za ofa ndani ya programu yetu kila mara unapomaliza hatua muhimu ili kuhakikisha kuwa imefuatiliwa.';
+	@override String get offersGuidline9 => '9). Iwapo ungependa kupata ofa ya mchezo/programu, lakini hapo awali ulikuwa na mchezo/programu hiyo iliyosakinishwa kwenye kifaa chako, tafadhali usijaribu toleo linalohusiana na programu/mchezo huo. Huenda usipewe sifa kwa shughuli yako.';
+	@override String get offersGuidline10 => '10). Soma kila mara vidokezo vinavyotolewa na kila Offerwall. Mara nyingi huwa na maelezo muhimu ambayo yanaweza kukusaidia kuongeza uwezekano wako wa kufuatilia kwa mafanikio matoleo yote.';
 }
 
 // Path: <root>
@@ -13912,6 +14164,20 @@ class _StringsTh implements Translations {
 	@override String get launchAdTips => 'การเปิดใช้งาน "launchAd" หมายถึงโฆษณาจะปรากฏเมื่อเปิดใช้งานแอป และผลลัพธ์จะถูกแปลงเป็นน้ำหนักการขุด USCT';
 	@override String get help => 'ช่วยเหลือ';
 	@override String get verifyOriginalMSISDN => 'ตรวจสอบ MSISDN ดั้งเดิม';
+	@override String get noLongerPopup => 'ไม่เด้งขึ้นมาอีกแล้ว';
+	@override String get encoding => 'การเข้ารหัส:';
+	@override String get switchingVerificationStringEncodingMethodsTips => 'การเปลี่ยนไปใช้วิธีการเข้ารหัสสตริงการตรวจสอบที่แตกต่างกันสามารถช่วยหลีกเลี่ยงการห้ามของผู้ประกอบการโทรคมนาคมได้';
+	@override String get remainUnchanged => 'ยังคงไม่เปลี่ยนแปลง';
+	@override String get offersGuidline1 => '1) เพื่อเพิ่มผลตอบแทนจาก USCT ให้กับผู้ใช้ เราได้ร่วมมือกับเครือข่าย Offerwall ที่มีชื่อเสียงอย่าง Playtime และ Ayet Studios ผู้ใช้จะได้รับคะแนนจากการทำภารกิจง่ายๆ เช่น "ดาวน์โหลดแอปและเปิด", "ดาวน์โหลดเกมและถึงเลเวล", "ใช้เวลาเล่นเกมต่างๆ" เป็นต้น โปรดอ่านข้อมูลด้านล่างเพื่อทำความเข้าใจข้อมูลสำคัญ';
+	@override String get offersGuidline2 => '2). ผู้ใช้จะได้รับคะแนนเมื่อทำตามข้อเสนอสำเร็จ ซึ่งแตกต่างจากโฆษณา คะแนนเหล่านี้มีอัตราแลกเปลี่ยนที่กำหนดไว้แล้วเมื่อเทียบกับ USDT การแปลงคะแนนเป็น USDT อาจอยู่ระหว่าง 235,000 คะแนน = 1 USDT ถึง 250,000 คะแนน = 1 USDT ขึ้นอยู่กับการจ่ายเงินจากเครือข่าย\n\nคะแนนเหล่านี้สามารถแปลงเป็น USDT ได้ภายในหกถึงเจ็ดสัปดาห์หลังจากสิ้นเดือน ตัวอย่างเช่น หากคุณสะสมคะแนนได้ 400,000 คะแนนในเดือนสิงหาคม คุณจะสามารถแลกคะแนน 400,000 คะแนนนี้เป็น 1.68 USDT ได้ภายในวันที่ 15 ตุลาคม (ซึ่งเป็นวันที่เราจะได้รับเงินสำหรับเดือนสิงหาคม) หลังจากนั้น การจ่ายเงินสำหรับคะแนนที่สะสมในเดือนกันยายนจะเสร็จสิ้นภายในวันที่ 15 พฤศจิกายน และต่อไปเรื่อยๆ ความล่าช้านี้ส่วนใหญ่เกิดจากรอบการจ่ายเงินในกลุ่ม "การตลาดตามผลงาน" และความจริงที่ว่าเครือข่าย Offerwall เหล่านี้จ่ายเงินให้เราแบบ Net-30\n\nเราเพิ่งเริ่มต้นใช้งาน Offerwalls และเมื่อเวลาผ่านไป เมื่อกระแสเงินสดของเราดีขึ้น เรายินดีที่จะลดระยะเวลาการถอนเงินลง ระหว่างนี้ เราขอขอบคุณสำหรับความอดทนของคุณ';
+	@override String get offersGuidline3 => '3) คุณจะได้รับคะแนนสะสมทุกครั้งที่ผู้ที่คุณแนะนำทำข้อเสนอสำเร็จ คุณจะได้รับคะแนนเทียบเท่า "43% ของคะแนนที่ได้รับจากผู้ที่คุณแนะนำโดยตรง" ตัวอย่างเช่น หากผู้ที่คุณแนะนำโดยตรงได้รับ 7,000 คะแนน คุณจะได้รับ 3,000 คะแนนโดยอัตโนมัติ';
+	@override String get offersGuidline4 => '4) หากคุณสนใจแอป/เกมใดเป็นพิเศษตามข้อเสนอและต้องการทดลองใช้ โปรดไปที่แอป/เกมนั้นผ่านลิงก์/ปุ่มที่ให้ไว้ในหน้าข้อเสนอ หากคุณไม่ดำเนินการ ระบบจะไม่ติดตามความคืบหน้าและกิจกรรมของคุณ';
+	@override String get offersGuidline5 => '5) ห้ามใช้ VPN ระหว่างเข้าถึงข้อเสนอเหล่านี้ เพราะคุณจะถูกตัดสิทธิ์จากเครือข่าย Offerwall';
+	@override String get offersGuidline6 => '6) คุณอาจได้รับการแจ้งเตือนจากเครือข่าย Offerwall เพื่อขอสิทธิ์ที่เกี่ยวข้อง โปรดดำเนินการดังกล่าวเพื่อให้แน่ใจว่ามีการติดตามความคืบหน้าของคุณอย่างถูกต้อง มิฉะนั้นคุณอาจไม่ได้รับรางวัลสำหรับข้อเสนอเหล่านี้';
+	@override String get offersGuidline7 => '7) PlayTime นำเสนอข้อเสนอเกมที่ผสมผสานกันอย่างลงตัว โดยผู้เล่นจะได้รับรางวัลเพียงแค่ใช้เวลาเล่นเกมในแต่ละเกม อย่างไรก็ตาม โปรดตรวจสอบให้แน่ใจว่าคุณกำลังเล่นผ่านด่านต่างๆ ในเกมเหล่านี้ด้วย แทนที่จะเล่นฆ่าเวลาเฉยๆ มิฉะนั้นผู้โฆษณาอาจยกเลิกการจ่ายเงินรางวัล (แม้ว่าจะเกิดขึ้นได้ยาก)';
+	@override String get offersGuidline8 => '8) โดยปกติแล้ว ความสำเร็จ/งานที่คุณทำเสร็จจะถูกบันทึกลงใน Offerwall ภายในไม่กี่นาทีหลังจากเสร็จสิ้น แต่ในบางกรณีอาจใช้เวลานานถึงสามชั่วโมง ดังนั้นโปรดอดทนรอ หากความสำเร็จ/งานไม่ได้รับการบันทึก โปรดติดต่อฝ่ายสนับสนุนลูกค้าที่เกี่ยวข้องกับเครือข่าย Offerwall มีส่วนแยกต่างหากสำหรับฝ่ายสนับสนุนลูกค้าในทุก Offerwall ที่คุณเข้าถึง โปรดตรวจสอบ Offerwall ในแอปของเราทุกครั้งที่คุณทำความสำเร็จ/งานเสร็จ เพื่อให้มั่นใจว่ามีการติดตามความคืบหน้า';
+	@override String get offersGuidline9 => '9) หากคุณสนใจข้อเสนอเกม/แอป แต่คุณได้ติดตั้งเกม/แอปนั้นไว้ในอุปกรณ์ของคุณแล้ว โปรดอย่าพยายามใช้ข้อเสนอที่เกี่ยวข้องกับแอป/เกมนั้น คุณอาจไม่ได้รับเครดิตสำหรับกิจกรรมของคุณ';
+	@override String get offersGuidline10 => '10) อ่านเคล็ดลับต่างๆ ที่ Offerwall จัดเตรียมไว้ให้เสมอ ซึ่งมักจะมีรายละเอียดสำคัญที่ช่วยเพิ่มโอกาสในการติดตามข้อเสนอต่างๆ สำเร็จ';
 }
 
 // Path: <root>
@@ -14197,10 +14463,10 @@ class _StringsTr implements Translations {
 	@override String get totalAllocation => 'Toplam tahsis';
 	@override String get miningRatio => 'Madencilik oranı';
 	@override Map<String, String> get billion => {
-		'300': '300 milyar',
-		'180': '180 milyar',
 		'30': '30 milyar',
 		'60': '60 milyar',
+		'180': '180 milyar',
+		'300': '300 milyar',
 	};
 	@override String get watchAdsToSupportDevelopers => 'Geliştiricileri desteklemek için reklam izleyin';
 	@override String get loadingAdcomponents => 'Reklam bileşenleri yükleniyor…';
@@ -14636,6 +14902,20 @@ class _StringsTr implements Translations {
 	@override String get launchAdTips => '“launchAd” özelliğini açmak, uygulama başlatıldığında bir reklam gösterileceği ve sonucunun USCT madencilik ağırlığına dönüştürüleceği anlamına gelir.';
 	@override String get help => 'Yardım';
 	@override String get verifyOriginalMSISDN => 'Orijinal MSISDN\'yi doğrulayın';
+	@override String get noLongerPopup => 'Artık açılmıyor';
+	@override String get encoding => 'Kodlama:';
+	@override String get switchingVerificationStringEncodingMethodsTips => 'Farklı doğrulama dizesi kodlama yöntemlerine geçiş, telekom operatörlerinin yasağını aşmaya yardımcı olabilir.';
+	@override String get remainUnchanged => 'değişmeden kalır';
+	@override String get offersGuidline1 => '1). Kullanıcıların USCT ödemelerini artırmak amacıyla, Playtime ve Ayet Studios gibi saygın offerwall ağlarından bazılarıyla iş birliği yaptık. Kullanıcılar, "Uygulamaları İndir ve Aç", "Oyunları İndir ve Seviyelere Ulaş", "Oyunlar Arasında Zaman Geçir" gibi basit görevleri tamamlayarak puan kazanabilirler. Önemli bilgileri anlamak için lütfen aşağıdaki bilgileri okuyun.';
+	@override String get offersGuidline2 => '2). Kullanıcılar teklifleri tamamlayarak puan kazanacaklardır. Reklamların aksine, bu puanların USDT\'ye göre önceden belirlenmiş bir değişim oranı vardır. Ağlardan gelen ödemeye bağlı olarak, puanlar ve USDT arasındaki dönüşüm 235.000 puan = 1 USDT ile 250.000 puan = 1 USDT arasında değişebilir.\n\nBu puanlar, herhangi bir ayın sonundan itibaren altı ila yedi hafta içinde USDT\'ye dönüştürülebilir. Örneğin: Ağustos ayında 400.000 puan biriktirirseniz, bu 400.000 puanı 15 Ekim\'e kadar (Ağustos ayı ödemesini aldığımız tarih) 1,68 USDT olarak kullanabilirsiniz. Ardından, Eylül ayında biriken puanların ödemesi 15 Kasım\'a kadar tamamlanır ve bu şekilde devam eder. Bu gecikme, esas olarak "performans pazarlaması" alanındaki ödeme döngülerinden ve bu teklif duvarı ağlarının bize Net-30 bazında ödeme yapmasından kaynaklanmaktadır.\n\nTeklif duvarlarına henüz yeni başlıyoruz ve zamanla, nakit akışımız iyileştikçe, bu çekim süresini kısaltmayı çok isteriz. O zamana kadar sabrınız için teşekkür ederiz.';
+	@override String get offersGuidline3 => '3). Ayrıca, yönlendirdiğiniz kişiler bir teklifi her tamamladığında puan biriktirirsiniz. "Doğrudan yönlendirdiğiniz kişilerin kazandığı puanların %43\'üne" eşdeğer puan kazanırsınız. Örneğin: Doğrudan yönlendirdiğiniz kişi 7.000 puan kazandıysa, otomatik olarak 3.000 puan kazanırsınız.';
+	@override String get offersGuidline4 => '4). Bir teklifle ilgili belirli bir uygulama/oyunla ilgileniyorsanız ve denemek istiyorsanız, lütfen teklif duvarındaki bağlantı/düğme aracılığıyla uygulamayı/oyunu ziyaret edin. Bunu yapmazsanız, kilometre taşları ve etkinlikler izlenmeyecektir.';
+	@override String get offersGuidline5 => '5). Bu tekliflere erişirken asla VPN kullanmayın. Aksi takdirde offerwall ağları tarafından diskalifiye edilirsiniz.';
+	@override String get offersGuidline6 => '6). Offerwall ağları sizden ilgili izinleri vermenizi isteyebilir. Lütfen kilometre taşlarınızın doğru şekilde takip edilmesini sağlamak için bunu yapın, aksi takdirde teklifler için ödüllendirilmeyebilirsiniz.';
+	@override String get offersGuidline7 => '7). PlayTime, kullanıcıların yalnızca oyunlarda zaman geçirmeleri karşılığında ödüllendirildiği benzersiz bir oyun teklifi yelpazesi sunar. Ancak, lütfen sadece zaman öldürmek yerine, bu oyunlardaki seviyelerde ilerlediğinizden emin olun, aksi takdirde reklamveren ödemeyi geri alabilir (nadir de olsa).';
+	@override String get offersGuidline8 => '8). Tamamladığınız kilometre taşları/görevler genellikle tamamlandıktan sonra birkaç dakika içinde offerwall\'lara kaydedilir, ancak bazı durumlarda üç saate kadar sürebilir, bu nedenle lütfen bu gibi durumlarda sabırlı olun. Kilometre taşı kaydedilmezse, lütfen Offerwall ağıyla ilgili müşteri desteğiyle iletişime geçin. Eriştiğiniz her Offerwall\'da Müşteri Desteği için ayrı bir bölüm bulunur. Bir kilometre taşını tamamladığınızda, takip edildiğinden emin olmak için uygulamamızdaki offerwall\'ları kontrol ettiğinizden emin olun.';
+	@override String get offersGuidline9 => '9). Bir oyun/uygulama teklifiyle ilgileniyorsanız, ancak söz konusu oyun/uygulama daha önce cihazınıza yüklenmişse, lütfen söz konusu uygulama/oyunla ilgili teklifi denemeyin. Etkinliğiniz için kredi alamayabilirsiniz.';
+	@override String get offersGuidline10 => '10). Her Offerwall tarafından sağlanan ipuçlarını mutlaka okuyun. Bunlar genellikle, teklifler arasında başarılı bir şekilde takip etme şansınızı en üst düzeye çıkarabilecek önemli ayrıntılar içerir.';
 }
 
 // Path: <root>
@@ -15361,6 +15641,20 @@ class _StringsUk implements Translations {
 	@override String get launchAdTips => 'Увімкнення "launchAd" означає, що під час запуску програми відображатиметься реклама, а її результат буде конвертовано у вагу для майнінгу USCT.';
 	@override String get help => 'Довідка';
 	@override String get verifyOriginalMSISDN => 'Перевірити оригінальний MSISDN';
+	@override String get noLongerPopup => 'Більше не з\'являється';
+	@override String get encoding => 'Кодування:';
+	@override String get switchingVerificationStringEncodingMethodsTips => 'Перехід на інші методи кодування рядка перевірки може допомогти обійти заборону операторів зв\'язку.';
+	@override String get remainUnchanged => 'залишаються незмінними';
+	@override String get offersGuidline1 => '1). Щоб збільшити виплати USCT для користувачів, ми співпрацюємо з деякими з відомих мереж offerwall, такими як Playtime та Ayet Studios. Користувачі можуть заробляти бали, виконуючи прості завдання, такі як «Завантаження програм та відкриття», «Завантаження ігор та досягнення рівнів», «Витрачання часу на ігри» тощо. Будь ласка, прочитайте інформацію нижче, щоб зрозуміти важливу інформацію.';
+	@override String get offersGuidline2 => '2). Користувачі зароблятимуть бали за виконання пропозицій. На відміну від реклами, ці бали мають вже встановлений коефіцієнт обміну по відношенню до USDT. Залежно від виплати від мереж, конвертація між балами та USDT може становити від 235 тис. балів = 1 USDT до 250 тис. балів = 1 USDT.\n\nЦі бали можна конвертувати в USDT протягом шести-семи тижнів після закінчення будь-якого місяця. Наприклад: якщо ви накопичите 400 тис. балів у серпні, то ви зможете обміняти ці 400 тис. балів на 1,68 USDT до 15 жовтня (саме тоді ми отримаємо виплату за серпень). Згодом виплата за бали, накопичені у вересні, буде здійснена до 15 листопада тощо. Ця затримка пов\'язана головним чином з циклами платежів у ніші «маркетингу ефективності» та тим фактом, що ці мережі offerwall виплачують нам на основі Net-30.\n\nМи тільки починаємо роботу з пропозиціями, і з часом, у міру покращення нашого грошового потоку, ми хотіли б скоротити цей термін виведення коштів. А поки що дякуємо за ваше терпіння.';
+	@override String get offersGuidline3 => '3). Ви також накопичуватимете бали щоразу, коли ваші реферали завершують пропозицію. Ви отримуватимете бали, еквівалентні «43% балів, зароблених вашими прямими рефералами». Наприклад: якщо ваш прямий реферал заробив 7000 балів, вам автоматично буде зараховано 3000 балів.';
+	@override String get offersGuidline4 => '4). Якщо вас цікавить певний додаток/гра, що стосується пропозиції, і ви хочете його спробувати, будь ласка, перейдіть на сторінку цього додатка/гри за посиланням/кнопкою на стіні пропозицій. Якщо ви цього не зробите, етапи та активність не відстежуватимуться.';
+	@override String get offersGuidline5 => '5). Ніколи не використовуйте VPN під час доступу до цих пропозицій. Вас дискваліфікують мережі offerwall.';
+	@override String get offersGuidline6 => '6). Мережі Offerwall можуть запропонувати вам надати відповідні дозволи. Будь ласка, зробіть це, щоб забезпечити належне відстеження ваших етапів, інакше ви можете не отримати винагороду за пропозиції.';
+	@override String get offersGuidline7 => '7). PlayTime пропонує унікальне поєднання ігрових пропозицій, де користувачі отримують винагороду просто за те, що проводять час в іграх. Однак, будь ласка, переконайтеся, що ви також просуваєтеся по рівнях у цих іграх, а не просто вбиваєте час, інакше рекламодавець може скасувати виплату (хоча це трапляється рідко).';
+	@override String get offersGuidline8 => '8). Виконані вами етапи/завдання зазвичай реєструються на стінах пропозицій протягом кількох хвилин після їх завершення, але в деяких випадках це може зайняти до трьох годин, тому будьте терплячими. Якщо етап не зареєстровано, зверніться до служби підтримки клієнтів мережі Offerwall. На кожному Offerwall, до якого ви отримуєте доступ, є окремий розділ для підтримки клієнтів. Завжди перевіряйте стіни пропозицій у нашому додатку щоразу, коли ви завершуєте етап, щоб переконатися, що його було відстежено.';
+	@override String get offersGuidline9 => '9). Якщо вас зацікавила пропозиція гри/додатку, але ця гра/додаток раніше була встановлена на вашому пристрої, будь ласка, не намагайтеся скористатися пропозицією, що стосується цієї програми/гри. Вам можуть не нарахувати винагороду за вашу активність.';
+	@override String get offersGuidline10 => '10). Завжди читайте поради, надані на кожному Offerwall. Вони часто містять важливі деталі, які можуть допомогти максимізувати ваші шанси на успішне відстеження пропозицій.';
 }
 
 // Path: <root>
@@ -15646,10 +15940,10 @@ class _StringsUr implements Translations {
 	@override String get totalAllocation => 'کل تقسیم';
 	@override String get miningRatio => 'مائننگ کا تناسب';
 	@override Map<String, String> get billion => {
-		'300': '300 بلین',
-		'180': '180 بلین',
 		'30': '30 بلین',
 		'60': '60 بلین',
+		'180': '180 بلین',
+		'300': '300 بلین',
 	};
 	@override String get watchAdsToSupportDevelopers => 'ترقی دہندگان کی حمایت کے لیے اشتہارات دیکھیں';
 	@override String get loadingAdcomponents => 'اشتہاری اجزاء لوڈ ہو رہے ہیں…';
@@ -16085,6 +16379,20 @@ class _StringsUr implements Translations {
 	@override String get launchAdTips => '"launchAd" کو آن کرنے کا مطلب ہے کہ ایپ کے لانچ ہونے پر ایک اشتہار دکھایا جائے گا، اور اس کا نتیجہ USCT مائننگ وزن میں تبدیل ہو جائے گا۔';
 	@override String get help => 'مدد';
 	@override String get verifyOriginalMSISDN => 'اصل MSISDN کی تصدیق کریں';
+	@override String get noLongerPopup => 'اب پاپ اپ نہیں۔';
+	@override String get encoding => 'انکوڈنگ:';
+	@override String get switchingVerificationStringEncodingMethodsTips => 'تصدیقی سٹرنگ انکوڈنگ کے مختلف طریقوں پر سوئچ کرنے سے ٹیلی کام آپریٹرز کی پابندی کو نظرانداز کرنے میں مدد مل سکتی ہے۔';
+	@override String get remainUnchanged => 'غیر تبدیل شدہ رہیں';
+	@override String get offersGuidline1 => '1)۔ صارفین کے لیے USCT کی ادائیگی کو بڑھانے کی کوشش میں، ہم نے پلے ٹائم اور Ayet Studios جیسے کچھ انتہائی معروف آفر وال نیٹ ورکس کے ساتھ معاہدہ کیا ہے۔ صارفین آسان کاموں جیسے "ایپس ڈاؤن لوڈ کریں اور کھولیں"، "گیمز ڈاؤن لوڈ کریں اور سطح تک پہنچنا"، "گیمز میں وقت گزارنا" وغیرہ جیسے آسان کاموں کو مکمل کرکے پوائنٹس حاصل کرسکتے ہیں۔ اہم معلومات کو سمجھنے کے لیے براہ کرم نیچے دی گئی معلومات کو پڑھیں۔';
+	@override String get offersGuidline2 => '2)۔ صارفین آفرز کو مکمل کرنے پر پوائنٹس حاصل کریں گے۔ اشتہارات کے برعکس، ان پوائنٹس کا USDT کے سلسلے میں پہلے سے ہی قائم شدہ تبادلے کا تناسب ہے۔ نیٹ ورکس سے ادائیگی پر منحصر ہے، پوائنٹس اور USDT کے درمیان تبدیلی 235K پوائنٹس = 1 USDT سے 250K پوائنٹس = 1 USDT کے درمیان کہیں بھی ہو سکتی ہے۔ \n\nان پوائنٹس کو کسی بھی مہینے کے اختتام کے چھ سے سات ہفتوں کے اندر USDT میں تبدیل کیا جا سکتا ہے۔ مثال کے طور پر: اگر آپ اگست کے مہینے میں 400K پوائنٹس جمع کرتے ہیں، تو آپ 15 اکتوبر تک ان 400K پوائنٹس کو 1.68 USDT کے طور پر چھڑا سکیں گے (جو کہ ہمیں اگست کے مہینے کی ادائیگی موصول ہونے پر)۔ اس کے بعد، ستمبر کے مہینے میں جمع ہونے والے پوائنٹس کی ادائیگی 15 نومبر تک کی جائے گی، وغیرہ۔ یہ تاخیر بنیادی طور پر "کارکردگی کی مارکیٹنگ" میں ادائیگی کے چکروں اور اس حقیقت کی وجہ سے ہے کہ یہ آفر وال نیٹ ورک ہمیں Net-30 کی بنیاد پر ادائیگی کرتے ہیں۔ \n\nہم صرف آفر والز کے ساتھ شروعات کر رہے ہیں، اور وقت گزرنے کے ساتھ، جیسے جیسے ہمارے نقد بہاؤ میں بہتری آتی ہے، ہم اس واپسی کے ٹائم فریم کو کم کرنا پسند کریں گے۔ تب تک، ہم آپ کے صبر کی تعریف کرتے ہیں۔';
+	@override String get offersGuidline3 => '3)۔ جب بھی آپ کے حوالہ جات کوئی پیشکش مکمل کریں گے تو آپ پوائنٹس بھی جمع کریں گے۔ آپ "آپ کے براہ راست حوالہ جات سے حاصل کردہ پوائنٹس کے 43%" کے برابر پوائنٹس حاصل کریں گے۔ مثال کے طور پر: اگر آپ کے ڈائریکٹ ریفرل نے 7000 پوائنٹس حاصل کیے ہیں، تو آپ کو خود بخود 3000 پوائنٹس جمع کر دیے جائیں گے۔';
+	@override String get offersGuidline4 => '4)۔ اگر آپ کسی پیشکش سے متعلق کسی خاص ایپ/گیم میں دلچسپی رکھتے ہیں اور اسے آزمانا چاہتے ہیں، تو براہ کرم آفر وال میں فراہم کردہ لنک/بٹن کے ذریعے ایپ/گیم دیکھیں۔ اگر آپ ایسا نہیں کرتے ہیں، تو سنگ میل اور سرگرمی کو ٹریک نہیں کیا جائے گا۔ ';
+	@override String get offersGuidline5 => '5)۔ ان پیشکشوں تک رسائی کے دوران کبھی بھی VPN استعمال نہ کریں۔ آپ کو آفر وال نیٹ ورکس کے ذریعے نااہل قرار دے دیا جائے گا۔';
+	@override String get offersGuidline6 => '6)۔ آپ کو آفر وال نیٹ ورکس کی طرف سے متعلقہ اجازتیں فراہم کرنے کے لیے کہا جا سکتا ہے۔ براہ کرم ایسا کریں تاکہ یہ یقینی بنایا جا سکے کہ آپ کے سنگ میل کو درست طریقے سے ٹریک کیا گیا ہے، بصورت دیگر آپ کو پیشکشوں کا بدلہ نہیں دیا جائے گا۔';
+	@override String get offersGuidline7 => '7)۔ پلے ٹائم گیم آفرز کا ایک انوکھا امتزاج فراہم کرتا ہے جہاں صارفین کو تمام گیمز میں صرف وقت گزارنے پر انعام دیا جاتا ہے۔ تاہم، براہ کرم اس بات کو یقینی بنائیں کہ آپ صرف وقت ضائع کرنے کے بجائے ان گیمز میں بھی سطحوں پر آگے بڑھ رہے ہیں یا مشتہر ادائیگی کو واپس لے سکتا ہے (حالانکہ یہ نایاب ہے)۔';
+	@override String get offersGuidline8 => '8)۔ آپ کی طرف سے مکمل کیے گئے سنگ میل/کام عام طور پر مکمل ہونے کے چند منٹوں کے اندر اندر آفر والز پر رجسٹر کیے جاتے ہیں، لیکن بعض صورتوں میں، اس میں تین گھنٹے تک لگ سکتے ہیں، اس لیے براہ کرم ایسے معاملات میں صبر کریں۔ اگر سنگ میل رجسٹرڈ نہیں ہوتا ہے، تو براہ کرم آفر وال نیٹ ورک سے متعلق کسٹمر سپورٹ سے رابطہ کریں۔ کسٹمر سپورٹ کے لیے ہر اس آفر وال پر ایک الگ سیکشن ہے جس تک آپ رسائی حاصل کرتے ہیں۔ ہمیشہ اس بات کو یقینی بنائیں کہ جب بھی آپ کوئی سنگ میل مکمل کرتے ہیں تو آپ ہماری ایپ کے اندر آفر والز کو چیک کرتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ اسے ٹریک کیا گیا ہے۔';
+	@override String get offersGuidline9 => '9)۔ اگر آپ گیم/ایپ کی پیشکش میں دلچسپی رکھتے ہیں، لیکن آپ نے پہلے وہ گیم/ایپ اپنے آلے میں انسٹال کر رکھی تھی، تو براہ کرم اس ایپ/گیم سے متعلق پیشکش کی کوشش نہ کریں۔ ہو سکتا ہے آپ کو اپنی سرگرمی کا کریڈٹ نہ ملے۔';
+	@override String get offersGuidline10 => '10)۔ ہر آفر وال کی طرف سے فراہم کردہ تجاویز کو ہمیشہ پڑھیں۔ ان میں اکثر اہم تفصیلات ہوتی ہیں جو آپ کے تمام پیشکشوں میں کامیاب ٹریکنگ کے امکانات کو بڑھانے میں مدد کر سکتی ہیں۔';
 }
 
 // Path: <root>
@@ -16810,6 +17118,20 @@ class _StringsVi implements Translations {
 	@override String get launchAdTips => 'Bật "launchAd" có nghĩa là một quảng cáo sẽ được hiển thị khi ứng dụng được khởi chạy và kết quả của quảng cáo đó sẽ được chuyển đổi thành trọng số khai thác USCT.';
 	@override String get help => 'Trợ giúp';
 	@override String get verifyOriginalMSISDN => 'Xác minh MSISDN gốc';
+	@override String get noLongerPopup => 'Không còn bật lên nữa';
+	@override String get encoding => 'Mã hóa:';
+	@override String get switchingVerificationStringEncodingMethodsTips => 'Việc chuyển sang các phương pháp mã hóa chuỗi xác minh khác nhau có thể giúp vượt qua lệnh cấm của các nhà mạng viễn thông.';
+	@override String get remainUnchanged => 'vẫn không thay đổi';
+	@override String get offersGuidline1 => '1). Nhằm tăng phần thưởng USCT cho người dùng, chúng tôi đã hợp tác với một số mạng lưới offerwall uy tín như Playtime và Ayet Studios. Người dùng có thể tích điểm khi hoàn thành các nhiệm vụ đơn giản như "Tải ứng dụng và mở", "Tải trò chơi và lên cấp", "Dành thời gian chơi trò chơi" v.v. Vui lòng đọc thông tin bên dưới để nắm rõ những thông tin quan trọng.';
+	@override String get offersGuidline2 => '2). Người dùng sẽ nhận được điểm khi hoàn thành các ưu đãi. Không giống như quảng cáo, điểm thưởng này có tỷ lệ quy đổi đã được thiết lập sẵn so với USDT. Tùy thuộc vào khoản thanh toán từ các mạng lưới, tỷ lệ chuyển đổi giữa điểm thưởng và USDT có thể dao động từ 235.000 điểm = 1 USDT đến 250.000 điểm = 1 USDT.\n\nNhững điểm thưởng này có thể được quy đổi sang USDT trong vòng sáu đến bảy tuần sau khi kết thúc bất kỳ tháng nào. Ví dụ: Nếu bạn tích lũy được 400.000 điểm trong tháng 8, bạn sẽ có thể đổi 400.000 điểm này thành 1,68 USDT trước ngày 15 tháng 10 (là thời điểm chúng tôi nhận được khoản thanh toán cho tháng 8). Sau đó, khoản thanh toán cho các điểm thưởng tích lũy trong tháng 9 sẽ được thanh toán vào ngày 15 tháng 11, v.v. Sự chậm trễ này chủ yếu là do các chu kỳ thanh toán trong phân khúc "tiếp thị hiệu suất" và thực tế là các mạng lưới offerwall này thanh toán cho chúng tôi theo cơ sở Net-30.\n\nChúng tôi mới bắt đầu với các tường ưu đãi, và theo thời gian, khi dòng tiền của chúng tôi được cải thiện, chúng tôi rất mong muốn rút ngắn thời gian rút tiền này. Cho đến lúc đó, chúng tôi rất mong bạn kiên nhẫn.';
+	@override String get offersGuidline3 => '3). Bạn cũng sẽ tích lũy điểm mỗi khi người được bạn giới thiệu hoàn thành một giao dịch. Bạn sẽ nhận được điểm tương đương với "43% số điểm mà người được bạn giới thiệu trực tiếp kiếm được". Ví dụ: Nếu người được bạn giới thiệu trực tiếp kiếm được 7000 điểm, bạn sẽ tự động được cộng 3000 điểm.';
+	@override String get offersGuidline4 => '4). Nếu bạn quan tâm đến một ứng dụng/trò chơi cụ thể liên quan đến ưu đãi và muốn dùng thử, vui lòng truy cập ứng dụng/trò chơi đó thông qua liên kết/nút được cung cấp trong tường ưu đãi. Nếu bạn không làm như vậy, các cột mốc và hoạt động sẽ không được theo dõi.';
+	@override String get offersGuidline5 => '5). Tuyệt đối không sử dụng VPN khi truy cập các ưu đãi này. Bạn sẽ bị loại khỏi danh sách ưu đãi của các mạng lưới.';
+	@override String get offersGuidline6 => '6). Mạng lưới Offerwall có thể yêu cầu bạn cung cấp các quyền liên quan. Vui lòng thực hiện việc này để đảm bảo các cột mốc của bạn được theo dõi chính xác, nếu không, bạn có thể không được thưởng cho các ưu đãi.';
+	@override String get offersGuidline7 => '7). PlayTime cung cấp một sự kết hợp độc đáo các ưu đãi trò chơi, nơi người dùng được thưởng chỉ bằng cách dành thời gian chơi. Tuy nhiên, hãy đảm bảo rằng bạn cũng đang tiến bộ qua các cấp độ của trò chơi thay vì chỉ giết thời gian, nếu không nhà quảng cáo có thể đảo ngược khoản thanh toán (mặc dù trường hợp này rất hiếm).';
+	@override String get offersGuidline8 => '8). Các mốc/nhiệm vụ bạn đã hoàn thành thường được ghi nhận trên các tường đề xuất trong vòng vài phút sau khi hoàn thành, nhưng trong một số trường hợp, có thể mất đến ba giờ, vì vậy hãy kiên nhẫn. Nếu mốc không được ghi nhận, vui lòng liên hệ với bộ phận hỗ trợ khách hàng của mạng lưới Offerwall. Có một mục riêng dành cho Hỗ trợ Khách hàng trên mỗi Offerwall bạn truy cập. Luôn đảm bảo bạn kiểm tra tường đề xuất trong ứng dụng của chúng tôi mỗi khi hoàn thành một mốc để đảm bảo nó đã được theo dõi.';
+	@override String get offersGuidline9 => '9). Trong trường hợp bạn quan tâm đến một ưu đãi trò chơi/ứng dụng nhưng đã cài đặt trò chơi/ứng dụng đó trên thiết bị trước đó, vui lòng không thử ưu đãi liên quan đến ứng dụng/trò chơi đó. Hoạt động của bạn có thể sẽ không được ghi nhận.';
+	@override String get offersGuidline10 => '10). Luôn đọc kỹ các mẹo được cung cấp bởi mỗi Offerwall. Chúng thường chứa các chi tiết quan trọng có thể giúp tối đa hóa cơ hội theo dõi thành công các ưu đãi.';
 }
 
 // Path: <root>
@@ -17096,8 +17418,8 @@ class _StringsZhCn implements Translations {
 	@override String get totalAllocation => '总量分配';
 	@override String get miningRatio => '开采比例';
 	@override Map<String, String> get billion => {
-		'60': '600亿',
 		'30': '300亿',
+		'60': '600亿',
 		'180': '1800亿',
 		'300': '3000亿',
 	};
@@ -17364,7 +17686,7 @@ class _StringsZhCn implements Translations {
 	@override String get receiveAddress => '接收地址：';
 	@override String get hangingAmount => '挂起金额';
 	@override String get points => '积分：';
-	@override String get pendingPointsTips => '积分金额是指还未与广告商进行确认比对的权重额度. \n\n不同渠道兑换率不同，最终以渠道商实际结算金额为基准';
+	@override String get pendingPointsTips => '积分金额是指还未与广告商进行确认比对的权重额度. \n不同渠道兑换率不同，最终以渠道商实际结算金额为基准';
 	@override String get received => '已收到';
 	@override String get processing => '处理中';
 	@override String get replied => '已应答';
@@ -17536,6 +17858,20 @@ class _StringsZhCn implements Translations {
 	@override String get launchAdTips => '开启“launchAd”表示将在启动应用时展示一个广告，并将其结果转换为USCT挖矿权重。';
 	@override String get help => '帮助';
 	@override String get verifyOriginalMSISDN => '验证原MSISDN';
+	@override String get noLongerPopup => '不再弹出';
+	@override String get encoding => '编码方式:';
+	@override String get switchingVerificationStringEncodingMethodsTips => '切换不同的验证串编码方式有助于绕过电信运营商的封禁。';
+	@override String get remainUnchanged => '保持不变';
+	@override String get offersGuidline1 => '1). 为了提高用户的 USCT 收益，我们与一些知名的积分墙网络合作，例如 Playtime 和 Ayet Studios。用户可以通过完成“下载应用并打开”、“下载游戏并升级”、“在游戏中花费时间”等简单任务来赚取积分。请阅读以下信息以了解关键信息。';
+	@override String get offersGuidline2 => '2). 用户完成优惠活动即可获得积分。与广告不同，这些积分与 USDT 的兑换率已设定。根据各广告网络的返现情况，积分与 USDT 的兑换率可在 23.5 万积分兑换 1 USDT 到 25 万积分兑换 1 USDT 之间。\n\n这些积分可在每月结束后六到七周内兑换成 USDT。例如：如果您在 8 月份积累了 40 万积分，那么您可以在 10 月 15 日（即我们收到 8 月份返现的日期）之前将这 40 万积分兑换成 1.68 USDT。之后，9 月份积累的积分返现将在 11 月 15 日之前结算，以此类推。这种延迟主要是因为“效果营销”领域的支付周期，以及这些 offerwall 广告网络采用 Net-30 付款机制。\n\n我们刚刚开始使用优惠墙，随着现金流的改善，我们希望缩短提现时间。在此之前，感谢您的耐心等待。';
+	@override String get offersGuidline3 => '3). 您的推荐人每次完成优惠活动，您都会获得积分。您将获得相当于“您直接推荐人所获积分的 43%”的积分。例如：如果您的直接推荐人已获得 7000 积分，您将自动获得 3000 积分。';
+	@override String get offersGuidline4 => '4). 如果您对某个优惠活动中包含的某个应用/游戏感兴趣并想尝试，请通过优惠墙内提供的链接/按钮访问该应用/游戏。如果您不这样做，则无法追踪里程碑和活动。';
+	@override String get offersGuidline5 => '5). 访问这些优惠时切勿使用 VPN。否则，您将被优惠墙网络取消资格。';
+	@override String get offersGuidline6 => '6). Offerwall 网络可能会提示您提供相关权限。请您提供相应权限以确保您的里程碑能够被正确追踪，否则您可能无法获得优惠奖励。';
+	@override String get offersGuidline7 => '7). PlayTime 提供独特的游戏组合，用户只需在游戏中投入时间即可获得奖励。但是，请确保您在这些游戏中也不断升级，而不是仅仅消磨时间，否则广告商可能会撤销支付（尽管这种情况很少见）。';
+	@override String get offersGuidline8 => '8). 您完成的里程碑/任务通常会在几分钟内记录在积分墙上，但在某些情况下，可能需要长达三个小时，因此请耐心等待。如果里程碑未记录，请联系积分墙网络的客服。您访问的每个积分墙上都有单独的客服专区。每次完成里程碑后，请务必在我们的应用程序中查看积分墙，以确保其已被追踪。';
+	@override String get offersGuidline9 => '9). 如果您对某个游戏/应用的优惠感兴趣，但您的设备之前已安装该游戏/应用，请勿尝试与该应用/游戏相关的优惠。您可能无法获得相应活动积分。';
+	@override String get offersGuidline10 => '10). 务必阅读每个 Offerwall 提供的提示。这些提示通常包含关键细节，可以帮助您最大限度地提高成功追踪优惠的机会。';
 }
 
 // Path: <root>
@@ -18262,6 +18598,20 @@ class _StringsZhTw implements Translations {
 	@override String get launchAdTips => '開啟「launchAd」表示將在啟動應用程式時顯示一個廣告，並將其結果轉換為USCT挖礦權重。';
 	@override String get help => '幫助';
 	@override String get verifyOriginalMSISDN => '驗證原始 MSISDN';
+	@override String get noLongerPopup => '不再彈出';
+	@override String get encoding => '編碼方式:';
+	@override String get switchingVerificationStringEncodingMethodsTips => '切換不同的驗證串編碼方式有助於繞過電信業者的封鎖。';
+	@override String get remainUnchanged => '保持不變';
+	@override String get offersGuidline1 => '1). 為了提高用戶的 USCT 收益，我們與一些知名的積分牆網路合作，例如 Playtime 和 Ayet Studios。用戶可以透過完成「下載應用程式並開啟」、「下載遊戲並升級」、「在遊戲中花費時間」等簡單任務來賺取積分。請閱讀以下資訊以了解關鍵資訊。';
+	@override String get offersGuidline2 => '2). 用戶完成優惠活動即可獲得積分。與廣告不同，這些積分與 USDT 的兌換率已設定。根據各廣告網路的返現情況，積分與 USDT 的兌換率可在 23.5 萬積分兌換 1 USDT 到 25 萬積分兌換 1 USDT 之間。\n\n這些積分可在每月結束後六到七週內兌換成 USDT。例如：如果您在 8 月累積了 40 萬積分，那麼您可以在 10 月 15 日（即我們收到 8 月返現的日期）之前將這 40 萬積分兌換成 1.68 USDT。之後，9 月累積的積分返現將在 11 月 15 日之前結算，以此類推。這種延遲主要是因為「效果行銷」領域的支付週期，以及這些 offerwall 廣告網路採用 Net-30 付款機制。\n\n我們剛開始使用優惠牆，隨著現金流的改善，我們希望縮短提現時間。在此之前，感謝您的耐心等待。';
+	@override String get offersGuidline3 => '3). 您的推薦人每次完成優惠活動，您都會獲得積分。您將獲得相當於「您直接推薦人所獲積分的 43%」的積分。例如：如果您的直接推薦人已獲得 7000 積分，您將自動獲得 3000 積分。';
+	@override String get offersGuidline4 => '4). 如果您對某個優惠活動中包含的某個應用程式/遊戲感興趣並想嘗試，請透過優惠牆內提供的連結/按鈕存取該應用程式/遊戲。如果您不這樣做，則無法追蹤里程碑和活動。';
+	@override String get offersGuidline5 => '5). 切勿在存取這些優惠時使用 VPN。否則，您將被優惠牆網路取消資格。';
+	@override String get offersGuidline6 => '6). Offerwall 網路可能會提示您提供相關權限。請您提供相應權限以確保您的里程碑能夠被正確追踪，否則您可能無法獲得優惠獎勵。';
+	@override String get offersGuidline7 => '7). PlayTime 提供獨特的遊戲組合，用戶只需在遊戲中投入時間即可獲得獎勵。但是，請確保您在這些遊戲中也不斷升級，而不是僅僅消磨時間，否則廣告商可能會撤銷付款（儘管這種情況很少見）。';
+	@override String get offersGuidline8 => '8). 您完成的里程碑/任務通常會在幾分鐘內記錄在積分牆上，但在某些情況下，可能需要長達三個小時，因此請耐心等待。若里程碑未記錄，請聯絡積分牆網路的客服。您造訪的每個積分牆上都有單獨的客服專區。每次完成里程碑後，請務必在我們的應用程式中查看積分牆，以確保其已被追蹤。';
+	@override String get offersGuidline9 => '9). 如果您對某個遊戲/應用程式的優惠感興趣，但您的裝置之前已安裝該遊戲/應用，請勿嘗試與該應用程式/遊戲相關的優惠。您可能無法獲得相應活動積分。';
+	@override String get offersGuidline10 => '10). 務必閱讀每個 Offerwall 提供的提示。這些提示通常包含關鍵細節，可以幫助您最大限度地提高成功追蹤優惠的機會。';
 }
 
 /// Flat map(s) containing all translations.
@@ -18528,10 +18878,10 @@ extension on Translations {
 			case 'icpFuelCrowdfunding': return 'ICP fuel crowdfunding';
 			case 'totalAllocation': return 'Total allocation';
 			case 'miningRatio': return 'Mining ratio';
-			case 'billion.300': return '300 billion';
-			case 'billion.180': return '180 billion';
 			case 'billion.30': return '30 billion';
 			case 'billion.60': return '60 billion';
+			case 'billion.180': return '180 billion';
+			case 'billion.300': return '300 billion';
 			case 'watchAdsToSupportDevelopers': return 'Watch ads to support developers';
 			case 'loadingAdcomponents': return 'Loading ad components…';
 			case 'timeIsNotUp': return 'Time is not up!';
@@ -18795,7 +19145,7 @@ extension on Translations {
 			case 'receiveAddress': return 'Receive address: ';
 			case 'hangingAmount': return 'hanging';
 			case 'points': return 'Points: ';
-			case 'pendingPointsTips': return 'Points refer to the weighted amount that has not yet been confirmed and compared with advertisers. \n\nThe redemption rate varies between channels, and the final settlement amount is based on the actual settlement amount with the channel.';
+			case 'pendingPointsTips': return 'Points refer to the weighted amount that has not yet been confirmed and compared with advertisers. \nThe redemption rate varies between channels, and the final settlement amount is based on the actual settlement amount with the channel.';
 			case 'received': return 'Received';
 			case 'processing': return 'Processing';
 			case 'replied': return 'Replied';
@@ -18966,6 +19316,20 @@ extension on Translations {
 			case 'launchAdTips': return 'Turning on "launchAd" means that an ad will be displayed when the app is launched, and its result will be converted into USCT mining weight.';
 			case 'help': return 'Help';
 			case 'verifyOriginalMSISDN': return 'Verify original MSISDN';
+			case 'noLongerPopup': return 'No longer popup';
+			case 'encoding': return 'Encoding:';
+			case 'switchingVerificationStringEncodingMethodsTips': return 'Switching to different verification string encoding methods can help bypass the ban of telecom operators.';
+			case 'remainUnchanged': return 'remain unchanged';
+			case 'offersGuidline1': return '1). In an effort to increase the USCT payout for the users, we have tied up with some of the highly reputed offerwall networks like Playtime and Ayet Studios. Users can earn points completing simple tasks like “Download Apps and Open”, “Download Games and Reaching Levels”, “Spending time across games” etc. Please read the information below to understand crucial information.';
+			case 'offersGuidline2': return '2). Users will earn points for completing the offers. Unlike ads, these points have an already established exchange ratio in relation to USDT. Depending on the payout from the networks, the conversion between points and USDT can be anywhere between 235K points = 1 USDT to 250K points = 1 USDT. \n\nThese points can be converted to USDT within six to seven weeks of any month’s end. For instance: If you accumulate 400K points in the month of August, then you’ll be able to redeem these 400K points as 1.68 USDT by 15th October (which is when we receive the payout for the month of August). Subsequently, the payout for points accumulated in the month of September will be settled by 15th November, and so on. This delay is primarily because of the payment cycles in the “performance marketing” niche and the fact that these offerwall networks pay us out on a Net-30 basis. \n\nWe’re just starting out with the offerwalls, and over time, as our cash flow improves, we would love to lower this withdrawal timeframe. Until then, we appreciate your patience.';
+			case 'offersGuidline3': return '3). You’ll also accumulate points every time your referrals complete an offer. You’ll earn points equivalent to “43% of the points earned by your direct referrals”. For instance: If your direct referral has earned 7000 points, you’ll automatically be credited 3000 points.';
+			case 'offersGuidline4': return '4). If you’re interested in a particular app/game pertaining to an offer and want to try it out, please visit the app/game through the provided link/button within the offerwall. If you don’t do so, the milestones and activity won’t be tracked. ';
+			case 'offersGuidline5': return '5). Never use VPN while accessing these offers. You’ll be disqualified by the offerwall networks.';
+			case 'offersGuidline6': return '6). You may be prompted by the Offerwall networks to provide relevant permissions. Please do so in order to ensure your milestones are properly tracked, otherwise you may not be rewarded for the offers.';
+			case 'offersGuidline7': return '7). PlayTime provides a unique blend of game offers where users are rewarded for simply spending time across the games. However, please ensure that you’re also progressing through the levels across these games instead of just killing time or the advertiser may reverse the payout (although it’s rare).';
+			case 'offersGuidline8': return '8). The milestones/tasks completed by you are usually registered across the offerwalls within a few minutes of completion, but in certain cases, it may take up to three hours, so please be patient in such cases. If the milestone doesn’t get registered, please reach out to the customer support pertaining to the Offerwall network. There’s a separate section for Customer Support across every Offerwall you access. Always ensure you check the offerwalls within our app every time you finish a milestone to ensure it has been tracked.';
+			case 'offersGuidline9': return '9). In case you’re interested in a game/app offer, but you previously had that game/app installed in your device, please don’t attempt the offer pertaining to that app/game. You may not get credited for your activity.';
+			case 'offersGuidline10': return '10). Always read the tips provided by each Offerwall. They often contain crucial details that can help maximize your chances of successful tracking across the offers.';
 			default: return null;
 		}
 	}
@@ -19232,10 +19596,10 @@ extension on _StringsBg {
 			case 'icpFuelCrowdfunding': return 'ICP гориво за групово финансиране';
 			case 'totalAllocation': return 'Общо разпределение';
 			case 'miningRatio': return 'Съотношение на добива';
-			case 'billion.300': return '300 милиарда';
-			case 'billion.180': return '180 милиарда';
 			case 'billion.30': return '30 милиарда';
 			case 'billion.60': return '60 милиарда';
+			case 'billion.180': return '180 милиарда';
+			case 'billion.300': return '300 милиарда';
 			case 'watchAdsToSupportDevelopers': return 'Гледайте реклами, за да подкрепите разработчиците';
 			case 'loadingAdcomponents': return 'Зареждане на рекламни компоненти…';
 			case 'timeIsNotUp': return 'Времето не е изтекло!';
@@ -19670,6 +20034,20 @@ extension on _StringsBg {
 			case 'launchAdTips': return 'Включването на „launchAd“ означава, че при стартиране на приложението ще се показва реклама, а резултатът от нея ще бъде преобразуван в USCT тегло за добив.';
 			case 'help': return 'Помощ';
 			case 'verifyOriginalMSISDN': return 'Проверете оригиналния MSISDN';
+			case 'noLongerPopup': return 'Вече не се появява';
+			case 'encoding': return 'Кодиране:';
+			case 'switchingVerificationStringEncodingMethodsTips': return 'Преминаването към различни методи за кодиране на низове за проверка може да помогне за заобикаляне на забраната на телекомуникационните оператори.';
+			case 'remainUnchanged': return 'остават непроменени';
+			case 'offersGuidline1': return '1). В опит да увеличим изплащането на USCT за потребителите, ние се обвързахме с някои от високо реномираните мрежи за оферти, като Playtime и Ayet Studios. Потребителите могат да печелят точки, изпълнявайки прости задачи като „Изтегляне на приложения и отваряне“, „Изтегляне на игри и достигане на нива“, „Прекарване на време в игри“ и др. Моля, прочетете информацията по-долу, за да разберете важната информация.';
+			case 'offersGuidline2': return '2). Потребителите ще печелят точки за изпълнение на офертите. За разлика от рекламите, тези точки имат вече установено съотношение на обмен спрямо USDT. В зависимост от изплащането от мрежите, конвертирането между точки и USDT може да бъде между 235 000 точки = 1 USDT и 250 000 точки = 1 USDT.\n\nТези точки могат да бъдат конвертирани в USDT в рамките на шест до седем седмици след края на всеки месец. Например: Ако натрупате 400 000 точки през месец август, тогава ще можете да осребрите тези 400 000 точки за 1,68 USDT до 15 октомври (когато получим изплащането за месец август). Впоследствие изплащането на точките, натрупани през месец септември, ще бъде уредено до 15 ноември и т.н. Това забавяне се дължи главно на циклите на плащане в нишата на „маркетинга, базиран на ефективността“ и на факта, че тези мрежи за оферти ни плащат на база Net-30.\n\nТепърва започваме с офертните стени и с течение на времето, с подобряването на паричния ни поток, бихме искали да намалим този срок за теглене. Дотогава, оценяваме вашето търпение.';
+			case 'offersGuidline3': return '3). Ще трупате точки всеки път, когато вашите препоръчители изпълнят оферта. Ще печелите точки, еквивалентни на „43% от точките, спечелени от вашите директни препоръчители“. Например: Ако вашият директен препоръчител е спечелил 7000 точки, автоматично ще ви бъдат добавени 3000 точки.';
+			case 'offersGuidline4': return '4). Ако се интересувате от конкретно приложение/игра, свързано с оферта, и искате да го изпробвате, моля, посетете приложението/играта чрез предоставената връзка/бутон в рамките на офертата. Ако не го направите, етапите и активността няма да бъдат проследявани.';
+			case 'offersGuidline5': return '5). Никога не използвайте VPN, докато осъществявате достъп до тези оферти. Ще бъдете дисквалифицирани от мрежите на offerwall.';
+			case 'offersGuidline6': return '6). Възможно е мрежите на Offerwall да ви подканят да предоставите съответните разрешения. Моля, направете го, за да сте сигурни, че вашите етапи се проследяват правилно, в противен случай може да не получите възнаграждение за офертите.';
+			case 'offersGuidline7': return '7). PlayTime предлага уникална комбинация от игрови оферти, при които потребителите биват възнаграждавани само за това, че прекарват време в игрите. Моля, уверете се обаче, че преминавате през нивата в тези игри, вместо просто да убивате време, в противен случай рекламодателят може да отмени изплащането (въпреки че това е рядкост).';
+			case 'offersGuidline8': return '8). Завършените от вас етапи/задачи обикновено се регистрират в офертните стени в рамките на няколко минути след завършването им, но в определени случаи това може да отнеме до три часа, така че, моля, бъдете търпеливи. Ако етапът не се регистрира, моля, свържете се с отдела за обслужване на клиенти на мрежата на Offerwall. Има отделен раздел за обслужване на клиенти във всеки Offerwall, до който имате достъп. Винаги проверявайте офертните стени в нашето приложение всеки път, когато завършите етап, за да се уверите, че е проследен.';
+			case 'offersGuidline9': return '9). В случай че се интересувате от оферта за игра/приложение, но преди това сте имали инсталирана тази игра/приложение на устройството си, моля, не се възползвайте от офертата, отнасяща се до това приложение/игра. Възможно е да не получите кредит за активността си.';
+			case 'offersGuidline10': return '10). Винаги четете съветите, предоставени от всяка Offerwall. Те често съдържат важни подробности, които могат да ви помогнат да увеличите максимално шансовете си за успешно проследяване на офертите.';
 			default: return null;
 		}
 	}
@@ -20377,6 +20755,20 @@ extension on _StringsBn {
 			case 'launchAdTips': return '"launchAd" চালু করার অর্থ হল অ্যাপটি চালু হওয়ার সাথে সাথে একটি বিজ্ঞাপন প্রদর্শিত হবে এবং এর ফলাফল USCT মাইনিং ওয়েটে রূপান্তরিত হবে।';
 			case 'help': return 'সাহায্য';
 			case 'verifyOriginalMSISDN': return 'মূল MSISDN যাচাই করুন';
+			case 'noLongerPopup': return 'আর পপ আপ হবে না';
+			case 'encoding': return 'এনকোডিং:';
+			case 'switchingVerificationStringEncodingMethodsTips': return 'বিভিন্ন যাচাইকরণ স্ট্রিং এনকোডিং পদ্ধতিতে স্যুইচ করা টেলিকম অপারেটরদের নিষেধাজ্ঞা এড়াতে সাহায্য করতে পারে।';
+			case 'remainUnchanged': return 'অপরিবর্তিত থাকুন';
+			case 'offersGuidline1': return '১). ব্যবহারকারীদের জন্য USCT পেমেন্ট বৃদ্ধির প্রচেষ্টায়, আমরা Playtime এবং Ayet Studios এর মতো কিছু অত্যন্ত স্বনামধন্য অফারওয়াল নেটওয়ার্কের সাথে চুক্তিবদ্ধ হয়েছি। ব্যবহারকারীরা "অ্যাপ ডাউনলোড করুন এবং খুলুন", "গেম ডাউনলোড করুন এবং স্তরে পৌঁছান", "গেম জুড়ে সময় ব্যয় করুন" ইত্যাদির মতো সহজ কাজগুলি সম্পন্ন করে পয়েন্ট অর্জন করতে পারেন। গুরুত্বপূর্ণ তথ্য বুঝতে নীচের তথ্যটি পড়ুন।';
+			case 'offersGuidline2': return '২). অফারগুলি সম্পন্ন করার জন্য ব্যবহারকারীরা পয়েন্ট অর্জন করবেন। বিজ্ঞাপনের বিপরীতে, এই পয়েন্টগুলির USDT-এর সাথে সম্পর্কিত একটি প্রতিষ্ঠিত বিনিময় অনুপাত রয়েছে। নেটওয়ার্ক থেকে প্রাপ্ত অর্থপ্রদানের উপর নির্ভর করে, পয়েন্ট এবং USDT-এর মধ্যে রূপান্তর 235K পয়েন্ট = 1 USDT থেকে 250K পয়েন্ট = 1 USDT-এর মধ্যে হতে পারে। \n\nযেকোনো মাস শেষ হওয়ার ছয় থেকে সাত সপ্তাহের মধ্যে এই পয়েন্টগুলিকে USDT-তে রূপান্তর করা যেতে পারে। উদাহরণস্বরূপ: যদি আপনি আগস্ট মাসে 400K পয়েন্ট জমা করেন, তাহলে আপনি 15 অক্টোবরের মধ্যে এই 400K পয়েন্টগুলিকে 1.68 USDT হিসাবে রিডিম করতে পারবেন (যে সময় আমরা আগস্ট মাসের জন্য অর্থপ্রদান পাই)। পরবর্তীকালে, সেপ্টেম্বর মাসে জমা হওয়া পয়েন্টের অর্থপ্রদান 15 নভেম্বরের মধ্যে নিষ্পত্তি করা হবে, ইত্যাদি। এই বিলম্ব মূলত "পারফরম্যান্স মার্কেটিং" নিশে পেমেন্ট চক্র এবং এই অফারওয়াল নেটওয়ার্কগুলি আমাদের নেট-30 ভিত্তিতে অর্থপ্রদান করে বলে। \n\nআমরা সবেমাত্র অফারওয়াল দিয়ে শুরু করছি, এবং সময়ের সাথে সাথে, আমাদের নগদ প্রবাহ উন্নত হওয়ার সাথে সাথে, আমরা এই উত্তোলনের সময়সীমা কমাতে চাই। ততক্ষণ পর্যন্ত, আমরা আপনার ধৈর্যের জন্য কৃতজ্ঞ।';
+			case 'offersGuidline3': return '৩)। আপনার রেফারেলরা যখনই কোনও অফার সম্পূর্ণ করবে তখন আপনি পয়েন্ট সংগ্রহ করবেন। আপনি "আপনার ডাইরেক্ট রেফারেল দ্বারা অর্জিত পয়েন্টের ৪৩%" এর সমতুল্য পয়েন্ট অর্জন করবেন। উদাহরণস্বরূপ: যদি আপনার ডাইরেক্ট রেফারেল ৭০০০ পয়েন্ট অর্জন করে থাকে, তাহলে আপনাকে স্বয়ংক্রিয়ভাবে ৩০০০ পয়েন্ট জমা দেওয়া হবে।';
+			case 'offersGuidline4': return '৪)। যদি আপনি কোনও অফার সম্পর্কিত কোনও নির্দিষ্ট অ্যাপ/গেমে আগ্রহী হন এবং এটি ব্যবহার করে দেখতে চান, তাহলে অনুগ্রহ করে অফারওয়ালের মধ্যে প্রদত্ত লিঙ্ক/বোতামের মাধ্যমে অ্যাপ/গেমটি দেখুন। যদি আপনি তা না করেন, তাহলে মাইলফলক এবং কার্যকলাপ ট্র্যাক করা হবে না।';
+			case 'offersGuidline5': return '৫). এই অফারগুলি অ্যাক্সেস করার সময় কখনও VPN ব্যবহার করবেন না। অফারওয়াল নেটওয়ার্কগুলি আপনাকে অযোগ্য ঘোষণা করবে।';
+			case 'offersGuidline6': return '৬)। অফারওয়াল নেটওয়ার্কগুলি আপনাকে প্রাসঙ্গিক অনুমতি প্রদানের জন্য অনুরোধ করতে পারে। আপনার মাইলফলকগুলি সঠিকভাবে ট্র্যাক করা হয়েছে তা নিশ্চিত করার জন্য দয়া করে এটি করুন, অন্যথায় আপনাকে অফারগুলির জন্য পুরস্কৃত নাও করা হতে পারে।';
+			case 'offersGuidline7': return '৭)। প্লেটাইম গেম অফারের এক অনন্য মিশ্রণ প্রদান করে যেখানে ব্যবহারকারীরা কেবল গেম জুড়ে সময় ব্যয় করার জন্য পুরস্কৃত হন। তবে, দয়া করে নিশ্চিত করুন যে আপনি কেবল সময় নষ্ট করার পরিবর্তে এই গেম জুড়ে স্তরগুলির মধ্য দিয়েও অগ্রগতি করছেন, অন্যথায় বিজ্ঞাপনদাতা পেমেন্টটি বিপরীত করতে পারে (যদিও এটি বিরল)।';
+			case 'offersGuidline8': return '৮)। আপনার দ্বারা সম্পন্ন মাইলস্টোন/কাজগুলি সাধারণত অফারওয়ালগুলিতে কয়েক মিনিটের মধ্যে নিবন্ধিত হয়, তবে কিছু ক্ষেত্রে, এটি তিন ঘন্টা পর্যন্ত সময় নিতে পারে, তাই এই ক্ষেত্রে ধৈর্য ধরুন। যদি মাইলস্টোনটি নিবন্ধিত না হয়, তাহলে অনুগ্রহ করে অফারওয়াল নেটওয়ার্ক সম্পর্কিত গ্রাহক সহায়তার সাথে যোগাযোগ করুন। আপনার অ্যাক্সেস করা প্রতিটি অফারওয়ালে গ্রাহক সহায়তার জন্য একটি পৃথক বিভাগ রয়েছে। আপনি যখনই কোনও মাইলস্টোন সম্পূর্ণ করেন তখন তা ট্র্যাক করা হয়েছে কিনা তা নিশ্চিত করার জন্য সর্বদা আমাদের অ্যাপের মধ্যে অফারওয়ালগুলি পরীক্ষা করে দেখুন।';
+			case 'offersGuidline9': return '৯). যদি আপনি কোনও গেম/অ্যাপ অফারে আগ্রহী হন, কিন্তু আপনার ডিভাইসে সেই গেম/অ্যাপটি আগে ইনস্টল করা থাকে, তাহলে অনুগ্রহ করে সেই অ্যাপ/গেম সম্পর্কিত অফারটি ব্যবহার করার চেষ্টা করবেন না। আপনার কার্যকলাপের জন্য আপনাকে ক্রেডিট নাও দেওয়া হতে পারে।';
+			case 'offersGuidline10': return '১০). প্রতিটি অফারওয়ালের দেওয়া টিপসগুলি সর্বদা পড়ুন। এগুলিতে প্রায়শই গুরুত্বপূর্ণ বিবরণ থাকে যা অফারগুলি জুড়ে সফলভাবে ট্র্যাক করার সম্ভাবনা সর্বাধিক করতে সাহায্য করতে পারে।';
 			default: return null;
 		}
 	}
@@ -20643,10 +21035,10 @@ extension on _StringsCkb {
 			case 'icpFuelCrowdfunding': return 'Crowdfunding سووتەمەنی ICP';
 			case 'totalAllocation': return 'کۆی گشتی تەرخانکردن';
 			case 'miningRatio': return 'رێژەی کانگا';
-			case 'billion.300': return '300 ملیار';
-			case 'billion.180': return '180 ملیار';
 			case 'billion.30': return '30 ملیار';
 			case 'billion.60': return '60 ملیار';
+			case 'billion.180': return '180 ملیار';
+			case 'billion.300': return '300 ملیار';
 			case 'watchAdsToSupportDevelopers': return 'سەیری ڕێکلامەکان بکە بۆ پشتگیریکردنی گەشەپێدەران';
 			case 'loadingAdcomponents': return 'بارکردنی پێکهاتەکانی ڕێکلام...';
 			case 'timeIsNotUp': return 'کات تەواو نەبووە!';
@@ -21082,6 +21474,20 @@ extension on _StringsCkb {
 			case 'launchAdTips': return 'داگیرساندنی "launchAd" بەو مانایەیە کە ڕێکلامێک پیشان دەدرێت کاتێک ئەپەکە دەکرێتەوە، و ئەنجامەکەی دەگۆڕدرێت بۆ کێشی کانزای USCT.';
 			case 'help': return 'یارمەتی';
 			case 'verifyOriginalMSISDN': return 'MSISDN ئەسڵی پشتڕاست بکەرەوە';
+			case 'noLongerPopup': return 'چیتر پەپ ئەپ ناکات';
+			case 'encoding': return 'کۆدکردن:';
+			case 'switchingVerificationStringEncodingMethodsTips': return 'گۆڕین بۆ شێوازە جیاوازەکانی کۆدکردنی ڕیزەکانی پشتڕاستکردنەوە دەتوانێت یارمەتیدەر بێت لە تێپەڕاندنی قەدەغەکردنی بەڕێوەبەرانی پەیوەندییەکان.';
+			case 'remainUnchanged': return 'وەک خۆی بمێنێتەوە';
+			case 'offersGuidline1': return '1). لە هەوڵێکدا بۆ زیادکردنی پارەی USCT بۆ بەکارهێنەران، ئێمە پەیوەندیمان لەگەڵ هەندێک لە تۆڕەکانی ئۆفەروۆڵ کە بەناوبانگن وەک Playtime و Ayet Studios. بەکارهێنەران دەتوانن خاڵ بەدەستبهێنن بە تەواوکردنی ئەرکە سادەکانی وەک "دابەزاندنی ئەپەکان و کردنەوەی"، "دابەزاندنی یارییەکان و گەیشتن بە ئاستەکان"، "بەسەربردنی کات لە سەرانسەری یارییەکاندا" و هتد. تکایە زانیارییەکانی خوارەوە بخوێنەرەوە بۆ تێگەیشتن لە زانیارییە گرنگەکان.';
+			case 'offersGuidline2': return '2). بەکارهێنەران خاڵ بەدەستدەهێنن بۆ تەواوکردنی ئۆفەرەکان. بە پێچەوانەی ڕێکلامەکانەوە، ئەم خاڵانە ڕێژەیەکی ئاڵوگۆڕی پێشتر دامەزراویان هەیە لە پێوەندی لەگەڵ USDT. بەپێی پارەدان لە تۆڕەکانەوە، گۆڕینی نێوان خاڵەکان و USDT دەتوانێت لە هەر شوێنێک بێت لە نێوان 235K خاڵ = 1 USDT بۆ 250K خاڵ = 1 USDT. \n\nئەم خاڵانە دەتوانرێت لە ماوەی شەش بۆ حەوت هەفتەدا لە کۆتایی هەر مانگێکەوە بگۆڕدرێن بۆ USDT. بۆ نموونە: ئەگەر لە مانگی ئابدا 400K خاڵت کۆکردەوە، ئەوا دەتوانیت ئەم 400K خاڵانە وەک 1.68 USDT تا 15ی تشرینی یەکەم وەربگریتەوە (کە کاتێکە کە ئێمە پارەی مانگی ئاب وەردەگرین). دواتر، پارەی خاڵەکانی کەڵەکەبوو لە مانگی ئەیلولدا تا ١٥ی تشرینی دووەم یەکلایی دەکرێتەوە و هتد. ئەم دواکەوتنە بە پلەی یەکەم بەهۆی خولەکانی پارەدان لە شوێنی "بازاڕکردنی ئەدای کارکردن" و ئەو ڕاستییەی کە ئەم تۆڕانەی دیواری ئۆفەر لەسەر بنەمای نێت-٣٠ پارەمان دەدەن. \n\nئێمە تازە دەستمان پێکردووە بە دیواری ئۆفەرەکان، و بە تێپەڕبوونی کات، لەگەڵ باشتربوونی ڕۆیشتنی پارەمان، زۆرمان پێ خۆشە ئەم ماوەیەی کشانەوە کەم بکەینەوە. تا ئەو کاتە سەبرتان بەرز دەنرخێنین.';
+			case 'offersGuidline3': return '3). هەروەها هەر جارێک کە ڕەوانەکردنەکانت ئۆفەرێک تەواو دەکەن، خاڵەکانت کۆدەکەیتەوە. تۆ خاڵ بەدەست دەهێنیت کە یەکسانە بە "43%ی ئەو خاڵانەی کە بەهۆی ڕەوانەکردنی ڕاستەوخۆتەوە بەدەستت هێناوە". بۆ نموونە: ئەگەر ڕەوانەکردنی ڕاستەوخۆت 7000 خاڵ بەدەست هێنابێت، ئەوا بە شێوەیەکی ئۆتۆماتیکی 3000 خاڵت پێدەدرێت.';
+			case 'offersGuidline4': return '4). ئەگەر ئارەزووی ئەپ/یارییەکی تایبەت دەکەیت کە پەیوەندی بە ئۆفەرێکەوە هەیە و دەتەوێت تاقی بکەیتەوە، تکایە سەردانی ئەپ/یارییەکە بکە لە ڕێگەی بەستەر/دوگمەی دابینکراو لەناو دیواری ئۆفەرەکەدا. ئەگەر ئەوە نەکەیت، ئەوا بەدواداچوون بۆ بەربەست و چالاکییەکان ناکرێت. ';
+			case 'offersGuidline5': return '5). هەرگیز لەکاتی دەستگەیشتن بەم ئۆفەرانەدا VPN بەکارمەهێنە. تۆ لەلایەن تۆڕەکانی دیواری ئۆفەرەوە بێبەش دەکرێیت.';
+			case 'offersGuidline6': return '6). لەوانەیە لەلایەن تۆڕەکانی ئۆفەروالەوە داوات لێ بکرێت کە مۆڵەتی پەیوەندیدار پێشکەش بکەیت. تکایە ئەوە بکە بۆ ئەوەی دڵنیا بیت کە بە باشی بەدواداچوون بۆ بەربەستەکانت دەکرێت، ئەگەرنا لەوانەیە پاداشتت نەدرێتەوە بۆ ئۆفەرەکان.';
+			case 'offersGuidline7': return '7). پلەی تایم تێکەڵەیەکی ناوازە لە ئۆفەرەکانی یارییەکان دابین دەکات کە بەکارهێنەران پاداشت دەکرێن بۆ بەسەربردنی کات بە سادەیی لە سەرانسەری یارییەکاندا. بەڵام تکایە دڵنیابە لەوەی کە تۆش لە ئاستەکانی ئەم یارییانەدا پێشدەکەویت لەبری ئەوەی تەنها کات بکوژیت یان ڕێکلامکەر ڕەنگە پارەدانەکە پێچەوانە بکاتەوە (هەرچەندە دەگمەنە).';
+			case 'offersGuidline8': return '8). ئەو بەربەستە گرنگانە/ئەرکانەی کە لەلایەن تۆوە تەواو دەکرێن بەزۆری لە سەرانسەری دیوارەکانی ئۆفەرەکاندا تۆمار دەکرێن لە ماوەی چەند خولەکێکدا دوای تەواوبوون، بەڵام لە هەندێک حاڵەتدا، لەوانەیە تا سێ کاتژمێر بخایەنێت، بۆیە تکایە سەبر بگرە لەم جۆرە حاڵەتانەدا. ئەگەر ئەو بڕگەیە تۆمار نەکرا، تکایە دەستت بگات بە پشتگیری کڕیار کە پەیوەندی بە تۆڕی ئۆفەروالەوە هەیە. بەشێکی جیاواز هەیە بۆ پشتگیری کڕیار لە سەرانسەری هەموو دیوارە ئۆفەرێکدا کە دەستت پێدەگات. هەمیشە دڵنیابە کە هەر جارێک کە بڕگەیەکی گرنگ تەواو دەکەیت، دیوارەکانی ئۆفەرەکان لەناو ئەپەکەماندا دەپشکنیت بۆ ئەوەی دڵنیا بیت کە بەدواداچوونی بۆ کراوە.';
+			case 'offersGuidline9': return '9). لە ئەگەری ئەوەی کە تۆ ئارەزووی ئۆفەرێکی یاری/ئەپێک دەکەیت، بەڵام پێشتر ئەو یارییە/ئەپەت لە ئامێرەکەتدا دامەزراندبوو، تکایە هەوڵی ئەو ئۆفەرە مەدە کە پەیوەندی بەو ئەپ/یارییەوە هەیە. لەوانەیە تۆ کریدت بۆ چالاکییەکەت وەرنەگیرێت.';
+			case 'offersGuidline10': return '10). هەمیشە ئەو ئامۆژگارییانە بخوێنەرەوە کە لەلایەن هەر ئۆفەروالێکەوە پێشکەش کراوە. زۆرجار وردەکاری گرنگیان تێدایە کە دەتوانن یارمەتیدەر بن بۆ زۆرترین چانسی بەدواداچوونی سەرکەوتووت لە سەرانسەری ئۆفەرەکاندا.';
 			default: return null;
 		}
 	}
@@ -21787,6 +22193,20 @@ extension on _StringsDe {
 			case 'launchAdTips': return 'Wenn Sie "launchAd" aktivieren, wird beim Starten der App eine Anzeige angezeigt und das Ergebnis in ein USCT-Mining-Gewicht umgewandelt.';
 			case 'help': return 'Hilfe';
 			case 'verifyOriginalMSISDN': return 'Ursprüngliche MSISDN verifizieren';
+			case 'noLongerPopup': return 'Wird nicht mehr angezeigt';
+			case 'encoding': return 'Codierung:';
+			case 'switchingVerificationStringEncodingMethodsTips': return 'Durch die Umstellung auf andere Methoden zur Verschlüsselung von Verifizierungszeichenfolgen kann das Verbot der Telekommunikationsbetreiber umgangen werden.';
+			case 'remainUnchanged': return 'bleiben unverändert';
+			case 'offersGuidline1': return '1). Um die USCT-Auszahlung für unsere Nutzer zu erhöhen, haben wir uns mit renommierten Offerwall-Netzwerken wie Playtime und Ayet Studios zusammengeschlossen. Nutzer können Punkte sammeln, indem sie einfache Aufgaben wie „Apps herunterladen und öffnen“, „Spiele herunterladen und Level erreichen“, „Zeit mit Spielen verbringen“ usw. erledigen. Bitte lesen Sie die folgenden Informationen, um wichtige Informationen zu verstehen.';
+			case 'offersGuidline2': return '2) Nutzer erhalten Punkte für das Abschließen der Angebote. Im Gegensatz zu Anzeigen haben diese Punkte ein festes Umtauschverhältnis zu USDT. Abhängig von der Auszahlung der Netzwerke kann der Umtausch zwischen Punkten und USDT zwischen 235.000 Punkten = 1 USDT und 250.000 Punkten = 1 USDT liegen.\n\nDiese Punkte können innerhalb von sechs bis sieben Wochen nach Monatsende in USDT umgetauscht werden. Beispiel: Wenn Sie im August 400.000 Punkte sammeln, können Sie diese 400.000 Punkte bis zum 15. Oktober (dem Tag, an dem wir die Auszahlung für den Monat August erhalten) für 1,68 USDT einlösen. Anschließend erfolgt die Auszahlung der im September gesammelten Punkte bis zum 15. November usw. Diese Verzögerung ist hauptsächlich auf die Zahlungszyklen im Performance-Marketing-Bereich und die Tatsache zurückzuführen, dass diese Offerwall-Netzwerke uns auf Net-30-Basis auszahlen.\n\nWir stehen noch ganz am Anfang mit den Offerwalls und würden die Auszahlungsfrist mit der Zeit gerne verkürzen, wenn sich unser Cashflow verbessert. Bis dahin danken wir Ihnen für Ihre Geduld.';
+			case 'offersGuidline3': return '3). Sie sammeln außerdem jedes Mal Punkte, wenn Ihre Empfehlungen ein Angebot abschließen. Sie erhalten Punkte in Höhe von 43 % der Punkte, die Ihre direkten Empfehlungen erhalten. Beispiel: Wenn Ihre direkte Empfehlung 7.000 Punkte gesammelt hat, werden Ihnen automatisch 3.000 Punkte gutgeschrieben.';
+			case 'offersGuidline4': return '4). Wenn Sie an einer bestimmten App/einem bestimmten Spiel im Rahmen eines Angebots interessiert sind und diese/s ausprobieren möchten, besuchen Sie die App/das Spiel bitte über den bereitgestellten Link/Button in der Angebotswand. Andernfalls werden die Meilensteine und Aktivitäten nicht erfasst.';
+			case 'offersGuidline5': return '5). Verwenden Sie niemals VPN, während Sie auf diese Angebote zugreifen. Sie werden von den Offerwall-Netzwerken disqualifiziert.';
+			case 'offersGuidline6': return '6). Sie werden möglicherweise von den Offerwall-Netzwerken aufgefordert, entsprechende Berechtigungen zu erteilen. Bitte tun Sie dies, um sicherzustellen, dass Ihre Meilensteine ordnungsgemäß verfolgt werden, da Sie sonst möglicherweise nicht für die Angebote belohnt werden.';
+			case 'offersGuidline7': return '7). PlayTime bietet eine einzigartige Mischung aus Spielangeboten, bei denen Nutzer für ihre Zeit in den Spielen belohnt werden. Achten Sie jedoch darauf, dass Sie in den Spielen auch Levels erreichen und nicht nur Zeit totschlagen. Andernfalls kann der Werbetreibende die Auszahlung rückgängig machen (was jedoch selten vorkommt).';
+			case 'offersGuidline8': return '8). Die von Ihnen abgeschlossenen Meilensteine/Aufgaben werden in der Regel innerhalb weniger Minuten nach Abschluss in den Offerwalls registriert. In Einzelfällen kann es jedoch bis zu drei Stunden dauern. Bitte haben Sie in solchen Fällen Geduld. Sollte der Meilenstein nicht registriert werden, wenden Sie sich bitte an den Kundensupport des Offerwall-Netzwerks. Für jede Offerwall, auf die Sie zugreifen, gibt es einen separaten Bereich für den Kundensupport. Überprüfen Sie die Offerwalls in unserer App nach jedem abgeschlossenen Meilenstein, um sicherzustellen, dass dieser erfasst wurde.';
+			case 'offersGuidline9': return '9). Falls Sie an einem Spiel-/App-Angebot interessiert sind, dieses Spiel/diese App aber bereits auf Ihrem Gerät installiert haben, versuchen Sie bitte nicht, das entsprechende Angebot in Anspruch zu nehmen. Möglicherweise erhalten Sie für Ihre Aktivität keine Gutschrift.';
+			case 'offersGuidline10': return '10). Lesen Sie immer die Tipps der einzelnen Offerwalls. Sie enthalten oft wichtige Details, die Ihnen helfen können, Ihre Chancen auf ein erfolgreiches Tracking der Angebote zu maximieren.';
 			default: return null;
 		}
 	}
@@ -22053,10 +22473,10 @@ extension on _StringsEl {
 			case 'icpFuelCrowdfunding': return 'Crowdfunding καυσίμων ICP';
 			case 'totalAllocation': return 'Συνολική κατανομή';
 			case 'miningRatio': return 'Λόγος Εξόρυξης';
-			case 'billion.300': return '300 δισεκατομμύρια';
-			case 'billion.180': return '180 δισεκατομμύρια';
 			case 'billion.30': return '30 δισεκατομμύρια';
 			case 'billion.60': return '60 δισεκατομμύρια';
+			case 'billion.180': return '180 δισεκατομμύρια';
+			case 'billion.300': return '300 δισεκατομμύρια';
 			case 'watchAdsToSupportDevelopers': return 'Παρακολουθήστε διαφημίσεις για να υποστηρίξετε τους προγραμματιστές';
 			case 'loadingAdcomponents': return 'Φόρτωση στοιχείων διαφήμισης...';
 			case 'timeIsNotUp': return 'Ο χρόνος δεν τελείωσε!';
@@ -22492,6 +22912,20 @@ extension on _StringsEl {
 			case 'launchAdTips': return 'Η ενεργοποίηση του "launchAd" σημαίνει ότι θα εμφανίζεται μια διαφήμιση κατά την εκκίνηση της εφαρμογής και το αποτέλεσμά της θα μετατραπεί σε βάρος εξόρυξης USCT.';
 			case 'help': return 'Βοήθεια';
 			case 'verifyOriginalMSISDN': return 'Επαλήθευση αρχικού MSISDN';
+			case 'noLongerPopup': return 'Δεν εμφανίζεται πλέον';
+			case 'encoding': return 'Κωδικοποίηση:';
+			case 'switchingVerificationStringEncodingMethodsTips': return 'Η μετάβαση σε διαφορετικές μεθόδους κωδικοποίησης συμβολοσειρών επαλήθευσης μπορεί να βοηθήσει στην παράκαμψη της απαγόρευσης των τηλεπικοινωνιακών εταιρειών.';
+			case 'remainUnchanged': return 'παραμένουν αμετάβλητα';
+			case 'offersGuidline1': return '1). Σε μια προσπάθεια να αυξήσουμε την πληρωμή του USCT για τους χρήστες, έχουμε συνεργαστεί με μερικά από τα φημισμένα δίκτυα προσφορών όπως το Playtime και το Ayet Studios. Οι χρήστες μπορούν να κερδίσουν πόντους ολοκληρώνοντας απλές εργασίες όπως «Λήψη εφαρμογών και άνοιγμα», «Λήψη παιχνιδιών και επίτευξη επιπέδων», «Διατήρηση χρόνου σε παιχνίδια» κ.λπ. Διαβάστε τις παρακάτω πληροφορίες για να κατανοήσετε κρίσιμες πληροφορίες.';
+			case 'offersGuidline2': return '2). Οι χρήστες θα κερδίζουν πόντους για την ολοκλήρωση των προσφορών. Σε αντίθεση με τις διαφημίσεις, αυτοί οι πόντοι έχουν μια ήδη καθορισμένη αναλογία ανταλλαγής σε σχέση με το USDT. Ανάλογα με την πληρωμή από τα δίκτυα, η μετατροπή μεταξύ πόντων και USDT μπορεί να είναι από 235.000 πόντους = 1 USDT έως 250.000 πόντους = 1 USDT.\n\nΑυτοί οι πόντοι μπορούν να μετατραπούν σε USDT εντός έξι έως επτά εβδομάδων από το τέλος οποιουδήποτε μήνα. Για παράδειγμα: Εάν συγκεντρώσετε 400.000 πόντους τον μήνα Αύγουστο, τότε θα μπορείτε να εξαργυρώσετε αυτούς τους 400.000 πόντους ως 1,68 USDT έως τις 15 Οκτωβρίου (οπότε λαμβάνουμε την πληρωμή για τον μήνα Αύγουστο). Στη συνέχεια, η πληρωμή για τους πόντους που συσσωρεύτηκαν τον μήνα Σεπτέμβριο θα διευθετηθεί έως τις 15 Νοεμβρίου, και ούτω καθεξής. Αυτή η καθυστέρηση οφείλεται κυρίως στους κύκλους πληρωμών στην εξειδίκευση του "μάρκετινγκ απόδοσης" και στο γεγονός ότι αυτά τα δίκτυα προσφορών μας πληρώνουν σε βάση Net-30.\n\nΜόλις ξεκινάμε με τα τείχη προσφορών και με την πάροδο του χρόνου, καθώς βελτιώνεται η ταμειακή μας ροή, θα θέλαμε πολύ να μειώσουμε αυτό το χρονικό πλαίσιο ανάληψης. Μέχρι τότε, εκτιμούμε την υπομονή σας.';
+			case 'offersGuidline3': return '3). Θα συγκεντρώνετε επίσης πόντους κάθε φορά που οι παραπομπές σας ολοκληρώνουν μια προσφορά. Θα κερδίζετε πόντους που ισοδυναμούν με το «43% των πόντων που κερδίζονται από τις άμεσες παραπομπές σας». Για παράδειγμα: Εάν η άμεση παραπομπή σας έχει κερδίσει 7000 πόντους, θα πιστωθείτε αυτόματα με 3000 πόντους.';
+			case 'offersGuidline4': return '4). Εάν ενδιαφέρεστε για μια συγκεκριμένη εφαρμογή/παιχνίδι που σχετίζεται με μια προσφορά και θέλετε να τη δοκιμάσετε, επισκεφθείτε την εφαρμογή/παιχνίδι μέσω του παρεχόμενου συνδέσμου/κουμπιού στο τείχος προσφορών. Εάν δεν το κάνετε αυτό, τα ορόσημα και η δραστηριότητα δεν θα παρακολουθούνται.';
+			case 'offersGuidline5': return '5). Μην χρησιμοποιείτε ποτέ VPN κατά την πρόσβαση σε αυτές τις προσφορές. Θα αποκλειστείτε από τα δίκτυα προσφορών.';
+			case 'offersGuidline6': return '6). Ενδέχεται να σας ζητηθεί από τα δίκτυα Offerwall να παράσχετε σχετικές άδειες. Παρακαλούμε να το κάνετε αυτό για να διασφαλίσετε ότι τα ορόσημα σας παρακολουθούνται σωστά, διαφορετικά ενδέχεται να μην ανταμειφθείτε για τις προσφορές.';
+			case 'offersGuidline7': return '7). Το PlayTime παρέχει ένα μοναδικό μείγμα προσφορών παιχνιδιών όπου οι χρήστες ανταμείβονται απλώς και μόνο επειδή αφιερώνουν χρόνο σε όλα τα παιχνίδια. Ωστόσο, βεβαιωθείτε ότι προχωράτε και στα επίπεδα σε αυτά τα παιχνίδια αντί απλώς να χάνετε χρόνο, διαφορετικά ο διαφημιζόμενος μπορεί να αντιστρέψει την πληρωμή (αν και αυτό είναι σπάνιο).';
+			case 'offersGuidline8': return '8). Τα ορόσημα/εργασίες που ολοκληρώνετε συνήθως καταγράφονται στα τείχη προσφορών εντός λίγων λεπτών από την ολοκλήρωσή τους, αλλά σε ορισμένες περιπτώσεις, μπορεί να χρειαστούν έως και τρεις ώρες, γι\' αυτό παρακαλούμε να είστε υπομονετικοί σε αυτές τις περιπτώσεις. Εάν το ορόσημο δεν καταχωρηθεί, επικοινωνήστε με την υποστήριξη πελατών του δικτύου Offerwall. Υπάρχει ξεχωριστή ενότητα για την Υποστήριξη Πελατών σε κάθε τείχος προσφορών στο οποίο έχετε πρόσβαση. Βεβαιωθείτε ότι ελέγχετε πάντα τα τείχη προσφορών στην εφαρμογή μας κάθε φορά που ολοκληρώνετε ένα ορόσημο για να βεβαιωθείτε ότι έχει παρακολουθηθεί.';
+			case 'offersGuidline9': return '9). Σε περίπτωση που ενδιαφέρεστε για μια προσφορά παιχνιδιού/εφαρμογής, αλλά είχατε προηγουμένως εγκαταστήσει αυτό το παιχνίδι/εφαρμογή στη συσκευή σας, μην επιχειρήσετε την προσφορά που σχετίζεται με αυτήν την εφαρμογή/παιχνίδι. Ενδέχεται να μην λάβετε πίστωση για τη δραστηριότητά σας.';
+			case 'offersGuidline10': return '10). Να διαβάζετε πάντα τις συμβουλές που παρέχονται από κάθε Προσφοροwall. Συχνά περιέχουν κρίσιμες λεπτομέρειες που μπορούν να σας βοηθήσουν να μεγιστοποιήσετε τις πιθανότητές σας για επιτυχημένη παρακολούθηση όλων των προσφορών.';
 			default: return null;
 		}
 	}
@@ -23198,6 +23632,20 @@ extension on _StringsEs {
 			case 'launchAdTips': return 'Activar "launchAd" significa que se mostrará un anuncio cuando se inicie la aplicación y su resultado se convertirá en peso de minería USCT.';
 			case 'help': return 'Ayuda';
 			case 'verifyOriginalMSISDN': return 'Verificar el MSISDN original';
+			case 'noLongerPopup': return 'Ya no aparece';
+			case 'encoding': return 'Codificación:';
+			case 'switchingVerificationStringEncodingMethodsTips': return 'Cambiar a diferentes métodos de codificación de cadenas de verificación puede ayudar a eludir la prohibición de los operadores de telecomunicaciones.';
+			case 'remainUnchanged': return 'permanecer sin cambios';
+			case 'offersGuidline1': return '1) Para aumentar el pago de USCT para los usuarios, nos hemos asociado con algunas de las redes de muros de ofertas más prestigiosas, como Playtime y Ayet Studios. Los usuarios pueden ganar puntos completando tareas sencillas como "Descargar y abrir aplicaciones", "Descargar y alcanzar niveles" y "Divertirse jugando", entre otras. Lea la siguiente información para comprender la información crucial.';
+			case 'offersGuidline2': return '2). Los usuarios ganarán puntos al completar las ofertas. A diferencia de los anuncios, estos puntos tienen una tasa de cambio predefinida en relación con USDT. Dependiendo del pago de las redes, la conversión entre puntos y USDT puede variar entre 235 000 puntos = 1 USDT y 250 000 puntos = 1 USDT.\n\nEstos puntos se pueden convertir a USDT en un plazo de seis a siete semanas tras el fin de mes. Por ejemplo: si acumula 400 000 puntos en agosto, podrá canjearlos por 1,68 USDT antes del 15 de octubre (fecha en que recibimos el pago de agosto). Posteriormente, el pago de los puntos acumulados en septiembre se liquidará antes del 15 de noviembre, y así sucesivamente. Este retraso se debe principalmente a los ciclos de pago en el nicho de marketing de resultados y a que estas redes de muros de ofertas nos pagan a 30 días.\n\nEstamos empezando con los muros de ofertas y, con el tiempo, a medida que mejore nuestro flujo de caja, nos gustaría reducir el plazo de retiro. Hasta entonces, agradecemos su paciencia.';
+			case 'offersGuidline3': return '3) También acumularás puntos cada vez que tus referidos completen una oferta. Ganarás puntos equivalentes al 43 % de los puntos obtenidos por tus referidos directos. Por ejemplo: si tu referido directo ha obtenido 7000 puntos, recibirás automáticamente 3000 puntos.';
+			case 'offersGuidline4': return '4) Si te interesa una app o un juego en particular de una oferta y quieres probarlo, visita la app o el juego a través del enlace o botón proporcionado en el muro de ofertas. Si no lo haces, no se registrarán los hitos ni la actividad.';
+			case 'offersGuidline5': return '5) Nunca uses una VPN para acceder a estas ofertas. Quedarás descalificado por las redes de ofertas.';
+			case 'offersGuidline6': return '6) Las redes de Offerwall podrían solicitarle que proporcione los permisos pertinentes. Hágalo para garantizar el correcto seguimiento de sus hitos; de lo contrario, podría no recibir las recompensas por las ofertas.';
+			case 'offersGuidline7': return '7) PlayTime ofrece una combinación única de ofertas de juegos donde los usuarios reciben recompensas simplemente por jugar. Sin embargo, asegúrate de progresar en los niveles de estos juegos en lugar de simplemente pasar el rato; de lo contrario, el anunciante podría revertir el pago (aunque es poco frecuente).';
+			case 'offersGuidline8': return '8) Los hitos o tareas que completes suelen registrarse en los Offerwalls en cuestión de minutos, pero en algunos casos puede tardar hasta tres horas, así que ten paciencia. Si el hito no se registra, contacta con el servicio de atención al cliente de la red Offerwall. Hay una sección independiente para el servicio de atención al cliente en cada Offerwall al que accedas. Asegúrate de consultar los Offerwalls en nuestra app cada vez que completes un hito para asegurarte de que se haya registrado.';
+			case 'offersGuidline9': return '9) Si te interesa una oferta de un juego o aplicación, pero ya la tenías instalada en tu dispositivo, no intentes usarla. Es posible que no se te acredite tu actividad.';
+			case 'offersGuidline10': return '10) Lea siempre los consejos de cada Offerwall. Suelen contener detalles cruciales que pueden ayudarle a maximizar sus posibilidades de éxito en el seguimiento de las ofertas.';
 			default: return null;
 		}
 	}
@@ -23904,6 +24352,20 @@ extension on _StringsFr {
 			case 'launchAdTips': return 'L\'activation de "launchAd" signifie qu\'une publicité sera affichée au lancement de l\'application et que son résultat sera converti en poids minier USCT.';
 			case 'help': return 'Aide';
 			case 'verifyOriginalMSISDN': return 'Vérifier le MSISDN d\'origine';
+			case 'noLongerPopup': return 'N\'apparaît plus';
+			case 'encoding': return 'Codage:';
+			case 'switchingVerificationStringEncodingMethodsTips': return 'Le passage à différentes méthodes de codage des chaînes de vérification peut aider à contourner l’interdiction des opérateurs de télécommunications.';
+			case 'remainUnchanged': return 'rester inchangé';
+			case 'offersGuidline1': return '1) Afin d\'augmenter les gains USCT pour nos utilisateurs, nous avons noué des partenariats avec des réseaux d\'offres réputés comme Playtime et Ayet Studios. Les utilisateurs peuvent gagner des points en effectuant des tâches simples comme « Télécharger des applications et les ouvrir », « Télécharger des jeux et atteindre des niveaux », « Passer du temps sur plusieurs jeux », etc. Veuillez lire les informations ci-dessous pour en comprendre les points essentiels.';
+			case 'offersGuidline2': return '2) Les utilisateurs gagneront des points en complétant les offres. Contrairement aux publicités, ces points ont un taux de change préétabli par rapport aux USDT. Selon le paiement des réseaux, la conversion entre points et USDT peut varier de 235 000 points = 1 USDT à 250 000 points = 1 USDT.\n\nCes points peuvent être convertis en USDT dans les six à sept semaines suivant la fin du mois. Par exemple : si vous cumulez 400 000 points au mois d’août, vous pourrez les échanger contre 1,68 USDT avant le 15 octobre (date à laquelle nous recevons le paiement du mois d’août). Par la suite, le paiement des points accumulés en septembre sera effectué avant le 15 novembre, et ainsi de suite. Ce retard est principalement dû aux cycles de paiement du secteur du « marketing à la performance » et au fait que ces réseaux de murs d’offres nous rémunèrent sur une base nette à 30 %.\n\nNous commençons tout juste à utiliser les Offerwalls et, au fil du temps et à mesure que notre trésorerie s\'améliorera, nous aimerions réduire ce délai de retrait. En attendant, nous vous remercions de votre patience.';
+			case 'offersGuidline3': return '3) Vous cumulerez également des points chaque fois que vos filleuls complèteront une offre. Vous gagnerez un montant de points équivalent à « 43 % des points gagnés par vos filleuls directs ». Par exemple : si votre filleul direct a cumulé 7 000 points, vous recevrez automatiquement 3 000 points.';
+			case 'offersGuidline4': return '4) Si vous êtes intéressé par une application ou un jeu en particulier et souhaitez l\'essayer, veuillez vous rendre sur l\'application ou le jeu via le lien/bouton fourni dans le mur d\'offres. Dans le cas contraire, les étapes et l\'activité ne seront pas suivies.';
+			case 'offersGuidline5': return '5) N\'utilisez jamais de VPN pour accéder à ces offres. Vous seriez disqualifié par les réseaux d\'offres.';
+			case 'offersGuidline6': return '6). Les réseaux Offerwall peuvent vous demander de fournir les autorisations nécessaires. Veuillez le faire afin de garantir le suivi de vos étapes clés, sans quoi vous risquez de ne pas être récompensé pour les offres.';
+			case 'offersGuidline7': return '7) PlayTime propose une offre unique de jeux où les utilisateurs sont récompensés simplement pour leur temps passé sur les jeux. Cependant, assurez-vous de progresser dans les niveaux de ces jeux au lieu de simplement tuer le temps, sinon l\'annonceur pourrait annuler le paiement (bien que cela soit rare).';
+			case 'offersGuidline8': return '8) Les étapes/tâches que vous avez complétées sont généralement enregistrées sur les Offerwalls quelques minutes après leur achèvement, mais dans certains cas, cela peut prendre jusqu\'à trois heures ; veuillez donc patienter. Si l\'étape n\'est pas enregistrée, veuillez contacter le service client du réseau Offerwall. Une section dédiée au service client est disponible sur chaque Offerwall auquel vous accédez. Assurez-vous de toujours consulter les Offerwalls dans notre application chaque fois que vous franchissez une étape pour vous assurer qu\'elle a bien été suivie.';
+			case 'offersGuidline9': return '9) Si vous êtes intéressé par une offre de jeu ou d\'application, mais que vous l\'aviez déjà installée sur votre appareil, veuillez ne pas tenter de participer à l\'offre correspondante. Votre activité pourrait ne pas être créditée.';
+			case 'offersGuidline10': return '10) Lisez toujours les conseils fournis par chaque Offerwall. Ils contiennent souvent des informations cruciales qui peuvent vous aider à maximiser vos chances de succès dans le suivi des offres.';
 			default: return null;
 		}
 	}
@@ -24168,10 +24630,10 @@ extension on _StringsHi {
 			case 'icpFuelCrowdfunding': return 'ICP ईंधन क्राउडफंडिंग';
 			case 'totalAllocation': return 'कुल आवंटन';
 			case 'miningRatio': return 'माइनिंग अनुपात';
-			case 'billion.300': return '300 बिलियन';
-			case 'billion.180': return '180 बिलियन';
 			case 'billion.30': return '30 बिलियन';
 			case 'billion.60': return '60 बिलियन';
+			case 'billion.180': return '180 बिलियन';
+			case 'billion.300': return '300 बिलियन';
 			case 'watchAdsToSupportDevelopers': return 'डेवलपर्स का समर्थन करने के लिए विज्ञापन देखें';
 			case 'loadingAdcomponents': return 'विज्ञापन घटकों को लोड किया जा रहा है...';
 			case 'timeIsNotUp': return 'समय समाप्त नहीं हुआ है!';
@@ -24606,6 +25068,20 @@ extension on _StringsHi {
 			case 'launchAdTips': return '"launchAd" चालू करने का अर्थ है कि ऐप लॉन्च होने पर एक विज्ञापन प्रदर्शित किया जाएगा, और इसका परिणाम USCT खनन भार में परिवर्तित हो जाएगा।';
 			case 'help': return 'सहायता';
 			case 'verifyOriginalMSISDN': return 'मूल MSISDN सत्यापित करें';
+			case 'noLongerPopup': return 'अब पॉप अप नहीं होगा';
+			case 'encoding': return 'एनकोडिंग:';
+			case 'switchingVerificationStringEncodingMethodsTips': return 'विभिन्न सत्यापन स्ट्रिंग एनकोडिंग विधियों पर स्विच करने से दूरसंचार ऑपरेटरों के प्रतिबंध को दरकिनार करने में मदद मिल सकती है।';
+			case 'remainUnchanged': return 'अपरिवर्तित ही रहेंगे';
+			case 'offersGuidline1': return '1) उपयोगकर्ताओं के लिए USCT भुगतान बढ़ाने के प्रयास में, हमने Playtime और Ayet Studios जैसे कुछ बेहद प्रतिष्ठित ऑफ़रवॉल नेटवर्क्स के साथ साझेदारी की है। उपयोगकर्ता "ऐप्स डाउनलोड करें और खोलें", "गेम डाउनलोड करें और लेवल तक पहुँचें", "गेम्स में समय बिताएँ" आदि जैसे सरल कार्यों को पूरा करके पॉइंट अर्जित कर सकते हैं। महत्वपूर्ण जानकारी समझने के लिए कृपया नीचे दी गई जानकारी पढ़ें।';
+			case 'offersGuidline2': return '2). ऑफ़र पूरा करने पर उपयोगकर्ताओं को पॉइंट मिलेंगे। विज्ञापनों के विपरीत, इन पॉइंट्स का USDT के सापेक्ष एक पहले से ही स्थापित विनिमय अनुपात होता है। नेटवर्क से प्राप्त भुगतान के आधार पर, पॉइंट्स और USDT के बीच रूपांतरण 235,000 पॉइंट्स = 1 USDT से लेकर 250,000 पॉइंट्स = 1 USDT तक हो सकता है।\n\nइन पॉइंट्स को किसी भी महीने के अंत के छह से सात हफ़्तों के भीतर USDT में बदला जा सकता है। उदाहरण के लिए: यदि आप अगस्त महीने में 400,000 पॉइंट्स जमा करते हैं, तो आप 15 अक्टूबर तक (जब हमें अगस्त महीने का भुगतान प्राप्त होगा) इन 400,000 पॉइंट्स को 1.68 USDT के रूप में भुना सकेंगे। इसके बाद, सितंबर महीने में जमा किए गए पॉइंट्स का भुगतान 15 नवंबर तक किया जाएगा, और इसी तरह आगे भी। यह देरी मुख्य रूप से "परफ़ॉर्मेंस मार्केटिंग" क्षेत्र में भुगतान चक्रों और इस तथ्य के कारण है कि ये ऑफ़रवॉल नेटवर्क हमें नेट-30 आधार पर भुगतान करते हैं।\n\nहम अभी ऑफ़रवॉल के साथ शुरुआत कर रहे हैं, और समय के साथ, जैसे-जैसे हमारा नकदी प्रवाह बेहतर होता जाएगा, हम इस निकासी समय-सीमा को कम करना चाहेंगे। तब तक, हम आपके धैर्य की सराहना करते हैं।';
+			case 'offersGuidline3': return '3). जब भी आपके रेफ़रल कोई ऑफ़र पूरा करेंगे, आपको पॉइंट्स भी मिलेंगे। आपको "आपके डायरेक्ट रेफ़रल द्वारा अर्जित पॉइंट्स के 43%" के बराबर पॉइंट्स मिलेंगे। उदाहरण के लिए: अगर आपके डायरेक्ट रेफ़रल ने 7000 पॉइंट्स अर्जित किए हैं, तो आपको अपने आप 3000 पॉइंट्स क्रेडिट कर दिए जाएँगे।';
+			case 'offersGuidline4': return '4) अगर आप किसी ऑफ़र से संबंधित किसी खास ऐप/गेम में रुचि रखते हैं और उसे आज़माना चाहते हैं, तो कृपया ऑफ़रवॉल में दिए गए लिंक/बटन के ज़रिए उस ऐप/गेम पर जाएँ। अगर आप ऐसा नहीं करते हैं, तो माइलस्टोन और गतिविधि ट्रैक नहीं की जाएँगी।';
+			case 'offersGuidline5': return '5) इन ऑफ़र का लाभ उठाते समय कभी भी VPN का इस्तेमाल न करें। ऑफ़रवॉल नेटवर्क आपको अयोग्य घोषित कर देंगे।';
+			case 'offersGuidline6': return '6). ऑफ़रवॉल नेटवर्क आपको प्रासंगिक अनुमतियाँ प्रदान करने के लिए कह सकते हैं। कृपया ऐसा करें ताकि यह सुनिश्चित हो सके कि आपके माइलस्टोन ठीक से ट्रैक किए जा रहे हैं, अन्यथा आपको ऑफ़र के लिए पुरस्कृत नहीं किया जा सकता है।';
+			case 'offersGuidline7': return '7). PlayTime गेम ऑफ़र का एक अनूठा मिश्रण प्रदान करता है जहाँ उपयोगकर्ताओं को केवल गेम में समय बिताने के लिए पुरस्कृत किया जाता है। हालाँकि, कृपया सुनिश्चित करें कि आप केवल समय बर्बाद करने के बजाय इन खेलों के स्तरों से आगे बढ़ रहे हैं, अन्यथा विज्ञापनदाता भुगतान वापस कर सकता है (हालाँकि ऐसा दुर्लभ है)।';
+			case 'offersGuidline8': return '8). आपके द्वारा पूरे किए गए माइलस्टोन/कार्य आमतौर पर कुछ ही मिनटों में ऑफ़रवॉल पर दर्ज हो जाते हैं, लेकिन कुछ मामलों में, इसमें तीन घंटे तक का समय लग सकता है, इसलिए कृपया ऐसे मामलों में धैर्य रखें। अगर माइलस्टोन दर्ज नहीं होता है, तो कृपया ऑफ़रवॉल नेटवर्क से संबंधित ग्राहक सहायता से संपर्क करें। आपके द्वारा एक्सेस किए जाने वाले प्रत्येक ऑफ़रवॉल में ग्राहक सहायता के लिए एक अलग सेक्शन होता है। हर बार जब आप कोई माइलस्टोन पूरा करते हैं, तो यह सुनिश्चित करने के लिए कि उसे ट्रैक किया गया है, हमारे ऐप में ऑफ़रवॉल की जाँच अवश्य करें।';
+			case 'offersGuidline9': return '9) अगर आप किसी गेम/ऐप ऑफ़र में रुचि रखते हैं, लेकिन आपके डिवाइस में वह गेम/ऐप पहले से इंस्टॉल है, तो कृपया उस ऐप/गेम से संबंधित ऑफ़र का इस्तेमाल न करें। हो सकता है कि आपको आपकी गतिविधि का क्रेडिट न मिले।';
+			case 'offersGuidline10': return '10) हर ऑफ़रवॉल द्वारा दिए गए सुझावों को हमेशा पढ़ें। इनमें अक्सर महत्वपूर्ण विवरण होते हैं जो ऑफ़र पर सफलतापूर्वक नज़र रखने की आपकी संभावनाओं को अधिकतम करने में मदद कर सकते हैं।';
 			default: return null;
 		}
 	}
@@ -24872,10 +25348,10 @@ extension on _StringsIt {
 			case 'icpFuelCrowdfunding': return 'Crowdfunding carburante ICP';
 			case 'totalAllocation': return 'Allocazione totale';
 			case 'miningRatio': return 'Rapporto di mining';
-			case 'billion.300': return '300 miliardi';
-			case 'billion.180': return '180 miliardi';
 			case 'billion.30': return '30 miliardi';
 			case 'billion.60': return '60 miliardi';
+			case 'billion.180': return '180 miliardi';
+			case 'billion.300': return '300 miliardi';
 			case 'watchAdsToSupportDevelopers': return 'Guarda annunci per supportare gli sviluppatori';
 			case 'loadingAdcomponents': return 'Caricamento componenti annunci…';
 			case 'timeIsNotUp': return 'Il tempo non è scaduto!';
@@ -25310,6 +25786,20 @@ extension on _StringsIt {
 			case 'launchAdTips': return 'Attivando "launchAd" verrà visualizzato un annuncio quando l\'app viene avviata e il suo risultato verrà convertito in peso di mining USCT.';
 			case 'help': return 'Aiuto';
 			case 'verifyOriginalMSISDN': return 'Verifica MSISDN originale';
+			case 'noLongerPopup': return 'Non compare più';
+			case 'encoding': return 'Codifica:';
+			case 'switchingVerificationStringEncodingMethodsTips': return 'Passare a metodi di codifica delle stringhe di verifica diversi può aiutare ad aggirare il divieto imposto agli operatori di telecomunicazioni.';
+			case 'remainUnchanged': return 'rimangono invariati';
+			case 'offersGuidline1': return '1). Nel tentativo di aumentare il guadagno USCT per gli utenti, abbiamo stretto accordi con alcune delle reti di offerwall più rinomate, come Playtime e Ayet Studios. Gli utenti possono guadagnare punti completando semplici attività come "Scarica app e apri", "Scarica giochi e raggiungi livelli", "Trascorri del tempo giocando", ecc. Si prega di leggere le informazioni seguenti per comprendere i dettagli cruciali.';
+			case 'offersGuidline2': return '2). Gli utenti guadagneranno punti completando le offerte. A differenza degli annunci, questi punti hanno un rapporto di cambio già stabilito in relazione agli USDT. A seconda del pagamento ricevuto dalle reti, la conversione tra punti e USDT può variare da 235.000 punti = 1 USDT a 250.000 punti = 1 USDT.\n\nQuesti punti possono essere convertiti in USDT entro sei o sette settimane dalla fine di qualsiasi mese. Ad esempio: se accumuli 400.000 punti nel mese di agosto, potrai riscattare questi 400.000 punti come 1,68 USDT entro il 15 ottobre (data in cui riceveremo il pagamento per il mese di agosto). Successivamente, il pagamento per i punti accumulati nel mese di settembre verrà effettuato entro il 15 novembre e così via. Questo ritardo è dovuto principalmente ai cicli di pagamento nella nicchia del "performance marketing" e al fatto che queste reti di offerwall ci pagano su base Net-30.\n\nStiamo appena iniziando a utilizzare le offerte a muro e, con il tempo, man mano che il nostro flusso di cassa migliorerà, vorremmo ridurre i tempi di prelievo. Nel frattempo, apprezziamo la vostra pazienza.';
+			case 'offersGuidline3': return '3). Accumulerai punti anche ogni volta che i tuoi referral completano un\'offerta. Guadagnerai punti equivalenti al "43% dei punti guadagnati dai tuoi referral diretti". Ad esempio: se il tuo referral diretto ha guadagnato 7000 punti, ti verranno automaticamente accreditati 3000 punti.';
+			case 'offersGuidline4': return '4) Se sei interessato a un\'app/gioco specifico relativo a un\'offerta e desideri provarlo, visita l\'app/gioco tramite il link/pulsante fornito all\'interno dell\'offerta. In caso contrario, i traguardi e l\'attività non verranno monitorati.';
+			case 'offersGuidline5': return '5). Non utilizzare mai una VPN per accedere a queste offerte. Verrai squalificato dalle reti di Offerwall.';
+			case 'offersGuidline6': return '6). Le reti di Offerwall potrebbero richiederti di fornire le autorizzazioni necessarie. Ti preghiamo di farlo per garantire che i tuoi traguardi vengano monitorati correttamente, altrimenti potresti non essere ricompensato per le offerte.';
+			case 'offersGuidline7': return '7). PlayTime offre un mix unico di offerte di gioco in cui gli utenti vengono premiati semplicemente per il tempo trascorso giocando. Tuttavia, assicurati di progredire nei livelli di questi giochi invece di limitarti a perdere tempo, altrimenti l\'inserzionista potrebbe annullare il pagamento (anche se è raro).';
+			case 'offersGuidline8': return '8). Le milestone/attività completate vengono solitamente registrate su tutti gli offerwall entro pochi minuti dal completamento, ma in alcuni casi potrebbero essere necessarie fino a tre ore, quindi sii paziente in questi casi. Se la milestone non viene registrata, contatta l\'assistenza clienti della rete Offerwall. È presente una sezione dedicata all\'assistenza clienti in ogni Offerwall a cui accedi. Assicurati sempre di controllare gli offerwall all\'interno della nostra app ogni volta che completi una milestone per assicurarti che sia stata tracciata.';
+			case 'offersGuidline9': return '9) Se sei interessato a un\'offerta relativa a un gioco/app, ma in precedenza avevi installato quel gioco/app sul tuo dispositivo, ti preghiamo di non tentare l\'offerta relativa a quell\'app/gioco. Potresti non ricevere alcun accredito per la tua attività.';
+			case 'offersGuidline10': return '10) Leggi sempre i suggerimenti forniti da ogni Offerwall. Spesso contengono dettagli cruciali che possono aiutarti a massimizzare le tue possibilità di successo nel tracciamento delle offerte.';
 			default: return null;
 		}
 	}
@@ -26013,6 +26503,20 @@ extension on _StringsJa {
 			case 'launchAdTips': return '「launchAd」をオンにすると、アプリの起動時に広告が表示され、その結果が USCT マイニング重量に変換されます。';
 			case 'help': return 'ヘルプ';
 			case 'verifyOriginalMSISDN': return '元のMSISDNを確認する';
+			case 'noLongerPopup': return 'ポップアップしなくなりました';
+			case 'encoding': return 'エンコーディング：';
+			case 'switchingVerificationStringEncodingMethodsTips': return '異なる検証文字列エンコード方式に切り替えると、通信事業者の禁止を回避できる場合があります。';
+			case 'remainUnchanged': return '変わらない';
+			case 'offersGuidline1': return '1) USCTのユーザーへの報酬を増やすため、PlaytimeやAyet Studiosといった評判の高いオファーウォールネットワークと提携しました。ユーザーは「アプリをダウンロードして開く」「ゲームをダウンロードしてレベルアップ」「ゲーム間で時間を過ごす」といった簡単なタスクを完了することでポイントを獲得できます。重要な情報については、以下の情報をお読みください。';
+			case 'offersGuidline2': return '2) ユーザーはオファーを完了することでポイントを獲得します。広告とは異なり、これらのポイントはUSDTとの交換比率が既に設定されています。ネットワークからの支払いに応じて、ポイントとUSDTの交換比率は235,000ポイント = 1 USDTから250,000ポイント = 1 USDTの範囲となります。\n\nこれらのポイントは、月末から6～7週間以内にUSDTに交換できます。例えば、8月に400,000ポイントを獲得した場合、10月15日（8月分の支払い日）までに400,000ポイントを1.68 USDTとして交換できます。その後、9月に獲得したポイントの支払いは11月15日までに確定し、以降も同様に繰り越されます。この遅延は主に、「パフォーマンスマーケティング」ニッチにおける支払いサイクルと、これらのオファーウォールネットワークがNet-30ベースで支払いを行うという事実によるものです。\n\nオファーウォールはまだ始まったばかりですが、今後キャッシュフローが改善していくにつれて、出金にかかる期間を短縮していきたいと考えています。それまでは、ご理解とご協力をお願いいたします。';
+			case 'offersGuidline3': return '3）紹介者がオファーを完了するたびにポイントが貯まります。「直接紹介者が獲得したポイントの43%」に相当するポイントを獲得できます。例えば、直接紹介者が7000ポイントを獲得した場合、あなたには3000ポイントが自動的に付与されます。';
+			case 'offersGuidline4': return '4) オファー対象のアプリやゲームに興味があり、試してみたい場合は、オファーウォール内のリンクまたはボタンからアプリやゲームにアクセスしてください。アクセスしない場合、マイルストーンやアクティビティは追跡されません。';
+			case 'offersGuidline5': return '5）これらのオファーにアクセスする際は、VPNを使用しないでください。オファーウォールネットワークによって失格となります。';
+			case 'offersGuidline6': return '6）オファーウォールネットワークから、必要な権限の提供を求められる場合があります。マイルストーンが正しく追跡されるため、権限の提供をお願いいたします。権限がない場合、オファーの報酬を受け取れない可能性があります。';
+			case 'offersGuidline7': return '7）PlayTimeは、ユーザーがゲームで時間を費やすだけで報酬を獲得できる、独自のゲームオファーを提供しています。ただし、単に時間をつぶすだけでなく、ゲームのレベルアップも確実に行うようにしてください。そうしないと、広告主が報酬を撤回する可能性があります（ただし、稀です）。';
+			case 'offersGuidline8': return '8) 完了したマイルストーン/タスクは通常、完了後数分以内にオファーウォール全体に反映されますが、場合によっては最大3時間かかることもありますので、その際はしばらくお待ちください。マイルストーンが反映されない場合は、オファーウォールネットワークのカスタマーサポートまでお問い合わせください。アクセスするオファーウォールごとにカスタマーサポート専用のセクションがあります。マイルストーンを達成するたびに、アプリ内のオファーウォールで追跡されていることを確認してください。';
+			case 'offersGuidline9': return '9) ゲーム/アプリのオファーに興味があるものの、既にデバイスにそのゲーム/アプリがインストールされている場合は、そのアプリ/ゲームに関連するオファーをご利用にならないでください。アクティビティがクレジットされない可能性があります。';
+			case 'offersGuidline10': return '10）各オファーウォールで提供されているヒントを必ず読んでください。オファーウォール全体におけるトラッキング成功率を最大化するのに役立つ重要な詳細が含まれていることがよくあります。';
 			default: return null;
 		}
 	}
@@ -26718,6 +27222,20 @@ extension on _StringsKo {
 			case 'launchAdTips': return '"launchAd"를 켜면 앱이 실행될 때 광고가 표시되고, 그 결과가 USCT 마이닝 가중치로 변환됩니다.';
 			case 'help': return '도움말';
 			case 'verifyOriginalMSISDN': return '원래 MSISDN 확인';
+			case 'noLongerPopup': return '더 이상 팝업되지 않습니다';
+			case 'encoding': return '부호화:';
+			case 'switchingVerificationStringEncodingMethodsTips': return '다른 검증 문자열 인코딩 방법으로 전환하면 통신 사업자 금지를 우회하는 데 도움이 될 수 있습니다.';
+			case 'remainUnchanged': return '변함없이 유지되다';
+			case 'offersGuidline1': return '1) 사용자들의 USCT 지급액을 높이기 위해 Playtime 및 Ayet Studios와 같은 평판이 좋은 오퍼월 네트워크와 제휴를 맺었습니다. 사용자들은 "앱 다운로드 및 실행", "게임 다운로드 및 레벨 달성", "여러 게임에서 시간 보내기" 등의 간단한 작업을 완료하여 포인트를 획득할 수 있습니다. 중요한 정보를 이해하려면 아래 정보를 읽어주세요.';
+			case 'offersGuidline2': return '2). 사용자는 오퍼를 완료하면 포인트를 적립합니다. 광고와 달리, 이 포인트는 USDT 대비 이미 정해진 환율을 가지고 있습니다. 네트워크 지급액에 따라 포인트와 USDT의 환산 비율은 23만 5천 포인트 = 1 USDT에서 25만 포인트 = 1 USDT까지입니다.\n\n이 포인트는 매월 말일로부터 6~7주 이내에 USDT로 환산될 수 있습니다. 예를 들어, 8월에 40만 포인트를 적립했다면 10월 15일(8월 지급일)까지 이 40만 포인트를 1.68 USDT로 교환할 수 있습니다. 이후 9월에 적립된 포인트는 11월 15일에 정산되며, 이후 지급은 11월 15일에 이루어집니다. 이러한 지연은 주로 "성과 마케팅" 분야의 지급 주기와 오퍼월 네트워크가 30일 순 지급 방식을 사용하기 때문입니다.\n\n저희는 이제 막 오퍼월(offerwall)을 도입하기 시작했으며, 시간이 지남에 따라 자금 흐름이 개선됨에 따라 출금 기간을 단축하고자 합니다. 그때까지 양해 부탁드립니다.';
+			case 'offersGuidline3': return '3) 추천인이 제안을 완료할 때마다 포인트가 적립됩니다. 직접 추천인이 적립한 포인트의 43%에 해당하는 포인트가 적립됩니다. 예를 들어, 직접 추천인이 7,000포인트를 적립했다면 3,000포인트가 자동으로 적립됩니다.';
+			case 'offersGuidline4': return '4) 특정 오퍼와 관련된 앱/게임에 관심이 있으시고 체험해 보고 싶으시다면, 오퍼월 내에 제공된 링크/버튼을 통해 해당 앱/게임을 방문하세요. 그렇지 않으면 마일스톤 및 활동 내역이 추적되지 않습니다.';
+			case 'offersGuidline5': return '5) 이러한 혜택을 이용하는 동안 VPN을 사용하지 마세요. 오퍼월 네트워크에서 제외됩니다.';
+			case 'offersGuidline6': return '6) Offerwall 네트워크에서 관련 권한을 요청하는 메시지가 표시될 수 있습니다. 마일스톤이 제대로 추적되도록 권한을 부여해 주시기 바랍니다. 그렇지 않으면 오퍼에 대한 보상을 받지 못할 수 있습니다.';
+			case 'offersGuidline7': return '7) PlayTime은 사용자가 게임 내에서 시간을 보내는 것만으로도 보상을 받을 수 있는 독특한 게임 상품을 제공합니다. 하지만 단순히 시간을 보내기보다는 게임의 레벨을 진행해야 합니다. 그렇지 않으면 광고주가 보상을 취소할 수 있습니다(물론 드문 경우지만).';
+			case 'offersGuidline8': return '8) 완료하신 마일스톤/작업은 일반적으로 완료 후 몇 분 이내에 오퍼월 전체에 등록되지만, 경우에 따라 최대 3시간까지 소요될 수 있으니 양해 부탁드립니다. 마일스톤이 등록되지 않을 경우, 오퍼월 네트워크 관련 고객 지원팀에 문의해 주세요. 모든 오퍼월에는 고객 지원팀이 별도로 마련되어 있습니다. 마일스톤을 완료할 때마다 앱 내 오퍼월을 확인하여 마일스톤이 제대로 추적되었는지 확인하세요.';
+			case 'offersGuidline9': return '9) 게임/앱 혜택에 관심이 있지만 이전에 기기에 해당 게임/앱을 설치한 적이 있는 경우, 해당 앱/게임과 관련된 혜택을 시도하지 마세요. 활동 내역이 적립되지 않을 수 있습니다.';
+			case 'offersGuidline10': return '10) 각 오퍼월에서 제공하는 팁을 항상 읽어보세요. 여기에는 오퍼 전반의 추적 성공률을 극대화하는 데 도움이 되는 중요한 정보가 포함되어 있는 경우가 많습니다.';
 			default: return null;
 		}
 	}
@@ -27252,7 +27770,7 @@ extension on _StringsNl {
 			case 'receiveAddress': return 'Ontvang adres:';
 			case 'hangingAmount': return 'Uitstaande';
 			case 'points': return 'Punten: ';
-			case 'pendingPointsTips': return 'Punkty odnoszą się do ważonej kwoty, która nie została jeszcze potwierdzona i porównana z reklamodawcami. \n\nWspółczynnik realizacji różni się w zależności od kanału, a ostateczna kwota rozliczenia opiera się na rzeczywistej kwocie rozliczenia z kanałem';
+			case 'pendingPointsTips': return 'Het puntenbedrag verwijst naar het gewogen bedrag dat nog niet is bevestigd en vergeleken met de adverteerder. \nHet inwisselingspercentage varieert per kanaal en het uiteindelijke vereffeningsbedrag is gebaseerd op het werkelijke vereffeningsbedrag van het kanaal.';
 			case 'received': return 'Ontvangen';
 			case 'processing': return 'Verwerken';
 			case 'replied': return 'Beantwoord';
@@ -27423,6 +27941,20 @@ extension on _StringsNl {
 			case 'launchAdTips': return 'Als u "launchAd" inschakelt, wordt er een advertentie weergegeven wanneer de app wordt gestart en wordt het resultaat omgezet in USCT-mijngewicht.';
 			case 'help': return 'Hulp';
 			case 'verifyOriginalMSISDN': return 'Originele MSISDN verifiëren';
+			case 'noLongerPopup': return 'Niet meer opduiken';
+			case 'encoding': return 'Codering:';
+			case 'switchingVerificationStringEncodingMethodsTips': return 'Door over te schakelen op andere verificatiereekscoderingsmethoden, kan het verbod van telecomoperatoren worden omzeild.';
+			case 'remainUnchanged': return 'onveranderd blijven';
+			case 'offersGuidline1': return '1). Om de USCT-uitbetaling voor gebruikers te verhogen, werken we samen met een aantal gerenommeerde offerwall-netwerken zoals Playtime en Ayet Studios. Gebruikers kunnen punten verdienen door eenvoudige taken uit te voeren, zoals "Apps downloaden en openen", "Games downloaden en levels bereiken", "Tijd besteden aan games", enz. Lees de onderstaande informatie aandachtig door om de belangrijkste informatie te begrijpen.';
+			case 'offersGuidline2': return '2). Gebruikers verdienen punten door de aanbiedingen te voltooien. In tegenstelling tot advertenties hebben deze punten een reeds vastgestelde wisselkoers ten opzichte van USDT. Afhankelijk van de uitbetaling van de netwerken kan de conversie tussen punten en USDT variëren van 235.000 punten = 1 USDT tot 250.000 punten = 1 USDT.\n\nDeze punten kunnen binnen zes tot zeven weken na het einde van een maand worden omgezet naar USDT. Bijvoorbeeld: als u in augustus 400.000 punten verzamelt, kunt u deze 400.000 punten inwisselen voor 1,68 USDT tot 15 oktober (wanneer wij de uitbetaling voor de maand augustus ontvangen). Vervolgens wordt de uitbetaling voor de in september verzamelde punten uiterlijk 15 november verrekend, enzovoort. Deze vertraging is voornamelijk te wijten aan de betalingscycli in de niche van "performance marketing" en het feit dat deze offerwall-netwerken ons op basis van Net-30 uitbetalen.\n\nWe zijn nog maar net begonnen met de offerwalls en naarmate onze cashflow verbetert, willen we deze opnametermijn graag verkorten. Tot die tijd stellen we uw geduld op prijs.';
+			case 'offersGuidline3': return '3). Je spaart ook punten elke keer dat je referrals een aanbieding voltooien. Je verdient punten gelijk aan "43% van de punten die je directe referrals hebben verdiend". Bijvoorbeeld: als je directe referral 7000 punten heeft verdiend, krijg je automatisch 3000 punten.';
+			case 'offersGuidline4': return '4). Als je geïnteresseerd bent in een specifieke app/game die bij een aanbieding hoort en deze wilt uitproberen, ga dan naar de app/game via de link/knop in de aanbiedingspagina. Doe je dit niet, dan worden de mijlpalen en activiteit niet bijgehouden.';
+			case 'offersGuidline5': return '5). Gebruik nooit een VPN wanneer u deze aanbiedingen gebruikt. U wordt dan gediskwalificeerd door de offerwall-netwerken.';
+			case 'offersGuidline6': return '6). De Offerwall-netwerken kunnen u vragen om relevante toestemmingen te verlenen. Doe dit om ervoor te zorgen dat uw mijlpalen correct worden bijgehouden, anders ontvangt u mogelijk geen beloning voor de aanbiedingen.';
+			case 'offersGuidline7': return '7). PlayTime biedt een unieke mix van spelaanbiedingen waarbij gebruikers worden beloond voor het simpelweg besteden van tijd aan de spellen. Zorg er echter wel voor dat je ook door de levels van deze spellen heen speelt in plaats van alleen maar tijd te doden, anders kan de adverteerder de uitbetaling terugdraaien (hoewel dit zelden voorkomt).';
+			case 'offersGuidline8': return '8). De mijlpalen/taken die je voltooit, worden meestal binnen enkele minuten na voltooiing geregistreerd op de offerwalls, maar in sommige gevallen kan dit tot drie uur duren. Wees daarom geduldig. Als de mijlpaal niet wordt geregistreerd, neem dan contact op met de klantenservice van het Offerwall-netwerk. Er is een aparte sectie voor klantenservice voor elke Offerwall die je bezoekt. Controleer altijd de offerwalls in onze app elke keer dat je een mijlpaal voltooit om er zeker van te zijn dat deze is bijgehouden.';
+			case 'offersGuidline9': return '9). Als je geïnteresseerd bent in een game-/app-aanbieding, maar je had die game/app al op je apparaat geïnstalleerd, probeer dan niet op de aanbieding voor die app/game in te gaan. Je krijgt mogelijk geen tegoed voor je activiteit.';
+			case 'offersGuidline10': return '10). Lees altijd de tips die bij elke Offerwall worden gegeven. Deze bevatten vaak cruciale details die je kansen op succesvolle tracking van de aanbiedingen kunnen maximaliseren.';
 			default: return null;
 		}
 	}
@@ -28129,6 +28661,20 @@ extension on _StringsPl {
 			case 'launchAdTips': return 'Włączenie „launchAd” oznacza, że ​​reklama będzie wyświetlana po uruchomieniu aplikacji, a jej wynik zostanie przekonwertowany na wagę wydobywczą USCT.';
 			case 'help': return 'Pomoc';
 			case 'verifyOriginalMSISDN': return 'Zweryfikuj oryginalny numer MSISDN';
+			case 'noLongerPopup': return 'Już nie wyskakuje';
+			case 'encoding': return 'Kodowanie:';
+			case 'switchingVerificationStringEncodingMethodsTips': return 'Przejście na inne metody kodowania ciągu weryfikacyjnego może pomóc ominąć zakaz operatorów telekomunikacyjnych.';
+			case 'remainUnchanged': return 'pozostają niezmienione';
+			case 'offersGuidline1': return '1). Aby zwiększyć wypłaty USCT dla użytkowników, nawiązaliśmy współpracę z renomowanymi sieciami Offerwall, takimi jak Playtime i Ayet Studios. Użytkownicy mogą zdobywać punkty, wykonując proste zadania, takie jak „Pobieranie aplikacji i otwieranie”, „Pobieranie gier i osiąganie poziomów”, „Spędzanie czasu w grach” itp. Prosimy o zapoznanie się z poniższymi informacjami, aby zrozumieć kluczowe informacje.';
+			case 'offersGuidline2': return '2). Użytkownicy będą zdobywać punkty za realizację ofert. W przeciwieństwie do reklam, punkty te mają ustalony kurs wymiany w stosunku do USDT. W zależności od wypłaty z sieci, przeliczenie punktów na USDT może wynosić od 235 tys. punktów = 1 USDT do 250 tys. punktów = 1 USDT.\n\nPunkty te można przeliczyć na USDT w ciągu sześciu do siedmiu tygodni od końca dowolnego miesiąca. Na przykład: jeśli zgromadzisz 400 tys. punktów w sierpniu, będziesz mógł wymienić te 400 tys. punktów na 1,68 USDT do 15 października (kiedy otrzymamy wypłatę za sierpień). Następnie wypłata za punkty zgromadzone we wrześniu zostanie rozliczona do 15 listopada i tak dalej. To opóźnienie wynika głównie z cykli płatności w niszy „marketingu efektywnościowego” oraz z faktu, że sieci Offerwall wypłacają nam środki w oparciu o zasadę Net-30.\n\nDopiero zaczynamy wprowadzać Offerwalle i z czasem, w miarę poprawy przepływów pieniężnych, chcielibyśmy skrócić ten czas wypłat. Do tego czasu dziękujemy za cierpliwość.';
+			case 'offersGuidline3': return '3). Będziesz również gromadzić punkty za każdym razem, gdy poleceni przez Ciebie użytkownicy wypełnią ofertę. Otrzymasz punkty w wysokości „43% punktów zdobytych przez Twoich bezpośrednich poleconych”. Na przykład: jeśli Twój bezpośredni polecony użytkownik zdobędzie 7000 punktów, automatycznie otrzymasz 3000 punktów.';
+			case 'offersGuidline4': return '4). Jeśli interesuje Cię konkretna aplikacja/gra związana z ofertą i chcesz ją wypróbować, odwiedź aplikację/grę za pomocą linku/przycisku w panelu ofert. W przeciwnym razie kamienie milowe i aktywność nie będą rejestrowane.';
+			case 'offersGuidline5': return '5). Nigdy nie korzystaj z VPN podczas korzystania z tych ofert. Zostaniesz zdyskwalifikowany przez sieci Offerwall.';
+			case 'offersGuidline6': return '6). Sieci Offerwall mogą poprosić Cię o podanie odpowiednich uprawnień. Zrób to, aby zapewnić prawidłowe śledzenie Twoich kamieni milowych. W przeciwnym razie możesz nie otrzymać nagród za oferty.';
+			case 'offersGuidline7': return '7). PlayTime oferuje unikalną mieszankę gier, w których użytkownicy są nagradzani za samo spędzanie czasu w grach. Należy jednak pamiętać o tym, aby przechodzić kolejne poziomy w tych grach, a nie tylko zabijać czas, w przeciwnym razie reklamodawca może cofnąć wypłatę (choć zdarza się to rzadko).';
+			case 'offersGuidline8': return '8). Kamienie milowe/zadania, które ukończyłeś/ukończyłaś, są zazwyczaj rejestrowane na Offerwallach w ciągu kilku minut od ich ukończenia, ale w niektórych przypadkach może to potrwać do trzech godzin, dlatego prosimy o cierpliwość. Jeśli kamień milowy nie zostanie zarejestrowany, skontaktuj się z obsługą klienta sieci Offerwall. W każdej witrynie Offerwall, do której uzyskujesz dostęp, znajduje się osobna sekcja obsługi klienta. Zawsze sprawdzaj Offerwalle w naszej aplikacji po każdym ukończeniu kamienia milowego, aby upewnić się, że został on zarejestrowany.';
+			case 'offersGuidline9': return '9). Jeśli jesteś zainteresowany ofertą gry/aplikacji, ale miałeś ją wcześniej zainstalowaną na swoim urządzeniu, nie próbuj skorzystać z oferty dotyczącej tej gry/aplikacji. Możesz nie otrzymać punktów za swoją aktywność.';
+			case 'offersGuidline10': return '10). Zawsze czytaj wskazówki zawarte na każdej ścianie ofert. Często zawierają one kluczowe szczegóły, które pomogą Ci zmaksymalizować szanse na skuteczne śledzenie ofert.';
 			default: return null;
 		}
 	}
@@ -28834,6 +29380,20 @@ extension on _StringsPt {
 			case 'launchAdTips': return 'Ativar "launchAd" significa que um anúncio será exibido quando o aplicativo for iniciado, e seu resultado será convertido em peso de mineração USCT.';
 			case 'help': return 'Ajuda';
 			case 'verifyOriginalMSISDN': return 'Verificar MSISDN original';
+			case 'noLongerPopup': return 'Não aparece mais';
+			case 'encoding': return 'Codificação:';
+			case 'switchingVerificationStringEncodingMethodsTips': return 'Mudar para diferentes métodos de codificação de strings de verificação pode ajudar a contornar a proibição de operadoras de telecomunicações.';
+			case 'remainUnchanged': return 'permanecem inalterados';
+			case 'offersGuidline1': return '1). Para aumentar o pagamento do USCT para os usuários, firmamos parcerias com algumas das redes de offerwall mais renomadas, como Playtime e Ayet Studios. Os usuários podem ganhar pontos completando tarefas simples como "Baixar Aplicativos e Abrir", "Baixar Jogos e Alcançar Níveis", "Passar Tempo em Jogos" etc. Leia as informações abaixo para entender informações cruciais.';
+			case 'offersGuidline2': return '2) Os usuários ganharão pontos ao completar as ofertas. Ao contrário dos anúncios, esses pontos têm uma taxa de conversão já estabelecida em relação ao USDT. Dependendo do pagamento das redes, a conversão entre pontos e USDT pode variar entre 235 mil pontos = 1 USDT e 250 mil pontos = 1 USDT.\n\nEsses pontos podem ser convertidos para USDT dentro de seis a sete semanas após o final de qualquer mês. Por exemplo: se você acumular 400 mil pontos no mês de agosto, poderá resgatar esses 400 mil pontos como 1,68 USDT até 15 de outubro (que é quando recebemos o pagamento referente ao mês de agosto). Posteriormente, o pagamento dos pontos acumulados no mês de setembro será liquidado até 15 de novembro, e assim por diante. Esse atraso se deve principalmente aos ciclos de pagamento no nicho de "marketing de desempenho" e ao fato de que essas redes de offerwall nos pagam com base no Net-30.\n\nEstamos apenas começando com os offerwalls e, com o tempo, conforme nosso fluxo de caixa melhorar, gostaríamos de reduzir esse prazo de saque. Até lá, agradecemos sua paciência.';
+			case 'offersGuidline3': return '3) Você também acumulará pontos sempre que suas indicações concluírem uma oferta. Você ganhará pontos equivalentes a "43% dos pontos ganhos por suas indicações diretas". Por exemplo: se sua indicação direta acumular 7.000 pontos, você receberá automaticamente 3.000 pontos.';
+			case 'offersGuidline4': return '4). Se você estiver interessado em um aplicativo/jogo específico referente a uma oferta e quiser experimentá-lo, visite o aplicativo/jogo por meio do link/botão fornecido no mural de ofertas. Caso contrário, os marcos e a atividade não serão rastreados.';
+			case 'offersGuidline5': return '5) Nunca use VPN para acessar essas ofertas. Você será desqualificado pelas redes Offerwall.';
+			case 'offersGuidline6': return '6) As redes Offerwall podem solicitar que você forneça as permissões relevantes. Faça isso para garantir que seus marcos sejam monitorados corretamente, caso contrário, você poderá não ser recompensado pelas ofertas.';
+			case 'offersGuidline7': return '7). O PlayTime oferece uma combinação única de ofertas de jogos, onde os usuários são recompensados simplesmente por passarem tempo jogando. No entanto, certifique-se de que você também esteja progredindo pelos níveis desses jogos, em vez de apenas passar o tempo, ou o anunciante poderá reverter o pagamento (embora isso seja raro).';
+			case 'offersGuidline8': return '8). Os marcos/tarefas concluídos por você geralmente são registrados nos Offerwalls poucos minutos após a conclusão, mas, em certos casos, pode levar até três horas, portanto, seja paciente. Caso o marco não seja registrado, entre em contato com o suporte ao cliente da rede Offerwall. Há uma seção dedicada ao Suporte ao Cliente em cada Offerwall que você acessa. Certifique-se sempre de verificar os Offerwalls em nosso aplicativo sempre que concluir um marco para garantir que ele tenha sido rastreado.';
+			case 'offersGuidline9': return '9). Caso você esteja interessado em uma oferta de jogo/aplicativo, mas já o tenha instalado em seu dispositivo, não tente a oferta referente a esse aplicativo/jogo. Você pode não receber créditos pela sua atividade.';
+			case 'offersGuidline10': return '10) Leia sempre as dicas fornecidas por cada Offerwall. Elas geralmente contêm detalhes cruciais que podem ajudar a maximizar suas chances de sucesso no rastreamento de todas as ofertas.';
 			default: return null;
 		}
 	}
@@ -29100,10 +29660,10 @@ extension on _StringsRo {
 			case 'icpFuelCrowdfunding': return 'Fonduri de combustibil ICP';
 			case 'totalAllocation': return 'Alocare totală';
 			case 'miningRatio': return 'Raport de minare';
-			case 'billion.300': return '300 de miliarde';
-			case 'billion.180': return '180 de miliarde';
 			case 'billion.30': return '30 de miliarde';
 			case 'billion.60': return '60 de miliarde';
+			case 'billion.180': return '180 de miliarde';
+			case 'billion.300': return '300 de miliarde';
 			case 'watchAdsToSupportDevelopers': return 'Urmărește reclame pentru a sprijini dezvoltatorii';
 			case 'loadingAdcomponents': return 'Se încarcă componentele publicitare…';
 			case 'timeIsNotUp': return 'Timpul nu a expirat!';
@@ -29538,6 +30098,20 @@ extension on _StringsRo {
 			case 'launchAdTips': return 'Activarea opțiunii «launchAd» înseamnă că o reclamă va fi afișată la lansarea aplicației, iar rezultatul acesteia va fi convertit în pondere de minat USCT.';
 			case 'help': return 'Ajutor';
 			case 'verifyOriginalMSISDN': return 'Verifică MSISDN-ul original';
+			case 'noLongerPopup': return 'Nu mai apare';
+			case 'encoding': return 'Codificare:';
+			case 'switchingVerificationStringEncodingMethodsTips': return 'Trecerea la diferite metode de codificare a șirurilor de verificare poate ajuta la ocolirea interdicției impuse operatorilor de telecomunicații.';
+			case 'remainUnchanged': return 'rămâne neschimbat';
+			case 'offersGuidline1': return '1). În efortul de a crește plățile USCT pentru utilizatori, am colaborat cu unele dintre cele mai reputate rețele offerwall, precum Playtime și Ayet Studios. Utilizatorii pot câștiga puncte completând sarcini simple precum „Descărcați aplicații și deschideți”, „Descărcați jocuri și atingeți niveluri”, „Petreceți timp în jocuri” etc. Vă rugăm să citiți informațiile de mai jos pentru a înțelege informațiile esențiale.';
+			case 'offersGuidline2': return '2). Utilizatorii vor câștiga puncte pentru finalizarea ofertelor. Spre deosebire de reclame, aceste puncte au un raport de schimb deja stabilit în raport cu USDT. În funcție de plata din partea rețelelor, conversia dintre puncte și USDT poate fi între 235.000 de puncte = 1 USDT și 250.000 de puncte = 1 USDT.\n\nAceste puncte pot fi convertite în USDT în termen de șase până la șapte săptămâni de la sfârșitul oricărei luni. De exemplu: Dacă acumulați 400.000 de puncte în luna august, atunci veți putea răscumpăra aceste 400.000 de puncte în 1,68 USDT până pe 15 octombrie (când primim plata pentru luna august). Ulterior, plata pentru punctele acumulate în luna septembrie va fi soluționată până pe 15 noiembrie și așa mai departe. Această întârziere se datorează în principal ciclurilor de plată din nișa „marketingului de performanță” și faptului că aceste rețele de tip „offerwall” ne plătesc pe bază Net-30.\n\nAbia am început cu ofertele și, în timp, pe măsură ce fluxul nostru de numerar se îmbunătățește, am dori să reducem acest interval de retragere. Până atunci, vă apreciem răbdarea.';
+			case 'offersGuidline3': return '3). De asemenea, veți acumula puncte de fiecare dată când recomandările dvs. finalizează o ofertă. Veți câștiga puncte echivalente cu „43% din punctele câștigate de recomandările dvs. directe”. De exemplu: Dacă recomandarea dvs. directă a câștigat 7000 de puncte, vi se vor acorda automat 3000 de puncte.';
+			case 'offersGuidline4': return '4). Dacă sunteți interesat de o anumită aplicație/un anumit joc care face parte dintr-o ofertă și doriți să îl/o încercați, vă rugăm să accesați aplicația/jocul prin linkul/butonul furnizat în cadrul barei de oferte. Dacă nu faceți acest lucru, etapele și activitatea nu vor fi urmărite.';
+			case 'offersGuidline5': return '5). Nu folosiți niciodată o rețea VPN în timp ce accesați aceste oferte. Veți fi descalificat de rețelele de tip „offerwall”.';
+			case 'offersGuidline6': return '6). Rețelele Offerwall vi se pot solicita permisiunile relevante. Vă rugăm să faceți acest lucru pentru a vă asigura că etapele importante sunt urmărite corespunzător, altfel este posibil să nu fiți recompensat pentru oferte.';
+			case 'offersGuidline7': return '7). PlayTime oferă o combinație unică de oferte de jocuri în care utilizatorii sunt recompensați pur și simplu pentru timpul petrecut în jocuri. Cu toate acestea, asigurați-vă că progresați și voi înșivă prin nivelurile din aceste jocuri, în loc să pierdeți timpul, altfel agentul de publicitate ar putea anula plata (deși acest lucru este rar).';
+			case 'offersGuidline8': return '8). Etapele/sarcinile finalizate de dvs. sunt de obicei înregistrate pe Offerwall-uri în câteva minute de la finalizare, dar în anumite cazuri, poate dura până la trei ore, așa că vă rugăm să aveți răbdare în astfel de cazuri. Dacă etapa nu este înregistrată, vă rugăm să contactați serviciul de asistență pentru clienți din rețeaua Offerwall. Există o secțiune separată pentru Asistență pentru clienți pe fiecare Offerwall pe care îl accesați. Asigurați-vă întotdeauna că verificați ofertewall-urile din aplicația noastră de fiecare dată când finalizați o etapă pentru a vă asigura că a fost urmărită.';
+			case 'offersGuidline9': return '9). În cazul în care sunteți interesat de o ofertă pentru un joc/o aplicație, dar ați avut anterior jocul/aplicația respectivă instalată pe dispozitiv, vă rugăm să nu încercați oferta aferentă aplicației/jocului respectiv. Este posibil să nu fiți creditat pentru activitatea dvs.';
+			case 'offersGuidline10': return '10). Citiți întotdeauna sfaturile oferite de fiecare Offerwall. Acestea conțin adesea detalii cruciale care vă pot ajuta să maximizați șansele de urmărire cu succes a ofertelor.';
 			default: return null;
 		}
 	}
@@ -30244,6 +30818,20 @@ extension on _StringsRu {
 			case 'launchAdTips': return 'Включение "launchAd" означает, что при запуске приложения будет отображаться реклама, а ее результат будет преобразован в вес майнинга USCT.';
 			case 'help': return 'Помощь';
 			case 'verifyOriginalMSISDN': return 'Проверить исходный MSISDN';
+			case 'noLongerPopup': return 'Больше не всплывает';
+			case 'encoding': return 'Кодировка:';
+			case 'switchingVerificationStringEncodingMethodsTips': return 'Переход на другие методы кодирования проверочной строки может помочь обойти запрет операторов связи.';
+			case 'remainUnchanged': return 'остаются неизменными';
+			case 'offersGuidline1': return '1). Чтобы увеличить выплаты USCT для пользователей, мы сотрудничаем с некоторыми известными сетями офферволлов, такими как Playtime и Ayet Studios. Пользователи могут зарабатывать баллы, выполняя простые задания, такие как «Скачать приложения и открыть», «Скачать игры и пройти уровни», «Провести время в играх» и т. д. Пожалуйста, ознакомьтесь с информацией ниже, чтобы понять её важность.';
+			case 'offersGuidline2': return '2). Пользователи будут получать баллы за выполнение предложений. В отличие от рекламы, эти баллы имеют уже установленный обменный курс по отношению к USDT. В зависимости от выплат от сетей, конвертация баллов в USDT может составлять от 235 тыс. баллов = 1 USDT до 250 тыс. баллов = 1 USDT.\n\nЭти баллы можно конвертировать в USDT в течение шести-семи недель после окончания любого месяца. Например: если вы накопите 400 тыс. баллов в августе, вы сможете обменять их на 1,68 USDT к 15 октября (когда мы получим выплату за август). Впоследствии выплата баллов, накопленных в сентябре, будет произведена к 15 ноября и так далее. Эта задержка в первую очередь связана с циклами выплат в нише «перфоманс-маркетинга» и тем фактом, что эти сети с офферволлами выплачивают нам вознаграждение по принципу Net-30.\n\nМы только начинаем работу с офферволами, и со временем, по мере улучшения нашего денежного потока, мы хотели бы сократить сроки вывода средств. А пока мы ценим ваше терпение.';
+			case 'offersGuidline3': return '3) Вы также будете накапливать баллы каждый раз, когда ваши рефералы выполняют предложение. Вы заработаете баллы, эквивалентные «43% от баллов, заработанных вашими прямыми рефералами». Например: если ваш прямой реферал заработал 7000 баллов, вам автоматически будут начислены 3000 баллов.';
+			case 'offersGuidline4': return '4) Если вас интересует конкретное приложение/игра, участвующее в акции, и вы хотите её опробовать, перейдите по ссылке/кнопке на странице акций. В противном случае этапы и активность не будут отслеживаться.';
+			case 'offersGuidline5': return '5) Никогда не используйте VPN при доступе к этим предложениям. Вы будете дисквалифицированы сетями, участвующими в акции.';
+			case 'offersGuidline6': return '6) Сети Offerwall могут запросить у вас соответствующие разрешения. Пожалуйста, сделайте это, чтобы обеспечить корректное отслеживание ваших достижений, иначе вы можете не получить вознаграждение за предложения.';
+			case 'offersGuidline7': return '7). PlayTime предлагает уникальный набор игровых предложений, где пользователи получают вознаграждение просто за время, проведённое в играх. Однако, пожалуйста, убедитесь, что вы также проходите уровни в этих играх, а не просто убиваете время, иначе рекламодатель может отменить выплату (хотя это случается редко).';
+			case 'offersGuidline8': return '8). Выполненные вами этапы/задачи обычно регистрируются на Offerwalls в течение нескольких минут после завершения, но в некоторых случаях это может занять до трёх часов, поэтому, пожалуйста, проявите терпение. Если этап не регистрируется, обратитесь в службу поддержки клиентов сети Offerwall. Для каждого Offerwall, к которому вы обращаетесь, есть отдельный раздел для службы поддержки клиентов. Всегда проверяйте offerwalls в нашем приложении каждый раз после завершения этапа, чтобы убедиться, что он отслежен.';
+			case 'offersGuidline9': return '9) Если вас интересует предложение игры/приложения, но оно уже было установлено на вашем устройстве, пожалуйста, не пытайтесь воспользоваться предложением, связанным с этим приложением/игрой. Бонусы за вашу активность могут быть не засчитаны.';
+			case 'offersGuidline10': return '10) Всегда читайте советы, представленные на каждом Offerwall. Они часто содержат важную информацию, которая поможет вам максимально увеличить шансы на успешное отслеживание предложений.';
 			default: return null;
 		}
 	}
@@ -30506,10 +31094,10 @@ extension on _StringsSw {
 			case 'icpFuelCrowdfunding': return 'Uchangishaji wa mafuta wa ICP';
 			case 'totalAllocation': return 'Mgao wa Jumla';
 			case 'miningRatio': return 'Uwiano wa Uchimbaji';
-			case 'billion.300': return 'bilioni 300';
-			case 'billion.180': return 'bilioni 180';
 			case 'billion.30': return 'bilioni 30';
 			case 'billion.60': return 'bilioni 60';
+			case 'billion.180': return 'bilioni 180';
+			case 'billion.300': return 'bilioni 300';
 			case 'watchAdsToSupportDevelopers': return 'Tazama matangazo ili kuwasaidia wasanidi';
 			case 'loadingAdcomponents': return 'Inapakia vipengele vya tangazo…';
 			case 'timeIsNotUp': return 'Muda bado haujafika!';
@@ -30945,6 +31533,20 @@ extension on _StringsSw {
 			case 'launchAdTips': return 'Kuwasha "launchAd" inamaanisha kuwa tangazo litaonyeshwa programu itakapozinduliwa, na matokeo yake yatabadilishwa kuwa uzito wa uchimbaji madini wa USCT.';
 			case 'help': return 'Msaada';
 			case 'verifyOriginalMSISDN': return 'Thibitisha MSISDN asili';
+			case 'noLongerPopup': return 'Haionekani tena';
+			case 'encoding': return 'Usimbaji:';
+			case 'switchingVerificationStringEncodingMethodsTips': return 'Kubadilisha hadi mbinu tofauti za usimbaji wa kamba za uthibitishaji kunaweza kusaidia kukwepa marufuku ya waendeshaji wa mawasiliano ya simu.';
+			case 'remainUnchanged': return 'kubaki bila kubadilika';
+			case 'offersGuidline1': return '1). Katika jitihada za kuongeza malipo ya USCT kwa watumiaji, tumefungamana na baadhi ya mitandao ya ukuta inayojulikana sana kama vile Playtime na Ayet Studios. Watumiaji wanaweza kupata pointi kwa kukamilisha kazi rahisi kama vile "Pakua Programu na Ufungue", "Pakua Michezo na Kufikia Viwango", "Kutumia muda katika michezo" n.k. Tafadhali soma maelezo yaliyo hapa chini ili kuelewa maelezo muhimu.';
+			case 'offersGuidline2': return '2). Watumiaji watapata pointi kwa kukamilisha matoleo. Tofauti na matangazo, pointi hizi zina uwiano wa ubadilishaji ulioanzishwa tayari kuhusiana na USDT. Kulingana na malipo kutoka kwa mitandao, ubadilishaji kati ya pointi na USDT unaweza kuwa popote kati ya pointi 235K = 1 USDT hadi pointi 250K = 1 USDT. \n\nPointi hizi zinaweza kubadilishwa kuwa USDT ndani ya wiki sita hadi saba za mwisho wa mwezi wowote. Kwa mfano: Ukikusanya pointi 400K katika mwezi wa Agosti, basi utaweza kukomboa pointi hizi za 400K kama 1.68 USDT kufikia tarehe 15 Oktoba (wakati ambapo tutapokea malipo ya mwezi wa Agosti). Baadaye, malipo ya pointi zilizokusanywa katika mwezi wa Septemba yatatatuliwa ifikapo tarehe 15 Novemba, na kadhalika. Ucheleweshaji huu ni kwa sababu ya mzunguko wa malipo katika niche ya "masoko ya utendaji" na ukweli kwamba mitandao hii ya matangazo hutulipa kwa misingi ya Net-30. \n\nTunaanza na kuta za ofa, na baada ya muda, kadri mtiririko wetu wa pesa unavyoboreka, tungependa kupunguza muda huu wa uondoaji. Hadi wakati huo, tunashukuru uvumilivu wako.';
+			case 'offersGuidline3': return '3). Pia utakusanya pointi kila wakati marejeleo yako yanapokamilisha ofa. Utapata pointi sawa na "43% ya pointi ulizopata kupitia rufaa zako za moja kwa moja". Kwa mfano: Ikiwa rufaa yako ya moja kwa moja imepata pointi 7000, utapokea pointi 3000 kiotomatiki.';
+			case 'offersGuidline4': return '4). Iwapo ungependa kupata programu/mchezo fulani unaohusiana na ofa na ungependa kuujaribu, tafadhali tembelea programu/mchezo kupitia kiungo/kitufe kilichotolewa ndani ya ukuta wa ofa. Usipofanya hivyo, hatua muhimu na shughuli hazitafuatiliwa. ';
+			case 'offersGuidline5': return '5). Usiwahi kutumia VPN unapofikia ofa hizi. Utaondolewa kwenye mtandao wa ofa.';
+			case 'offersGuidline6': return '6). Unaweza kuombwa na mitandao ya Offerwall kutoa ruhusa zinazofaa. Tafadhali fanya hivyo ili kuhakikisha mafanikio yako yanafuatiliwa ipasavyo, vinginevyo unaweza usituzwe kwa ofa.';
+			case 'offersGuidline7': return '7). PlayTime hutoa mseto wa kipekee wa ofa za mchezo ambapo watumiaji hutuzwa kwa kutumia tu muda katika michezo yote. Hata hivyo, tafadhali hakikisha kuwa unaendelea kupitia viwango vya michezo hii yote badala ya kuua tu wakati au mtangazaji anaweza kutengua malipo (ingawa ni nadra).';
+			case 'offersGuidline8': return '8). Mafanikio/majukumu yanayokamilishwa na wewe kwa kawaida husajiliwa kote kwenye kuta ndani ya dakika chache baada ya kukamilika, lakini katika hali fulani, inaweza kuchukua hadi saa tatu, kwa hivyo tafadhali kuwa na subira katika hali kama hizi. Ikiwa hatua muhimu haitasajiliwa, tafadhali wasiliana na usaidizi kwa wateja unaohusiana na mtandao wa Offerwall. Kuna sehemu tofauti ya Usaidizi kwa Wateja katika kila Ofa unayofikia. Daima hakikisha unaangalia kuta za ofa ndani ya programu yetu kila mara unapomaliza hatua muhimu ili kuhakikisha kuwa imefuatiliwa.';
+			case 'offersGuidline9': return '9). Iwapo ungependa kupata ofa ya mchezo/programu, lakini hapo awali ulikuwa na mchezo/programu hiyo iliyosakinishwa kwenye kifaa chako, tafadhali usijaribu toleo linalohusiana na programu/mchezo huo. Huenda usipewe sifa kwa shughuli yako.';
+			case 'offersGuidline10': return '10). Soma kila mara vidokezo vinavyotolewa na kila Offerwall. Mara nyingi huwa na maelezo muhimu ambayo yanaweza kukusaidia kuongeza uwezekano wako wa kufuatilia kwa mafanikio matoleo yote.';
 			default: return null;
 		}
 	}
@@ -31649,6 +32251,20 @@ extension on _StringsTh {
 			case 'launchAdTips': return 'การเปิดใช้งาน "launchAd" หมายถึงโฆษณาจะปรากฏเมื่อเปิดใช้งานแอป และผลลัพธ์จะถูกแปลงเป็นน้ำหนักการขุด USCT';
 			case 'help': return 'ช่วยเหลือ';
 			case 'verifyOriginalMSISDN': return 'ตรวจสอบ MSISDN ดั้งเดิม';
+			case 'noLongerPopup': return 'ไม่เด้งขึ้นมาอีกแล้ว';
+			case 'encoding': return 'การเข้ารหัส:';
+			case 'switchingVerificationStringEncodingMethodsTips': return 'การเปลี่ยนไปใช้วิธีการเข้ารหัสสตริงการตรวจสอบที่แตกต่างกันสามารถช่วยหลีกเลี่ยงการห้ามของผู้ประกอบการโทรคมนาคมได้';
+			case 'remainUnchanged': return 'ยังคงไม่เปลี่ยนแปลง';
+			case 'offersGuidline1': return '1) เพื่อเพิ่มผลตอบแทนจาก USCT ให้กับผู้ใช้ เราได้ร่วมมือกับเครือข่าย Offerwall ที่มีชื่อเสียงอย่าง Playtime และ Ayet Studios ผู้ใช้จะได้รับคะแนนจากการทำภารกิจง่ายๆ เช่น "ดาวน์โหลดแอปและเปิด", "ดาวน์โหลดเกมและถึงเลเวล", "ใช้เวลาเล่นเกมต่างๆ" เป็นต้น โปรดอ่านข้อมูลด้านล่างเพื่อทำความเข้าใจข้อมูลสำคัญ';
+			case 'offersGuidline2': return '2). ผู้ใช้จะได้รับคะแนนเมื่อทำตามข้อเสนอสำเร็จ ซึ่งแตกต่างจากโฆษณา คะแนนเหล่านี้มีอัตราแลกเปลี่ยนที่กำหนดไว้แล้วเมื่อเทียบกับ USDT การแปลงคะแนนเป็น USDT อาจอยู่ระหว่าง 235,000 คะแนน = 1 USDT ถึง 250,000 คะแนน = 1 USDT ขึ้นอยู่กับการจ่ายเงินจากเครือข่าย\n\nคะแนนเหล่านี้สามารถแปลงเป็น USDT ได้ภายในหกถึงเจ็ดสัปดาห์หลังจากสิ้นเดือน ตัวอย่างเช่น หากคุณสะสมคะแนนได้ 400,000 คะแนนในเดือนสิงหาคม คุณจะสามารถแลกคะแนน 400,000 คะแนนนี้เป็น 1.68 USDT ได้ภายในวันที่ 15 ตุลาคม (ซึ่งเป็นวันที่เราจะได้รับเงินสำหรับเดือนสิงหาคม) หลังจากนั้น การจ่ายเงินสำหรับคะแนนที่สะสมในเดือนกันยายนจะเสร็จสิ้นภายในวันที่ 15 พฤศจิกายน และต่อไปเรื่อยๆ ความล่าช้านี้ส่วนใหญ่เกิดจากรอบการจ่ายเงินในกลุ่ม "การตลาดตามผลงาน" และความจริงที่ว่าเครือข่าย Offerwall เหล่านี้จ่ายเงินให้เราแบบ Net-30\n\nเราเพิ่งเริ่มต้นใช้งาน Offerwalls และเมื่อเวลาผ่านไป เมื่อกระแสเงินสดของเราดีขึ้น เรายินดีที่จะลดระยะเวลาการถอนเงินลง ระหว่างนี้ เราขอขอบคุณสำหรับความอดทนของคุณ';
+			case 'offersGuidline3': return '3) คุณจะได้รับคะแนนสะสมทุกครั้งที่ผู้ที่คุณแนะนำทำข้อเสนอสำเร็จ คุณจะได้รับคะแนนเทียบเท่า "43% ของคะแนนที่ได้รับจากผู้ที่คุณแนะนำโดยตรง" ตัวอย่างเช่น หากผู้ที่คุณแนะนำโดยตรงได้รับ 7,000 คะแนน คุณจะได้รับ 3,000 คะแนนโดยอัตโนมัติ';
+			case 'offersGuidline4': return '4) หากคุณสนใจแอป/เกมใดเป็นพิเศษตามข้อเสนอและต้องการทดลองใช้ โปรดไปที่แอป/เกมนั้นผ่านลิงก์/ปุ่มที่ให้ไว้ในหน้าข้อเสนอ หากคุณไม่ดำเนินการ ระบบจะไม่ติดตามความคืบหน้าและกิจกรรมของคุณ';
+			case 'offersGuidline5': return '5) ห้ามใช้ VPN ระหว่างเข้าถึงข้อเสนอเหล่านี้ เพราะคุณจะถูกตัดสิทธิ์จากเครือข่าย Offerwall';
+			case 'offersGuidline6': return '6) คุณอาจได้รับการแจ้งเตือนจากเครือข่าย Offerwall เพื่อขอสิทธิ์ที่เกี่ยวข้อง โปรดดำเนินการดังกล่าวเพื่อให้แน่ใจว่ามีการติดตามความคืบหน้าของคุณอย่างถูกต้อง มิฉะนั้นคุณอาจไม่ได้รับรางวัลสำหรับข้อเสนอเหล่านี้';
+			case 'offersGuidline7': return '7) PlayTime นำเสนอข้อเสนอเกมที่ผสมผสานกันอย่างลงตัว โดยผู้เล่นจะได้รับรางวัลเพียงแค่ใช้เวลาเล่นเกมในแต่ละเกม อย่างไรก็ตาม โปรดตรวจสอบให้แน่ใจว่าคุณกำลังเล่นผ่านด่านต่างๆ ในเกมเหล่านี้ด้วย แทนที่จะเล่นฆ่าเวลาเฉยๆ มิฉะนั้นผู้โฆษณาอาจยกเลิกการจ่ายเงินรางวัล (แม้ว่าจะเกิดขึ้นได้ยาก)';
+			case 'offersGuidline8': return '8) โดยปกติแล้ว ความสำเร็จ/งานที่คุณทำเสร็จจะถูกบันทึกลงใน Offerwall ภายในไม่กี่นาทีหลังจากเสร็จสิ้น แต่ในบางกรณีอาจใช้เวลานานถึงสามชั่วโมง ดังนั้นโปรดอดทนรอ หากความสำเร็จ/งานไม่ได้รับการบันทึก โปรดติดต่อฝ่ายสนับสนุนลูกค้าที่เกี่ยวข้องกับเครือข่าย Offerwall มีส่วนแยกต่างหากสำหรับฝ่ายสนับสนุนลูกค้าในทุก Offerwall ที่คุณเข้าถึง โปรดตรวจสอบ Offerwall ในแอปของเราทุกครั้งที่คุณทำความสำเร็จ/งานเสร็จ เพื่อให้มั่นใจว่ามีการติดตามความคืบหน้า';
+			case 'offersGuidline9': return '9) หากคุณสนใจข้อเสนอเกม/แอป แต่คุณได้ติดตั้งเกม/แอปนั้นไว้ในอุปกรณ์ของคุณแล้ว โปรดอย่าพยายามใช้ข้อเสนอที่เกี่ยวข้องกับแอป/เกมนั้น คุณอาจไม่ได้รับเครดิตสำหรับกิจกรรมของคุณ';
+			case 'offersGuidline10': return '10) อ่านเคล็ดลับต่างๆ ที่ Offerwall จัดเตรียมไว้ให้เสมอ ซึ่งมักจะมีรายละเอียดสำคัญที่ช่วยเพิ่มโอกาสในการติดตามข้อเสนอต่างๆ สำเร็จ';
 			default: return null;
 		}
 	}
@@ -31915,10 +32531,10 @@ extension on _StringsTr {
 			case 'icpFuelCrowdfunding': return 'ICP yakıt kitlesel fonlaması';
 			case 'totalAllocation': return 'Toplam tahsis';
 			case 'miningRatio': return 'Madencilik oranı';
-			case 'billion.300': return '300 milyar';
-			case 'billion.180': return '180 milyar';
 			case 'billion.30': return '30 milyar';
 			case 'billion.60': return '60 milyar';
+			case 'billion.180': return '180 milyar';
+			case 'billion.300': return '300 milyar';
 			case 'watchAdsToSupportDevelopers': return 'Geliştiricileri desteklemek için reklam izleyin';
 			case 'loadingAdcomponents': return 'Reklam bileşenleri yükleniyor…';
 			case 'timeIsNotUp': return 'Zaman dolmadı!';
@@ -32353,6 +32969,20 @@ extension on _StringsTr {
 			case 'launchAdTips': return '“launchAd” özelliğini açmak, uygulama başlatıldığında bir reklam gösterileceği ve sonucunun USCT madencilik ağırlığına dönüştürüleceği anlamına gelir.';
 			case 'help': return 'Yardım';
 			case 'verifyOriginalMSISDN': return 'Orijinal MSISDN\'yi doğrulayın';
+			case 'noLongerPopup': return 'Artık açılmıyor';
+			case 'encoding': return 'Kodlama:';
+			case 'switchingVerificationStringEncodingMethodsTips': return 'Farklı doğrulama dizesi kodlama yöntemlerine geçiş, telekom operatörlerinin yasağını aşmaya yardımcı olabilir.';
+			case 'remainUnchanged': return 'değişmeden kalır';
+			case 'offersGuidline1': return '1). Kullanıcıların USCT ödemelerini artırmak amacıyla, Playtime ve Ayet Studios gibi saygın offerwall ağlarından bazılarıyla iş birliği yaptık. Kullanıcılar, "Uygulamaları İndir ve Aç", "Oyunları İndir ve Seviyelere Ulaş", "Oyunlar Arasında Zaman Geçir" gibi basit görevleri tamamlayarak puan kazanabilirler. Önemli bilgileri anlamak için lütfen aşağıdaki bilgileri okuyun.';
+			case 'offersGuidline2': return '2). Kullanıcılar teklifleri tamamlayarak puan kazanacaklardır. Reklamların aksine, bu puanların USDT\'ye göre önceden belirlenmiş bir değişim oranı vardır. Ağlardan gelen ödemeye bağlı olarak, puanlar ve USDT arasındaki dönüşüm 235.000 puan = 1 USDT ile 250.000 puan = 1 USDT arasında değişebilir.\n\nBu puanlar, herhangi bir ayın sonundan itibaren altı ila yedi hafta içinde USDT\'ye dönüştürülebilir. Örneğin: Ağustos ayında 400.000 puan biriktirirseniz, bu 400.000 puanı 15 Ekim\'e kadar (Ağustos ayı ödemesini aldığımız tarih) 1,68 USDT olarak kullanabilirsiniz. Ardından, Eylül ayında biriken puanların ödemesi 15 Kasım\'a kadar tamamlanır ve bu şekilde devam eder. Bu gecikme, esas olarak "performans pazarlaması" alanındaki ödeme döngülerinden ve bu teklif duvarı ağlarının bize Net-30 bazında ödeme yapmasından kaynaklanmaktadır.\n\nTeklif duvarlarına henüz yeni başlıyoruz ve zamanla, nakit akışımız iyileştikçe, bu çekim süresini kısaltmayı çok isteriz. O zamana kadar sabrınız için teşekkür ederiz.';
+			case 'offersGuidline3': return '3). Ayrıca, yönlendirdiğiniz kişiler bir teklifi her tamamladığında puan biriktirirsiniz. "Doğrudan yönlendirdiğiniz kişilerin kazandığı puanların %43\'üne" eşdeğer puan kazanırsınız. Örneğin: Doğrudan yönlendirdiğiniz kişi 7.000 puan kazandıysa, otomatik olarak 3.000 puan kazanırsınız.';
+			case 'offersGuidline4': return '4). Bir teklifle ilgili belirli bir uygulama/oyunla ilgileniyorsanız ve denemek istiyorsanız, lütfen teklif duvarındaki bağlantı/düğme aracılığıyla uygulamayı/oyunu ziyaret edin. Bunu yapmazsanız, kilometre taşları ve etkinlikler izlenmeyecektir.';
+			case 'offersGuidline5': return '5). Bu tekliflere erişirken asla VPN kullanmayın. Aksi takdirde offerwall ağları tarafından diskalifiye edilirsiniz.';
+			case 'offersGuidline6': return '6). Offerwall ağları sizden ilgili izinleri vermenizi isteyebilir. Lütfen kilometre taşlarınızın doğru şekilde takip edilmesini sağlamak için bunu yapın, aksi takdirde teklifler için ödüllendirilmeyebilirsiniz.';
+			case 'offersGuidline7': return '7). PlayTime, kullanıcıların yalnızca oyunlarda zaman geçirmeleri karşılığında ödüllendirildiği benzersiz bir oyun teklifi yelpazesi sunar. Ancak, lütfen sadece zaman öldürmek yerine, bu oyunlardaki seviyelerde ilerlediğinizden emin olun, aksi takdirde reklamveren ödemeyi geri alabilir (nadir de olsa).';
+			case 'offersGuidline8': return '8). Tamamladığınız kilometre taşları/görevler genellikle tamamlandıktan sonra birkaç dakika içinde offerwall\'lara kaydedilir, ancak bazı durumlarda üç saate kadar sürebilir, bu nedenle lütfen bu gibi durumlarda sabırlı olun. Kilometre taşı kaydedilmezse, lütfen Offerwall ağıyla ilgili müşteri desteğiyle iletişime geçin. Eriştiğiniz her Offerwall\'da Müşteri Desteği için ayrı bir bölüm bulunur. Bir kilometre taşını tamamladığınızda, takip edildiğinden emin olmak için uygulamamızdaki offerwall\'ları kontrol ettiğinizden emin olun.';
+			case 'offersGuidline9': return '9). Bir oyun/uygulama teklifiyle ilgileniyorsanız, ancak söz konusu oyun/uygulama daha önce cihazınıza yüklenmişse, lütfen söz konusu uygulama/oyunla ilgili teklifi denemeyin. Etkinliğiniz için kredi alamayabilirsiniz.';
+			case 'offersGuidline10': return '10). Her Offerwall tarafından sağlanan ipuçlarını mutlaka okuyun. Bunlar genellikle, teklifler arasında başarılı bir şekilde takip etme şansınızı en üst düzeye çıkarabilecek önemli ayrıntılar içerir.';
 			default: return null;
 		}
 	}
@@ -33058,6 +33688,20 @@ extension on _StringsUk {
 			case 'launchAdTips': return 'Увімкнення "launchAd" означає, що під час запуску програми відображатиметься реклама, а її результат буде конвертовано у вагу для майнінгу USCT.';
 			case 'help': return 'Довідка';
 			case 'verifyOriginalMSISDN': return 'Перевірити оригінальний MSISDN';
+			case 'noLongerPopup': return 'Більше не з\'являється';
+			case 'encoding': return 'Кодування:';
+			case 'switchingVerificationStringEncodingMethodsTips': return 'Перехід на інші методи кодування рядка перевірки може допомогти обійти заборону операторів зв\'язку.';
+			case 'remainUnchanged': return 'залишаються незмінними';
+			case 'offersGuidline1': return '1). Щоб збільшити виплати USCT для користувачів, ми співпрацюємо з деякими з відомих мереж offerwall, такими як Playtime та Ayet Studios. Користувачі можуть заробляти бали, виконуючи прості завдання, такі як «Завантаження програм та відкриття», «Завантаження ігор та досягнення рівнів», «Витрачання часу на ігри» тощо. Будь ласка, прочитайте інформацію нижче, щоб зрозуміти важливу інформацію.';
+			case 'offersGuidline2': return '2). Користувачі зароблятимуть бали за виконання пропозицій. На відміну від реклами, ці бали мають вже встановлений коефіцієнт обміну по відношенню до USDT. Залежно від виплати від мереж, конвертація між балами та USDT може становити від 235 тис. балів = 1 USDT до 250 тис. балів = 1 USDT.\n\nЦі бали можна конвертувати в USDT протягом шести-семи тижнів після закінчення будь-якого місяця. Наприклад: якщо ви накопичите 400 тис. балів у серпні, то ви зможете обміняти ці 400 тис. балів на 1,68 USDT до 15 жовтня (саме тоді ми отримаємо виплату за серпень). Згодом виплата за бали, накопичені у вересні, буде здійснена до 15 листопада тощо. Ця затримка пов\'язана головним чином з циклами платежів у ніші «маркетингу ефективності» та тим фактом, що ці мережі offerwall виплачують нам на основі Net-30.\n\nМи тільки починаємо роботу з пропозиціями, і з часом, у міру покращення нашого грошового потоку, ми хотіли б скоротити цей термін виведення коштів. А поки що дякуємо за ваше терпіння.';
+			case 'offersGuidline3': return '3). Ви також накопичуватимете бали щоразу, коли ваші реферали завершують пропозицію. Ви отримуватимете бали, еквівалентні «43% балів, зароблених вашими прямими рефералами». Наприклад: якщо ваш прямий реферал заробив 7000 балів, вам автоматично буде зараховано 3000 балів.';
+			case 'offersGuidline4': return '4). Якщо вас цікавить певний додаток/гра, що стосується пропозиції, і ви хочете його спробувати, будь ласка, перейдіть на сторінку цього додатка/гри за посиланням/кнопкою на стіні пропозицій. Якщо ви цього не зробите, етапи та активність не відстежуватимуться.';
+			case 'offersGuidline5': return '5). Ніколи не використовуйте VPN під час доступу до цих пропозицій. Вас дискваліфікують мережі offerwall.';
+			case 'offersGuidline6': return '6). Мережі Offerwall можуть запропонувати вам надати відповідні дозволи. Будь ласка, зробіть це, щоб забезпечити належне відстеження ваших етапів, інакше ви можете не отримати винагороду за пропозиції.';
+			case 'offersGuidline7': return '7). PlayTime пропонує унікальне поєднання ігрових пропозицій, де користувачі отримують винагороду просто за те, що проводять час в іграх. Однак, будь ласка, переконайтеся, що ви також просуваєтеся по рівнях у цих іграх, а не просто вбиваєте час, інакше рекламодавець може скасувати виплату (хоча це трапляється рідко).';
+			case 'offersGuidline8': return '8). Виконані вами етапи/завдання зазвичай реєструються на стінах пропозицій протягом кількох хвилин після їх завершення, але в деяких випадках це може зайняти до трьох годин, тому будьте терплячими. Якщо етап не зареєстровано, зверніться до служби підтримки клієнтів мережі Offerwall. На кожному Offerwall, до якого ви отримуєте доступ, є окремий розділ для підтримки клієнтів. Завжди перевіряйте стіни пропозицій у нашому додатку щоразу, коли ви завершуєте етап, щоб переконатися, що його було відстежено.';
+			case 'offersGuidline9': return '9). Якщо вас зацікавила пропозиція гри/додатку, але ця гра/додаток раніше була встановлена на вашому пристрої, будь ласка, не намагайтеся скористатися пропозицією, що стосується цієї програми/гри. Вам можуть не нарахувати винагороду за вашу активність.';
+			case 'offersGuidline10': return '10). Завжди читайте поради, надані на кожному Offerwall. Вони часто містять важливі деталі, які можуть допомогти максимізувати ваші шанси на успішне відстеження пропозицій.';
 			default: return null;
 		}
 	}
@@ -33324,10 +33968,10 @@ extension on _StringsUr {
 			case 'icpFuelCrowdfunding': return 'ICP ایندھن کی عوامی فنڈنگ';
 			case 'totalAllocation': return 'کل تقسیم';
 			case 'miningRatio': return 'مائننگ کا تناسب';
-			case 'billion.300': return '300 بلین';
-			case 'billion.180': return '180 بلین';
 			case 'billion.30': return '30 بلین';
 			case 'billion.60': return '60 بلین';
+			case 'billion.180': return '180 بلین';
+			case 'billion.300': return '300 بلین';
 			case 'watchAdsToSupportDevelopers': return 'ترقی دہندگان کی حمایت کے لیے اشتہارات دیکھیں';
 			case 'loadingAdcomponents': return 'اشتہاری اجزاء لوڈ ہو رہے ہیں…';
 			case 'timeIsNotUp': return 'وقت ختم نہیں ہوا!';
@@ -33762,6 +34406,20 @@ extension on _StringsUr {
 			case 'launchAdTips': return '"launchAd" کو آن کرنے کا مطلب ہے کہ ایپ کے لانچ ہونے پر ایک اشتہار دکھایا جائے گا، اور اس کا نتیجہ USCT مائننگ وزن میں تبدیل ہو جائے گا۔';
 			case 'help': return 'مدد';
 			case 'verifyOriginalMSISDN': return 'اصل MSISDN کی تصدیق کریں';
+			case 'noLongerPopup': return 'اب پاپ اپ نہیں۔';
+			case 'encoding': return 'انکوڈنگ:';
+			case 'switchingVerificationStringEncodingMethodsTips': return 'تصدیقی سٹرنگ انکوڈنگ کے مختلف طریقوں پر سوئچ کرنے سے ٹیلی کام آپریٹرز کی پابندی کو نظرانداز کرنے میں مدد مل سکتی ہے۔';
+			case 'remainUnchanged': return 'غیر تبدیل شدہ رہیں';
+			case 'offersGuidline1': return '1)۔ صارفین کے لیے USCT کی ادائیگی کو بڑھانے کی کوشش میں، ہم نے پلے ٹائم اور Ayet Studios جیسے کچھ انتہائی معروف آفر وال نیٹ ورکس کے ساتھ معاہدہ کیا ہے۔ صارفین آسان کاموں جیسے "ایپس ڈاؤن لوڈ کریں اور کھولیں"، "گیمز ڈاؤن لوڈ کریں اور سطح تک پہنچنا"، "گیمز میں وقت گزارنا" وغیرہ جیسے آسان کاموں کو مکمل کرکے پوائنٹس حاصل کرسکتے ہیں۔ اہم معلومات کو سمجھنے کے لیے براہ کرم نیچے دی گئی معلومات کو پڑھیں۔';
+			case 'offersGuidline2': return '2)۔ صارفین آفرز کو مکمل کرنے پر پوائنٹس حاصل کریں گے۔ اشتہارات کے برعکس، ان پوائنٹس کا USDT کے سلسلے میں پہلے سے ہی قائم شدہ تبادلے کا تناسب ہے۔ نیٹ ورکس سے ادائیگی پر منحصر ہے، پوائنٹس اور USDT کے درمیان تبدیلی 235K پوائنٹس = 1 USDT سے 250K پوائنٹس = 1 USDT کے درمیان کہیں بھی ہو سکتی ہے۔ \n\nان پوائنٹس کو کسی بھی مہینے کے اختتام کے چھ سے سات ہفتوں کے اندر USDT میں تبدیل کیا جا سکتا ہے۔ مثال کے طور پر: اگر آپ اگست کے مہینے میں 400K پوائنٹس جمع کرتے ہیں، تو آپ 15 اکتوبر تک ان 400K پوائنٹس کو 1.68 USDT کے طور پر چھڑا سکیں گے (جو کہ ہمیں اگست کے مہینے کی ادائیگی موصول ہونے پر)۔ اس کے بعد، ستمبر کے مہینے میں جمع ہونے والے پوائنٹس کی ادائیگی 15 نومبر تک کی جائے گی، وغیرہ۔ یہ تاخیر بنیادی طور پر "کارکردگی کی مارکیٹنگ" میں ادائیگی کے چکروں اور اس حقیقت کی وجہ سے ہے کہ یہ آفر وال نیٹ ورک ہمیں Net-30 کی بنیاد پر ادائیگی کرتے ہیں۔ \n\nہم صرف آفر والز کے ساتھ شروعات کر رہے ہیں، اور وقت گزرنے کے ساتھ، جیسے جیسے ہمارے نقد بہاؤ میں بہتری آتی ہے، ہم اس واپسی کے ٹائم فریم کو کم کرنا پسند کریں گے۔ تب تک، ہم آپ کے صبر کی تعریف کرتے ہیں۔';
+			case 'offersGuidline3': return '3)۔ جب بھی آپ کے حوالہ جات کوئی پیشکش مکمل کریں گے تو آپ پوائنٹس بھی جمع کریں گے۔ آپ "آپ کے براہ راست حوالہ جات سے حاصل کردہ پوائنٹس کے 43%" کے برابر پوائنٹس حاصل کریں گے۔ مثال کے طور پر: اگر آپ کے ڈائریکٹ ریفرل نے 7000 پوائنٹس حاصل کیے ہیں، تو آپ کو خود بخود 3000 پوائنٹس جمع کر دیے جائیں گے۔';
+			case 'offersGuidline4': return '4)۔ اگر آپ کسی پیشکش سے متعلق کسی خاص ایپ/گیم میں دلچسپی رکھتے ہیں اور اسے آزمانا چاہتے ہیں، تو براہ کرم آفر وال میں فراہم کردہ لنک/بٹن کے ذریعے ایپ/گیم دیکھیں۔ اگر آپ ایسا نہیں کرتے ہیں، تو سنگ میل اور سرگرمی کو ٹریک نہیں کیا جائے گا۔ ';
+			case 'offersGuidline5': return '5)۔ ان پیشکشوں تک رسائی کے دوران کبھی بھی VPN استعمال نہ کریں۔ آپ کو آفر وال نیٹ ورکس کے ذریعے نااہل قرار دے دیا جائے گا۔';
+			case 'offersGuidline6': return '6)۔ آپ کو آفر وال نیٹ ورکس کی طرف سے متعلقہ اجازتیں فراہم کرنے کے لیے کہا جا سکتا ہے۔ براہ کرم ایسا کریں تاکہ یہ یقینی بنایا جا سکے کہ آپ کے سنگ میل کو درست طریقے سے ٹریک کیا گیا ہے، بصورت دیگر آپ کو پیشکشوں کا بدلہ نہیں دیا جائے گا۔';
+			case 'offersGuidline7': return '7)۔ پلے ٹائم گیم آفرز کا ایک انوکھا امتزاج فراہم کرتا ہے جہاں صارفین کو تمام گیمز میں صرف وقت گزارنے پر انعام دیا جاتا ہے۔ تاہم، براہ کرم اس بات کو یقینی بنائیں کہ آپ صرف وقت ضائع کرنے کے بجائے ان گیمز میں بھی سطحوں پر آگے بڑھ رہے ہیں یا مشتہر ادائیگی کو واپس لے سکتا ہے (حالانکہ یہ نایاب ہے)۔';
+			case 'offersGuidline8': return '8)۔ آپ کی طرف سے مکمل کیے گئے سنگ میل/کام عام طور پر مکمل ہونے کے چند منٹوں کے اندر اندر آفر والز پر رجسٹر کیے جاتے ہیں، لیکن بعض صورتوں میں، اس میں تین گھنٹے تک لگ سکتے ہیں، اس لیے براہ کرم ایسے معاملات میں صبر کریں۔ اگر سنگ میل رجسٹرڈ نہیں ہوتا ہے، تو براہ کرم آفر وال نیٹ ورک سے متعلق کسٹمر سپورٹ سے رابطہ کریں۔ کسٹمر سپورٹ کے لیے ہر اس آفر وال پر ایک الگ سیکشن ہے جس تک آپ رسائی حاصل کرتے ہیں۔ ہمیشہ اس بات کو یقینی بنائیں کہ جب بھی آپ کوئی سنگ میل مکمل کرتے ہیں تو آپ ہماری ایپ کے اندر آفر والز کو چیک کرتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ اسے ٹریک کیا گیا ہے۔';
+			case 'offersGuidline9': return '9)۔ اگر آپ گیم/ایپ کی پیشکش میں دلچسپی رکھتے ہیں، لیکن آپ نے پہلے وہ گیم/ایپ اپنے آلے میں انسٹال کر رکھی تھی، تو براہ کرم اس ایپ/گیم سے متعلق پیشکش کی کوشش نہ کریں۔ ہو سکتا ہے آپ کو اپنی سرگرمی کا کریڈٹ نہ ملے۔';
+			case 'offersGuidline10': return '10)۔ ہر آفر وال کی طرف سے فراہم کردہ تجاویز کو ہمیشہ پڑھیں۔ ان میں اکثر اہم تفصیلات ہوتی ہیں جو آپ کے تمام پیشکشوں میں کامیاب ٹریکنگ کے امکانات کو بڑھانے میں مدد کر سکتی ہیں۔';
 			default: return null;
 		}
 	}
@@ -34467,6 +35125,20 @@ extension on _StringsVi {
 			case 'launchAdTips': return 'Bật "launchAd" có nghĩa là một quảng cáo sẽ được hiển thị khi ứng dụng được khởi chạy và kết quả của quảng cáo đó sẽ được chuyển đổi thành trọng số khai thác USCT.';
 			case 'help': return 'Trợ giúp';
 			case 'verifyOriginalMSISDN': return 'Xác minh MSISDN gốc';
+			case 'noLongerPopup': return 'Không còn bật lên nữa';
+			case 'encoding': return 'Mã hóa:';
+			case 'switchingVerificationStringEncodingMethodsTips': return 'Việc chuyển sang các phương pháp mã hóa chuỗi xác minh khác nhau có thể giúp vượt qua lệnh cấm của các nhà mạng viễn thông.';
+			case 'remainUnchanged': return 'vẫn không thay đổi';
+			case 'offersGuidline1': return '1). Nhằm tăng phần thưởng USCT cho người dùng, chúng tôi đã hợp tác với một số mạng lưới offerwall uy tín như Playtime và Ayet Studios. Người dùng có thể tích điểm khi hoàn thành các nhiệm vụ đơn giản như "Tải ứng dụng và mở", "Tải trò chơi và lên cấp", "Dành thời gian chơi trò chơi" v.v. Vui lòng đọc thông tin bên dưới để nắm rõ những thông tin quan trọng.';
+			case 'offersGuidline2': return '2). Người dùng sẽ nhận được điểm khi hoàn thành các ưu đãi. Không giống như quảng cáo, điểm thưởng này có tỷ lệ quy đổi đã được thiết lập sẵn so với USDT. Tùy thuộc vào khoản thanh toán từ các mạng lưới, tỷ lệ chuyển đổi giữa điểm thưởng và USDT có thể dao động từ 235.000 điểm = 1 USDT đến 250.000 điểm = 1 USDT.\n\nNhững điểm thưởng này có thể được quy đổi sang USDT trong vòng sáu đến bảy tuần sau khi kết thúc bất kỳ tháng nào. Ví dụ: Nếu bạn tích lũy được 400.000 điểm trong tháng 8, bạn sẽ có thể đổi 400.000 điểm này thành 1,68 USDT trước ngày 15 tháng 10 (là thời điểm chúng tôi nhận được khoản thanh toán cho tháng 8). Sau đó, khoản thanh toán cho các điểm thưởng tích lũy trong tháng 9 sẽ được thanh toán vào ngày 15 tháng 11, v.v. Sự chậm trễ này chủ yếu là do các chu kỳ thanh toán trong phân khúc "tiếp thị hiệu suất" và thực tế là các mạng lưới offerwall này thanh toán cho chúng tôi theo cơ sở Net-30.\n\nChúng tôi mới bắt đầu với các tường ưu đãi, và theo thời gian, khi dòng tiền của chúng tôi được cải thiện, chúng tôi rất mong muốn rút ngắn thời gian rút tiền này. Cho đến lúc đó, chúng tôi rất mong bạn kiên nhẫn.';
+			case 'offersGuidline3': return '3). Bạn cũng sẽ tích lũy điểm mỗi khi người được bạn giới thiệu hoàn thành một giao dịch. Bạn sẽ nhận được điểm tương đương với "43% số điểm mà người được bạn giới thiệu trực tiếp kiếm được". Ví dụ: Nếu người được bạn giới thiệu trực tiếp kiếm được 7000 điểm, bạn sẽ tự động được cộng 3000 điểm.';
+			case 'offersGuidline4': return '4). Nếu bạn quan tâm đến một ứng dụng/trò chơi cụ thể liên quan đến ưu đãi và muốn dùng thử, vui lòng truy cập ứng dụng/trò chơi đó thông qua liên kết/nút được cung cấp trong tường ưu đãi. Nếu bạn không làm như vậy, các cột mốc và hoạt động sẽ không được theo dõi.';
+			case 'offersGuidline5': return '5). Tuyệt đối không sử dụng VPN khi truy cập các ưu đãi này. Bạn sẽ bị loại khỏi danh sách ưu đãi của các mạng lưới.';
+			case 'offersGuidline6': return '6). Mạng lưới Offerwall có thể yêu cầu bạn cung cấp các quyền liên quan. Vui lòng thực hiện việc này để đảm bảo các cột mốc của bạn được theo dõi chính xác, nếu không, bạn có thể không được thưởng cho các ưu đãi.';
+			case 'offersGuidline7': return '7). PlayTime cung cấp một sự kết hợp độc đáo các ưu đãi trò chơi, nơi người dùng được thưởng chỉ bằng cách dành thời gian chơi. Tuy nhiên, hãy đảm bảo rằng bạn cũng đang tiến bộ qua các cấp độ của trò chơi thay vì chỉ giết thời gian, nếu không nhà quảng cáo có thể đảo ngược khoản thanh toán (mặc dù trường hợp này rất hiếm).';
+			case 'offersGuidline8': return '8). Các mốc/nhiệm vụ bạn đã hoàn thành thường được ghi nhận trên các tường đề xuất trong vòng vài phút sau khi hoàn thành, nhưng trong một số trường hợp, có thể mất đến ba giờ, vì vậy hãy kiên nhẫn. Nếu mốc không được ghi nhận, vui lòng liên hệ với bộ phận hỗ trợ khách hàng của mạng lưới Offerwall. Có một mục riêng dành cho Hỗ trợ Khách hàng trên mỗi Offerwall bạn truy cập. Luôn đảm bảo bạn kiểm tra tường đề xuất trong ứng dụng của chúng tôi mỗi khi hoàn thành một mốc để đảm bảo nó đã được theo dõi.';
+			case 'offersGuidline9': return '9). Trong trường hợp bạn quan tâm đến một ưu đãi trò chơi/ứng dụng nhưng đã cài đặt trò chơi/ứng dụng đó trên thiết bị trước đó, vui lòng không thử ưu đãi liên quan đến ứng dụng/trò chơi đó. Hoạt động của bạn có thể sẽ không được ghi nhận.';
+			case 'offersGuidline10': return '10). Luôn đọc kỹ các mẹo được cung cấp bởi mỗi Offerwall. Chúng thường chứa các chi tiết quan trọng có thể giúp tối đa hóa cơ hội theo dõi thành công các ưu đãi.';
 			default: return null;
 		}
 	}
@@ -34734,8 +35406,8 @@ extension on _StringsZhCn {
 			case 'icpFuelCrowdfunding': return 'ICP燃料众筹';
 			case 'totalAllocation': return '总量分配';
 			case 'miningRatio': return '开采比例';
-			case 'billion.60': return '600亿';
 			case 'billion.30': return '300亿';
+			case 'billion.60': return '600亿';
 			case 'billion.180': return '1800亿';
 			case 'billion.300': return '3000亿';
 			case 'watchAdsToSupportDevelopers': return '看广告支持开发者';
@@ -35001,7 +35673,7 @@ extension on _StringsZhCn {
 			case 'receiveAddress': return '接收地址：';
 			case 'hangingAmount': return '挂起金额';
 			case 'points': return '积分：';
-			case 'pendingPointsTips': return '积分金额是指还未与广告商进行确认比对的权重额度. \n\n不同渠道兑换率不同，最终以渠道商实际结算金额为基准';
+			case 'pendingPointsTips': return '积分金额是指还未与广告商进行确认比对的权重额度. \n不同渠道兑换率不同，最终以渠道商实际结算金额为基准';
 			case 'received': return '已收到';
 			case 'processing': return '处理中';
 			case 'replied': return '已应答';
@@ -35173,6 +35845,20 @@ extension on _StringsZhCn {
 			case 'launchAdTips': return '开启“launchAd”表示将在启动应用时展示一个广告，并将其结果转换为USCT挖矿权重。';
 			case 'help': return '帮助';
 			case 'verifyOriginalMSISDN': return '验证原MSISDN';
+			case 'noLongerPopup': return '不再弹出';
+			case 'encoding': return '编码方式:';
+			case 'switchingVerificationStringEncodingMethodsTips': return '切换不同的验证串编码方式有助于绕过电信运营商的封禁。';
+			case 'remainUnchanged': return '保持不变';
+			case 'offersGuidline1': return '1). 为了提高用户的 USCT 收益，我们与一些知名的积分墙网络合作，例如 Playtime 和 Ayet Studios。用户可以通过完成“下载应用并打开”、“下载游戏并升级”、“在游戏中花费时间”等简单任务来赚取积分。请阅读以下信息以了解关键信息。';
+			case 'offersGuidline2': return '2). 用户完成优惠活动即可获得积分。与广告不同，这些积分与 USDT 的兑换率已设定。根据各广告网络的返现情况，积分与 USDT 的兑换率可在 23.5 万积分兑换 1 USDT 到 25 万积分兑换 1 USDT 之间。\n\n这些积分可在每月结束后六到七周内兑换成 USDT。例如：如果您在 8 月份积累了 40 万积分，那么您可以在 10 月 15 日（即我们收到 8 月份返现的日期）之前将这 40 万积分兑换成 1.68 USDT。之后，9 月份积累的积分返现将在 11 月 15 日之前结算，以此类推。这种延迟主要是因为“效果营销”领域的支付周期，以及这些 offerwall 广告网络采用 Net-30 付款机制。\n\n我们刚刚开始使用优惠墙，随着现金流的改善，我们希望缩短提现时间。在此之前，感谢您的耐心等待。';
+			case 'offersGuidline3': return '3). 您的推荐人每次完成优惠活动，您都会获得积分。您将获得相当于“您直接推荐人所获积分的 43%”的积分。例如：如果您的直接推荐人已获得 7000 积分，您将自动获得 3000 积分。';
+			case 'offersGuidline4': return '4). 如果您对某个优惠活动中包含的某个应用/游戏感兴趣并想尝试，请通过优惠墙内提供的链接/按钮访问该应用/游戏。如果您不这样做，则无法追踪里程碑和活动。';
+			case 'offersGuidline5': return '5). 访问这些优惠时切勿使用 VPN。否则，您将被优惠墙网络取消资格。';
+			case 'offersGuidline6': return '6). Offerwall 网络可能会提示您提供相关权限。请您提供相应权限以确保您的里程碑能够被正确追踪，否则您可能无法获得优惠奖励。';
+			case 'offersGuidline7': return '7). PlayTime 提供独特的游戏组合，用户只需在游戏中投入时间即可获得奖励。但是，请确保您在这些游戏中也不断升级，而不是仅仅消磨时间，否则广告商可能会撤销支付（尽管这种情况很少见）。';
+			case 'offersGuidline8': return '8). 您完成的里程碑/任务通常会在几分钟内记录在积分墙上，但在某些情况下，可能需要长达三个小时，因此请耐心等待。如果里程碑未记录，请联系积分墙网络的客服。您访问的每个积分墙上都有单独的客服专区。每次完成里程碑后，请务必在我们的应用程序中查看积分墙，以确保其已被追踪。';
+			case 'offersGuidline9': return '9). 如果您对某个游戏/应用的优惠感兴趣，但您的设备之前已安装该游戏/应用，请勿尝试与该应用/游戏相关的优惠。您可能无法获得相应活动积分。';
+			case 'offersGuidline10': return '10). 务必阅读每个 Offerwall 提供的提示。这些提示通常包含关键细节，可以帮助您最大限度地提高成功追踪优惠的机会。';
 			default: return null;
 		}
 	}
@@ -35879,6 +36565,20 @@ extension on _StringsZhTw {
 			case 'launchAdTips': return '開啟「launchAd」表示將在啟動應用程式時顯示一個廣告，並將其結果轉換為USCT挖礦權重。';
 			case 'help': return '幫助';
 			case 'verifyOriginalMSISDN': return '驗證原始 MSISDN';
+			case 'noLongerPopup': return '不再彈出';
+			case 'encoding': return '編碼方式:';
+			case 'switchingVerificationStringEncodingMethodsTips': return '切換不同的驗證串編碼方式有助於繞過電信業者的封鎖。';
+			case 'remainUnchanged': return '保持不變';
+			case 'offersGuidline1': return '1). 為了提高用戶的 USCT 收益，我們與一些知名的積分牆網路合作，例如 Playtime 和 Ayet Studios。用戶可以透過完成「下載應用程式並開啟」、「下載遊戲並升級」、「在遊戲中花費時間」等簡單任務來賺取積分。請閱讀以下資訊以了解關鍵資訊。';
+			case 'offersGuidline2': return '2). 用戶完成優惠活動即可獲得積分。與廣告不同，這些積分與 USDT 的兌換率已設定。根據各廣告網路的返現情況，積分與 USDT 的兌換率可在 23.5 萬積分兌換 1 USDT 到 25 萬積分兌換 1 USDT 之間。\n\n這些積分可在每月結束後六到七週內兌換成 USDT。例如：如果您在 8 月累積了 40 萬積分，那麼您可以在 10 月 15 日（即我們收到 8 月返現的日期）之前將這 40 萬積分兌換成 1.68 USDT。之後，9 月累積的積分返現將在 11 月 15 日之前結算，以此類推。這種延遲主要是因為「效果行銷」領域的支付週期，以及這些 offerwall 廣告網路採用 Net-30 付款機制。\n\n我們剛開始使用優惠牆，隨著現金流的改善，我們希望縮短提現時間。在此之前，感謝您的耐心等待。';
+			case 'offersGuidline3': return '3). 您的推薦人每次完成優惠活動，您都會獲得積分。您將獲得相當於「您直接推薦人所獲積分的 43%」的積分。例如：如果您的直接推薦人已獲得 7000 積分，您將自動獲得 3000 積分。';
+			case 'offersGuidline4': return '4). 如果您對某個優惠活動中包含的某個應用程式/遊戲感興趣並想嘗試，請透過優惠牆內提供的連結/按鈕存取該應用程式/遊戲。如果您不這樣做，則無法追蹤里程碑和活動。';
+			case 'offersGuidline5': return '5). 切勿在存取這些優惠時使用 VPN。否則，您將被優惠牆網路取消資格。';
+			case 'offersGuidline6': return '6). Offerwall 網路可能會提示您提供相關權限。請您提供相應權限以確保您的里程碑能夠被正確追踪，否則您可能無法獲得優惠獎勵。';
+			case 'offersGuidline7': return '7). PlayTime 提供獨特的遊戲組合，用戶只需在遊戲中投入時間即可獲得獎勵。但是，請確保您在這些遊戲中也不斷升級，而不是僅僅消磨時間，否則廣告商可能會撤銷付款（儘管這種情況很少見）。';
+			case 'offersGuidline8': return '8). 您完成的里程碑/任務通常會在幾分鐘內記錄在積分牆上，但在某些情況下，可能需要長達三個小時，因此請耐心等待。若里程碑未記錄，請聯絡積分牆網路的客服。您造訪的每個積分牆上都有單獨的客服專區。每次完成里程碑後，請務必在我們的應用程式中查看積分牆，以確保其已被追蹤。';
+			case 'offersGuidline9': return '9). 如果您對某個遊戲/應用程式的優惠感興趣，但您的裝置之前已安裝該遊戲/應用，請勿嘗試與該應用程式/遊戲相關的優惠。您可能無法獲得相應活動積分。';
+			case 'offersGuidline10': return '10). 務必閱讀每個 Offerwall 提供的提示。這些提示通常包含關鍵細節，可以幫助您最大限度地提高成功追蹤優惠的機會。';
 			default: return null;
 		}
 	}

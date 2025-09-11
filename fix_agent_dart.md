@@ -36,3 +36,13 @@ C:\Users\ippow\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_ios-1
             }
             return jsonEncode(await _javaScriptHandlersMap[handlerName]!(args), toEncodable: toEncodable);
 ```
+
+``` dart
+    toEncodable(Object? nonEncodable) {
+      if (nonEncodable is BigInt) {
+        return nonEncodable.toInt();
+      }
+      return nonEncodable.toString();
+    }
+    data = json.decode(data, toEncodable : toEncodable);
+```

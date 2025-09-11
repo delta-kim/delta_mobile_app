@@ -28,6 +28,12 @@ if (typeof window.delta == "object") {
     showAlert: function (content, title = null) {
       return window.flutter_inappwebview.callHandler('showAlert', content, title);
     },
+    showQRcode: function (content, style = "dots") {
+      window.flutter_inappwebview.callHandler('showQRcode', content, style);
+    },
+    scanQR: function () {
+      return window.flutter_inappwebview.callHandler('scanQR');
+    },
     langText: function (label) {
       return window.flutter_inappwebview.callHandler('langText', label);
     },
