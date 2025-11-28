@@ -621,5 +621,11 @@
 	"deltaFriendX_yourMiningHasStopped": "delta-vriend ${user}: \"Je mining is gestopt.\"",
 	"inputAndActualNumberDoNotMatch(rich)": "Het nummer dat je in de Delta-app hebt ingevoerd, was (${fillin}), maar het nummer waarmee je je verificatiestring hebt verzonden, was (${sender}). Pas dit aan en probeer het opnieuw.",
 	"decryptionError_pleaseTryAgain": "Fout bij het decoderen. Probeer het opnieuw!",
-	"reLogin": "Opnieuw inloggen"
+	"reLogin": "Opnieuw inloggen",
+	"themeMode": "Themamodus",
+	"copy": "Kopiëren",
+	"brightnessMode": "Helderheidsmodus",
+	"clicks": "Klikken aantal",
+	"rankings": "Ranglijsten",
+	"downloadFailed": "Downloaden mislukt!"
 }

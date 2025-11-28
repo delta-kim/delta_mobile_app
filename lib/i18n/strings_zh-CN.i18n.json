@@ -621,5 +621,11 @@
 	"deltaFriendX_yourMiningHasStopped": "delta好友${user}：“您的挖矿已停止.”",
 	"inputAndActualNumberDoNotMatch(rich)": "您在 Delta 应用程序上输入的号码是 (${fillin})，但您发送验证字符串时使用的号码是 (${sender})。请调整后重试。",
 	"decryptionError_pleaseTryAgain": "解密出错，请重试！",
-	"reLogin": "重新登录"
+	"reLogin": "重新登录",
+	"themeMode": "主题模式",
+	"copy": "复制",
+	"brightnessMode": "亮度模式",
+	"clicks": "点击量",
+	"rankings": "排行榜",
+	"downloadFailed": "下载失败！"
 }

@@ -3,10 +3,10 @@
 /// Original: lib/i18n
 /// To regenerate, run: `dart run slang`
 ///
-/// Locales: 25
-/// Strings: 15467 (618 per locale)
+/// Locales: 26
+/// Strings: 16242 (624 per locale)
 ///
-/// Built on 2025-09-28 at 02:25 UTC
+/// Built on 2025-11-25 at 01:37 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -26,6 +26,7 @@ const AppLocale _baseLocale = AppLocale.en;
 /// - if (LocaleSettings.currentLocale == AppLocale.en) // locale check
 enum AppLocale with BaseAppLocale<AppLocale, Translations> {
 	en(languageCode: 'en', build: Translations.build),
+	ar(languageCode: 'ar', build: _StringsAr.build),
 	bg(languageCode: 'bg', build: _StringsBg.build),
 	bn(languageCode: 'bn', build: _StringsBn.build),
 	ckb(languageCode: 'ckb', build: _StringsCkb.build),
@@ -904,6 +905,778 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	]);
 	String get decryptionError_pleaseTryAgain => 'Decryption error, please try again!';
 	String get reLogin => 'Log in again';
+	String get themeMode => 'Theme Mode';
+	String get copy => 'Copy';
+	String get brightnessMode => 'Brightness mode';
+	String get clicks => 'Click count';
+	String get rankings => 'Rankings';
+	String get downloadFailed => 'Download failed!';
+}
+
+// Path: <root>
+class _StringsAr implements Translations {
+	/// You can call this constructor and build your own translation instance of this locale.
+	/// Constructing via the enum [AppLocale.build] is preferred.
+	_StringsAr.build({Map<String, Node>? overrides, PluralResolver? cardinalResolver, PluralResolver? ordinalResolver})
+		: assert(overrides == null, 'Set "translation_overrides: true" in order to enable this feature.'),
+		  $meta = TranslationMetadata(
+		    locale: AppLocale.ar,
+		    overrides: overrides ?? {},
+		    cardinalResolver: cardinalResolver,
+		    ordinalResolver: ordinalResolver,
+		  ) {
+		$meta.setFlatMapFunction(_flatMapFunction);
+	}
+
+	/// Metadata for the translations of <ar>.
+	@override final TranslationMetadata<AppLocale, Translations> $meta;
+
+	/// Access flat map
+	@override dynamic operator[](String key) => $meta.getTranslation(key);
+
+	@override late final _StringsAr _root = this; // ignore: unused_field
+
+	// Translations
+	@override String get home => 'الرئيسية';
+	@override String get switchLanguage => 'تبديل اللغة';
+	@override String get languageSwitch => 'تبديل اللغة';
+	@override String get slogan => 'بناء اقتصاد لامركزي في دلتا';
+	@override String get countryRegionCode => 'رمز الدولة/المنطقة';
+	@override String get countryRegionSelection => 'اختيار الدولة والمنطقة';
+	@override String get nextStep => 'الخطوة التالية';
+	@override String get yourPhoneNumber => 'رقم هاتفك';
+	@override String get pleaseSelectCountryAndRegion => 'يرجى اختيار دولتك/منطقتك';
+	@override String get pleaseEnterPhoneNumber => 'يرجى إدخال رقم هاتف صالح!';
+	@override String get referrerDid => 'DID المُحيل';
+	@override String get pleaseEnterTheReferrersDid => 'يرجى إدخال معرف الهوية اللامركزية (DID) للمُحيل صالح';
+	@override String get thisDidIsInvalid => 'هذا الـ DID غير صالح';
+	@override String get nicknameFormatTips => 'لا يمكن أن يكون الاسم المستعار فارغًا، ويجب ألا يتجاوز طوله 16 حرفًا';
+	@override String get additionalIinformation => 'معلومات إضافية';
+	@override String get invitationSubject => 'دعوتك للمشاركة في بناء إجماع دلتا';
+	@override String invitationLetter({required Object did}) => 'مرحبًا، أنا أشارك في بناء إجماع دلتا!\nدلتا هي منصة عملة رقمية جديدة مفتوحة المصدر تعمل على ICP، تتيح إدارة واستخدام العملات الرقمية دون كلمات مرور أو مفاتيح خاصة أو عبارات استرداد. يرجى النقر على هذا الرابط https://delta.kim/auto/download لتثبيت التطبيق. أدعوك الآن للمشاركة في بناء الإجماع وصك العملات.\nDID المُحيل: ${did}';
+	@override String get dSMSverification => 'التحقق DSMS';
+	@override String get getAccessNumbers => 'الحصول على بعض أرقام الوصول';
+	@override String get getAccessNumberPromptMessage => 'انقر على زر "الحصول" أدناه لاختيار مجموعة من أرقام الوصول للتحقق عبر الرسائل القصيرة من قائمة الانتظار';
+	@override String get optionalAccessNumbers => 'أرقام الوصول الاختيارية';
+	@override String get accessNumber => 'رقم الوصول';
+	@override String get TELCO => 'المُشغّل';
+	@override String get score => 'الدرجة';
+	@override TextSpan checkAccessNumberTip({required num n, required InlineSpan Function(num) nBuilder, required InlineSpanBuilder span}) => RichPluralResolvers.bridge(
+		n: n,
+		resolver: _root.$meta.cardinalResolver ?? PluralResolvers.cardinal('ar'),
+		one: () => TextSpan(children: [
+			const TextSpan(text: 'يرجى اختيار '),
+			nBuilder(n),
+			const TextSpan(text: ' أرقام وصول ثم اضغط على زر "'),
+			span('text'),
+			const TextSpan(text: '" للمتابعة'),
+		]),
+		other: () => TextSpan(children: [
+			const TextSpan(text: 'يرجى اختيار '),
+			nBuilder(n),
+			const TextSpan(text: ' أرقام وصول ثم اضغط على زر "'),
+			span('text'),
+			const TextSpan(text: '" للمتابعة'),
+		]),
+	);
+	@override String get whatIsDeltaDesc => 'دلتا مشروع مفتوح المصدر لعملة رقمية عالمية لامركزية مبتكرة، ونظام بيئي لتطبيقات العملة.';
+	@override String get deltaGoalsDesc => 'الهدف هو تمكين الناس من استخدام دلتا لبناء عملة رقمية جديدة عامة وعادلة وآمنة وسريعة وصديقة للبيئة، وتوفير حالات استخدام فعّالة لهذه العملات والعملات المشفرة السابقة.';
+	@override String get details => 'تفاصيل';
+	@override String get get => 'الحصول';
+	@override String get select => 'اختيار';
+	@override String get send => 'إرسال';
+	@override String get complete => 'اكتمل';
+	@override String get selectedAccessNumberPrompt => 'بعد التحديد، سيعرض الرقم الكامل ويُنشئ سلسلة تحقق.';
+	@override String get location => 'الموقع';
+	@override String get verificationString => 'سلسلة التحقق';
+	@override TextSpan sendVerificationStringDesc({required InlineSpan num, required InlineSpan label, required InlineSpan accessNumber}) => TextSpan(children: [
+		const TextSpan(text: 'يرجى استخدام رقم هاتفك '),
+		num,
+		const TextSpan(text: ' لإرسال '),
+		label,
+		const TextSpan(text: ' إلى '),
+		accessNumber,
+		const TextSpan(text: ' لإكمال التحقق.'),
+	]);
+	@override String get ihaveSentTheSMS => 'لقد أرسلت الرسالة القصيرة';
+	@override TextSpan validWithin6minutes({required InlineSpan time}) => TextSpan(children: [
+		const TextSpan(text: 'سلسلة التحقق صالحة لمدة 6 دقائق، الوقت المتبقي: '),
+		time,
+		const TextSpan(text: '.'),
+	]);
+	@override String tooFast_waitXsecondsContinuing({required Object x}) => 'سريع جدًا، انتظر ${x} ثانية للمتابعة!';
+	@override String get waitingForVerificationSMS => 'في انتظار رسالة التحقق…';
+	@override String get partSuccsForVerificationSMS => 'أحد أجهزة الوصول قد اجتاز التحقق بالرسائل القصيرة!';
+	@override String get creatingAccessToken => 'جارٍ إنشاء رمز الوصول…';
+	@override String get intoDelta => 'ادخل دلتا';
+	@override String get deltaAccountIsLoggedIn => 'حساب دلتا الخاص بك مسجل الدخول';
+	@override String get iHavLoggedOut => 'لقد قمت بتسجيل الخروج';
+	@override String get startTwoFactorVerification => 'بدء التحقق ذو العاملين';
+	@override String get securityCircleVerification => 'التحقق من دائرة الأمان';
+	@override String get generateSecurityCode => 'إنشاء رمز أمان';
+	@override String get generateSecurityCodeHintText => 'سيُرسل رمز الأمان المُنشأ إلى عضو عشوائي مختار من دائرة الأمان الخاصة بك.';
+	@override String get notSetSecurityCircleEnterPlaceholderTip => 'لم تقم بإعداد دائرة أمان بعد، حسابك غير آمن. الرجاء إدخال أي 6 أرقام كعنصر نائب والمضي للخطوة التالية.';
+	@override String get securityCodeHasBeenGenerated_ContactFriendsTip => 'تم إنشاء رمز الأمان، يرجى الاتصال بالأصدقاء والعائلة المدرجين أدناه لطلب استخراج رمز الأمان لك لإتمام التحقق. صالح لمدة 30 دقيقة!';
+	@override String get itGetSecurityCodeTip => 'ملاحظة: يمكنك العثور على اسم حسابك في Delta App -> القائمة -> تقديم الأمان، انقر مزدوجًا للحصول على رمز الأمان.';
+	@override String get securityCircleMemberList => 'قائمة أعضاء دائرة الأمان:';
+	@override String get selectA_friendToProvideSecurityCodeTip => 'يرجى اختيار صديق أو فرد من العائلة من القائمة لتوليد وتزويدك برمز الأمان للتحقق من الهوية. الهدف هو حماية حسابك إذا فقدت رقم الهاتف أو سُرق.';
+	@override String formatIsXdigits({required Object num}) => 'التنسيق هو ${num} أرقام';
+	@override String get signInSuccessfully => 'تم تسجيل الدخول بنجاح!';
+	@override String get twoFAandLogin => 'تحقق ذو عاملين وتسجيل الدخول';
+	@override String get verificationSuccessful => 'تم التحقق بنجاح!';
+	@override String get validationFailed => 'فشل التحقق!';
+	@override String get dappInfo => 'معلومات DApp';
+	@override String get securityCircle => 'دائرة الأمان';
+	@override String get securityCode => 'رمز الأمان';
+	@override String get provideSecurity => 'تقديم الأمان';
+	@override String get addManully => 'إضافة يدويًا';
+	@override String get addFromContacts => 'إضافة من جهات الاتصال';
+	@override String get addSecurityCircle => 'إضافة دائرة الأمان';
+	@override String get inputType => 'نوع الإدخال';
+	@override String get mobileNumber => 'رقم الجوال';
+	@override String get did => 'معرف العنوان';
+	@override String get pleaseEnterValidDID => 'يرجى إدخال معرف هوية لامركزي صالح';
+	@override String get pleaseEnterValidWalletAddress => 'يرجى إدخال عنوان محفظة صالح';
+	@override String get appellation => 'اللقب';
+	@override String get appellationHint => 'كيف تناديه، مثلاً "حبيبي"';
+	@override String get addSecurityCircleTips => 'يرجى عدم إضافة أشخاص لا تثق بهم إلى دائرة الأمان.';
+	@override String get referralTeam => 'فريق الإحالة';
+	@override String get profile => 'معلومات الحساب';
+	@override String get menu => 'القائمة';
+	@override String get directly => 'مباشر';
+	@override String get indirectly => 'غير مباشر';
+	@override String get inviteContacts => 'دعوة جهات الاتصال';
+	@override TextSpan refereesAtFirstLevelDesc({required InlineSpan nickname, required InlineSpan num1, required InlineSpan num2}) => TextSpan(children: [
+		const TextSpan(text: 'داعيك هو '),
+		nickname,
+		const TextSpan(text: '، لقد قمت بالدعوة المباشرة لـ '),
+		num1,
+		const TextSpan(text: ' أشخاص، منهم '),
+		num2,
+		const TextSpan(text: ' متصلون حاليًا.'),
+	]);
+	@override TextSpan refereesAtSecondLevelDesc({required InlineSpan num1, required InlineSpan num2}) => TextSpan(children: [
+		const TextSpan(text: 'لقد قمت بالدعوة غير المباشرة لـ '),
+		num1,
+		const TextSpan(text: ' أشخاص، منهم '),
+		num2,
+		const TextSpan(text: ' متصلون حاليًا.'),
+	]);
+	@override TextSpan invitationToBoostMiningDesc({required InlineSpan rate1, required InlineSpan btn}) => TextSpan(children: [
+		const TextSpan(text: 'ادعُ أصدقاء للانضمام إلى دلتا لزيادة الإجماع الاجتماعي. كل إحالة مباشرة تزيد معدل التعدين بمقدار '),
+		rate1,
+		const TextSpan(text: ' من المعدل الأساسي. '),
+		btn,
+	]);
+	@override TextSpan invitationToBoostMiningDesc2({required InlineSpan rate2}) => TextSpan(children: [
+		const TextSpan(text: 'ادعُ أصدقاء للانضمام إلى دلتا لرفع الإجماع الاجتماعي، كل إحالة غير مباشرة تزيد معدل التعدين بمقدار '),
+		rate2,
+		const TextSpan(text: ' من المعدل الأساسي.'),
+	]);
+	@override String areYouSureToRemove_x({required Object name}) => 'هل أنت متأكد من حذف "${name}"؟';
+	@override String get safetyCircleRoleQ => 'ما دور دائرة الأمان؟';
+	@override String get safetyCircleRoleA => 'توفير تحقق ثانوي في الحالات الحساسة لحماية أمان حسابك.';
+	@override String get howSecurityCirclesWorkQ => 'كيف تعمل دوائر الأمان؟';
+	@override String get howSecurityCirclesWorkA => 'عند الحاجة إلى تحقق من دائرة الأمان، سيقوم عقد دلتا الذكي باختيار عضو عشوائي من قائمة أصدقائك في دائرة الأمان لمساعدتك بتقديم رمز أمان لإتمام التحقق. عند سؤالك لهذا العضو عن رمز الأمان، يمكنه التأكد من هويتك. كما سيُنبه البرنامج: "إذا لم يكن هو/هي صاحب الطلب فلا يقدم رمز الأمان" لحماية حسابك. لذلك يجب التأكد من أن أعضاء دائرة الأمان أشخاص تثق بهم.';
+	@override String get securityCircleBeUsedQ => 'متى سيتم استخدامه؟';
+	@override String get securityCircleBeUsedA1 => '1. عندما تفقد السيطرة على تطبيق دلتا، عادةً عند فقدان الهاتف أو سرقته.';
+	@override String get securityCircleBeUsedA2 => '2. عند بعض العمليات الحساسة التي يحتاج فيها العقد الذكي في دلتا التأكد من هويتك.';
+	@override String get provideSafetyTip1 => 'عندما يسألك صديقك عن رمز الأمان الخاص به، تأكد من أنه هو فعلاً قبل تقديمه.';
+	@override String get provideSafetyTip2 => 'أنت تقدم حماية أمنية للأصدقاء أعلاه، فهم قد وضعوك كأحد الأشخاص الأكثر ثقة في دائرة الأمان ليقدموا لك تأكيدًا عند حدوث عمليات حساسة في حسابهم.';
+	@override String get provideSafetyTip3 => 'انقر مزدوجًا على صورة الملف الشخصي لاستخراج رمز الأمان عند الحاجة.';
+	@override String get doesNotSecurityCodeNeedsRetrieved => 'لا يوجد رمز أمان يحتاج إلى الاستخراج الآن!';
+	@override String get existSecurityCodeTip => 'تأكد تمامًا أن من يطلب رمز الأمان هو صديقك/قريبك نفسه. لحماية أمنهم، ارفض تقديم الرمز إذا لم يكن الشخص هو المعني بالفعل.';
+	@override String get avatarSettings => 'إعدادات الصورة الرمزية';
+	@override String get NFTAvatarPropertyRightsText => 'إخلاء مسؤولية: استخدام NFT كصورة رمزية هو مسألة تفضيل شخصي فقط ولا يتعلق بحقوق الملكية الفكرية الخاصة بالـ NFT.';
+	@override String get projectWebsite => 'موقع المشروع: ';
+	@override String get whitepaper => 'الورقة البيضاء: ';
+	@override String get indexID => 'معرف الفهرس';
+	@override String indexesRangeFromXtoY({required Object start, required Object end}) => 'نطاق الفهارس من ${start} إلى ${end}';
+	@override String get inputToLoadNFTAvatarTip => 'أدخل معرف فهرس NFT المفضل لديك وسيقوم البرنامج بتحميله تلقائيًا كصورة رمزية.';
+	@override String get miningRate => 'معدل التعدين';
+	@override String get miningDetails => 'تفاصيل التعدين';
+	@override TextSpan totalMiningRateEachDay({required InlineSpan rate}) => TextSpan(children: [
+		const TextSpan(text: 'إجمالي معدل التعدين: '),
+		rate,
+		const TextSpan(text: ' δ/يوم'),
+	]);
+	@override String get EndOfMiningSession => 'نهاية جلسة التعدين:';
+	@override String get tapToMineDeltaCoin => 'انقر لاستخراج عملة دلتا ↑';
+	@override String get clickToStartMining => 'انقر لبدء التعدين!';
+	@override String get miningHasStoppedPromptDesc => 'توقف التعدين. كل 24 ساعة هي دورة تعدين واحدة، انقر على رمز البرق لبدء دورة جديدة. تعدين دلتا هو آلية توزيع ولن يستهلك موارد جهازك أو بيانات الشبكة.';
+	@override String get aboutBaseRate => 'ما هو المعدل الأساسي؟';
+	@override String get baseRateDescription => 'وفقًا للورقة البيضاء، قاعدة تناقص المعدل الأساسي لتعدين دلتا تقسم إلى مرحلتين.\nالمرحلة 1: عندما يكون عدد المشاركين (المسجلين) 3000 أو أقل، يكون المعدل 32δ/يوم كبداية؛ في كل مرة يزداد العدد 10 أضعاف، ينصف المعدل الأساسي.\nالمرحلة 2: عندما يصل عدد المشاركين إلى 30 مليون أو أكثر، في كل مرة يزداد العدد 3 أضعاف ينصف المعدل الأساسي، حتى انتهاء الإنتاج.';
+	@override String get baseRate => 'المعدل الأساسي';
+	@override String get directReferralRewards => 'مكافآت الإحالة المباشرة';
+	@override String get directReferralRewardDesc => 'لكل إحالة مباشرة واحدة، عندما تكون في حالة تعدين، سيزداد معدل تعدينك بمقدار ثُمن (1/3) من المعدل الأساسي.\n\nبالإضافة إلى ذلك، سيتم احتساب حالة تعدين محاليك في مكافآت الإحالة المباشرة لديك.';
+	@override String get indirectReferralRewards => 'مكافآت الإحالة غير المباشرة';
+	@override String get indirectReferralRewardDesc => 'عندما يكون أحد المحالين غير المباشرين في حالة تعدين، سيزداد معدل تعدينك بمقدار 1/10 من المعدل الأساسي.\n\nكل شخص تقوم بدعوته مباشرة والذي بدوره يدعو أشخاصًا يعدونهم كمحالين غير مباشر لك.';
+	@override String get mine => 'التعدين';
+	@override String get thisMiningInformation => 'معلومات هذا التعدين';
+	@override TextSpan participatedInMiningXtimes({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'عدد مرات المشاركة في التعدين: '),
+		x,
+	]);
+	@override TextSpan totalIncomeThisTimeXDeltaCoins({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'إجمالي الربح هذه المرة: '),
+		x,
+		const TextSpan(text: ' عملات دلتا'),
+	]);
+	@override TextSpan basicIncomeXcoins({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'الربح الأساسي: '),
+		x,
+		const TextSpan(text: ' عملات'),
+	]);
+	@override TextSpan directTeamContributionXcoins({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'مساهمة الفريق المباشر: '),
+		x,
+		const TextSpan(text: ' عملات'),
+	]);
+	@override TextSpan indirectTeamContributionXcoins({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'مساهمة الفريق غير المباشر: '),
+		x,
+		const TextSpan(text: ' عملات'),
+	]);
+	@override TextSpan timeIntervalFromLastMiningX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'الفاصل الزمني منذ آخر تعدين: '),
+		x,
+	]);
+	@override TextSpan effectiveMiningTimeXhours({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'الوقت الفعال للتعدين: '),
+		x,
+	]);
+	@override String xhours({required Object x}) => '${x} ساعة';
+	@override String get keep3_5peopleInTheSafetyCircleTip => 'لحماية الأصول، يجب أن تحتوي دائرة الأمان عادة على 3-5 أشخاص موثوقين.';
+	@override String get index => 'الفهرس';
+	@override String get amount => 'المبلغ';
+	@override String get balance => 'الرصيد';
+	@override String get timeStamp => 'الطابع الزمني';
+	@override String get summary => 'الملخص';
+	@override String get miningHasStopped => 'توقف التعدين.';
+	@override String get miningHasStoppedDesc => 'توقف تعدينك حاليًا، ابدأ الآن لكسب العوائد.';
+	@override String get startMining => 'بدء التعدين';
+	@override String get changeMobileNumber => 'تغيير رقم الجوال';
+	@override String get currentMobileNumber => 'رقم الجوال الحالي';
+	@override String get newMobileNumber => 'رقم الجوال الجديد';
+	@override String get securityCodeFormatIs6digits => 'تنسيق رمز الأمان يجب أن يكون 6 أرقام!';
+	@override String get startVrification => 'بدء التحقق';
+	@override String mobileNumberAlreadyExists_associated({required Object dId}) => 'رقم الجوال هذا موجود بالفعل، مرتبط بـ DID: ${dId}';
+	@override String get noDataYet => 'لا توجد بيانات حتى الآن';
+	@override String get previousMSISDN => 'MSISDN السابق';
+	@override String get changeLog => 'سجل التغييرات';
+	@override String get referralLinkToShare => 'رابط الإحالة للمشاركة';
+	@override String get referrer => 'المُحيل';
+	@override String get isoCountryCode => 'رمز الدولة ISO';
+	@override String get avatarLogo => 'شعار الصورة الرمزية';
+	@override String get creationTime => 'وقت الإنشاء';
+	@override String get lastUpdate => 'آخر تحديث';
+	@override String get numberOfSecurityCircleMembers => 'عدد أعضاء دائرة الأمان';
+	@override String get theLatestMining => 'آخر تعدين';
+	@override String get effectiveMiningDays => 'أيام التعدين الفعالة';
+	@override String get modifyNickname => 'تعديل الاسم المستعار';
+	@override String get didNotChange => 'لم يتغير!';
+	@override String get kycVerification => 'تحقق KYC';
+	@override String get faceID => 'التعرف على الوجه';
+	@override String get touchID => 'البصمة';
+	@override String get biometricsAuthorizationTest => 'اختبار ترخيص القياسات الحيوية';
+	@override String get currentState => 'الحالة الحالية';
+	@override String get biometricsAuthenticationLocalizedReason => 'استخدم ميزة إلغاء قفل الجهاز للتحقق من الهوية.';
+	@override String get graph => 'الرسم البياني';
+	@override String get referralRelationshipGraph => 'مخطط علاقات الإحالة';
+	@override String get nativeContacts => 'جهات الاتصال المحلية';
+	@override String get registrationAndMiningTrends => 'اتجاهات التسجيل والتعدين';
+	@override String get inMining => 'قيد التعدين';
+	@override String get registrationVolume => 'حجم التسجيل';
+	@override String get unmined => 'غير مُستخرج';
+	@override String get mined => 'مستخرج';
+	@override String get communityMining => 'تعدين المجتمع';
+	@override String get consensusPromotionFund => 'صندوق تعزيز الإجماع';
+	@override String get ecologicalIncentiveFund => 'صندوق الحوافز البيئية';
+	@override String get icpFuelCrowdfunding => 'تمويل وقود ICP الجماعي';
+	@override String get totalAllocation => 'إجمالي التوزيع';
+	@override String get miningRatio => 'نسبة التعدين';
+	@override Map<String, String> get billion => {
+		'30': '30 مليار',
+		'60': '60 مليار',
+		'180': '180 مليار',
+		'300': '300 مليار',
+	};
+	@override String get watchAdsToSupportDevelopers => 'شاهد إعلانات لدعم المطورين';
+	@override String get loadingAdcomponents => 'جارٍ تحميل مكونات الإعلان…';
+	@override String get timeIsNotUp => 'لم يحين الوقت!';
+	@override String get loadingFailed_maybeTheNetworkIsBlocked => 'فشل التحميل، قد يكون الشبك محجوبًا!';
+	@override String get pointsDetails => 'تفاصيل النقاط';
+	@override String get pendingUSCTrecordsDesc => 'سجلات USCT المعلقة ستتم مطابقتها مع شبكة الإعلانات خلال 15-30 يومًا؛ السجلات الصالحة ستُنقل إلى قائمة سجلات USCT وتُضاف المبالغ المقابلة إلى رصيد الحساب.';
+	@override String get validity => 'الصلاحية';
+	@override String get advertiser => 'المعلن';
+	@override String get earned => 'المكتسب';
+	@override String get withdraw => 'سحب';
+	@override String get usctHistory => 'سجل USCT';
+	@override String get self => 'نفسي';
+	@override String get settlement => 'التسوية';
+	@override String get settlementReport => 'تقرير التسوية';
+	@override String get periodsSettlementSuccessful => 'تمت تسوية هذه الفترة بنجاح!';
+	@override String get timeRange => 'نطاق الوقت';
+	@override String get convertRate => 'معدل التحويل';
+	@override String get peoples => 'أشخاص';
+	@override String get alreadySettled => 'تمت التسوية';
+	@override String get reportID => 'معرّف التقرير';
+	@override String get USCTmining => 'تعدين USCT';
+	@override String get aboutUSCTmining => 'حول تعدين USCT؟';
+	@override String get aboutUSCTminingItme1 => '1. USDT هو عملة مستقرة دولية مشهورة مرتبطة بالدولار ويمكن استبدالها بسهولة بعملات سيادية في البورصات العالمية.';
+	@override String get aboutUSCTminingItme2 => '2. USCT هو قيمة قياسية مؤقتة لعوائد تعدين USCT وهو اختصار USD credit، وفي النهاية سيتم تحويله إلى USDT حسب تسويات ونِسب منصات الإعلانات الفعلية.';
+	@override String get aboutUSCTminingItme3 => '3. تعدين USCT هو ميزة تحقيق الإيرادات من الإعلانات لمجتمع دلتا. يستفيد المعلنون والمطورون والعمال من قاعدة مستخدمي دلتا الكبيرة. الهدف هو توفير دخل فعّال للعمال والمطورين في المراحل المبكرة من النظام البيئي حتى يتمكن المطورون من الاستمرار في تقديم الخدمات وتحقيق خطة الورقة البيضاء، كما يمنح المعلنين قناة تسويق فعالة.';
+	@override String get aboutUSCTminingItme4 => '4. قاعدة التوزيع: 40% من العائد الإجمالي كمكافأة خدمة تقنية للمطورين و60% كمكافآت لعمال المجتمع. يتم توزيع مكافآت العمال بطريقة متعددة المستويات مشابهة لـ DTC بنسبة 6:3:1؛ 60% للعمال الذين يشاهدون الإعلان، 30% للمُحيل المباشر، 10% للمُحيل من المستوى الثاني. كذلك تحصل على مكافآت إحالة عندما يقوم من دعوتهم بتعدين USCT.';
+	@override String get aboutUSCTminingItme5 => '5. دورة التسوية هي 7 أيام؛ تتم مطابقة العوائد مع منصات الإعلانات كل 7 أيام. الحد الأدنى للسحب هو 10 USDT.';
+	@override String linesXtoY({required Object x, required Object y}) => 'السطر من ${x} إلى ${y}';
+	@override String get wallet => 'المحفظة';
+	@override String get multiChainWallet => 'محفظة متعددة السلاسل';
+	@override String get deposit => 'إيداع';
+	@override String get transfer => 'تحويل';
+	@override String xcoinInWallet({required Object coinCode}) => '${coinCode} في عنوان المحفظة';
+	@override String get transactions => 'سجل المعاملات';
+	@override String get network => 'الشبكة';
+	@override String get walletAddress => 'عنوان المحفظة';
+	@override String get currentAddress => 'العنوان الحالي';
+	@override String get depositAddress => 'عنوان الإيداع';
+	@override String get receivingMoneyAddress => 'عنوان الاستلام';
+	@override String get applyTempDepositAddress => 'طلب عنوان إيداع مؤقت';
+	@override String get tempDepositAddressTip => '1. هذا عنوان إيداع مشترك. لا تقم بالإيداع بعد انتهاء الإيجار أو إلغاء الارتباط؛ إذا حدث ذلك قد تفقد المبلغ.';
+	@override String get tempDepositAddressTip2 => '2. قبل الإيداع تأكد تمامًا من تطابق [اسم السلسلة] و[اسم العملة]؛ وإذا كانت توكنات عقدية فتأكد أيضًا من تطابق [معيار العقد] و[عنوان العقد].';
+	@override String get tempDepositAddressTip3 => '3. لا تحاول إيداع أصول لا تتطابق مع أي من المعايير أعلاه، وإلا ستفقد المبلغ.';
+	@override String get tempDepositAddressTip4 => '4. إذا كنت بحاجة لإيداع نوع آخر من الأصول، قم بالتبديل إلى صفحة العملة المناسبة واطلب عنوانًا جديدًا.';
+	@override String get applyExtensionOfValidity => 'طلب تمديد الصلاحية';
+	@override TextSpan depositAddressExpireTip({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
+		const TextSpan(text: 'سينتهي هذا العنوان بعد '),
+		diff,
+		const TextSpan(text: '، ويمكن '),
+		tap('يدويًا تمديد'),
+		const TextSpan(text: ' الصلاحية خلال 6 ساعات قبل انتهاء الصلاحية.'),
+	]);
+	@override String get canOnlyRenewWithin6hoursInAdvance => 'يمكن التجديد فقط خلال 6 ساعات قبل الموعد';
+	@override String get theReceivingAddressValidForLongtime => 'هذا العنوان صالح لفترة طويلة.';
+	@override String get theReceivingAddressValidForLongtimeAndAutomaticallyCredited => 'هذا العنوان صالح لفترة طويلة ويُقيد تلقائيًا عند الوصول.';
+	@override String get confirmDeposited => 'تأكيد الإيداع';
+	@override String get unbindThisDepositAddress => 'إلغاء ربط عنوان الإيداع هذا';
+	@override String get confirmDepositedTip => 'إذا قمت بتحويل الأموال، يرجى النقر على الزر أعلاه بعد 10 دقائق لتحفيز تسجيل القيود في المحفظة.';
+	@override String get unbindDepositAddressTip => 'لتقليل تكلفة تشغيل العقود الذكية، إذا لم تعد تخطط للإيداع ضمن فترة الصلاحية، يرجى إلغاء ربط عنوان الإيداع.';
+	@override String get transferToAddress => 'التحويل إلى العنوان';
+	@override String get longPressToPaste => 'اضغط مطولاً للصق';
+	@override String get all => 'الكل';
+	@override String balanceX({required Object x}) => 'الرصيد ${x}';
+	@override String get transferOut => 'تحويل للخارج';
+	@override String depositXcoins({required Object x}) => 'وُقِعَ ${x}';
+	@override String get sender => 'المرسل';
+	@override String get recipient => 'المستلم';
+	@override String get memo => 'مذكرة';
+	@override String get kind => 'الطريقة';
+	@override String get transferAmountExceedsAvailableBalance => 'مبلغ التحويل يتجاوز الرصيد المتاح';
+	@override String get pleaseEnterValidAmount => 'يرجى إدخال مبلغ صالح';
+	@override String get networkFee => 'رسوم الشبكة';
+	@override String get fee => 'الرسوم';
+	@override String validLengthXcharacters({required Object x}) => 'طول العنوان الصحيح ${x} حرفًا';
+	@override String get historys => 'السجلات';
+	@override String get dtcCreditdetail => 'تفاصيل رصيد Delta';
+	@override String get usdCreditdetail => 'تفاصيل رصيد USD';
+	@override String get dappSquare => 'ساحة dApp';
+	@override String get amountRaised => 'المبلغ الذي تم جمعه';
+	@override String get disbursedAmount => 'المبلغ المصروف';
+	@override String get participationTimes => 'مرات المشاركة';
+	@override String get completionRate => 'معدل الإنجاز';
+	@override String get exchangeRate => 'سعر الصرف';
+	@override String get icpCrowdfunding => 'تمويل جماعي ICP';
+	@override String get crowdfunding => 'التمويل الجماعي';
+	@override String get trendsCurve => 'منحنى الاتجاهات';
+	@override String get fullScreenView => 'عرض ملء الشاشة';
+	@override String get walletBalance => 'رصيد المحفظة:';
+	@override String get manageWallet => 'إدارة المحفظة';
+	@override String get fundraiseAmount => 'مبلغ جمع التمويل';
+	@override String get exchangeRewardAmount => 'مبلغ مكافأة الاستبدال';
+	@override String get fundraise => 'جمع التمويل';
+	@override String rangeIntegersX({required Object x}) => 'النطاق: أعداد صحيحة ${x}';
+	@override String successfullParticipatingFundraisingXtip({required Object amount}) => 'تمت المشاركة بنجاح في التمويل وحصلت على مكافأة ${amount} DTCT';
+	@override String get amountSummary => 'ملخص المبلغ';
+	@override String get changePreferred => 'تغيير المفضل';
+	@override String get changePreferredAddress => 'تغيير العنوان المفضل';
+	@override String get preferredAddressTip => 'عند استخدام رقم جوال مسجل أو DID للقبض، سيتم تحويل الأموال تلقائيًا إلى العنوان المفضل.';
+	@override String get newAddress => 'عنوان جديد';
+	@override String get newAddressTip => 'لتجنب إساءة الاستخدام، عند وجود أكثر من عنوان محفظة واحد، سيتم فرض رسوم معاملة عند إنشاء كل عنوان جديد.';
+	@override String get createNew => 'إنشاء جديد';
+	@override String get chainNetworkName => 'اسم شبكة السلسلة';
+	@override String get from => 'من';
+	@override String get to => 'إلى';
+	@override String get noAvailableDepositAmountDetected => 'لم يتم اكتشاف مبلغ إيداع متاح!';
+	@override String get crossChainReceiveMoneyMonitoring => 'يتم الاستماع لعمليات الاستلام عبر السلاسل…';
+	@override TextSpan receivedV({required InlineSpan v}) => TextSpan(children: [
+		const TextSpan(text: 'تم الاستلام ('),
+		v,
+		const TextSpan(text: ')'),
+	]);
+	@override TextSpan confirming({required InlineSpan v}) => TextSpan(children: [
+		const TextSpan(text: 'جارٍ التأكيد ('),
+		v,
+		const TextSpan(text: ')'),
+	]);
+	@override String get thingsToNote_forNewbies => 'ملاحظات (للمبتدئين)';
+	@override String get whyUseSharedAddresses => 'لماذا استخدام عناوين مشتركة؟';
+	@override String get useSharedrAdvantage => 'في الودائع عبر السلاسل، مزايا اعتماد العناوين المشتركة هي:';
+	@override String get useSharedrAdvantage1 => '1. تقليل هدر رسوم التحويل وتقليل تكلفة المستخدم. استخدام عنوان مخصص قد يشتت الأموال ويتطلب جمعًا لاحقًا لإدارة السحوبات.';
+	@override String get useSharedrAdvantage2 => '2. في الحل المشترك، يحتفظ البرنامج بمجموعة عناوين أصغر لمطابقة الأموال الواردة ومراقبة الاستلام خفيفة الوزن، مما يقلل من استهلاك الموارد. على العكس إذا استُخدمت عناوين مخصصة سيزيد الحمل.';
+	@override String get tokenType => 'نوع التوكن';
+	@override String get contract => 'العقد';
+	@override String get contractStandard => 'معيار العقد';
+	@override String get contractAddress => 'عنوان العقد';
+	@override String get native => 'أصلي';
+	@override String get listAllWorkingTempReceivingAddresses => 'قائمة بجميع عناوين الإيداع العابرة التي تعمل';
+	@override String get setNote => 'تعيين ملاحظة';
+	@override String lengthCannotExceedXbytes({required Object x}) => 'لا يمكن أن تتجاوز الطول ${x} بايت';
+	@override String get transferFee => 'رسوم التحويل';
+	@override String get crossChainFee => 'رسم عبر السلاسل';
+	@override String get crossChainTransferOutError => 'خطأ في التحويل عبر السلاسل';
+	@override String get chainName => 'اسم السلسلة';
+	@override String get message => 'الرسالة';
+	@override String get dontShowAgain => 'لا تعرض مرة أخرى';
+	@override String get queuing => 'في الانتظار';
+	@override String get optional => 'اختياري';
+	@override String get publiclyVisible => 'مرئي للعامة';
+	@override String get rates => 'الرسوم';
+	@override String get minimum => 'الحد الأدنى';
+	@override String get maximum => 'الحد الأقصى';
+	@override String get minimumBlockConfirmations => 'الحد الأدنى لتأكيدات الكتل';
+	@override String get dsmsVerifyTerminal => 'طرف تحقق DSMS';
+	@override String get overall => 'الإجمالي';
+	@override String get my => 'خاصتي';
+	@override String get checkValidatorQualifications => 'التحقق من مؤهلات المدقق';
+	@override String get getVerifierPermissions => 'الحصول على أذونات المدقق';
+	@override String get qualification => 'المؤهلات';
+	@override String get upperLimit => 'الحد الأعلى';
+	@override String get maximumNumberOfTerminalsAllowedToAccess => 'الحد الأقصى لعدد الأطراف المسموح لها بالوصول';
+	@override String get numberOfExistingAccessTerminals => 'عدد أطراف الوصول الموجودة';
+	@override String get applyingForDSMSVerifierPermissionsTips => 'قبل التقديم لأذونات المدقق، تحتاج إلى هاتف أندرويد غير مستخدم ورقم وصول مخصص وتنزيل تطبيق طرف وصول DSMS.';
+	@override String get downloadLink => 'رابط التنزيل';
+	@override String get alreadyReadyFollowingTheAboveTips => 'جاهز وفقًا للإرشادات أعلاه';
+	@override String get globalUniversal => 'عالمي';
+	@override TextSpan insufficientLocalVerifierTips({required InlineSpan gu}) => TextSpan(children: [
+		const TextSpan(text: 'لا يوجد عدد كافٍ من المدققين المحليين لخدمة DSMS في منطقتك، يرجى اختيار "'),
+		gu,
+		const TextSpan(text: '" كخدمة وصول.'),
+	]);
+	@override String get asDedicatedNumberForAccess => 'كرقم مخصص للوصول';
+	@override String pleaseCheckTip({required Object tip}) => 'يرجى وضع علامة على "${tip}"';
+	@override String get inputLengthTooShort => 'طول الإدخال قصير جدًا';
+	@override String get shortName => 'الاسم المختصر';
+	@override String pleaseEnterXname({required Object name}) => 'يرجى إدخال ${name}';
+	@override String get applicationIsBeingSubmitted_pleaseWait => 'جاري تقديم الطلب، يرجى الانتظار...';
+	@override String get applyForDSMSVerifierPermission => 'التقدم لأذونات مدقق DSMS';
+	@override String get confirmInformation => 'تأكيد المعلومات';
+	@override String get lastHeartbeat => 'آخر نبضة حياة';
+	@override String get expirationTime => 'وقت الانتهاء';
+	@override String get country => 'البلد';
+	@override String get accessTerminals => 'أطراف الوصول';
+	@override String get totalNumberOfDSMSaccessNumberTerminals => 'إجمالي عدد أطراف أرقام وصول DSMS';
+	@override String get textContent => 'محتوى النص';
+	@override String get scanQRcodeToLogin => 'مسح رمز QR لتسجيل الدخول';
+	@override String get confirmLogin => 'تأكيد تسجيل الدخول';
+	@override String get authorizeDappAppToLogin => 'تفويض هذا التطبيق الفرعي لتسجيل الدخول';
+	@override String get authorizationSuccessful => 'التفويض ناجح!';
+	@override String get launchSMSprogram => 'تشغيل برنامج الرسائل القصيرة';
+	@override String get notApplied => 'لم يتم التقديم';
+	@override String get validityPeriod => 'فترة الصلاحية';
+	@override String get renewal => 'تجديد';
+	@override String get scanCodeToAuthorizeTerminalLogin => 'مسح الرمز لتفويض تسجيل دخول الطرف';
+	@override String get rewards => 'المكافآت';
+	@override String get roles => 'الأدوار';
+	@override String get developerCenter => 'مركز المطورين';
+	@override String get appName => 'اسم التطبيق';
+	@override String get pleaseSelect => 'الرجاء الاختيار';
+	@override String get category => 'الفئة';
+	@override String get keywords => 'الكلمات المفتاحية';
+	@override String get pleaseEnterAkeyword => 'يرجى إدخال كلمة مفتاحية';
+	@override String get createApplication => 'إنشاء تطبيق';
+	@override String get appType => 'نوع التطبيق';
+	@override String get numberOfCategoriesMustBetween1and3 => 'يجب أن تكون عدد الفئات بين 1 و 3';
+	@override String get appLogoSpecifications => 'مواصفات الصورة: png، الحجم أقل من 100KB، الدقة: 256*256 بكسل';
+	@override String get localAlbum => 'ألبوم محلي';
+	@override String get networkPath => 'مسار الشبكة';
+	@override String get imageURLkAddress => 'عنوان رابط الصورة';
+	@override String get urlAddressFormatIsIncorrect => 'تنسيق عنوان URL غير صحيح';
+	@override String get imageFormatOnlySupportsPng => 'الصورة تدعم فقط تنسيق "png".';
+	@override String lengthMustBeBetweenA_BCharacters({required Object a, required Object b}) => 'يجب أن يكون الطول بين ${a}-${b} حرفًا';
+	@override String get introduction => 'مقدمة';
+	@override String imageSizeCannotBeLargerThanA_currentlyB({required Object a, required Object b}) => 'حجم الصورة لا يمكن أن يتجاوز ${a}، الحالي ${b}';
+	@override String imageResolutionMustBeP1pixels_currentlyP2({required Object p1, required Object p2}) => 'دقة الصورة يجب أن تكون ${p1} بكسل، الحالي ${p2}';
+	@override String get becomeDeveloper => 'أصبح مطورًا';
+	@override String get developerInformation => 'معلومات المطور';
+	@override String get teamName => 'اسم الفريق';
+	@override String get website => 'الموقع';
+	@override String get other => 'أخرى';
+	@override String get githubVerification => 'التحقق عبر GitHub';
+	@override String get exampleUrl => 'رابط نموذجي';
+	@override String githubVerificationTip({required Object did}) => 'يرجى إنشاء ملف \'delta.did\' في مستودع GitHub الخاص بك بمحتوى \'${did}\'، ثم لصق رابط raw.githubusercontent.com الخاص بهذا الملف في هذا الحقل للتحقق من الهوية.';
+	@override String get createApp => 'إنشاء تطبيق';
+	@override String get appManagement => 'إدارة التطبيقات';
+	@override String get statusLogs => 'سجلات الحالة';
+	@override String get bad => 'سيء';
+	@override String get normal => 'عادي';
+	@override String get good => 'جيد';
+	@override String get onceCreatedItCannotBeChanged => 'بمجرد الإنشاء لا يمكن تغييره!';
+	@override String get manageApplicationEntity => 'إدارة كيان التطبيق';
+	@override String get currentVersion => 'الإصدار الحالي';
+	@override String get submitVersion => 'تقديم الإصدار';
+	@override String get packageOnlySupportZipCompressedFile => 'الحزمة تدعم فقط ملفات مضغوطة zip';
+	@override String theXfileWasNotFoundInTheZipPackage({required Object name}) => 'لم يتم العثور على الملف \'${name}\' في حزمة zip';
+	@override String get fileList => 'قائمة الملفات:';
+	@override String get programPackage => 'حزمة البرنامج:';
+	@override String get automaticallyExtractFromVersionFile => 'استخراج تلقائيًا من ملف \'.version\'';
+	@override String get dappVersionFormatTip => 'صيغة رقم الإصدار يجب أن تكون عشرية مع دقة منزلتين، ولا تتجاوز 99.99';
+	@override String versionNumberMustBeGreaterThanCurrentVersionX({required Object v}) => 'يجب أن يكون رقم الإصدار أكبر من الإصدار الحالي \'${v}\'';
+	@override String get versionNotes => 'ملاحظات الإصدار:';
+	@override String get updateRelease => 'تحديث الإصدار';
+	@override String get loadAndRun => 'تحميل وتشغيل';
+	@override String get notYetSubmittedProgramPackage => 'لم يتم تقديم حزمة البرنامج بعد!';
+	@override String get authorizeMinidAppLogin => 'تفويض تسجيل دخول mini-dApp';
+	@override String get confirmAuthorizationPleaseEnterYes => 'لتأكيد التفويض، الرجاء إدخال "yes"';
+	@override String get authorizeNow => 'فوض الآن';
+	@override String get operation => 'العملية: ';
+	@override String get statusChange => 'تغيير الحالة';
+	@override String get changeTo => 'التغيير إلى:';
+	@override String get notes => 'ملاحظات: ';
+	@override String get changesNotEffective => 'التغييرات غير فعالة!';
+	@override String get released => 'نُشر';
+	@override String get inPublicBeta => 'في النسخة التجريبية العامة';
+	@override String get developers => 'المطورون: ';
+	@override String get reviewList => 'قائمة التعليقات: ';
+	@override String get postReview => 'نشر تعليق';
+	@override String get scoreNow => 'قيّم الآن';
+	@override String get description => 'الوصف: ';
+	@override String get noData => '(^-^) \n لا توجد بيانات';
+	@override String versionHasBeenUpdatedFromAtoB({required Object a, required Object b}) => 'تم تحديث الإصدار من ${a} إلى ${b}';
+	@override String get loadNewVersion => 'تحميل إصدار جديد';
+	@override String get name => 'الاسم: ';
+	@override String get canisterId => 'معرّف الحاوية: ';
+	@override String get updateTime => 'وقت التحديث';
+	@override String get contractCanistersState => 'حالة حاويات العقد';
+	@override String get userDistribution => 'توزيع المستخدمين';
+	@override String get settings => 'الإعدادات';
+	@override String get security => 'الأمان';
+	@override String get invite => 'دعوة';
+	@override String get more => 'المزيد…';
+	@override String get receiveAddress => 'عنوان الاستلام:';
+	@override String get hangingAmount => 'المبلغ المعلق';
+	@override String get points => 'النقاط:';
+	@override String get pendingPointsTips => 'النقاط تشير إلى الحصص التي لم تُؤكد بعد مع المعلنين. \nنسب التحويل تختلف بين القنوات والقاعدة النهائية هي تسوية الشبكة الإعلانية الفعلية.';
+	@override String get received => 'تم الاستلام';
+	@override String get processing => 'قيد المعالجة';
+	@override String get replied => 'تم الرد';
+	@override String get rejected => 'مرفوض';
+	@override String get unknown => 'غير معروف';
+	@override String get insufficientBalance => 'الرصيد غير كافٍ!';
+	@override String InsufficientXbalanceToPayCrossChainNetworkFee({required Object x}) => 'الرصيد ${x} غير كافٍ لدفع رسوم الشبكة عبر السلاسل';
+	@override String get aTransactionThatHasNotBeenCompleted_CannotBeTransferredAtMoment => 'هناك معاملة لم تكتمل، لا يمكن التحويل في الوقت الحالي';
+	@override String get thisfunctionNotSupportExternalCalls => 'هذه الدالة لا تدعم الاستدعاءات الخارجية';
+	@override String get noMatchingAddressThatCanBeUsedToPayCrossChainFees_switchOtherChainToTry => 'لم يتم العثور على عنوان مناسب لدفع رسوم عبر السلاسل، يرجى تبديل الشبكة لمحاولة.';
+	@override String currentMaximumMatchedSingleTransferAmountIsX({required Object x}) => 'أقصى مبلغ تحويل مفرد مطابق حاليًا هو ${x}';
+	@override String get memoMustNotBeMoreThan64bytes => 'يجب ألا تتجاوز المذكرة 64 بايت';
+	@override String insufficientBalance_theAmountIsX({required Object x}) => 'الرصيد غير كافٍ، المبلغ هو: ${x}';
+	@override String get boundRreceivingAddressesExceed3Tip => 'عدد عناوين الاستلام المرتبطة لا يمكن أن يتجاوز 3.\nلإضافة عنوان جديد، يرجى إلغاء ربط أحد العناوين الأخرى أولاً';
+	@override String parametersA_exception({required Object x}) => 'الوسيط: ${x}، استثناء';
+	@override String get transferAmountMustBeLargerThan0 => 'يجب أن يكون مبلغ التحويل أكبر من 0';
+	@override String get authorizationHasExpired => 'انتهت صلاحية التفويض';
+	@override String get theAppHasNotBeenAuthorizedByOwner => 'التطبيق لم يحصل بعد على تفويض من المالك';
+	@override String get authenticationTokenIsInvalid => 'رمز المصادقة غير صالح';
+	@override String get verifyInfoIsInvalidOrExpired => 'معلومات التحقق غير صالحة أو منتهية الصلاحية';
+	@override String get verifyThatNumberOfAccessTerminalsHasExceededLimitOf1in10000 => 'تم تجاوز حد عدد أطراف الوصول وهو واحد لكل 10000';
+	@override String get timeToParticipateInMiningMustBeMoreThan3Days => 'مدة المشاركة في التعدين يجب أن تكون أكثر من 3 أيام';
+	@override String get numberOfSafetyCircleCannotBeLessThan3 => 'لا يمكن أن يقل عدد أعضاء دائرة الأمان عن 3';
+	@override String get avatarIsNotSet => 'لم يتم إعداد الصورة الرمزية';
+	@override String get numberOfDirectReferralsCannotBeLessThan3 => 'لا يمكن أن يقل عدد الإحالات المباشرة عن 3';
+	@override String get insufficientTimeLimit_changeMSISDNInterval3months => 'الحد الزمني غير كافٍ، تغيير MSISDN يتطلب فاصلًا لا يقل عن 3 أشهر.';
+	@override String get mobileNumberAlreadyExistsAndCannotBeRepeated => 'رقم الجوال موجود بالفعل ولا يمكن تكراره';
+	@override String get securityCodeIsIncorrect => 'رمز الأمان غير صحيح';
+	@override String get securityCodeMayHaveExpired => 'قد يكون رمز الأمان منتهي الصلاحية';
+	@override String get sessionIdIsInvalidOrExpired => 'معرف الجلسة غير صالح أو منتهي الصلاحية';
+	@override String get sessionHasBeenAuthorized => 'تم تفويض هذه الجلسة!';
+	@override String canOnlyBeRenewedWithinXdaysBeforeExpiration({required Object x}) => 'يمكن التجديد فقط خلال ${x} يومًا قبل انتهاء الصلاحية';
+	@override String get notYetGrantedDeveloperPermissions => 'لم تُمنح أذونات المطور بعد';
+	@override String fieldXcannotBeEmpty({required Object x}) => 'الحقل ${x} لا يمكن أن يكون فارغًا';
+	@override String get emailFormatError => 'تنسيق البريد الإلكتروني غير صحيح';
+	@override String theXformatIsIncorrect({required Object x}) => 'تنسيق \'${x}\' غير صحيح';
+	@override String lengthOfFieldXmustBeBetweenYandXcharacters({required Object x, required Object y, required Object z}) => 'يجب أن يكون طول الحقل "${x}" بين ${y} و ${z} حرفًا.';
+	@override String theXselectionMustBeBetweenYandX({required Object x, required Object y, required Object z}) => 'يجب أن تكون اختيارات \'${x}\' بين ${y} و ${z}';
+	@override String get unchanged_sameAsOldContent => 'لم يتغير، نفس المحتوى القديم!';
+	@override String XYalreadyexists({required Object x, required Object y}) => '${x}: \'${y}\' موجود بالفعل!';
+	@override String get mobileNumberHasNotJoinedDelta => 'هذا الرقم لم ينضم بعد إلى دلتا!';
+	@override String get referrerIdCannotBeEmpty => 'معرّف المُحيل لا يمكن أن يكون فارغًا!';
+	@override String get referrerIdDoesNotExist => 'معرّف المُحيل غير موجود!';
+	@override String get didIsIncorrectOrInvalid => 'الـ DID غير صحيح أو غير صالح!';
+	@override String get accessTokenIsIncorrectOrInvalid => 'رمز الوصول غير صحيح أو غير صالح!';
+	@override String get minimumWithdrawalAmountIs1USD => 'الحد الأدنى للسحب هو 1 دولار';
+	@override String get miningTimeIsNotYet => 'لم يحين وقت التعدين بعد';
+	@override String get alreadyExists_pleaseDoNotRepeatedly => 'موجود بالفعل، يرجى عدم الإضافة المتكررة!';
+	@override String get registrationNumberCannotBeUsedAsAccessNumber => 'لا يمكن استخدام رقم المسجل كرقم وصول للتحقق';
+	@override String get canotAddYourSelf => 'لا يمكنك إضافة نفسك';
+	@override String get logOut => 'تسجيل الخروج';
+	@override String get confirmLogout => 'تأكيد تسجيل الخروج';
+	@override String get logOutTipsText => 'تذكير: وفقًا لما ورد في الورقة البيضاء، سيُستهلك جزء من عملات DTC كمكافأة للمدققين في كل عملية تسجيل دخول؛ لا تحاول تسجيل الدخول أو الخروج دون ضرورة. النقر على الزر أدناه سيؤدي إلى تسجيل الخروج فورًا.';
+	@override String get tip => 'تلميح';
+	@override String get cancel => 'إلغاء';
+	@override String get close => 'إغلاق';
+	@override String get selected => 'محدد';
+	@override String get edit => 'تعديل';
+	@override String get submit => 'إرسال';
+	@override String get goBack => 'عودة';
+	@override String get copiedToClipboard => 'تم النسخ إلى الحافظة.';
+	@override String get nickname => 'الاسم المستعار';
+	@override String get confirm => 'تأكيد';
+	@override String get cannotBeEmpty => 'لا يمكن أن يكون فارغًا';
+	@override String get deleteSuccessful => 'تم الحذف بنجاح!';
+	@override String get successfullyModified => 'تم التعديل بنجاح!';
+	@override String get executionSuccessful => 'تم التنفيذ بنجاح!';
+	@override String get parameterException => 'استثناء في المعلمات!';
+	@override String get preview => 'معاينة';
+	@override String get useSystemDefault => 'استخدام إعداد النظام الافتراضي';
+	@override String get change => 'تغيير';
+	@override String get replace => 'استبدال';
+	@override String get view => 'عرض';
+	@override String get manage => 'إدارة';
+	@override String get modify => 'تعديل';
+	@override String get replacedSuccessfully => 'تم الاستبدال بنجاح!';
+	@override String get authentication => 'المصادقة';
+	@override String get reacquire => 'إعادة الحصول';
+	@override String get tryAgain => 'حاول مرة أخرى';
+	@override String get querying => 'جارٍ الاستعلام …';
+	@override String get writingToOnChain_pleaseWait => 'جارٍ الكتابة على السلسلة، يرجى الانتظار …';
+	@override String get versionCheck => 'التحقق من الإصدار';
+	@override String get alreadyLatestVersion => 'أنت على أحدث إصدار!';
+	@override String get foundNewVersion => 'تم العثور على إصدار جديد:';
+	@override String get upgradeLink => 'رابط الترقية: ';
+	@override String get deviceDescription => 'وصف الجهاز: ';
+	@override String get notification30SecondsBeforeMiningStops => 'تنبيه قبل 30 ثانية من توقف التعدين!';
+	@override String get goMining => 'اذهب للتعدين';
+	@override String get deltaMiningReminder => 'تذكير تعدين دلتا';
+	@override String get clickToMine_miningIsAboutToStop => 'انقر هنا للتعدين، التعدين على وشك التوقف!';
+	@override String get incorrect_input => 'إدخال غير صحيح!';
+	@override String get are_you_sure_delete => 'هل أنت متأكد من الحذف؟';
+	@override String get delete_account => 'حذف الحساب';
+	@override String get how_to_operate_it => 'كيفية التشغيل؟';
+	@override String get deletion_warning_tip => 'إذا حذفت الحساب، ستفقد جميع عملات دلتا وأي أرباح جلبتها لك الأعضاء الآخرين.';
+	@override String get launchWhatsAppProgram => 'تشغيل تطبيق WhatsApp';
+	@override String get sms => 'رسالة نصية';
+	@override String get whatsApp_verification_tips => 'تُشير أيقونة بهذا الشكل إلى أن رقم الوصول يدعم التحقق عبر WhatsApp. عند إرسال رسائل دولية، يُنصح باستخدام WhatsApp لرفع معدل النجاح وتقليل التكلفة.';
+	@override String get ihaveSentVerificationString => 'لقد أرسلت سلسلة التحقق';
+	@override String get totalOfPeople => 'إجمالي الأشخاص: ';
+	@override String get numberOfPeopleMining => 'عدد أشخاص التعدين';
+	@override String get useBrowserScanQRcodeToSMSprogram => 'يمكنك استخدام جهاز آخر لمسح رمز QR عبر المتصفح وإرساله إلى برنامج الرسائل القصيرة';
+	@override String get toggle => 'تبديل';
+	@override String get DSMSverifier => 'مدقق DSMS';
+	@override String get activate => 'تفعيل';
+	@override String get activated => 'مفعل';
+	@override String get generateActivationCommand => 'توليد أمر التفعيل';
+	@override String get activationCommand => 'أمر التفعيل';
+	@override String get activationSentedTip => 'بعد إرسال رسالة التفعيل، تحقق من حالة التفعيل على جهاز طرف الوصول.';
+	@override String get biometricsNotEnabledTip => 'لم يتم تمكين القياسات الحيوية (وجه أو بصمة) على جهازك، يرجى التمكين للمتابعة.';
+	@override String get error => 'خطأ';
+	@override String get exceptionOccurredWhenCallingBiometric => 'حدث استثناء عند استدعاء مِيزة القياسات الحيوية!';
+	@override TextSpan accessNumberSelectionTip({required InlineSpan checkedNum, required InlineSpan shouldNum}) => TextSpan(children: [
+		const TextSpan(text: 'لقد تم اختيار '),
+		checkedNum,
+		const TextSpan(text: ' من أرقام الوصول، يجب اختيار '),
+		shouldNum,
+		const TextSpan(text: '.'),
+	]);
+	@override String sentaboveXaccessNumbers({required Object text, required Object n}) => 'هل تم إرسال ${text} إلى ${n} أرقام الوصول أعلاه؟';
+	@override String get interface => 'الواجهة:';
+	@override String get waitingTimeoutOrSenderNumberMismatch => 'انتهت مهلة الانتظار أو رقم المرسل غير متطابق';
+	@override String mobileNumberOfsecurityCircleYouFilledDoesntMatch({required Object x}) => 'رقم الجوال الذي أدخلته لعضو دائرة الأمان غير متطابق: ${x}';
+	@override String get loginWithin10MinutesOfLoggingOutAvoidTwoFactorVerification => 'تسجيل الدخول خلال 10 دقائق من تسجيل الخروج يتجنب التحقق ذو العاملين.';
+	@override String leastXmobileNumbersMustCompleted({required Object n}) => 'يجب إكمال ما لا يقل عن ${n} أرقام جوال';
+	@override String get noAccessNumberInYourRegionYet => 'لا توجد أرقام وصول في منطقتك بعد';
+	@override String get notEnoughAccessNumbersInYourRegion => 'أرقام الوصول في منطقتك غير كافية';
+	@override String get tipsForDeployDSMSterminal => 'النظام قام بتحميل بعض أرقام الوصول من دول أخرى تلقائيًا. لخفض التكلفة وتحسين الخدمة، ننصحك أو شريك الإحالة بنشر طرف DSMS محليًا لكسب رسوم التحقق.';
+	@override String get noOneCanProvideMeTheSecurityCode => 'لا أحد يستطيع أن يزودني برمز الأمان؟';
+	@override String get useSupplementalMode => 'استخدام الوضع التكميلي';
+	@override String get returnToSecurityCodeMode => 'العودة إلى وضع رمز الأمان';
+	@override String get enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted => 'أدخل أرقام جوالاتهم المرتبطة، يمكن حذف رمز الدولة.';
+	@override String mobileNumberForNameIsIncorrect({required Object name}) => 'رقم الجوال الخاص بـ ${name} غير صحيح';
+	@override String get matchingVerificationStrategyIs => 'استراتيجية التحقق المطابقة هي:';
+	@override String get balanceGreater3ICP_noNeedPourFuel => 'الرصيد أكبر من 3 ICP فلا حاجة لصب الوقود مؤقتًا.';
+	@override String get escrowAccount => 'حساب الضمان';
+	@override String get fuelRelay => 'مرحّل الوقود';
+	@override String get pourFuel => 'صب الوقود';
+	@override String get fuelState => 'حالة الوقود';
+	@override String get pouringFuelTips => 'صب الوقود لن يجلب لك منفعة أو ضررًا؛ الهدف إثراء تجربة نظام دلتا.';
+	@override String get sponsorDevelopersByWatchingAds => 'رعاية المطورين بمشاهدة الإعلانات';
+	@override String get status => 'الحالة';
+	@override String get date => 'التاريخ';
+	@override String get assetApplicationIsInProgressTip => 'جاري معالجة طلب الأصل، يرجى المحاولة بعد 3 ثوانٍ.';
+	@override String get delete => 'حذف';
+	@override String get deleteVerifierTip => 'عند حذف أذونات المدقق، سيتم حذف جميع بيانات الدرجات ذات الصلة، لكن المكافآت المكتسبة لن تتأثر.';
+	@override String get deleteVerifierStatusTip => 'يرجى ضبط الحالة إلى مُعَلّق قبل الحذف';
+	@override String pleaseEnterXtoConfirm({required Object text}) => 'يرجى إدخال "${text}" للتأكيد';
+	@override String get localSecurity => 'الأمان المحلي';
+	@override String get deviceLock => 'قفل الجهاز';
+	@override String get patternLock => 'قفل النمط';
+	@override String get none => 'لا شيء';
+	@override String get exist => 'موجود';
+	@override String get prompt => 'تنبيه:';
+	@override String get localSecurityTip1 => '1. تُستخدم المصادقة المحلية للتحقق من الهوية في بعض العمليات الحساسة، بهدف حماية الحساب عند فقدان الجهاز أو سيطرته من قبل الآخرين.';
+	@override String get localSecurityTip2 => '2. قفل النمط حل تكميلي عندما لا يدعم قفل الجهاز أو عندما يكون غير متوافق؛ إذا كان قفل الجهاز متاحًا فلا حاجة لقفل النمط عادةً.';
+	@override String get localSecurityTip3 => '3. إذا نسيت قفل النمط، فلا طريقة لإزالته سوى مسح بيانات التطبيق أو إعادة تثبيت التطبيق.';
+	@override String deviceAuthFirstTip({required Object menu, required Object localSecurity}) => 'ستتم دعوة مصادقة الجهاز قريبًا؛ إذا حدث خطأ، اذهب إلى صفحة "${menu}" ثم خيار "${localSecurity}" للاختبار وإعدادات إضافية.';
+	@override String get pleaseDrawUnlockPattern => 'يرجى رسم نمط الفتح';
+	@override String get addPatternLock => 'إضافة قفل نمط';
+	@override String get cannotBeLessThan8Dots => 'لا يمكن أن يقل عن 8 نقاط';
+	@override String get pleaseRepeatThePattern => 'يرجى تكرار رسم النمط';
+	@override String get notMatchFirstValidPattern => 'لا يتطابق مع النمط الصالح الأول';
+	@override String get deletePatternLock => 'حذف قفل النمط';
+	@override String get notMatchExistingPattern => 'لا يتطابق مع النمط الموجود';
+	@override String get localAuthentication => 'التحقق المحلي';
+	@override String get noSettlementAmountAvailableForThisPeriod => 'لا يوجد مبلغ تسوية متاح لهذه الفترة';
+	@override String get verificationChannel => 'قناة التحقق';
+	@override String get launchAdTips => 'تمكين "launchAd" يعني عرض إعلان عند بدء التطبيق وتحويل نتيجته إلى وزن تعدين USCT.';
+	@override String get help => 'مساعدة';
+	@override String get verifyOriginalMSISDN => 'التحقق من MSISDN الأصلي';
+	@override String get noLongerPopup => 'لا يظهر مرة أخرى';
+	@override String get encoding => 'طريقة الترميز:';
+	@override String get switchingVerificationStringEncodingMethodsTips => 'تبديل طرق ترميز سلسلة التحقق يساعد على تجاوز حجب شركات الاتصالات.';
+	@override String get remainUnchanged => 'حافظ على نفس الشيء';
+	@override String get offersGuidline1 => '1). لتعزيز أرباح USCT للمستخدم، نتعاون مع شبكات Offerwall معروفة مثل Playtime وAyet Studios. يمكن للمستخدمين كسب نقاط عبر مهام بسيطة مثل "تنزيل التطبيق وفتحه" أو "تنزيل لعبة والتقدم" أو "قضاء وقت في اللعبة". اقرأ المعلومات التالية لفهم النقاط الأساسية.';
+	@override String get offersGuidline2 => '2). يكافأ المستخدمون بالنقاط عند إكمال العروض. على عكس الإعلانات، تم تحديد نسبة تحويل النقاط إلى USDT سلفًا. وفقًا لبيانات الشبكات المختلفة، قد يتراوح سعر التحويل من 235000 نقطة = 1 USDT إلى 250000 نقطة = 1 USDT.\n\nيمكن تحويل هذه النقاط إلى USDT خلال ست إلى سبع أسابيع بعد نهاية الشهر. على سبيل المثال: إذا جمعت 400000 نقطة في أغسطس، يمكنك تحويلها إلى 1.68 USDT قبل 15 أكتوبر (تاريخ استلامنا لمبالغ أغسطس). نقاط سبتمبر ستُسوى قبل 15 نوفمبر، وهكذا. هذا التأخير ناتج عن دورات دفع التسويق المؤثر واعتماد شبكات Offerwall آلية Net-30.\n\nنحن بدأنا للتو استخدام Offerwall، ومع تحسن التدفق النقدي نأمل تقليل مدة التسوية. شكرًا لصبركم.';
+	@override String get offersGuidline3 => '3). تحصل على نقاط عندما يكمل مُحالك عرضًا؛ ستحصل على نسبة تعادل 43% من نقاط محالك المباشر. على سبيل المثال: إذا حصل محالك المباشر على 7000 نقطة، ستحصل تلقائيًا على 3000 نقطة.';
+	@override String get offersGuidline4 => '4). إذا رغبت في تجربة تطبيق/لعبة موجودة ضمن عرض، استخدم رابط/زر Offerwall للوصول إليه حتى يمكن تتبع الإنجازات؛ وإلا فلن تُحتَسب.';
+	@override String get offersGuidline5 => '5). عند الوصول إلى هذه العروض لا تستخدم VPN، وإلا قد يُستبعد حسابك من شبكات Offerwall.';
+	@override String get offersGuidline6 => '6). قد تطلب شبكات Offerwall أذونات؛ يرجى منح الصلاحيات لضمان تتبع الإنجازات بشكل صحيح وإلا قد لا تحصل على المكافآت.';
+	@override String get offersGuidline7 => '7). توفر PlayTime مجموعة ألعاب فريدة يكفي قضاء وقت في اللعبة للحصول على مكافآت. لكن تأكد من التقدم في اللعبة وليس فقط قضاء الوقت، وإلا قد تسحب الشبكات المدفوعة الدفع (نادرًا).';
+	@override String get offersGuidline8 => '8). عادة تُسجل الإنجازات على Offerwall خلال دقائق، لكن قد تستغرق أحيانًا حتى 3 ساعات؛ كن صبورًا. إذا لم تُسجل الإنجازات، اتصل بخدمة عملاء شبكة Offerwall. لكل Offerwall دعم خاص به. بعد إكمال الإنجاز افحص Offerwall في تطبيقنا لضمان تتبعه.';
+	@override String get offersGuidline9 => '9). إذا كان التطبيق/اللعبة مثبتًا مسبقًا على جهازك فلا تحاول العروض المتعلقة به لأنك قد لا تحصل على نقاط.';
+	@override String get offersGuidline10 => '10). اقرأ دائمًا التعليمات على كل Offerwall، فهي تحتوي على تفاصيل مهمة تزيد فرص تتبع العرض بنجاح.';
+	@override String get termination => 'الإنهاء';
+	@override String get thisPeriodsSettlementIsterminated => 'تم إنهاء تسوية هذه الفترة!';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'المستخدمون غير النشطين '),
+		x,
+	]);
+	@override String get remind => 'تذكير!';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => 'يمكن تنفيذ تذكير عدم الاتصال مرة واحدة كل 8 ساعات! يرجى الانتظار ${x} ثانية ثم المحاولة.';
+	@override String get noInactiveUsersFoundNow => 'لا توجد مستخدمين غير نشطين الآن';
+	@override String successfullyNotifiedXpeople({required Object x}) => 'تم إخطار ${x} شخصًا بنجاح!';
+	@override String get deltansMiningReminder => 'تذكير تعدين للمستخدمين!';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => 'صديق دلتا ${user}: "توقف تعدينك."';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: 'الرقم الذي أدخلته في تطبيق دلتا ('),
+		fillin,
+		const TextSpan(text: ') يختلف عن الرقم المستخدم عند إرسال سلسلة التحقق ('),
+		sender,
+		const TextSpan(text: '). يرجى التعديل والمحاولة مجددًا.'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => 'خطأ في فك التشفير، يرجى المحاولة مرة أخرى!';
+	@override String get reLogin => 'تسجيل الدخول مجددًا';
+	@override String get themeMode => 'وضع السمة';
+	@override String get copy => 'نسخ';
+	@override String get brightnessMode => 'وضع السطوع';
+	@override String get clicks => 'عدد النقرات';
+	@override String get rankings => 'التصنيفات';
+	@override String get downloadFailed => 'فشل التحميل!';
 }
 
 // Path: <root>
@@ -1663,6 +2436,12 @@ class _StringsBg implements Translations {
 	]);
 	@override String get decryptionError_pleaseTryAgain => 'Грешка при дешифриране, моля опитайте отново!';
 	@override String get reLogin => 'Влезте отново';
+	@override String get themeMode => 'Тематичен режим';
+	@override String get copy => 'Копиране';
+	@override String get brightnessMode => 'Режим на яркост';
+	@override String get clicks => 'Брой кликвания';
+	@override String get rankings => 'Класации';
+	@override String get downloadFailed => 'Изтеглянето не бе успешно!';
 }
 
 // Path: <root>
@@ -2425,6 +3204,12 @@ class _StringsBn implements Translations {
 	]);
 	@override String get decryptionError_pleaseTryAgain => 'ডিক্রিপশন ত্রুটি, আবার চেষ্টা করুন!';
 	@override String get reLogin => 'আবার লগ ইন করুন';
+	@override String get themeMode => 'থিম মোড';
+	@override String get copy => 'কপি';
+	@override String get brightnessMode => 'উজ্জ্বলতা মোড';
+	@override String get clicks => 'ক্লিকের সংখ্যা';
+	@override String get rankings => 'র‍্যাঙ্কিং';
+	@override String get downloadFailed => 'ডাউনলোড ব্যর্থ হয়েছে!';
 }
 
 // Path: <root>
@@ -3185,6 +3970,12 @@ class _StringsCkb implements Translations {
 	]);
 	@override String get decryptionError_pleaseTryAgain => 'هەڵەی کۆدکردنەوە، تکایە دووبارە هەوڵبدەرەوە!';
 	@override String get reLogin => 'دووبارە بچۆرەوە ژوورەوە';
+	@override String get themeMode => 'دۆخی تەوەر';
+	@override String get copy => 'کۆپی بکە';
+	@override String get brightnessMode => 'دۆخی ڕووناکی';
+	@override String get clicks => 'کلیک لە count بکە';
+	@override String get rankings => 'ڕیزبەندی';
+	@override String get downloadFailed => 'داگرتن شکستی هێنا!';
 }
 
 // Path: <root>
@@ -3945,6 +4736,12 @@ class _StringsDe implements Translations {
 	]);
 	@override String get decryptionError_pleaseTryAgain => 'Entschlüsselungsfehler, bitte versuchen Sie es erneut!';
 	@override String get reLogin => 'Melden Sie sich erneut an';
+	@override String get themeMode => 'Themenmodus';
+	@override String get copy => 'Kopie';
+	@override String get brightnessMode => 'Helligkeitsmodus';
+	@override String get clicks => 'Klickzahl';
+	@override String get rankings => 'Rangliste';
+	@override String get downloadFailed => 'Download fehlgeschlagen!';
 }
 
 // Path: <root>
@@ -4705,6 +5502,12 @@ class _StringsEl implements Translations {
 	]);
 	@override String get decryptionError_pleaseTryAgain => 'Σφάλμα αποκρυπτογράφησης, δοκιμάστε ξανά!';
 	@override String get reLogin => 'Συνδεθείτε ξανά';
+	@override String get themeMode => 'Λειτουργία θέματος';
+	@override String get copy => 'Αντίγραφο';
+	@override String get brightnessMode => 'Λειτουργία φωτεινότητας';
+	@override String get clicks => 'Αριθμός κλικ';
+	@override String get rankings => 'Κατατάξεις';
+	@override String get downloadFailed => 'Η λήψη απέτυχε!';
 }
 
 // Path: <root>
@@ -5466,6 +6269,12 @@ class _StringsEs implements Translations {
 	]);
 	@override String get decryptionError_pleaseTryAgain => 'Error de descifrado, ¡inténtalo de nuevo!';
 	@override String get reLogin => 'Iniciar sesión de nuevo';
+	@override String get themeMode => 'Modo de tema';
+	@override String get copy => 'Copiar';
+	@override String get brightnessMode => 'Modo de brillo';
+	@override String get clicks => 'Conteo de clics';
+	@override String get rankings => 'Clasificaciones';
+	@override String get downloadFailed => '¡Descarga fallida!';
 }
 
 // Path: <root>
@@ -6227,6 +7036,12 @@ class _StringsFr implements Translations {
 	]);
 	@override String get decryptionError_pleaseTryAgain => 'Erreur de décryptage, veuillez réessayer !';
 	@override String get reLogin => 'Connectez-vous à nouveau';
+	@override String get themeMode => 'Mode thème';
+	@override String get copy => 'Copie';
+	@override String get brightnessMode => 'Mode de luminosité';
+	@override String get clicks => 'Nombre de clics';
+	@override String get rankings => 'Classements';
+	@override String get downloadFailed => 'Le téléchargement a échoué !';
 }
 
 // Path: <root>
@@ -6984,6 +7799,12 @@ class _StringsHi implements Translations {
 	]);
 	@override String get decryptionError_pleaseTryAgain => 'डिक्रिप्शन त्रुटि, कृपया पुनः प्रयास करें!';
 	@override String get reLogin => 'फिर से लॉगिन करें';
+	@override String get themeMode => 'थीम मोड';
+	@override String get copy => 'प्रतिलिपि';
+	@override String get brightnessMode => 'चमक मोड';
+	@override String get clicks => 'क्लिक गिनती';
+	@override String get rankings => 'रैंकिंग';
+	@override String get downloadFailed => 'डाउनलोड विफल!';
 }
 
 // Path: <root>
@@ -7743,6 +8564,12 @@ class _StringsIt implements Translations {
 	]);
 	@override String get decryptionError_pleaseTryAgain => 'Errore di decrittazione, riprova!';
 	@override String get reLogin => 'Accedi di nuovo';
+	@override String get themeMode => 'Modalità tema';
+	@override String get copy => 'Copia';
+	@override String get brightnessMode => 'Modalità luminosità';
+	@override String get clicks => 'Conteggio dei clic';
+	@override String get rankings => 'Classifiche';
+	@override String get downloadFailed => 'Download non riuscito!';
 }
 
 // Path: <root>
@@ -8501,6 +9328,12 @@ class _StringsJa implements Translations {
 	]);
 	@override String get decryptionError_pleaseTryAgain => '復号化エラーが発生しました。もう一度お試しください。';
 	@override String get reLogin => '再度ログイン';
+	@override String get themeMode => 'テーマモード';
+	@override String get copy => 'コピー';
+	@override String get brightnessMode => '明るさモード';
+	@override String get clicks => 'クリック数';
+	@override String get rankings => 'ランキング';
+	@override String get downloadFailed => 'ダウンロードに失敗しました。';
 }
 
 // Path: <root>
@@ -9261,6 +10094,12 @@ class _StringsKo implements Translations {
 	]);
 	@override String get decryptionError_pleaseTryAgain => '복호화 오류가 발생했습니다. 다시 시도해 주세요!';
 	@override String get reLogin => '다시 로그인하세요';
+	@override String get themeMode => '테마 모드';
+	@override String get copy => '복사';
+	@override String get brightnessMode => '밝기 모드';
+	@override String get clicks => '클릭 수';
+	@override String get rankings => '랭킹';
+	@override String get downloadFailed => '다운로드에 실패했습니다!';
 }
 
 // Path: <root>
@@ -10021,6 +10860,12 @@ class _StringsNl implements Translations {
 	]);
 	@override String get decryptionError_pleaseTryAgain => 'Fout bij het decoderen. Probeer het opnieuw!';
 	@override String get reLogin => 'Opnieuw inloggen';
+	@override String get themeMode => 'Themamodus';
+	@override String get copy => 'Kopiëren';
+	@override String get brightnessMode => 'Helderheidsmodus';
+	@override String get clicks => 'Klikken aantal';
+	@override String get rankings => 'Ranglijsten';
+	@override String get downloadFailed => 'Downloaden mislukt!';
 }
 
 // Path: <root>
@@ -10782,6 +11627,12 @@ class _StringsPl implements Translations {
 	]);
 	@override String get decryptionError_pleaseTryAgain => 'Błąd deszyfrowania, spróbuj ponownie!';
 	@override String get reLogin => 'Zaloguj się ponownie';
+	@override String get themeMode => 'Tryb motywu';
+	@override String get copy => 'Kopia';
+	@override String get brightnessMode => 'Tryb jasności';
+	@override String get clicks => 'Liczba kliknięć';
+	@override String get rankings => 'Rankingi';
+	@override String get downloadFailed => 'Pobieranie nie powiodło się!';
 }
 
 // Path: <root>
@@ -11542,6 +12393,12 @@ class _StringsPt implements Translations {
 	]);
 	@override String get decryptionError_pleaseTryAgain => 'Erro de descriptografia, tente novamente!';
 	@override String get reLogin => 'Efetue login novamente';
+	@override String get themeMode => 'Modo Tema';
+	@override String get copy => 'Cópia';
+	@override String get brightnessMode => 'Modo de brilho';
+	@override String get clicks => 'Contagem de cliques';
+	@override String get rankings => 'Classificações';
+	@override String get downloadFailed => 'O download falhou!';
 }
 
 // Path: <root>
@@ -12301,6 +13158,12 @@ class _StringsRo implements Translations {
 	]);
 	@override String get decryptionError_pleaseTryAgain => 'Eroare de decriptare, vă rugăm să încercați din nou!';
 	@override String get reLogin => 'Conectați-vă din nou';
+	@override String get themeMode => 'Mod temă';
+	@override String get copy => 'Copie';
+	@override String get brightnessMode => 'Mod de luminozitate';
+	@override String get clicks => 'Număr de clicuri';
+	@override String get rankings => 'Clasamente';
+	@override String get downloadFailed => 'Descărcarea a eșuat!';
 }
 
 // Path: <root>
@@ -13062,6 +13925,12 @@ class _StringsRu implements Translations {
 	]);
 	@override String get decryptionError_pleaseTryAgain => 'Ошибка расшифровки, попробуйте еще раз!';
 	@override String get reLogin => 'Войти снова';
+	@override String get themeMode => 'Режим темы';
+	@override String get copy => 'Копировать';
+	@override String get brightnessMode => 'Режим яркости';
+	@override String get clicks => 'Количество кликов';
+	@override String get rankings => 'Рейтинги';
+	@override String get downloadFailed => 'Загрузка не удалась!';
 }
 
 // Path: <root>
@@ -13818,6 +14687,12 @@ class _StringsSw implements Translations {
 	]);
 	@override String get decryptionError_pleaseTryAgain => 'Hitilafu ya usimbuaji, tafadhali jaribu tena!';
 	@override String get reLogin => 'Ingia tena';
+	@override String get themeMode => 'Hali ya Mandhari';
+	@override String get copy => 'Nakili';
+	@override String get brightnessMode => 'Hali ya mwangaza';
+	@override String get clicks => 'Idadi ya kubofya';
+	@override String get rankings => 'Nafasi';
+	@override String get downloadFailed => 'Imeshindwa kupakua!';
 }
 
 // Path: <root>
@@ -14577,6 +15452,12 @@ class _StringsTh implements Translations {
 	]);
 	@override String get decryptionError_pleaseTryAgain => 'เกิดข้อผิดพลาดในการถอดรหัส โปรดลองอีกครั้ง!';
 	@override String get reLogin => 'เข้าสู่ระบบอีกครั้ง';
+	@override String get themeMode => 'โหมดธีม';
+	@override String get copy => 'สำเนา';
+	@override String get brightnessMode => 'โหมดความสว่าง';
+	@override String get clicks => 'จำนวนการคลิก';
+	@override String get rankings => 'อันดับ';
+	@override String get downloadFailed => 'ดาวน์โหลดล้มเหลว!';
 }
 
 // Path: <root>
@@ -15336,6 +16217,12 @@ class _StringsTr implements Translations {
 	]);
 	@override String get decryptionError_pleaseTryAgain => 'Şifre çözme hatası, lütfen tekrar deneyin!';
 	@override String get reLogin => 'Tekrar giriş yapın';
+	@override String get themeMode => 'Tema Modu';
+	@override String get copy => 'Kopyala';
+	@override String get brightnessMode => 'Parlaklık modu';
+	@override String get clicks => 'Tıklama sayısı';
+	@override String get rankings => 'Sıralamalar';
+	@override String get downloadFailed => 'İndirme başarısız!';
 }
 
 // Path: <root>
@@ -16096,6 +16983,12 @@ class _StringsUk implements Translations {
 	]);
 	@override String get decryptionError_pleaseTryAgain => 'Помилка розшифрування, спробуйте ще раз!';
 	@override String get reLogin => 'Увійти знову';
+	@override String get themeMode => 'Тематичний режим';
+	@override String get copy => 'Копіювати';
+	@override String get brightnessMode => 'Режим яскравості';
+	@override String get clicks => 'Кількість кліків';
+	@override String get rankings => 'Рейтинги';
+	@override String get downloadFailed => 'Завантаження не вдалося!';
 }
 
 // Path: <root>
@@ -16855,6 +17748,12 @@ class _StringsUr implements Translations {
 	]);
 	@override String get decryptionError_pleaseTryAgain => 'ڈکرپشن کی خرابی، براہ کرم دوبارہ کوشش کریں!';
 	@override String get reLogin => 'دوبارہ لاگ ان کریں۔';
+	@override String get themeMode => 'تھیم موڈ';
+	@override String get copy => 'کاپی';
+	@override String get brightnessMode => 'چمک موڈ';
+	@override String get clicks => 'شمار پر کلک کریں۔';
+	@override String get rankings => 'درجہ بندی';
+	@override String get downloadFailed => 'ڈاؤن لوڈ ناکام!';
 }
 
 // Path: <root>
@@ -17615,6 +18514,12 @@ class _StringsVi implements Translations {
 	]);
 	@override String get decryptionError_pleaseTryAgain => 'Có lỗi giải mã, vui lòng thử lại!';
 	@override String get reLogin => 'Đăng nhập lại';
+	@override String get themeMode => 'Chế độ chủ đề';
+	@override String get copy => 'Sao chép';
+	@override String get brightnessMode => 'Chế độ sáng';
+	@override String get clicks => 'Số lần nhấp chuột';
+	@override String get rankings => 'Xếp hạng';
+	@override String get downloadFailed => 'Tải xuống không thành công!';
 }
 
 // Path: <root>
@@ -18376,6 +19281,12 @@ class _StringsZhCn implements Translations {
 	]);
 	@override String get decryptionError_pleaseTryAgain => '解密出错，请重试！';
 	@override String get reLogin => '重新登录';
+	@override String get themeMode => '主题模式';
+	@override String get copy => '复制';
+	@override String get brightnessMode => '亮度模式';
+	@override String get clicks => '点击量';
+	@override String get rankings => '排行榜';
+	@override String get downloadFailed => '下载失败！';
 }
 
 // Path: <root>
@@ -19137,6 +20048,12 @@ class _StringsZhTw implements Translations {
 	]);
 	@override String get decryptionError_pleaseTryAgain => '解密出錯，請重試！';
 	@override String get reLogin => '重新登入';
+	@override String get themeMode => '主題模式';
+	@override String get copy => '複製';
+	@override String get brightnessMode => '亮度模式';
+	@override String get clicks => '點擊量';
+	@override String get rankings => '排行榜';
+	@override String get downloadFailed => '下載失敗！';
 }
 
 /// Flat map(s) containing all translations.
@@ -19876,6 +20793,758 @@ extension on Translations {
 			]);
 			case 'decryptionError_pleaseTryAgain': return 'Decryption error, please try again!';
 			case 'reLogin': return 'Log in again';
+			case 'themeMode': return 'Theme Mode';
+			case 'copy': return 'Copy';
+			case 'brightnessMode': return 'Brightness mode';
+			case 'clicks': return 'Click count';
+			case 'rankings': return 'Rankings';
+			case 'downloadFailed': return 'Download failed!';
+			default: return null;
+		}
+	}
+}
+
+extension on _StringsAr {
+	dynamic _flatMapFunction(String path) {
+		switch (path) {
+			case 'home': return 'الرئيسية';
+			case 'switchLanguage': return 'تبديل اللغة';
+			case 'languageSwitch': return 'تبديل اللغة';
+			case 'slogan': return 'بناء اقتصاد لامركزي في دلتا';
+			case 'countryRegionCode': return 'رمز الدولة/المنطقة';
+			case 'countryRegionSelection': return 'اختيار الدولة والمنطقة';
+			case 'nextStep': return 'الخطوة التالية';
+			case 'yourPhoneNumber': return 'رقم هاتفك';
+			case 'pleaseSelectCountryAndRegion': return 'يرجى اختيار دولتك/منطقتك';
+			case 'pleaseEnterPhoneNumber': return 'يرجى إدخال رقم هاتف صالح!';
+			case 'referrerDid': return 'DID المُحيل';
+			case 'pleaseEnterTheReferrersDid': return 'يرجى إدخال معرف الهوية اللامركزية (DID) للمُحيل صالح';
+			case 'thisDidIsInvalid': return 'هذا الـ DID غير صالح';
+			case 'nicknameFormatTips': return 'لا يمكن أن يكون الاسم المستعار فارغًا، ويجب ألا يتجاوز طوله 16 حرفًا';
+			case 'additionalIinformation': return 'معلومات إضافية';
+			case 'invitationSubject': return 'دعوتك للمشاركة في بناء إجماع دلتا';
+			case 'invitationLetter': return ({required Object did}) => 'مرحبًا، أنا أشارك في بناء إجماع دلتا!\nدلتا هي منصة عملة رقمية جديدة مفتوحة المصدر تعمل على ICP، تتيح إدارة واستخدام العملات الرقمية دون كلمات مرور أو مفاتيح خاصة أو عبارات استرداد. يرجى النقر على هذا الرابط https://delta.kim/auto/download لتثبيت التطبيق. أدعوك الآن للمشاركة في بناء الإجماع وصك العملات.\nDID المُحيل: ${did}';
+			case 'dSMSverification': return 'التحقق DSMS';
+			case 'getAccessNumbers': return 'الحصول على بعض أرقام الوصول';
+			case 'getAccessNumberPromptMessage': return 'انقر على زر "الحصول" أدناه لاختيار مجموعة من أرقام الوصول للتحقق عبر الرسائل القصيرة من قائمة الانتظار';
+			case 'optionalAccessNumbers': return 'أرقام الوصول الاختيارية';
+			case 'accessNumber': return 'رقم الوصول';
+			case 'TELCO': return 'المُشغّل';
+			case 'score': return 'الدرجة';
+			case 'checkAccessNumberTip': return ({required num n, required InlineSpan Function(num) nBuilder, required InlineSpanBuilder span}) => RichPluralResolvers.bridge(
+				n: n,
+				resolver: _root.$meta.cardinalResolver ?? PluralResolvers.cardinal('ar'),
+				one: () => TextSpan(children: [
+					const TextSpan(text: 'يرجى اختيار '),
+					nBuilder(n),
+					const TextSpan(text: ' أرقام وصول ثم اضغط على زر "'),
+					span('text'),
+					const TextSpan(text: '" للمتابعة'),
+				]),
+				other: () => TextSpan(children: [
+					const TextSpan(text: 'يرجى اختيار '),
+					nBuilder(n),
+					const TextSpan(text: ' أرقام وصول ثم اضغط على زر "'),
+					span('text'),
+					const TextSpan(text: '" للمتابعة'),
+				]),
+			);
+			case 'whatIsDeltaDesc': return 'دلتا مشروع مفتوح المصدر لعملة رقمية عالمية لامركزية مبتكرة، ونظام بيئي لتطبيقات العملة.';
+			case 'deltaGoalsDesc': return 'الهدف هو تمكين الناس من استخدام دلتا لبناء عملة رقمية جديدة عامة وعادلة وآمنة وسريعة وصديقة للبيئة، وتوفير حالات استخدام فعّالة لهذه العملات والعملات المشفرة السابقة.';
+			case 'details': return 'تفاصيل';
+			case 'get': return 'الحصول';
+			case 'select': return 'اختيار';
+			case 'send': return 'إرسال';
+			case 'complete': return 'اكتمل';
+			case 'selectedAccessNumberPrompt': return 'بعد التحديد، سيعرض الرقم الكامل ويُنشئ سلسلة تحقق.';
+			case 'location': return 'الموقع';
+			case 'verificationString': return 'سلسلة التحقق';
+			case 'sendVerificationStringDesc': return ({required InlineSpan num, required InlineSpan label, required InlineSpan accessNumber}) => TextSpan(children: [
+				const TextSpan(text: 'يرجى استخدام رقم هاتفك '),
+				num,
+				const TextSpan(text: ' لإرسال '),
+				label,
+				const TextSpan(text: ' إلى '),
+				accessNumber,
+				const TextSpan(text: ' لإكمال التحقق.'),
+			]);
+			case 'ihaveSentTheSMS': return 'لقد أرسلت الرسالة القصيرة';
+			case 'validWithin6minutes': return ({required InlineSpan time}) => TextSpan(children: [
+				const TextSpan(text: 'سلسلة التحقق صالحة لمدة 6 دقائق، الوقت المتبقي: '),
+				time,
+				const TextSpan(text: '.'),
+			]);
+			case 'tooFast_waitXsecondsContinuing': return ({required Object x}) => 'سريع جدًا، انتظر ${x} ثانية للمتابعة!';
+			case 'waitingForVerificationSMS': return 'في انتظار رسالة التحقق…';
+			case 'partSuccsForVerificationSMS': return 'أحد أجهزة الوصول قد اجتاز التحقق بالرسائل القصيرة!';
+			case 'creatingAccessToken': return 'جارٍ إنشاء رمز الوصول…';
+			case 'intoDelta': return 'ادخل دلتا';
+			case 'deltaAccountIsLoggedIn': return 'حساب دلتا الخاص بك مسجل الدخول';
+			case 'iHavLoggedOut': return 'لقد قمت بتسجيل الخروج';
+			case 'startTwoFactorVerification': return 'بدء التحقق ذو العاملين';
+			case 'securityCircleVerification': return 'التحقق من دائرة الأمان';
+			case 'generateSecurityCode': return 'إنشاء رمز أمان';
+			case 'generateSecurityCodeHintText': return 'سيُرسل رمز الأمان المُنشأ إلى عضو عشوائي مختار من دائرة الأمان الخاصة بك.';
+			case 'notSetSecurityCircleEnterPlaceholderTip': return 'لم تقم بإعداد دائرة أمان بعد، حسابك غير آمن. الرجاء إدخال أي 6 أرقام كعنصر نائب والمضي للخطوة التالية.';
+			case 'securityCodeHasBeenGenerated_ContactFriendsTip': return 'تم إنشاء رمز الأمان، يرجى الاتصال بالأصدقاء والعائلة المدرجين أدناه لطلب استخراج رمز الأمان لك لإتمام التحقق. صالح لمدة 30 دقيقة!';
+			case 'itGetSecurityCodeTip': return 'ملاحظة: يمكنك العثور على اسم حسابك في Delta App -> القائمة -> تقديم الأمان، انقر مزدوجًا للحصول على رمز الأمان.';
+			case 'securityCircleMemberList': return 'قائمة أعضاء دائرة الأمان:';
+			case 'selectA_friendToProvideSecurityCodeTip': return 'يرجى اختيار صديق أو فرد من العائلة من القائمة لتوليد وتزويدك برمز الأمان للتحقق من الهوية. الهدف هو حماية حسابك إذا فقدت رقم الهاتف أو سُرق.';
+			case 'formatIsXdigits': return ({required Object num}) => 'التنسيق هو ${num} أرقام';
+			case 'signInSuccessfully': return 'تم تسجيل الدخول بنجاح!';
+			case 'twoFAandLogin': return 'تحقق ذو عاملين وتسجيل الدخول';
+			case 'verificationSuccessful': return 'تم التحقق بنجاح!';
+			case 'validationFailed': return 'فشل التحقق!';
+			case 'dappInfo': return 'معلومات DApp';
+			case 'securityCircle': return 'دائرة الأمان';
+			case 'securityCode': return 'رمز الأمان';
+			case 'provideSecurity': return 'تقديم الأمان';
+			case 'addManully': return 'إضافة يدويًا';
+			case 'addFromContacts': return 'إضافة من جهات الاتصال';
+			case 'addSecurityCircle': return 'إضافة دائرة الأمان';
+			case 'inputType': return 'نوع الإدخال';
+			case 'mobileNumber': return 'رقم الجوال';
+			case 'did': return 'معرف العنوان';
+			case 'pleaseEnterValidDID': return 'يرجى إدخال معرف هوية لامركزي صالح';
+			case 'pleaseEnterValidWalletAddress': return 'يرجى إدخال عنوان محفظة صالح';
+			case 'appellation': return 'اللقب';
+			case 'appellationHint': return 'كيف تناديه، مثلاً "حبيبي"';
+			case 'addSecurityCircleTips': return 'يرجى عدم إضافة أشخاص لا تثق بهم إلى دائرة الأمان.';
+			case 'referralTeam': return 'فريق الإحالة';
+			case 'profile': return 'معلومات الحساب';
+			case 'menu': return 'القائمة';
+			case 'directly': return 'مباشر';
+			case 'indirectly': return 'غير مباشر';
+			case 'inviteContacts': return 'دعوة جهات الاتصال';
+			case 'refereesAtFirstLevelDesc': return ({required InlineSpan nickname, required InlineSpan num1, required InlineSpan num2}) => TextSpan(children: [
+				const TextSpan(text: 'داعيك هو '),
+				nickname,
+				const TextSpan(text: '، لقد قمت بالدعوة المباشرة لـ '),
+				num1,
+				const TextSpan(text: ' أشخاص، منهم '),
+				num2,
+				const TextSpan(text: ' متصلون حاليًا.'),
+			]);
+			case 'refereesAtSecondLevelDesc': return ({required InlineSpan num1, required InlineSpan num2}) => TextSpan(children: [
+				const TextSpan(text: 'لقد قمت بالدعوة غير المباشرة لـ '),
+				num1,
+				const TextSpan(text: ' أشخاص، منهم '),
+				num2,
+				const TextSpan(text: ' متصلون حاليًا.'),
+			]);
+			case 'invitationToBoostMiningDesc': return ({required InlineSpan rate1, required InlineSpan btn}) => TextSpan(children: [
+				const TextSpan(text: 'ادعُ أصدقاء للانضمام إلى دلتا لزيادة الإجماع الاجتماعي. كل إحالة مباشرة تزيد معدل التعدين بمقدار '),
+				rate1,
+				const TextSpan(text: ' من المعدل الأساسي. '),
+				btn,
+			]);
+			case 'invitationToBoostMiningDesc2': return ({required InlineSpan rate2}) => TextSpan(children: [
+				const TextSpan(text: 'ادعُ أصدقاء للانضمام إلى دلتا لرفع الإجماع الاجتماعي، كل إحالة غير مباشرة تزيد معدل التعدين بمقدار '),
+				rate2,
+				const TextSpan(text: ' من المعدل الأساسي.'),
+			]);
+			case 'areYouSureToRemove_x': return ({required Object name}) => 'هل أنت متأكد من حذف "${name}"؟';
+			case 'safetyCircleRoleQ': return 'ما دور دائرة الأمان؟';
+			case 'safetyCircleRoleA': return 'توفير تحقق ثانوي في الحالات الحساسة لحماية أمان حسابك.';
+			case 'howSecurityCirclesWorkQ': return 'كيف تعمل دوائر الأمان؟';
+			case 'howSecurityCirclesWorkA': return 'عند الحاجة إلى تحقق من دائرة الأمان، سيقوم عقد دلتا الذكي باختيار عضو عشوائي من قائمة أصدقائك في دائرة الأمان لمساعدتك بتقديم رمز أمان لإتمام التحقق. عند سؤالك لهذا العضو عن رمز الأمان، يمكنه التأكد من هويتك. كما سيُنبه البرنامج: "إذا لم يكن هو/هي صاحب الطلب فلا يقدم رمز الأمان" لحماية حسابك. لذلك يجب التأكد من أن أعضاء دائرة الأمان أشخاص تثق بهم.';
+			case 'securityCircleBeUsedQ': return 'متى سيتم استخدامه؟';
+			case 'securityCircleBeUsedA1': return '1. عندما تفقد السيطرة على تطبيق دلتا، عادةً عند فقدان الهاتف أو سرقته.';
+			case 'securityCircleBeUsedA2': return '2. عند بعض العمليات الحساسة التي يحتاج فيها العقد الذكي في دلتا التأكد من هويتك.';
+			case 'provideSafetyTip1': return 'عندما يسألك صديقك عن رمز الأمان الخاص به، تأكد من أنه هو فعلاً قبل تقديمه.';
+			case 'provideSafetyTip2': return 'أنت تقدم حماية أمنية للأصدقاء أعلاه، فهم قد وضعوك كأحد الأشخاص الأكثر ثقة في دائرة الأمان ليقدموا لك تأكيدًا عند حدوث عمليات حساسة في حسابهم.';
+			case 'provideSafetyTip3': return 'انقر مزدوجًا على صورة الملف الشخصي لاستخراج رمز الأمان عند الحاجة.';
+			case 'doesNotSecurityCodeNeedsRetrieved': return 'لا يوجد رمز أمان يحتاج إلى الاستخراج الآن!';
+			case 'existSecurityCodeTip': return 'تأكد تمامًا أن من يطلب رمز الأمان هو صديقك/قريبك نفسه. لحماية أمنهم، ارفض تقديم الرمز إذا لم يكن الشخص هو المعني بالفعل.';
+			case 'avatarSettings': return 'إعدادات الصورة الرمزية';
+			case 'NFTAvatarPropertyRightsText': return 'إخلاء مسؤولية: استخدام NFT كصورة رمزية هو مسألة تفضيل شخصي فقط ولا يتعلق بحقوق الملكية الفكرية الخاصة بالـ NFT.';
+			case 'projectWebsite': return 'موقع المشروع: ';
+			case 'whitepaper': return 'الورقة البيضاء: ';
+			case 'indexID': return 'معرف الفهرس';
+			case 'indexesRangeFromXtoY': return ({required Object start, required Object end}) => 'نطاق الفهارس من ${start} إلى ${end}';
+			case 'inputToLoadNFTAvatarTip': return 'أدخل معرف فهرس NFT المفضل لديك وسيقوم البرنامج بتحميله تلقائيًا كصورة رمزية.';
+			case 'miningRate': return 'معدل التعدين';
+			case 'miningDetails': return 'تفاصيل التعدين';
+			case 'totalMiningRateEachDay': return ({required InlineSpan rate}) => TextSpan(children: [
+				const TextSpan(text: 'إجمالي معدل التعدين: '),
+				rate,
+				const TextSpan(text: ' δ/يوم'),
+			]);
+			case 'EndOfMiningSession': return 'نهاية جلسة التعدين:';
+			case 'tapToMineDeltaCoin': return 'انقر لاستخراج عملة دلتا ↑';
+			case 'clickToStartMining': return 'انقر لبدء التعدين!';
+			case 'miningHasStoppedPromptDesc': return 'توقف التعدين. كل 24 ساعة هي دورة تعدين واحدة، انقر على رمز البرق لبدء دورة جديدة. تعدين دلتا هو آلية توزيع ولن يستهلك موارد جهازك أو بيانات الشبكة.';
+			case 'aboutBaseRate': return 'ما هو المعدل الأساسي؟';
+			case 'baseRateDescription': return 'وفقًا للورقة البيضاء، قاعدة تناقص المعدل الأساسي لتعدين دلتا تقسم إلى مرحلتين.\nالمرحلة 1: عندما يكون عدد المشاركين (المسجلين) 3000 أو أقل، يكون المعدل 32δ/يوم كبداية؛ في كل مرة يزداد العدد 10 أضعاف، ينصف المعدل الأساسي.\nالمرحلة 2: عندما يصل عدد المشاركين إلى 30 مليون أو أكثر، في كل مرة يزداد العدد 3 أضعاف ينصف المعدل الأساسي، حتى انتهاء الإنتاج.';
+			case 'baseRate': return 'المعدل الأساسي';
+			case 'directReferralRewards': return 'مكافآت الإحالة المباشرة';
+			case 'directReferralRewardDesc': return 'لكل إحالة مباشرة واحدة، عندما تكون في حالة تعدين، سيزداد معدل تعدينك بمقدار ثُمن (1/3) من المعدل الأساسي.\n\nبالإضافة إلى ذلك، سيتم احتساب حالة تعدين محاليك في مكافآت الإحالة المباشرة لديك.';
+			case 'indirectReferralRewards': return 'مكافآت الإحالة غير المباشرة';
+			case 'indirectReferralRewardDesc': return 'عندما يكون أحد المحالين غير المباشرين في حالة تعدين، سيزداد معدل تعدينك بمقدار 1/10 من المعدل الأساسي.\n\nكل شخص تقوم بدعوته مباشرة والذي بدوره يدعو أشخاصًا يعدونهم كمحالين غير مباشر لك.';
+			case 'mine': return 'التعدين';
+			case 'thisMiningInformation': return 'معلومات هذا التعدين';
+			case 'participatedInMiningXtimes': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'عدد مرات المشاركة في التعدين: '),
+				x,
+			]);
+			case 'totalIncomeThisTimeXDeltaCoins': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'إجمالي الربح هذه المرة: '),
+				x,
+				const TextSpan(text: ' عملات دلتا'),
+			]);
+			case 'basicIncomeXcoins': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'الربح الأساسي: '),
+				x,
+				const TextSpan(text: ' عملات'),
+			]);
+			case 'directTeamContributionXcoins': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'مساهمة الفريق المباشر: '),
+				x,
+				const TextSpan(text: ' عملات'),
+			]);
+			case 'indirectTeamContributionXcoins': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'مساهمة الفريق غير المباشر: '),
+				x,
+				const TextSpan(text: ' عملات'),
+			]);
+			case 'timeIntervalFromLastMiningX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'الفاصل الزمني منذ آخر تعدين: '),
+				x,
+			]);
+			case 'effectiveMiningTimeXhours': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'الوقت الفعال للتعدين: '),
+				x,
+			]);
+			case 'xhours': return ({required Object x}) => '${x} ساعة';
+			case 'keep3_5peopleInTheSafetyCircleTip': return 'لحماية الأصول، يجب أن تحتوي دائرة الأمان عادة على 3-5 أشخاص موثوقين.';
+			case 'index': return 'الفهرس';
+			case 'amount': return 'المبلغ';
+			case 'balance': return 'الرصيد';
+			case 'timeStamp': return 'الطابع الزمني';
+			case 'summary': return 'الملخص';
+			case 'miningHasStopped': return 'توقف التعدين.';
+			case 'miningHasStoppedDesc': return 'توقف تعدينك حاليًا، ابدأ الآن لكسب العوائد.';
+			case 'startMining': return 'بدء التعدين';
+			case 'changeMobileNumber': return 'تغيير رقم الجوال';
+			case 'currentMobileNumber': return 'رقم الجوال الحالي';
+			case 'newMobileNumber': return 'رقم الجوال الجديد';
+			case 'securityCodeFormatIs6digits': return 'تنسيق رمز الأمان يجب أن يكون 6 أرقام!';
+			case 'startVrification': return 'بدء التحقق';
+			case 'mobileNumberAlreadyExists_associated': return ({required Object dId}) => 'رقم الجوال هذا موجود بالفعل، مرتبط بـ DID: ${dId}';
+			case 'noDataYet': return 'لا توجد بيانات حتى الآن';
+			case 'previousMSISDN': return 'MSISDN السابق';
+			case 'changeLog': return 'سجل التغييرات';
+			case 'referralLinkToShare': return 'رابط الإحالة للمشاركة';
+			case 'referrer': return 'المُحيل';
+			case 'isoCountryCode': return 'رمز الدولة ISO';
+			case 'avatarLogo': return 'شعار الصورة الرمزية';
+			case 'creationTime': return 'وقت الإنشاء';
+			case 'lastUpdate': return 'آخر تحديث';
+			case 'numberOfSecurityCircleMembers': return 'عدد أعضاء دائرة الأمان';
+			case 'theLatestMining': return 'آخر تعدين';
+			case 'effectiveMiningDays': return 'أيام التعدين الفعالة';
+			case 'modifyNickname': return 'تعديل الاسم المستعار';
+			case 'didNotChange': return 'لم يتغير!';
+			case 'kycVerification': return 'تحقق KYC';
+			case 'faceID': return 'التعرف على الوجه';
+			case 'touchID': return 'البصمة';
+			case 'biometricsAuthorizationTest': return 'اختبار ترخيص القياسات الحيوية';
+			case 'currentState': return 'الحالة الحالية';
+			case 'biometricsAuthenticationLocalizedReason': return 'استخدم ميزة إلغاء قفل الجهاز للتحقق من الهوية.';
+			case 'graph': return 'الرسم البياني';
+			case 'referralRelationshipGraph': return 'مخطط علاقات الإحالة';
+			case 'nativeContacts': return 'جهات الاتصال المحلية';
+			case 'registrationAndMiningTrends': return 'اتجاهات التسجيل والتعدين';
+			case 'inMining': return 'قيد التعدين';
+			case 'registrationVolume': return 'حجم التسجيل';
+			case 'unmined': return 'غير مُستخرج';
+			case 'mined': return 'مستخرج';
+			case 'communityMining': return 'تعدين المجتمع';
+			case 'consensusPromotionFund': return 'صندوق تعزيز الإجماع';
+			case 'ecologicalIncentiveFund': return 'صندوق الحوافز البيئية';
+			case 'icpFuelCrowdfunding': return 'تمويل وقود ICP الجماعي';
+			case 'totalAllocation': return 'إجمالي التوزيع';
+			case 'miningRatio': return 'نسبة التعدين';
+			case 'billion.30': return '30 مليار';
+			case 'billion.60': return '60 مليار';
+			case 'billion.180': return '180 مليار';
+			case 'billion.300': return '300 مليار';
+			case 'watchAdsToSupportDevelopers': return 'شاهد إعلانات لدعم المطورين';
+			case 'loadingAdcomponents': return 'جارٍ تحميل مكونات الإعلان…';
+			case 'timeIsNotUp': return 'لم يحين الوقت!';
+			case 'loadingFailed_maybeTheNetworkIsBlocked': return 'فشل التحميل، قد يكون الشبك محجوبًا!';
+			case 'pointsDetails': return 'تفاصيل النقاط';
+			case 'pendingUSCTrecordsDesc': return 'سجلات USCT المعلقة ستتم مطابقتها مع شبكة الإعلانات خلال 15-30 يومًا؛ السجلات الصالحة ستُنقل إلى قائمة سجلات USCT وتُضاف المبالغ المقابلة إلى رصيد الحساب.';
+			case 'validity': return 'الصلاحية';
+			case 'advertiser': return 'المعلن';
+			case 'earned': return 'المكتسب';
+			case 'withdraw': return 'سحب';
+			case 'usctHistory': return 'سجل USCT';
+			case 'self': return 'نفسي';
+			case 'settlement': return 'التسوية';
+			case 'settlementReport': return 'تقرير التسوية';
+			case 'periodsSettlementSuccessful': return 'تمت تسوية هذه الفترة بنجاح!';
+			case 'timeRange': return 'نطاق الوقت';
+			case 'convertRate': return 'معدل التحويل';
+			case 'peoples': return 'أشخاص';
+			case 'alreadySettled': return 'تمت التسوية';
+			case 'reportID': return 'معرّف التقرير';
+			case 'USCTmining': return 'تعدين USCT';
+			case 'aboutUSCTmining': return 'حول تعدين USCT؟';
+			case 'aboutUSCTminingItme1': return '1. USDT هو عملة مستقرة دولية مشهورة مرتبطة بالدولار ويمكن استبدالها بسهولة بعملات سيادية في البورصات العالمية.';
+			case 'aboutUSCTminingItme2': return '2. USCT هو قيمة قياسية مؤقتة لعوائد تعدين USCT وهو اختصار USD credit، وفي النهاية سيتم تحويله إلى USDT حسب تسويات ونِسب منصات الإعلانات الفعلية.';
+			case 'aboutUSCTminingItme3': return '3. تعدين USCT هو ميزة تحقيق الإيرادات من الإعلانات لمجتمع دلتا. يستفيد المعلنون والمطورون والعمال من قاعدة مستخدمي دلتا الكبيرة. الهدف هو توفير دخل فعّال للعمال والمطورين في المراحل المبكرة من النظام البيئي حتى يتمكن المطورون من الاستمرار في تقديم الخدمات وتحقيق خطة الورقة البيضاء، كما يمنح المعلنين قناة تسويق فعالة.';
+			case 'aboutUSCTminingItme4': return '4. قاعدة التوزيع: 40% من العائد الإجمالي كمكافأة خدمة تقنية للمطورين و60% كمكافآت لعمال المجتمع. يتم توزيع مكافآت العمال بطريقة متعددة المستويات مشابهة لـ DTC بنسبة 6:3:1؛ 60% للعمال الذين يشاهدون الإعلان، 30% للمُحيل المباشر، 10% للمُحيل من المستوى الثاني. كذلك تحصل على مكافآت إحالة عندما يقوم من دعوتهم بتعدين USCT.';
+			case 'aboutUSCTminingItme5': return '5. دورة التسوية هي 7 أيام؛ تتم مطابقة العوائد مع منصات الإعلانات كل 7 أيام. الحد الأدنى للسحب هو 10 USDT.';
+			case 'linesXtoY': return ({required Object x, required Object y}) => 'السطر من ${x} إلى ${y}';
+			case 'wallet': return 'المحفظة';
+			case 'multiChainWallet': return 'محفظة متعددة السلاسل';
+			case 'deposit': return 'إيداع';
+			case 'transfer': return 'تحويل';
+			case 'xcoinInWallet': return ({required Object coinCode}) => '${coinCode} في عنوان المحفظة';
+			case 'transactions': return 'سجل المعاملات';
+			case 'network': return 'الشبكة';
+			case 'walletAddress': return 'عنوان المحفظة';
+			case 'currentAddress': return 'العنوان الحالي';
+			case 'depositAddress': return 'عنوان الإيداع';
+			case 'receivingMoneyAddress': return 'عنوان الاستلام';
+			case 'applyTempDepositAddress': return 'طلب عنوان إيداع مؤقت';
+			case 'tempDepositAddressTip': return '1. هذا عنوان إيداع مشترك. لا تقم بالإيداع بعد انتهاء الإيجار أو إلغاء الارتباط؛ إذا حدث ذلك قد تفقد المبلغ.';
+			case 'tempDepositAddressTip2': return '2. قبل الإيداع تأكد تمامًا من تطابق [اسم السلسلة] و[اسم العملة]؛ وإذا كانت توكنات عقدية فتأكد أيضًا من تطابق [معيار العقد] و[عنوان العقد].';
+			case 'tempDepositAddressTip3': return '3. لا تحاول إيداع أصول لا تتطابق مع أي من المعايير أعلاه، وإلا ستفقد المبلغ.';
+			case 'tempDepositAddressTip4': return '4. إذا كنت بحاجة لإيداع نوع آخر من الأصول، قم بالتبديل إلى صفحة العملة المناسبة واطلب عنوانًا جديدًا.';
+			case 'applyExtensionOfValidity': return 'طلب تمديد الصلاحية';
+			case 'depositAddressExpireTip': return ({required InlineSpan diff, required InlineSpanBuilder tap}) => TextSpan(children: [
+				const TextSpan(text: 'سينتهي هذا العنوان بعد '),
+				diff,
+				const TextSpan(text: '، ويمكن '),
+				tap('يدويًا تمديد'),
+				const TextSpan(text: ' الصلاحية خلال 6 ساعات قبل انتهاء الصلاحية.'),
+			]);
+			case 'canOnlyRenewWithin6hoursInAdvance': return 'يمكن التجديد فقط خلال 6 ساعات قبل الموعد';
+			case 'theReceivingAddressValidForLongtime': return 'هذا العنوان صالح لفترة طويلة.';
+			case 'theReceivingAddressValidForLongtimeAndAutomaticallyCredited': return 'هذا العنوان صالح لفترة طويلة ويُقيد تلقائيًا عند الوصول.';
+			case 'confirmDeposited': return 'تأكيد الإيداع';
+			case 'unbindThisDepositAddress': return 'إلغاء ربط عنوان الإيداع هذا';
+			case 'confirmDepositedTip': return 'إذا قمت بتحويل الأموال، يرجى النقر على الزر أعلاه بعد 10 دقائق لتحفيز تسجيل القيود في المحفظة.';
+			case 'unbindDepositAddressTip': return 'لتقليل تكلفة تشغيل العقود الذكية، إذا لم تعد تخطط للإيداع ضمن فترة الصلاحية، يرجى إلغاء ربط عنوان الإيداع.';
+			case 'transferToAddress': return 'التحويل إلى العنوان';
+			case 'longPressToPaste': return 'اضغط مطولاً للصق';
+			case 'all': return 'الكل';
+			case 'balanceX': return ({required Object x}) => 'الرصيد ${x}';
+			case 'transferOut': return 'تحويل للخارج';
+			case 'depositXcoins': return ({required Object x}) => 'وُقِعَ ${x}';
+			case 'sender': return 'المرسل';
+			case 'recipient': return 'المستلم';
+			case 'memo': return 'مذكرة';
+			case 'kind': return 'الطريقة';
+			case 'transferAmountExceedsAvailableBalance': return 'مبلغ التحويل يتجاوز الرصيد المتاح';
+			case 'pleaseEnterValidAmount': return 'يرجى إدخال مبلغ صالح';
+			case 'networkFee': return 'رسوم الشبكة';
+			case 'fee': return 'الرسوم';
+			case 'validLengthXcharacters': return ({required Object x}) => 'طول العنوان الصحيح ${x} حرفًا';
+			case 'historys': return 'السجلات';
+			case 'dtcCreditdetail': return 'تفاصيل رصيد Delta';
+			case 'usdCreditdetail': return 'تفاصيل رصيد USD';
+			case 'dappSquare': return 'ساحة dApp';
+			case 'amountRaised': return 'المبلغ الذي تم جمعه';
+			case 'disbursedAmount': return 'المبلغ المصروف';
+			case 'participationTimes': return 'مرات المشاركة';
+			case 'completionRate': return 'معدل الإنجاز';
+			case 'exchangeRate': return 'سعر الصرف';
+			case 'icpCrowdfunding': return 'تمويل جماعي ICP';
+			case 'crowdfunding': return 'التمويل الجماعي';
+			case 'trendsCurve': return 'منحنى الاتجاهات';
+			case 'fullScreenView': return 'عرض ملء الشاشة';
+			case 'walletBalance': return 'رصيد المحفظة:';
+			case 'manageWallet': return 'إدارة المحفظة';
+			case 'fundraiseAmount': return 'مبلغ جمع التمويل';
+			case 'exchangeRewardAmount': return 'مبلغ مكافأة الاستبدال';
+			case 'fundraise': return 'جمع التمويل';
+			case 'rangeIntegersX': return ({required Object x}) => 'النطاق: أعداد صحيحة ${x}';
+			case 'successfullParticipatingFundraisingXtip': return ({required Object amount}) => 'تمت المشاركة بنجاح في التمويل وحصلت على مكافأة ${amount} DTCT';
+			case 'amountSummary': return 'ملخص المبلغ';
+			case 'changePreferred': return 'تغيير المفضل';
+			case 'changePreferredAddress': return 'تغيير العنوان المفضل';
+			case 'preferredAddressTip': return 'عند استخدام رقم جوال مسجل أو DID للقبض، سيتم تحويل الأموال تلقائيًا إلى العنوان المفضل.';
+			case 'newAddress': return 'عنوان جديد';
+			case 'newAddressTip': return 'لتجنب إساءة الاستخدام، عند وجود أكثر من عنوان محفظة واحد، سيتم فرض رسوم معاملة عند إنشاء كل عنوان جديد.';
+			case 'createNew': return 'إنشاء جديد';
+			case 'chainNetworkName': return 'اسم شبكة السلسلة';
+			case 'from': return 'من';
+			case 'to': return 'إلى';
+			case 'noAvailableDepositAmountDetected': return 'لم يتم اكتشاف مبلغ إيداع متاح!';
+			case 'crossChainReceiveMoneyMonitoring': return 'يتم الاستماع لعمليات الاستلام عبر السلاسل…';
+			case 'receivedV': return ({required InlineSpan v}) => TextSpan(children: [
+				const TextSpan(text: 'تم الاستلام ('),
+				v,
+				const TextSpan(text: ')'),
+			]);
+			case 'confirming': return ({required InlineSpan v}) => TextSpan(children: [
+				const TextSpan(text: 'جارٍ التأكيد ('),
+				v,
+				const TextSpan(text: ')'),
+			]);
+			case 'thingsToNote_forNewbies': return 'ملاحظات (للمبتدئين)';
+			case 'whyUseSharedAddresses': return 'لماذا استخدام عناوين مشتركة؟';
+			case 'useSharedrAdvantage': return 'في الودائع عبر السلاسل، مزايا اعتماد العناوين المشتركة هي:';
+			case 'useSharedrAdvantage1': return '1. تقليل هدر رسوم التحويل وتقليل تكلفة المستخدم. استخدام عنوان مخصص قد يشتت الأموال ويتطلب جمعًا لاحقًا لإدارة السحوبات.';
+			case 'useSharedrAdvantage2': return '2. في الحل المشترك، يحتفظ البرنامج بمجموعة عناوين أصغر لمطابقة الأموال الواردة ومراقبة الاستلام خفيفة الوزن، مما يقلل من استهلاك الموارد. على العكس إذا استُخدمت عناوين مخصصة سيزيد الحمل.';
+			case 'tokenType': return 'نوع التوكن';
+			case 'contract': return 'العقد';
+			case 'contractStandard': return 'معيار العقد';
+			case 'contractAddress': return 'عنوان العقد';
+			case 'native': return 'أصلي';
+			case 'listAllWorkingTempReceivingAddresses': return 'قائمة بجميع عناوين الإيداع العابرة التي تعمل';
+			case 'setNote': return 'تعيين ملاحظة';
+			case 'lengthCannotExceedXbytes': return ({required Object x}) => 'لا يمكن أن تتجاوز الطول ${x} بايت';
+			case 'transferFee': return 'رسوم التحويل';
+			case 'crossChainFee': return 'رسم عبر السلاسل';
+			case 'crossChainTransferOutError': return 'خطأ في التحويل عبر السلاسل';
+			case 'chainName': return 'اسم السلسلة';
+			case 'message': return 'الرسالة';
+			case 'dontShowAgain': return 'لا تعرض مرة أخرى';
+			case 'queuing': return 'في الانتظار';
+			case 'optional': return 'اختياري';
+			case 'publiclyVisible': return 'مرئي للعامة';
+			case 'rates': return 'الرسوم';
+			case 'minimum': return 'الحد الأدنى';
+			case 'maximum': return 'الحد الأقصى';
+			case 'minimumBlockConfirmations': return 'الحد الأدنى لتأكيدات الكتل';
+			case 'dsmsVerifyTerminal': return 'طرف تحقق DSMS';
+			case 'overall': return 'الإجمالي';
+			case 'my': return 'خاصتي';
+			case 'checkValidatorQualifications': return 'التحقق من مؤهلات المدقق';
+			case 'getVerifierPermissions': return 'الحصول على أذونات المدقق';
+			case 'qualification': return 'المؤهلات';
+			case 'upperLimit': return 'الحد الأعلى';
+			case 'maximumNumberOfTerminalsAllowedToAccess': return 'الحد الأقصى لعدد الأطراف المسموح لها بالوصول';
+			case 'numberOfExistingAccessTerminals': return 'عدد أطراف الوصول الموجودة';
+			case 'applyingForDSMSVerifierPermissionsTips': return 'قبل التقديم لأذونات المدقق، تحتاج إلى هاتف أندرويد غير مستخدم ورقم وصول مخصص وتنزيل تطبيق طرف وصول DSMS.';
+			case 'downloadLink': return 'رابط التنزيل';
+			case 'alreadyReadyFollowingTheAboveTips': return 'جاهز وفقًا للإرشادات أعلاه';
+			case 'globalUniversal': return 'عالمي';
+			case 'insufficientLocalVerifierTips': return ({required InlineSpan gu}) => TextSpan(children: [
+				const TextSpan(text: 'لا يوجد عدد كافٍ من المدققين المحليين لخدمة DSMS في منطقتك، يرجى اختيار "'),
+				gu,
+				const TextSpan(text: '" كخدمة وصول.'),
+			]);
+			case 'asDedicatedNumberForAccess': return 'كرقم مخصص للوصول';
+			case 'pleaseCheckTip': return ({required Object tip}) => 'يرجى وضع علامة على "${tip}"';
+			case 'inputLengthTooShort': return 'طول الإدخال قصير جدًا';
+			case 'shortName': return 'الاسم المختصر';
+			case 'pleaseEnterXname': return ({required Object name}) => 'يرجى إدخال ${name}';
+			case 'applicationIsBeingSubmitted_pleaseWait': return 'جاري تقديم الطلب، يرجى الانتظار...';
+			case 'applyForDSMSVerifierPermission': return 'التقدم لأذونات مدقق DSMS';
+			case 'confirmInformation': return 'تأكيد المعلومات';
+			case 'lastHeartbeat': return 'آخر نبضة حياة';
+			case 'expirationTime': return 'وقت الانتهاء';
+			case 'country': return 'البلد';
+			case 'accessTerminals': return 'أطراف الوصول';
+			case 'totalNumberOfDSMSaccessNumberTerminals': return 'إجمالي عدد أطراف أرقام وصول DSMS';
+			case 'textContent': return 'محتوى النص';
+			case 'scanQRcodeToLogin': return 'مسح رمز QR لتسجيل الدخول';
+			case 'confirmLogin': return 'تأكيد تسجيل الدخول';
+			case 'authorizeDappAppToLogin': return 'تفويض هذا التطبيق الفرعي لتسجيل الدخول';
+			case 'authorizationSuccessful': return 'التفويض ناجح!';
+			case 'launchSMSprogram': return 'تشغيل برنامج الرسائل القصيرة';
+			case 'notApplied': return 'لم يتم التقديم';
+			case 'validityPeriod': return 'فترة الصلاحية';
+			case 'renewal': return 'تجديد';
+			case 'scanCodeToAuthorizeTerminalLogin': return 'مسح الرمز لتفويض تسجيل دخول الطرف';
+			case 'rewards': return 'المكافآت';
+			case 'roles': return 'الأدوار';
+			case 'developerCenter': return 'مركز المطورين';
+			case 'appName': return 'اسم التطبيق';
+			case 'pleaseSelect': return 'الرجاء الاختيار';
+			case 'category': return 'الفئة';
+			case 'keywords': return 'الكلمات المفتاحية';
+			case 'pleaseEnterAkeyword': return 'يرجى إدخال كلمة مفتاحية';
+			case 'createApplication': return 'إنشاء تطبيق';
+			case 'appType': return 'نوع التطبيق';
+			case 'numberOfCategoriesMustBetween1and3': return 'يجب أن تكون عدد الفئات بين 1 و 3';
+			case 'appLogoSpecifications': return 'مواصفات الصورة: png، الحجم أقل من 100KB، الدقة: 256*256 بكسل';
+			case 'localAlbum': return 'ألبوم محلي';
+			case 'networkPath': return 'مسار الشبكة';
+			case 'imageURLkAddress': return 'عنوان رابط الصورة';
+			case 'urlAddressFormatIsIncorrect': return 'تنسيق عنوان URL غير صحيح';
+			case 'imageFormatOnlySupportsPng': return 'الصورة تدعم فقط تنسيق "png".';
+			case 'lengthMustBeBetweenA_BCharacters': return ({required Object a, required Object b}) => 'يجب أن يكون الطول بين ${a}-${b} حرفًا';
+			case 'introduction': return 'مقدمة';
+			case 'imageSizeCannotBeLargerThanA_currentlyB': return ({required Object a, required Object b}) => 'حجم الصورة لا يمكن أن يتجاوز ${a}، الحالي ${b}';
+			case 'imageResolutionMustBeP1pixels_currentlyP2': return ({required Object p1, required Object p2}) => 'دقة الصورة يجب أن تكون ${p1} بكسل، الحالي ${p2}';
+			case 'becomeDeveloper': return 'أصبح مطورًا';
+			case 'developerInformation': return 'معلومات المطور';
+			case 'teamName': return 'اسم الفريق';
+			case 'website': return 'الموقع';
+			case 'other': return 'أخرى';
+			case 'githubVerification': return 'التحقق عبر GitHub';
+			case 'exampleUrl': return 'رابط نموذجي';
+			case 'githubVerificationTip': return ({required Object did}) => 'يرجى إنشاء ملف \'delta.did\' في مستودع GitHub الخاص بك بمحتوى \'${did}\'، ثم لصق رابط raw.githubusercontent.com الخاص بهذا الملف في هذا الحقل للتحقق من الهوية.';
+			case 'createApp': return 'إنشاء تطبيق';
+			case 'appManagement': return 'إدارة التطبيقات';
+			case 'statusLogs': return 'سجلات الحالة';
+			case 'bad': return 'سيء';
+			case 'normal': return 'عادي';
+			case 'good': return 'جيد';
+			case 'onceCreatedItCannotBeChanged': return 'بمجرد الإنشاء لا يمكن تغييره!';
+			case 'manageApplicationEntity': return 'إدارة كيان التطبيق';
+			case 'currentVersion': return 'الإصدار الحالي';
+			case 'submitVersion': return 'تقديم الإصدار';
+			case 'packageOnlySupportZipCompressedFile': return 'الحزمة تدعم فقط ملفات مضغوطة zip';
+			case 'theXfileWasNotFoundInTheZipPackage': return ({required Object name}) => 'لم يتم العثور على الملف \'${name}\' في حزمة zip';
+			case 'fileList': return 'قائمة الملفات:';
+			case 'programPackage': return 'حزمة البرنامج:';
+			case 'automaticallyExtractFromVersionFile': return 'استخراج تلقائيًا من ملف \'.version\'';
+			case 'dappVersionFormatTip': return 'صيغة رقم الإصدار يجب أن تكون عشرية مع دقة منزلتين، ولا تتجاوز 99.99';
+			case 'versionNumberMustBeGreaterThanCurrentVersionX': return ({required Object v}) => 'يجب أن يكون رقم الإصدار أكبر من الإصدار الحالي \'${v}\'';
+			case 'versionNotes': return 'ملاحظات الإصدار:';
+			case 'updateRelease': return 'تحديث الإصدار';
+			case 'loadAndRun': return 'تحميل وتشغيل';
+			case 'notYetSubmittedProgramPackage': return 'لم يتم تقديم حزمة البرنامج بعد!';
+			case 'authorizeMinidAppLogin': return 'تفويض تسجيل دخول mini-dApp';
+			case 'confirmAuthorizationPleaseEnterYes': return 'لتأكيد التفويض، الرجاء إدخال "yes"';
+			case 'authorizeNow': return 'فوض الآن';
+			case 'operation': return 'العملية: ';
+			case 'statusChange': return 'تغيير الحالة';
+			case 'changeTo': return 'التغيير إلى:';
+			case 'notes': return 'ملاحظات: ';
+			case 'changesNotEffective': return 'التغييرات غير فعالة!';
+			case 'released': return 'نُشر';
+			case 'inPublicBeta': return 'في النسخة التجريبية العامة';
+			case 'developers': return 'المطورون: ';
+			case 'reviewList': return 'قائمة التعليقات: ';
+			case 'postReview': return 'نشر تعليق';
+			case 'scoreNow': return 'قيّم الآن';
+			case 'description': return 'الوصف: ';
+			case 'noData': return '(^-^) \n لا توجد بيانات';
+			case 'versionHasBeenUpdatedFromAtoB': return ({required Object a, required Object b}) => 'تم تحديث الإصدار من ${a} إلى ${b}';
+			case 'loadNewVersion': return 'تحميل إصدار جديد';
+			case 'name': return 'الاسم: ';
+			case 'canisterId': return 'معرّف الحاوية: ';
+			case 'updateTime': return 'وقت التحديث';
+			case 'contractCanistersState': return 'حالة حاويات العقد';
+			case 'userDistribution': return 'توزيع المستخدمين';
+			case 'settings': return 'الإعدادات';
+			case 'security': return 'الأمان';
+			case 'invite': return 'دعوة';
+			case 'more': return 'المزيد…';
+			case 'receiveAddress': return 'عنوان الاستلام:';
+			case 'hangingAmount': return 'المبلغ المعلق';
+			case 'points': return 'النقاط:';
+			case 'pendingPointsTips': return 'النقاط تشير إلى الحصص التي لم تُؤكد بعد مع المعلنين. \nنسب التحويل تختلف بين القنوات والقاعدة النهائية هي تسوية الشبكة الإعلانية الفعلية.';
+			case 'received': return 'تم الاستلام';
+			case 'processing': return 'قيد المعالجة';
+			case 'replied': return 'تم الرد';
+			case 'rejected': return 'مرفوض';
+			case 'unknown': return 'غير معروف';
+			case 'insufficientBalance': return 'الرصيد غير كافٍ!';
+			case 'InsufficientXbalanceToPayCrossChainNetworkFee': return ({required Object x}) => 'الرصيد ${x} غير كافٍ لدفع رسوم الشبكة عبر السلاسل';
+			case 'aTransactionThatHasNotBeenCompleted_CannotBeTransferredAtMoment': return 'هناك معاملة لم تكتمل، لا يمكن التحويل في الوقت الحالي';
+			case 'thisfunctionNotSupportExternalCalls': return 'هذه الدالة لا تدعم الاستدعاءات الخارجية';
+			case 'noMatchingAddressThatCanBeUsedToPayCrossChainFees_switchOtherChainToTry': return 'لم يتم العثور على عنوان مناسب لدفع رسوم عبر السلاسل، يرجى تبديل الشبكة لمحاولة.';
+			case 'currentMaximumMatchedSingleTransferAmountIsX': return ({required Object x}) => 'أقصى مبلغ تحويل مفرد مطابق حاليًا هو ${x}';
+			case 'memoMustNotBeMoreThan64bytes': return 'يجب ألا تتجاوز المذكرة 64 بايت';
+			case 'insufficientBalance_theAmountIsX': return ({required Object x}) => 'الرصيد غير كافٍ، المبلغ هو: ${x}';
+			case 'boundRreceivingAddressesExceed3Tip': return 'عدد عناوين الاستلام المرتبطة لا يمكن أن يتجاوز 3.\nلإضافة عنوان جديد، يرجى إلغاء ربط أحد العناوين الأخرى أولاً';
+			case 'parametersA_exception': return ({required Object x}) => 'الوسيط: ${x}، استثناء';
+			case 'transferAmountMustBeLargerThan0': return 'يجب أن يكون مبلغ التحويل أكبر من 0';
+			case 'authorizationHasExpired': return 'انتهت صلاحية التفويض';
+			case 'theAppHasNotBeenAuthorizedByOwner': return 'التطبيق لم يحصل بعد على تفويض من المالك';
+			case 'authenticationTokenIsInvalid': return 'رمز المصادقة غير صالح';
+			case 'verifyInfoIsInvalidOrExpired': return 'معلومات التحقق غير صالحة أو منتهية الصلاحية';
+			case 'verifyThatNumberOfAccessTerminalsHasExceededLimitOf1in10000': return 'تم تجاوز حد عدد أطراف الوصول وهو واحد لكل 10000';
+			case 'timeToParticipateInMiningMustBeMoreThan3Days': return 'مدة المشاركة في التعدين يجب أن تكون أكثر من 3 أيام';
+			case 'numberOfSafetyCircleCannotBeLessThan3': return 'لا يمكن أن يقل عدد أعضاء دائرة الأمان عن 3';
+			case 'avatarIsNotSet': return 'لم يتم إعداد الصورة الرمزية';
+			case 'numberOfDirectReferralsCannotBeLessThan3': return 'لا يمكن أن يقل عدد الإحالات المباشرة عن 3';
+			case 'insufficientTimeLimit_changeMSISDNInterval3months': return 'الحد الزمني غير كافٍ، تغيير MSISDN يتطلب فاصلًا لا يقل عن 3 أشهر.';
+			case 'mobileNumberAlreadyExistsAndCannotBeRepeated': return 'رقم الجوال موجود بالفعل ولا يمكن تكراره';
+			case 'securityCodeIsIncorrect': return 'رمز الأمان غير صحيح';
+			case 'securityCodeMayHaveExpired': return 'قد يكون رمز الأمان منتهي الصلاحية';
+			case 'sessionIdIsInvalidOrExpired': return 'معرف الجلسة غير صالح أو منتهي الصلاحية';
+			case 'sessionHasBeenAuthorized': return 'تم تفويض هذه الجلسة!';
+			case 'canOnlyBeRenewedWithinXdaysBeforeExpiration': return ({required Object x}) => 'يمكن التجديد فقط خلال ${x} يومًا قبل انتهاء الصلاحية';
+			case 'notYetGrantedDeveloperPermissions': return 'لم تُمنح أذونات المطور بعد';
+			case 'fieldXcannotBeEmpty': return ({required Object x}) => 'الحقل ${x} لا يمكن أن يكون فارغًا';
+			case 'emailFormatError': return 'تنسيق البريد الإلكتروني غير صحيح';
+			case 'theXformatIsIncorrect': return ({required Object x}) => 'تنسيق \'${x}\' غير صحيح';
+			case 'lengthOfFieldXmustBeBetweenYandXcharacters': return ({required Object x, required Object y, required Object z}) => 'يجب أن يكون طول الحقل "${x}" بين ${y} و ${z} حرفًا.';
+			case 'theXselectionMustBeBetweenYandX': return ({required Object x, required Object y, required Object z}) => 'يجب أن تكون اختيارات \'${x}\' بين ${y} و ${z}';
+			case 'unchanged_sameAsOldContent': return 'لم يتغير، نفس المحتوى القديم!';
+			case 'XYalreadyexists': return ({required Object x, required Object y}) => '${x}: \'${y}\' موجود بالفعل!';
+			case 'mobileNumberHasNotJoinedDelta': return 'هذا الرقم لم ينضم بعد إلى دلتا!';
+			case 'referrerIdCannotBeEmpty': return 'معرّف المُحيل لا يمكن أن يكون فارغًا!';
+			case 'referrerIdDoesNotExist': return 'معرّف المُحيل غير موجود!';
+			case 'didIsIncorrectOrInvalid': return 'الـ DID غير صحيح أو غير صالح!';
+			case 'accessTokenIsIncorrectOrInvalid': return 'رمز الوصول غير صحيح أو غير صالح!';
+			case 'minimumWithdrawalAmountIs1USD': return 'الحد الأدنى للسحب هو 1 دولار';
+			case 'miningTimeIsNotYet': return 'لم يحين وقت التعدين بعد';
+			case 'alreadyExists_pleaseDoNotRepeatedly': return 'موجود بالفعل، يرجى عدم الإضافة المتكررة!';
+			case 'registrationNumberCannotBeUsedAsAccessNumber': return 'لا يمكن استخدام رقم المسجل كرقم وصول للتحقق';
+			case 'canotAddYourSelf': return 'لا يمكنك إضافة نفسك';
+			case 'logOut': return 'تسجيل الخروج';
+			case 'confirmLogout': return 'تأكيد تسجيل الخروج';
+			case 'logOutTipsText': return 'تذكير: وفقًا لما ورد في الورقة البيضاء، سيُستهلك جزء من عملات DTC كمكافأة للمدققين في كل عملية تسجيل دخول؛ لا تحاول تسجيل الدخول أو الخروج دون ضرورة. النقر على الزر أدناه سيؤدي إلى تسجيل الخروج فورًا.';
+			case 'tip': return 'تلميح';
+			case 'cancel': return 'إلغاء';
+			case 'close': return 'إغلاق';
+			case 'selected': return 'محدد';
+			case 'edit': return 'تعديل';
+			case 'submit': return 'إرسال';
+			case 'goBack': return 'عودة';
+			case 'copiedToClipboard': return 'تم النسخ إلى الحافظة.';
+			case 'nickname': return 'الاسم المستعار';
+			case 'confirm': return 'تأكيد';
+			case 'cannotBeEmpty': return 'لا يمكن أن يكون فارغًا';
+			case 'deleteSuccessful': return 'تم الحذف بنجاح!';
+			case 'successfullyModified': return 'تم التعديل بنجاح!';
+			case 'executionSuccessful': return 'تم التنفيذ بنجاح!';
+			case 'parameterException': return 'استثناء في المعلمات!';
+			case 'preview': return 'معاينة';
+			case 'useSystemDefault': return 'استخدام إعداد النظام الافتراضي';
+			case 'change': return 'تغيير';
+			case 'replace': return 'استبدال';
+			case 'view': return 'عرض';
+			case 'manage': return 'إدارة';
+			case 'modify': return 'تعديل';
+			case 'replacedSuccessfully': return 'تم الاستبدال بنجاح!';
+			case 'authentication': return 'المصادقة';
+			case 'reacquire': return 'إعادة الحصول';
+			case 'tryAgain': return 'حاول مرة أخرى';
+			case 'querying': return 'جارٍ الاستعلام …';
+			case 'writingToOnChain_pleaseWait': return 'جارٍ الكتابة على السلسلة، يرجى الانتظار …';
+			case 'versionCheck': return 'التحقق من الإصدار';
+			case 'alreadyLatestVersion': return 'أنت على أحدث إصدار!';
+			case 'foundNewVersion': return 'تم العثور على إصدار جديد:';
+			case 'upgradeLink': return 'رابط الترقية: ';
+			case 'deviceDescription': return 'وصف الجهاز: ';
+			case 'notification30SecondsBeforeMiningStops': return 'تنبيه قبل 30 ثانية من توقف التعدين!';
+			case 'goMining': return 'اذهب للتعدين';
+			case 'deltaMiningReminder': return 'تذكير تعدين دلتا';
+			case 'clickToMine_miningIsAboutToStop': return 'انقر هنا للتعدين، التعدين على وشك التوقف!';
+			case 'incorrect_input': return 'إدخال غير صحيح!';
+			case 'are_you_sure_delete': return 'هل أنت متأكد من الحذف؟';
+			case 'delete_account': return 'حذف الحساب';
+			case 'how_to_operate_it': return 'كيفية التشغيل؟';
+			case 'deletion_warning_tip': return 'إذا حذفت الحساب، ستفقد جميع عملات دلتا وأي أرباح جلبتها لك الأعضاء الآخرين.';
+			case 'launchWhatsAppProgram': return 'تشغيل تطبيق WhatsApp';
+			case 'sms': return 'رسالة نصية';
+			case 'whatsApp_verification_tips': return 'تُشير أيقونة بهذا الشكل إلى أن رقم الوصول يدعم التحقق عبر WhatsApp. عند إرسال رسائل دولية، يُنصح باستخدام WhatsApp لرفع معدل النجاح وتقليل التكلفة.';
+			case 'ihaveSentVerificationString': return 'لقد أرسلت سلسلة التحقق';
+			case 'totalOfPeople': return 'إجمالي الأشخاص: ';
+			case 'numberOfPeopleMining': return 'عدد أشخاص التعدين';
+			case 'useBrowserScanQRcodeToSMSprogram': return 'يمكنك استخدام جهاز آخر لمسح رمز QR عبر المتصفح وإرساله إلى برنامج الرسائل القصيرة';
+			case 'toggle': return 'تبديل';
+			case 'DSMSverifier': return 'مدقق DSMS';
+			case 'activate': return 'تفعيل';
+			case 'activated': return 'مفعل';
+			case 'generateActivationCommand': return 'توليد أمر التفعيل';
+			case 'activationCommand': return 'أمر التفعيل';
+			case 'activationSentedTip': return 'بعد إرسال رسالة التفعيل، تحقق من حالة التفعيل على جهاز طرف الوصول.';
+			case 'biometricsNotEnabledTip': return 'لم يتم تمكين القياسات الحيوية (وجه أو بصمة) على جهازك، يرجى التمكين للمتابعة.';
+			case 'error': return 'خطأ';
+			case 'exceptionOccurredWhenCallingBiometric': return 'حدث استثناء عند استدعاء مِيزة القياسات الحيوية!';
+			case 'accessNumberSelectionTip': return ({required InlineSpan checkedNum, required InlineSpan shouldNum}) => TextSpan(children: [
+				const TextSpan(text: 'لقد تم اختيار '),
+				checkedNum,
+				const TextSpan(text: ' من أرقام الوصول، يجب اختيار '),
+				shouldNum,
+				const TextSpan(text: '.'),
+			]);
+			case 'sentaboveXaccessNumbers': return ({required Object text, required Object n}) => 'هل تم إرسال ${text} إلى ${n} أرقام الوصول أعلاه؟';
+			case 'interface': return 'الواجهة:';
+			case 'waitingTimeoutOrSenderNumberMismatch': return 'انتهت مهلة الانتظار أو رقم المرسل غير متطابق';
+			case 'mobileNumberOfsecurityCircleYouFilledDoesntMatch': return ({required Object x}) => 'رقم الجوال الذي أدخلته لعضو دائرة الأمان غير متطابق: ${x}';
+			case 'loginWithin10MinutesOfLoggingOutAvoidTwoFactorVerification': return 'تسجيل الدخول خلال 10 دقائق من تسجيل الخروج يتجنب التحقق ذو العاملين.';
+			case 'leastXmobileNumbersMustCompleted': return ({required Object n}) => 'يجب إكمال ما لا يقل عن ${n} أرقام جوال';
+			case 'noAccessNumberInYourRegionYet': return 'لا توجد أرقام وصول في منطقتك بعد';
+			case 'notEnoughAccessNumbersInYourRegion': return 'أرقام الوصول في منطقتك غير كافية';
+			case 'tipsForDeployDSMSterminal': return 'النظام قام بتحميل بعض أرقام الوصول من دول أخرى تلقائيًا. لخفض التكلفة وتحسين الخدمة، ننصحك أو شريك الإحالة بنشر طرف DSMS محليًا لكسب رسوم التحقق.';
+			case 'noOneCanProvideMeTheSecurityCode': return 'لا أحد يستطيع أن يزودني برمز الأمان؟';
+			case 'useSupplementalMode': return 'استخدام الوضع التكميلي';
+			case 'returnToSecurityCodeMode': return 'العودة إلى وضع رمز الأمان';
+			case 'enterTheirAssociatedMobileNumber_countryCodeCanBeOmitted': return 'أدخل أرقام جوالاتهم المرتبطة، يمكن حذف رمز الدولة.';
+			case 'mobileNumberForNameIsIncorrect': return ({required Object name}) => 'رقم الجوال الخاص بـ ${name} غير صحيح';
+			case 'matchingVerificationStrategyIs': return 'استراتيجية التحقق المطابقة هي:';
+			case 'balanceGreater3ICP_noNeedPourFuel': return 'الرصيد أكبر من 3 ICP فلا حاجة لصب الوقود مؤقتًا.';
+			case 'escrowAccount': return 'حساب الضمان';
+			case 'fuelRelay': return 'مرحّل الوقود';
+			case 'pourFuel': return 'صب الوقود';
+			case 'fuelState': return 'حالة الوقود';
+			case 'pouringFuelTips': return 'صب الوقود لن يجلب لك منفعة أو ضررًا؛ الهدف إثراء تجربة نظام دلتا.';
+			case 'sponsorDevelopersByWatchingAds': return 'رعاية المطورين بمشاهدة الإعلانات';
+			case 'status': return 'الحالة';
+			case 'date': return 'التاريخ';
+			case 'assetApplicationIsInProgressTip': return 'جاري معالجة طلب الأصل، يرجى المحاولة بعد 3 ثوانٍ.';
+			case 'delete': return 'حذف';
+			case 'deleteVerifierTip': return 'عند حذف أذونات المدقق، سيتم حذف جميع بيانات الدرجات ذات الصلة، لكن المكافآت المكتسبة لن تتأثر.';
+			case 'deleteVerifierStatusTip': return 'يرجى ضبط الحالة إلى مُعَلّق قبل الحذف';
+			case 'pleaseEnterXtoConfirm': return ({required Object text}) => 'يرجى إدخال "${text}" للتأكيد';
+			case 'localSecurity': return 'الأمان المحلي';
+			case 'deviceLock': return 'قفل الجهاز';
+			case 'patternLock': return 'قفل النمط';
+			case 'none': return 'لا شيء';
+			case 'exist': return 'موجود';
+			case 'prompt': return 'تنبيه:';
+			case 'localSecurityTip1': return '1. تُستخدم المصادقة المحلية للتحقق من الهوية في بعض العمليات الحساسة، بهدف حماية الحساب عند فقدان الجهاز أو سيطرته من قبل الآخرين.';
+			case 'localSecurityTip2': return '2. قفل النمط حل تكميلي عندما لا يدعم قفل الجهاز أو عندما يكون غير متوافق؛ إذا كان قفل الجهاز متاحًا فلا حاجة لقفل النمط عادةً.';
+			case 'localSecurityTip3': return '3. إذا نسيت قفل النمط، فلا طريقة لإزالته سوى مسح بيانات التطبيق أو إعادة تثبيت التطبيق.';
+			case 'deviceAuthFirstTip': return ({required Object menu, required Object localSecurity}) => 'ستتم دعوة مصادقة الجهاز قريبًا؛ إذا حدث خطأ، اذهب إلى صفحة "${menu}" ثم خيار "${localSecurity}" للاختبار وإعدادات إضافية.';
+			case 'pleaseDrawUnlockPattern': return 'يرجى رسم نمط الفتح';
+			case 'addPatternLock': return 'إضافة قفل نمط';
+			case 'cannotBeLessThan8Dots': return 'لا يمكن أن يقل عن 8 نقاط';
+			case 'pleaseRepeatThePattern': return 'يرجى تكرار رسم النمط';
+			case 'notMatchFirstValidPattern': return 'لا يتطابق مع النمط الصالح الأول';
+			case 'deletePatternLock': return 'حذف قفل النمط';
+			case 'notMatchExistingPattern': return 'لا يتطابق مع النمط الموجود';
+			case 'localAuthentication': return 'التحقق المحلي';
+			case 'noSettlementAmountAvailableForThisPeriod': return 'لا يوجد مبلغ تسوية متاح لهذه الفترة';
+			case 'verificationChannel': return 'قناة التحقق';
+			case 'launchAdTips': return 'تمكين "launchAd" يعني عرض إعلان عند بدء التطبيق وتحويل نتيجته إلى وزن تعدين USCT.';
+			case 'help': return 'مساعدة';
+			case 'verifyOriginalMSISDN': return 'التحقق من MSISDN الأصلي';
+			case 'noLongerPopup': return 'لا يظهر مرة أخرى';
+			case 'encoding': return 'طريقة الترميز:';
+			case 'switchingVerificationStringEncodingMethodsTips': return 'تبديل طرق ترميز سلسلة التحقق يساعد على تجاوز حجب شركات الاتصالات.';
+			case 'remainUnchanged': return 'حافظ على نفس الشيء';
+			case 'offersGuidline1': return '1). لتعزيز أرباح USCT للمستخدم، نتعاون مع شبكات Offerwall معروفة مثل Playtime وAyet Studios. يمكن للمستخدمين كسب نقاط عبر مهام بسيطة مثل "تنزيل التطبيق وفتحه" أو "تنزيل لعبة والتقدم" أو "قضاء وقت في اللعبة". اقرأ المعلومات التالية لفهم النقاط الأساسية.';
+			case 'offersGuidline2': return '2). يكافأ المستخدمون بالنقاط عند إكمال العروض. على عكس الإعلانات، تم تحديد نسبة تحويل النقاط إلى USDT سلفًا. وفقًا لبيانات الشبكات المختلفة، قد يتراوح سعر التحويل من 235000 نقطة = 1 USDT إلى 250000 نقطة = 1 USDT.\n\nيمكن تحويل هذه النقاط إلى USDT خلال ست إلى سبع أسابيع بعد نهاية الشهر. على سبيل المثال: إذا جمعت 400000 نقطة في أغسطس، يمكنك تحويلها إلى 1.68 USDT قبل 15 أكتوبر (تاريخ استلامنا لمبالغ أغسطس). نقاط سبتمبر ستُسوى قبل 15 نوفمبر، وهكذا. هذا التأخير ناتج عن دورات دفع التسويق المؤثر واعتماد شبكات Offerwall آلية Net-30.\n\nنحن بدأنا للتو استخدام Offerwall، ومع تحسن التدفق النقدي نأمل تقليل مدة التسوية. شكرًا لصبركم.';
+			case 'offersGuidline3': return '3). تحصل على نقاط عندما يكمل مُحالك عرضًا؛ ستحصل على نسبة تعادل 43% من نقاط محالك المباشر. على سبيل المثال: إذا حصل محالك المباشر على 7000 نقطة، ستحصل تلقائيًا على 3000 نقطة.';
+			case 'offersGuidline4': return '4). إذا رغبت في تجربة تطبيق/لعبة موجودة ضمن عرض، استخدم رابط/زر Offerwall للوصول إليه حتى يمكن تتبع الإنجازات؛ وإلا فلن تُحتَسب.';
+			case 'offersGuidline5': return '5). عند الوصول إلى هذه العروض لا تستخدم VPN، وإلا قد يُستبعد حسابك من شبكات Offerwall.';
+			case 'offersGuidline6': return '6). قد تطلب شبكات Offerwall أذونات؛ يرجى منح الصلاحيات لضمان تتبع الإنجازات بشكل صحيح وإلا قد لا تحصل على المكافآت.';
+			case 'offersGuidline7': return '7). توفر PlayTime مجموعة ألعاب فريدة يكفي قضاء وقت في اللعبة للحصول على مكافآت. لكن تأكد من التقدم في اللعبة وليس فقط قضاء الوقت، وإلا قد تسحب الشبكات المدفوعة الدفع (نادرًا).';
+			case 'offersGuidline8': return '8). عادة تُسجل الإنجازات على Offerwall خلال دقائق، لكن قد تستغرق أحيانًا حتى 3 ساعات؛ كن صبورًا. إذا لم تُسجل الإنجازات، اتصل بخدمة عملاء شبكة Offerwall. لكل Offerwall دعم خاص به. بعد إكمال الإنجاز افحص Offerwall في تطبيقنا لضمان تتبعه.';
+			case 'offersGuidline9': return '9). إذا كان التطبيق/اللعبة مثبتًا مسبقًا على جهازك فلا تحاول العروض المتعلقة به لأنك قد لا تحصل على نقاط.';
+			case 'offersGuidline10': return '10). اقرأ دائمًا التعليمات على كل Offerwall، فهي تحتوي على تفاصيل مهمة تزيد فرص تتبع العرض بنجاح.';
+			case 'termination': return 'الإنهاء';
+			case 'thisPeriodsSettlementIsterminated': return 'تم إنهاء تسوية هذه الفترة!';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'المستخدمون غير النشطين '),
+				x,
+			]);
+			case 'remind': return 'تذكير!';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => 'يمكن تنفيذ تذكير عدم الاتصال مرة واحدة كل 8 ساعات! يرجى الانتظار ${x} ثانية ثم المحاولة.';
+			case 'noInactiveUsersFoundNow': return 'لا توجد مستخدمين غير نشطين الآن';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => 'تم إخطار ${x} شخصًا بنجاح!';
+			case 'deltansMiningReminder': return 'تذكير تعدين للمستخدمين!';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'صديق دلتا ${user}: "توقف تعدينك."';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: 'الرقم الذي أدخلته في تطبيق دلتا ('),
+				fillin,
+				const TextSpan(text: ') يختلف عن الرقم المستخدم عند إرسال سلسلة التحقق ('),
+				sender,
+				const TextSpan(text: '). يرجى التعديل والمحاولة مجددًا.'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return 'خطأ في فك التشفير، يرجى المحاولة مرة أخرى!';
+			case 'reLogin': return 'تسجيل الدخول مجددًا';
+			case 'themeMode': return 'وضع السمة';
+			case 'copy': return 'نسخ';
+			case 'brightnessMode': return 'وضع السطوع';
+			case 'clicks': return 'عدد النقرات';
+			case 'rankings': return 'التصنيفات';
+			case 'downloadFailed': return 'فشل التحميل!';
 			default: return null;
 		}
 	}
@@ -20615,6 +22284,12 @@ extension on _StringsBg {
 			]);
 			case 'decryptionError_pleaseTryAgain': return 'Грешка при дешифриране, моля опитайте отново!';
 			case 'reLogin': return 'Влезте отново';
+			case 'themeMode': return 'Тематичен режим';
+			case 'copy': return 'Копиране';
+			case 'brightnessMode': return 'Режим на яркост';
+			case 'clicks': return 'Брой кликвания';
+			case 'rankings': return 'Класации';
+			case 'downloadFailed': return 'Изтеглянето не бе успешно!';
 			default: return null;
 		}
 	}
@@ -21357,6 +23032,12 @@ extension on _StringsBn {
 			]);
 			case 'decryptionError_pleaseTryAgain': return 'ডিক্রিপশন ত্রুটি, আবার চেষ্টা করুন!';
 			case 'reLogin': return 'আবার লগ ইন করুন';
+			case 'themeMode': return 'থিম মোড';
+			case 'copy': return 'কপি';
+			case 'brightnessMode': return 'উজ্জ্বলতা মোড';
+			case 'clicks': return 'ক্লিকের সংখ্যা';
+			case 'rankings': return 'র‍্যাঙ্কিং';
+			case 'downloadFailed': return 'ডাউনলোড ব্যর্থ হয়েছে!';
 			default: return null;
 		}
 	}
@@ -22097,6 +23778,12 @@ extension on _StringsCkb {
 			]);
 			case 'decryptionError_pleaseTryAgain': return 'هەڵەی کۆدکردنەوە، تکایە دووبارە هەوڵبدەرەوە!';
 			case 'reLogin': return 'دووبارە بچۆرەوە ژوورەوە';
+			case 'themeMode': return 'دۆخی تەوەر';
+			case 'copy': return 'کۆپی بکە';
+			case 'brightnessMode': return 'دۆخی ڕووناکی';
+			case 'clicks': return 'کلیک لە count بکە';
+			case 'rankings': return 'ڕیزبەندی';
+			case 'downloadFailed': return 'داگرتن شکستی هێنا!';
 			default: return null;
 		}
 	}
@@ -22837,6 +24524,12 @@ extension on _StringsDe {
 			]);
 			case 'decryptionError_pleaseTryAgain': return 'Entschlüsselungsfehler, bitte versuchen Sie es erneut!';
 			case 'reLogin': return 'Melden Sie sich erneut an';
+			case 'themeMode': return 'Themenmodus';
+			case 'copy': return 'Kopie';
+			case 'brightnessMode': return 'Helligkeitsmodus';
+			case 'clicks': return 'Klickzahl';
+			case 'rankings': return 'Rangliste';
+			case 'downloadFailed': return 'Download fehlgeschlagen!';
 			default: return null;
 		}
 	}
@@ -23577,6 +25270,12 @@ extension on _StringsEl {
 			]);
 			case 'decryptionError_pleaseTryAgain': return 'Σφάλμα αποκρυπτογράφησης, δοκιμάστε ξανά!';
 			case 'reLogin': return 'Συνδεθείτε ξανά';
+			case 'themeMode': return 'Λειτουργία θέματος';
+			case 'copy': return 'Αντίγραφο';
+			case 'brightnessMode': return 'Λειτουργία φωτεινότητας';
+			case 'clicks': return 'Αριθμός κλικ';
+			case 'rankings': return 'Κατατάξεις';
+			case 'downloadFailed': return 'Η λήψη απέτυχε!';
 			default: return null;
 		}
 	}
@@ -24318,6 +26017,12 @@ extension on _StringsEs {
 			]);
 			case 'decryptionError_pleaseTryAgain': return 'Error de descifrado, ¡inténtalo de nuevo!';
 			case 'reLogin': return 'Iniciar sesión de nuevo';
+			case 'themeMode': return 'Modo de tema';
+			case 'copy': return 'Copiar';
+			case 'brightnessMode': return 'Modo de brillo';
+			case 'clicks': return 'Conteo de clics';
+			case 'rankings': return 'Clasificaciones';
+			case 'downloadFailed': return '¡Descarga fallida!';
 			default: return null;
 		}
 	}
@@ -25059,6 +26764,12 @@ extension on _StringsFr {
 			]);
 			case 'decryptionError_pleaseTryAgain': return 'Erreur de décryptage, veuillez réessayer !';
 			case 'reLogin': return 'Connectez-vous à nouveau';
+			case 'themeMode': return 'Mode thème';
+			case 'copy': return 'Copie';
+			case 'brightnessMode': return 'Mode de luminosité';
+			case 'clicks': return 'Nombre de clics';
+			case 'rankings': return 'Classements';
+			case 'downloadFailed': return 'Le téléchargement a échoué !';
 			default: return null;
 		}
 	}
@@ -25796,6 +27507,12 @@ extension on _StringsHi {
 			]);
 			case 'decryptionError_pleaseTryAgain': return 'डिक्रिप्शन त्रुटि, कृपया पुनः प्रयास करें!';
 			case 'reLogin': return 'फिर से लॉगिन करें';
+			case 'themeMode': return 'थीम मोड';
+			case 'copy': return 'प्रतिलिपि';
+			case 'brightnessMode': return 'चमक मोड';
+			case 'clicks': return 'क्लिक गिनती';
+			case 'rankings': return 'रैंकिंग';
+			case 'downloadFailed': return 'डाउनलोड विफल!';
 			default: return null;
 		}
 	}
@@ -26535,6 +28252,12 @@ extension on _StringsIt {
 			]);
 			case 'decryptionError_pleaseTryAgain': return 'Errore di decrittazione, riprova!';
 			case 'reLogin': return 'Accedi di nuovo';
+			case 'themeMode': return 'Modalità tema';
+			case 'copy': return 'Copia';
+			case 'brightnessMode': return 'Modalità luminosità';
+			case 'clicks': return 'Conteggio dei clic';
+			case 'rankings': return 'Classifiche';
+			case 'downloadFailed': return 'Download non riuscito!';
 			default: return null;
 		}
 	}
@@ -27273,6 +28996,12 @@ extension on _StringsJa {
 			]);
 			case 'decryptionError_pleaseTryAgain': return '復号化エラーが発生しました。もう一度お試しください。';
 			case 'reLogin': return '再度ログイン';
+			case 'themeMode': return 'テーマモード';
+			case 'copy': return 'コピー';
+			case 'brightnessMode': return '明るさモード';
+			case 'clicks': return 'クリック数';
+			case 'rankings': return 'ランキング';
+			case 'downloadFailed': return 'ダウンロードに失敗しました。';
 			default: return null;
 		}
 	}
@@ -28013,6 +29742,12 @@ extension on _StringsKo {
 			]);
 			case 'decryptionError_pleaseTryAgain': return '복호화 오류가 발생했습니다. 다시 시도해 주세요!';
 			case 'reLogin': return '다시 로그인하세요';
+			case 'themeMode': return '테마 모드';
+			case 'copy': return '복사';
+			case 'brightnessMode': return '밝기 모드';
+			case 'clicks': return '클릭 수';
+			case 'rankings': return '랭킹';
+			case 'downloadFailed': return '다운로드에 실패했습니다!';
 			default: return null;
 		}
 	}
@@ -28753,6 +30488,12 @@ extension on _StringsNl {
 			]);
 			case 'decryptionError_pleaseTryAgain': return 'Fout bij het decoderen. Probeer het opnieuw!';
 			case 'reLogin': return 'Opnieuw inloggen';
+			case 'themeMode': return 'Themamodus';
+			case 'copy': return 'Kopiëren';
+			case 'brightnessMode': return 'Helderheidsmodus';
+			case 'clicks': return 'Klikken aantal';
+			case 'rankings': return 'Ranglijsten';
+			case 'downloadFailed': return 'Downloaden mislukt!';
 			default: return null;
 		}
 	}
@@ -29494,6 +31235,12 @@ extension on _StringsPl {
 			]);
 			case 'decryptionError_pleaseTryAgain': return 'Błąd deszyfrowania, spróbuj ponownie!';
 			case 'reLogin': return 'Zaloguj się ponownie';
+			case 'themeMode': return 'Tryb motywu';
+			case 'copy': return 'Kopia';
+			case 'brightnessMode': return 'Tryb jasności';
+			case 'clicks': return 'Liczba kliknięć';
+			case 'rankings': return 'Rankingi';
+			case 'downloadFailed': return 'Pobieranie nie powiodło się!';
 			default: return null;
 		}
 	}
@@ -30234,6 +31981,12 @@ extension on _StringsPt {
 			]);
 			case 'decryptionError_pleaseTryAgain': return 'Erro de descriptografia, tente novamente!';
 			case 'reLogin': return 'Efetue login novamente';
+			case 'themeMode': return 'Modo Tema';
+			case 'copy': return 'Cópia';
+			case 'brightnessMode': return 'Modo de brilho';
+			case 'clicks': return 'Contagem de cliques';
+			case 'rankings': return 'Classificações';
+			case 'downloadFailed': return 'O download falhou!';
 			default: return null;
 		}
 	}
@@ -30973,6 +32726,12 @@ extension on _StringsRo {
 			]);
 			case 'decryptionError_pleaseTryAgain': return 'Eroare de decriptare, vă rugăm să încercați din nou!';
 			case 'reLogin': return 'Conectați-vă din nou';
+			case 'themeMode': return 'Mod temă';
+			case 'copy': return 'Copie';
+			case 'brightnessMode': return 'Mod de luminozitate';
+			case 'clicks': return 'Număr de clicuri';
+			case 'rankings': return 'Clasamente';
+			case 'downloadFailed': return 'Descărcarea a eșuat!';
 			default: return null;
 		}
 	}
@@ -31714,6 +33473,12 @@ extension on _StringsRu {
 			]);
 			case 'decryptionError_pleaseTryAgain': return 'Ошибка расшифровки, попробуйте еще раз!';
 			case 'reLogin': return 'Войти снова';
+			case 'themeMode': return 'Режим темы';
+			case 'copy': return 'Копировать';
+			case 'brightnessMode': return 'Режим яркости';
+			case 'clicks': return 'Количество кликов';
+			case 'rankings': return 'Рейтинги';
+			case 'downloadFailed': return 'Загрузка не удалась!';
 			default: return null;
 		}
 	}
@@ -32450,6 +34215,12 @@ extension on _StringsSw {
 			]);
 			case 'decryptionError_pleaseTryAgain': return 'Hitilafu ya usimbuaji, tafadhali jaribu tena!';
 			case 'reLogin': return 'Ingia tena';
+			case 'themeMode': return 'Hali ya Mandhari';
+			case 'copy': return 'Nakili';
+			case 'brightnessMode': return 'Hali ya mwangaza';
+			case 'clicks': return 'Idadi ya kubofya';
+			case 'rankings': return 'Nafasi';
+			case 'downloadFailed': return 'Imeshindwa kupakua!';
 			default: return null;
 		}
 	}
@@ -33189,6 +34960,12 @@ extension on _StringsTh {
 			]);
 			case 'decryptionError_pleaseTryAgain': return 'เกิดข้อผิดพลาดในการถอดรหัส โปรดลองอีกครั้ง!';
 			case 'reLogin': return 'เข้าสู่ระบบอีกครั้ง';
+			case 'themeMode': return 'โหมดธีม';
+			case 'copy': return 'สำเนา';
+			case 'brightnessMode': return 'โหมดความสว่าง';
+			case 'clicks': return 'จำนวนการคลิก';
+			case 'rankings': return 'อันดับ';
+			case 'downloadFailed': return 'ดาวน์โหลดล้มเหลว!';
 			default: return null;
 		}
 	}
@@ -33928,6 +35705,12 @@ extension on _StringsTr {
 			]);
 			case 'decryptionError_pleaseTryAgain': return 'Şifre çözme hatası, lütfen tekrar deneyin!';
 			case 'reLogin': return 'Tekrar giriş yapın';
+			case 'themeMode': return 'Tema Modu';
+			case 'copy': return 'Kopyala';
+			case 'brightnessMode': return 'Parlaklık modu';
+			case 'clicks': return 'Tıklama sayısı';
+			case 'rankings': return 'Sıralamalar';
+			case 'downloadFailed': return 'İndirme başarısız!';
 			default: return null;
 		}
 	}
@@ -34668,6 +36451,12 @@ extension on _StringsUk {
 			]);
 			case 'decryptionError_pleaseTryAgain': return 'Помилка розшифрування, спробуйте ще раз!';
 			case 'reLogin': return 'Увійти знову';
+			case 'themeMode': return 'Тематичний режим';
+			case 'copy': return 'Копіювати';
+			case 'brightnessMode': return 'Режим яскравості';
+			case 'clicks': return 'Кількість кліків';
+			case 'rankings': return 'Рейтинги';
+			case 'downloadFailed': return 'Завантаження не вдалося!';
 			default: return null;
 		}
 	}
@@ -35407,6 +37196,12 @@ extension on _StringsUr {
 			]);
 			case 'decryptionError_pleaseTryAgain': return 'ڈکرپشن کی خرابی، براہ کرم دوبارہ کوشش کریں!';
 			case 'reLogin': return 'دوبارہ لاگ ان کریں۔';
+			case 'themeMode': return 'تھیم موڈ';
+			case 'copy': return 'کاپی';
+			case 'brightnessMode': return 'چمک موڈ';
+			case 'clicks': return 'شمار پر کلک کریں۔';
+			case 'rankings': return 'درجہ بندی';
+			case 'downloadFailed': return 'ڈاؤن لوڈ ناکام!';
 			default: return null;
 		}
 	}
@@ -36147,6 +37942,12 @@ extension on _StringsVi {
 			]);
 			case 'decryptionError_pleaseTryAgain': return 'Có lỗi giải mã, vui lòng thử lại!';
 			case 'reLogin': return 'Đăng nhập lại';
+			case 'themeMode': return 'Chế độ chủ đề';
+			case 'copy': return 'Sao chép';
+			case 'brightnessMode': return 'Chế độ sáng';
+			case 'clicks': return 'Số lần nhấp chuột';
+			case 'rankings': return 'Xếp hạng';
+			case 'downloadFailed': return 'Tải xuống không thành công!';
 			default: return null;
 		}
 	}
@@ -36888,6 +38689,12 @@ extension on _StringsZhCn {
 			]);
 			case 'decryptionError_pleaseTryAgain': return '解密出错，请重试！';
 			case 'reLogin': return '重新登录';
+			case 'themeMode': return '主题模式';
+			case 'copy': return '复制';
+			case 'brightnessMode': return '亮度模式';
+			case 'clicks': return '点击量';
+			case 'rankings': return '排行榜';
+			case 'downloadFailed': return '下载失败！';
 			default: return null;
 		}
 	}
@@ -37629,6 +39436,12 @@ extension on _StringsZhTw {
 			]);
 			case 'decryptionError_pleaseTryAgain': return '解密出錯，請重試！';
 			case 'reLogin': return '重新登入';
+			case 'themeMode': return '主題模式';
+			case 'copy': return '複製';
+			case 'brightnessMode': return '亮度模式';
+			case 'clicks': return '點擊量';
+			case 'rankings': return '排行榜';
+			case 'downloadFailed': return '下載失敗！';
 			default: return null;
 		}
 	}

@@ -620,5 +620,11 @@
 	"deltaFriendX_yourMiningHasStopped": "डेल्टा मित्र ${user}: \"आपका खनन बंद हो गया है।\"",
 	"inputAndActualNumberDoNotMatch(rich)": "डेल्टा ऐप पर आपने जो नंबर डाला था वह (${fillin}) था, लेकिन सत्यापन स्ट्रिंग भेजने के लिए आपने जो नंबर इस्तेमाल किया वह (${sender}) था। कृपया इसे समायोजित करें और पुनः प्रयास करें।",
 	"decryptionError_pleaseTryAgain": "डिक्रिप्शन त्रुटि, कृपया पुनः प्रयास करें!",
-	"reLogin": "फिर से लॉगिन करें"
+	"reLogin": "फिर से लॉगिन करें",
+	"themeMode": "थीम मोड",
+	"copy": "प्रतिलिपि",
+	"brightnessMode": "चमक मोड",
+	"clicks": "क्लिक गिनती",
+	"rankings": "रैंकिंग",
+	"downloadFailed": "डाउनलोड विफल!"
 }

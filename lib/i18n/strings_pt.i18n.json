@@ -621,5 +621,11 @@
 	"deltaFriendX_yourMiningHasStopped": "amigo delta ${user}: \"Sua mineração foi interrompida.\"",
 	"inputAndActualNumberDoNotMatch(rich)": "O número que você inseriu no aplicativo Delta foi (${fillin}), mas o número que você usou para enviar a string de verificação foi (${sender}). Ajuste isso e tente novamente.",
 	"decryptionError_pleaseTryAgain": "Erro de descriptografia, tente novamente!",
-	"reLogin": "Efetue login novamente"
+	"reLogin": "Efetue login novamente",
+	"themeMode": "Modo Tema",
+	"copy": "Cópia",
+	"brightnessMode": "Modo de brilho",
+	"clicks": "Contagem de cliques",
+	"rankings": "Classificações",
+	"downloadFailed": "O download falhou!"
 }

@@ -620,5 +620,11 @@
 	"deltaFriendX_yourMiningHasStopped": "делта приятел ${user}: \"Добивът ви е спрян.\"",
 	"inputAndActualNumberDoNotMatch(rich)": "Номерът, който въведохте в приложението Delta, беше (${fillin}, но номерът, който използвахте за изпращане на низа за потвърждение, беше (${sender}). Моля, коригирайте го и опитайте отново.",
 	"decryptionError_pleaseTryAgain": "Грешка при дешифриране, моля опитайте отново!",
-	"reLogin": "Влезте отново"
+	"reLogin": "Влезте отново",
+	"themeMode": "Тематичен режим",
+	"copy": "Копиране",
+	"brightnessMode": "Режим на яркост",
+	"clicks": "Брой кликвания",
+	"rankings": "Класации",
+	"downloadFailed": "Изтеглянето не бе успешно!"
 }

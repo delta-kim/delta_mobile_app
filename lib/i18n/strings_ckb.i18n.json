@@ -620,5 +620,11 @@
 	"deltaFriendX_yourMiningHasStopped": "delta friend ${user}: \"کانگاکەت وەستاوە.\"",
 	"inputAndActualNumberDoNotMatch(rich)": "ئەو ژمارەیەی کە لە ئەپی Delta داتنووسی (${fillin}) بوو، بەڵام ئەو ژمارەیەی کە بەکاری هێنا بۆ ناردنی ڕیزەکەی پشتڕاستکردنەوە (${sender}) بوو. تکایە ئەمە ڕێکبخە و دووبارە هەوڵبدەرەوە.",
 	"decryptionError_pleaseTryAgain": "هەڵەی کۆدکردنەوە، تکایە دووبارە هەوڵبدەرەوە!",
-	"reLogin": "دووبارە بچۆرەوە ژوورەوە"
+	"reLogin": "دووبارە بچۆرەوە ژوورەوە",
+	"themeMode": "دۆخی تەوەر",
+	"copy": "کۆپی بکە",
+	"brightnessMode": "دۆخی ڕووناکی",
+	"clicks": "کلیک لە count بکە",
+	"rankings": "ڕیزبەندی",
+	"downloadFailed": "داگرتن شکستی هێنا!"
 }

@@ -620,5 +620,11 @@
 	"deltaFriendX_yourMiningHasStopped": "rafiki wa delta ${user}: \"Uchimbaji madini wako umekoma.\"",
 	"inputAndActualNumberDoNotMatch(rich)": "Nambari uliyoweka kwenye programu ya Delta ilikuwa (${fillin}), lakini nambari uliyotuma mfuatano wako wa uthibitishaji ilikuwa (${sender}). Tafadhali rekebisha hii na ujaribu tena.",
 	"decryptionError_pleaseTryAgain": "Hitilafu ya usimbuaji, tafadhali jaribu tena!",
-	"reLogin": "Ingia tena"
+	"reLogin": "Ingia tena",
+	"themeMode": "Hali ya Mandhari",
+	"copy": "Nakili",
+	"brightnessMode": "Hali ya mwangaza",
+	"clicks": "Idadi ya kubofya",
+	"rankings": "Nafasi",
+	"downloadFailed": "Imeshindwa kupakua!"
 }

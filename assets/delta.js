@@ -1,13 +1,14 @@
 if (typeof window.delta == "object") {
   console.log("window.delta already exists！")
 } else {
-  console.log("window.delta binding11");
+  console.log("window.delta binding");
   window.delta = {
     // duration = 0;
     // position = 0;
     // playerState = 'stopped';
-    get AppId() { return 0 },
-    get languageCode() { return "en" },
+    AppId: () => window.flutter_inappwebview.callHandler('AppId'),
+    brightnessMode: () => window.flutter_inappwebview.callHandler('brightnessMode'),
+    languageCode() { return window.flutter_inappwebview.callHandler('languageCode'); },
     showGoBack: false,
     popShowGoBack() {
       let _showGoBack = this.showGoBack;
@@ -15,6 +16,9 @@ if (typeof window.delta == "object") {
         this.showGoBack = false;
       }
       return _showGoBack;
+    },
+    payload() {
+      return window.flutter_inappwebview.callHandler('payload');
     },
     callApi: function (actor, funcName, args = null) {
       return window.flutter_inappwebview.callHandler('callApi', actor, funcName, args);
@@ -41,7 +45,7 @@ if (typeof window.delta == "object") {
       return window.flutter_inappwebview.callHandler('openUrl', url);
     },
     authByIdentToken: function () {
-      return window.flutter_inappwebview.callHandler('authByIdentToken', this.AppId);
+      return window.flutter_inappwebview.callHandler('authByIdentToken');
     },
 
     getDAppAcctInfo(dAppIdentToken) {
@@ -84,6 +88,6 @@ if (typeof window.delta == "object") {
       },
     }
   };
-  const event = new CustomEvent("deltaReady");
-  setTimeout(window.dispatchEvent, 500, event);
+  // const event = new CustomEvent("deltaReady");
+  // setTimeout(window.dispatchEvent, 500, event);
 }

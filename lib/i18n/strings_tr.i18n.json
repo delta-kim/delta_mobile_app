@@ -620,5 +620,11 @@
 	"deltaFriendX_yourMiningHasStopped": "delta friend ${user}: \"Madenciliğiniz durduruldu.\"",
 	"inputAndActualNumberDoNotMatch(rich)": "Delta uygulamasına girdiğiniz numara (${fillin}) idi, ancak doğrulama dizenizi gönderdiğiniz numara (${sender}) idi. Lütfen bunu düzeltip tekrar deneyin.",
 	"decryptionError_pleaseTryAgain": "Şifre çözme hatası, lütfen tekrar deneyin!",
-	"reLogin": "Tekrar giriş yapın"
+	"reLogin": "Tekrar giriş yapın",
+	"themeMode": "Tema Modu",
+	"copy": "Kopyala",
+	"brightnessMode": "Parlaklık modu",
+	"clicks": "Tıklama sayısı",
+	"rankings": "Sıralamalar",
+	"downloadFailed": "İndirme başarısız!"
 }

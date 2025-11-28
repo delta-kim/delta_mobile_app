@@ -623,5 +623,11 @@
 	"deltaFriendX_yourMiningHasStopped": "ডেল্টা বন্ধু ${user}: \"আপনার মাইনিং বন্ধ হয়ে গেছে।\"",
 	"inputAndActualNumberDoNotMatch(rich)": "ডেল্টা অ্যাপে আপনি যে নম্বরটি লিখেছেন তা ছিল (${fillin}), কিন্তু যাচাইকরণ স্ট্রিংটি পাঠানোর জন্য আপনি যে নম্বরটি ব্যবহার করেছেন তা ছিল (${sender})। অনুগ্রহ করে এটি সামঞ্জস্য করুন এবং আবার চেষ্টা করুন।",
 	"decryptionError_pleaseTryAgain": "ডিক্রিপশন ত্রুটি, আবার চেষ্টা করুন!",
-	"reLogin": "আবার লগ ইন করুন"
+	"reLogin": "আবার লগ ইন করুন",
+	"themeMode": "থিম মোড",
+	"copy": "কপি",
+	"brightnessMode": "উজ্জ্বলতা মোড",
+	"clicks": "ক্লিকের সংখ্যা",
+	"rankings": "র‍্যাঙ্কিং",
+	"downloadFailed": "ডাউনলোড ব্যর্থ হয়েছে!"
 }

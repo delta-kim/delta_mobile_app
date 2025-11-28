@@ -621,5 +621,11 @@
 	"deltaFriendX_yourMiningHasStopped": "delta friend ${user}: \"Twoje wydobycie zostało zatrzymane.\"",
 	"inputAndActualNumberDoNotMatch(rich)": "Numer, który podałeś w aplikacji Delta, to (${fillin}), ale numer, z którego wysłałeś ciąg weryfikacyjny, to (${sender}). Popraw to i spróbuj ponownie.",
 	"decryptionError_pleaseTryAgain": "Błąd deszyfrowania, spróbuj ponownie!",
-	"reLogin": "Zaloguj się ponownie"
+	"reLogin": "Zaloguj się ponownie",
+	"themeMode": "Tryb motywu",
+	"copy": "Kopia",
+	"brightnessMode": "Tryb jasności",
+	"clicks": "Liczba kliknięć",
+	"rankings": "Rankingi",
+	"downloadFailed": "Pobieranie nie powiodło się!"
 }

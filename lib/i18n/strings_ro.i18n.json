@@ -620,5 +620,11 @@
 	"deltaFriendX_yourMiningHasStopped": "delta friend ${user}: „Mineritul ți s-a oprit.”",
 	"inputAndActualNumberDoNotMatch(rich)": "Numărul introdus în aplicația Delta a fost (${fillin}), dar numărul folosit pentru a trimite șirul de verificare a fost (${sender}). Vă rugăm să ajustați această valoare și să încercați din nou.",
 	"decryptionError_pleaseTryAgain": "Eroare de decriptare, vă rugăm să încercați din nou!",
-	"reLogin": "Conectați-vă din nou"
+	"reLogin": "Conectați-vă din nou",
+	"themeMode": "Mod temă",
+	"copy": "Copie",
+	"brightnessMode": "Mod de luminozitate",
+	"clicks": "Număr de clicuri",
+	"rankings": "Clasamente",
+	"downloadFailed": "Descărcarea a eșuat!"
 }

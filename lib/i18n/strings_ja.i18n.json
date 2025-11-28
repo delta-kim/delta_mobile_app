@@ -621,5 +621,11 @@
 	"deltaFriendX_yourMiningHasStopped": "デルタフレンド ${user}:「採掘が停止しました。」",
 	"inputAndActualNumberDoNotMatch(rich)": "Deltaアプリに入力した番号は(${fillin})ですが、確認文字列の送信に使用した番号は(${sender})です。番号を修正してもう一度お試しください。",
 	"decryptionError_pleaseTryAgain": "復号化エラーが発生しました。もう一度お試しください。",
-	"reLogin": "再度ログイン"
+	"reLogin": "再度ログイン",
+	"themeMode": "テーマモード",
+	"copy": "コピー",
+	"brightnessMode": "明るさモード",
+	"clicks": "クリック数",
+	"rankings": "ランキング",
+	"downloadFailed": "ダウンロードに失敗しました。"
 }

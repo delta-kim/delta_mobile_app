@@ -621,5 +621,11 @@
 	"deltaFriendX_yourMiningHasStopped": "delta friend ${user}: \"Hoạt động khai thác của bạn đã dừng lại.\"",
 	"inputAndActualNumberDoNotMatch(rich)": "Số bạn đã nhập trên ứng dụng Delta là (${fillin}), nhưng số bạn dùng để gửi chuỗi xác minh là (${sender}). Vui lòng điều chỉnh số này và thử lại.",
 	"decryptionError_pleaseTryAgain": "Có lỗi giải mã, vui lòng thử lại!",
-	"reLogin": "Đăng nhập lại"
+	"reLogin": "Đăng nhập lại",
+	"themeMode": "Chế độ chủ đề",
+	"copy": "Sao chép",
+	"brightnessMode": "Chế độ sáng",
+	"clicks": "Số lần nhấp chuột",
+	"rankings": "Xếp hạng",
+	"downloadFailed": "Tải xuống không thành công!"
 }

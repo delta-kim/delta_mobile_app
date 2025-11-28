@@ -621,5 +621,11 @@
 	"deltaFriendX_yourMiningHasStopped": "델타 친구 ${user}: \"채굴이 중단되었습니다.\"",
 	"inputAndActualNumberDoNotMatch(rich)": "델타 앱에 입력하신 번호는 (${fillin})이지만, 인증 문자열을 보낸 번호는 (${sender})입니다. 이 번호를 조정하여 다시 시도해 주세요.",
 	"decryptionError_pleaseTryAgain": "복호화 오류가 발생했습니다. 다시 시도해 주세요!",
-	"reLogin": "다시 로그인하세요"
+	"reLogin": "다시 로그인하세요",
+	"themeMode": "테마 모드",
+	"copy": "복사",
+	"brightnessMode": "밝기 모드",
+	"clicks": "클릭 수",
+	"rankings": "랭킹",
+	"downloadFailed": "다운로드에 실패했습니다!"
 }

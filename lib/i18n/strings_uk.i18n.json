@@ -621,5 +621,11 @@
 	"deltaFriendX_yourMiningHasStopped": "дельта-друг ${user}: \"Ваш майнінг зупинено.\"",
 	"inputAndActualNumberDoNotMatch(rich)": "Номер, який ви ввели в застосунку Delta, був (${fillin}), але номер, з якого ви надіслали рядок підтвердження, був (${sender}). Будь ласка, виправте його та спробуйте ще раз.",
 	"decryptionError_pleaseTryAgain": "Помилка розшифрування, спробуйте ще раз!",
-	"reLogin": "Увійти знову"
+	"reLogin": "Увійти знову",
+	"themeMode": "Тематичний режим",
+	"copy": "Копіювати",
+	"brightnessMode": "Режим яскравості",
+	"clicks": "Кількість кліків",
+	"rankings": "Рейтинги",
+	"downloadFailed": "Завантаження не вдалося!"
 }

@@ -620,5 +620,11 @@
 	"deltaFriendX_yourMiningHasStopped": "delta friend ${user}: \"Η εξόρυξη σας έχει σταματήσει.\"",
 	"inputAndActualNumberDoNotMatch(rich)": "Ο αριθμός που εισαγάγατε στην εφαρμογή Delta ήταν (${fillin}), αλλά ο αριθμός από τον οποίο στείλατε τη συμβολοσειρά επαλήθευσης ήταν (${sender}). Παρακαλούμε προσαρμόστε τον και δοκιμάστε ξανά.",
 	"decryptionError_pleaseTryAgain": "Σφάλμα αποκρυπτογράφησης, δοκιμάστε ξανά!",
-	"reLogin": "Συνδεθείτε ξανά"
+	"reLogin": "Συνδεθείτε ξανά",
+	"themeMode": "Λειτουργία θέματος",
+	"copy": "Αντίγραφο",
+	"brightnessMode": "Λειτουργία φωτεινότητας",
+	"clicks": "Αριθμός κλικ",
+	"rankings": "Κατατάξεις",
+	"downloadFailed": "Η λήψη απέτυχε!"
 }

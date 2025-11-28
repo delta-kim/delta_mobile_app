@@ -620,5 +620,11 @@
 	"deltaFriendX_yourMiningHasStopped": "delta friend ${user}: \"Your mining has stopped.\"",
 	"inputAndActualNumberDoNotMatch(rich)": "The number you've entered on the Delta app is (${fillin}) but the number with which you've sent the verification string is (${sender}). Please adjust them and try again.",
 	"decryptionError_pleaseTryAgain": "Decryption error, please try again!",
-	"reLogin": "Log in again"
+	"reLogin": "Log in again",
+	"themeMode": "Theme Mode",
+	"copy": "Copy",
+	"brightnessMode": "Brightness mode",
+	"clicks": "Click count",
+	"rankings": "Rankings",
+	"downloadFailed": "Download failed!"
 }

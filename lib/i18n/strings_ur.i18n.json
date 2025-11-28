@@ -620,5 +620,11 @@
 	"deltaFriendX_yourMiningHasStopped": "ڈیلٹا دوست ${user}: \"آپ کی کان کنی رک گئی ہے۔\"",
 	"inputAndActualNumberDoNotMatch(rich)": "ڈیلٹا ایپ پر آپ نے جو نمبر درج کیا تھا وہ (${fillin}) تھا، لیکن آپ نے تصدیقی اسٹرنگ بھیجنے کے لیے جو نمبر استعمال کیا وہ (${sender}) تھا۔ براہ کرم اسے ایڈجسٹ کریں اور دوبارہ کوشش کریں۔",
 	"decryptionError_pleaseTryAgain": "ڈکرپشن کی خرابی، براہ کرم دوبارہ کوشش کریں!",
-	"reLogin": "دوبارہ لاگ ان کریں۔"
+	"reLogin": "دوبارہ لاگ ان کریں۔",
+	"themeMode": "تھیم موڈ",
+	"copy": "کاپی",
+	"brightnessMode": "چمک موڈ",
+	"clicks": "شمار پر کلک کریں۔",
+	"rankings": "درجہ بندی",
+	"downloadFailed": "ڈاؤن لوڈ ناکام!"
 }

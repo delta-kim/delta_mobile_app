@@ -621,5 +621,11 @@
 	"deltaFriendX_yourMiningHasStopped": "เพื่อนเดลต้า ${user}: \"การขุดของคุณหยุดแล้ว\"",
 	"inputAndActualNumberDoNotMatch(rich)": "หมายเลขที่คุณป้อนในแอป Delta คือ (${fillin}) แต่หมายเลขที่คุณใช้ส่งสตริงยืนยันคือ (${sender}) โปรดปรับค่านี้และลองอีกครั้ง",
 	"decryptionError_pleaseTryAgain": "เกิดข้อผิดพลาดในการถอดรหัส โปรดลองอีกครั้ง!",
-	"reLogin": "เข้าสู่ระบบอีกครั้ง"
+	"reLogin": "เข้าสู่ระบบอีกครั้ง",
+	"themeMode": "โหมดธีม",
+	"copy": "สำเนา",
+	"brightnessMode": "โหมดความสว่าง",
+	"clicks": "จำนวนการคลิก",
+	"rankings": "อันดับ",
+	"downloadFailed": "ดาวน์โหลดล้มเหลว!"
 }
