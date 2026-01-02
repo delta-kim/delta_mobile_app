@@ -241,7 +241,7 @@
 	"transferToAddress": "轉至地址",
 	"longPressToPaste": "長按貼上",
 	"all": "全部",
-	"balanceX": "Balance ${x}",
+	"balanceX(rich)": "Balance ${x}",
 	"transferOut": "轉 出",
 	"depositXcoins": "入賬 ${x}",
 	"sender": "傳送者",
@@ -627,5 +627,6 @@
 	"brightnessMode": "亮度模式",
 	"clicks": "點擊量",
 	"rankings": "排行榜",
-	"downloadFailed": "下載失敗！"
+	"downloadFailed": "下載失敗！",
+	"continueDraggingToLoadMore": "繼續拖曳加載更多…"
 }

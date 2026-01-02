@@ -222,7 +222,7 @@
 	"walletAddress": "Adresă portofel",
 	"currentAddress": "adresă curentă",
 	"depositAddress": "adresă de depozit",
-	"receivingMoneyAddress": "Adresă de primire bani",
+	"receivingMoneyAddress": "Adresă de primire",
 	"applyTempDepositAddress": "Aplică pentru adresă de depozit temporară",
 	"tempDepositAddressTip": "1.Aceasta este o adresă de depozit partajată. Te rugăm să nu depozitezi suma după expirarea lease-ului sau după dezlegare. Suma se va pierde dacă se întâmplă acest lucru.",
 	"tempDepositAddressTip2": "2.Înainte de depozitare, te rugăm să te asiguri că [numele lanțului] și [numele monedei] se potrivesc exact; dacă este un token de contract, trebuie, de asemenea, să confirmi că [standardul contractului] și [adresa contractului] se potrivesc exact.",
@@ -239,7 +239,7 @@
 	"transferToAddress": "transferă la adresă",
 	"longPressToPaste": "Ține apăsat pentru a lipi",
 	"all": "Toate",
-	"balanceX": "Sold ${x}",
+	"balanceX(rich)": "Sold ${x}",
 	"transferOut": "Transferă afară",
 	"depositXcoins": "Depozitează ${x}",
 	"sender": "Expeditor",
@@ -310,7 +310,7 @@
 	"rates": "rate",
 	"minimum": "Minim",
 	"maximum": "Maxim",
-	"minimumBlockConfirmations": "confirmări minime de bloc",
+	"minimumBlockConfirmations": "Confirmări minime în bloc",
 	"dsmsVerifyTerminal": "Terminal verificator DSMS",
 	"overall": "general",
 	"my": "Meu",
@@ -626,5 +626,6 @@
 	"brightnessMode": "Mod de luminozitate",
 	"clicks": "Număr de clicuri",
 	"rankings": "Clasamente",
-	"downloadFailed": "Descărcarea a eșuat!"
+	"downloadFailed": "Descărcarea a eșuat!",
+	"continueDraggingToLoadMore": "Continuă să tragi pentru a încărca mai multe…"
 }

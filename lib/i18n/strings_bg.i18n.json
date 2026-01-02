@@ -222,7 +222,7 @@
 	"walletAddress": "Адрес на портфейла",
 	"currentAddress": "текущ адрес",
 	"depositAddress": "адрес за депозит",
-	"receivingMoneyAddress": "Адрес за получаване на пари",
+	"receivingMoneyAddress": "Адрес за получаване",
 	"applyTempDepositAddress": "Заявка за временен адрес за депозит",
 	"tempDepositAddressTip": "1. Това е споделен адрес за депозит. Моля, не депозирайте сумата след изтичане на срока. Сумата ще бъде загубена, ако това се случи.",
 	"tempDepositAddressTip2": "2. Преди да депозирате, моля, бъдете сигурни, че [име на веригата] и [име на валутата] съвпадат точно; ако е токън , вие също трябва да потвърдите, че [стандарта на договора] и [адреса на договора] съвпадат точно.",
@@ -239,7 +239,7 @@
 	"transferToAddress": "прехвърляне към адрес",
 	"longPressToPaste": "Задръжте за поставяне",
 	"all": "Всички",
-	"balanceX": "Баланс ${x}",
+	"balanceX(rich)": "Баланс ${x}",
 	"transferOut": "Изтегляне",
 	"depositXcoins": "Депозиране на ${x}",
 	"sender": "Изпращач",
@@ -310,7 +310,7 @@
 	"rates": "Такси",
 	"minimum": "Минимум",
 	"maximum": "Максимум",
-	"minimumBlockConfirmations": "Минимално потвърждение на блок",
+	"minimumBlockConfirmations": "мин. Блокиране на потвърждения",
 	"dsmsVerifyTerminal": "DSMS терминал за проверка",
 	"overall": "Общо",
 	"my": "Собствен",
@@ -626,5 +626,6 @@
 	"brightnessMode": "Режим на яркост",
 	"clicks": "Брой кликвания",
 	"rankings": "Класации",
-	"downloadFailed": "Изтеглянето не бе успешно!"
+	"downloadFailed": "Изтеглянето не бе успешно!",
+	"continueDraggingToLoadMore": "Продължете да плъзгате, за да заредите още…"
 }

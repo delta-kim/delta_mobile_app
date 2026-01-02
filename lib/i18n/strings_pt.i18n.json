@@ -223,7 +223,7 @@
 	"walletAddress": "Endereço da carteira",
 	"currentAddress": "endereço atual",
 	"depositAddress": "Endereço de recarga",
-	"receivingMoneyAddress": "endereço do beneficiário",
+	"receivingMoneyAddress": "Endereço de recebimento",
 	"applyTempDepositAddress": "Endereço para solicitar uma recarga temporária",
 	"tempDepositAddressTip": "1) Este é um endereço de depósito partilhado. Não deposite o montante depois de o contrato de aluguer ter expirado ou depois de ter sido desvinculado. Se isso acontecer, o montante será perdido.",
 	"tempDepositAddressTip2": "2) Antes de efetuar um depósito, certifique-se de que o [nome da cadeia] e o [nome da moeda] correspondem exatamente; no caso de tokens de contrato, também precisa de se certificar de que o [padrão do contrato] e o [endereço do contrato] correspondem exatamente.",
@@ -241,7 +241,7 @@
 	"transferToAddress": "ir para o endereço",
 	"longPressToPaste": "Pressão longa para colar",
 	"all": "completo",
-	"balanceX": "Saldo ${x}",
+	"balanceX(rich)": "Saldo ${x}",
 	"transferOut": "sair",
 	"depositXcoins": "Creditado ${x}",
 	"sender": "remetente",
@@ -312,7 +312,7 @@
 	"rates": "tarifa",
 	"minimum": "mínimo",
 	"maximum": "limite superior",
-	"minimumBlockConfirmations": "Número mínimo de confirmações de bloqueio",
+	"minimumBlockConfirmations": "Confirmações de bloco mínimas",
 	"dsmsVerifyTerminal": "Terminal de validação DSMS",
 	"overall": "guarda-chuva",
 	"my": "meu",
@@ -627,5 +627,6 @@
 	"brightnessMode": "Modo de brilho",
 	"clicks": "Contagem de cliques",
 	"rankings": "Classificações",
-	"downloadFailed": "O download falhou!"
+	"downloadFailed": "O download falhou!",
+	"continueDraggingToLoadMore": "Continue arrastando para carregar mais…"
 }

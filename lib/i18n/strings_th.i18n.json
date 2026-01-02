@@ -223,7 +223,7 @@
 	"walletAddress": "ที่อยู่กระเป๋าเงิน",
 	"currentAddress": "ที่อยู่ปัจจุบัน",
 	"depositAddress": "ที่อยู่เติมเงิน",
-	"receivingMoneyAddress": "ที่อยู่การชำระเงิน",
+	"receivingMoneyAddress": "ที่อยู่ผู้รับ",
 	"applyTempDepositAddress": "สมัครขอที่อยู่เติมเงินชั่วคราว",
 	"tempDepositAddressTip": "1. นี่คือที่อยู่การฝากเงินที่ใช้ร่วมกัน กรุณาอย่าวางเงินมัดจำหลังจากสัญญาเช่าหมดอายุหรือไม่ถูกผูกมัด หากเกิดเหตุการณ์นี้ จำนวนเงินจะหายไป",
 	"tempDepositAddressTip2": "2. ก่อนทำการฝากเงิน โปรดตรวจสอบให้แน่ใจว่า [ชื่อลูกโซ่] และ [ชื่อสกุลเงิน] ตรงกันอย่างสมบูรณ์ หากเป็นโทเค็นสัญญา คุณต้องยืนยันด้วยว่า [มาตรฐานสัญญา] และ [ที่อยู่สัญญา] ตรงกันอย่างสมบูรณ์",
@@ -241,7 +241,7 @@
 	"transferToAddress": "ไปที่ที่อยู่",
 	"longPressToPaste": "กดค้างเพื่อวาง",
 	"all": "ทั้งหมด",
-	"balanceX": "ยอดคงเหลือ ${x}",
+	"balanceX(rich)": "ยอดคงเหลือ ${x}",
 	"transferOut": "โอนออก",
 	"depositXcoins": "ฝากเงิน ${x}",
 	"sender": "ผู้ส่ง",
@@ -312,7 +312,7 @@
 	"rates": "ประเมิน",
 	"minimum": "ขั้นต่ำ",
 	"maximum": "สูงสุด",
-	"minimumBlockConfirmations": "จำนวนการยืนยันบล็อกขั้นต่ำ",
+	"minimumBlockConfirmations": "การยืนยันบล็อกขั้นต่ำ",
 	"dsmsVerifyTerminal": "เทอร์มินัลการตรวจสอบ DSMS",
 	"overall": "โดยรวม",
 	"my": "ของฉัน",
@@ -627,5 +627,6 @@
 	"brightnessMode": "โหมดความสว่าง",
 	"clicks": "จำนวนการคลิก",
 	"rankings": "อันดับ",
-	"downloadFailed": "ดาวน์โหลดล้มเหลว!"
+	"downloadFailed": "ดาวน์โหลดล้มเหลว!",
+	"continueDraggingToLoadMore": "ลากต่อไปเพื่อโหลดเพิ่มเติม…"
 }

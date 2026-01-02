@@ -222,7 +222,7 @@
 	"walletAddress": "ناویشنانی جزدان دانێ",
 	"currentAddress": "current Address",
 	"depositAddress": "ناونیشانی ناردن",
-	"receivingMoneyAddress": "پارە گەیشتە ئەم ناونیشانە",
+	"receivingMoneyAddress": "ناونیشانی وەرگرتن",
 	"applyTempDepositAddress": "داواکاری پێشکەش بکە بۆ ناونیشانی دانانی کاتی",
 	"tempDepositAddressTip": "1.ئەمە ناونیشانی پارەدانێکی هاوبەشە. تکایە دوای تەواوبوونی بەکرێدانەکە یان پابەند نەبوون، بڕە پارەکە مەخەنە ناوەوە. بڕە پارەکە لەدەست دەچێت ئەگەر ئەمە ڕووبدات.",
 	"tempDepositAddressTip2": "2.پێش ئەوەی پارە دابنێیت، تکایە دڵنیابە لەوەی کە [ناوی زنجیرەکە] و [ناوی دراو] بە تەواوی یەکدەگرنەوە؛ ئەگەر نیشانەیەکی گرێبەستە، پێویستە پشتڕاستی بکەیتەوە کە [ستانداردی گرێبەست] و [ناونیشانی گرێبەست] بە تەواوی یەکدەگرنەوە.",
@@ -239,7 +239,7 @@
 	"transferToAddress": "گواستنەوە بۆ ناونیشان",
 	"longPressToPaste": "پەستانێکی درێژ بۆ لێدان",
 	"all": "هەموو",
-	"balanceX": "هاوسەنگی ${x}",
+	"balanceX(rich)": "هاوسەنگی ${x}",
 	"transferOut": "گواستنەوە بۆ دەرەوە",
 	"depositXcoins": "پاراستنی ${x}",
 	"sender": "نێرەر",
@@ -310,7 +310,7 @@
 	"rates": "ڕێژەکان",
 	"minimum": "کەمترین",
 	"maximum": "زۆرترین",
-	"minimumBlockConfirmations": "کەمترین پشتڕاستکردنەوەکانی بلۆک",
+	"minimumBlockConfirmations": "کەمترین. پشتڕاستکردنەوەکانی بلۆک",
 	"dsmsVerifyTerminal": "تێرمیناڵی پشتڕاستکەرەوەی DSMS",
 	"overall": "بە گشتی",
 	"my": "من",
@@ -626,5 +626,6 @@
 	"brightnessMode": "دۆخی ڕووناکی",
 	"clicks": "کلیک لە count بکە",
 	"rankings": "ڕیزبەندی",
-	"downloadFailed": "داگرتن شکستی هێنا!"
+	"downloadFailed": "داگرتن شکستی هێنا!",
+	"continueDraggingToLoadMore": "بەردەوام بە لە ڕاکێشان بۆ بارکردنی زیاتر..."
 }

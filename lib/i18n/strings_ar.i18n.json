@@ -241,7 +241,7 @@
 	"transferToAddress": "التحويل إلى العنوان",
 	"longPressToPaste": "اضغط مطولاً للصق",
 	"all": "الكل",
-	"balanceX": "الرصيد ${x}",
+	"balanceX(rich)": "الرصيد ${x}",
 	"transferOut": "تحويل للخارج",
 	"depositXcoins": "وُقِعَ ${x}",
 	"sender": "المرسل",
@@ -312,7 +312,7 @@
 	"rates": "الرسوم",
 	"minimum": "الحد الأدنى",
 	"maximum": "الحد الأقصى",
-	"minimumBlockConfirmations": "الحد الأدنى لتأكيدات الكتل",
+	"minimumBlockConfirmations": "الحد الأدنى لتأكيدات الحظر",
 	"dsmsVerifyTerminal": "طرف تحقق DSMS",
 	"overall": "الإجمالي",
 	"my": "خاصتي",
@@ -627,5 +627,6 @@
 	"brightnessMode": "وضع السطوع",
 	"clicks": "عدد النقرات",
 	"rankings": "التصنيفات",
-	"downloadFailed": "فشل التحميل!"
+	"downloadFailed": "فشل التحميل!",
+	"continueDraggingToLoadMore": "استمر بالسحب لتحميل المزيد…"
 }

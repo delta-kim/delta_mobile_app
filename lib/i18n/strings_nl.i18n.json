@@ -223,7 +223,7 @@
 	"walletAddress": "Wallet adres",
 	"currentAddress": "Huidig adres",
 	"depositAddress": "Oplaadadres",
-	"receivingMoneyAddress": "Ontvangende geld adres",
+	"receivingMoneyAddress": "Ontvangstadres",
 	"applyTempDepositAddress": "Tijdelijk opwaarderingsadres aanvragen",
 	"tempDepositAddressTip": "1. Dit is een gedeeld opwaarderingsadres. Stort het bedrag niet nadat de huur is verlopen of ontbonden. Het bedrag zal dan verloren gaan.",
 	"tempDepositAddressTip2": "2. Voordat je stort, moet je bevestigen dat [chain name] en [currency name] exact overeenkomen; als het een contracttoken is, moet je ook bevestigen dat [contractstandaard] en [contractadres] exact overeenkomen.",
@@ -241,7 +241,7 @@
 	"transferToAddress": "Schrijf over naar adres",
 	"longPressToPaste": "Lang indrukken om te plakken",
 	"all": "Alles",
-	"balanceX": "Saldo ${x}",
+	"balanceX(rich)": "Saldo ${x}",
 	"transferOut": "Uitgaande storting",
 	"depositXcoins": "Stort ${x}",
 	"sender": "Afzender",
@@ -312,7 +312,7 @@
 	"rates": "Rates",
 	"minimum": "Minimum",
 	"maximum": "Maximum",
-	"minimumBlockConfirmations": "Minimum aantal blokbevestigingen",
+	"minimumBlockConfirmations": "min. Blokbevestigingen",
 	"dsmsVerifyTerminal": "DSMS Valideringsterminal",
 	"overall": "Algemeen",
 	"my": "Mijn",
@@ -627,5 +627,6 @@
 	"brightnessMode": "Helderheidsmodus",
 	"clicks": "Klikken aantal",
 	"rankings": "Ranglijsten",
-	"downloadFailed": "Downloaden mislukt!"
+	"downloadFailed": "Downloaden mislukt!",
+	"continueDraggingToLoadMore": "Blijf slepen om meer te laden…"
 }

@@ -223,7 +223,7 @@
 	"walletAddress": "財布の住所",
 	"currentAddress": "現住所",
 	"depositAddress": "リチャージ住所",
-	"receivingMoneyAddress": "受取人住所",
+	"receivingMoneyAddress": "受取住所",
 	"applyTempDepositAddress": "一時増額申請先",
 	"tempDepositAddressTip": "1.この住所は共有の保証金住所です。リース期間満了後や、拘束解除後のご入金はご遠慮ください。その場合、金額は失われます。",
 	"tempDepositAddressTip2": "2.入金を行う前に、[チェーン名]と[コイン名]が完全に一致していることを確認してください。コントラクトトークンの場合は、[コントラクトスタンダード]と[コントラクトアドレス]が完全に一致していることも確認する必要があります。",
@@ -241,7 +241,7 @@
 	"transferToAddress": "アドレスへ",
 	"longPressToPaste": "長押しでペースト",
 	"all": "フル",
-	"balanceX": "残高 ${x}",
+	"balanceX(rich)": "残高 ${x}",
 	"transferOut": "ひっくりかえす",
 	"depositXcoins": "クレジット ${x}",
 	"sender": "送信者",
@@ -312,7 +312,7 @@
 	"rates": "料金表",
 	"minimum": "最小",
 	"maximum": "上限",
-	"minimumBlockConfirmations": "最低ブロック確認数",
+	"minimumBlockConfirmations": "最小ブロック確認",
 	"dsmsVerifyTerminal": "DSMS検証ターミナル",
 	"overall": "傘",
 	"my": "私の",
@@ -627,5 +627,6 @@
 	"brightnessMode": "明るさモード",
 	"clicks": "クリック数",
 	"rankings": "ランキング",
-	"downloadFailed": "ダウンロードに失敗しました。"
+	"downloadFailed": "ダウンロードに失敗しました。",
+	"continueDraggingToLoadMore": "さらに読み込むにはドラッグを続けます…"
 }

@@ -222,7 +222,7 @@
 	"walletAddress": "والیٹ کا پتہ",
 	"currentAddress": "موجودہ پتہ",
 	"depositAddress": "جمع کرنے کا پتہ",
-	"receivingMoneyAddress": "پیسہ وصول کرنے کا پتہ",
+	"receivingMoneyAddress": "پتہ وصول کر رہا ہے۔",
 	"applyTempDepositAddress": "عارضی جمع پتے کی درخواست کریں",
 	"tempDepositAddressTip": "1.یہ ایک مشترکہ جمع پتہ ہے۔ براہ کرم اس کی لیز ختم ہونے کے بعد رقم جمع نہ کریں۔ ایسا کرنے پر رقم ضائع ہو جائے گی۔",
 	"tempDepositAddressTip2": "2. جمع کرنے سے پہلے براہ کرم یہ یقینی بنائیں کہ [زنجیر کا نام] اور [کرنسی کا نام] بالکل میل کھاتے ہیں؛ اگر یہ ایک معاہدہ ٹوکن ہے تو، آپ کو یہ بھی یقین دلانا ہوگا کہ [معاہدہ معیاری] اور [معاہدہ پتہ] بالکل میل کھاتے ہیں۔",
@@ -239,7 +239,7 @@
 	"transferToAddress": "پتے پر منتقل کریں",
 	"longPressToPaste": "پیسٹ کرنے کے لئے لمبا دبائیں",
 	"all": "سب",
-	"balanceX": "بیلنس ${x}",
+	"balanceX(rich)": "بیلنس ${x}",
 	"transferOut": "باہر منتقل کریں",
 	"depositXcoins": "${x} جمع کریں",
 	"sender": "پہنچانے والا",
@@ -310,7 +310,7 @@
 	"rates": "شرحیں",
 	"minimum": "کم از کم",
 	"maximum": "زیادہ سے زیادہ",
-	"minimumBlockConfirmations": "کم سے کم بلاک کی تصدیق",
+	"minimumBlockConfirmations": "منٹ بلاک کنفرمیشنز",
 	"dsmsVerifyTerminal": "DSMS تصدیق کرنے والا ٹرمینل",
 	"overall": "مجموعی",
 	"my": "میری",
@@ -626,5 +626,6 @@
 	"brightnessMode": "چمک موڈ",
 	"clicks": "شمار پر کلک کریں۔",
 	"rankings": "درجہ بندی",
-	"downloadFailed": "ڈاؤن لوڈ ناکام!"
+	"downloadFailed": "ڈاؤن لوڈ ناکام!",
+	"continueDraggingToLoadMore": "مزید لوڈ کرنے کے لیے گھسیٹنا جاری رکھیں…"
 }

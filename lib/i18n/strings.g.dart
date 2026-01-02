@@ -4,9 +4,9 @@
 /// To regenerate, run: `dart run slang`
 ///
 /// Locales: 26
-/// Strings: 16242 (624 per locale)
+/// Strings: 16268 (625 per locale)
 ///
-/// Built on 2025-11-25 at 01:37 UTC
+/// Built on 2025-12-13 at 11:37 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -474,7 +474,7 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	String get walletAddress => 'Wallet Address';
 	String get currentAddress => 'current Address';
 	String get depositAddress => 'deposit Address';
-	String get receivingMoneyAddress => 'Receiving money address';
+	String get receivingMoneyAddress => 'Receiving address';
 	String get applyTempDepositAddress => 'Apply for temporary deposit address';
 	String get tempDepositAddressTip => '1.This is a shared deposit address. Please do not deposit the amount after the lease expires or is unbound. The amount will be lost if this happens.';
 	String get tempDepositAddressTip2 => '2.Before depositing, please be sure to confirm that [chain name] and [currency name] exactly match; if it is a contract token, you also need to confirm that [contract standard] and [contract address] exactly match.';
@@ -497,7 +497,10 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	String get transferToAddress => 'transfer to address';
 	String get longPressToPaste => 'Long press to paste';
 	String get all => 'All';
-	String balanceX({required Object x}) => 'Balance ${x}';
+	TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Balance '),
+		x,
+	]);
 	String get transferOut => 'Transfer out';
 	String depositXcoins({required Object x}) => 'Deposit ${x}';
 	String get sender => 'Sender';
@@ -576,7 +579,7 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	String get rates => 'rates';
 	String get minimum => 'Minimum';
 	String get maximum => 'Maximum';
-	String get minimumBlockConfirmations => 'minimum  Block Confirmations';
+	String get minimumBlockConfirmations => 'min. Block Confirmations';
 	String get dsmsVerifyTerminal => 'DSMS verifier terminal';
 	String get overall => 'overall';
 	String get my => 'My';
@@ -911,6 +914,7 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	String get clicks => 'Click count';
 	String get rankings => 'Rankings';
 	String get downloadFailed => 'Download failed!';
+	String get continueDraggingToLoadMore => 'Continue dragging to load more…';
 }
 
 // Path: <root>
@@ -1263,7 +1267,10 @@ class _StringsAr implements Translations {
 	@override String get transferToAddress => 'التحويل إلى العنوان';
 	@override String get longPressToPaste => 'اضغط مطولاً للصق';
 	@override String get all => 'الكل';
-	@override String balanceX({required Object x}) => 'الرصيد ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'الرصيد '),
+		x,
+	]);
 	@override String get transferOut => 'تحويل للخارج';
 	@override String depositXcoins({required Object x}) => 'وُقِعَ ${x}';
 	@override String get sender => 'المرسل';
@@ -1342,7 +1349,7 @@ class _StringsAr implements Translations {
 	@override String get rates => 'الرسوم';
 	@override String get minimum => 'الحد الأدنى';
 	@override String get maximum => 'الحد الأقصى';
-	@override String get minimumBlockConfirmations => 'الحد الأدنى لتأكيدات الكتل';
+	@override String get minimumBlockConfirmations => 'الحد الأدنى لتأكيدات الحظر';
 	@override String get dsmsVerifyTerminal => 'طرف تحقق DSMS';
 	@override String get overall => 'الإجمالي';
 	@override String get my => 'خاصتي';
@@ -1677,6 +1684,7 @@ class _StringsAr implements Translations {
 	@override String get clicks => 'عدد النقرات';
 	@override String get rankings => 'التصنيفات';
 	@override String get downloadFailed => 'فشل التحميل!';
+	@override String get continueDraggingToLoadMore => 'استمر بالسحب لتحميل المزيد…';
 }
 
 // Path: <root>
@@ -2005,7 +2013,7 @@ class _StringsBg implements Translations {
 	@override String get walletAddress => 'Адрес на портфейла';
 	@override String get currentAddress => 'текущ адрес';
 	@override String get depositAddress => 'адрес за депозит';
-	@override String get receivingMoneyAddress => 'Адрес за получаване на пари';
+	@override String get receivingMoneyAddress => 'Адрес за получаване';
 	@override String get applyTempDepositAddress => 'Заявка за временен адрес за депозит';
 	@override String get tempDepositAddressTip => '1. Това е споделен адрес за депозит. Моля, не депозирайте сумата след изтичане на срока. Сумата ще бъде загубена, ако това се случи.';
 	@override String get tempDepositAddressTip2 => '2. Преди да депозирате, моля, бъдете сигурни, че [име на веригата] и [име на валутата] съвпадат точно; ако е токън , вие също трябва да потвърдите, че [стандарта на договора] и [адреса на договора] съвпадат точно.';
@@ -2028,7 +2036,10 @@ class _StringsBg implements Translations {
 	@override String get transferToAddress => 'прехвърляне към адрес';
 	@override String get longPressToPaste => 'Задръжте за поставяне';
 	@override String get all => 'Всички';
-	@override String balanceX({required Object x}) => 'Баланс ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Баланс '),
+		x,
+	]);
 	@override String get transferOut => 'Изтегляне';
 	@override String depositXcoins({required Object x}) => 'Депозиране на ${x}';
 	@override String get sender => 'Изпращач';
@@ -2107,7 +2118,7 @@ class _StringsBg implements Translations {
 	@override String get rates => 'Такси';
 	@override String get minimum => 'Минимум';
 	@override String get maximum => 'Максимум';
-	@override String get minimumBlockConfirmations => 'Минимално потвърждение на блок';
+	@override String get minimumBlockConfirmations => 'мин. Блокиране на потвърждения';
 	@override String get dsmsVerifyTerminal => 'DSMS терминал за проверка';
 	@override String get overall => 'Общо';
 	@override String get my => 'Собствен';
@@ -2442,6 +2453,7 @@ class _StringsBg implements Translations {
 	@override String get clicks => 'Брой кликвания';
 	@override String get rankings => 'Класации';
 	@override String get downloadFailed => 'Изтеглянето не бе успешно!';
+	@override String get continueDraggingToLoadMore => 'Продължете да плъзгате, за да заредите още…';
 }
 
 // Path: <root>
@@ -2773,7 +2785,7 @@ class _StringsBn implements Translations {
 	@override String get walletAddress => 'ওয়ালেট ঠিকানা';
 	@override String get currentAddress => 'বর্তমান ঠিকানা';
 	@override String get depositAddress => 'রিচার্জ ঠিকানা';
-	@override String get receivingMoneyAddress => 'পেমেন্ট ঠিকানা';
+	@override String get receivingMoneyAddress => 'গ্রহণকারীর ঠিকানা';
 	@override String get applyTempDepositAddress => 'একটি অস্থায়ী রিচার্জ ঠিকানার জন্য আবেদন করুন';
 	@override String get tempDepositAddressTip => '1. এটি একটি শেয়ার করা ডিপোজিট ঠিকানা। ইজারার মেয়াদ শেষ হওয়ার পরে বা সীমাহীন হওয়ার পরে অনুগ্রহ করে পরিমাণ জমা করবেন না। যদি এটি ঘটে তবে পরিমাণটি নষ্ট হয়ে যাবে।';
 	@override String get tempDepositAddressTip2 => '2. জমা করার আগে, অনুগ্রহ করে নিশ্চিত করুন যে [চেইন নাম] এবং [মুদ্রার নাম] সম্পূর্ণ মেলে যদি এটি একটি চুক্তির টোকেন হয় তবে আপনাকে নিশ্চিত করতে হবে যে [চুক্তির মান] এবং [চুক্তির ঠিকানা] সম্পূর্ণ মেলে।';
@@ -2797,7 +2809,10 @@ class _StringsBn implements Translations {
 	@override String get transferToAddress => 'ঠিকানায় যান';
 	@override String get longPressToPaste => 'পেস্ট করতে দীর্ঘক্ষণ টিপুন';
 	@override String get all => 'সব';
-	@override String balanceX({required Object x}) => 'ব্যালেন্স ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'ব্যালেন্স '),
+		x,
+	]);
 	@override String get transferOut => 'স্থানান্তর আউট';
 	@override String depositXcoins({required Object x}) => '${x} জমা দিন';
 	@override String get sender => 'প্রেরক';
@@ -2876,7 +2891,7 @@ class _StringsBn implements Translations {
 	@override String get rates => 'হার';
 	@override String get minimum => 'সর্বনিম্ন';
 	@override String get maximum => 'সর্বোচ্চ';
-	@override String get minimumBlockConfirmations => 'ব্লক নিশ্চিতকরণের ন্যূনতম সংখ্যা';
+	@override String get minimumBlockConfirmations => 'সর্বনিম্ন। নিশ্চিতকরণ ব্লক করুন';
 	@override String get dsmsVerifyTerminal => 'DSMS যাচাইকরণ টার্মিনাল';
 	@override String get overall => 'সামগ্রিক';
 	@override String get my => 'আমার';
@@ -3210,6 +3225,7 @@ class _StringsBn implements Translations {
 	@override String get clicks => 'ক্লিকের সংখ্যা';
 	@override String get rankings => 'র‍্যাঙ্কিং';
 	@override String get downloadFailed => 'ডাউনলোড ব্যর্থ হয়েছে!';
+	@override String get continueDraggingToLoadMore => 'আরও লোড করতে টেনে আনা চালিয়ে যান...';
 }
 
 // Path: <root>
@@ -3538,7 +3554,7 @@ class _StringsCkb implements Translations {
 	@override String get walletAddress => 'ناویشنانی جزدان دانێ';
 	@override String get currentAddress => 'current Address';
 	@override String get depositAddress => 'ناونیشانی ناردن';
-	@override String get receivingMoneyAddress => 'پارە گەیشتە ئەم ناونیشانە';
+	@override String get receivingMoneyAddress => 'ناونیشانی وەرگرتن';
 	@override String get applyTempDepositAddress => 'داواکاری پێشکەش بکە بۆ ناونیشانی دانانی کاتی';
 	@override String get tempDepositAddressTip => '1.ئەمە ناونیشانی پارەدانێکی هاوبەشە. تکایە دوای تەواوبوونی بەکرێدانەکە یان پابەند نەبوون، بڕە پارەکە مەخەنە ناوەوە. بڕە پارەکە لەدەست دەچێت ئەگەر ئەمە ڕووبدات.';
 	@override String get tempDepositAddressTip2 => '2.پێش ئەوەی پارە دابنێیت، تکایە دڵنیابە لەوەی کە [ناوی زنجیرەکە] و [ناوی دراو] بە تەواوی یەکدەگرنەوە؛ ئەگەر نیشانەیەکی گرێبەستە، پێویستە پشتڕاستی بکەیتەوە کە [ستانداردی گرێبەست] و [ناونیشانی گرێبەست] بە تەواوی یەکدەگرنەوە.';
@@ -3561,7 +3577,10 @@ class _StringsCkb implements Translations {
 	@override String get transferToAddress => 'گواستنەوە بۆ ناونیشان';
 	@override String get longPressToPaste => 'پەستانێکی درێژ بۆ لێدان';
 	@override String get all => 'هەموو';
-	@override String balanceX({required Object x}) => 'هاوسەنگی ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'هاوسەنگی '),
+		x,
+	]);
 	@override String get transferOut => 'گواستنەوە بۆ دەرەوە';
 	@override String depositXcoins({required Object x}) => 'پاراستنی ${x}';
 	@override String get sender => 'نێرەر';
@@ -3640,7 +3659,7 @@ class _StringsCkb implements Translations {
 	@override String get rates => 'ڕێژەکان';
 	@override String get minimum => 'کەمترین';
 	@override String get maximum => 'زۆرترین';
-	@override String get minimumBlockConfirmations => 'کەمترین پشتڕاستکردنەوەکانی بلۆک';
+	@override String get minimumBlockConfirmations => 'کەمترین. پشتڕاستکردنەوەکانی بلۆک';
 	@override String get dsmsVerifyTerminal => 'تێرمیناڵی پشتڕاستکەرەوەی DSMS';
 	@override String get overall => 'بە گشتی';
 	@override String get my => 'من';
@@ -3976,6 +3995,7 @@ class _StringsCkb implements Translations {
 	@override String get clicks => 'کلیک لە count بکە';
 	@override String get rankings => 'ڕیزبەندی';
 	@override String get downloadFailed => 'داگرتن شکستی هێنا!';
+	@override String get continueDraggingToLoadMore => 'بەردەوام بە لە ڕاکێشان بۆ بارکردنی زیاتر...';
 }
 
 // Path: <root>
@@ -4305,7 +4325,7 @@ class _StringsDe implements Translations {
 	@override String get walletAddress => 'Adresse der Brieftasche';
 	@override String get currentAddress => 'aktuelle Adresse';
 	@override String get depositAddress => 'Adresse aufladen';
-	@override String get receivingMoneyAddress => 'Adresse des Zahlungsempfängers';
+	@override String get receivingMoneyAddress => 'Empfangsadresse';
 	@override String get applyTempDepositAddress => 'Adresse für die Beantragung einer vorübergehenden Aufstockung';
 	@override String get tempDepositAddressTip => '(1) Dies ist eine gemeinsame Kautionsadresse. Bitte hinterlegen Sie den Betrag nicht, nachdem der Mietvertrag abgelaufen ist oder Sie ungebunden wurden. Wenn dies geschieht, ist der Betrag verloren.';
 	@override String get tempDepositAddressTip2 => 'Bevor Sie eine Einzahlung vornehmen, vergewissern Sie sich bitte, dass [Kettenname] und [Münzname] genau übereinstimmen; im Falle von Vertrags-Token müssen Sie auch sicherstellen, dass [Vertragsstandard] und [Vertragsadresse] genau übereinstimmen.';
@@ -4329,7 +4349,10 @@ class _StringsDe implements Translations {
 	@override String get transferToAddress => 'zur Adresse gehen';
 	@override String get longPressToPaste => 'Langes Drücken zum Einfügen';
 	@override String get all => 'vollständig';
-	@override String balanceX({required Object x}) => 'Saldo ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Saldo '),
+		x,
+	]);
 	@override String get transferOut => 'sich herausstellen';
 	@override String depositXcoins({required Object x}) => 'Gutschrift ${x}';
 	@override String get sender => 'Absender';
@@ -4408,7 +4431,7 @@ class _StringsDe implements Translations {
 	@override String get rates => 'Tarif';
 	@override String get minimum => 'Minimum';
 	@override String get maximum => 'Obergrenze';
-	@override String get minimumBlockConfirmations => 'Mindestanzahl von Blockbestätigungen';
+	@override String get minimumBlockConfirmations => 'Mindestanzahl Blockbestätigungen';
 	@override String get dsmsVerifyTerminal => 'DSMS-Validierungsterminal';
 	@override String get overall => 'Regenschirm';
 	@override String get my => 'meine';
@@ -4742,6 +4765,7 @@ class _StringsDe implements Translations {
 	@override String get clicks => 'Klickzahl';
 	@override String get rankings => 'Rangliste';
 	@override String get downloadFailed => 'Download fehlgeschlagen!';
+	@override String get continueDraggingToLoadMore => 'Ziehen Sie weiter, um mehr zu laden…';
 }
 
 // Path: <root>
@@ -5070,7 +5094,7 @@ class _StringsEl implements Translations {
 	@override String get walletAddress => 'Διεύθυνση Πορτοφολιού';
 	@override String get currentAddress => 'Τρέχουσα διεύθυνση';
 	@override String get depositAddress => 'Διεύθυνση κατάθεσης';
-	@override String get receivingMoneyAddress => 'Διεύθυνση παραλαβής χρημάτων';
+	@override String get receivingMoneyAddress => 'Διεύθυνση παραλαβής';
 	@override String get applyTempDepositAddress => 'Αίτηση για προσωρινή διεύθυνση κατάθεσης';
 	@override String get tempDepositAddressTip => '1.Αυτή είναι μια κοινή διεύθυνση κατάθεσης. Παρακαλείστε να μην καταθέσετε το ποσό μετά τη λήξη της μίσθωσης ή την αποσύνδεση. Το ποσό θα χαθεί εάν συμβεί αυτό.';
 	@override String get tempDepositAddressTip2 => '2.Πριν από την κατάθεση, βεβαιωθείτε ότι το [όνομα chain] και το [όνομα νομίσματος] ταιριάζουν ακριβώς.Εάν πρόκειται για συμβόλαιο token, πρέπει επίσης να επιβεβαιώσετε ότι το [πρότυπο συμβολαίου] και η [διεύθυνση συμβολαίου] ταιριάζουν ακριβώς.';
@@ -5093,7 +5117,10 @@ class _StringsEl implements Translations {
 	@override String get transferToAddress => 'μεταφορά στη διεύθυνση';
 	@override String get longPressToPaste => 'Πατήστε παρατεταμένα για επικόλληση';
 	@override String get all => 'Όλα';
-	@override String balanceX({required Object x}) => 'Υπόλοιπο ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Υπόλοιπο '),
+		x,
+	]);
 	@override String get transferOut => 'Μεταβίβαση';
 	@override String depositXcoins({required Object x}) => 'Κατάθεση ${x}';
 	@override String get sender => 'Αποστολέας';
@@ -5172,7 +5199,7 @@ class _StringsEl implements Translations {
 	@override String get rates => 'ποσοστά';
 	@override String get minimum => 'Ελάχιστο';
 	@override String get maximum => 'Μέγιστο';
-	@override String get minimumBlockConfirmations => 'Ελάχιστες επιβεβαιώσεις μπλοκ';
+	@override String get minimumBlockConfirmations => 'ελάχ. Επιβεβαιώσεις Μπλοκ';
 	@override String get dsmsVerifyTerminal => 'Τερματικό επαλήθευσης DSMS';
 	@override String get overall => 'συνολικά';
 	@override String get my => 'Μου';
@@ -5508,6 +5535,7 @@ class _StringsEl implements Translations {
 	@override String get clicks => 'Αριθμός κλικ';
 	@override String get rankings => 'Κατατάξεις';
 	@override String get downloadFailed => 'Η λήψη απέτυχε!';
+	@override String get continueDraggingToLoadMore => 'Συνεχίστε να σύρετε για να φορτώσετε περισσότερα…';
 }
 
 // Path: <root>
@@ -5837,7 +5865,7 @@ class _StringsEs implements Translations {
 	@override String get walletAddress => 'Dirección de la cartera';
 	@override String get currentAddress => 'dirección actual';
 	@override String get depositAddress => 'Dirección de recarga';
-	@override String get receivingMoneyAddress => 'dirección del beneficiario';
+	@override String get receivingMoneyAddress => 'Dirección de recepción';
 	@override String get applyTempDepositAddress => 'Dirección para solicitar una recarga temporal';
 	@override String get tempDepositAddressTip => '1. Esta es una dirección de depósito compartido. Por favor, no deposite el importe después de que el contrato de alquiler haya expirado o después de que le hayan desvinculado. Si esto ocurre, el importe se perderá.';
 	@override String get tempDepositAddressTip2 => '2. Antes de realizar un depósito, asegúrese de que el [Nombre de la cadena] y el [Nombre de la moneda] coinciden exactamente; en el caso de los tokens de contrato, también debe asegurarse de que el [Estándar del contrato] y la [Dirección del contrato] coinciden exactamente.';
@@ -5861,7 +5889,10 @@ class _StringsEs implements Translations {
 	@override String get transferToAddress => 'ir a la dirección';
 	@override String get longPressToPaste => 'Pulsación larga para pegar';
 	@override String get all => 'completo';
-	@override String balanceX({required Object x}) => 'Saldo ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Saldo '),
+		x,
+	]);
 	@override String get transferOut => 'resultar';
 	@override String depositXcoins({required Object x}) => 'Acreditado ${x}';
 	@override String get sender => 'remitente';
@@ -5940,7 +5971,7 @@ class _StringsEs implements Translations {
 	@override String get rates => 'tarifa';
 	@override String get minimum => 'mínimo';
 	@override String get maximum => 'límite superior';
-	@override String get minimumBlockConfirmations => 'Número mínimo de confirmaciones de bloque';
+	@override String get minimumBlockConfirmations => 'min. Confirmaciones de bloque';
 	@override String get dsmsVerifyTerminal => 'Terminal de validación DSMS';
 	@override String get overall => 'paraguas';
 	@override String get my => 'mi';
@@ -6275,6 +6306,7 @@ class _StringsEs implements Translations {
 	@override String get clicks => 'Conteo de clics';
 	@override String get rankings => 'Clasificaciones';
 	@override String get downloadFailed => '¡Descarga fallida!';
+	@override String get continueDraggingToLoadMore => 'Continúa arrastrando para cargar más…';
 }
 
 // Path: <root>
@@ -6604,7 +6636,7 @@ class _StringsFr implements Translations {
 	@override String get walletAddress => 'Adresse du portefeuille';
 	@override String get currentAddress => 'adresse actuelle';
 	@override String get depositAddress => 'Adresse de dépot';
-	@override String get receivingMoneyAddress => 'adresse du bénéficiaire';
+	@override String get receivingMoneyAddress => 'Adresse de réception';
 	@override String get applyTempDepositAddress => 'Adresse pour la demande d\'un complément temporaire';
 	@override String get tempDepositAddressTip => '1) Il s\'agit d\'une adresse de dépôt partagé. Veuillez ne pas déposer le montant après l\'expiration du bail ou après la déliaison. Dans ce cas, le montant sera perdu.';
 	@override String get tempDepositAddressTip2 => '2) Avant d\'effectuer un dépôt, veuillez vous assurer que le [Nom de la chaîne] et le [Nom de la pièce] correspondent exactement ; dans le cas des jetons de contrat, vous devez également vous assurer que la [Norme du contrat] et l\'[Adresse du contrat] correspondent exactement.';
@@ -6628,7 +6660,10 @@ class _StringsFr implements Translations {
 	@override String get transferToAddress => 'transférer à l\'adresse';
 	@override String get longPressToPaste => 'Appui long pour coller';
 	@override String get all => 'Totalité';
-	@override String balanceX({required Object x}) => 'Solde ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Solde '),
+		x,
+	]);
 	@override String get transferOut => 'Transférer';
 	@override String depositXcoins({required Object x}) => 'Créditer ${x}';
 	@override String get sender => 'Expéditeur';
@@ -6707,7 +6742,7 @@ class _StringsFr implements Translations {
 	@override String get rates => 'tarif';
 	@override String get minimum => 'Minimum';
 	@override String get maximum => 'Maximum';
-	@override String get minimumBlockConfirmations => 'Nombre minimum de confirmations de blocs';
+	@override String get minimumBlockConfirmations => 'Confirmations de bloc min.';
 	@override String get dsmsVerifyTerminal => 'Terminal de validation DSMS';
 	@override String get overall => 'globale';
 	@override String get my => 'Mon';
@@ -7042,6 +7077,7 @@ class _StringsFr implements Translations {
 	@override String get clicks => 'Nombre de clics';
 	@override String get rankings => 'Classements';
 	@override String get downloadFailed => 'Le téléchargement a échoué !';
+	@override String get continueDraggingToLoadMore => 'Continuez à faire glisser pour charger plus d\'éléments…';
 }
 
 // Path: <root>
@@ -7368,7 +7404,7 @@ class _StringsHi implements Translations {
 	@override String get walletAddress => 'वॉलेट एड्रेस';
 	@override String get currentAddress => 'करंट एड्रेस';
 	@override String get depositAddress => 'डिपॉजिट एड्रेस';
-	@override String get receivingMoneyAddress => 'पैसे प्राप्त करने का एड्रेस';
+	@override String get receivingMoneyAddress => 'प्राप्तकर्ता का पता';
 	@override String get applyTempDepositAddress => 'अस्थायी जमा एड्रेस के लिए आवेदन करें';
 	@override String get tempDepositAddressTip => '1.यह एक साझा जमा एड्रेस है। कृपया पट्टा समाप्त होने या अनबाउंड होने के बाद राशि जमा न करें। ऐसा होने पर राशि खो जाएगी।.';
 	@override String get tempDepositAddressTip2 => '2.जमा करने से पहले, कृपया यह सुनिश्चित करें कि [चेन नाम] और [मुद्रा नाम] बिल्कुल मेल खाते हैं; यदि यह एक अनुबंध टोकन है, तो आपको यह भी सुनिश्चित करना होगा कि [अनुबंध मानक] और [अनुबंध एड्रेस] बिल्कुल मेल खाते हैं।';
@@ -7391,7 +7427,10 @@ class _StringsHi implements Translations {
 	@override String get transferToAddress => 'एड्रेस पर ट्रांसफर करें';
 	@override String get longPressToPaste => 'पेस्ट करने के लिए लंबे समय तक दबाएं';
 	@override String get all => 'सभी';
-	@override String balanceX({required Object x}) => 'बैलेंस ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'बैलेंस '),
+		x,
+	]);
 	@override String get transferOut => 'निकासी करें';
 	@override String depositXcoins({required Object x}) => 'डिपॉजिट ${x}';
 	@override String get sender => 'सेंडर';
@@ -7470,7 +7509,7 @@ class _StringsHi implements Translations {
 	@override String get rates => 'दर';
 	@override String get minimum => 'न्यूनतम';
 	@override String get maximum => 'अधिकतम';
-	@override String get minimumBlockConfirmations => 'न्यूनतम ब्लॉक पुष्टि';
+	@override String get minimumBlockConfirmations => 'न्यूनतम ब्लॉक पुष्टिकरण';
 	@override String get dsmsVerifyTerminal => 'DSMS सत्यापनकर्ता टर्मिनल';
 	@override String get overall => 'कुल मिलाकर';
 	@override String get my => 'मेरा / मेरी';
@@ -7805,6 +7844,7 @@ class _StringsHi implements Translations {
 	@override String get clicks => 'क्लिक गिनती';
 	@override String get rankings => 'रैंकिंग';
 	@override String get downloadFailed => 'डाउनलोड विफल!';
+	@override String get continueDraggingToLoadMore => 'अधिक लोड करने के लिए खींचना जारी रखें…';
 }
 
 // Path: <root>
@@ -8133,7 +8173,7 @@ class _StringsIt implements Translations {
 	@override String get walletAddress => 'Indirizzo portafoglio';
 	@override String get currentAddress => 'Indirizzo attuale';
 	@override String get depositAddress => 'Indirizzo di deposito';
-	@override String get receivingMoneyAddress => 'Indirizzo di ricezione denaro';
+	@override String get receivingMoneyAddress => 'Indirizzo di ricezione';
 	@override String get applyTempDepositAddress => 'Richiedi indirizzo di deposito temporaneo';
 	@override String get tempDepositAddressTip => '1. Questo è un indirizzo di deposito condiviso. Per favore, non depositare l\'importo dopo la scadenza del leasing o la disassociazione. L\'importo sarà perso se ciò accade.';
 	@override String get tempDepositAddressTip2 => '2. Prima di depositare, per favore, assicurati di confermare che [nome catena] e [nome valuta] corrispondano esattamente; se è un token di contratto, devi anche confermare che [standard contratto] e [indirizzo contratto] corrispondano esattamente.';
@@ -8156,7 +8196,10 @@ class _StringsIt implements Translations {
 	@override String get transferToAddress => 'trasferisci a indirizzo';
 	@override String get longPressToPaste => 'Tieni premuto per incollare';
 	@override String get all => 'Tutti';
-	@override String balanceX({required Object x}) => 'Saldo ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Saldo '),
+		x,
+	]);
 	@override String get transferOut => 'Trasferisci fuori';
 	@override String depositXcoins({required Object x}) => 'Deposito ${x}';
 	@override String get sender => 'Mittente';
@@ -8235,7 +8278,7 @@ class _StringsIt implements Translations {
 	@override String get rates => 'tassi';
 	@override String get minimum => 'Minimo';
 	@override String get maximum => 'Massimo';
-	@override String get minimumBlockConfirmations => 'Conferme di blocco minime';
+	@override String get minimumBlockConfirmations => 'min. Conferme di blocco';
 	@override String get dsmsVerifyTerminal => 'Terminale verificatore DSMS';
 	@override String get overall => 'complessivo';
 	@override String get my => 'Mio';
@@ -8570,6 +8613,7 @@ class _StringsIt implements Translations {
 	@override String get clicks => 'Conteggio dei clic';
 	@override String get rankings => 'Classifiche';
 	@override String get downloadFailed => 'Download non riuscito!';
+	@override String get continueDraggingToLoadMore => 'Continua a trascinare per caricare altro...';
 }
 
 // Path: <root>
@@ -8897,7 +8941,7 @@ class _StringsJa implements Translations {
 	@override String get walletAddress => '財布の住所';
 	@override String get currentAddress => '現住所';
 	@override String get depositAddress => 'リチャージ住所';
-	@override String get receivingMoneyAddress => '受取人住所';
+	@override String get receivingMoneyAddress => '受取住所';
 	@override String get applyTempDepositAddress => '一時増額申請先';
 	@override String get tempDepositAddressTip => '1.この住所は共有の保証金住所です。リース期間満了後や、拘束解除後のご入金はご遠慮ください。その場合、金額は失われます。';
 	@override String get tempDepositAddressTip2 => '2.入金を行う前に、[チェーン名]と[コイン名]が完全に一致していることを確認してください。コントラクトトークンの場合は、[コントラクトスタンダード]と[コントラクトアドレス]が完全に一致していることも確認する必要があります。';
@@ -8921,7 +8965,10 @@ class _StringsJa implements Translations {
 	@override String get transferToAddress => 'アドレスへ';
 	@override String get longPressToPaste => '長押しでペースト';
 	@override String get all => 'フル';
-	@override String balanceX({required Object x}) => '残高 ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: '残高 '),
+		x,
+	]);
 	@override String get transferOut => 'ひっくりかえす';
 	@override String depositXcoins({required Object x}) => 'クレジット ${x}';
 	@override String get sender => '送信者';
@@ -9000,7 +9047,7 @@ class _StringsJa implements Translations {
 	@override String get rates => '料金表';
 	@override String get minimum => '最小';
 	@override String get maximum => '上限';
-	@override String get minimumBlockConfirmations => '最低ブロック確認数';
+	@override String get minimumBlockConfirmations => '最小ブロック確認';
 	@override String get dsmsVerifyTerminal => 'DSMS検証ターミナル';
 	@override String get overall => '傘';
 	@override String get my => '私の';
@@ -9334,6 +9381,7 @@ class _StringsJa implements Translations {
 	@override String get clicks => 'クリック数';
 	@override String get rankings => 'ランキング';
 	@override String get downloadFailed => 'ダウンロードに失敗しました。';
+	@override String get continueDraggingToLoadMore => 'さらに読み込むにはドラッグを続けます…';
 }
 
 // Path: <root>
@@ -9663,7 +9711,7 @@ class _StringsKo implements Translations {
 	@override String get walletAddress => '지갑 주소';
 	@override String get currentAddress => '현재 주소';
 	@override String get depositAddress => '충전 주소';
-	@override String get receivingMoneyAddress => '수취인 주소';
+	@override String get receivingMoneyAddress => '수신 주소';
 	@override String get applyTempDepositAddress => '임시 충전 요청을 위한 주소';
 	@override String get tempDepositAddressTip => '1. 공유 입금 주소입니다. 임대가 만료되었거나 해지된 후에는 금액을 입금하지 마세요. 이 경우 해당 금액은 손실됩니다.';
 	@override String get tempDepositAddressTip2 => '2. 입금 전 [체인명]과 [코인명]이 정확히 일치하는지 확인하시고, 컨트랙트 토큰의 경우 [계약 기준]과 [계약 주소]도 정확히 일치하는지 확인하시기 바랍니다.';
@@ -9687,7 +9735,10 @@ class _StringsKo implements Translations {
 	@override String get transferToAddress => '주소로 이동';
 	@override String get longPressToPaste => '길게 눌러 붙여넣기';
 	@override String get all => '전체';
-	@override String balanceX({required Object x}) => '잔액 ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: '잔액 '),
+		x,
+	]);
 	@override String get transferOut => '턴아웃';
 	@override String depositXcoins({required Object x}) => '크레딧 ${x}';
 	@override String get sender => '발신자';
@@ -9766,7 +9817,7 @@ class _StringsKo implements Translations {
 	@override String get rates => '관세';
 	@override String get minimum => '최소';
 	@override String get maximum => '상한';
-	@override String get minimumBlockConfirmations => '최소 차단 확인 횟수';
+	@override String get minimumBlockConfirmations => '최소 블록 확인';
 	@override String get dsmsVerifyTerminal => 'DSMS 유효성 검사 터미널';
 	@override String get overall => '우산';
 	@override String get my => 'my';
@@ -10100,6 +10151,7 @@ class _StringsKo implements Translations {
 	@override String get clicks => '클릭 수';
 	@override String get rankings => '랭킹';
 	@override String get downloadFailed => '다운로드에 실패했습니다!';
+	@override String get continueDraggingToLoadMore => '더 많은 내용을 로드하려면 계속 드래그하세요…';
 }
 
 // Path: <root>
@@ -10429,7 +10481,7 @@ class _StringsNl implements Translations {
 	@override String get walletAddress => 'Wallet adres';
 	@override String get currentAddress => 'Huidig adres';
 	@override String get depositAddress => 'Oplaadadres';
-	@override String get receivingMoneyAddress => 'Ontvangende geld adres';
+	@override String get receivingMoneyAddress => 'Ontvangstadres';
 	@override String get applyTempDepositAddress => 'Tijdelijk opwaarderingsadres aanvragen';
 	@override String get tempDepositAddressTip => '1. Dit is een gedeeld opwaarderingsadres. Stort het bedrag niet nadat de huur is verlopen of ontbonden. Het bedrag zal dan verloren gaan.';
 	@override String get tempDepositAddressTip2 => '2. Voordat je stort, moet je bevestigen dat [chain name] en [currency name] exact overeenkomen; als het een contracttoken is, moet je ook bevestigen dat [contractstandaard] en [contractadres] exact overeenkomen.';
@@ -10453,7 +10505,10 @@ class _StringsNl implements Translations {
 	@override String get transferToAddress => 'Schrijf over naar adres';
 	@override String get longPressToPaste => 'Lang indrukken om te plakken';
 	@override String get all => 'Alles';
-	@override String balanceX({required Object x}) => 'Saldo ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Saldo '),
+		x,
+	]);
 	@override String get transferOut => 'Uitgaande storting';
 	@override String depositXcoins({required Object x}) => 'Stort ${x}';
 	@override String get sender => 'Afzender';
@@ -10532,7 +10587,7 @@ class _StringsNl implements Translations {
 	@override String get rates => 'Rates';
 	@override String get minimum => 'Minimum';
 	@override String get maximum => 'Maximum';
-	@override String get minimumBlockConfirmations => 'Minimum aantal blokbevestigingen';
+	@override String get minimumBlockConfirmations => 'min. Blokbevestigingen';
 	@override String get dsmsVerifyTerminal => 'DSMS Valideringsterminal';
 	@override String get overall => 'Algemeen';
 	@override String get my => 'Mijn';
@@ -10866,6 +10921,7 @@ class _StringsNl implements Translations {
 	@override String get clicks => 'Klikken aantal';
 	@override String get rankings => 'Ranglijsten';
 	@override String get downloadFailed => 'Downloaden mislukt!';
+	@override String get continueDraggingToLoadMore => 'Blijf slepen om meer te laden…';
 }
 
 // Path: <root>
@@ -11195,7 +11251,7 @@ class _StringsPl implements Translations {
 	@override String get walletAddress => 'Adres portfela';
 	@override String get currentAddress => 'aktualny adres';
 	@override String get depositAddress => 'Adres doładowania';
-	@override String get receivingMoneyAddress => 'adres odbiorcy płatności';
+	@override String get receivingMoneyAddress => 'Adres odbiorczy';
 	@override String get applyTempDepositAddress => 'Adres do składania wniosków o tymczasowe doładowanie';
 	@override String get tempDepositAddressTip => '1) Jest to wspólny adres depozytowy. Nie należy wpłacać kwoty po wygaśnięciu umowy najmu lub po rozwiązaniu umowy. W takim przypadku kwota zostanie utracona.';
 	@override String get tempDepositAddressTip2 => '2) Przed dokonaniem wpłaty należy upewnić się, że [nazwa łańcucha] i [nazwa monety] są dokładnie zgodne; w przypadku tokenów kontraktowych należy również upewnić się, że [standard kontraktu] i [adres kontraktu] są dokładnie zgodne.';
@@ -11219,7 +11275,10 @@ class _StringsPl implements Translations {
 	@override String get transferToAddress => 'przejdź do adresu';
 	@override String get longPressToPaste => 'Długie naciśnięcie, aby wkleić';
 	@override String get all => 'pełny';
-	@override String balanceX({required Object x}) => 'Saldo ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Saldo '),
+		x,
+	]);
 	@override String get transferOut => 'wyłączyć się';
 	@override String depositXcoins({required Object x}) => 'Kredyt ${x}';
 	@override String get sender => 'nadawca';
@@ -11298,7 +11357,7 @@ class _StringsPl implements Translations {
 	@override String get rates => 'taryfa';
 	@override String get minimum => 'minimum';
 	@override String get maximum => 'górny limit';
-	@override String get minimumBlockConfirmations => 'Minimalna liczba potwierdzeń bloków';
+	@override String get minimumBlockConfirmations => 'min. Potwierdzenia bloków';
 	@override String get dsmsVerifyTerminal => 'Terminal walidacyjny DSMS';
 	@override String get overall => 'parasol';
 	@override String get my => 'mój';
@@ -11633,6 +11692,7 @@ class _StringsPl implements Translations {
 	@override String get clicks => 'Liczba kliknięć';
 	@override String get rankings => 'Rankingi';
 	@override String get downloadFailed => 'Pobieranie nie powiodło się!';
+	@override String get continueDraggingToLoadMore => 'Kontynuuj przeciąganie, aby załadować więcej…';
 }
 
 // Path: <root>
@@ -11962,7 +12022,7 @@ class _StringsPt implements Translations {
 	@override String get walletAddress => 'Endereço da carteira';
 	@override String get currentAddress => 'endereço atual';
 	@override String get depositAddress => 'Endereço de recarga';
-	@override String get receivingMoneyAddress => 'endereço do beneficiário';
+	@override String get receivingMoneyAddress => 'Endereço de recebimento';
 	@override String get applyTempDepositAddress => 'Endereço para solicitar uma recarga temporária';
 	@override String get tempDepositAddressTip => '1) Este é um endereço de depósito partilhado. Não deposite o montante depois de o contrato de aluguer ter expirado ou depois de ter sido desvinculado. Se isso acontecer, o montante será perdido.';
 	@override String get tempDepositAddressTip2 => '2) Antes de efetuar um depósito, certifique-se de que o [nome da cadeia] e o [nome da moeda] correspondem exatamente; no caso de tokens de contrato, também precisa de se certificar de que o [padrão do contrato] e o [endereço do contrato] correspondem exatamente.';
@@ -11986,7 +12046,10 @@ class _StringsPt implements Translations {
 	@override String get transferToAddress => 'ir para o endereço';
 	@override String get longPressToPaste => 'Pressão longa para colar';
 	@override String get all => 'completo';
-	@override String balanceX({required Object x}) => 'Saldo ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Saldo '),
+		x,
+	]);
 	@override String get transferOut => 'sair';
 	@override String depositXcoins({required Object x}) => 'Creditado ${x}';
 	@override String get sender => 'remetente';
@@ -12065,7 +12128,7 @@ class _StringsPt implements Translations {
 	@override String get rates => 'tarifa';
 	@override String get minimum => 'mínimo';
 	@override String get maximum => 'limite superior';
-	@override String get minimumBlockConfirmations => 'Número mínimo de confirmações de bloqueio';
+	@override String get minimumBlockConfirmations => 'Confirmações de bloco mínimas';
 	@override String get dsmsVerifyTerminal => 'Terminal de validação DSMS';
 	@override String get overall => 'guarda-chuva';
 	@override String get my => 'meu';
@@ -12399,6 +12462,7 @@ class _StringsPt implements Translations {
 	@override String get clicks => 'Contagem de cliques';
 	@override String get rankings => 'Classificações';
 	@override String get downloadFailed => 'O download falhou!';
+	@override String get continueDraggingToLoadMore => 'Continue arrastando para carregar mais…';
 }
 
 // Path: <root>
@@ -12727,7 +12791,7 @@ class _StringsRo implements Translations {
 	@override String get walletAddress => 'Adresă portofel';
 	@override String get currentAddress => 'adresă curentă';
 	@override String get depositAddress => 'adresă de depozit';
-	@override String get receivingMoneyAddress => 'Adresă de primire bani';
+	@override String get receivingMoneyAddress => 'Adresă de primire';
 	@override String get applyTempDepositAddress => 'Aplică pentru adresă de depozit temporară';
 	@override String get tempDepositAddressTip => '1.Aceasta este o adresă de depozit partajată. Te rugăm să nu depozitezi suma după expirarea lease-ului sau după dezlegare. Suma se va pierde dacă se întâmplă acest lucru.';
 	@override String get tempDepositAddressTip2 => '2.Înainte de depozitare, te rugăm să te asiguri că [numele lanțului] și [numele monedei] se potrivesc exact; dacă este un token de contract, trebuie, de asemenea, să confirmi că [standardul contractului] și [adresa contractului] se potrivesc exact.';
@@ -12750,7 +12814,10 @@ class _StringsRo implements Translations {
 	@override String get transferToAddress => 'transferă la adresă';
 	@override String get longPressToPaste => 'Ține apăsat pentru a lipi';
 	@override String get all => 'Toate';
-	@override String balanceX({required Object x}) => 'Sold ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Sold '),
+		x,
+	]);
 	@override String get transferOut => 'Transferă afară';
 	@override String depositXcoins({required Object x}) => 'Depozitează ${x}';
 	@override String get sender => 'Expeditor';
@@ -12829,7 +12896,7 @@ class _StringsRo implements Translations {
 	@override String get rates => 'rate';
 	@override String get minimum => 'Minim';
 	@override String get maximum => 'Maxim';
-	@override String get minimumBlockConfirmations => 'confirmări minime de bloc';
+	@override String get minimumBlockConfirmations => 'Confirmări minime în bloc';
 	@override String get dsmsVerifyTerminal => 'Terminal verificator DSMS';
 	@override String get overall => 'general';
 	@override String get my => 'Meu';
@@ -13164,6 +13231,7 @@ class _StringsRo implements Translations {
 	@override String get clicks => 'Număr de clicuri';
 	@override String get rankings => 'Clasamente';
 	@override String get downloadFailed => 'Descărcarea a eșuat!';
+	@override String get continueDraggingToLoadMore => 'Continuă să tragi pentru a încărca mai multe…';
 }
 
 // Path: <root>
@@ -13493,7 +13561,7 @@ class _StringsRu implements Translations {
 	@override String get walletAddress => 'Адрес кошелька';
 	@override String get currentAddress => 'текущий адрес';
 	@override String get depositAddress => 'Адрес пополнения';
-	@override String get receivingMoneyAddress => 'адрес получателя платежа';
+	@override String get receivingMoneyAddress => 'Адрес получателя';
 	@override String get applyTempDepositAddress => 'Адрес для подачи запроса на временное пополнение счета';
 	@override String get tempDepositAddressTip => '1. Это общий депозитный адрес. Пожалуйста, не вносите сумму после истечения срока аренды или после того, как вас отвязали. Если это произойдет, сумма будет потеряна.';
 	@override String get tempDepositAddressTip2 => '2. перед внесением депозита убедитесь, что [Название цепи] и [Название монеты] полностью совпадают; в случае контрактных токенов вам также необходимо убедиться, что [Стандарт контракта] и [Адрес контракта] полностью совпадают.';
@@ -13517,7 +13585,10 @@ class _StringsRu implements Translations {
 	@override String get transferToAddress => 'перейти по адресу';
 	@override String get longPressToPaste => 'Длительное нажатие для вставки';
 	@override String get all => 'полный';
-	@override String balanceX({required Object x}) => 'Баланс ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Баланс '),
+		x,
+	]);
 	@override String get transferOut => 'превращаться';
 	@override String depositXcoins({required Object x}) => 'Начислено ${x}';
 	@override String get sender => 'отправитель';
@@ -13596,7 +13667,7 @@ class _StringsRu implements Translations {
 	@override String get rates => 'тариф';
 	@override String get minimum => 'минимум';
 	@override String get maximum => 'верхний предел';
-	@override String get minimumBlockConfirmations => 'Минимальное количество подтверждений блока';
+	@override String get minimumBlockConfirmations => 'мин. Подтверждения блоков';
 	@override String get dsmsVerifyTerminal => 'Терминал проверки DSMS';
 	@override String get overall => 'зонт';
 	@override String get my => 'мой';
@@ -13931,6 +14002,7 @@ class _StringsRu implements Translations {
 	@override String get clicks => 'Количество кликов';
 	@override String get rankings => 'Рейтинги';
 	@override String get downloadFailed => 'Загрузка не удалась!';
+	@override String get continueDraggingToLoadMore => 'Продолжайте перетаскивать, чтобы загрузить больше…';
 }
 
 // Path: <root>
@@ -14255,7 +14327,7 @@ class _StringsSw implements Translations {
 	@override String get walletAddress => 'Anwani ya Pochi';
 	@override String get currentAddress => 'Anwani ya Sasa';
 	@override String get depositAddress => 'Anwani ya Amana';
-	@override String get receivingMoneyAddress => 'Anwani ya kupokea pesa';
+	@override String get receivingMoneyAddress => 'Anwani ya kupokea';
 	@override String get applyTempDepositAddress => 'Omba anwani ya amana ya muda';
 	@override String get tempDepositAddressTip => '1.Hii ni anwani ya amana iliyoshirikiwa. Tafadhali usiweke kiasi baada ya kukodisha kumalizika au kuunganishwa. Kiasi kitapotea ikiwa hii itatokea.';
 	@override String get tempDepositAddressTip2 => '2.Kabla ya kuweka amana, tafadhali hakikisha kuwa [jina la mnyororo] na [jina la sarafu] zinalingana kabisa; ikiwa ni tokeni ya mkataba, unahitaji pia kuthibitisha kuwa [kiwango cha mkataba] na [anwani ya mkataba] zinalingana kabisa.';
@@ -14278,7 +14350,10 @@ class _StringsSw implements Translations {
 	@override String get transferToAddress => 'hamisha kwa anwani';
 	@override String get longPressToPaste => 'Bonyeza kwa muda mrefu ili kubandika';
 	@override String get all => 'Yote';
-	@override String balanceX({required Object x}) => 'Salio ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Salio '),
+		x,
+	]);
 	@override String get transferOut => 'Hamisha nje';
 	@override String depositXcoins({required Object x}) => 'Weka ${x} sarafu';
 	@override String get sender => 'Mtumaji';
@@ -14357,7 +14432,7 @@ class _StringsSw implements Translations {
 	@override String get rates => 'viwango';
 	@override String get minimum => 'Kiwango cha chini';
 	@override String get maximum => 'Kiwango cha juu';
-	@override String get minimumBlockConfirmations => 'Uthibitisho wa Bloku za Kiwango cha Chini';
+	@override String get minimumBlockConfirmations => 'Uthibitishaji wa Block wa chini';
 	@override String get dsmsVerifyTerminal => 'Kituo cha Kuthibitisha DSMS';
 	@override String get overall => 'jumla';
 	@override String get my => 'Yangu';
@@ -14693,6 +14768,7 @@ class _StringsSw implements Translations {
 	@override String get clicks => 'Idadi ya kubofya';
 	@override String get rankings => 'Nafasi';
 	@override String get downloadFailed => 'Imeshindwa kupakua!';
+	@override String get continueDraggingToLoadMore => 'Endelea kuburuta ili kupakia zaidi...';
 }
 
 // Path: <root>
@@ -15021,7 +15097,7 @@ class _StringsTh implements Translations {
 	@override String get walletAddress => 'ที่อยู่กระเป๋าเงิน';
 	@override String get currentAddress => 'ที่อยู่ปัจจุบัน';
 	@override String get depositAddress => 'ที่อยู่เติมเงิน';
-	@override String get receivingMoneyAddress => 'ที่อยู่การชำระเงิน';
+	@override String get receivingMoneyAddress => 'ที่อยู่ผู้รับ';
 	@override String get applyTempDepositAddress => 'สมัครขอที่อยู่เติมเงินชั่วคราว';
 	@override String get tempDepositAddressTip => '1. นี่คือที่อยู่การฝากเงินที่ใช้ร่วมกัน กรุณาอย่าวางเงินมัดจำหลังจากสัญญาเช่าหมดอายุหรือไม่ถูกผูกมัด หากเกิดเหตุการณ์นี้ จำนวนเงินจะหายไป';
 	@override String get tempDepositAddressTip2 => '2. ก่อนทำการฝากเงิน โปรดตรวจสอบให้แน่ใจว่า [ชื่อลูกโซ่] และ [ชื่อสกุลเงิน] ตรงกันอย่างสมบูรณ์ หากเป็นโทเค็นสัญญา คุณต้องยืนยันด้วยว่า [มาตรฐานสัญญา] และ [ที่อยู่สัญญา] ตรงกันอย่างสมบูรณ์';
@@ -15045,7 +15121,10 @@ class _StringsTh implements Translations {
 	@override String get transferToAddress => 'ไปที่ที่อยู่';
 	@override String get longPressToPaste => 'กดค้างเพื่อวาง';
 	@override String get all => 'ทั้งหมด';
-	@override String balanceX({required Object x}) => 'ยอดคงเหลือ ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'ยอดคงเหลือ '),
+		x,
+	]);
 	@override String get transferOut => 'โอนออก';
 	@override String depositXcoins({required Object x}) => 'ฝากเงิน ${x}';
 	@override String get sender => 'ผู้ส่ง';
@@ -15124,7 +15203,7 @@ class _StringsTh implements Translations {
 	@override String get rates => 'ประเมิน';
 	@override String get minimum => 'ขั้นต่ำ';
 	@override String get maximum => 'สูงสุด';
-	@override String get minimumBlockConfirmations => 'จำนวนการยืนยันบล็อกขั้นต่ำ';
+	@override String get minimumBlockConfirmations => 'การยืนยันบล็อกขั้นต่ำ';
 	@override String get dsmsVerifyTerminal => 'เทอร์มินัลการตรวจสอบ DSMS';
 	@override String get overall => 'โดยรวม';
 	@override String get my => 'ของฉัน';
@@ -15458,6 +15537,7 @@ class _StringsTh implements Translations {
 	@override String get clicks => 'จำนวนการคลิก';
 	@override String get rankings => 'อันดับ';
 	@override String get downloadFailed => 'ดาวน์โหลดล้มเหลว!';
+	@override String get continueDraggingToLoadMore => 'ลากต่อไปเพื่อโหลดเพิ่มเติม…';
 }
 
 // Path: <root>
@@ -15786,7 +15866,7 @@ class _StringsTr implements Translations {
 	@override String get walletAddress => 'Cüzdan Adresi';
 	@override String get currentAddress => 'mevcut Adres';
 	@override String get depositAddress => 'yatırma Adresi';
-	@override String get receivingMoneyAddress => 'Para alma adresi';
+	@override String get receivingMoneyAddress => 'Alıcı adresi';
 	@override String get applyTempDepositAddress => 'Geçici yatırma adresi başvurusu';
 	@override String get tempDepositAddressTip => '1. Bu paylaşılan bir yatırma adresidir. Lütfen kira süresi dolduktan veya bağlantısı kesildikten sonra miktar yatırmayın. Bu durumda miktar kaybolur.';
 	@override String get tempDepositAddressTip2 => '2. Yatırma yapmadan önce, lütfen [zincir adı] ve [para birimi adı] tam olarak eşleştiğini teyit edin; eğer sözleşme token\'ı ise, [sözleşme standardı] ve [sözleşme adresi] tam olarak eşleştiğini de teyit etmeniz gerekir.';
@@ -15809,7 +15889,10 @@ class _StringsTr implements Translations {
 	@override String get transferToAddress => 'adrese transfer';
 	@override String get longPressToPaste => 'Yapıştırmak için uzun basın';
 	@override String get all => 'Tümü';
-	@override String balanceX({required Object x}) => 'Bakiye ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Bakiye '),
+		x,
+	]);
 	@override String get transferOut => 'Transfer et';
 	@override String depositXcoins({required Object x}) => '${x} yatır';
 	@override String get sender => 'Gönderen';
@@ -15888,7 +15971,7 @@ class _StringsTr implements Translations {
 	@override String get rates => 'oranlar';
 	@override String get minimum => 'Minimum';
 	@override String get maximum => 'Maksimum';
-	@override String get minimumBlockConfirmations => 'minimum Blok Onayları';
+	@override String get minimumBlockConfirmations => 'min. Blok Onayları';
 	@override String get dsmsVerifyTerminal => 'DSMS doğrulayıcı terminali';
 	@override String get overall => 'genel';
 	@override String get my => 'Benim';
@@ -16223,6 +16306,7 @@ class _StringsTr implements Translations {
 	@override String get clicks => 'Tıklama sayısı';
 	@override String get rankings => 'Sıralamalar';
 	@override String get downloadFailed => 'İndirme başarısız!';
+	@override String get continueDraggingToLoadMore => 'Daha fazlasını yüklemek için sürüklemeye devam edin…';
 }
 
 // Path: <root>
@@ -16552,7 +16636,7 @@ class _StringsUk implements Translations {
 	@override String get walletAddress => 'Адреса гаманця';
 	@override String get currentAddress => 'поточна адреса';
 	@override String get depositAddress => 'Адреса поповнення рахунку';
-	@override String get receivingMoneyAddress => 'адреса одержувача платежу';
+	@override String get receivingMoneyAddress => 'Адреса отримання';
 	@override String get applyTempDepositAddress => 'Адреса для запиту на тимчасове поповнення рахунку';
 	@override String get tempDepositAddressTip => '1. це спільна депозитна адреса. Будь ласка, не вносьте суму після закінчення терміну оренди або після того, як ви звільнилися. Якщо це станеться, сума буде втрачена.';
 	@override String get tempDepositAddressTip2 => '2. перед внесенням депозиту, будь ласка, переконайтеся, що [Chain Name] і [Coin Name] точно збігаються; у випадку контрактних токенів, вам також потрібно переконатися, що [Contract Standard] і [Contract Address] точно збігаються.';
@@ -16576,7 +16660,10 @@ class _StringsUk implements Translations {
 	@override String get transferToAddress => 'перейти на адресу';
 	@override String get longPressToPaste => 'Тривале натискання для вставки';
 	@override String get all => 'повний';
-	@override String balanceX({required Object x}) => 'Баланс ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Баланс '),
+		x,
+	]);
 	@override String get transferOut => 'Виявляється.';
 	@override String depositXcoins({required Object x}) => 'Зараховано ${x}';
 	@override String get sender => 'відправник';
@@ -16655,7 +16742,7 @@ class _StringsUk implements Translations {
 	@override String get rates => 'тариф';
 	@override String get minimum => 'мінімум';
 	@override String get maximum => 'верхня межа';
-	@override String get minimumBlockConfirmations => 'Мінімальна кількість підтверджень блокування';
+	@override String get minimumBlockConfirmations => 'Мін. Підтвердження блоків';
 	@override String get dsmsVerifyTerminal => 'Термінал валідації DSMS';
 	@override String get overall => 'парасолька';
 	@override String get my => 'мій';
@@ -16989,6 +17076,7 @@ class _StringsUk implements Translations {
 	@override String get clicks => 'Кількість кліків';
 	@override String get rankings => 'Рейтинги';
 	@override String get downloadFailed => 'Завантаження не вдалося!';
+	@override String get continueDraggingToLoadMore => 'Продовжуйте перетягувати, щоб завантажити більше…';
 }
 
 // Path: <root>
@@ -17317,7 +17405,7 @@ class _StringsUr implements Translations {
 	@override String get walletAddress => 'والیٹ کا پتہ';
 	@override String get currentAddress => 'موجودہ پتہ';
 	@override String get depositAddress => 'جمع کرنے کا پتہ';
-	@override String get receivingMoneyAddress => 'پیسہ وصول کرنے کا پتہ';
+	@override String get receivingMoneyAddress => 'پتہ وصول کر رہا ہے۔';
 	@override String get applyTempDepositAddress => 'عارضی جمع پتے کی درخواست کریں';
 	@override String get tempDepositAddressTip => '1.یہ ایک مشترکہ جمع پتہ ہے۔ براہ کرم اس کی لیز ختم ہونے کے بعد رقم جمع نہ کریں۔ ایسا کرنے پر رقم ضائع ہو جائے گی۔';
 	@override String get tempDepositAddressTip2 => '2. جمع کرنے سے پہلے براہ کرم یہ یقینی بنائیں کہ [زنجیر کا نام] اور [کرنسی کا نام] بالکل میل کھاتے ہیں؛ اگر یہ ایک معاہدہ ٹوکن ہے تو، آپ کو یہ بھی یقین دلانا ہوگا کہ [معاہدہ معیاری] اور [معاہدہ پتہ] بالکل میل کھاتے ہیں۔';
@@ -17340,7 +17428,10 @@ class _StringsUr implements Translations {
 	@override String get transferToAddress => 'پتے پر منتقل کریں';
 	@override String get longPressToPaste => 'پیسٹ کرنے کے لئے لمبا دبائیں';
 	@override String get all => 'سب';
-	@override String balanceX({required Object x}) => 'بیلنس ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'بیلنس '),
+		x,
+	]);
 	@override String get transferOut => 'باہر منتقل کریں';
 	@override String depositXcoins({required Object x}) => '${x} جمع کریں';
 	@override String get sender => 'پہنچانے والا';
@@ -17419,7 +17510,7 @@ class _StringsUr implements Translations {
 	@override String get rates => 'شرحیں';
 	@override String get minimum => 'کم از کم';
 	@override String get maximum => 'زیادہ سے زیادہ';
-	@override String get minimumBlockConfirmations => 'کم سے کم بلاک کی تصدیق';
+	@override String get minimumBlockConfirmations => 'منٹ بلاک کنفرمیشنز';
 	@override String get dsmsVerifyTerminal => 'DSMS تصدیق کرنے والا ٹرمینل';
 	@override String get overall => 'مجموعی';
 	@override String get my => 'میری';
@@ -17754,6 +17845,7 @@ class _StringsUr implements Translations {
 	@override String get clicks => 'شمار پر کلک کریں۔';
 	@override String get rankings => 'درجہ بندی';
 	@override String get downloadFailed => 'ڈاؤن لوڈ ناکام!';
+	@override String get continueDraggingToLoadMore => 'مزید لوڈ کرنے کے لیے گھسیٹنا جاری رکھیں…';
 }
 
 // Path: <root>
@@ -18083,7 +18175,7 @@ class _StringsVi implements Translations {
 	@override String get walletAddress => 'địa chỉ ví';
 	@override String get currentAddress => 'địa chỉ hiện tại';
 	@override String get depositAddress => 'Địa chỉ nạp tiền';
-	@override String get receivingMoneyAddress => 'Địa chỉ thanh toán';
+	@override String get receivingMoneyAddress => 'Địa chỉ nhận hàng';
 	@override String get applyTempDepositAddress => 'Đăng ký địa chỉ nạp tiền tạm thời';
 	@override String get tempDepositAddressTip => '1. Đây là địa chỉ gửi tiền chung. Vui lòng không đặt cọc số tiền sau khi hợp đồng thuê hết hạn hoặc không bị ràng buộc. Nếu điều này xảy ra, số tiền sẽ bị mất.';
 	@override String get tempDepositAddressTip2 => '2. Trước khi gửi tiền, vui lòng đảm bảo rằng [tên chuỗi] và [tên tiền tệ] hoàn toàn khớp nhau; nếu đó là mã thông báo hợp đồng, bạn cũng cần xác nhận rằng [tiêu chuẩn hợp đồng] và [địa chỉ hợp đồng] hoàn toàn khớp nhau.';
@@ -18107,7 +18199,10 @@ class _StringsVi implements Translations {
 	@override String get transferToAddress => 'Đi đến địa chỉ';
 	@override String get longPressToPaste => 'Nhấn và giữ để dán';
 	@override String get all => 'tất cả';
-	@override String balanceX({required Object x}) => 'Số dư ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Số dư '),
+		x,
+	]);
 	@override String get transferOut => 'chuyển ra ngoài';
 	@override String depositXcoins({required Object x}) => 'Gửi ${x}';
 	@override String get sender => 'người gửi';
@@ -18186,7 +18281,7 @@ class _StringsVi implements Translations {
 	@override String get rates => 'Tỷ lệ';
 	@override String get minimum => 'tối thiểu';
 	@override String get maximum => 'tối đa';
-	@override String get minimumBlockConfirmations => 'Số lượng xác nhận khối tối thiểu';
+	@override String get minimumBlockConfirmations => 'xác nhận khối tối thiểu';
 	@override String get dsmsVerifyTerminal => 'Thiết bị đầu cuối xác minh DSMS';
 	@override String get overall => 'tổng thể';
 	@override String get my => 'của tôi';
@@ -18520,6 +18615,7 @@ class _StringsVi implements Translations {
 	@override String get clicks => 'Số lần nhấp chuột';
 	@override String get rankings => 'Xếp hạng';
 	@override String get downloadFailed => 'Tải xuống không thành công!';
+	@override String get continueDraggingToLoadMore => 'Tiếp tục kéo để tải thêm…';
 }
 
 // Path: <root>
@@ -18873,7 +18969,10 @@ class _StringsZhCn implements Translations {
 	@override String get transferToAddress => '转至地址';
 	@override String get longPressToPaste => '长按粘贴';
 	@override String get all => '全部';
-	@override String balanceX({required Object x}) => '余额 ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: '余额 '),
+		x,
+	]);
 	@override String get transferOut => '转 出';
 	@override String depositXcoins({required Object x}) => '入账 ${x}';
 	@override String get sender => '发送者';
@@ -19287,6 +19386,7 @@ class _StringsZhCn implements Translations {
 	@override String get clicks => '点击量';
 	@override String get rankings => '排行榜';
 	@override String get downloadFailed => '下载失败！';
+	@override String get continueDraggingToLoadMore => '继续拖动加载更多…';
 }
 
 // Path: <root>
@@ -19640,7 +19740,10 @@ class _StringsZhTw implements Translations {
 	@override String get transferToAddress => '轉至地址';
 	@override String get longPressToPaste => '長按貼上';
 	@override String get all => '全部';
-	@override String balanceX({required Object x}) => 'Balance ${x}';
+	@override TextSpan balanceX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Balance '),
+		x,
+	]);
 	@override String get transferOut => '轉 出';
 	@override String depositXcoins({required Object x}) => '入賬 ${x}';
 	@override String get sender => '傳送者';
@@ -20054,6 +20157,7 @@ class _StringsZhTw implements Translations {
 	@override String get clicks => '點擊量';
 	@override String get rankings => '排行榜';
 	@override String get downloadFailed => '下載失敗！';
+	@override String get continueDraggingToLoadMore => '繼續拖曳加載更多…';
 }
 
 /// Flat map(s) containing all translations.
@@ -20362,7 +20466,7 @@ extension on Translations {
 			case 'walletAddress': return 'Wallet Address';
 			case 'currentAddress': return 'current Address';
 			case 'depositAddress': return 'deposit Address';
-			case 'receivingMoneyAddress': return 'Receiving money address';
+			case 'receivingMoneyAddress': return 'Receiving address';
 			case 'applyTempDepositAddress': return 'Apply for temporary deposit address';
 			case 'tempDepositAddressTip': return '1.This is a shared deposit address. Please do not deposit the amount after the lease expires or is unbound. The amount will be lost if this happens.';
 			case 'tempDepositAddressTip2': return '2.Before depositing, please be sure to confirm that [chain name] and [currency name] exactly match; if it is a contract token, you also need to confirm that [contract standard] and [contract address] exactly match.';
@@ -20385,7 +20489,10 @@ extension on Translations {
 			case 'transferToAddress': return 'transfer to address';
 			case 'longPressToPaste': return 'Long press to paste';
 			case 'all': return 'All';
-			case 'balanceX': return ({required Object x}) => 'Balance ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Balance '),
+				x,
+			]);
 			case 'transferOut': return 'Transfer out';
 			case 'depositXcoins': return ({required Object x}) => 'Deposit ${x}';
 			case 'sender': return 'Sender';
@@ -20464,7 +20571,7 @@ extension on Translations {
 			case 'rates': return 'rates';
 			case 'minimum': return 'Minimum';
 			case 'maximum': return 'Maximum';
-			case 'minimumBlockConfirmations': return 'minimum  Block Confirmations';
+			case 'minimumBlockConfirmations': return 'min. Block Confirmations';
 			case 'dsmsVerifyTerminal': return 'DSMS verifier terminal';
 			case 'overall': return 'overall';
 			case 'my': return 'My';
@@ -20799,6 +20906,7 @@ extension on Translations {
 			case 'clicks': return 'Click count';
 			case 'rankings': return 'Rankings';
 			case 'downloadFailed': return 'Download failed!';
+			case 'continueDraggingToLoadMore': return 'Continue dragging to load more…';
 			default: return null;
 		}
 	}
@@ -21131,7 +21239,10 @@ extension on _StringsAr {
 			case 'transferToAddress': return 'التحويل إلى العنوان';
 			case 'longPressToPaste': return 'اضغط مطولاً للصق';
 			case 'all': return 'الكل';
-			case 'balanceX': return ({required Object x}) => 'الرصيد ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'الرصيد '),
+				x,
+			]);
 			case 'transferOut': return 'تحويل للخارج';
 			case 'depositXcoins': return ({required Object x}) => 'وُقِعَ ${x}';
 			case 'sender': return 'المرسل';
@@ -21210,7 +21321,7 @@ extension on _StringsAr {
 			case 'rates': return 'الرسوم';
 			case 'minimum': return 'الحد الأدنى';
 			case 'maximum': return 'الحد الأقصى';
-			case 'minimumBlockConfirmations': return 'الحد الأدنى لتأكيدات الكتل';
+			case 'minimumBlockConfirmations': return 'الحد الأدنى لتأكيدات الحظر';
 			case 'dsmsVerifyTerminal': return 'طرف تحقق DSMS';
 			case 'overall': return 'الإجمالي';
 			case 'my': return 'خاصتي';
@@ -21545,6 +21656,7 @@ extension on _StringsAr {
 			case 'clicks': return 'عدد النقرات';
 			case 'rankings': return 'التصنيفات';
 			case 'downloadFailed': return 'فشل التحميل!';
+			case 'continueDraggingToLoadMore': return 'استمر بالسحب لتحميل المزيد…';
 			default: return null;
 		}
 	}
@@ -21853,7 +21965,7 @@ extension on _StringsBg {
 			case 'walletAddress': return 'Адрес на портфейла';
 			case 'currentAddress': return 'текущ адрес';
 			case 'depositAddress': return 'адрес за депозит';
-			case 'receivingMoneyAddress': return 'Адрес за получаване на пари';
+			case 'receivingMoneyAddress': return 'Адрес за получаване';
 			case 'applyTempDepositAddress': return 'Заявка за временен адрес за депозит';
 			case 'tempDepositAddressTip': return '1. Това е споделен адрес за депозит. Моля, не депозирайте сумата след изтичане на срока. Сумата ще бъде загубена, ако това се случи.';
 			case 'tempDepositAddressTip2': return '2. Преди да депозирате, моля, бъдете сигурни, че [име на веригата] и [име на валутата] съвпадат точно; ако е токън , вие също трябва да потвърдите, че [стандарта на договора] и [адреса на договора] съвпадат точно.';
@@ -21876,7 +21988,10 @@ extension on _StringsBg {
 			case 'transferToAddress': return 'прехвърляне към адрес';
 			case 'longPressToPaste': return 'Задръжте за поставяне';
 			case 'all': return 'Всички';
-			case 'balanceX': return ({required Object x}) => 'Баланс ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Баланс '),
+				x,
+			]);
 			case 'transferOut': return 'Изтегляне';
 			case 'depositXcoins': return ({required Object x}) => 'Депозиране на ${x}';
 			case 'sender': return 'Изпращач';
@@ -21955,7 +22070,7 @@ extension on _StringsBg {
 			case 'rates': return 'Такси';
 			case 'minimum': return 'Минимум';
 			case 'maximum': return 'Максимум';
-			case 'minimumBlockConfirmations': return 'Минимално потвърждение на блок';
+			case 'minimumBlockConfirmations': return 'мин. Блокиране на потвърждения';
 			case 'dsmsVerifyTerminal': return 'DSMS терминал за проверка';
 			case 'overall': return 'Общо';
 			case 'my': return 'Собствен';
@@ -22290,6 +22405,7 @@ extension on _StringsBg {
 			case 'clicks': return 'Брой кликвания';
 			case 'rankings': return 'Класации';
 			case 'downloadFailed': return 'Изтеглянето не бе успешно!';
+			case 'continueDraggingToLoadMore': return 'Продължете да плъзгате, за да заредите още…';
 			default: return null;
 		}
 	}
@@ -22601,7 +22717,7 @@ extension on _StringsBn {
 			case 'walletAddress': return 'ওয়ালেট ঠিকানা';
 			case 'currentAddress': return 'বর্তমান ঠিকানা';
 			case 'depositAddress': return 'রিচার্জ ঠিকানা';
-			case 'receivingMoneyAddress': return 'পেমেন্ট ঠিকানা';
+			case 'receivingMoneyAddress': return 'গ্রহণকারীর ঠিকানা';
 			case 'applyTempDepositAddress': return 'একটি অস্থায়ী রিচার্জ ঠিকানার জন্য আবেদন করুন';
 			case 'tempDepositAddressTip': return '1. এটি একটি শেয়ার করা ডিপোজিট ঠিকানা। ইজারার মেয়াদ শেষ হওয়ার পরে বা সীমাহীন হওয়ার পরে অনুগ্রহ করে পরিমাণ জমা করবেন না। যদি এটি ঘটে তবে পরিমাণটি নষ্ট হয়ে যাবে।';
 			case 'tempDepositAddressTip2': return '2. জমা করার আগে, অনুগ্রহ করে নিশ্চিত করুন যে [চেইন নাম] এবং [মুদ্রার নাম] সম্পূর্ণ মেলে যদি এটি একটি চুক্তির টোকেন হয় তবে আপনাকে নিশ্চিত করতে হবে যে [চুক্তির মান] এবং [চুক্তির ঠিকানা] সম্পূর্ণ মেলে।';
@@ -22625,7 +22741,10 @@ extension on _StringsBn {
 			case 'transferToAddress': return 'ঠিকানায় যান';
 			case 'longPressToPaste': return 'পেস্ট করতে দীর্ঘক্ষণ টিপুন';
 			case 'all': return 'সব';
-			case 'balanceX': return ({required Object x}) => 'ব্যালেন্স ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'ব্যালেন্স '),
+				x,
+			]);
 			case 'transferOut': return 'স্থানান্তর আউট';
 			case 'depositXcoins': return ({required Object x}) => '${x} জমা দিন';
 			case 'sender': return 'প্রেরক';
@@ -22704,7 +22823,7 @@ extension on _StringsBn {
 			case 'rates': return 'হার';
 			case 'minimum': return 'সর্বনিম্ন';
 			case 'maximum': return 'সর্বোচ্চ';
-			case 'minimumBlockConfirmations': return 'ব্লক নিশ্চিতকরণের ন্যূনতম সংখ্যা';
+			case 'minimumBlockConfirmations': return 'সর্বনিম্ন। নিশ্চিতকরণ ব্লক করুন';
 			case 'dsmsVerifyTerminal': return 'DSMS যাচাইকরণ টার্মিনাল';
 			case 'overall': return 'সামগ্রিক';
 			case 'my': return 'আমার';
@@ -23038,6 +23157,7 @@ extension on _StringsBn {
 			case 'clicks': return 'ক্লিকের সংখ্যা';
 			case 'rankings': return 'র‍্যাঙ্কিং';
 			case 'downloadFailed': return 'ডাউনলোড ব্যর্থ হয়েছে!';
+			case 'continueDraggingToLoadMore': return 'আরও লোড করতে টেনে আনা চালিয়ে যান...';
 			default: return null;
 		}
 	}
@@ -23346,7 +23466,7 @@ extension on _StringsCkb {
 			case 'walletAddress': return 'ناویشنانی جزدان دانێ';
 			case 'currentAddress': return 'current Address';
 			case 'depositAddress': return 'ناونیشانی ناردن';
-			case 'receivingMoneyAddress': return 'پارە گەیشتە ئەم ناونیشانە';
+			case 'receivingMoneyAddress': return 'ناونیشانی وەرگرتن';
 			case 'applyTempDepositAddress': return 'داواکاری پێشکەش بکە بۆ ناونیشانی دانانی کاتی';
 			case 'tempDepositAddressTip': return '1.ئەمە ناونیشانی پارەدانێکی هاوبەشە. تکایە دوای تەواوبوونی بەکرێدانەکە یان پابەند نەبوون، بڕە پارەکە مەخەنە ناوەوە. بڕە پارەکە لەدەست دەچێت ئەگەر ئەمە ڕووبدات.';
 			case 'tempDepositAddressTip2': return '2.پێش ئەوەی پارە دابنێیت، تکایە دڵنیابە لەوەی کە [ناوی زنجیرەکە] و [ناوی دراو] بە تەواوی یەکدەگرنەوە؛ ئەگەر نیشانەیەکی گرێبەستە، پێویستە پشتڕاستی بکەیتەوە کە [ستانداردی گرێبەست] و [ناونیشانی گرێبەست] بە تەواوی یەکدەگرنەوە.';
@@ -23369,7 +23489,10 @@ extension on _StringsCkb {
 			case 'transferToAddress': return 'گواستنەوە بۆ ناونیشان';
 			case 'longPressToPaste': return 'پەستانێکی درێژ بۆ لێدان';
 			case 'all': return 'هەموو';
-			case 'balanceX': return ({required Object x}) => 'هاوسەنگی ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'هاوسەنگی '),
+				x,
+			]);
 			case 'transferOut': return 'گواستنەوە بۆ دەرەوە';
 			case 'depositXcoins': return ({required Object x}) => 'پاراستنی ${x}';
 			case 'sender': return 'نێرەر';
@@ -23448,7 +23571,7 @@ extension on _StringsCkb {
 			case 'rates': return 'ڕێژەکان';
 			case 'minimum': return 'کەمترین';
 			case 'maximum': return 'زۆرترین';
-			case 'minimumBlockConfirmations': return 'کەمترین پشتڕاستکردنەوەکانی بلۆک';
+			case 'minimumBlockConfirmations': return 'کەمترین. پشتڕاستکردنەوەکانی بلۆک';
 			case 'dsmsVerifyTerminal': return 'تێرمیناڵی پشتڕاستکەرەوەی DSMS';
 			case 'overall': return 'بە گشتی';
 			case 'my': return 'من';
@@ -23784,6 +23907,7 @@ extension on _StringsCkb {
 			case 'clicks': return 'کلیک لە count بکە';
 			case 'rankings': return 'ڕیزبەندی';
 			case 'downloadFailed': return 'داگرتن شکستی هێنا!';
+			case 'continueDraggingToLoadMore': return 'بەردەوام بە لە ڕاکێشان بۆ بارکردنی زیاتر...';
 			default: return null;
 		}
 	}
@@ -24093,7 +24217,7 @@ extension on _StringsDe {
 			case 'walletAddress': return 'Adresse der Brieftasche';
 			case 'currentAddress': return 'aktuelle Adresse';
 			case 'depositAddress': return 'Adresse aufladen';
-			case 'receivingMoneyAddress': return 'Adresse des Zahlungsempfängers';
+			case 'receivingMoneyAddress': return 'Empfangsadresse';
 			case 'applyTempDepositAddress': return 'Adresse für die Beantragung einer vorübergehenden Aufstockung';
 			case 'tempDepositAddressTip': return '(1) Dies ist eine gemeinsame Kautionsadresse. Bitte hinterlegen Sie den Betrag nicht, nachdem der Mietvertrag abgelaufen ist oder Sie ungebunden wurden. Wenn dies geschieht, ist der Betrag verloren.';
 			case 'tempDepositAddressTip2': return 'Bevor Sie eine Einzahlung vornehmen, vergewissern Sie sich bitte, dass [Kettenname] und [Münzname] genau übereinstimmen; im Falle von Vertrags-Token müssen Sie auch sicherstellen, dass [Vertragsstandard] und [Vertragsadresse] genau übereinstimmen.';
@@ -24117,7 +24241,10 @@ extension on _StringsDe {
 			case 'transferToAddress': return 'zur Adresse gehen';
 			case 'longPressToPaste': return 'Langes Drücken zum Einfügen';
 			case 'all': return 'vollständig';
-			case 'balanceX': return ({required Object x}) => 'Saldo ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Saldo '),
+				x,
+			]);
 			case 'transferOut': return 'sich herausstellen';
 			case 'depositXcoins': return ({required Object x}) => 'Gutschrift ${x}';
 			case 'sender': return 'Absender';
@@ -24196,7 +24323,7 @@ extension on _StringsDe {
 			case 'rates': return 'Tarif';
 			case 'minimum': return 'Minimum';
 			case 'maximum': return 'Obergrenze';
-			case 'minimumBlockConfirmations': return 'Mindestanzahl von Blockbestätigungen';
+			case 'minimumBlockConfirmations': return 'Mindestanzahl Blockbestätigungen';
 			case 'dsmsVerifyTerminal': return 'DSMS-Validierungsterminal';
 			case 'overall': return 'Regenschirm';
 			case 'my': return 'meine';
@@ -24530,6 +24657,7 @@ extension on _StringsDe {
 			case 'clicks': return 'Klickzahl';
 			case 'rankings': return 'Rangliste';
 			case 'downloadFailed': return 'Download fehlgeschlagen!';
+			case 'continueDraggingToLoadMore': return 'Ziehen Sie weiter, um mehr zu laden…';
 			default: return null;
 		}
 	}
@@ -24838,7 +24966,7 @@ extension on _StringsEl {
 			case 'walletAddress': return 'Διεύθυνση Πορτοφολιού';
 			case 'currentAddress': return 'Τρέχουσα διεύθυνση';
 			case 'depositAddress': return 'Διεύθυνση κατάθεσης';
-			case 'receivingMoneyAddress': return 'Διεύθυνση παραλαβής χρημάτων';
+			case 'receivingMoneyAddress': return 'Διεύθυνση παραλαβής';
 			case 'applyTempDepositAddress': return 'Αίτηση για προσωρινή διεύθυνση κατάθεσης';
 			case 'tempDepositAddressTip': return '1.Αυτή είναι μια κοινή διεύθυνση κατάθεσης. Παρακαλείστε να μην καταθέσετε το ποσό μετά τη λήξη της μίσθωσης ή την αποσύνδεση. Το ποσό θα χαθεί εάν συμβεί αυτό.';
 			case 'tempDepositAddressTip2': return '2.Πριν από την κατάθεση, βεβαιωθείτε ότι το [όνομα chain] και το [όνομα νομίσματος] ταιριάζουν ακριβώς.Εάν πρόκειται για συμβόλαιο token, πρέπει επίσης να επιβεβαιώσετε ότι το [πρότυπο συμβολαίου] και η [διεύθυνση συμβολαίου] ταιριάζουν ακριβώς.';
@@ -24861,7 +24989,10 @@ extension on _StringsEl {
 			case 'transferToAddress': return 'μεταφορά στη διεύθυνση';
 			case 'longPressToPaste': return 'Πατήστε παρατεταμένα για επικόλληση';
 			case 'all': return 'Όλα';
-			case 'balanceX': return ({required Object x}) => 'Υπόλοιπο ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Υπόλοιπο '),
+				x,
+			]);
 			case 'transferOut': return 'Μεταβίβαση';
 			case 'depositXcoins': return ({required Object x}) => 'Κατάθεση ${x}';
 			case 'sender': return 'Αποστολέας';
@@ -24940,7 +25071,7 @@ extension on _StringsEl {
 			case 'rates': return 'ποσοστά';
 			case 'minimum': return 'Ελάχιστο';
 			case 'maximum': return 'Μέγιστο';
-			case 'minimumBlockConfirmations': return 'Ελάχιστες επιβεβαιώσεις μπλοκ';
+			case 'minimumBlockConfirmations': return 'ελάχ. Επιβεβαιώσεις Μπλοκ';
 			case 'dsmsVerifyTerminal': return 'Τερματικό επαλήθευσης DSMS';
 			case 'overall': return 'συνολικά';
 			case 'my': return 'Μου';
@@ -25276,6 +25407,7 @@ extension on _StringsEl {
 			case 'clicks': return 'Αριθμός κλικ';
 			case 'rankings': return 'Κατατάξεις';
 			case 'downloadFailed': return 'Η λήψη απέτυχε!';
+			case 'continueDraggingToLoadMore': return 'Συνεχίστε να σύρετε για να φορτώσετε περισσότερα…';
 			default: return null;
 		}
 	}
@@ -25585,7 +25717,7 @@ extension on _StringsEs {
 			case 'walletAddress': return 'Dirección de la cartera';
 			case 'currentAddress': return 'dirección actual';
 			case 'depositAddress': return 'Dirección de recarga';
-			case 'receivingMoneyAddress': return 'dirección del beneficiario';
+			case 'receivingMoneyAddress': return 'Dirección de recepción';
 			case 'applyTempDepositAddress': return 'Dirección para solicitar una recarga temporal';
 			case 'tempDepositAddressTip': return '1. Esta es una dirección de depósito compartido. Por favor, no deposite el importe después de que el contrato de alquiler haya expirado o después de que le hayan desvinculado. Si esto ocurre, el importe se perderá.';
 			case 'tempDepositAddressTip2': return '2. Antes de realizar un depósito, asegúrese de que el [Nombre de la cadena] y el [Nombre de la moneda] coinciden exactamente; en el caso de los tokens de contrato, también debe asegurarse de que el [Estándar del contrato] y la [Dirección del contrato] coinciden exactamente.';
@@ -25609,7 +25741,10 @@ extension on _StringsEs {
 			case 'transferToAddress': return 'ir a la dirección';
 			case 'longPressToPaste': return 'Pulsación larga para pegar';
 			case 'all': return 'completo';
-			case 'balanceX': return ({required Object x}) => 'Saldo ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Saldo '),
+				x,
+			]);
 			case 'transferOut': return 'resultar';
 			case 'depositXcoins': return ({required Object x}) => 'Acreditado ${x}';
 			case 'sender': return 'remitente';
@@ -25688,7 +25823,7 @@ extension on _StringsEs {
 			case 'rates': return 'tarifa';
 			case 'minimum': return 'mínimo';
 			case 'maximum': return 'límite superior';
-			case 'minimumBlockConfirmations': return 'Número mínimo de confirmaciones de bloque';
+			case 'minimumBlockConfirmations': return 'min. Confirmaciones de bloque';
 			case 'dsmsVerifyTerminal': return 'Terminal de validación DSMS';
 			case 'overall': return 'paraguas';
 			case 'my': return 'mi';
@@ -26023,6 +26158,7 @@ extension on _StringsEs {
 			case 'clicks': return 'Conteo de clics';
 			case 'rankings': return 'Clasificaciones';
 			case 'downloadFailed': return '¡Descarga fallida!';
+			case 'continueDraggingToLoadMore': return 'Continúa arrastrando para cargar más…';
 			default: return null;
 		}
 	}
@@ -26332,7 +26468,7 @@ extension on _StringsFr {
 			case 'walletAddress': return 'Adresse du portefeuille';
 			case 'currentAddress': return 'adresse actuelle';
 			case 'depositAddress': return 'Adresse de dépot';
-			case 'receivingMoneyAddress': return 'adresse du bénéficiaire';
+			case 'receivingMoneyAddress': return 'Adresse de réception';
 			case 'applyTempDepositAddress': return 'Adresse pour la demande d\'un complément temporaire';
 			case 'tempDepositAddressTip': return '1) Il s\'agit d\'une adresse de dépôt partagé. Veuillez ne pas déposer le montant après l\'expiration du bail ou après la déliaison. Dans ce cas, le montant sera perdu.';
 			case 'tempDepositAddressTip2': return '2) Avant d\'effectuer un dépôt, veuillez vous assurer que le [Nom de la chaîne] et le [Nom de la pièce] correspondent exactement ; dans le cas des jetons de contrat, vous devez également vous assurer que la [Norme du contrat] et l\'[Adresse du contrat] correspondent exactement.';
@@ -26356,7 +26492,10 @@ extension on _StringsFr {
 			case 'transferToAddress': return 'transférer à l\'adresse';
 			case 'longPressToPaste': return 'Appui long pour coller';
 			case 'all': return 'Totalité';
-			case 'balanceX': return ({required Object x}) => 'Solde ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Solde '),
+				x,
+			]);
 			case 'transferOut': return 'Transférer';
 			case 'depositXcoins': return ({required Object x}) => 'Créditer ${x}';
 			case 'sender': return 'Expéditeur';
@@ -26435,7 +26574,7 @@ extension on _StringsFr {
 			case 'rates': return 'tarif';
 			case 'minimum': return 'Minimum';
 			case 'maximum': return 'Maximum';
-			case 'minimumBlockConfirmations': return 'Nombre minimum de confirmations de blocs';
+			case 'minimumBlockConfirmations': return 'Confirmations de bloc min.';
 			case 'dsmsVerifyTerminal': return 'Terminal de validation DSMS';
 			case 'overall': return 'globale';
 			case 'my': return 'Mon';
@@ -26770,6 +26909,7 @@ extension on _StringsFr {
 			case 'clicks': return 'Nombre de clics';
 			case 'rankings': return 'Classements';
 			case 'downloadFailed': return 'Le téléchargement a échoué !';
+			case 'continueDraggingToLoadMore': return 'Continuez à faire glisser pour charger plus d\'éléments…';
 			default: return null;
 		}
 	}
@@ -27076,7 +27216,7 @@ extension on _StringsHi {
 			case 'walletAddress': return 'वॉलेट एड्रेस';
 			case 'currentAddress': return 'करंट एड्रेस';
 			case 'depositAddress': return 'डिपॉजिट एड्रेस';
-			case 'receivingMoneyAddress': return 'पैसे प्राप्त करने का एड्रेस';
+			case 'receivingMoneyAddress': return 'प्राप्तकर्ता का पता';
 			case 'applyTempDepositAddress': return 'अस्थायी जमा एड्रेस के लिए आवेदन करें';
 			case 'tempDepositAddressTip': return '1.यह एक साझा जमा एड्रेस है। कृपया पट्टा समाप्त होने या अनबाउंड होने के बाद राशि जमा न करें। ऐसा होने पर राशि खो जाएगी।.';
 			case 'tempDepositAddressTip2': return '2.जमा करने से पहले, कृपया यह सुनिश्चित करें कि [चेन नाम] और [मुद्रा नाम] बिल्कुल मेल खाते हैं; यदि यह एक अनुबंध टोकन है, तो आपको यह भी सुनिश्चित करना होगा कि [अनुबंध मानक] और [अनुबंध एड्रेस] बिल्कुल मेल खाते हैं।';
@@ -27099,7 +27239,10 @@ extension on _StringsHi {
 			case 'transferToAddress': return 'एड्रेस पर ट्रांसफर करें';
 			case 'longPressToPaste': return 'पेस्ट करने के लिए लंबे समय तक दबाएं';
 			case 'all': return 'सभी';
-			case 'balanceX': return ({required Object x}) => 'बैलेंस ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'बैलेंस '),
+				x,
+			]);
 			case 'transferOut': return 'निकासी करें';
 			case 'depositXcoins': return ({required Object x}) => 'डिपॉजिट ${x}';
 			case 'sender': return 'सेंडर';
@@ -27178,7 +27321,7 @@ extension on _StringsHi {
 			case 'rates': return 'दर';
 			case 'minimum': return 'न्यूनतम';
 			case 'maximum': return 'अधिकतम';
-			case 'minimumBlockConfirmations': return 'न्यूनतम ब्लॉक पुष्टि';
+			case 'minimumBlockConfirmations': return 'न्यूनतम ब्लॉक पुष्टिकरण';
 			case 'dsmsVerifyTerminal': return 'DSMS सत्यापनकर्ता टर्मिनल';
 			case 'overall': return 'कुल मिलाकर';
 			case 'my': return 'मेरा / मेरी';
@@ -27513,6 +27656,7 @@ extension on _StringsHi {
 			case 'clicks': return 'क्लिक गिनती';
 			case 'rankings': return 'रैंकिंग';
 			case 'downloadFailed': return 'डाउनलोड विफल!';
+			case 'continueDraggingToLoadMore': return 'अधिक लोड करने के लिए खींचना जारी रखें…';
 			default: return null;
 		}
 	}
@@ -27821,7 +27965,7 @@ extension on _StringsIt {
 			case 'walletAddress': return 'Indirizzo portafoglio';
 			case 'currentAddress': return 'Indirizzo attuale';
 			case 'depositAddress': return 'Indirizzo di deposito';
-			case 'receivingMoneyAddress': return 'Indirizzo di ricezione denaro';
+			case 'receivingMoneyAddress': return 'Indirizzo di ricezione';
 			case 'applyTempDepositAddress': return 'Richiedi indirizzo di deposito temporaneo';
 			case 'tempDepositAddressTip': return '1. Questo è un indirizzo di deposito condiviso. Per favore, non depositare l\'importo dopo la scadenza del leasing o la disassociazione. L\'importo sarà perso se ciò accade.';
 			case 'tempDepositAddressTip2': return '2. Prima di depositare, per favore, assicurati di confermare che [nome catena] e [nome valuta] corrispondano esattamente; se è un token di contratto, devi anche confermare che [standard contratto] e [indirizzo contratto] corrispondano esattamente.';
@@ -27844,7 +27988,10 @@ extension on _StringsIt {
 			case 'transferToAddress': return 'trasferisci a indirizzo';
 			case 'longPressToPaste': return 'Tieni premuto per incollare';
 			case 'all': return 'Tutti';
-			case 'balanceX': return ({required Object x}) => 'Saldo ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Saldo '),
+				x,
+			]);
 			case 'transferOut': return 'Trasferisci fuori';
 			case 'depositXcoins': return ({required Object x}) => 'Deposito ${x}';
 			case 'sender': return 'Mittente';
@@ -27923,7 +28070,7 @@ extension on _StringsIt {
 			case 'rates': return 'tassi';
 			case 'minimum': return 'Minimo';
 			case 'maximum': return 'Massimo';
-			case 'minimumBlockConfirmations': return 'Conferme di blocco minime';
+			case 'minimumBlockConfirmations': return 'min. Conferme di blocco';
 			case 'dsmsVerifyTerminal': return 'Terminale verificatore DSMS';
 			case 'overall': return 'complessivo';
 			case 'my': return 'Mio';
@@ -28258,6 +28405,7 @@ extension on _StringsIt {
 			case 'clicks': return 'Conteggio dei clic';
 			case 'rankings': return 'Classifiche';
 			case 'downloadFailed': return 'Download non riuscito!';
+			case 'continueDraggingToLoadMore': return 'Continua a trascinare per caricare altro...';
 			default: return null;
 		}
 	}
@@ -28565,7 +28713,7 @@ extension on _StringsJa {
 			case 'walletAddress': return '財布の住所';
 			case 'currentAddress': return '現住所';
 			case 'depositAddress': return 'リチャージ住所';
-			case 'receivingMoneyAddress': return '受取人住所';
+			case 'receivingMoneyAddress': return '受取住所';
 			case 'applyTempDepositAddress': return '一時増額申請先';
 			case 'tempDepositAddressTip': return '1.この住所は共有の保証金住所です。リース期間満了後や、拘束解除後のご入金はご遠慮ください。その場合、金額は失われます。';
 			case 'tempDepositAddressTip2': return '2.入金を行う前に、[チェーン名]と[コイン名]が完全に一致していることを確認してください。コントラクトトークンの場合は、[コントラクトスタンダード]と[コントラクトアドレス]が完全に一致していることも確認する必要があります。';
@@ -28589,7 +28737,10 @@ extension on _StringsJa {
 			case 'transferToAddress': return 'アドレスへ';
 			case 'longPressToPaste': return '長押しでペースト';
 			case 'all': return 'フル';
-			case 'balanceX': return ({required Object x}) => '残高 ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: '残高 '),
+				x,
+			]);
 			case 'transferOut': return 'ひっくりかえす';
 			case 'depositXcoins': return ({required Object x}) => 'クレジット ${x}';
 			case 'sender': return '送信者';
@@ -28668,7 +28819,7 @@ extension on _StringsJa {
 			case 'rates': return '料金表';
 			case 'minimum': return '最小';
 			case 'maximum': return '上限';
-			case 'minimumBlockConfirmations': return '最低ブロック確認数';
+			case 'minimumBlockConfirmations': return '最小ブロック確認';
 			case 'dsmsVerifyTerminal': return 'DSMS検証ターミナル';
 			case 'overall': return '傘';
 			case 'my': return '私の';
@@ -29002,6 +29153,7 @@ extension on _StringsJa {
 			case 'clicks': return 'クリック数';
 			case 'rankings': return 'ランキング';
 			case 'downloadFailed': return 'ダウンロードに失敗しました。';
+			case 'continueDraggingToLoadMore': return 'さらに読み込むにはドラッグを続けます…';
 			default: return null;
 		}
 	}
@@ -29311,7 +29463,7 @@ extension on _StringsKo {
 			case 'walletAddress': return '지갑 주소';
 			case 'currentAddress': return '현재 주소';
 			case 'depositAddress': return '충전 주소';
-			case 'receivingMoneyAddress': return '수취인 주소';
+			case 'receivingMoneyAddress': return '수신 주소';
 			case 'applyTempDepositAddress': return '임시 충전 요청을 위한 주소';
 			case 'tempDepositAddressTip': return '1. 공유 입금 주소입니다. 임대가 만료되었거나 해지된 후에는 금액을 입금하지 마세요. 이 경우 해당 금액은 손실됩니다.';
 			case 'tempDepositAddressTip2': return '2. 입금 전 [체인명]과 [코인명]이 정확히 일치하는지 확인하시고, 컨트랙트 토큰의 경우 [계약 기준]과 [계약 주소]도 정확히 일치하는지 확인하시기 바랍니다.';
@@ -29335,7 +29487,10 @@ extension on _StringsKo {
 			case 'transferToAddress': return '주소로 이동';
 			case 'longPressToPaste': return '길게 눌러 붙여넣기';
 			case 'all': return '전체';
-			case 'balanceX': return ({required Object x}) => '잔액 ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: '잔액 '),
+				x,
+			]);
 			case 'transferOut': return '턴아웃';
 			case 'depositXcoins': return ({required Object x}) => '크레딧 ${x}';
 			case 'sender': return '발신자';
@@ -29414,7 +29569,7 @@ extension on _StringsKo {
 			case 'rates': return '관세';
 			case 'minimum': return '최소';
 			case 'maximum': return '상한';
-			case 'minimumBlockConfirmations': return '최소 차단 확인 횟수';
+			case 'minimumBlockConfirmations': return '최소 블록 확인';
 			case 'dsmsVerifyTerminal': return 'DSMS 유효성 검사 터미널';
 			case 'overall': return '우산';
 			case 'my': return 'my';
@@ -29748,6 +29903,7 @@ extension on _StringsKo {
 			case 'clicks': return '클릭 수';
 			case 'rankings': return '랭킹';
 			case 'downloadFailed': return '다운로드에 실패했습니다!';
+			case 'continueDraggingToLoadMore': return '더 많은 내용을 로드하려면 계속 드래그하세요…';
 			default: return null;
 		}
 	}
@@ -30057,7 +30213,7 @@ extension on _StringsNl {
 			case 'walletAddress': return 'Wallet adres';
 			case 'currentAddress': return 'Huidig adres';
 			case 'depositAddress': return 'Oplaadadres';
-			case 'receivingMoneyAddress': return 'Ontvangende geld adres';
+			case 'receivingMoneyAddress': return 'Ontvangstadres';
 			case 'applyTempDepositAddress': return 'Tijdelijk opwaarderingsadres aanvragen';
 			case 'tempDepositAddressTip': return '1. Dit is een gedeeld opwaarderingsadres. Stort het bedrag niet nadat de huur is verlopen of ontbonden. Het bedrag zal dan verloren gaan.';
 			case 'tempDepositAddressTip2': return '2. Voordat je stort, moet je bevestigen dat [chain name] en [currency name] exact overeenkomen; als het een contracttoken is, moet je ook bevestigen dat [contractstandaard] en [contractadres] exact overeenkomen.';
@@ -30081,7 +30237,10 @@ extension on _StringsNl {
 			case 'transferToAddress': return 'Schrijf over naar adres';
 			case 'longPressToPaste': return 'Lang indrukken om te plakken';
 			case 'all': return 'Alles';
-			case 'balanceX': return ({required Object x}) => 'Saldo ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Saldo '),
+				x,
+			]);
 			case 'transferOut': return 'Uitgaande storting';
 			case 'depositXcoins': return ({required Object x}) => 'Stort ${x}';
 			case 'sender': return 'Afzender';
@@ -30160,7 +30319,7 @@ extension on _StringsNl {
 			case 'rates': return 'Rates';
 			case 'minimum': return 'Minimum';
 			case 'maximum': return 'Maximum';
-			case 'minimumBlockConfirmations': return 'Minimum aantal blokbevestigingen';
+			case 'minimumBlockConfirmations': return 'min. Blokbevestigingen';
 			case 'dsmsVerifyTerminal': return 'DSMS Valideringsterminal';
 			case 'overall': return 'Algemeen';
 			case 'my': return 'Mijn';
@@ -30494,6 +30653,7 @@ extension on _StringsNl {
 			case 'clicks': return 'Klikken aantal';
 			case 'rankings': return 'Ranglijsten';
 			case 'downloadFailed': return 'Downloaden mislukt!';
+			case 'continueDraggingToLoadMore': return 'Blijf slepen om meer te laden…';
 			default: return null;
 		}
 	}
@@ -30803,7 +30963,7 @@ extension on _StringsPl {
 			case 'walletAddress': return 'Adres portfela';
 			case 'currentAddress': return 'aktualny adres';
 			case 'depositAddress': return 'Adres doładowania';
-			case 'receivingMoneyAddress': return 'adres odbiorcy płatności';
+			case 'receivingMoneyAddress': return 'Adres odbiorczy';
 			case 'applyTempDepositAddress': return 'Adres do składania wniosków o tymczasowe doładowanie';
 			case 'tempDepositAddressTip': return '1) Jest to wspólny adres depozytowy. Nie należy wpłacać kwoty po wygaśnięciu umowy najmu lub po rozwiązaniu umowy. W takim przypadku kwota zostanie utracona.';
 			case 'tempDepositAddressTip2': return '2) Przed dokonaniem wpłaty należy upewnić się, że [nazwa łańcucha] i [nazwa monety] są dokładnie zgodne; w przypadku tokenów kontraktowych należy również upewnić się, że [standard kontraktu] i [adres kontraktu] są dokładnie zgodne.';
@@ -30827,7 +30987,10 @@ extension on _StringsPl {
 			case 'transferToAddress': return 'przejdź do adresu';
 			case 'longPressToPaste': return 'Długie naciśnięcie, aby wkleić';
 			case 'all': return 'pełny';
-			case 'balanceX': return ({required Object x}) => 'Saldo ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Saldo '),
+				x,
+			]);
 			case 'transferOut': return 'wyłączyć się';
 			case 'depositXcoins': return ({required Object x}) => 'Kredyt ${x}';
 			case 'sender': return 'nadawca';
@@ -30906,7 +31069,7 @@ extension on _StringsPl {
 			case 'rates': return 'taryfa';
 			case 'minimum': return 'minimum';
 			case 'maximum': return 'górny limit';
-			case 'minimumBlockConfirmations': return 'Minimalna liczba potwierdzeń bloków';
+			case 'minimumBlockConfirmations': return 'min. Potwierdzenia bloków';
 			case 'dsmsVerifyTerminal': return 'Terminal walidacyjny DSMS';
 			case 'overall': return 'parasol';
 			case 'my': return 'mój';
@@ -31241,6 +31404,7 @@ extension on _StringsPl {
 			case 'clicks': return 'Liczba kliknięć';
 			case 'rankings': return 'Rankingi';
 			case 'downloadFailed': return 'Pobieranie nie powiodło się!';
+			case 'continueDraggingToLoadMore': return 'Kontynuuj przeciąganie, aby załadować więcej…';
 			default: return null;
 		}
 	}
@@ -31550,7 +31714,7 @@ extension on _StringsPt {
 			case 'walletAddress': return 'Endereço da carteira';
 			case 'currentAddress': return 'endereço atual';
 			case 'depositAddress': return 'Endereço de recarga';
-			case 'receivingMoneyAddress': return 'endereço do beneficiário';
+			case 'receivingMoneyAddress': return 'Endereço de recebimento';
 			case 'applyTempDepositAddress': return 'Endereço para solicitar uma recarga temporária';
 			case 'tempDepositAddressTip': return '1) Este é um endereço de depósito partilhado. Não deposite o montante depois de o contrato de aluguer ter expirado ou depois de ter sido desvinculado. Se isso acontecer, o montante será perdido.';
 			case 'tempDepositAddressTip2': return '2) Antes de efetuar um depósito, certifique-se de que o [nome da cadeia] e o [nome da moeda] correspondem exatamente; no caso de tokens de contrato, também precisa de se certificar de que o [padrão do contrato] e o [endereço do contrato] correspondem exatamente.';
@@ -31574,7 +31738,10 @@ extension on _StringsPt {
 			case 'transferToAddress': return 'ir para o endereço';
 			case 'longPressToPaste': return 'Pressão longa para colar';
 			case 'all': return 'completo';
-			case 'balanceX': return ({required Object x}) => 'Saldo ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Saldo '),
+				x,
+			]);
 			case 'transferOut': return 'sair';
 			case 'depositXcoins': return ({required Object x}) => 'Creditado ${x}';
 			case 'sender': return 'remetente';
@@ -31653,7 +31820,7 @@ extension on _StringsPt {
 			case 'rates': return 'tarifa';
 			case 'minimum': return 'mínimo';
 			case 'maximum': return 'limite superior';
-			case 'minimumBlockConfirmations': return 'Número mínimo de confirmações de bloqueio';
+			case 'minimumBlockConfirmations': return 'Confirmações de bloco mínimas';
 			case 'dsmsVerifyTerminal': return 'Terminal de validação DSMS';
 			case 'overall': return 'guarda-chuva';
 			case 'my': return 'meu';
@@ -31987,6 +32154,7 @@ extension on _StringsPt {
 			case 'clicks': return 'Contagem de cliques';
 			case 'rankings': return 'Classificações';
 			case 'downloadFailed': return 'O download falhou!';
+			case 'continueDraggingToLoadMore': return 'Continue arrastando para carregar mais…';
 			default: return null;
 		}
 	}
@@ -32295,7 +32463,7 @@ extension on _StringsRo {
 			case 'walletAddress': return 'Adresă portofel';
 			case 'currentAddress': return 'adresă curentă';
 			case 'depositAddress': return 'adresă de depozit';
-			case 'receivingMoneyAddress': return 'Adresă de primire bani';
+			case 'receivingMoneyAddress': return 'Adresă de primire';
 			case 'applyTempDepositAddress': return 'Aplică pentru adresă de depozit temporară';
 			case 'tempDepositAddressTip': return '1.Aceasta este o adresă de depozit partajată. Te rugăm să nu depozitezi suma după expirarea lease-ului sau după dezlegare. Suma se va pierde dacă se întâmplă acest lucru.';
 			case 'tempDepositAddressTip2': return '2.Înainte de depozitare, te rugăm să te asiguri că [numele lanțului] și [numele monedei] se potrivesc exact; dacă este un token de contract, trebuie, de asemenea, să confirmi că [standardul contractului] și [adresa contractului] se potrivesc exact.';
@@ -32318,7 +32486,10 @@ extension on _StringsRo {
 			case 'transferToAddress': return 'transferă la adresă';
 			case 'longPressToPaste': return 'Ține apăsat pentru a lipi';
 			case 'all': return 'Toate';
-			case 'balanceX': return ({required Object x}) => 'Sold ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Sold '),
+				x,
+			]);
 			case 'transferOut': return 'Transferă afară';
 			case 'depositXcoins': return ({required Object x}) => 'Depozitează ${x}';
 			case 'sender': return 'Expeditor';
@@ -32397,7 +32568,7 @@ extension on _StringsRo {
 			case 'rates': return 'rate';
 			case 'minimum': return 'Minim';
 			case 'maximum': return 'Maxim';
-			case 'minimumBlockConfirmations': return 'confirmări minime de bloc';
+			case 'minimumBlockConfirmations': return 'Confirmări minime în bloc';
 			case 'dsmsVerifyTerminal': return 'Terminal verificator DSMS';
 			case 'overall': return 'general';
 			case 'my': return 'Meu';
@@ -32732,6 +32903,7 @@ extension on _StringsRo {
 			case 'clicks': return 'Număr de clicuri';
 			case 'rankings': return 'Clasamente';
 			case 'downloadFailed': return 'Descărcarea a eșuat!';
+			case 'continueDraggingToLoadMore': return 'Continuă să tragi pentru a încărca mai multe…';
 			default: return null;
 		}
 	}
@@ -33041,7 +33213,7 @@ extension on _StringsRu {
 			case 'walletAddress': return 'Адрес кошелька';
 			case 'currentAddress': return 'текущий адрес';
 			case 'depositAddress': return 'Адрес пополнения';
-			case 'receivingMoneyAddress': return 'адрес получателя платежа';
+			case 'receivingMoneyAddress': return 'Адрес получателя';
 			case 'applyTempDepositAddress': return 'Адрес для подачи запроса на временное пополнение счета';
 			case 'tempDepositAddressTip': return '1. Это общий депозитный адрес. Пожалуйста, не вносите сумму после истечения срока аренды или после того, как вас отвязали. Если это произойдет, сумма будет потеряна.';
 			case 'tempDepositAddressTip2': return '2. перед внесением депозита убедитесь, что [Название цепи] и [Название монеты] полностью совпадают; в случае контрактных токенов вам также необходимо убедиться, что [Стандарт контракта] и [Адрес контракта] полностью совпадают.';
@@ -33065,7 +33237,10 @@ extension on _StringsRu {
 			case 'transferToAddress': return 'перейти по адресу';
 			case 'longPressToPaste': return 'Длительное нажатие для вставки';
 			case 'all': return 'полный';
-			case 'balanceX': return ({required Object x}) => 'Баланс ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Баланс '),
+				x,
+			]);
 			case 'transferOut': return 'превращаться';
 			case 'depositXcoins': return ({required Object x}) => 'Начислено ${x}';
 			case 'sender': return 'отправитель';
@@ -33144,7 +33319,7 @@ extension on _StringsRu {
 			case 'rates': return 'тариф';
 			case 'minimum': return 'минимум';
 			case 'maximum': return 'верхний предел';
-			case 'minimumBlockConfirmations': return 'Минимальное количество подтверждений блока';
+			case 'minimumBlockConfirmations': return 'мин. Подтверждения блоков';
 			case 'dsmsVerifyTerminal': return 'Терминал проверки DSMS';
 			case 'overall': return 'зонт';
 			case 'my': return 'мой';
@@ -33479,6 +33654,7 @@ extension on _StringsRu {
 			case 'clicks': return 'Количество кликов';
 			case 'rankings': return 'Рейтинги';
 			case 'downloadFailed': return 'Загрузка не удалась!';
+			case 'continueDraggingToLoadMore': return 'Продолжайте перетаскивать, чтобы загрузить больше…';
 			default: return null;
 		}
 	}
@@ -33783,7 +33959,7 @@ extension on _StringsSw {
 			case 'walletAddress': return 'Anwani ya Pochi';
 			case 'currentAddress': return 'Anwani ya Sasa';
 			case 'depositAddress': return 'Anwani ya Amana';
-			case 'receivingMoneyAddress': return 'Anwani ya kupokea pesa';
+			case 'receivingMoneyAddress': return 'Anwani ya kupokea';
 			case 'applyTempDepositAddress': return 'Omba anwani ya amana ya muda';
 			case 'tempDepositAddressTip': return '1.Hii ni anwani ya amana iliyoshirikiwa. Tafadhali usiweke kiasi baada ya kukodisha kumalizika au kuunganishwa. Kiasi kitapotea ikiwa hii itatokea.';
 			case 'tempDepositAddressTip2': return '2.Kabla ya kuweka amana, tafadhali hakikisha kuwa [jina la mnyororo] na [jina la sarafu] zinalingana kabisa; ikiwa ni tokeni ya mkataba, unahitaji pia kuthibitisha kuwa [kiwango cha mkataba] na [anwani ya mkataba] zinalingana kabisa.';
@@ -33806,7 +33982,10 @@ extension on _StringsSw {
 			case 'transferToAddress': return 'hamisha kwa anwani';
 			case 'longPressToPaste': return 'Bonyeza kwa muda mrefu ili kubandika';
 			case 'all': return 'Yote';
-			case 'balanceX': return ({required Object x}) => 'Salio ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Salio '),
+				x,
+			]);
 			case 'transferOut': return 'Hamisha nje';
 			case 'depositXcoins': return ({required Object x}) => 'Weka ${x} sarafu';
 			case 'sender': return 'Mtumaji';
@@ -33885,7 +34064,7 @@ extension on _StringsSw {
 			case 'rates': return 'viwango';
 			case 'minimum': return 'Kiwango cha chini';
 			case 'maximum': return 'Kiwango cha juu';
-			case 'minimumBlockConfirmations': return 'Uthibitisho wa Bloku za Kiwango cha Chini';
+			case 'minimumBlockConfirmations': return 'Uthibitishaji wa Block wa chini';
 			case 'dsmsVerifyTerminal': return 'Kituo cha Kuthibitisha DSMS';
 			case 'overall': return 'jumla';
 			case 'my': return 'Yangu';
@@ -34221,6 +34400,7 @@ extension on _StringsSw {
 			case 'clicks': return 'Idadi ya kubofya';
 			case 'rankings': return 'Nafasi';
 			case 'downloadFailed': return 'Imeshindwa kupakua!';
+			case 'continueDraggingToLoadMore': return 'Endelea kuburuta ili kupakia zaidi...';
 			default: return null;
 		}
 	}
@@ -34529,7 +34709,7 @@ extension on _StringsTh {
 			case 'walletAddress': return 'ที่อยู่กระเป๋าเงิน';
 			case 'currentAddress': return 'ที่อยู่ปัจจุบัน';
 			case 'depositAddress': return 'ที่อยู่เติมเงิน';
-			case 'receivingMoneyAddress': return 'ที่อยู่การชำระเงิน';
+			case 'receivingMoneyAddress': return 'ที่อยู่ผู้รับ';
 			case 'applyTempDepositAddress': return 'สมัครขอที่อยู่เติมเงินชั่วคราว';
 			case 'tempDepositAddressTip': return '1. นี่คือที่อยู่การฝากเงินที่ใช้ร่วมกัน กรุณาอย่าวางเงินมัดจำหลังจากสัญญาเช่าหมดอายุหรือไม่ถูกผูกมัด หากเกิดเหตุการณ์นี้ จำนวนเงินจะหายไป';
 			case 'tempDepositAddressTip2': return '2. ก่อนทำการฝากเงิน โปรดตรวจสอบให้แน่ใจว่า [ชื่อลูกโซ่] และ [ชื่อสกุลเงิน] ตรงกันอย่างสมบูรณ์ หากเป็นโทเค็นสัญญา คุณต้องยืนยันด้วยว่า [มาตรฐานสัญญา] และ [ที่อยู่สัญญา] ตรงกันอย่างสมบูรณ์';
@@ -34553,7 +34733,10 @@ extension on _StringsTh {
 			case 'transferToAddress': return 'ไปที่ที่อยู่';
 			case 'longPressToPaste': return 'กดค้างเพื่อวาง';
 			case 'all': return 'ทั้งหมด';
-			case 'balanceX': return ({required Object x}) => 'ยอดคงเหลือ ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'ยอดคงเหลือ '),
+				x,
+			]);
 			case 'transferOut': return 'โอนออก';
 			case 'depositXcoins': return ({required Object x}) => 'ฝากเงิน ${x}';
 			case 'sender': return 'ผู้ส่ง';
@@ -34632,7 +34815,7 @@ extension on _StringsTh {
 			case 'rates': return 'ประเมิน';
 			case 'minimum': return 'ขั้นต่ำ';
 			case 'maximum': return 'สูงสุด';
-			case 'minimumBlockConfirmations': return 'จำนวนการยืนยันบล็อกขั้นต่ำ';
+			case 'minimumBlockConfirmations': return 'การยืนยันบล็อกขั้นต่ำ';
 			case 'dsmsVerifyTerminal': return 'เทอร์มินัลการตรวจสอบ DSMS';
 			case 'overall': return 'โดยรวม';
 			case 'my': return 'ของฉัน';
@@ -34966,6 +35149,7 @@ extension on _StringsTh {
 			case 'clicks': return 'จำนวนการคลิก';
 			case 'rankings': return 'อันดับ';
 			case 'downloadFailed': return 'ดาวน์โหลดล้มเหลว!';
+			case 'continueDraggingToLoadMore': return 'ลากต่อไปเพื่อโหลดเพิ่มเติม…';
 			default: return null;
 		}
 	}
@@ -35274,7 +35458,7 @@ extension on _StringsTr {
 			case 'walletAddress': return 'Cüzdan Adresi';
 			case 'currentAddress': return 'mevcut Adres';
 			case 'depositAddress': return 'yatırma Adresi';
-			case 'receivingMoneyAddress': return 'Para alma adresi';
+			case 'receivingMoneyAddress': return 'Alıcı adresi';
 			case 'applyTempDepositAddress': return 'Geçici yatırma adresi başvurusu';
 			case 'tempDepositAddressTip': return '1. Bu paylaşılan bir yatırma adresidir. Lütfen kira süresi dolduktan veya bağlantısı kesildikten sonra miktar yatırmayın. Bu durumda miktar kaybolur.';
 			case 'tempDepositAddressTip2': return '2. Yatırma yapmadan önce, lütfen [zincir adı] ve [para birimi adı] tam olarak eşleştiğini teyit edin; eğer sözleşme token\'ı ise, [sözleşme standardı] ve [sözleşme adresi] tam olarak eşleştiğini de teyit etmeniz gerekir.';
@@ -35297,7 +35481,10 @@ extension on _StringsTr {
 			case 'transferToAddress': return 'adrese transfer';
 			case 'longPressToPaste': return 'Yapıştırmak için uzun basın';
 			case 'all': return 'Tümü';
-			case 'balanceX': return ({required Object x}) => 'Bakiye ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Bakiye '),
+				x,
+			]);
 			case 'transferOut': return 'Transfer et';
 			case 'depositXcoins': return ({required Object x}) => '${x} yatır';
 			case 'sender': return 'Gönderen';
@@ -35376,7 +35563,7 @@ extension on _StringsTr {
 			case 'rates': return 'oranlar';
 			case 'minimum': return 'Minimum';
 			case 'maximum': return 'Maksimum';
-			case 'minimumBlockConfirmations': return 'minimum Blok Onayları';
+			case 'minimumBlockConfirmations': return 'min. Blok Onayları';
 			case 'dsmsVerifyTerminal': return 'DSMS doğrulayıcı terminali';
 			case 'overall': return 'genel';
 			case 'my': return 'Benim';
@@ -35711,6 +35898,7 @@ extension on _StringsTr {
 			case 'clicks': return 'Tıklama sayısı';
 			case 'rankings': return 'Sıralamalar';
 			case 'downloadFailed': return 'İndirme başarısız!';
+			case 'continueDraggingToLoadMore': return 'Daha fazlasını yüklemek için sürüklemeye devam edin…';
 			default: return null;
 		}
 	}
@@ -36020,7 +36208,7 @@ extension on _StringsUk {
 			case 'walletAddress': return 'Адреса гаманця';
 			case 'currentAddress': return 'поточна адреса';
 			case 'depositAddress': return 'Адреса поповнення рахунку';
-			case 'receivingMoneyAddress': return 'адреса одержувача платежу';
+			case 'receivingMoneyAddress': return 'Адреса отримання';
 			case 'applyTempDepositAddress': return 'Адреса для запиту на тимчасове поповнення рахунку';
 			case 'tempDepositAddressTip': return '1. це спільна депозитна адреса. Будь ласка, не вносьте суму після закінчення терміну оренди або після того, як ви звільнилися. Якщо це станеться, сума буде втрачена.';
 			case 'tempDepositAddressTip2': return '2. перед внесенням депозиту, будь ласка, переконайтеся, що [Chain Name] і [Coin Name] точно збігаються; у випадку контрактних токенів, вам також потрібно переконатися, що [Contract Standard] і [Contract Address] точно збігаються.';
@@ -36044,7 +36232,10 @@ extension on _StringsUk {
 			case 'transferToAddress': return 'перейти на адресу';
 			case 'longPressToPaste': return 'Тривале натискання для вставки';
 			case 'all': return 'повний';
-			case 'balanceX': return ({required Object x}) => 'Баланс ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Баланс '),
+				x,
+			]);
 			case 'transferOut': return 'Виявляється.';
 			case 'depositXcoins': return ({required Object x}) => 'Зараховано ${x}';
 			case 'sender': return 'відправник';
@@ -36123,7 +36314,7 @@ extension on _StringsUk {
 			case 'rates': return 'тариф';
 			case 'minimum': return 'мінімум';
 			case 'maximum': return 'верхня межа';
-			case 'minimumBlockConfirmations': return 'Мінімальна кількість підтверджень блокування';
+			case 'minimumBlockConfirmations': return 'Мін. Підтвердження блоків';
 			case 'dsmsVerifyTerminal': return 'Термінал валідації DSMS';
 			case 'overall': return 'парасолька';
 			case 'my': return 'мій';
@@ -36457,6 +36648,7 @@ extension on _StringsUk {
 			case 'clicks': return 'Кількість кліків';
 			case 'rankings': return 'Рейтинги';
 			case 'downloadFailed': return 'Завантаження не вдалося!';
+			case 'continueDraggingToLoadMore': return 'Продовжуйте перетягувати, щоб завантажити більше…';
 			default: return null;
 		}
 	}
@@ -36765,7 +36957,7 @@ extension on _StringsUr {
 			case 'walletAddress': return 'والیٹ کا پتہ';
 			case 'currentAddress': return 'موجودہ پتہ';
 			case 'depositAddress': return 'جمع کرنے کا پتہ';
-			case 'receivingMoneyAddress': return 'پیسہ وصول کرنے کا پتہ';
+			case 'receivingMoneyAddress': return 'پتہ وصول کر رہا ہے۔';
 			case 'applyTempDepositAddress': return 'عارضی جمع پتے کی درخواست کریں';
 			case 'tempDepositAddressTip': return '1.یہ ایک مشترکہ جمع پتہ ہے۔ براہ کرم اس کی لیز ختم ہونے کے بعد رقم جمع نہ کریں۔ ایسا کرنے پر رقم ضائع ہو جائے گی۔';
 			case 'tempDepositAddressTip2': return '2. جمع کرنے سے پہلے براہ کرم یہ یقینی بنائیں کہ [زنجیر کا نام] اور [کرنسی کا نام] بالکل میل کھاتے ہیں؛ اگر یہ ایک معاہدہ ٹوکن ہے تو، آپ کو یہ بھی یقین دلانا ہوگا کہ [معاہدہ معیاری] اور [معاہدہ پتہ] بالکل میل کھاتے ہیں۔';
@@ -36788,7 +36980,10 @@ extension on _StringsUr {
 			case 'transferToAddress': return 'پتے پر منتقل کریں';
 			case 'longPressToPaste': return 'پیسٹ کرنے کے لئے لمبا دبائیں';
 			case 'all': return 'سب';
-			case 'balanceX': return ({required Object x}) => 'بیلنس ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'بیلنس '),
+				x,
+			]);
 			case 'transferOut': return 'باہر منتقل کریں';
 			case 'depositXcoins': return ({required Object x}) => '${x} جمع کریں';
 			case 'sender': return 'پہنچانے والا';
@@ -36867,7 +37062,7 @@ extension on _StringsUr {
 			case 'rates': return 'شرحیں';
 			case 'minimum': return 'کم از کم';
 			case 'maximum': return 'زیادہ سے زیادہ';
-			case 'minimumBlockConfirmations': return 'کم سے کم بلاک کی تصدیق';
+			case 'minimumBlockConfirmations': return 'منٹ بلاک کنفرمیشنز';
 			case 'dsmsVerifyTerminal': return 'DSMS تصدیق کرنے والا ٹرمینل';
 			case 'overall': return 'مجموعی';
 			case 'my': return 'میری';
@@ -37202,6 +37397,7 @@ extension on _StringsUr {
 			case 'clicks': return 'شمار پر کلک کریں۔';
 			case 'rankings': return 'درجہ بندی';
 			case 'downloadFailed': return 'ڈاؤن لوڈ ناکام!';
+			case 'continueDraggingToLoadMore': return 'مزید لوڈ کرنے کے لیے گھسیٹنا جاری رکھیں…';
 			default: return null;
 		}
 	}
@@ -37511,7 +37707,7 @@ extension on _StringsVi {
 			case 'walletAddress': return 'địa chỉ ví';
 			case 'currentAddress': return 'địa chỉ hiện tại';
 			case 'depositAddress': return 'Địa chỉ nạp tiền';
-			case 'receivingMoneyAddress': return 'Địa chỉ thanh toán';
+			case 'receivingMoneyAddress': return 'Địa chỉ nhận hàng';
 			case 'applyTempDepositAddress': return 'Đăng ký địa chỉ nạp tiền tạm thời';
 			case 'tempDepositAddressTip': return '1. Đây là địa chỉ gửi tiền chung. Vui lòng không đặt cọc số tiền sau khi hợp đồng thuê hết hạn hoặc không bị ràng buộc. Nếu điều này xảy ra, số tiền sẽ bị mất.';
 			case 'tempDepositAddressTip2': return '2. Trước khi gửi tiền, vui lòng đảm bảo rằng [tên chuỗi] và [tên tiền tệ] hoàn toàn khớp nhau; nếu đó là mã thông báo hợp đồng, bạn cũng cần xác nhận rằng [tiêu chuẩn hợp đồng] và [địa chỉ hợp đồng] hoàn toàn khớp nhau.';
@@ -37535,7 +37731,10 @@ extension on _StringsVi {
 			case 'transferToAddress': return 'Đi đến địa chỉ';
 			case 'longPressToPaste': return 'Nhấn và giữ để dán';
 			case 'all': return 'tất cả';
-			case 'balanceX': return ({required Object x}) => 'Số dư ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Số dư '),
+				x,
+			]);
 			case 'transferOut': return 'chuyển ra ngoài';
 			case 'depositXcoins': return ({required Object x}) => 'Gửi ${x}';
 			case 'sender': return 'người gửi';
@@ -37614,7 +37813,7 @@ extension on _StringsVi {
 			case 'rates': return 'Tỷ lệ';
 			case 'minimum': return 'tối thiểu';
 			case 'maximum': return 'tối đa';
-			case 'minimumBlockConfirmations': return 'Số lượng xác nhận khối tối thiểu';
+			case 'minimumBlockConfirmations': return 'xác nhận khối tối thiểu';
 			case 'dsmsVerifyTerminal': return 'Thiết bị đầu cuối xác minh DSMS';
 			case 'overall': return 'tổng thể';
 			case 'my': return 'của tôi';
@@ -37948,6 +38147,7 @@ extension on _StringsVi {
 			case 'clicks': return 'Số lần nhấp chuột';
 			case 'rankings': return 'Xếp hạng';
 			case 'downloadFailed': return 'Tải xuống không thành công!';
+			case 'continueDraggingToLoadMore': return 'Tiếp tục kéo để tải thêm…';
 			default: return null;
 		}
 	}
@@ -38281,7 +38481,10 @@ extension on _StringsZhCn {
 			case 'transferToAddress': return '转至地址';
 			case 'longPressToPaste': return '长按粘贴';
 			case 'all': return '全部';
-			case 'balanceX': return ({required Object x}) => '余额 ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: '余额 '),
+				x,
+			]);
 			case 'transferOut': return '转 出';
 			case 'depositXcoins': return ({required Object x}) => '入账 ${x}';
 			case 'sender': return '发送者';
@@ -38695,6 +38898,7 @@ extension on _StringsZhCn {
 			case 'clicks': return '点击量';
 			case 'rankings': return '排行榜';
 			case 'downloadFailed': return '下载失败！';
+			case 'continueDraggingToLoadMore': return '继续拖动加载更多…';
 			default: return null;
 		}
 	}
@@ -39028,7 +39232,10 @@ extension on _StringsZhTw {
 			case 'transferToAddress': return '轉至地址';
 			case 'longPressToPaste': return '長按貼上';
 			case 'all': return '全部';
-			case 'balanceX': return ({required Object x}) => 'Balance ${x}';
+			case 'balanceX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Balance '),
+				x,
+			]);
 			case 'transferOut': return '轉 出';
 			case 'depositXcoins': return ({required Object x}) => '入賬 ${x}';
 			case 'sender': return '傳送者';
@@ -39442,6 +39649,7 @@ extension on _StringsZhTw {
 			case 'clicks': return '點擊量';
 			case 'rankings': return '排行榜';
 			case 'downloadFailed': return '下載失敗！';
+			case 'continueDraggingToLoadMore': return '繼續拖曳加載更多…';
 			default: return null;
 		}
 	}

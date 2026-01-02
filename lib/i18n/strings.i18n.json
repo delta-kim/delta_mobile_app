@@ -222,7 +222,7 @@
 	"walletAddress": "Wallet Address",
 	"currentAddress": "current Address",
 	"depositAddress": "deposit Address",
-	"receivingMoneyAddress": "Receiving money address",
+	"receivingMoneyAddress": "Receiving address",
 	"applyTempDepositAddress": "Apply for temporary deposit address",
 	"tempDepositAddressTip": "1.This is a shared deposit address. Please do not deposit the amount after the lease expires or is unbound. The amount will be lost if this happens.",
 	"tempDepositAddressTip2": "2.Before depositing, please be sure to confirm that [chain name] and [currency name] exactly match; if it is a contract token, you also need to confirm that [contract standard] and [contract address] exactly match.",
@@ -239,7 +239,7 @@
 	"transferToAddress": "transfer to address",
 	"longPressToPaste": "Long press to paste",
 	"all": "All",
-	"balanceX": "Balance ${x}",
+	"balanceX(rich)": "Balance ${x}",
 	"transferOut": "Transfer out",
 	"depositXcoins": "Deposit ${x}",
 	"sender": "Sender",
@@ -310,7 +310,7 @@
 	"rates": "rates",
 	"minimum": "Minimum",
 	"maximum": "Maximum",
-	"minimumBlockConfirmations": "minimum  Block Confirmations",
+	"minimumBlockConfirmations": "min. Block Confirmations",
 	"dsmsVerifyTerminal": "DSMS verifier terminal",
 	"overall": "overall",
 	"my": "My",
@@ -626,5 +626,6 @@
 	"brightnessMode": "Brightness mode",
 	"clicks": "Click count",
 	"rankings": "Rankings",
-	"downloadFailed": "Download failed!"
+	"downloadFailed": "Download failed!",
+	"continueDraggingToLoadMore": "Continue dragging to load more…"
 }

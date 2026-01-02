@@ -222,7 +222,7 @@
 	"walletAddress": "Anwani ya Pochi",
 	"currentAddress": "Anwani ya Sasa",
 	"depositAddress": "Anwani ya Amana",
-	"receivingMoneyAddress": "Anwani ya kupokea pesa",
+	"receivingMoneyAddress": "Anwani ya kupokea",
 	"applyTempDepositAddress": "Omba anwani ya amana ya muda",
 	"tempDepositAddressTip": "1.Hii ni anwani ya amana iliyoshirikiwa. Tafadhali usiweke kiasi baada ya kukodisha kumalizika au kuunganishwa. Kiasi kitapotea ikiwa hii itatokea.",
 	"tempDepositAddressTip2": "2.Kabla ya kuweka amana, tafadhali hakikisha kuwa [jina la mnyororo] na [jina la sarafu] zinalingana kabisa; ikiwa ni tokeni ya mkataba, unahitaji pia kuthibitisha kuwa [kiwango cha mkataba] na [anwani ya mkataba] zinalingana kabisa.",
@@ -239,7 +239,7 @@
 	"transferToAddress": "hamisha kwa anwani",
 	"longPressToPaste": "Bonyeza kwa muda mrefu ili kubandika",
 	"all": "Yote",
-	"balanceX": "Salio ${x}",
+	"balanceX(rich)": "Salio ${x}",
 	"transferOut": "Hamisha nje",
 	"depositXcoins": "Weka ${x} sarafu",
 	"sender": "Mtumaji",
@@ -310,7 +310,7 @@
 	"rates": "viwango",
 	"minimum": "Kiwango cha chini",
 	"maximum": "Kiwango cha juu",
-	"minimumBlockConfirmations": "Uthibitisho wa Bloku za Kiwango cha Chini",
+	"minimumBlockConfirmations": "Uthibitishaji wa Block wa chini",
 	"dsmsVerifyTerminal": "Kituo cha Kuthibitisha DSMS",
 	"overall": "jumla",
 	"my": "Yangu",
@@ -626,5 +626,6 @@
 	"brightnessMode": "Hali ya mwangaza",
 	"clicks": "Idadi ya kubofya",
 	"rankings": "Nafasi",
-	"downloadFailed": "Imeshindwa kupakua!"
+	"downloadFailed": "Imeshindwa kupakua!",
+	"continueDraggingToLoadMore": "Endelea kuburuta ili kupakia zaidi..."
 }

@@ -223,7 +223,7 @@
 	"walletAddress": "Адреса гаманця",
 	"currentAddress": "поточна адреса",
 	"depositAddress": "Адреса поповнення рахунку",
-	"receivingMoneyAddress": "адреса одержувача платежу",
+	"receivingMoneyAddress": "Адреса отримання",
 	"applyTempDepositAddress": "Адреса для запиту на тимчасове поповнення рахунку",
 	"tempDepositAddressTip": "1. це спільна депозитна адреса. Будь ласка, не вносьте суму після закінчення терміну оренди або після того, як ви звільнилися. Якщо це станеться, сума буде втрачена.",
 	"tempDepositAddressTip2": "2. перед внесенням депозиту, будь ласка, переконайтеся, що [Chain Name] і [Coin Name] точно збігаються; у випадку контрактних токенів, вам також потрібно переконатися, що [Contract Standard] і [Contract Address] точно збігаються.",
@@ -241,7 +241,7 @@
 	"transferToAddress": "перейти на адресу",
 	"longPressToPaste": "Тривале натискання для вставки",
 	"all": "повний",
-	"balanceX": "Баланс ${x}",
+	"balanceX(rich)": "Баланс ${x}",
 	"transferOut": "Виявляється.",
 	"depositXcoins": "Зараховано ${x}",
 	"sender": "відправник",
@@ -312,7 +312,7 @@
 	"rates": "тариф",
 	"minimum": "мінімум",
 	"maximum": "верхня межа",
-	"minimumBlockConfirmations": "Мінімальна кількість підтверджень блокування",
+	"minimumBlockConfirmations": "Мін. Підтвердження блоків",
 	"dsmsVerifyTerminal": "Термінал валідації DSMS",
 	"overall": "парасолька",
 	"my": "мій",
@@ -627,5 +627,6 @@
 	"brightnessMode": "Режим яскравості",
 	"clicks": "Кількість кліків",
 	"rankings": "Рейтинги",
-	"downloadFailed": "Завантаження не вдалося!"
+	"downloadFailed": "Завантаження не вдалося!",
+	"continueDraggingToLoadMore": "Продовжуйте перетягувати, щоб завантажити більше…"
 }

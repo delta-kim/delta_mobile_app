@@ -225,7 +225,7 @@
 	"walletAddress": "ওয়ালেট ঠিকানা",
 	"currentAddress": "বর্তমান ঠিকানা",
 	"depositAddress": "রিচার্জ ঠিকানা",
-	"receivingMoneyAddress": "পেমেন্ট ঠিকানা",
+	"receivingMoneyAddress": "গ্রহণকারীর ঠিকানা",
 	"applyTempDepositAddress": "একটি অস্থায়ী রিচার্জ ঠিকানার জন্য আবেদন করুন",
 	"tempDepositAddressTip": "1. এটি একটি শেয়ার করা ডিপোজিট ঠিকানা। ইজারার মেয়াদ শেষ হওয়ার পরে বা সীমাহীন হওয়ার পরে অনুগ্রহ করে পরিমাণ জমা করবেন না। যদি এটি ঘটে তবে পরিমাণটি নষ্ট হয়ে যাবে।",
 	"tempDepositAddressTip2": "2. জমা করার আগে, অনুগ্রহ করে নিশ্চিত করুন যে [চেইন নাম] এবং [মুদ্রার নাম] সম্পূর্ণ মেলে যদি এটি একটি চুক্তির টোকেন হয় তবে আপনাকে নিশ্চিত করতে হবে যে [চুক্তির মান] এবং [চুক্তির ঠিকানা] সম্পূর্ণ মেলে।",
@@ -243,7 +243,7 @@
 	"transferToAddress": "ঠিকানায় যান",
 	"longPressToPaste": "পেস্ট করতে দীর্ঘক্ষণ টিপুন",
 	"all": "সব",
-	"balanceX": "ব্যালেন্স ${x}",
+	"balanceX(rich)": "ব্যালেন্স ${x}",
 	"transferOut": "স্থানান্তর আউট",
 	"depositXcoins": "${x} জমা দিন",
 	"sender": "প্রেরক",
@@ -314,7 +314,7 @@
 	"rates": "হার",
 	"minimum": "সর্বনিম্ন",
 	"maximum": "সর্বোচ্চ",
-	"minimumBlockConfirmations": "ব্লক নিশ্চিতকরণের ন্যূনতম সংখ্যা",
+	"minimumBlockConfirmations": "সর্বনিম্ন। নিশ্চিতকরণ ব্লক করুন",
 	"dsmsVerifyTerminal": "DSMS যাচাইকরণ টার্মিনাল",
 	"overall": "সামগ্রিক",
 	"my": "আমার",
@@ -629,5 +629,6 @@
 	"brightnessMode": "উজ্জ্বলতা মোড",
 	"clicks": "ক্লিকের সংখ্যা",
 	"rankings": "র‍্যাঙ্কিং",
-	"downloadFailed": "ডাউনলোড ব্যর্থ হয়েছে!"
+	"downloadFailed": "ডাউনলোড ব্যর্থ হয়েছে!",
+	"continueDraggingToLoadMore": "আরও লোড করতে টেনে আনা চালিয়ে যান..."
 }

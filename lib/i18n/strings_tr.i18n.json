@@ -222,7 +222,7 @@
 	"walletAddress": "Cüzdan Adresi",
 	"currentAddress": "mevcut Adres",
 	"depositAddress": "yatırma Adresi",
-	"receivingMoneyAddress": "Para alma adresi",
+	"receivingMoneyAddress": "Alıcı adresi",
 	"applyTempDepositAddress": "Geçici yatırma adresi başvurusu",
 	"tempDepositAddressTip": "1. Bu paylaşılan bir yatırma adresidir. Lütfen kira süresi dolduktan veya bağlantısı kesildikten sonra miktar yatırmayın. Bu durumda miktar kaybolur.",
 	"tempDepositAddressTip2": "2. Yatırma yapmadan önce, lütfen [zincir adı] ve [para birimi adı] tam olarak eşleştiğini teyit edin; eğer sözleşme token'ı ise, [sözleşme standardı] ve [sözleşme adresi] tam olarak eşleştiğini de teyit etmeniz gerekir.",
@@ -239,7 +239,7 @@
 	"transferToAddress": "adrese transfer",
 	"longPressToPaste": "Yapıştırmak için uzun basın",
 	"all": "Tümü",
-	"balanceX": "Bakiye ${x}",
+	"balanceX(rich)": "Bakiye ${x}",
 	"transferOut": "Transfer et",
 	"depositXcoins": "${x} yatır",
 	"sender": "Gönderen",
@@ -310,7 +310,7 @@
 	"rates": "oranlar",
 	"minimum": "Minimum",
 	"maximum": "Maksimum",
-	"minimumBlockConfirmations": "minimum Blok Onayları",
+	"minimumBlockConfirmations": "min. Blok Onayları",
 	"dsmsVerifyTerminal": "DSMS doğrulayıcı terminali",
 	"overall": "genel",
 	"my": "Benim",
@@ -626,5 +626,6 @@
 	"brightnessMode": "Parlaklık modu",
 	"clicks": "Tıklama sayısı",
 	"rankings": "Sıralamalar",
-	"downloadFailed": "İndirme başarısız!"
+	"downloadFailed": "İndirme başarısız!",
+	"continueDraggingToLoadMore": "Daha fazlasını yüklemek için sürüklemeye devam edin…"
 }

@@ -223,7 +223,7 @@
 	"walletAddress": "Adres portfela",
 	"currentAddress": "aktualny adres",
 	"depositAddress": "Adres doładowania",
-	"receivingMoneyAddress": "adres odbiorcy płatności",
+	"receivingMoneyAddress": "Adres odbiorczy",
 	"applyTempDepositAddress": "Adres do składania wniosków o tymczasowe doładowanie",
 	"tempDepositAddressTip": "1) Jest to wspólny adres depozytowy. Nie należy wpłacać kwoty po wygaśnięciu umowy najmu lub po rozwiązaniu umowy. W takim przypadku kwota zostanie utracona.",
 	"tempDepositAddressTip2": "2) Przed dokonaniem wpłaty należy upewnić się, że [nazwa łańcucha] i [nazwa monety] są dokładnie zgodne; w przypadku tokenów kontraktowych należy również upewnić się, że [standard kontraktu] i [adres kontraktu] są dokładnie zgodne.",
@@ -241,7 +241,7 @@
 	"transferToAddress": "przejdź do adresu",
 	"longPressToPaste": "Długie naciśnięcie, aby wkleić",
 	"all": "pełny",
-	"balanceX": "Saldo ${x}",
+	"balanceX(rich)": "Saldo ${x}",
 	"transferOut": "wyłączyć się",
 	"depositXcoins": "Kredyt ${x}",
 	"sender": "nadawca",
@@ -312,7 +312,7 @@
 	"rates": "taryfa",
 	"minimum": "minimum",
 	"maximum": "górny limit",
-	"minimumBlockConfirmations": "Minimalna liczba potwierdzeń bloków",
+	"minimumBlockConfirmations": "min. Potwierdzenia bloków",
 	"dsmsVerifyTerminal": "Terminal walidacyjny DSMS",
 	"overall": "parasol",
 	"my": "mój",
@@ -627,5 +627,6 @@
 	"brightnessMode": "Tryb jasności",
 	"clicks": "Liczba kliknięć",
 	"rankings": "Rankingi",
-	"downloadFailed": "Pobieranie nie powiodło się!"
+	"downloadFailed": "Pobieranie nie powiodło się!",
+	"continueDraggingToLoadMore": "Kontynuuj przeciąganie, aby załadować więcej…"
 }

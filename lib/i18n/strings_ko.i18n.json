@@ -223,7 +223,7 @@
 	"walletAddress": "지갑 주소",
 	"currentAddress": "현재 주소",
 	"depositAddress": "충전 주소",
-	"receivingMoneyAddress": "수취인 주소",
+	"receivingMoneyAddress": "수신 주소",
 	"applyTempDepositAddress": "임시 충전 요청을 위한 주소",
 	"tempDepositAddressTip": "1. 공유 입금 주소입니다. 임대가 만료되었거나 해지된 후에는 금액을 입금하지 마세요. 이 경우 해당 금액은 손실됩니다.",
 	"tempDepositAddressTip2": "2. 입금 전 [체인명]과 [코인명]이 정확히 일치하는지 확인하시고, 컨트랙트 토큰의 경우 [계약 기준]과 [계약 주소]도 정확히 일치하는지 확인하시기 바랍니다.",
@@ -241,7 +241,7 @@
 	"transferToAddress": "주소로 이동",
 	"longPressToPaste": "길게 눌러 붙여넣기",
 	"all": "전체",
-	"balanceX": "잔액 ${x}",
+	"balanceX(rich)": "잔액 ${x}",
 	"transferOut": "턴아웃",
 	"depositXcoins": "크레딧 ${x}",
 	"sender": "발신자",
@@ -312,7 +312,7 @@
 	"rates": "관세",
 	"minimum": "최소",
 	"maximum": "상한",
-	"minimumBlockConfirmations": "최소 차단 확인 횟수",
+	"minimumBlockConfirmations": "최소 블록 확인",
 	"dsmsVerifyTerminal": "DSMS 유효성 검사 터미널",
 	"overall": "우산",
 	"my": "my",
@@ -627,5 +627,6 @@
 	"brightnessMode": "밝기 모드",
 	"clicks": "클릭 수",
 	"rankings": "랭킹",
-	"downloadFailed": "다운로드에 실패했습니다!"
+	"downloadFailed": "다운로드에 실패했습니다!",
+	"continueDraggingToLoadMore": "더 많은 내용을 로드하려면 계속 드래그하세요…"
 }

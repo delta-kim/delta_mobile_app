@@ -222,7 +222,7 @@
 	"walletAddress": "वॉलेट एड्रेस",
 	"currentAddress": "करंट एड्रेस",
 	"depositAddress": "डिपॉजिट एड्रेस",
-	"receivingMoneyAddress": "पैसे प्राप्त करने का एड्रेस",
+	"receivingMoneyAddress": "प्राप्तकर्ता का पता",
 	"applyTempDepositAddress": "अस्थायी जमा एड्रेस के लिए आवेदन करें",
 	"tempDepositAddressTip": "1.यह एक साझा जमा एड्रेस है। कृपया पट्टा समाप्त होने या अनबाउंड होने के बाद राशि जमा न करें। ऐसा होने पर राशि खो जाएगी।.",
 	"tempDepositAddressTip2": "2.जमा करने से पहले, कृपया यह सुनिश्चित करें कि [चेन नाम] और [मुद्रा नाम] बिल्कुल मेल खाते हैं; यदि यह एक अनुबंध टोकन है, तो आपको यह भी सुनिश्चित करना होगा कि [अनुबंध मानक] और [अनुबंध एड्रेस] बिल्कुल मेल खाते हैं।",
@@ -239,7 +239,7 @@
 	"transferToAddress": "एड्रेस पर ट्रांसफर करें",
 	"longPressToPaste": "पेस्ट करने के लिए लंबे समय तक दबाएं",
 	"all": "सभी",
-	"balanceX": "बैलेंस ${x}",
+	"balanceX(rich)": "बैलेंस ${x}",
 	"transferOut": "निकासी करें",
 	"depositXcoins": "डिपॉजिट ${x}",
 	"sender": "सेंडर",
@@ -310,7 +310,7 @@
 	"rates": "दर",
 	"minimum": "न्यूनतम",
 	"maximum": "अधिकतम",
-	"minimumBlockConfirmations": "न्यूनतम ब्लॉक पुष्टि",
+	"minimumBlockConfirmations": "न्यूनतम ब्लॉक पुष्टिकरण",
 	"dsmsVerifyTerminal": "DSMS सत्यापनकर्ता टर्मिनल",
 	"overall": "कुल मिलाकर",
 	"my": "मेरा / मेरी",
@@ -626,5 +626,6 @@
 	"brightnessMode": "चमक मोड",
 	"clicks": "क्लिक गिनती",
 	"rankings": "रैंकिंग",
-	"downloadFailed": "डाउनलोड विफल!"
+	"downloadFailed": "डाउनलोड विफल!",
+	"continueDraggingToLoadMore": "अधिक लोड करने के लिए खींचना जारी रखें…"
 }

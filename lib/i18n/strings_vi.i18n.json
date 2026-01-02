@@ -223,7 +223,7 @@
 	"walletAddress": "địa chỉ ví",
 	"currentAddress": "địa chỉ hiện tại",
 	"depositAddress": "Địa chỉ nạp tiền",
-	"receivingMoneyAddress": "Địa chỉ thanh toán",
+	"receivingMoneyAddress": "Địa chỉ nhận hàng",
 	"applyTempDepositAddress": "Đăng ký địa chỉ nạp tiền tạm thời",
 	"tempDepositAddressTip": "1. Đây là địa chỉ gửi tiền chung. Vui lòng không đặt cọc số tiền sau khi hợp đồng thuê hết hạn hoặc không bị ràng buộc. Nếu điều này xảy ra, số tiền sẽ bị mất.",
 	"tempDepositAddressTip2": "2. Trước khi gửi tiền, vui lòng đảm bảo rằng [tên chuỗi] và [tên tiền tệ] hoàn toàn khớp nhau; nếu đó là mã thông báo hợp đồng, bạn cũng cần xác nhận rằng [tiêu chuẩn hợp đồng] và [địa chỉ hợp đồng] hoàn toàn khớp nhau.",
@@ -241,7 +241,7 @@
 	"transferToAddress": "Đi đến địa chỉ",
 	"longPressToPaste": "Nhấn và giữ để dán",
 	"all": "tất cả",
-	"balanceX": "Số dư ${x}",
+	"balanceX(rich)": "Số dư ${x}",
 	"transferOut": "chuyển ra ngoài",
 	"depositXcoins": "Gửi ${x}",
 	"sender": "người gửi",
@@ -312,7 +312,7 @@
 	"rates": "Tỷ lệ",
 	"minimum": "tối thiểu",
 	"maximum": "tối đa",
-	"minimumBlockConfirmations": "Số lượng xác nhận khối tối thiểu",
+	"minimumBlockConfirmations": "xác nhận khối tối thiểu",
 	"dsmsVerifyTerminal": "Thiết bị đầu cuối xác minh DSMS",
 	"overall": "tổng thể",
 	"my": "của tôi",
@@ -627,5 +627,6 @@
 	"brightnessMode": "Chế độ sáng",
 	"clicks": "Số lần nhấp chuột",
 	"rankings": "Xếp hạng",
-	"downloadFailed": "Tải xuống không thành công!"
+	"downloadFailed": "Tải xuống không thành công!",
+	"continueDraggingToLoadMore": "Tiếp tục kéo để tải thêm…"
 }

@@ -222,7 +222,7 @@
 	"walletAddress": "Indirizzo portafoglio",
 	"currentAddress": "Indirizzo attuale",
 	"depositAddress": "Indirizzo di deposito",
-	"receivingMoneyAddress": "Indirizzo di ricezione denaro",
+	"receivingMoneyAddress": "Indirizzo di ricezione",
 	"applyTempDepositAddress": "Richiedi indirizzo di deposito temporaneo",
 	"tempDepositAddressTip": "1. Questo è un indirizzo di deposito condiviso. Per favore, non depositare l'importo dopo la scadenza del leasing o la disassociazione. L'importo sarà perso se ciò accade.",
 	"tempDepositAddressTip2": "2. Prima di depositare, per favore, assicurati di confermare che [nome catena] e [nome valuta] corrispondano esattamente; se è un token di contratto, devi anche confermare che [standard contratto] e [indirizzo contratto] corrispondano esattamente.",
@@ -239,7 +239,7 @@
 	"transferToAddress": "trasferisci a indirizzo",
 	"longPressToPaste": "Tieni premuto per incollare",
 	"all": "Tutti",
-	"balanceX": "Saldo ${x}",
+	"balanceX(rich)": "Saldo ${x}",
 	"transferOut": "Trasferisci fuori",
 	"depositXcoins": "Deposito ${x}",
 	"sender": "Mittente",
@@ -310,7 +310,7 @@
 	"rates": "tassi",
 	"minimum": "Minimo",
 	"maximum": "Massimo",
-	"minimumBlockConfirmations": "Conferme di blocco minime",
+	"minimumBlockConfirmations": "min. Conferme di blocco",
 	"dsmsVerifyTerminal": "Terminale verificatore DSMS",
 	"overall": "complessivo",
 	"my": "Mio",
@@ -626,5 +626,6 @@
 	"brightnessMode": "Modalità luminosità",
 	"clicks": "Conteggio dei clic",
 	"rankings": "Classifiche",
-	"downloadFailed": "Download non riuscito!"
+	"downloadFailed": "Download non riuscito!",
+	"continueDraggingToLoadMore": "Continua a trascinare per caricare altro..."
 }

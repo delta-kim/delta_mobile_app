@@ -223,7 +223,7 @@
 	"walletAddress": "Adresse du portefeuille",
 	"currentAddress": "adresse actuelle",
 	"depositAddress": "Adresse de dépot",
-	"receivingMoneyAddress": "adresse du bénéficiaire",
+	"receivingMoneyAddress": "Adresse de réception",
 	"applyTempDepositAddress": "Adresse pour la demande d'un complément temporaire",
 	"tempDepositAddressTip": "1) Il s'agit d'une adresse de dépôt partagé. Veuillez ne pas déposer le montant après l'expiration du bail ou après la déliaison. Dans ce cas, le montant sera perdu.",
 	"tempDepositAddressTip2": "2) Avant d'effectuer un dépôt, veuillez vous assurer que le [Nom de la chaîne] et le [Nom de la pièce] correspondent exactement ; dans le cas des jetons de contrat, vous devez également vous assurer que la [Norme du contrat] et l'[Adresse du contrat] correspondent exactement.",
@@ -241,7 +241,7 @@
 	"transferToAddress": "transférer à l'adresse",
 	"longPressToPaste": "Appui long pour coller",
 	"all": "Totalité",
-	"balanceX": "Solde ${x}",
+	"balanceX(rich)": "Solde ${x}",
 	"transferOut": "Transférer",
 	"depositXcoins": "Créditer ${x}",
 	"sender": "Expéditeur",
@@ -312,7 +312,7 @@
 	"rates": "tarif",
 	"minimum": "Minimum",
 	"maximum": "Maximum",
-	"minimumBlockConfirmations": "Nombre minimum de confirmations de blocs",
+	"minimumBlockConfirmations": "Confirmations de bloc min.",
 	"dsmsVerifyTerminal": "Terminal de validation DSMS",
 	"overall": "globale",
 	"my": "Mon",
@@ -627,5 +627,6 @@
 	"brightnessMode": "Mode de luminosité",
 	"clicks": "Nombre de clics",
 	"rankings": "Classements",
-	"downloadFailed": "Le téléchargement a échoué !"
+	"downloadFailed": "Le téléchargement a échoué !",
+	"continueDraggingToLoadMore": "Continuez à faire glisser pour charger plus d'éléments…"
 }

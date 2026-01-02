@@ -223,7 +223,7 @@
 	"walletAddress": "Adresse der Brieftasche",
 	"currentAddress": "aktuelle Adresse",
 	"depositAddress": "Adresse aufladen",
-	"receivingMoneyAddress": "Adresse des Zahlungsempfängers",
+	"receivingMoneyAddress": "Empfangsadresse",
 	"applyTempDepositAddress": "Adresse für die Beantragung einer vorübergehenden Aufstockung",
 	"tempDepositAddressTip": "(1) Dies ist eine gemeinsame Kautionsadresse. Bitte hinterlegen Sie den Betrag nicht, nachdem der Mietvertrag abgelaufen ist oder Sie ungebunden wurden. Wenn dies geschieht, ist der Betrag verloren.",
 	"tempDepositAddressTip2": "Bevor Sie eine Einzahlung vornehmen, vergewissern Sie sich bitte, dass [Kettenname] und [Münzname] genau übereinstimmen; im Falle von Vertrags-Token müssen Sie auch sicherstellen, dass [Vertragsstandard] und [Vertragsadresse] genau übereinstimmen.",
@@ -241,7 +241,7 @@
 	"transferToAddress": "zur Adresse gehen",
 	"longPressToPaste": "Langes Drücken zum Einfügen",
 	"all": "vollständig",
-	"balanceX": "Saldo ${x}",
+	"balanceX(rich)": "Saldo ${x}",
 	"transferOut": "sich herausstellen",
 	"depositXcoins": "Gutschrift ${x}",
 	"sender": "Absender",
@@ -312,7 +312,7 @@
 	"rates": "Tarif",
 	"minimum": "Minimum",
 	"maximum": "Obergrenze",
-	"minimumBlockConfirmations": "Mindestanzahl von Blockbestätigungen",
+	"minimumBlockConfirmations": "Mindestanzahl Blockbestätigungen",
 	"dsmsVerifyTerminal": "DSMS-Validierungsterminal",
 	"overall": "Regenschirm",
 	"my": "meine",
@@ -627,5 +627,6 @@
 	"brightnessMode": "Helligkeitsmodus",
 	"clicks": "Klickzahl",
 	"rankings": "Rangliste",
-	"downloadFailed": "Download fehlgeschlagen!"
+	"downloadFailed": "Download fehlgeschlagen!",
+	"continueDraggingToLoadMore": "Ziehen Sie weiter, um mehr zu laden…"
 }
