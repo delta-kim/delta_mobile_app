@@ -74,9 +74,9 @@ android {
         versionCode = flutter.versionCode
         versionName = flutter.versionName
         multiDexEnabled = true
-        ndk  {
-            abiFilters += listOf("armeabi-v7a", "arm64-v8a") // 只保留需要的 ABI x86_64
-        }
+        // ndk  {
+        //     abiFilters += listOf("armeabi-v7a", "arm64-v8a") // 只保留需要的 ABI x86_64
+        // }
     }
 
     signingConfigs {

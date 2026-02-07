@@ -16,7 +16,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 1.3.1+50
+version: 2.0.0+55 #1.3.4+53
 
 environment:
   sdk: ^3.7.2
@@ -31,11 +31,9 @@ dependencies:
   intl: ^0.20.2
   provider: ^6.0.5
   scroll_to_index: ^3.0.1
-  fluttertoast: ^8.2.12
   slang: ^3.20.0
   slang_flutter: ^3.20.0
   encrypt: ^5.0.3
-  flutter_secure_storage: ^8.0.0
   get_storage: ^2.1.1
   url_launcher: ^6.1.10
   cached_network_image: ^3.2.3
@@ -76,7 +74,7 @@ dependencies:
   #shelf_static: ^1.1.3
   #google_mobile_ads: ^6.0.0
   flutter_floaty: ^0.2.0
-  # pubscale_offerwall_plugin: ^0.0.4
+  pubscale_offerwall_plugin: ^0.0.4
   #   path: 'plugins/pubscale_offerwall_plugin_flutter'
   growdeck_playtime_plugin: ^0.0.9
   ayetstudios_flutter_sdk:
@@ -87,6 +85,9 @@ dependencies:
   skeletonizer: ^2.1.0+1
   flutter_inappwebview: 6.1.5
   dio: ^5.9.0
+  google_mobile_ads: ^7.0.0
+  flutter_secure_storage: ^10.0.0
+  fluttertoast: ^9.0.0
   #shared_preferences: ^2.5.3
   #mobcommonlib: 
   #mobpush_plugin: 1.3.1

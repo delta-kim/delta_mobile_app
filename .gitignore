@@ -52,3 +52,4 @@ lib/*
 /ios
 /android
 /android/app/.cxx
+pubspec.lock

@@ -1,38 +1,12 @@
-file : ".\lib\agent.dart"
 
-Tip: Different versions may have different file paths for this code, you can find it by searching for "QueryResponseRejected("
-
-``` dart
-      switch (result.status) {
-        case QueryResponseStatus.rejected:
-          // throw QueryCallRejectedError(
-          //   cid,
-          //   methodName,
-          //   QueryResponseRejected(
-          //     rejectCode: result.rejectCode,
-          //     rejectMessage: result.rejectMessage,
-          //   ),
-          // );
-          throw QueryResponseRejected(  // Replace the above code with the code here
-            rejectCode: result.rejectCode,
-            rejectMessage: result.rejectMessage,
-          );
-        case QueryResponseStatus.replied:
-          return decodeReturnValue(func.retTypes, result.reply!.arg!);
-      }
-      
-```
-
-
+修复json转换
 C:\Users\ippow\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.1.3\lib\src\in_app_webview\in_app_webview_controller.dart
 C:\Users\ippow\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_ios-1.1.2\lib\src\in_app_webview\in_app_webview_controller.dart
 
 ``` dart
             toEncodable(Object? nonEncodable) {
-              if (nonEncodable is BigInt) {
-                return nonEncodable.toInt();
-              }
-              return nonEncodable.toString();
+              if (nonEncodable is BigInt)   return nonEncodable.toInt();
+              return nonEncodable;
             }
             return jsonEncode(await _javaScriptHandlersMap[handlerName]!(args), toEncodable: toEncodable);
 ```
@@ -45,4 +19,15 @@ C:\Users\ippow\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_ios-1
       return nonEncodable.toString();
     }
     data = json.decode(data, toEncodable : toEncodable);
+
+
 ```
+
+C:\Users\ippow\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.1.3\android\src\main\java\com\pichillilorenzo\flutter_inappwebview_android\plugin_scripts_js\JavaScriptBridgeJS.java'
+C:\Users\ippow\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_ios-1.1.2\ios\Classes\PluginScriptsJS\JavaScriptBridgeJS.swift
+ 
+  ```js 
+  JSON.stringify(... // 找到 ,  然后在后面添加第二个参数(以下函数)：
+
+  function (k, v) {  if (typeof v == 'bigint') return Number(v);  return v;}
+  ```
