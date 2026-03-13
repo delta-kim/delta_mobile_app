@@ -842,5 +842,19 @@
 	"light": "روشن",
 	"dark": "گہرا",
 	"userFallback": "صارف",
-	"systemReports": "سسٹم رپورٹس"
+	"systemReports": "سسٹم رپورٹس",
+	"chooseXLocalNumbers": "$shouldChecked مقامی نمبر منتخب کریں",
+	"noSecurityCircleSetUp": "کوئی حفاظتی حلقہ قائم نہیں کیا گیا۔",
+	"selectTwoNumbersToVerify": "اپنے اکاؤنٹ کی تصدیق کے لیے دو نمبر منتخب کریں",
+	"whyIsThisRequired": "یہ کیوں ضروری ہے؟",
+	"whyIsThisRequiredDesc": "چونکہ آپ کے حفاظتی حلقے میں قابل اعتماد رابطے نہیں ہیں، ہمیں اضافی یقین کرنے کی ضرورت ہے کہ آپ اکاؤنٹ کے مالک ہیں۔ براہ کرم جاری رکھنے کے لیے دو مقامی نمبر منتخب کریں۔",
+	"selectXNumbersToContinue": "جاری رکھنے کے لیے $shouldChecked نمبروں کا انتخاب کریں",
+	"selectedXOfYNumbers": "منتخب شدہ: $length از $shouldChecked",
+	"sendTo": "بھیجیں:",
+	"iHaveSentTheMessageToBoth": "میں نے دونوں نمبروں پر پیغام بھیج دیا ہے",
+	"onlineRate": "روزانہ آن لائن ریٹ",
+	"monthlyRewards": "ماہانہ انعامات",
+	"noMonthlyRewardsAvailableYet": "ابھی تک کوئی ماہانہ انعامات دستیاب نہیں ہیں۔",
+	"rate": "شرح:",
+	"monthlyRewardReminder": "ہر ماہ 95% یا اس سے زیادہ کی روزانہ آن لائن شرح حاصل کرنے پر 600 DTCT ماہانہ اضافی انعام حاصل ہوگا۔"
 }

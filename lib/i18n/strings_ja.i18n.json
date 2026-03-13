@@ -842,5 +842,19 @@
 	"light": "Light",
 	"dark": "Dark",
 	"userFallback": "User",
-	"systemReports": "システムレポート"
+	"systemReports": "システムレポート",
+	"chooseXLocalNumbers": "$shouldCheckedつのローカル番号を選択",
+	"noSecurityCircleSetUp": "セキュリティサークルが設定されていません。",
+	"selectTwoNumbersToVerify": "アカウントを検証するために2つの番号を選択してください",
+	"whyIsThisRequired": "なぜこれが必要なのですか？",
+	"whyIsThisRequiredDesc": "セキュリティサークルに信頼できるつながりがないため、あなたがアカウントの所有者であることを追加で確認する必要があります。続行するには、2つのローカル番号を選択してください。",
+	"selectXNumbersToContinue": "続行するには$shouldCheckedつの番号を選択してください",
+	"selectedXOfYNumbers": "選択済み: $length / $shouldChecked",
+	"sendTo": "送信先:",
+	"iHaveSentTheMessageToBoth": "両方の番号にメッセージを送信しました",
+	"onlineRate": "毎日のオンライン率",
+	"monthlyRewards": "毎月の報酬",
+	"noMonthlyRewardsAvailableYet": "毎月の報酬はまだありません。",
+	"rate": "レート：",
+	"monthlyRewardReminder": "毎月 95% 以上のオンライン率を達成すると、毎月 600 DTCT の追加報酬を獲得できます。"
 }

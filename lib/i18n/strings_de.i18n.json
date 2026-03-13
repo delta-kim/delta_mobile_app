@@ -842,5 +842,19 @@
 	"light": "Light",
 	"dark": "Dark",
 	"userFallback": "User",
-	"systemReports": "Systemberichte"
+	"systemReports": "Systemberichte",
+	"chooseXLocalNumbers": "Wähle $shouldChecked lokale Nummern",
+	"noSecurityCircleSetUp": "Kein Sicherheitskreis eingerichtet.",
+	"selectTwoNumbersToVerify": "Wähle zwei Nummern, um dein Konto zu verifizieren",
+	"whyIsThisRequired": "Warum ist das erforderlich?",
+	"whyIsThisRequiredDesc": "Da du keine vertrauenswürdigen Verbindungen in deinem Sicherheitskreis hast, müssen wir besonders sicherstellen, dass dir das Konto gehört. Bitte wähle zwei lokale Nummern, um fortzufahren.",
+	"selectXNumbersToContinue": "Wähle $shouldChecked Nummern, um fortzufahren",
+	"selectedXOfYNumbers": "Ausgewählt: $length von $shouldChecked",
+	"sendTo": "Senden an:",
+	"iHaveSentTheMessageToBoth": "Ich habe die Nachricht an beide Nummern gesendet",
+	"onlineRate": "Tägliche Online-Rate",
+	"monthlyRewards": "Monatliche Belohnungen",
+	"noMonthlyRewardsAvailableYet": "Es sind noch keine monatlichen Prämien verfügbar.",
+	"rate": "Rate:",
+	"monthlyRewardReminder": "Wer jeden Monat eine tägliche Online-Rate von 95 % oder höher erreicht, erhält eine zusätzliche monatliche Prämie von 600 DTCT."
 }

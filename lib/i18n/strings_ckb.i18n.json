@@ -842,5 +842,19 @@
 	"light": "Light",
 	"dark": "Dark",
 	"userFallback": "User",
-	"systemReports": "ڕاپۆرتەکانی سیستەم"
+	"systemReports": "ڕاپۆرتەکانی سیستەم",
+	"chooseXLocalNumbers": "ھەڵبژێرە $shouldChecked ژمارەی ناوخۆیی",
+	"noSecurityCircleSetUp": "هیچ بازنەیەکی ئاسایش دانەنراوە.",
+	"selectTwoNumbersToVerify": "دوو ژمارە هەڵبژێرە بۆ سەلماندنی هەژمارەکەت",
+	"whyIsThisRequired": "بۆچی ئەمە پێویستە؟",
+	"whyIsThisRequiredDesc": "لەبەر ئەوەی پەیوەندی متمانەپێکراوت نییە لە بازنەی ئاسایشەکەتدا، پێویستە زیاتر دڵنیا بین کە تۆ خاوەنی هەژمارەکەیت. تکایە دوو ژمارەی ناوخۆیی هەڵبژێرە بۆ بەردەوام بوون.",
+	"selectXNumbersToContinue": "هەڵبژێرە $shouldChecked ژمارە بۆ بەردەوام بوون",
+	"selectedXOfYNumbers": "هەڵبژێردراو: $length لە $shouldChecked",
+	"sendTo": "ناردن بۆ:",
+	"iHaveSentTheMessageToBoth": "نامەکەم نارد بۆ هەردوو ژمارەکە",
+	"onlineRate": "ڕێژەی ئۆنلاینی ڕۆژانە",
+	"monthlyRewards": "پاداشتی مانگانە",
+	"noMonthlyRewardsAvailableYet": "تا ئێستا هیچ پاداشتێکی مانگانە لەبەردەستدا نییە.",
+	"rate": "ڕێژە:",
+	"monthlyRewardReminder": "بەدەستهێنانی ڕێژەی ڕۆژانەی ئۆنلاین کە 95% یان زیاترە لە مانگێکدا، پاداشتی مانگانەی 600 DTCTی زیادە بەدەست دەهێنێت."
 }

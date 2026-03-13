@@ -842,5 +842,19 @@
 	"light": "Light",
 	"dark": "Dark",
 	"userFallback": "User",
-	"systemReports": "Relatórios do sistema"
+	"systemReports": "Relatórios do sistema",
+	"chooseXLocalNumbers": "Escolha $shouldChecked números locais",
+	"noSecurityCircleSetUp": "Nenhum círculo de segurança configurado.",
+	"selectTwoNumbersToVerify": "Selecione dois números para verificar sua conta",
+	"whyIsThisRequired": "Por que isso é necessário?",
+	"whyIsThisRequiredDesc": "Como você não tem conexões confiáveis no seu círculo de segurança, precisamos ter ainda mais certeza de que você é o dono da conta. Selecione dois números locais para continuar.",
+	"selectXNumbersToContinue": "Selecione $shouldChecked números para continuar",
+	"selectedXOfYNumbers": "Selecionados: $length de $shouldChecked",
+	"sendTo": "Enviar para:",
+	"iHaveSentTheMessageToBoth": "Eu enviei a mensagem para ambos os números",
+	"onlineRate": "Taxa online diária",
+	"monthlyRewards": "Recompensas Mensais",
+	"noMonthlyRewardsAvailableYet": "Nenhuma recompensa mensal disponível ainda.",
+	"rate": "Avaliar:",
+	"monthlyRewardReminder": "Atingir uma taxa diária de presença online de 95% ou superior a cada mês renderá uma recompensa adicional de 600 DTCT por mês."
 }

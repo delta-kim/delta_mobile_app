@@ -77,6 +77,9 @@ if (typeof window.delta == "object") {
       return window.flutter_inappwebview.callHandler('pickImage');
     },
 
+    translateText(text, targetLang) {
+      return window.flutter_inappwebview.callHandler('translateText', text, targetLang);
+    },
 
     adListener: {
       onShow() {
@@ -224,7 +227,7 @@ if (typeof window.NativeOverlay !== "object") {
       if (this._isVisible && !skipHide) this.hide(true);
       this._setupStyles();
       const root = this._getContainer();
-
+      
       root.innerHTML = `
         <div class="ov-backdrop"></div>
         <div class="ov-content-wrapper">
@@ -234,7 +237,7 @@ if (typeof window.NativeOverlay !== "object") {
           </div>
         </div>
       `;
-
+      
       root.style.display = "flex";
       setTimeout(() => root.classList.add("ov-active"), 10);
       this._isVisible = true;
@@ -246,7 +249,7 @@ if (typeof window.NativeOverlay !== "object") {
       if (this._isVisible && !skipHide) this.hide(true);
       this._setupStyles();
       const root = this._getContainer();
-
+      
       root.innerHTML = `
         <div class="ov-backdrop"></div>
         <div class="ov-content-wrapper">
@@ -255,7 +258,7 @@ if (typeof window.NativeOverlay !== "object") {
           </div>
         </div>
       `;
-
+      
       root.style.display = "flex";
       setTimeout(() => root.classList.add("ov-active"), 10);
       this._isVisible = true;
@@ -264,11 +267,11 @@ if (typeof window.NativeOverlay !== "object") {
     },
 
     showMenu(appInfo, options = {}) {
-      const {
-        onReload, onInfo, onMinimize, onClose,
-        t = { reload: "Reload", info: "dApp Info", minimize: "Minimize", close: "Close", cancel: "Cancel", confirm: "Confirm", closeConfirm: "Are you sure you want to close this dApp?" }
+      const { 
+        onReload, onInfo, onMinimize, onClose, 
+        t = { reload: "Reload", info: "dApp Info", minimize: "Minimize", close: "Close", cancel: "Cancel", confirm: "Confirm", closeConfirm: "Are you sure you want to close this dApp?" } 
       } = options;
-      const appType = appInfo.appType || { mini: "1.0.0" };
+const appType = appInfo.appType || { mini: "1.0.0" };
       const html = `
         <div class="ov-menu-header" style="display: flex; align-items: center; margin-bottom: 24px;">
           <img src="https://pub-127e19f7b07747c6b37b142adc82ba6b.r2.dev/dapplogo/${appInfo.logo}" style="width: 52px; height: 52px; border-radius: 14px; margin-right: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" onerror="this.src='https://pub-127e19f7b07747c6b37b142adc82ba6b.r2.dev/dapplogo/default.png'">
@@ -302,19 +305,19 @@ if (typeof window.NativeOverlay !== "object") {
 
       const bind = (id, fn) => {
         const el = document.getElementById(id);
-        if (el) el.onclick = () => {
+        if (el) el.onclick = () => { 
           this.hide(true); // Immediate hide to avoid race conditions
-          if (fn) setTimeout(fn, 50);
+          if (fn) setTimeout(fn, 50); 
         };
       };
 
       bind("menu-reload", onReload);
       bind("menu-info", onInfo);
       bind("menu-minimize", onMinimize);
-
+      
       const closeBtn = document.getElementById("menu-close");
       if (closeBtn) closeBtn.onclick = () => onClose();
-
+      
       // if (closeBtn) closeBtn.onclick = () => {
       //   this.confirm(t.closeConfirm, {
       //     title: t.close,
@@ -437,14 +440,14 @@ if (typeof window.NativeOverlay !== "object") {
           return;
         }
         if (document.getElementById("devs-list").querySelector(".dev-item")) return;
-
+        
         try {
           if (window.flutter_inappwebview) {
             const list = await window.flutter_inappwebview.callHandler('appTeam', teamDids);
             console.log("NativeOverlay: appTeam response", list);
             const listArea = document.getElementById("devs-list");
             listArea.innerHTML = "";
-
+            
             if (!list || list.length === 0) {
               listArea.innerHTML = '<div style="text-align: center; padding: 20px; color: var(--ov-on-surface-variant);">No team data found.</div>';
               return;
@@ -481,7 +484,7 @@ if (typeof window.NativeOverlay !== "object") {
               return;
             }
             listArea.innerHTML = "";
-
+            
             const nicknamesMap = {};
             if (res.nicknames) {
               res.nicknames.forEach(n => nicknamesMap[n[0]] = { name: n[1], avatar: n[2] });
@@ -499,7 +502,7 @@ if (typeof window.NativeOverlay !== "object") {
                   <div style="font-size: 12px;">${Object.keys(rev.score)[0] === 'good' ? '👍' : Object.keys(rev.score)[0] === 'bad' ? '👎' : '😐'}</div>
                 </div>
                 <div style="font-size: 14px; color: var(--ov-on-surface); line-height: 1.4; opacity: 0.9;">${rev.content}</div>
-                <div style="text-align: right; font-size: 11px; color: var(--ov-on-surface-variant); margin-top: 4px;">${new Date(Number(rev.timestamp) / 1000000).toLocaleDateString()}</div>
+                <div style="text-align: right; font-size: 11px; color: var(--ov-on-surface-variant); margin-top: 4px;">${new Date(Number(rev.timestamp)/1000000).toLocaleDateString()}</div>
               `;
               listArea.appendChild(card);
             });
@@ -521,7 +524,7 @@ if (typeof window.NativeOverlay !== "object") {
           tab.style.fontWeight = "700";
           tab.style.color = "var(--ov-on-surface)";
           document.getElementById(`tab-${tab.dataset.tab}`).style.display = "block";
-
+          
           if (tab.dataset.tab === "devs") loadDevs();
           if (tab.dataset.tab === "reviews") loadReviews();
         };
@@ -538,7 +541,7 @@ if (typeof window.NativeOverlay !== "object") {
           const scoreRadio = document.querySelector('input[name="score"]:checked');
           const scoreVal = scoreRadio ? scoreRadio.value : "good";
           if (!content) return;
-
+          
           console.log("NativeOverlay: Submitting review", content, scoreVal);
           const post = {
             "score": { [scoreVal]: null },
@@ -546,7 +549,7 @@ if (typeof window.NativeOverlay !== "object") {
             "timestamp": 0,
             "content": content,
           };
-
+          
           try {
             const res = await window.flutter_inappwebview.callHandler('postEvaluation', appInfo.id, post);
             console.log("NativeOverlay: postEvaluation response", res);
@@ -578,7 +581,7 @@ if (typeof window.NativeOverlay !== "object") {
                 <div style="margin-bottom: 16px; border-bottom: 0.5px solid var(--ov-divider); padding-bottom: 8px;">
                   <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
                     <span style="color: #34C759; font-weight: 800; font-size: 14px;">v${row[0]}</span>
-                    <span style="font-size: 12px; color: var(--ov-on-surface-variant);">${new Date(Number(row[1]) / 1000000).toLocaleDateString()}</span>
+                    <span style="font-size: 12px; color: var(--ov-on-surface-variant);">${new Date(Number(row[1])/1000000).toLocaleDateString()}</span>
                   </div>
                   <div style="font-size: 14px; line-height: 1.5; color: var(--ov-on-surface); opacity: 0.85;">${row[2]}</div>
                 </div>
@@ -594,9 +597,9 @@ if (typeof window.NativeOverlay !== "object") {
     },
 
     showAuthOverlay(appInfo, options = {}) {
-      const {
-        onCancel, onConfirm,
-        t = { title: "Authorize dApp", subtitle: "Login with identity token", cancel: "Cancel", confirm: "Authorize Now", localAuth: "Local Authentication Required" }
+      const { 
+        onCancel, onConfirm, 
+        t = { title: "Authorize dApp", subtitle: "Login with identity token", cancel: "Cancel", confirm: "Authorize Now", localAuth: "Local Authentication Required" } 
       } = options;
 
       const html = `
@@ -685,10 +688,120 @@ if (typeof window.NativeOverlay !== "object") {
       };
     },
 
+    showPaymentOverlay(paymentInfo, options = {}) {
+      const { 
+        onConfirm, onCancel, 
+        t = { 
+          title: "Payment Confirmation",
+          amount: "Amount",
+          to: "To",
+          fee: "Network Fee",
+          balance: "Balance",
+          memo: "Memo",
+          cancel: "Cancel",
+          confirm: "Confirm Payment"
+        } 
+      } = options;
+
+      const isInsufficient = (parseFloat(paymentInfo.amount) + parseFloat(paymentInfo.fee)) > parseFloat(paymentInfo.balance);
+
+      const html = `
+        <div style="text-align: left; padding: 4px;">
+          <div style="font-size: 20px; font-weight: 800; color: var(--ov-on-surface); margin-bottom: 8px; text-align: center;">${t.title}</div>
+          
+          <!-- Coin and Amount -->
+          <div style="text-align: center; margin-bottom: 12px;">
+            <div style="font-size: 14px; color: var(--ov-on-surface-variant); margin-bottom: 8px;">${t.amount}</div>
+            <div style="font-size: 38px; font-weight: 900; color: var(--ov-on-surface); letter-spacing: -1px;">${paymentInfo.amount} <span style="font-size: 18px; color: var(--ov-primary); vertical-align: middle; margin-left: 4px;">${paymentInfo.coinCode}</span></div>
+          </div>
+
+          <!-- Details List -->
+          <div style="background: var(--ov-divider); border-radius: 24px; padding: 20px; margin-bottom: 12px; border: 0.5px solid rgba(255,255,255,0.05);">
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                <span style="font-size: 14px; color: var(--ov-on-surface-variant); min-width: 60px;">${t.to}</span>
+                <span style="font-size: 14px; font-weight: 600; color: var(--ov-on-surface); font-family: 'SF Mono', monospace; word-break: break-all; text-align: right; margin-left: 12px;">${paymentInfo.toAddress}</span>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <span style="font-size: 14px; color: var(--ov-on-surface-variant);">${t.fee}</span>
+                <span style="font-size: 14px; font-weight: 600; color: var(--ov-on-surface);">${paymentInfo.fee} ${paymentInfo.coinCode}</span>
+              </div>
+              ${paymentInfo.memo ? `
+              <div style="display: flex; justify-content: space-between;">
+                <span style="font-size: 14px; color: var(--ov-on-surface-variant);">${t.memo}</span>
+                <span style="font-size: 14px; font-weight: 600; color: var(--ov-on-surface);">${paymentInfo.memo}</span>
+              </div>
+              ` : ''}
+              <div style="height: 0.5px; background: var(--ov-divider); margin: 4px 0;"></div>
+              <div style="display: flex; justify-content: space-between;">
+                <span style="font-size: 14px; color: var(--ov-on-surface-variant); font-weight: 500;">${t.balance}</span>
+                <span style="font-size: 14px; font-weight: 700; color: ${isInsufficient ? '#ff4d4f' : 'var(--ov-on-surface)'}">${paymentInfo.balance} ${paymentInfo.coinCode}</span>
+              </div>
+            </div>
+          </div>
+
+          ${isInsufficient ? `
+          <div style="color: #ff4d4f; font-size: 13px; font-weight: 600; text-align: center; margin-bottom: 15px; padding: 0 10px; animation: ov-shake 0.4s ease-in-out;">
+            ${t.insufficientBalance}
+          </div>
+          ` : ''}
+
+          <div class="ov-btn-row">
+            <button id="pay-cancel-btn" class="ov-btn ov-btn-secondary" style="border-radius: 20px; padding: 15px;">${t.cancel}</button>
+            <button id="pay-confirm-btn" class="ov-btn ov-btn-primary" ${isInsufficient ? 'disabled' : ''} style="border-radius: 20px; padding: 15px; ${isInsufficient ? 'opacity: 0.5; cursor: not-allowed;' : ''}">${t.confirm}</button>
+          </div>
+        </div>
+      `;
+      this.showBottomSheet(html, true);
+
+      document.getElementById("pay-cancel-btn").onclick = () => {
+        this.hide();
+        if (onCancel) onCancel();
+        if (window.flutter_inappwebview) window.flutter_inappwebview.callHandler('paymentAction', 'cancel');
+      };
+      document.getElementById("pay-confirm-btn").onclick = () => {
+        // Show loading state on button
+        const btn = document.getElementById("pay-confirm-btn");
+        btn.disabled = true;
+        btn.style.opacity = "0.6";
+        btn.innerHTML = '<span class="ov-loader-small"></span>';
+        
+        if (onConfirm) onConfirm();
+        if (window.flutter_inappwebview) window.flutter_inappwebview.callHandler('paymentAction', 'confirm');
+      };
+      
+      // Add small loader style if not exists
+      if (!document.getElementById("ov-extra-styles")) {
+        const style = document.createElement("style");
+        style.id = "ov-extra-styles";
+        style.innerHTML = `
+          .ov-loader-small {
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: ov-spin 0.8s linear infinite;
+            display: inline-block;
+            vertical-align: middle;
+          }
+          @keyframes ov-spin {
+            to { transform: rotate(360deg); }
+          }
+          @keyframes ov-shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-4px); }
+            75% { transform: translateX(4px); }
+          }
+        `;
+        document.head.appendChild(style);
+      }
+    },
+
     hide(immediate = false) {
       if (!this._isVisible) return;
       const root = this._getContainer();
-
+      
       const cleanup = () => {
         root.style.display = "none";
         root.innerHTML = "";

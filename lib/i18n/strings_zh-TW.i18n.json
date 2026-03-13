@@ -842,5 +842,19 @@
 	"light": "Light",
 	"dark": "Dark",
 	"userFallback": "User",
-	"systemReports": "系統報告"
+	"systemReports": "系統報告",
+	"chooseXLocalNumbers": "請選擇 $shouldChecked 個本地號碼",
+	"noSecurityCircleSetUp": "尚未建立安全圈。",
+	"selectTwoNumbersToVerify": "請選擇兩個號碼以驗證您的帳戶",
+	"whyIsThisRequired": "為什麼需要這樣做？",
+	"whyIsThisRequiredDesc": "由於您的安全圈內沒有受信任的聯繫人，我們需要進一步確保您是該帳戶的擁有者。請選擇兩個本地號碼以繼續。",
+	"selectXNumbersToContinue": "請選擇 $shouldChecked 個號碼以繼續",
+	"selectedXOfYNumbers": "已選擇：$length / $shouldChecked",
+	"sendTo": "發送至：",
+	"iHaveSentTheMessageToBoth": "我已經向這兩個號碼發送了簡訊",
+	"onlineRate": "每日線上率",
+	"monthlyRewards": "每月獎勵",
+	"noMonthlyRewardsAvailableYet": "尚無每月獎勵。",
+	"rate": "速度：",
+	"monthlyRewardReminder": "每月日在線率達95%以上將可獲得額外600DTCT月度獎勵。"
 }

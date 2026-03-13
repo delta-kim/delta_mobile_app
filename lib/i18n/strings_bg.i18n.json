@@ -842,5 +842,19 @@
 	"light": "Light",
 	"dark": "Dark",
 	"userFallback": "User",
-	"systemReports": "Системни отчети"
+	"systemReports": "Системни отчети",
+	"chooseXLocalNumbers": "Изберете $shouldChecked местни номера",
+	"noSecurityCircleSetUp": "Няма настроен кръг за сигурност.",
+	"selectTwoNumbersToVerify": "Изберете два номера, за да потвърдите профила си",
+	"whyIsThisRequired": "Защо е необходимо това?",
+	"whyIsThisRequiredDesc": "Тъй като нямате доверени връзки във вашия кръг за сигурност, трябва да сме допълнително сигурни, че профилът е ваш. Моля, изберете два местни номера, за да продължите.",
+	"selectXNumbersToContinue": "Изберете $shouldChecked номера, за да продължите",
+	"selectedXOfYNumbers": "Избрани: $length от $shouldChecked",
+	"sendTo": "Изпрати до:",
+	"iHaveSentTheMessageToBoth": "Изпратих съобщението и на двата номера",
+	"onlineRate": "Дневна онлайн ставка",
+	"monthlyRewards": "Месечни награди",
+	"noMonthlyRewardsAvailableYet": "Все още няма налични месечни награди.",
+	"rate": "Оценете:",
+	"monthlyRewardReminder": "Постигането на дневен онлайн процент от 95% или по-висок всеки месец ще ви донесе допълнителна месечна награда от 600 DTCT."
 }

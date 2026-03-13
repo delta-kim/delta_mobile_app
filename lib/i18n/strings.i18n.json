@@ -842,5 +842,19 @@
 	"light": "Light",
 	"dark": "Dark",
 	"userFallback": "User",
-	"systemReports": "System Reports"
+	"systemReports": "System Reports",
+	"chooseXLocalNumbers": "Choose $shouldChecked local numbers",
+	"noSecurityCircleSetUp": "No security circle set up.",
+	"selectTwoNumbersToVerify": "Select two numbers to verify your account",
+	"whyIsThisRequired": "Why is this required?",
+	"whyIsThisRequiredDesc": "Since you don't have trusted connections in your security circle, we need to be extra sure you own the account. Please select two local numbers to continue.",
+	"selectXNumbersToContinue": "Select $shouldChecked numbers to continue",
+	"selectedXOfYNumbers": "Selected: $length of $shouldChecked",
+	"sendTo": "Send to:",
+	"iHaveSentTheMessageToBoth": "I have sent the message to both numbers",
+	"onlineRate": "Daily Online Rate",
+	"monthlyRewards": "Monthly Rewards",
+	"noMonthlyRewardsAvailableYet": "No monthly rewards available yet.",
+	"rate": "Rate:",
+	"monthlyRewardReminder": "Achieving a daily online rate of 95% or higher each month will earn an additional 600 DTCT monthly reward."
 }

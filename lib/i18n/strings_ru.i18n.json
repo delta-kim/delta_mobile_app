@@ -842,5 +842,19 @@
 	"light": "Light",
 	"dark": "Dark",
 	"userFallback": "User",
-	"systemReports": "Системные отчеты"
+	"systemReports": "Системные отчеты",
+	"chooseXLocalNumbers": "Выберите $shouldChecked местных номера",
+	"noSecurityCircleSetUp": "Круг безопасности не настроен.",
+	"selectTwoNumbersToVerify": "Выберите два номера для подтверждения вашей учетной записи",
+	"whyIsThisRequired": "Зачем это нужно?",
+	"whyIsThisRequiredDesc": "Поскольку у вас нет доверенных контактов в круге безопасности, нам нужно дополнительно удостовериться, что аккаунт принадлежит вам. Пожалуйста, выберите два местных номера для продолжения.",
+	"selectXNumbersToContinue": "Выберите $shouldChecked номера, чтобы продолжить",
+	"selectedXOfYNumbers": "Выбрано: $length из $shouldChecked",
+	"sendTo": "Отправить на:",
+	"iHaveSentTheMessageToBoth": "Я отправил(а) сообщение на оба номера",
+	"onlineRate": "Дневная онлайн-ставка",
+	"monthlyRewards": "Ежемесячные награды",
+	"noMonthlyRewardsAvailableYet": "Ежемесячных вознаграждений пока нет.",
+	"rate": "Ставка:",
+	"monthlyRewardReminder": "За достижение ежедневного показателя онлайн-загрузки 95% или выше каждый месяц вы будете получать дополнительное ежемесячное вознаграждение в размере 600 DTCT."
 }

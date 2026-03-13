@@ -842,5 +842,19 @@
 	"light": "Light",
 	"dark": "Dark",
 	"userFallback": "User",
-	"systemReports": "시스템 보고서"
+	"systemReports": "시스템 보고서",
+	"chooseXLocalNumbers": "$shouldChecked개의 로컬 번호 선택",
+	"noSecurityCircleSetUp": "보안 서클이 설정되지 않았습니다.",
+	"selectTwoNumbersToVerify": "계정을 확인하려면 두 개의 번호를 선택하십시오",
+	"whyIsThisRequired": "왜 필요한가요?",
+	"whyIsThisRequiredDesc": "보안 서클에 신뢰할 수 있는 연결이 없으므로, 계정 소유자인지 추가로 확인해야 합니다. 계속하려면 두 개의 로컬 번호를 선택하십시오.",
+	"selectXNumbersToContinue": "계속하려면 $shouldChecked개의 번호를 선택하십시오",
+	"selectedXOfYNumbers": "선택됨: $shouldChecked 중 $length",
+	"sendTo": "보낼 곳:",
+	"iHaveSentTheMessageToBoth": "두 번호 모두에 메시지를 보냈습니다",
+	"onlineRate": "일일 온라인 비율",
+	"monthlyRewards": "월별 보상",
+	"noMonthlyRewardsAvailableYet": "아직 월별 보상이 없습니다.",
+	"rate": "비율:",
+	"monthlyRewardReminder": "매달 95% 이상의 일일 접속률을 달성하면 추가로 600 DTCT의 월간 보상을 받게 됩니다."
 }

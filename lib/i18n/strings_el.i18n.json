@@ -842,5 +842,19 @@
 	"light": "Light",
 	"dark": "Dark",
 	"userFallback": "User",
-	"systemReports": "Αναφορές συστήματος"
+	"systemReports": "Αναφορές συστήματος",
+	"chooseXLocalNumbers": "Επιλέξτε $shouldChecked τοπικούς αριθμούς",
+	"noSecurityCircleSetUp": "Δεν έχει δημιουργηθεί κύκλος ασφαλείας.",
+	"selectTwoNumbersToVerify": "Επιλέξτε δύο αριθμούς για να επαληθεύσετε τον λογαριασμό σας",
+	"whyIsThisRequired": "Γιατί απαιτείται αυτό;",
+	"whyIsThisRequiredDesc": "Επειδή δεν έχετε αξιόπιστες συνδέσεις στον κύκλο ασφαλείας σας, πρέπει να είμαστε απολύτως σίγουροι ότι ο λογαριασμός σας ανήκει. Επιλέξτε δύο τοπικούς αριθμούς για να συνεχίσετε.",
+	"selectXNumbersToContinue": "Επιλέξτε $shouldChecked αριθμούς για να συνεχίσετε",
+	"selectedXOfYNumbers": "Επιλεγμένα: $length από $shouldChecked",
+	"sendTo": "Αποστολή σε:",
+	"iHaveSentTheMessageToBoth": "Έχω στείλει το μήνυμα και στους δύο αριθμούς",
+	"onlineRate": "Ημερήσιο ποσοστό σύνδεσης",
+	"monthlyRewards": "Μηνιαίες ανταμοιβές",
+	"noMonthlyRewardsAvailableYet": "Δεν υπάρχουν ακόμη διαθέσιμες μηνιαίες ανταμοιβές.",
+	"rate": "Τιμή:",
+	"monthlyRewardReminder": "Η επίτευξη ημερήσιου ποσοστού online 95% ή υψηλότερου κάθε μήνα θα σας αποφέρει επιπλέον μηνιαία ανταμοιβή 600 DTCT."
 }

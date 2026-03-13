@@ -842,5 +842,19 @@
 	"light": "Clair",
 	"dark": "Sombre",
 	"userFallback": "Utilisateur",
-	"systemReports": "Rapports système"
+	"systemReports": "Rapports système",
+	"chooseXLocalNumbers": "Choisissez $shouldChecked numéros locaux",
+	"noSecurityCircleSetUp": "Aucun cercle de sécurité configuré.",
+	"selectTwoNumbersToVerify": "Sélectionnez deux numéros pour vérifier votre compte",
+	"whyIsThisRequired": "Pourquoi est-ce requis ?",
+	"whyIsThisRequiredDesc": "Puisque vous n'avez pas de contacts de confiance dans votre cercle de sécurité, nous devons nous assurer que vous êtes bien le propriétaire du compte. Veuillez sélectionner deux numéros locaux pour continuer.",
+	"selectXNumbersToContinue": "Sélectionnez $shouldChecked numéros pour continuer",
+	"selectedXOfYNumbers": "Sélectionnés: $length sur $shouldChecked",
+	"sendTo": "Envoyer à:",
+	"iHaveSentTheMessageToBoth": "J'ai envoyé le message aux deux numéros",
+	"onlineRate": "Taux en ligne quotidien",
+	"monthlyRewards": "Récompenses mensuelles",
+	"noMonthlyRewardsAvailableYet": "Aucune récompense mensuelle disponible pour le moment.",
+	"rate": "Taux:",
+	"monthlyRewardReminder": "Un taux de connexion quotidien en ligne de 95 % ou plus chaque mois vous permettra de gagner une récompense mensuelle supplémentaire de 600 DTCT."
 }

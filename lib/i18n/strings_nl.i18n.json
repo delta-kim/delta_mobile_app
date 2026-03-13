@@ -842,5 +842,19 @@
 	"light": "Light",
 	"dark": "Dark",
 	"userFallback": "User",
-	"systemReports": "Systeemrapporten"
+	"systemReports": "Systeemrapporten",
+	"chooseXLocalNumbers": "Kies $shouldChecked lokale nummers",
+	"noSecurityCircleSetUp": "Geen beveiligingscirkel ingesteld.",
+	"selectTwoNumbersToVerify": "Selecteer twee nummers om uw account te verifiëren",
+	"whyIsThisRequired": "Waarom is dit vereist?",
+	"whyIsThisRequiredDesc": "Omdat u geen vertrouwde verbindingen in uw beveiligingscirkel heeft, moeten we er extra zeker van zijn dat u de eigenaar van het account bent. Selecteer twee lokale nummers om door te gaan.",
+	"selectXNumbersToContinue": "Selecteer $shouldChecked nummers om door te gaan",
+	"selectedXOfYNumbers": "Geselecteerd: $length van $shouldChecked",
+	"sendTo": "Verzenden naar:",
+	"iHaveSentTheMessageToBoth": "Ik heb het bericht naar beide nummers verzonden",
+	"onlineRate": "Dagelijks online tarief",
+	"monthlyRewards": "Maandelijkse beloningen",
+	"noMonthlyRewardsAvailableYet": "Er zijn nog geen maandelijkse beloningen beschikbaar.",
+	"rate": "Tarief:",
+	"monthlyRewardReminder": "Als je elke maand een online aanwezigheidspercentage van 95% of hoger behaalt, verdien je een extra maandelijkse beloning van 600 DTCT."
 }

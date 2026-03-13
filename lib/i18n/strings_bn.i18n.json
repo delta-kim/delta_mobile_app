@@ -842,5 +842,19 @@
 	"light": "Light",
 	"dark": "Dark",
 	"userFallback": "User",
-	"systemReports": "সিস্টেম রিপোর্ট"
+	"systemReports": "সিস্টেম রিপোর্ট",
+	"chooseXLocalNumbers": "$shouldChecked টি স্থানীয় নম্বর চয়ন করুন",
+	"noSecurityCircleSetUp": "কোনো নিরাপত্তা বৃত্ত সেট আপ করা হয়নি।",
+	"selectTwoNumbersToVerify": "আপনার অ্যাকাউন্ট যাচাই করতে দুটি নম্বর নির্বাচন করুন",
+	"whyIsThisRequired": "কেন এটি প্রয়োজন?",
+	"whyIsThisRequiredDesc": "যেহেতু আপনার নিরাপত্তা বৃত্তে বিশ্বস্ত সংযোগ নেই, তাই আপনি যে অ্যাকাউন্টের মালিক সে বিষয়ে আমাদের অতিরিক্ত নিশ্চিত হতে হবে। চালিয়ে যেতে দুটি স্থানীয় নম্বর নির্বাচন করুন।",
+	"selectXNumbersToContinue": "চালিয়ে যেতে $shouldChecked টি নম্বর নির্বাচন করুন",
+	"selectedXOfYNumbers": "নির্বাচিত: $shouldChecked এর মধ্যে $length",
+	"sendTo": "প্রেরণ করুন:",
+	"iHaveSentTheMessageToBoth": "আমি উভয় নম্বরে বার্তা পাঠিয়েছি",
+	"onlineRate": "দৈনিক অনলাইন রেট",
+	"monthlyRewards": "মাসিক পুরস্কার",
+	"noMonthlyRewardsAvailableYet": "কোন মাসিক পুরস্কার এখনও উপলব্ধ.",
+	"rate": "হার:",
+	"monthlyRewardReminder": "প্রতি মাসে ৯৫% বা তার বেশি দৈনিক অনলাইন রেট অর্জন করলে অতিরিক্ত ৬০০ DTCT মাসিক পুরষ্কার পাওয়া যাবে।"
 }

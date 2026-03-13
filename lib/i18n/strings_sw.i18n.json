@@ -842,5 +842,19 @@
 	"light": "Light",
 	"dark": "Dark",
 	"userFallback": "User",
-	"systemReports": "Ripoti za Mfumo"
+	"systemReports": "Ripoti za Mfumo",
+	"chooseXLocalNumbers": "Chagua nambari $shouldChecked za karibu",
+	"noSecurityCircleSetUp": "Hakuna mzunguko wa usalama uliowekwa.",
+	"selectTwoNumbersToVerify": "Chagua nambari mbili ili kuthibitisha akaunti yako",
+	"whyIsThisRequired": "Kwa nini hii inahitajika?",
+	"whyIsThisRequiredDesc": "Kwa kuwa huna miunganisho inayoaminika katika mzunguko wako wa usalama, tunahitaji kuwa na uhakika wa ziada kuwa unamiliki akaunti. Tafadhali chagua nambari mbili za karibu ili kuendelea.",
+	"selectXNumbersToContinue": "Chagua nambari $shouldChecked ili kuendelea",
+	"selectedXOfYNumbers": "Iliyochaguliwa: $length kati ya $shouldChecked",
+	"sendTo": "Tuma kwa:",
+	"iHaveSentTheMessageToBoth": "Nimetuma ujumbe kwa nambari zote mbili",
+	"onlineRate": "Kiwango cha mtandaoni cha kila siku",
+	"monthlyRewards": "Zawadi za Kila Mwezi",
+	"noMonthlyRewardsAvailableYet": "Bado hakuna zawadi za kila mwezi zinazopatikana.",
+	"rate": "Kadiria:",
+	"monthlyRewardReminder": "Kufikia kiwango cha mtandaoni cha kila siku cha 95% au zaidi kila mwezi kutapata zawadi ya ziada ya DTCT 600 kila mwezi."
 }

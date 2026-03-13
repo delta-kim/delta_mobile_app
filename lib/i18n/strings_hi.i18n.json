@@ -842,5 +842,19 @@
 	"light": "Light",
 	"dark": "Dark",
 	"userFallback": "User",
-	"systemReports": "सिस्टम रिपोर्ट"
+	"systemReports": "सिस्टम रिपोर्ट",
+	"chooseXLocalNumbers": "$shouldChecked स्थानीय नंबर चुनें",
+	"noSecurityCircleSetUp": "कोई सुरक्षा घेरा (सर्किल) सेट नहीं किया गया है।",
+	"selectTwoNumbersToVerify": "अपना खाता सत्यापित करने के लिए दो नंबर चुनें",
+	"whyIsThisRequired": "यह क्यों आवश्यक है?",
+	"whyIsThisRequiredDesc": "चूंकि आपके सुरक्षा घेरे में विश्वसनीय संपर्क नहीं हैं, इसलिए हमें यह सुनिश्चित करना होगा कि आप ही खाते के स्वामी हैं। कृपया जारी रखने के लिए दो स्थानीय नंबर चुनें।",
+	"selectXNumbersToContinue": "जारी रखने के लिए $shouldChecked नंबर चुनें",
+	"selectedXOfYNumbers": "चयनित: $length / $shouldChecked",
+	"sendTo": "भेजें:",
+	"iHaveSentTheMessageToBoth": "मैंने दोनों नंबरों पर संदेश भेज दिया है",
+	"onlineRate": "दैनिक ऑनलाइन दर",
+	"monthlyRewards": "मासिक पुरस्कार",
+	"noMonthlyRewardsAvailableYet": "अभी तक कोई मासिक पुरस्कार उपलब्ध नहीं है.",
+	"rate": "दर:",
+	"monthlyRewardReminder": "हर महीने 95% या उससे अधिक की दैनिक ऑनलाइन गतिविधि दर हासिल करने पर आपको अतिरिक्त 600 DTCT मासिक पुरस्कार मिलेगा।"
 }

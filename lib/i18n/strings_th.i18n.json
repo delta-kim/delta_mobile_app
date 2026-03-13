@@ -842,5 +842,19 @@
 	"light": "Light",
 	"dark": "Dark",
 	"userFallback": "User",
-	"systemReports": "รายงานระบบ"
+	"systemReports": "รายงานระบบ",
+	"chooseXLocalNumbers": "เลือก $shouldChecked หมายเลขท้องถิ่น",
+	"noSecurityCircleSetUp": "ยังไม่ได้ตั้งค่าวงกลมปลอดภัย",
+	"selectTwoNumbersToVerify": "เลือกสองหมายเลขเพื่อยืนยันบัญชีของคุณ",
+	"whyIsThisRequired": "ทำไมถึงต้องใช้ข้อมูลนี้?",
+	"whyIsThisRequiredDesc": "เนื่องจากคุณไม่มีการเชื่อมต่อที่เชื่อถือได้ในวงกลมปลอดภัยของคุณ เราจึงจำเป็นต้องตรวจสอบเพื่อความแน่ใจเป็นพิเศษว่าคุณเป็นเจ้าของบัญชี โปรดเลือกหมายเลขท้องถิ่นสองหมายเลขเพื่อทำรายการต่อ",
+	"selectXNumbersToContinue": "เลือก $shouldChecked หมายเลขเพื่อทำรายการต่อ",
+	"selectedXOfYNumbers": "เลือกแล้ว: $length จาก $shouldChecked",
+	"sendTo": "ส่งไปที่:",
+	"iHaveSentTheMessageToBoth": "ฉันได้ส่งข้อความถึงทั้งสองหมายเลขแล้ว",
+	"onlineRate": "อัตราออนไลน์รายวัน",
+	"monthlyRewards": "รางวัลประจำเดือน",
+	"noMonthlyRewardsAvailableYet": "ยังไม่มีรางวัลรายเดือนให้",
+	"rate": "ประเมิน:",
+	"monthlyRewardReminder": "การมีอัตราการใช้งานออนไลน์รายวัน 95% ขึ้นไปในแต่ละเดือน จะได้รับรางวัล DTCT เพิ่มอีก 600 คะแนนต่อเดือน"
 }

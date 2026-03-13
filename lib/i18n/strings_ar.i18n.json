@@ -842,5 +842,19 @@
 	"light": "Light",
 	"dark": "Dark",
 	"userFallback": "User",
-	"systemReports": "تقارير النظام"
+	"systemReports": "تقارير النظام",
+	"chooseXLocalNumbers": "اختر $shouldChecked أرقام محلية",
+	"noSecurityCircleSetUp": "لم يتم إعداد دائرة الأمان.",
+	"selectTwoNumbersToVerify": "حدد رقمين للتحقق من حسابك",
+	"whyIsThisRequired": "لماذا هذا مطلوب؟",
+	"whyIsThisRequiredDesc": "نظراً لأنك لا تملك جهات اتصال موثوقة في دائرة الأمان الخاصة بك، نحتاج إلى التأكد الإضافي من ملكيتك للحساب. يرجى تحديد رقمين محليين للمتابعة.",
+	"selectXNumbersToContinue": "حدد $shouldChecked أرقام للمتابعة",
+	"selectedXOfYNumbers": "المحدد: $length من $shouldChecked",
+	"sendTo": "إرسال إلى:",
+	"iHaveSentTheMessageToBoth": "لقد أرسلت الرسالة إلى كلا الرقمين",
+	"onlineRate": "معدل الاتصال اليومي",
+	"monthlyRewards": "المكافآت الشهرية",
+	"noMonthlyRewardsAvailableYet": "لا توجد مكافآت شهرية متاحة حتى الآن.",
+	"rate": "معدل:",
+	"monthlyRewardReminder": "سيؤدي تحقيق معدل يومي عبر الإنترنت بنسبة 95٪ أو أعلى كل شهر إلى كسب مكافأة شهرية إضافية قدرها 600 DTCT."
 }

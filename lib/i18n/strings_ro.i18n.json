@@ -842,5 +842,19 @@
 	"light": "Light",
 	"dark": "Dark",
 	"userFallback": "User",
-	"systemReports": "Rapoarte de sistem"
+	"systemReports": "Rapoarte de sistem",
+	"chooseXLocalNumbers": "Alegeți $shouldChecked numere locale",
+	"noSecurityCircleSetUp": "Niciun cerc de securitate configurat.",
+	"selectTwoNumbersToVerify": "Selectați două numere pentru a vă verifica contul",
+	"whyIsThisRequired": "De ce este necesar acest lucru?",
+	"whyIsThisRequiredDesc": "Deoarece nu aveți conexiuni de încredere în cercul dvs. de securitate, trebuie să fim absolut siguri că dețineți contul. Vă rugăm să selectați două numere locale pentru a continua.",
+	"selectXNumbersToContinue": "Selectați $shouldChecked numere pentru a continua",
+	"selectedXOfYNumbers": "Selectate: $length din $shouldChecked",
+	"sendTo": "Trimite la:",
+	"iHaveSentTheMessageToBoth": "Am trimis mesajul la ambele numere",
+	"onlineRate": "Rata online zilnică",
+	"monthlyRewards": "Recompense lunare",
+	"noMonthlyRewardsAvailableYet": "Nu sunt disponibile recompense lunare încă.",
+	"rate": "Evaluare:",
+	"monthlyRewardReminder": "Atingerea unei rate online zilnice de 95% sau mai mare în fiecare lună va aduce o recompensă lunară suplimentară de 600 DTCT."
 }

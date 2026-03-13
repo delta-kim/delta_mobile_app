@@ -842,5 +842,19 @@
 	"light": "Light",
 	"dark": "Dark",
 	"userFallback": "User",
-	"systemReports": "Системні звіти"
+	"systemReports": "Системні звіти",
+	"chooseXLocalNumbers": "Виберіть $shouldChecked місцевих номери",
+	"noSecurityCircleSetUp": "Коло безпеки не налаштовано.",
+	"selectTwoNumbersToVerify": "Виберіть два номери для підтвердження вашого облікового запису",
+	"whyIsThisRequired": "Чому це потрібно?",
+	"whyIsThisRequiredDesc": "Оскільки у вас немає надійних контактів у колі безпеки, нам потрібно додатково переконатися, що обліковий запис належить вам. Будь ласка, виберіть два місцевих номери для продовження.",
+	"selectXNumbersToContinue": "Виберіть $shouldChecked номери для продовження",
+	"selectedXOfYNumbers": "Обрано: $length з $shouldChecked",
+	"sendTo": "Відправити на:",
+	"iHaveSentTheMessageToBoth": "Я надіслав(ла) повідомлення на обидва номери",
+	"onlineRate": "Щоденна онлайн-ставка",
+	"monthlyRewards": "Щомісячні винагороди",
+	"noMonthlyRewardsAvailableYet": "Щомісячні винагороди ще не доступні.",
+	"rate": "Оцінка:",
+	"monthlyRewardReminder": "Досягнення щоденного онлайн-рейтингу 95% або вище щомісяця дозволить отримати додаткову щомісячну винагороду у розмірі 600 DTCT."
 }

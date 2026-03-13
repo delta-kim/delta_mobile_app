@@ -842,5 +842,19 @@
 	"light": "Sáng",
 	"dark": "Tối",
 	"userFallback": "Người dùng",
-	"systemReports": "Báo cáo hệ thống"
+	"systemReports": "Báo cáo hệ thống",
+	"chooseXLocalNumbers": "Chọn $shouldChecked số địa phương",
+	"noSecurityCircleSetUp": "Chưa thiết lập vòng tròn bảo mật.",
+	"selectTwoNumbersToVerify": "Chọn hai số để xác minh tài khoản của bạn",
+	"whyIsThisRequired": "Tại sao điều này là cần thiết?",
+	"whyIsThisRequiredDesc": "Vì bạn không có các kết nối đáng tin cậy trong vòng tròn bảo mật của mình, chúng tôi cần chắc chắn hơn rằng bạn sở hữu tài khoản này. Vui lòng chọn hai số địa phương để tiếp tục.",
+	"selectXNumbersToContinue": "Chọn $shouldChecked số để tiếp tục",
+	"selectedXOfYNumbers": "Đã chọn: $length trên $shouldChecked",
+	"sendTo": "Gửi đến:",
+	"iHaveSentTheMessageToBoth": "Tôi đã gửi tin nhắn đến cả hai số",
+	"onlineRate": "Tỷ lệ trực tuyến hàng ngày",
+	"monthlyRewards": "Phần thưởng hàng tháng",
+	"noMonthlyRewardsAvailableYet": "Chưa có phần thưởng hàng tháng.",
+	"rate": "Tỷ lệ:",
+	"monthlyRewardReminder": "Đạt tỷ lệ truy cập trực tuyến hàng ngày từ 95% trở lên mỗi tháng sẽ nhận được thêm phần thưởng 600 DTCT hàng tháng."
 }

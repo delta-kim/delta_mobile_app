@@ -842,5 +842,19 @@
 	"light": "Light",
 	"dark": "Dark",
 	"userFallback": "User",
-	"systemReports": "Sistem Raporları"
+	"systemReports": "Sistem Raporları",
+	"chooseXLocalNumbers": "$shouldChecked yerel numara seçin",
+	"noSecurityCircleSetUp": "Güvenlik çemberi kurulmamış.",
+	"selectTwoNumbersToVerify": "Hesabınızı doğrulamak için iki numara seçin",
+	"whyIsThisRequired": "Bu neden gerekli?",
+	"whyIsThisRequiredDesc": "Güvenlik çemberinizde güvenilir bağlantılarınız olmadığı için hesabın size ait olduğundan ekstra emin olmamız gerekiyor. Lütfen devam etmek için iki yerel numara seçin.",
+	"selectXNumbersToContinue": "Devam etmek için $shouldChecked numara seçin",
+	"selectedXOfYNumbers": "Seçilen: $shouldChecked içinden $length",
+	"sendTo": "Şuraya gönder:",
+	"iHaveSentTheMessageToBoth": "Mesajı her iki numaraya da gönderdim",
+	"onlineRate": "Günlük çevrimiçi oran",
+	"monthlyRewards": "Aylık Ödüller",
+	"noMonthlyRewardsAvailableYet": "Henüz aylık ödül mevcut değil.",
+	"rate": "Oran:",
+	"monthlyRewardReminder": "Her ay %95 veya daha yüksek günlük çevrimiçi olma oranına ulaşmak, aylık 600 DTCT ödülü daha kazandıracaktır."
 }

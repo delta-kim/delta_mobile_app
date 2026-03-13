@@ -842,5 +842,19 @@
 	"light": "浅色",
 	"dark": "深色",
 	"userFallback": "用户",
-	"systemReports": "系统报告"
+	"systemReports": "系统报告",
+	"chooseXLocalNumbers": "请选择 $shouldChecked 个本地号码",
+	"noSecurityCircleSetUp": "尚未建立安全圈。",
+	"selectTwoNumbersToVerify": "请选择两个号码以验证您的账户",
+	"whyIsThisRequired": "为什么需要这样做？",
+	"whyIsThisRequiredDesc": "由于您的安全圈内没有受信任的联系人，我们需要进一步确保您是该账户的所有者。请选择两个本地号码以继续。",
+	"selectXNumbersToContinue": "请选择 $shouldChecked 个号码以继续",
+	"selectedXOfYNumbers": "已选择：$length / $shouldChecked",
+	"sendTo": "发送至：",
+	"iHaveSentTheMessageToBoth": "我已经向这两个号码发送了短信",
+	"onlineRate": "每日在线率",
+	"monthlyRewards": "每月奖励",
+	"noMonthlyRewardsAvailableYet": "尚无每月奖励。",
+	"rate": "速度：",
+	"monthlyRewardReminder": "每月日在线率达到95%以上将可获得额外600DTCT月度奖励。"
 }

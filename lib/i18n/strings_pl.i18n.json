@@ -842,5 +842,19 @@
 	"light": "Light",
 	"dark": "Dark",
 	"userFallback": "User",
-	"systemReports": "Raporty systemowe"
+	"systemReports": "Raporty systemowe",
+	"chooseXLocalNumbers": "Wybierz $shouldChecked lokalne numery",
+	"noSecurityCircleSetUp": "Brak skonfigurowanego kręgu zaufania.",
+	"selectTwoNumbersToVerify": "Wybierz dwa numery, aby zweryfikować swoje konto",
+	"whyIsThisRequired": "Dlaczego jest to wymagane?",
+	"whyIsThisRequiredDesc": "Ponieważ nie masz zaufanych połączeń w swoim kręgu zabezpieczeń, musimy mieć pewność, że to Twoje konto. Wybierz dwa lokalne numery, aby kontynuować.",
+	"selectXNumbersToContinue": "Wybierz $shouldChecked numery, aby kontynuować",
+	"selectedXOfYNumbers": "Wybrano: $length z $shouldChecked",
+	"sendTo": "Wyślij do:",
+	"iHaveSentTheMessageToBoth": "Wysłałem wiadomość na oba numery",
+	"onlineRate": "Dzienna stawka online",
+	"monthlyRewards": "Nagrody miesięczne",
+	"noMonthlyRewardsAvailableYet": "Nie są jeszcze dostępne żadne nagrody miesięczne.",
+	"rate": "Wskaźnik:",
+	"monthlyRewardReminder": "Osiągnięcie dziennego wskaźnika zakupów online na poziomie 95% lub wyższym w każdym miesiącu skutkować będzie dodatkową nagrodą miesięczną w wysokości 600 DTCT."
 }
