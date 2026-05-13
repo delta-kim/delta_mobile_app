@@ -856,5 +856,11 @@
 	"monthlyRewards": "毎月の報酬",
 	"noMonthlyRewardsAvailableYet": "毎月の報酬はまだありません。",
 	"rate": "レート：",
-	"monthlyRewardReminder": "毎月 95% 以上のオンライン率を達成すると、毎月 600 DTCT の追加報酬を獲得できます。"
+	"monthlyRewardReminder": "毎月 95% 以上のオンライン率を達成すると、毎月 600 DTCT の追加報酬を獲得できます。",
+	"topupAmount": "チャージ金額",
+	"listenId": "リスニングID",
+	"dappTopup": "Dappチャージ",
+	"authorizeDappLogin": "dappログインを承認する",
+	"openThisWebsite": "このウェブサイトを開く",
+	"openThisWebApplication": "このウェブアプリケーションを開く"
 }

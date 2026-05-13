@@ -856,5 +856,11 @@
 	"monthlyRewards": "Monatliche Belohnungen",
 	"noMonthlyRewardsAvailableYet": "Es sind noch keine monatlichen Prämien verfügbar.",
 	"rate": "Rate:",
-	"monthlyRewardReminder": "Wer jeden Monat eine tägliche Online-Rate von 95 % oder höher erreicht, erhält eine zusätzliche monatliche Prämie von 600 DTCT."
+	"monthlyRewardReminder": "Wer jeden Monat eine tägliche Online-Rate von 95 % oder höher erreicht, erhält eine zusätzliche monatliche Prämie von 600 DTCT.",
+	"topupAmount": "Aufladebetrag",
+	"listenId": "Listen-ID",
+	"dappTopup": "Dapp-Aufladung",
+	"authorizeDappLogin": "DApp-Anmeldung autorisieren",
+	"openThisWebsite": "Diese Webseite öffnen",
+	"openThisWebApplication": "Diese Webanwendung öffnen"
 }

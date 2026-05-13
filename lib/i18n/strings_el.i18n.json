@@ -856,5 +856,11 @@
 	"monthlyRewards": "Μηνιαίες ανταμοιβές",
 	"noMonthlyRewardsAvailableYet": "Δεν υπάρχουν ακόμη διαθέσιμες μηνιαίες ανταμοιβές.",
 	"rate": "Τιμή:",
-	"monthlyRewardReminder": "Η επίτευξη ημερήσιου ποσοστού online 95% ή υψηλότερου κάθε μήνα θα σας αποφέρει επιπλέον μηνιαία ανταμοιβή 600 DTCT."
+	"monthlyRewardReminder": "Η επίτευξη ημερήσιου ποσοστού online 95% ή υψηλότερου κάθε μήνα θα σας αποφέρει επιπλέον μηνιαία ανταμοιβή 600 DTCT.",
+	"topupAmount": "Ποσό ανανέωσης",
+	"listenId": "Αναγνωριστικό ακρόασης",
+	"dappTopup": "Ανανέωση Dapp",
+	"authorizeDappLogin": "Εξουσιοδότηση σύνδεσης dapp",
+	"openThisWebsite": "Άνοιγμα αυτού του ιστότοπου",
+	"openThisWebApplication": "Άνοιγμα αυτής της εφαρμογής ιστού"
 }

@@ -856,5 +856,11 @@
 	"monthlyRewards": "รางวัลประจำเดือน",
 	"noMonthlyRewardsAvailableYet": "ยังไม่มีรางวัลรายเดือนให้",
 	"rate": "ประเมิน:",
-	"monthlyRewardReminder": "การมีอัตราการใช้งานออนไลน์รายวัน 95% ขึ้นไปในแต่ละเดือน จะได้รับรางวัล DTCT เพิ่มอีก 600 คะแนนต่อเดือน"
+	"monthlyRewardReminder": "การมีอัตราการใช้งานออนไลน์รายวัน 95% ขึ้นไปในแต่ละเดือน จะได้รับรางวัล DTCT เพิ่มอีก 600 คะแนนต่อเดือน",
+	"topupAmount": "จำนวนเงินเติม",
+	"listenId": "ฟังรหัส",
+	"dappTopup": "เติมเงิน Dapp",
+	"authorizeDappLogin": "อนุญาตการเข้าสู่ระบบ dapp",
+	"openThisWebsite": "เปิดเว็บไซต์นี้",
+	"openThisWebApplication": "เปิดแอปพลิเคชันเว็บนี้"
 }

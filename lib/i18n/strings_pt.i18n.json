@@ -856,5 +856,11 @@
 	"monthlyRewards": "Recompensas Mensais",
 	"noMonthlyRewardsAvailableYet": "Nenhuma recompensa mensal disponível ainda.",
 	"rate": "Avaliar:",
-	"monthlyRewardReminder": "Atingir uma taxa diária de presença online de 95% ou superior a cada mês renderá uma recompensa adicional de 600 DTCT por mês."
+	"monthlyRewardReminder": "Atingir uma taxa diária de presença online de 95% ou superior a cada mês renderá uma recompensa adicional de 600 DTCT por mês.",
+	"topupAmount": "Valor de recarga",
+	"listenId": "ID de escuta",
+	"dappTopup": "Recarga Dapp",
+	"authorizeDappLogin": "Autorizar login do dapp",
+	"openThisWebsite": "Acesse este site",
+	"openThisWebApplication": "Abra este aplicativo web"
 }

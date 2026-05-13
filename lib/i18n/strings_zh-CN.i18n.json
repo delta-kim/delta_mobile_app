@@ -856,5 +856,11 @@
 	"monthlyRewards": "每月奖励",
 	"noMonthlyRewardsAvailableYet": "尚无每月奖励。",
 	"rate": "速度：",
-	"monthlyRewardReminder": "每月日在线率达到95%以上将可获得额外600DTCT月度奖励。"
+	"monthlyRewardReminder": "每月日在线率达到95%以上将可获得额外600DTCT月度奖励。",
+	"topupAmount": "充值金额",
+	"listenId": "监听 ID",
+	"dappTopup": "Dapp充值",
+	"authorizeDappLogin": "授权 dapp 登录",
+	"openThisWebsite": "打开此网站",
+	"openThisWebApplication": "打开此 Web 应用程序"
 }

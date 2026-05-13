@@ -856,5 +856,11 @@
 	"monthlyRewards": "월별 보상",
 	"noMonthlyRewardsAvailableYet": "아직 월별 보상이 없습니다.",
 	"rate": "비율:",
-	"monthlyRewardReminder": "매달 95% 이상의 일일 접속률을 달성하면 추가로 600 DTCT의 월간 보상을 받게 됩니다."
+	"monthlyRewardReminder": "매달 95% 이상의 일일 접속률을 달성하면 추가로 600 DTCT의 월간 보상을 받게 됩니다.",
+	"topupAmount": "충전 금액",
+	"listenId": "듣기 ID",
+	"dappTopup": "Dapp 충전",
+	"authorizeDappLogin": "dApp 로그인 승인",
+	"openThisWebsite": "이 웹사이트를 열어보세요",
+	"openThisWebApplication": "이 웹 애플리케이션을 엽니다."
 }

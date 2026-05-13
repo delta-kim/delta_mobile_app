@@ -856,5 +856,11 @@
 	"monthlyRewards": "Phần thưởng hàng tháng",
 	"noMonthlyRewardsAvailableYet": "Chưa có phần thưởng hàng tháng.",
 	"rate": "Tỷ lệ:",
-	"monthlyRewardReminder": "Đạt tỷ lệ truy cập trực tuyến hàng ngày từ 95% trở lên mỗi tháng sẽ nhận được thêm phần thưởng 600 DTCT hàng tháng."
+	"monthlyRewardReminder": "Đạt tỷ lệ truy cập trực tuyến hàng ngày từ 95% trở lên mỗi tháng sẽ nhận được thêm phần thưởng 600 DTCT hàng tháng.",
+	"topupAmount": "Số tiền nạp thêm",
+	"listenId": "Nghe ID",
+	"dappTopup": "Nạp tiền Dapp",
+	"authorizeDappLogin": "Ủy quyền đăng nhập dapp",
+	"openThisWebsite": "Mở trang web này",
+	"openThisWebApplication": "Mở ứng dụng web này"
 }

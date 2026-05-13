@@ -856,5 +856,11 @@
 	"monthlyRewards": "Récompenses mensuelles",
 	"noMonthlyRewardsAvailableYet": "Aucune récompense mensuelle disponible pour le moment.",
 	"rate": "Taux:",
-	"monthlyRewardReminder": "Un taux de connexion quotidien en ligne de 95 % ou plus chaque mois vous permettra de gagner une récompense mensuelle supplémentaire de 600 DTCT."
+	"monthlyRewardReminder": "Un taux de connexion quotidien en ligne de 95 % ou plus chaque mois vous permettra de gagner une récompense mensuelle supplémentaire de 600 DTCT.",
+	"topupAmount": "Montant de la recharge",
+	"listenId": "Écouter l'identifiant",
+	"dappTopup": "Rechargement Dapp",
+	"authorizeDappLogin": "Autoriser la connexion à l'application décentralisée",
+	"openThisWebsite": "Ouvrez ce site web",
+	"openThisWebApplication": "Ouvrez cette application web"
 }

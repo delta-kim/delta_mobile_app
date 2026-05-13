@@ -856,5 +856,11 @@
 	"monthlyRewards": "মাসিক পুরস্কার",
 	"noMonthlyRewardsAvailableYet": "কোন মাসিক পুরস্কার এখনও উপলব্ধ.",
 	"rate": "হার:",
-	"monthlyRewardReminder": "প্রতি মাসে ৯৫% বা তার বেশি দৈনিক অনলাইন রেট অর্জন করলে অতিরিক্ত ৬০০ DTCT মাসিক পুরষ্কার পাওয়া যাবে।"
+	"monthlyRewardReminder": "প্রতি মাসে ৯৫% বা তার বেশি দৈনিক অনলাইন রেট অর্জন করলে অতিরিক্ত ৬০০ DTCT মাসিক পুরষ্কার পাওয়া যাবে।",
+	"topupAmount": "টপ-আপ পরিমাণ",
+	"listenId": "শুনুন আইডি",
+	"dappTopup": "ড্যাপ টপ-আপ",
+	"authorizeDappLogin": "ড্যাপ লগইন অনুমোদন করুন",
+	"openThisWebsite": "এই ওয়েবসাইটটি খুলুন",
+	"openThisWebApplication": "এই ওয়েব অ্যাপ্লিকেশনটি খুলুন"
 }

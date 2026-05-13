@@ -15,7 +15,7 @@
 
     2. delta.getDAppAcctInfo
 ```javascript
-    let res = await window.delta.getDAppAcctInfo();
+    let res = await window.delta.getDAppAcctInfo(dAppIdentToken);
  ```
     3. delta.languageCode
 ```javascript

@@ -856,5 +856,11 @@
 	"monthlyRewards": "پاداشتی مانگانە",
 	"noMonthlyRewardsAvailableYet": "تا ئێستا هیچ پاداشتێکی مانگانە لەبەردەستدا نییە.",
 	"rate": "ڕێژە:",
-	"monthlyRewardReminder": "بەدەستهێنانی ڕێژەی ڕۆژانەی ئۆنلاین کە 95% یان زیاترە لە مانگێکدا، پاداشتی مانگانەی 600 DTCTی زیادە بەدەست دەهێنێت."
+	"monthlyRewardReminder": "بەدەستهێنانی ڕێژەی ڕۆژانەی ئۆنلاین کە 95% یان زیاترە لە مانگێکدا، پاداشتی مانگانەی 600 DTCTی زیادە بەدەست دەهێنێت.",
+	"topupAmount": "بڕی پڕکردنەوە",
+	"listenId": "گوێ بگرە Id",
+	"dappTopup": "داپ تۆپ ئاپ",
+	"authorizeDappLogin": "ڕێگە بە چوونەژوورەوەی dapp بدە",
+	"openThisWebsite": "ئەم ماڵپەڕە بکەرەوە",
+	"openThisWebApplication": "ئەم بەرنامە وێبە بکەرەوە"
 }

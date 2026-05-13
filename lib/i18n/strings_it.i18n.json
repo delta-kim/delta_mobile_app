@@ -856,5 +856,11 @@
 	"monthlyRewards": "Premi mensili",
 	"noMonthlyRewardsAvailableYet": "Nessun premio mensile ancora disponibile.",
 	"rate": "Valutare:",
-	"monthlyRewardReminder": "Raggiungendo una percentuale giornaliera online pari o superiore al 95% ogni mese si otterrà un ulteriore premio mensile di 600 DTCT."
+	"monthlyRewardReminder": "Raggiungendo una percentuale giornaliera online pari o superiore al 95% ogni mese si otterrà un ulteriore premio mensile di 600 DTCT.",
+	"topupAmount": "Importo della ricarica",
+	"listenId": "ID di ascolto",
+	"dappTopup": "Ricarica Dapp",
+	"authorizeDappLogin": "Autorizzare l'accesso alla dapp",
+	"openThisWebsite": "Apri questo sito web",
+	"openThisWebApplication": "Apri questa applicazione web"
 }

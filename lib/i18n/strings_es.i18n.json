@@ -856,5 +856,11 @@
 	"monthlyRewards": "Recompensas mensuales",
 	"noMonthlyRewardsAvailableYet": "Aún no hay recompensas mensuales disponibles.",
 	"rate": "Tasa:",
-	"monthlyRewardReminder": "Alcanzar una tasa diaria en línea del 95 % o superior cada mes le permitirá ganar una recompensa mensual adicional de 600 DTCT."
+	"monthlyRewardReminder": "Alcanzar una tasa diaria en línea del 95 % o superior cada mes le permitirá ganar una recompensa mensual adicional de 600 DTCT.",
+	"topupAmount": "Cantidad de recarga",
+	"listenId": "Escuchar Id",
+	"dappTopup": "Recarga de Dapp",
+	"authorizeDappLogin": "Autorizar el inicio de sesión de la aplicación descentralizada (dApp)",
+	"openThisWebsite": "Abre este sitio web",
+	"openThisWebApplication": "Abra esta aplicación web"
 }

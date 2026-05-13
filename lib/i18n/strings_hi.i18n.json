@@ -856,5 +856,11 @@
 	"monthlyRewards": "मासिक पुरस्कार",
 	"noMonthlyRewardsAvailableYet": "अभी तक कोई मासिक पुरस्कार उपलब्ध नहीं है.",
 	"rate": "दर:",
-	"monthlyRewardReminder": "हर महीने 95% या उससे अधिक की दैनिक ऑनलाइन गतिविधि दर हासिल करने पर आपको अतिरिक्त 600 DTCT मासिक पुरस्कार मिलेगा।"
+	"monthlyRewardReminder": "हर महीने 95% या उससे अधिक की दैनिक ऑनलाइन गतिविधि दर हासिल करने पर आपको अतिरिक्त 600 DTCT मासिक पुरस्कार मिलेगा।",
+	"topupAmount": "टॉप-अप राशि",
+	"listenId": "लिसन आईडी",
+	"dappTopup": "डैप टॉप-अप",
+	"authorizeDappLogin": "डैप लॉगिन को अधिकृत करें",
+	"openThisWebsite": "इस वेबसाइट को खोलें",
+	"openThisWebApplication": "इस वेब एप्लिकेशन को खोलें"
 }

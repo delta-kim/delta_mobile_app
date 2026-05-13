@@ -856,5 +856,11 @@
 	"monthlyRewards": "每月獎勵",
 	"noMonthlyRewardsAvailableYet": "尚無每月獎勵。",
 	"rate": "速度：",
-	"monthlyRewardReminder": "每月日在線率達95%以上將可獲得額外600DTCT月度獎勵。"
+	"monthlyRewardReminder": "每月日在線率達95%以上將可獲得額外600DTCT月度獎勵。",
+	"topupAmount": "儲值金額",
+	"listenId": "監聽 ID",
+	"dappTopup": "Dapp儲值",
+	"authorizeDappLogin": "授權 dapp 登入",
+	"openThisWebsite": "開啟此網站",
+	"openThisWebApplication": "開啟此 Web 應用程式"
 }

@@ -856,5 +856,11 @@
 	"monthlyRewards": "Monthly Rewards",
 	"noMonthlyRewardsAvailableYet": "No monthly rewards available yet.",
 	"rate": "Rate:",
-	"monthlyRewardReminder": "Achieving a daily online rate of 95% or higher each month will earn an additional 600 DTCT monthly reward."
+	"monthlyRewardReminder": "Achieving a daily online rate of 95% or higher each month will earn an additional 600 DTCT monthly reward.",
+	"topupAmount": "Top-up Amount",
+	"listenId": "Listen Id",
+	"dappTopup": "Dapp Top-up",
+	"authorizeDappLogin": "Authorize dapp login",
+	"openThisWebsite": "Open this website",
+	"openThisWebApplication": "Open this web application"
 }

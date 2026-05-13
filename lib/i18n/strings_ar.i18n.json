@@ -856,5 +856,11 @@
 	"monthlyRewards": "المكافآت الشهرية",
 	"noMonthlyRewardsAvailableYet": "لا توجد مكافآت شهرية متاحة حتى الآن.",
 	"rate": "معدل:",
-	"monthlyRewardReminder": "سيؤدي تحقيق معدل يومي عبر الإنترنت بنسبة 95٪ أو أعلى كل شهر إلى كسب مكافأة شهرية إضافية قدرها 600 DTCT."
+	"monthlyRewardReminder": "سيؤدي تحقيق معدل يومي عبر الإنترنت بنسبة 95٪ أو أعلى كل شهر إلى كسب مكافأة شهرية إضافية قدرها 600 DTCT.",
+	"topupAmount": "مبلغ إعادة الشحن",
+	"listenId": "معرف الاستماع",
+	"dappTopup": "شحن التطبيقات اللامركزية",
+	"authorizeDappLogin": "تفويض تسجيل الدخول إلى التطبيق اللامركزي",
+	"openThisWebsite": "افتح هذا الموقع",
+	"openThisWebApplication": "افتح تطبيق الويب هذا"
 }

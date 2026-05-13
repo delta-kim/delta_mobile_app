@@ -856,5 +856,11 @@
 	"monthlyRewards": "Maandelijkse beloningen",
 	"noMonthlyRewardsAvailableYet": "Er zijn nog geen maandelijkse beloningen beschikbaar.",
 	"rate": "Tarief:",
-	"monthlyRewardReminder": "Als je elke maand een online aanwezigheidspercentage van 95% of hoger behaalt, verdien je een extra maandelijkse beloning van 600 DTCT."
+	"monthlyRewardReminder": "Als je elke maand een online aanwezigheidspercentage van 95% of hoger behaalt, verdien je een extra maandelijkse beloning van 600 DTCT.",
+	"topupAmount": "Opwaardeerbedrag",
+	"listenId": "Luister-ID",
+	"dappTopup": "Dapp-opwaardering",
+	"authorizeDappLogin": "Autoriseer de dapp-login",
+	"openThisWebsite": "Open deze website",
+	"openThisWebApplication": "Open deze webapplicatie"
 }

@@ -856,5 +856,11 @@
 	"monthlyRewards": "Nagrody miesięczne",
 	"noMonthlyRewardsAvailableYet": "Nie są jeszcze dostępne żadne nagrody miesięczne.",
 	"rate": "Wskaźnik:",
-	"monthlyRewardReminder": "Osiągnięcie dziennego wskaźnika zakupów online na poziomie 95% lub wyższym w każdym miesiącu skutkować będzie dodatkową nagrodą miesięczną w wysokości 600 DTCT."
+	"monthlyRewardReminder": "Osiągnięcie dziennego wskaźnika zakupów online na poziomie 95% lub wyższym w każdym miesiącu skutkować będzie dodatkową nagrodą miesięczną w wysokości 600 DTCT.",
+	"topupAmount": "Kwota doładowania",
+	"listenId": "Identyfikator nasłuchiwania",
+	"dappTopup": "Doładowanie Dapp",
+	"authorizeDappLogin": "Autoryzuj logowanie do aplikacji DApp",
+	"openThisWebsite": "Otwórz tę stronę internetową",
+	"openThisWebApplication": "Otwórz tę aplikację internetową"
 }

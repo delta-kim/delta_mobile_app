@@ -856,5 +856,11 @@
 	"monthlyRewards": "Recompense lunare",
 	"noMonthlyRewardsAvailableYet": "Nu sunt disponibile recompense lunare încă.",
 	"rate": "Evaluare:",
-	"monthlyRewardReminder": "Atingerea unei rate online zilnice de 95% sau mai mare în fiecare lună va aduce o recompensă lunară suplimentară de 600 DTCT."
+	"monthlyRewardReminder": "Atingerea unei rate online zilnice de 95% sau mai mare în fiecare lună va aduce o recompensă lunară suplimentară de 600 DTCT.",
+	"topupAmount": "Sumă de încărcare",
+	"listenId": "ID de ascultare",
+	"dappTopup": "Încărcare Dapp",
+	"authorizeDappLogin": "Autorizați autentificarea la dapp",
+	"openThisWebsite": "Deschideți acest site web",
+	"openThisWebApplication": "Deschideți această aplicație web"
 }
